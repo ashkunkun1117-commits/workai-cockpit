@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WorkAI Production Cockpit</title>
+<style>
+  :root { color-scheme: light dark; --paper:#faf9f6; --surface:#fff; --surface-sunken:#f1efe9; --ink:#1d1f24; --ink-muted:#6b6a63; --ink-faint:#9a988e; --border:#e6e3da; --accent:#0e7c86; --accent-ink:#fff; --good:#2f8f5b; --good-soft:#e7f4ec; --amber:#b5750a; --amber-soft:#fbf0dd; }
+  @media (prefers-color-scheme: dark) { :root { --paper:#14161a; --surface:#1b1e23; --surface-sunken:#21242a; --ink:#e9e7e0; --ink-muted:#a3a099; --ink-faint:#726f66; --border:#2e3138; --accent:#35b3ba; --accent-ink:#08191a; --good:#4fbf85; --good-soft:#17301f; --amber:#e0a53f; --amber-soft:#2f2717; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,"Zen Kaku Gothic New","Noto Sans JP",sans-serif; }
+  .page { max-width:560px; margin:0 auto; padding:20px 16px 48px; display:flex; flex-direction:column; gap:16px; }
+  .hdr { display:flex; align-items:baseline; justify-content:space-between; gap:12px; }
+  .daybadge { display:inline-flex; background:var(--surface-sunken); color:var(--accent); border-radius:999px; padding:3px 12px; font-weight:700; font-size:13px; }
+  h1 { font-size:18px; margin:6px 0 0; }
+  .updated { font-size:10.5px; color:var(--ink-faint); text-align:right; line-height:1.5; }
+  .health { padding:9px 14px; border-radius:12px; font-size:12.5px; font-weight:700; background:var(--good-soft); color:var(--good); }
+  section { background:var(--surface); border:1px solid var(--border); border-radius:16px; padding:14px 16px; display:flex; flex-direction:column; gap:8px; }
+  h2 { font-size:12.5px; margin:0; letter-spacing:.02em; }
+  .status { display:inline-block; font-size:10px; font-weight:700; border-radius:999px; padding:2px 8px; background:var(--good-soft); color:var(--good); }
+  .status.posted { background:var(--surface-sunken); color:var(--ink-muted); }
+  .txt { background:var(--surface-sunken); border-radius:10px; padding:10px 12px; font-size:13.5px; line-height:1.7; }
+  video { width:100%; border-radius:10px; display:block; background:#000; }
+  button, a.btn { font-size:12px; font-weight:700; border-radius:999px; padding:7px 14px; border:1px solid var(--border); background:var(--surface); color:var(--ink); cursor:pointer; text-decoration:none; display:inline-block; }
+  button.primary, a.btn.primary { background:var(--accent); border-color:var(--accent); color:var(--accent-ink); }
+  .kpi { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+  .kpi .tile { background:var(--surface-sunken); border-radius:10px; padding:10px 12px; }
+  .kpi .k { font-size:10.5px; color:var(--ink-faint); }
+  .kpi .v { font-size:18px; font-weight:800; }
+  .oa-item { font-size:13px; padding:6px 0; border-bottom:1px dashed var(--border); }
+  .oa-item:last-child { border-bottom:none; }
+  footer { text-align:center; font-size:10px; color:var(--ink-faint); padding-top:10px; line-height:1.6; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="hdr">
+    <div>
+      <div class="daybadge">Day 11 / 100</div>
+      <h1>WorkAI Production Cockpit</h1>
+    </div>
+    <div class="updated">Data Updated: 9/12 08:25<br>Public Updated: 9/12 08:25</div>
+  </div>
+
+  <div class="health">SYSTEM HEALTH: Normal</div>
+
+  <section>
+    <h2>TODAY'S PUBLISH — X本投稿</h2>
+    <span class="status">READY — Owner投稿待ち</span>
+    <div class="txt">Day10のキャラ初Reel、実は制作済みでまだInstagramに出せていません。<br><br>AI自動投稿を2回試して失敗したため、投稿ボタンは人間(もり)が押す体制にしました。制作はAI、公開は人間です。<br><br>AIでできる仕事は、AIに。<br><br>Day 11/100</div>
+    <button class="primary" onclick="copyText('x-post-text', this)">投稿文をコピー</button>
+    <span id="x-post-text" hidden>Day10のキャラ初Reel、実は制作済みでまだInstagramに出せていません。
+
+AI自動投稿を2回試して失敗したため、投稿ボタンは人間(もり)が押す体制にしました。制作はAI、公開は人間です。
+
+AIでできる仕事は、AIに。
+
+Day 11/100</span>
+  </section>
+
+  
+  <section>
+    <h2>X本投稿(Day10・参考)</h2>
+    <span class="status posted">投稿済み</span>
+    <a class="btn" href="https://x.com/workai_lab777/status/2098408417480388997" target="_blank" rel="noopener">投稿を見る ›</a>
+  </section>
+
+  <section>
+    <h2>TODAY'S PUBLISH — Instagram Reel(Day10)</h2>
+    <span class="status">READY — Owner投稿待ち</span>
+    <video controls preload="metadata" src="day10-reel.mp4"></video>
+    <div class="txt">最近のReel、正直あまり伸びていません。100再生を超えた日もあれば、一桁の日もある。<br><br>文章だけで伝えるのには、限界があるのかもしれない。<br><br>そこで今日から、新しい相棒に手伝ってもらうことにしました。<br><br>WorkAI。もりと一緒に実験・検証・発信をするAIパートナーです。<br><br>効果があるかどうかは、正直まだ分かりません。次のReelから、実際に試して、数字で確認していきます。<br><br>AIでできる仕事は、AIに。<br><br>100日実験、Day10。<br><br>Day 10 / 100<br>#AI仕事研究所 #AIキャラクター #100日実験 #個人事業 #AIパートナー</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <a class="btn primary" href="day10-reel.mp4" download target="_blank" rel="noopener">MP4を開く ›</a>
+      <button onclick="copyText('ig-caption-text', this)">キャプションをコピー</button>
+    </div>
+    <span id="ig-caption-text" hidden>最近のReel、正直あまり伸びていません。100再生を超えた日もあれば、一桁の日もある。
+
+文章だけで伝えるのには、限界があるのかもしれない。
+
+そこで今日から、新しい相棒に手伝ってもらうことにしました。
+
+WorkAI。もりと一緒に実験・検証・発信をするAIパートナーです。
+
+効果があるかどうかは、正直まだ分かりません。次のReelから、実際に試して、数字で確認していきます。
+
+AIでできる仕事は、AIに。
+
+100日実験、Day10。
+
+Day 10 / 100
+#AI仕事研究所 #AIキャラクター #100日実験 #個人事業 #AIパートナー</span>
+  </section>
+
+  <section>
+    <h2>今日Ownerがやること</h2>
+    <div class="oa-item">□ X・Instagramへの再ログイン(自動化ブラウザ側で明示画面確認、数分)</div>
+  </section>
+
+  <section>
+    <h2>KPIサマリー</h2>
+    <div class="kpi">
+      <div class="tile"><div class="k">Revenue</div><div class="v">¥0</div></div>
+      <div class="tile"><div class="k">Profit</div><div class="v">¥0</div></div>
+      <div class="tile"><div class="k">Day30まで</div><div class="v">21日</div></div>
+      <div class="tile"><div class="k">Day100まで</div><div class="v">91日</div></div>
+    </div>
+  </section>
+
+  <footer>
+    WorkAI SSOT(data/publish/today.json)から自動生成。手編集なし。<br>
+    Pre-Morning/Morning/Evening Routineから無人publish(git push → GitHub Pages)。<br>
+    MVP版 — 詳細分析は当面 <a href="https://claude.ai/code/artifact/5e421a94-5083-49be-acc7-38f2250d9f56">開発用Cockpit</a> を参照。
+  </footer>
+
+</div>
+<script>
+function copyText(id, btn) {
+  var t = document.getElementById(id).textContent;
+  navigator.clipboard.writeText(t).then(function () {
+    var orig = btn.textContent;
+    btn.textContent = 'コピーしました ✓';
+    setTimeout(function () { btn.textContent = orig; }, 2000);
+  });
+}
+</script>
+</body>
+</html>
