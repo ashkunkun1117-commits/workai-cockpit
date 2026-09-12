@@ -19,6 +19,7 @@
   h2 { font-size:12.5px; margin:0; letter-spacing:.02em; }
   .status { display:inline-block; font-size:10px; font-weight:700; border-radius:999px; padding:2px 8px; background:var(--good-soft); color:var(--good); }
   .status.posted { background:var(--surface-sunken); color:var(--ink-muted); }
+  .status.waiting { background:var(--amber-soft); color:var(--amber); }
   .txt { background:var(--surface-sunken); border-radius:10px; padding:10px 12px; font-size:13.5px; line-height:1.7; }
   video { width:100%; border-radius:10px; display:block; background:#000; }
   button, a.btn { font-size:12px; font-weight:700; border-radius:999px; padding:7px 14px; border:1px solid var(--border); background:var(--surface); color:var(--ink); cursor:pointer; text-decoration:none; display:inline-block; }
@@ -100,14 +101,35 @@ Day 10 / 100
 
   
   <section>
-    <h2>次のReel(制作パイプライン)</h2>
-    <span class="status posted">未着手</span>
-    <div class="txt">Day11以降の新規Reel台本はまだ着手していません(本日はX投稿のみ)。Content Pipelineの「D+1 READY」原則に沿って次のReel企画・台本作成が必要です。</div>
+    <h2>次のReel — Day12 Reel(仮) — 制作はAI、公開は人間</h2>
+    <span class="status waiting">原稿READY — Owner録音待ち</span>
+    
+    <div class="txt" style="white-space:pre-wrap">実は、AIに全部任せようとして、うまくいかなかったことがあります。<br><br>キャラクターが初めて出るReel、実は制作はとっくに終わっていました。<br><br>でも、Instagramへの投稿だけは、AIが2回試して、2回とも失敗しました。<br><br>仕方ないので、投稿ボタンを押すところだけ、人間の僕がやることにしました。<br><br>制作はAI、公開は人間。<br><br>これも、AIに仕事を任せてみて初めてわかった、正直な線引きです。<br><br>AIでできる仕事は、AIに。<br><br>100日実験、Day12。</div>
+    <div style="font-size:11.5px;color:var(--ink-faint)">想定尺: 約35〜40秒</div>
+    <div style="font-size:11.5px;color:var(--ink-muted)">スマホの標準ボイスメモアプリ、静かな部屋、口から15〜20cm。所要約3分。噛んだらその文だけ録り直しでOK。</div>
+    <button class="primary" onclick="copyText('next-reel-script', this)">原稿をコピー</button>
+    <span id="next-reel-script" hidden>実は、AIに全部任せようとして、うまくいかなかったことがあります。
+
+キャラクターが初めて出るReel、実は制作はとっくに終わっていました。
+
+でも、Instagramへの投稿だけは、AIが2回試して、2回とも失敗しました。
+
+仕方ないので、投稿ボタンを押すところだけ、人間の僕がやることにしました。
+
+制作はAI、公開は人間。
+
+これも、AIに仕事を任せてみて初めてわかった、正直な線引きです。
+
+AIでできる仕事は、AIに。
+
+100日実験、Day12。</span>
+    
+    <div style="font-size:11.5px;color:var(--ink-faint)">録音した音声ファイルをこのままチャットで共有してください。共有され次第、Claude側で自動的にReel動画の作成(表情・ジェスチャー付き)を再開します。</div>
   </section>
 
   <section>
     <h2>今日Ownerがやること</h2>
-    <div class="oa-item">□ X・Instagramへの再ログイン(自動化ブラウザ側で明示画面確認、数分)</div>
+    <div class="oa-item">□ X・Instagramへの再ログイン(自動化ブラウザ側で明示画面確認、数分)</div><div class="oa-item">□ Day12 Reel原稿の音声収録(下記「次のReel」の原稿を読んで録音し、チャットで共有)</div>
   </section>
 
   <section>
