@@ -2,9 +2,9 @@
   "current_date": "2026-09-14",
   "business_day": 13,
   "data_updated_at": "2026-09-14T08:27:00+09:00",
-  "public_updated_at": "2026-09-13T23:28:17.928Z",
+  "public_updated_at": "2026-09-13T23:36:57.175Z",
   "system_health": "attention",
-  "system_health_reason": "Day13 Fixed Publishing Schedule TEST 1初日(X 07:30/Reel 07:45 JST)予定だったが、07:00予定のMorning Routineが実行ログ0バイトで異常終了(reports/daily/routine-logs/morning_2026-09-14_072842.log)し、Pre-Morningも05:45予定から遅延(08:25発火)。X本文は下書き済みでready化したが未投稿、Reelは未着手。次のRoutine/Owner確認で状況を追う。",
+  "system_health_reason": "Day13 Fixed Publishing Schedule TEST 1初日(X 07:30/Reel 07:45 JST)予定だったが、07:00予定のMorning Routineが実行ログ0バイトで異常終了(reports/daily/routine-logs/morning_2026-09-14_072842.log、08:31にも再発)。原因はautomations/run-daily-routine.ps1のコメントで既に特定済み(WakeToRun復帰後もアイドルスリープタイマーが独立稼働し実行中にPC再スリープ、claude.exeごと強制終了)で、SetThreadExecutionStateによる対処が同スクリプトへ追加済み(次回自動実行での検証待ち)。今回は手動起動のMorning Routineで復旧・実行中。X本文はready(Owner手動投稿待ち、7:30を過ぎている)、Reelは台本作成をContent Editorへ発注し制作再開。Xブラウザセッションは本Routine時点でunauthenticated(Instagramは認証済み、フォロワー11人)。",
   "today": {
     "x_post": {
       "status": "ready",
