@@ -1,19 +1,19 @@
 {
-  "current_date": "2026-09-13",
-  "business_day": 12,
-  "data_updated_at": "2026-09-13T20:05:00+09:00",
-  "public_updated_at": "2026-09-13T11:06:25.689Z",
+  "current_date": "2026-09-14",
+  "business_day": 13,
+  "data_updated_at": "2026-09-14T08:27:00+09:00",
+  "public_updated_at": "2026-09-13T23:28:17.928Z",
   "system_health": "attention",
-  "system_health_reason": "Day12 X投稿・Instagram Reel(WorkAI初のAI音声採用)とも実際の投稿をOwner本人ログイン画面で独立確認、完了。Day13用のX本文・Reelは次回Routineで新規制作予定(現時点で未着手)。",
+  "system_health_reason": "Day13 Fixed Publishing Schedule TEST 1初日(X 07:30/Reel 07:45 JST)予定だったが、07:00予定のMorning Routineが実行ログ0バイトで異常終了(reports/daily/routine-logs/morning_2026-09-14_072842.log)し、Pre-Morningも05:45予定から遅延(08:25発火)。X本文は下書き済みでready化したが未投稿、Reelは未着手。次のRoutine/Owner確認で状況を追う。",
   "today": {
     "x_post": {
-      "status": "not_ready",
-      "reason": "Day13用X本文は未作成(次回Pre-Morning/Morning Routineで作成予定)",
-      "text": null
+      "status": "ready",
+      "reason": "content/x/day13_post_draft.md Option A採用。Fixed Publishing Schedule TEST 1初日(07:30 JST予定)だが、本Pre-Morning実行時点(08:27)で予定時刻を過ぎており未投稿(投稿はOwner承認後)。",
+      "text": "正直に言うと、投稿時間はずっとバラバラでした。\n\n8時台の日も、17時台の日もあります。\n\n今日から7日間、Xは毎朝7:30・Instagramは7:45に固定します。\n\n時間を揃えたら反応は変わるのか、正直まだ分かりません。\n\nAIでできる仕事は、AIに。\n\nDay 13/100"
     },
     "ig_reel": {
       "status": "not_ready",
-      "reason": "Day13用Reelは未着手(VOICEVOX 青山龍星を標準音声として次回Routineで制作予定)",
+      "reason": "Day13用Reelは未着手(VOICEVOX 青山龍星を標準音声として次回Routine/Codexタスクで制作予定)。07:45 JST予定は本Pre-Morning実行時点で既に未達。",
       "video_file": null
     }
   },
