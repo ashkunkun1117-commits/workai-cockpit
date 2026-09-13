@@ -143,7 +143,8 @@
         '<video controls preload="metadata" src="' + esc(ig.video_file) + '"></video>' +
         (ig.caption ? '<div class="txt">' + esc(ig.caption) + '</div>' : '') +
         '<div style="display:flex;gap:8px;flex-wrap:wrap">' +
-        '<a class="btn primary" href="' + esc(ig.video_file) + '" target="_blank" rel="noopener">MP4を開く ›</a>' +
+        '<a class="btn primary" href="' + esc(ig.video_file) + '" download="WorkAI_Day' + esc(data.business_day) + '_Reel.mp4">MP4をダウンロード ›</a>' +
+        '<a class="btn" href="' + esc(ig.video_file) + '" target="_blank" rel="noopener">ブラウザで開く ›</a>' +
         '<button data-copy-key="ig-caption">キャプションをコピー</button></div>';
     } else {
       html += statusBadge((ig && ig.status) || 'not_ready') + renderProgressCard(ig);
@@ -175,7 +176,7 @@
         (item.video_file ? '<video controls preload="metadata" src="' + esc(item.video_file) + '"></video>' : '') +
         (item.caption ? '<div class="txt">' + esc(item.caption) + '</div>' : '') +
         '<div style="display:flex;gap:8px;flex-wrap:wrap">' +
-        (item.video_file ? '<a class="btn primary" href="' + esc(item.video_file) + '" target="_blank" rel="noopener">MP4を開く ›</a>' : '') +
+        (item.video_file ? '<a class="btn primary" href="' + esc(item.video_file) + '" download="WorkAI_Day' + esc(item.originally_day) + '_Reel.mp4">MP4をダウンロード ›</a>' : '') +
         '<button data-copy-key="' + key + '">キャプションをコピー</button></div></section>';
     }
     return '';
@@ -235,7 +236,7 @@
           '<video controls preload="metadata" src="' + esc(item.video_file) + '"></video>' +
           (item.caption ? '<div class="txt">' + esc(item.caption) + '</div>' : '') +
           '<div style="display:flex;gap:8px;flex-wrap:wrap">' +
-          '<a class="btn primary" href="' + esc(item.video_file) + '" target="_blank" rel="noopener">MP4を開く ›</a>' +
+          '<a class="btn primary" href="' + esc(item.video_file) + '" download="WorkAI_Day' + esc(item.day) + '_Reel.mp4">MP4をダウンロード ›</a>' +
           (item.caption ? '<button data-copy-key="' + key + '">キャプションをコピー</button>' : '') +
           (item.url ? '<a class="btn" href="' + esc(item.url) + '" target="_blank" rel="noopener">Instagramで見る ›</a>' : '') +
           '</div>' +
