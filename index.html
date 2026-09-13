@@ -205,16 +205,31 @@
   function renderHistory(data) {
     var h = data.history || [];
     if (!h.length) return '';
-    var html = '<div class="bucket-label">COMPLETED / HISTORY</div><section>';
-    h.forEach(function (item) {
+    var html = '<div class="bucket-label">COMPLETED / HISTORY</div>';
+    h.forEach(function (item, idx) {
       var label = item.type === 'x_post' ? 'X本投稿' : item.type === 'ig_reel' ? 'Instagram Reel' : esc(item.type);
-      html += '<div class="oa-item">' + label + '(Day' + esc(item.day) + ') — 投稿済み' +
-        (item.url ? ' <a href="' + esc(item.url) + '" target="_blank" rel="noopener">投稿を見る ›</a>' : '') +
-        (item.actual_published_at ? '<div style="font-size:10.5px;color:var(--ink-faint);margin-top:2px">実投稿: ' + esc(fmtStamp(item.actual_published_at)) + '</div>' : '') +
-        (item.verification_source ? '<div style="font-size:10.5px;color:var(--ink-faint)">確認方法: ' + esc(item.verification_source) + '</div>' : '') +
-        '</div>';
+      var hasMedia = item.type === 'ig_reel' && item.video_file;
+      if (hasMedia) {
+        var key = 'hist-' + idx;
+        copyTargets[key] = item.caption || '';
+        html += '<section><h2>' + label + '(Day' + esc(item.day) + ') — 投稿済み</h2>' +
+          '<video controls preload="metadata" src="' + esc(item.video_file) + '"></video>' +
+          (item.caption ? '<div class="txt">' + esc(item.caption) + '</div>' : '') +
+          '<div style="display:flex;gap:8px;flex-wrap:wrap">' +
+          '<a class="btn primary" href="' + esc(item.video_file) + '" target="_blank" rel="noopener">MP4を開く ›</a>' +
+          (item.caption ? '<button data-copy-key="' + key + '">キャプションをコピー</button>' : '') +
+          (item.url ? '<a class="btn" href="' + esc(item.url) + '" target="_blank" rel="noopener">Instagramで見る ›</a>' : '') +
+          '</div>' +
+          (item.verification_source ? '<div style="font-size:10.5px;color:var(--ink-faint)">確認方法: ' + esc(item.verification_source) + '</div>' : '') +
+          '</section>';
+      } else {
+        html += '<section><div class="oa-item">' + label + '(Day' + esc(item.day) + ') — 投稿済み' +
+          (item.url ? ' <a href="' + esc(item.url) + '" target="_blank" rel="noopener">投稿を見る ›</a>' : '') +
+          (item.actual_published_at ? '<div style="font-size:10.5px;color:var(--ink-faint);margin-top:2px">実投稿: ' + esc(fmtStamp(item.actual_published_at)) + '</div>' : '') +
+          (item.verification_source ? '<div style="font-size:10.5px;color:var(--ink-faint)">確認方法: ' + esc(item.verification_source) + '</div>' : '') +
+          '</div></section>';
+      }
     });
-    html += '</section>';
     return html;
   }
 

@@ -1,24 +1,24 @@
 {
   "current_date": "2026-09-13",
   "business_day": 12,
-  "data_updated_at": "2026-09-13T17:26:00+09:00",
-  "public_updated_at": "2026-09-13T08:26:20.504Z",
+  "data_updated_at": "2026-09-13T17:35:00+09:00",
+  "public_updated_at": "2026-09-13T08:33:09.941Z",
   "system_health": "attention",
-  "system_health_reason": "X・Instagramとも自動化ブラウザ(Playwright)で認証済み(authenticated)を実機確認、再ログインOwner Actionは解消。Publishing & Cockpit Operations v5.0への移行中のため、Day12のX本文・Reel(AI音声版)はまだ未完成(Reel音声生成はCodexへTask化済み、監視中)。",
+  "system_health_reason": "Day12 X本文は準備完了。Day12 Reelは音声生成済み(Windows SAPI代替、41.31秒)、動画レンダリングはCodexへ再依頼中(Pending Task Watchが自動監視)。完成次第自動反映予定。",
   "today": {
     "x_post": {
-      "status": "not_ready",
-      "reason": "Day12用X本文は未作成(Publishing & Cockpit Operations v5.0移行中、次回Routineで作成予定)",
-      "text": null
+      "status": "ready",
+      "text": "実は、AIに全部任せようとして、うまくいかなかったことがあります。\n\nキャラクター初登場のReel、制作はとっくに終わっていたのに、Instagramへの投稿だけAIが2回失敗しました。\n\nだから、投稿ボタンを押すところだけ人間(もり)がやる体制にしました。\n\n制作はAI、公開は人間。\n\nAIでできる仕事は、AIに。\n\nDay 12/100",
+      "source": "content/x/day12_post_draft.md"
     },
     "ig_reel": {
       "status": "in_production",
-      "reason": "COO指令によりReel音声はAI音声がデフォルトへ変更(Publishing & Cockpit Operations v5.0)。原稿は確定済み。音声エンジン(VOICEVOX)セットアップ・音声生成・Character Motion適用・レンダリングをCodexへTask化済み(2026-09-13)。完成次第このセクションへ反映する",
+      "reason": "AI音声は生成済み(Windows SAPI/Haruka、41.31秒、remotion-video/public/audio/day12-ai-voice.wav)。Codexへコンポジション作成・Character Motion適用・レンダリングを再依頼中(bounded revision、2026-09-13)。VOICEVOXはCodexサンドボックスからネットワーク取得不能のため今回は代替音声を使用、品質は次点(やや機械的)。完成次第このセクションへ反映する",
       "video_file": null,
       "caption": null,
       "script": "実は、AIに全部任せようとして、うまくいかなかったことがあります。\n\nキャラクターが初めて出るReel、実は制作はとっくに終わっていました。\n\nでも、Instagramへの投稿だけは、AIが2回試して、2回とも失敗しました。\n\n仕方ないので、投稿ボタンを押すところだけ、人間の僕がやることにしました。\n\n制作はAI、公開は人間。\n\nこれも、AIに仕事を任せてみて初めてわかった、正直な線引きです。\n\nAIでできる仕事は、AIに。\n\n100日実験、Day12。",
-      "script_status": "確定・AI音声生成待ち(Codex Task進行中)",
-      "estimated_seconds": "約35〜40秒",
+      "script_status": "確定・音声生成済み(41.31秒)・レンダリング進行中(Codex Task)",
+      "estimated_seconds": "約41秒(音声確定)",
       "source": "content/reel-json/day12_pivot_story.md"
     }
   },
@@ -45,6 +45,8 @@
       "day": 10,
       "status": "completed",
       "url": "https://www.instagram.com/p/DdJtnvYzAbz/",
+      "video_file": "day10-reel.mp4",
+      "caption": "最近のReel、正直あまり伸びていません。100再生を超えた日もあれば、一桁の日もある。\n\n文章だけで伝えるのには、限界があるのかもしれない。\n\nそこで今日から、新しい相棒に手伝ってもらうことにしました。\n\nWorkAI。もりと一緒に実験・検証・発信をするAIパートナーです。\n\n効果があるかどうかは、正直まだ分かりません。次のReelから、実際に試して、数字で確認していきます。\n\nAIでできる仕事は、AIに。\n\n100日実験、Day10。\n\nDay 10 / 100\n#AI仕事研究所 #AIキャラクター #100日実験 #個人事業 #AIパートナー",
       "actual_published_at": null,
       "verification_source": "Instagram profile(workai_lab777、キャプション完全一致)",
       "verified_at": "2026-09-13T16:50:00+09:00",
