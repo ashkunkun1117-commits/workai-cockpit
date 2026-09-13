@@ -1,10 +1,10 @@
 {
   "current_date": "2026-09-13",
   "business_day": 12,
-  "data_updated_at": "2026-09-13T16:50:00+09:00",
-  "public_updated_at": "2026-09-13T08:18:50.025Z",
+  "data_updated_at": "2026-09-13T17:26:00+09:00",
+  "public_updated_at": "2026-09-13T08:26:20.504Z",
   "system_health": "attention",
-  "system_health_reason": "Manual Publish Verification v1により、Day11 X投稿(2026-09-12 08:52 JST)・Day10 Instagram Reelともに実際の投稿を確認、CARRYOVERから解消済み。Publishing & Cockpit Operations v5.0への移行中のため、Day12のX本文・Reel(AI音声版)はまだ未完成(Reel音声生成はCodexへTask化済み、監視中)。",
+  "system_health_reason": "X・Instagramとも自動化ブラウザ(Playwright)で認証済み(authenticated)を実機確認、再ログインOwner Actionは解消。Publishing & Cockpit Operations v5.0への移行中のため、Day12のX本文・Reel(AI音声版)はまだ未完成(Reel音声生成はCodexへTask化済み、監視中)。",
   "today": {
     "x_post": {
       "status": "not_ready",
@@ -51,9 +51,7 @@
       "verification_note": "相対表示「1日前」のみ確認、正確なpublish時刻は未取得(推測しない)。インサイト数値は次回Routineで確認予定。"
     }
   ],
-  "owner_actions": [
-    "X・Instagramへの再ログイン(自動化ブラウザ側で明示画面確認、数分)"
-  ],
+  "owner_actions": [],
   "approval_queue": [],
   "revenue": {
     "revenue_jpy": 0,
