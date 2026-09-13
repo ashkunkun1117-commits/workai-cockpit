@@ -1,0 +1,56 @@
+{
+  "current_date": "2026-09-13",
+  "business_day": 12,
+  "data_updated_at": "2026-09-13T12:35:00+09:00",
+  "public_updated_at": "2026-09-13T05:38:28.400Z",
+  "system_health": "attention",
+  "system_health_reason": "全Scheduled Routineが2026-09-12 22:30〜2026-09-13 07:00の間停止(PC睡眠、根本原因調査中)。本ページはClaudeが手動で復旧・生成。Day12の新規X投稿・分析はまだ実行されていません。",
+  "publishing": {
+    "x": {
+      "status": "ready",
+      "text": "Day10のキャラ初Reel、実は制作済みでまだInstagramに出せていません。\n\nAI自動投稿を2回試して失敗したため、投稿ボタンは人間(もり)が押す体制にしました。制作はAI、公開は人間です。\n\nAIでできる仕事は、AIに。\n\nDay 11/100",
+      "note": "Day11作成分がまだ未投稿のため引き続き表示中(Day12の新規X下書きは自動Routine停止のため未作成、下記参照)",
+      "history": {
+        "status": "posted",
+        "url": "https://x.com/workai_lab777/status/2098408417480388997",
+        "day": 10
+      }
+    },
+    "instagram": {
+      "status": "ready",
+      "day": 10,
+      "video_file": "day10-reel.mp4",
+      "caption": "最近のReel、正直あまり伸びていません。100再生を超えた日もあれば、一桁の日もある。\n\n文章だけで伝えるのには、限界があるのかもしれない。\n\nそこで今日から、新しい相棒に手伝ってもらうことにしました。\n\nWorkAI。もりと一緒に実験・検証・発信をするAIパートナーです。\n\n効果があるかどうかは、正直まだ分かりません。次のReelから、実際に試して、数字で確認していきます。\n\nAIでできる仕事は、AIに。\n\n100日実験、Day10。\n\nDay 10 / 100\n#AI仕事研究所 #AIキャラクター #100日実験 #個人事業 #AIパートナー",
+      "script": "ちょっと聞いてください。\n\n最近のReel、正直あまり伸びていません。100再生を超えた日もあれば、一桁の日もある。\n\n文章だけで伝えるのには、限界があるのかもしれない。\n\nそこで今日から、新しい相棒に手伝ってもらうことにしました。\n\nWorkAI。もりと一緒に実験・検証・発信をするAIパートナーです。\n\n効果があるかどうかは、正直まだ分かりません。次のReelから、実際に試して、数字で確認していきます。\n\nAIでできる仕事は、AIに。\n\n100日実験、Day10。",
+      "script_status": "収録済み・レンダリング済み(参考表示)"
+    }
+  },
+  "next_reel": {
+    "status": "script_ready_awaiting_recording",
+    "title": "Day12 Reel(仮) — 制作はAI、公開は人間",
+    "script": "実は、AIに全部任せようとして、うまくいかなかったことがあります。\n\nキャラクターが初めて出るReel、実は制作はとっくに終わっていました。\n\nでも、Instagramへの投稿だけは、AIが2回試して、2回とも失敗しました。\n\n仕方ないので、投稿ボタンを押すところだけ、人間の僕がやることにしました。\n\n制作はAI、公開は人間。\n\nこれも、AIに仕事を任せてみて初めてわかった、正直な線引きです。\n\nAIでできる仕事は、AIに。\n\n100日実験、Day12。",
+    "estimated_seconds": "約35〜40秒",
+    "recording_note": "スマホの標準ボイスメモアプリ、静かな部屋、口から15〜20cm。所要約3分。噛んだらその文だけ録り直しでOK。",
+    "source": "content/reel-json/day12_pivot_story.md",
+    "note": "録音した音声ファイルをこのままチャットで共有してください。共有され次第、Claude側で自動的にReel動画の作成(表情・ジェスチャー付き)を再開します。"
+  },
+  "owner_actions": [
+    "X・Instagramへの再ログイン(自動化ブラウザ側で明示画面確認、数分)",
+    "Day12 Reel原稿の音声収録(下記「次のReel」の原稿を読んで録音し、チャットで共有)"
+  ],
+  "approval_queue": [],
+  "revenue": {
+    "revenue_jpy": 0,
+    "profit_jpy": 0,
+    "day30_remaining": 21,
+    "day100_remaining": 91,
+    "product_signals": 0,
+    "blocked_tasks": 0
+  },
+  "ai_learning": {
+    "observation": "2026-09-12 22:30〜2026-09-13 07:00の間、全Scheduled RoutineがPC睡眠により停止(後述の障害調査参照)。この間の新規市場データ収集・分析は行われていません。",
+    "hypothesis": "",
+    "decision": "",
+    "next_experiment": "Morning Publishing Experiment(07:00〜08:00投稿)はDay2/7からやり直しではなく、実際にX/Reelを投稿できたDayのみをカウントする方針で継続。"
+  }
+}
