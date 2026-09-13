@@ -1,8 +1,8 @@
 {
   "current_date": "2026-09-13",
   "business_day": 12,
-  "data_updated_at": "2026-09-13T19:45:00+09:00",
-  "public_updated_at": "2026-09-13T10:44:15.142Z",
+  "data_updated_at": "2026-09-13T19:55:00+09:00",
+  "public_updated_at": "2026-09-13T10:55:17.653Z",
   "system_health": "ok",
   "system_health_reason": "Day12のX本文・Reel(MP4完成、Character Motion適用済み、Business QA PASS)とも06:00デッドライン前にCockpitから取得可能。Owner作業は07:30/07:45の投稿操作のみ。",
   "today": {
@@ -16,9 +16,9 @@
       "video_file": "day12-reel.mp4",
       "caption": "実は、AIに全部任せようとして、うまくいかなかったことがあります。\n\nキャラクターが初めて出るReel、実は制作はとっくに終わっていました。\n\nでも、Instagramへの投稿だけは、AIが2回試して、2回とも失敗しました。\n\n仕方ないので、投稿ボタンを押すところだけ、人間の僕がやることにしました。\n\n制作はAI、公開は人間。\n\nこれも、AIに仕事を任せてみて初めてわかった、正直な線引きです。\n\nAIでできる仕事は、AIに。\n\n100日実験、Day12。\n\nDay 12 / 100\n#AI仕事研究所 #AIキャラクター #100日実験 #個人事業 #AIパートナー",
       "script": "実は、AIに全部任せようとして、うまくいかなかったことがあります。\n\nキャラクターが初めて出るReel、実は制作はとっくに終わっていました。\n\nでも、Instagramへの投稿だけは、AIが2回試して、2回とも失敗しました。\n\n仕方ないので、投稿ボタンを押すところだけ、人間の僕がやることにしました。\n\n制作はAI、公開は人間。\n\nこれも、AIに仕事を任せてみて初めてわかった、正直な線引きです。\n\nAIでできる仕事は、AIに。\n\n100日実験、Day12。",
-      "script_status": "確定・レンダリング完了(AI音声: VOICEVOX 青山龍星・ノーマル、46.44秒)",
-      "estimated_seconds": "46.44秒(実測)",
-      "voice_note": "Owner指摘(キャラクターが男性なのに音声が女性で違和感、より人間味のある声に)を受けて音声を差し替え。VOICEVOX 青山龍星(id=13、ノーマル)を採用(落ち着いた大人の男性声、VOICEVOXの中でも自然な人間らしい話し方で知られる話者)。音声長変更に伴いシーン尺を比例再計算し再レンダリング済み。これをDay13以降のWorkAI標準音声候補とする(Owner試聴後に正式確定)。",
+      "script_status": "確定・レンダリング完了(AI音声: VOICEVOX 青山龍星・ノーマル、36.6秒)",
+      "estimated_seconds": "36.6秒(実測)",
+      "voice_note": "Owner指摘(1: キャラクターが男性なのに音声が女性で違和感 → VOICEVOX 青山龍星(id=13、ノーマル、落ち着いた大人の男性声)へ変更。2: 「日本語をしゃべっていない」→ 原因調査の結果、シェル経由のcurlでテキストをVOICEVOXへ送る際にUTF-8エンコードが破損しており、日本語文が正しく読み上げられていなかったことが判明。Node.js fetch+encodeURIComponentで正しくエンコードし直し、VOICEVOXが返すkana(読み仮名)を全文照合してスクリプトどおりに読み上げられていることを確認したうえで再生成・再レンダリング(36.6秒)。これをDay13以降のWorkAI標準音声候補とする(Owner試聴後に正式確定)。",
       "source": "content/reel-json/day12_pivot_story.md"
     }
   },
