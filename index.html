@@ -32,6 +32,9 @@
   .txt { background:var(--surface-sunken); border-radius:10px; padding:10px 12px; font-size:13.5px; line-height:1.7; white-space:pre-wrap; }
   .carryover-meta { font-size:11px; color:var(--amber); font-weight:700; }
   .carryover-reason { font-size:11.5px; color:var(--ink-muted); }
+  .progress-card { background:var(--surface-sunken); border-radius:10px; padding:8px 12px; display:flex; flex-direction:column; gap:3px; font-size:11.5px; }
+  .progress-row { display:flex; gap:8px; }
+  .progress-k { color:var(--ink-faint); font-weight:700; width:88px; flex-shrink:0; }
   video { width:100%; border-radius:10px; display:block; background:#000; }
   button, a.btn { font-size:12px; font-weight:700; border-radius:999px; padding:7px 14px; border:1px solid var(--border); background:var(--surface); color:var(--ink); cursor:pointer; text-decoration:none; display:inline-block; }
   button.primary, a.btn.primary { background:var(--accent); border-color:var(--accent); color:var(--accent-ink); }
@@ -96,7 +99,25 @@
   function statusBadge(status, readyLabel) {
     if (status === 'ready' || status === 'posted') return '<span class="status">' + esc(readyLabel || 'READY') + '</span>';
     if (status === 'in_production') return '<span class="status production">IN PRODUCTION</span>';
+    if (status === 'blocked') return '<span class="status notready">BLOCKED</span>';
     return '<span class="status notready">NOT READY' + (status ? ' (' + esc(status) + ')' : '') + '</span>';
+  }
+
+  // Reel Asset Visibility v1(COO指令、2026-09-13): IN PRODUCTION/BLOCKEDの間、
+  // 曖昧な進捗文だけでなくStage/Task/Last Updated/Nextを構造化して表示する。
+  function renderProgressCard(item) {
+    if (!item) return '<div class="carryover-reason">本日分はまだ準備できていません</div>';
+    var rows = '';
+    if (item.stage) rows += '<div class="progress-row"><span class="progress-k">Stage</span><span>' + esc(item.stage) + '</span></div>';
+    if (item.task_id) rows += '<div class="progress-row"><span class="progress-k">Task</span><span>' + esc(item.task_id) + '</span></div>';
+    if (item.last_updated_at) rows += '<div class="progress-row"><span class="progress-k">Last Updated</span><span>' + esc(fmtStamp(item.last_updated_at)) + '</span></div>';
+    if (item.next_step) rows += '<div class="progress-row"><span class="progress-k">Next</span><span>' + esc(item.next_step) + '</span></div>';
+    var html = rows ? '<div class="progress-card">' + rows + '</div>' : '';
+    html += '<div class="carryover-reason">' + esc(item.reason || (item.status === 'blocked' ? '原因不明のBLOCKED状態' : '本日分はまだ準備できていません')) + '</div>';
+    if (item.status === 'blocked' && item.fallback_used) {
+      html += '<div class="carryover-reason" style="color:var(--good)">フォールバックを自動適用済み: ' + esc(item.fallback_used) + '</div>';
+    }
+    return html;
   }
 
   function renderToday(data) {
@@ -110,8 +131,7 @@
       html += statusBadge('ready', 'READY') + '<div class="txt">' + esc(x.text) + '</div>' +
         '<button class="primary" data-copy-key="x-post">投稿文をコピー</button>';
     } else {
-      html += statusBadge((x && x.status) || 'not_ready') +
-        '<div class="carryover-reason">' + esc((x && x.reason) || '本日分のX本文はまだ準備できていません') + '</div>';
+      html += statusBadge((x && x.status) || 'not_ready') + renderProgressCard(x);
     }
     html += '</section>';
 
@@ -126,8 +146,7 @@
         '<a class="btn primary" href="' + esc(ig.video_file) + '" target="_blank" rel="noopener">MP4を開く ›</a>' +
         '<button data-copy-key="ig-caption">キャプションをコピー</button></div>';
     } else {
-      html += statusBadge((ig && ig.status) || 'not_ready') +
-        '<div class="carryover-reason">' + esc((ig && ig.reason) || '本日分のReelはまだ準備できていません') + '</div>';
+      html += statusBadge((ig && ig.status) || 'not_ready') + renderProgressCard(ig);
       if (ig && ig.script) {
         copyTargets['ig-script'] = ig.script;
         html += '<details><summary style="cursor:pointer;font-size:12px;font-weight:700;color:var(--ink-muted)">原稿を見る(' + esc(ig.script_status || '') + ')</summary>' +
