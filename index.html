@@ -15,6 +15,9 @@
   h1 { font-size:18px; margin:6px 0 0; }
   .updated { font-size:10.5px; color:var(--ink-faint); text-align:right; line-height:1.5; }
   .health { padding:9px 14px; border-radius:12px; font-size:12.5px; font-weight:700; background:var(--good-soft); color:var(--good); }
+  .health.attention { background:var(--amber-soft); color:var(--amber); }
+  .health.red { background:#fbeae9; color:#c4453f; }
+  .health-reason { font-size:11px; font-weight:500; margin-top:4px; opacity:.9; }
   section { background:var(--surface); border:1px solid var(--border); border-radius:16px; padding:14px 16px; display:flex; flex-direction:column; gap:8px; }
   h2 { font-size:12.5px; margin:0; letter-spacing:.02em; }
   .status { display:inline-block; font-size:10px; font-weight:700; border-radius:999px; padding:2px 8px; background:var(--good-soft); color:var(--good); }
@@ -38,13 +41,16 @@
 
   <div class="hdr">
     <div>
-      <div class="daybadge">Day 11 / 100</div>
+      <div class="daybadge">Day 12 / 100</div>
       <h1>WorkAI Production Cockpit</h1>
     </div>
-    <div class="updated">Data Updated: 9/12 08:25<br>Public Updated: 9/12 08:25</div>
+    <div class="updated">Data Updated: 9/13 12:35<br>Public Updated: 9/13 12:35</div>
   </div>
 
-  <div class="health">SYSTEM HEALTH: Normal</div>
+  <div class="health attention">
+    SYSTEM HEALTH: Attention
+    <div class="health-reason">全Scheduled Routineが2026-09-12 22:30〜2026-09-13 07:00の間停止(PC睡眠、根本原因調査中)。本ページはClaudeが手動で復旧・生成。Day12の新規X投稿・分析はまだ実行されていません。</div>
+  </div>
 
   <section>
     <h2>TODAY'S PUBLISH — X本投稿</h2>
@@ -58,6 +64,7 @@ AI自動投稿を2回試して失敗したため、投稿ボタンは人間(も�
 AIでできる仕事は、AIに。
 
 Day 11/100</span>
+    <div style="font-size:11px;color:var(--ink-faint)">Day11作成分がまだ未投稿のため引き続き表示中(Day12の新規X下書きは自動Routine停止のため未作成、下記参照)</div>
   </section>
 
   
@@ -128,6 +135,11 @@ AIでできる仕事は、AIに。
   </section>
 
   <section>
+    <h2>APPROVAL QUEUE</h2>
+    <div class="oa-item">現在、承認待ちの戦略返信候補はありません</div>
+  </section>
+
+  <section>
     <h2>今日Ownerがやること</h2>
     <div class="oa-item">□ X・Instagramへの再ログイン(自動化ブラウザ側で明示画面確認、数分)</div><div class="oa-item">□ Day12 Reel原稿の音声収録(下記「次のReel」の原稿を読んで録音し、チャットで共有)</div>
   </section>
@@ -139,6 +151,19 @@ AIでできる仕事は、AIに。
       <div class="tile"><div class="k">Profit</div><div class="v">¥0</div></div>
       <div class="tile"><div class="k">Day30まで</div><div class="v">21日</div></div>
       <div class="tile"><div class="k">Day100まで</div><div class="v">91日</div></div>
+      <div class="tile"><div class="k">Product Signals</div><div class="v">0</div></div>
+      <div class="tile"><div class="k">Blocked Tasks</div><div class="v">0</div></div>
+    </div>
+  </section>
+
+  
+  <section>
+    <h2>AI Learning</h2>
+    <div class="txt">
+      <div><b>Observation:</b> 2026-09-12 22:30〜2026-09-13 07:00の間、全Scheduled RoutineがPC睡眠により停止(後述の障害調査参照)。この間の新規市場データ収集・分析は行われていません。</div>
+      
+      
+      <div style="margin-top:6px"><b>Next:</b> Morning Publishing Experiment(07:00〜08:00投稿)はDay2/7からやり直しではなく、実際にX/Reelを投稿できたDayのみをカウントする方針で継続。</div>
     </div>
   </section>
 
