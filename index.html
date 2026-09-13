@@ -139,31 +139,45 @@
     return html;
   }
 
+  function renderCarryoverItem(item, key) {
+    if (item.type === 'x_post') {
+      copyTargets[key] = item.text || '';
+      return '<section class="carryover"><h2>X本投稿(Day' + esc(item.originally_day) + '・持ち越し)</h2>' +
+        '<div class="carryover-meta">Originally: Day' + esc(item.originally_day) + '</div>' +
+        '<div class="carryover-reason">持ち越し理由: ' + esc(item.reason || '') + ' / 現在の状態: ' + esc(item.current_status || '') + '</div>' +
+        '<div class="txt">' + esc(item.text) + '</div>' +
+        '<button class="primary" data-copy-key="' + key + '">投稿文をコピー</button></section>';
+    }
+    if (item.type === 'ig_reel') {
+      copyTargets[key] = item.caption || '';
+      return '<section class="carryover"><h2>Instagram Reel(Day' + esc(item.originally_day) + '・持ち越し)</h2>' +
+        '<div class="carryover-meta">Originally: Day' + esc(item.originally_day) + '</div>' +
+        '<div class="carryover-reason">持ち越し理由: ' + esc(item.reason || '') + ' / 現在の状態: ' + esc(item.current_status || '') + '</div>' +
+        (item.video_file ? '<video controls preload="metadata" src="' + esc(item.video_file) + '"></video>' : '') +
+        (item.caption ? '<div class="txt">' + esc(item.caption) + '</div>' : '') +
+        '<div style="display:flex;gap:8px;flex-wrap:wrap">' +
+        (item.video_file ? '<a class="btn primary" href="' + esc(item.video_file) + '" target="_blank" rel="noopener">MP4を開く ›</a>' : '') +
+        '<button data-copy-key="' + key + '">キャプションをコピー</button></div></section>';
+    }
+    return '';
+  }
+
+  // Manual Publish Verification v1(2026-09-13): current_status='verification_pending'の
+  // 項目は通常のCARRYOVERへ混ぜず、専用バケットで表示する(Ownerが投稿したと言っても
+  // AIが確認できない場合、いつまでも通常のCARRYOVERとして放置しない)。
   function renderCarryover(data) {
     var items = data.carryover || [];
-    if (!items.length) return '';
-    var html = '<div class="bucket-label">CARRYOVER / BLOCKED</div>';
-    items.forEach(function (item, idx) {
-      var key = 'carry-' + idx;
-      if (item.type === 'x_post') {
-        copyTargets[key] = item.text || '';
-        html += '<section class="carryover"><h2>X本投稿(Day' + esc(item.originally_day) + '・持ち越し)</h2>' +
-          '<div class="carryover-meta">Originally: Day' + esc(item.originally_day) + '</div>' +
-          '<div class="carryover-reason">持ち越し理由: ' + esc(item.reason || '') + ' / 現在の状態: ' + esc(item.current_status || '') + '</div>' +
-          '<div class="txt">' + esc(item.text) + '</div>' +
-          '<button class="primary" data-copy-key="' + key + '">投稿文をコピー</button></section>';
-      } else if (item.type === 'ig_reel') {
-        copyTargets[key] = item.caption || '';
-        html += '<section class="carryover"><h2>Instagram Reel(Day' + esc(item.originally_day) + '・持ち越し)</h2>' +
-          '<div class="carryover-meta">Originally: Day' + esc(item.originally_day) + '</div>' +
-          '<div class="carryover-reason">持ち越し理由: ' + esc(item.reason || '') + ' / 現在の状態: ' + esc(item.current_status || '') + '</div>' +
-          (item.video_file ? '<video controls preload="metadata" src="' + esc(item.video_file) + '"></video>' : '') +
-          (item.caption ? '<div class="txt">' + esc(item.caption) + '</div>' : '') +
-          '<div style="display:flex;gap:8px;flex-wrap:wrap">' +
-          (item.video_file ? '<a class="btn primary" href="' + esc(item.video_file) + '" target="_blank" rel="noopener">MP4を開く ›</a>' : '') +
-          '<button data-copy-key="' + key + '">キャプションをコピー</button></div></section>';
-      }
-    });
+    var pending = items.filter(function (i) { return i.current_status === 'verification_pending'; });
+    var rest = items.filter(function (i) { return i.current_status !== 'verification_pending'; });
+    var html = '';
+    if (pending.length) {
+      html += '<div class="bucket-label">PUBLISH VERIFICATION PENDING</div>';
+      pending.forEach(function (item, idx) { html += renderCarryoverItem(item, 'pending-' + idx); });
+    }
+    if (rest.length) {
+      html += '<div class="bucket-label">CARRYOVER / BLOCKED</div>';
+      rest.forEach(function (item, idx) { html += renderCarryoverItem(item, 'carry-' + idx); });
+    }
     return html;
   }
 
@@ -193,12 +207,12 @@
     if (!h.length) return '';
     var html = '<div class="bucket-label">COMPLETED / HISTORY</div><section>';
     h.forEach(function (item) {
-      if (item.type === 'x_post') {
-        html += '<div class="oa-item">X本投稿(Day' + esc(item.day) + ') — 投稿済み' +
-          (item.url ? ' <a href="' + esc(item.url) + '" target="_blank" rel="noopener">投稿を見る ›</a>' : '') + '</div>';
-      } else if (item.type === 'ig_reel') {
-        html += '<div class="oa-item">Instagram Reel(Day' + esc(item.day) + ') — 投稿済み</div>';
-      }
+      var label = item.type === 'x_post' ? 'X本投稿' : item.type === 'ig_reel' ? 'Instagram Reel' : esc(item.type);
+      html += '<div class="oa-item">' + label + '(Day' + esc(item.day) + ') — 投稿済み' +
+        (item.url ? ' <a href="' + esc(item.url) + '" target="_blank" rel="noopener">投稿を見る ›</a>' : '') +
+        (item.actual_published_at ? '<div style="font-size:10.5px;color:var(--ink-faint);margin-top:2px">実投稿: ' + esc(fmtStamp(item.actual_published_at)) + '</div>' : '') +
+        (item.verification_source ? '<div style="font-size:10.5px;color:var(--ink-faint)">確認方法: ' + esc(item.verification_source) + '</div>' : '') +
+        '</div>';
     });
     html += '</section>';
     return html;
