@@ -2,7 +2,7 @@
   "current_date": "2026-09-15",
   "business_day": 14,
   "data_updated_at": "2026-09-14T22:40:00+09:00",
-  "public_updated_at": "2026-09-14T23:10:18.825Z",
+  "public_updated_at": "2026-09-14T23:36:35.670Z",
   "system_health": "attention",
   "system_health_reason": "Morning Routine自動発火の0バイトログ障害が2026-09-14・09-15と2日連続で再発(routine_scheduler.logに記録が残らない=プロセスごと強制終了)。前回の修正(SetThreadExecutionState)では解消せず、Codexへ再調査タスクを作成しディスパッチ済み(b9e281e0-4f66-413a-a67c-40dc22310691、codex job task-mu1tm9f7-qli2ey)。Day13分のX投稿・Instagram Reelは実際にはOwnerが手動投稿済みであることを本Routineで独立確認し、Cockpitへ反映済み。Xブラウザセッションは本日もunauthenticated(閲覧は可能、ログイン操作は要求していない)、Instagramはauthenticated。Day14 X投稿文は確定済み(ready)、Reelは台本確定・Remotion実装中(task a9270f62-372f-4e34-8ba6-b01ad9dca1fd)。",
   "today": {
@@ -12,8 +12,10 @@
       "text": "時間を固定して、今日で2日目です。\n\nDay13のXは表示4件、Instagramはまだ投稿17時間で数字が出ていません。\n\n正直、1日だけでは何も判断できないなと思いました。\n\n7日間、まずは記録を続けます。\n\nAIでできる仕事は、AIに。\n\nDay 14/100"
     },
     "ig_reel": {
-      "status": "not_ready",
-      "reason": "台本確定(content/reel-json/day14_fixed_schedule_test_day2.md、全6シーンWorkAI Character Master A必須)。Remotion実装・VOICEVOX音声生成・レンダリングをCodexへ発注し作業中(task a9270f62-372f-4e34-8ba6-b01ad9dca1fd)。"
+      "status": "ready",
+      "reason": "制作完了。CodexのレンダリングはOK(07:59完了)だったが、Codex自身の検証記録の直前にChatGPT利用量上限に達し放置されていたため、Claude Business QAで代わりに検証(ffprobe・frame0/40/175/335/480/600/800目視、全シーンでキャラクター登場・二重露光なしを確認)。Fixed Publishing Schedule TEST 1 Day2、07:45 JST予定は経過済みのため、Owner承認後の投稿となる。",
+      "video_file": "day14-reel.mp4",
+      "caption": "時間を固定して、今日で2日目です。\n\nDay13のXは表示4件でした。Instagramはまだ投稿から17時間で、再生数などの具体的な数字はまだ確認できていません。\n\n正直、Day12の3件からDay13の4件を見て、つい「伸びたのかな」と思いかけました。\nでも、データ点はまだ2つだけ。それで判断するのは早いなと思い直しました。\n\n7日間、まずは淡々と記録を続けます。効果があったかどうかは、7日間終えてから振り返ります。\n\nAIでできる仕事は、AIに。\n\n100日実験、Day14。\n\nDay 14 / 100\n#AI仕事研究所 #100日実験 #個人事業 #発信の悩み #AIパートナー"
     }
   },
   "carryover": [],
