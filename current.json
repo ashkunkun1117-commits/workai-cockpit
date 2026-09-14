@@ -2,7 +2,7 @@
   "current_date": "2026-09-15",
   "business_day": 14,
   "data_updated_at": "2026-09-14T22:40:00+09:00",
-  "public_updated_at": "2026-09-14T22:38:41.170Z",
+  "public_updated_at": "2026-09-14T22:51:45.922Z",
   "system_health": "attention",
   "system_health_reason": "Morning Routine自動発火の0バイトログ障害が2026-09-14・09-15と2日連続で再発(routine_scheduler.logに記録が残らない=プロセスごと強制終了)。前回の修正(SetThreadExecutionState)では解消せず、Codexへ再調査タスクを作成しディスパッチ済み(b9e281e0-4f66-413a-a67c-40dc22310691、codex job task-mu1tm9f7-qli2ey)。Day13分のX投稿・Instagram Reelは実際にはOwnerが手動投稿済みであることを本Routineで独立確認し、Cockpitへ反映済み。Xブラウザセッションは本日もunauthenticated(閲覧は可能、ログイン操作は要求していない)、Instagramはauthenticated。Day14 X投稿文は確定済み(ready)、Reelは台本確定・Remotion実装中(task a9270f62-372f-4e34-8ba6-b01ad9dca1fd)。",
   "today": {
@@ -26,7 +26,7 @@
       "actual_published_at": null,
       "verification_source": "X timeline(workai_lab777、本文完全一致、相対表示「22h」)",
       "verified_at": "2026-09-14T22:30:00+09:00",
-      "verification_note": "impressions=4(投稿ページ実測、kpi_daily.csv Day13へ反映済み)。正確な投稿時刻は相対表示のみのため未記録(推測しない)。"
+      "verification_note": "impressions=4, likes=0, replies=0, reposts=0(投稿ページ実測、kpi_daily.csv Day13へ反映済み)。正確な投稿時刻は相対表示のみのため未記録(推測しない)。Day9(22)→Day10(18)→Day11(13)→Day12(7)→Day13(4)と5日連続減少。"
     },
     {
       "type": "ig_reel",
@@ -36,9 +36,9 @@
       "video_file": "day13-reel.mp4",
       "caption": "正直に言うと、投稿する時間はずっとバラバラでした。\n\n13時台の日もあれば、8時台、17時台の日もあります。狙って揃えていたわけではなく、その日にできたタイミングで出していました。\n\n今日から7日間、Xは毎朝7時30分、Instagramは7時45分に固定してみます。\n\n時間を揃えたら反応が変わるのか、正直まだ分かりません。分からないまま、まずは試してみます。\n\nAIでできる仕事は、AIに。\n\n100日実験、Day13。\n\nDay 13 / 100\n#AI仕事研究所 #100日実験 #個人事業 #発信の悩み #AIパートナー",
       "actual_published_at": null,
-      "verification_source": "Instagram profile(workai_lab777、キャプション完全一致、相対表示「17時間前」)",
-      "verified_at": "2026-09-14T22:31:00+09:00",
-      "verification_note": "正確な投稿時刻・view数はInstagram UI上取得できず未記録(推測しない)。次回Routineで確認予定。"
+      "verification_source": "Instagram insights(workai_lab777、キャプション完全一致、インサイト画面実測)",
+      "verified_at": "2026-09-15T07:40:00+09:00",
+      "verification_note": "views=10, reach(閲覧者)=8, フォロワー以外60%, いいね/コメント/保存/シェアいずれも0(data/instagram/post_insights_log.csvへ記録済み)。正確な投稿時刻は相対表示のみのため未記録(推測しない)。Day10(29)→Day12(24)→Day13(10)と再生数も減少。"
     },
     {
       "type": "x_post",
@@ -58,9 +58,9 @@
       "video_file": "day12-reel.mp4",
       "caption": "実は、AIに全部任せようとして、うまくいかなかったことがあります。\n\nキャラクターが初めて出るReel、実は制作はとっくに終わっていました。\n\nでも、Instagramへの投稿だけは、AIが2回試して、2回とも失敗しました。\n\n仕方ないので、投稿ボタンを押すところだけ、人間の僕がやることにしました。\n\n制作はAI、公開は人間。\n\nこれも、AIに仕事を任せてみて初めてわかった、正直な線引きです。\n\nAIでできる仕事は、AIに。\n\n100日実験、Day12。\n\nDay 12 / 100\n#AI仕事研究所 #AIキャラクター #100日実験 #個人事業 #AIパートナー",
       "actual_published_at": null,
-      "verification_source": "Instagram profile(workai_lab777、キャプション完全一致)",
-      "verified_at": "2026-09-13T20:05:00+09:00",
-      "verification_note": "初のAI音声(VOICEVOX 青山龍星)Reel。正確なpublish時刻はInstagram UI上取得できず未記録(推測しない)。"
+      "verification_source": "Instagram insights(workai_lab777、キャプション完全一致、インサイト画面実測)",
+      "verified_at": "2026-09-15T07:40:00+09:00",
+      "verification_note": "初のAI音声(VOICEVOX 青山龍星)Reel。views=24, reach(閲覧者)=22, フォロワー以外100%, いいね/コメント/保存/シェアいずれも0(data/instagram/post_insights_log.csvへ記録済み)。正確なpublish時刻はInstagram UI上取得できず未記録(推測しない)。"
     },
     {
       "type": "x_post",
@@ -80,9 +80,9 @@
       "video_file": "day10-reel.mp4",
       "caption": "最近のReel、正直あまり伸びていません。100再生を超えた日もあれば、一桁の日もある。\n\n文章だけで伝えるのには、限界があるのかもしれない。\n\nそこで今日から、新しい相棒に手伝ってもらうことにしました。\n\nWorkAI。もりと一緒に実験・検証・発信をするAIパートナーです。\n\n効果があるかどうかは、正直まだ分かりません。次のReelから、実際に試して、数字で確認していきます。\n\nAIでできる仕事は、AIに。\n\n100日実験、Day10。\n\nDay 10 / 100\n#AI仕事研究所 #AIキャラクター #100日実験 #個人事業 #AIパートナー",
       "actual_published_at": null,
-      "verification_source": "Instagram profile(workai_lab777、キャプション完全一致)",
-      "verified_at": "2026-09-13T16:50:00+09:00",
-      "verification_note": "相対表示「1日前」のみ確認、正確なpublish時刻は未取得(推測しない)。"
+      "verification_source": "Instagram insights(workai_lab777、キャプション完全一致、インサイト画面実測)",
+      "verified_at": "2026-09-15T07:40:00+09:00",
+      "verification_note": "views=29, reach(閲覧者)=29, フォロワー以外100%, いいね/コメント/保存/シェアいずれも0(data/instagram/post_insights_log.csvへ記録済み)。相対表示「1日前」のみ確認、正確なpublish時刻は未取得(推測しない)。"
     }
   ],
   "owner_actions": [],
@@ -96,9 +96,9 @@
     "blocked_tasks": 0
   },
   "ai_learning": {
-    "observation": "Day13(Fixed Publishing Schedule TEST 1初日)はMorning Routine自動発火が失敗したにもかかわらず、Ownerが自主的にX/Instagramへ手動投稿(X: 07:30予定に対し実際は数時間後、IG Reel: 相対表示のみで正確な時刻不明)。制作(Codex)は完了していたため、公開判断だけ人間に残った。",
-    "hypothesis": "Morning Routine自動発火の0バイトログ障害は2026-09-14に一度『修正』(SetThreadExecutionState追加)したはずが、2026-09-15も同一症状で再発した。バッテリー駆動時のタスクスケジューラ条件が真因の可能性があり、Codexへ再調査タスク(b9e281e0-4f66-413a-a67c-40dc22310691)を作成した。",
+    "observation": "Day13(Fixed Publishing Schedule TEST 1初日)はMorning Routine自動発火が失敗したにもかかわらず、Ownerが自主的にX/Instagramへ手動投稿(X: 07:30予定に対し実際は数時間後、IG Reel: 相対表示のみで正確な時刻不明)。制作(Codex)は完了していたため、公開判断だけ人間に残った。2026-09-15、Evening Routine不通で滞っていたSNS分析(実測データに基づく)をClaudeが独立実施し、X表示回数(Day9=22→Day10=18→Day11=13→Day12=7→Day13=4)・Instagram Reel再生数(Day10=29→Day12=24→Day13=10)とも5日連続で減少していることを発見。さらに、全3件のReel(Day10/12/13)は外部(非フォロワー)へのリーチ自体は60〜100%と機能しているにもかかわらず、いいね・コメント・保存・シェアが全てゼロという特徴も判明(data/instagram/post_insights_log.csvへ初記録)。",
+    "hypothesis": "表示回数の減少はコンテンツ内容(音声・キャラクター有無・投稿時刻固定化等)の変更と時期が一致しておらず、むしろアカウント立ち上げ初期のアルゴリズム上のブースト減衰、またはリーチはあってもコンテンツが『見た人の興味を引き止められていない』ことが主因の可能性が高い。特に0%エンゲージメント(いいね/保存/シェア皆無)は、リーチの問題ではなく完走率・関心度の問題を示唆する。Day9の『Strategic Reply(能動的に話しかける)』施策で一時的に表示が伸びた実績があるが、この施策はEvening/X Conversation Routineの一部であり、直近2日間Evening Routineが未実行だったため停止していた可能性がある(Morning Routine自動発火の0バイトログ障害がSetThreadExecutionState修正後も09-14・09-15と再発、バッテリー駆動時のタスクスケジューラ条件が真因の可能性がありCodexへ再調査タスクb9e281e0-4f66-413a-a67c-40dc22310691を作成済み)。",
     "decision": "Day12以降のReelはAI音声(VOICEVOX、青山龍星)をデフォルトとし、Owner本人音声はHuman Voice Exception(個人的エピソード等)の場合のみ使用する方針を継続。",
-    "next_experiment": "Fixed Publishing Schedule TEST 1 Day2(Day14)。X 07:30 / Instagram Reel 07:45 JST目標は継続、ただし自動発火の信頼性問題が解消するまでは手動投稿前提で運用する。"
+    "next_experiment": "Fixed Publishing Schedule TEST 1 Day2(Day14)。X 07:30 / Instagram Reel 07:45 JST目標は継続、ただし自動発火の信頼性問題が解消するまでは手動投稿前提で運用する。あわせて、Evening RoutineのStrategic Reply(能動的に話しかける施策)を安定的に再開できるかが、リーチ回復の鍵になる可能性が高いため優先的に検証する。0%エンゲージメントの原因(フック・完走率)は7日間のFixed Publishing Schedule TEST 1終了時に蓄積データで改めて分析する。"
   }
 }
