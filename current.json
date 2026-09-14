@@ -1,20 +1,21 @@
 {
   "current_date": "2026-09-14",
   "business_day": 13,
-  "data_updated_at": "2026-09-14T08:27:00+09:00",
-  "public_updated_at": "2026-09-13T23:36:57.175Z",
+  "data_updated_at": "2026-09-14T12:25:00+09:00",
+  "public_updated_at": "2026-09-14T03:23:58.060Z",
   "system_health": "attention",
-  "system_health_reason": "Day13 Fixed Publishing Schedule TEST 1初日(X 07:30/Reel 07:45 JST)予定だったが、07:00予定のMorning Routineが実行ログ0バイトで異常終了(reports/daily/routine-logs/morning_2026-09-14_072842.log、08:31にも再発)。原因はautomations/run-daily-routine.ps1のコメントで既に特定済み(WakeToRun復帰後もアイドルスリープタイマーが独立稼働し実行中にPC再スリープ、claude.exeごと強制終了)で、SetThreadExecutionStateによる対処が同スクリプトへ追加済み(次回自動実行での検証待ち)。今回は手動起動のMorning Routineで復旧・実行中。X本文はready(Owner手動投稿待ち、7:30を過ぎている)、Reelは台本作成をContent Editorへ発注し制作再開。Xブラウザセッションは本Routine時点でunauthenticated(Instagramは認証済み、フォロワー11人)。",
+  "system_health_reason": "Day13 Fixed Publishing Schedule TEST 1初日(X 07:30/Reel 07:45 JST)は、朝のPCスリープ問題(automations/run-daily-routine.ps1へSetThreadExecutionState対処済み)とバッテリー駆動時の起動条件によりPre-Morning/Morning Routineの自動発火が遅延、手動キャッチアップで実行した。X本文・Instagram Reelともに制作完了・Claude Business QA PASS(ready)だが、両方とも予定時刻(07:30/07:45)を過ぎているためOwner承認後の手動投稿待ち。Xブラウザセッションは本日時点でunauthenticated(Instagramは認証済み)、次回Routineで再ログイン確認が必要。",
   "today": {
     "x_post": {
       "status": "ready",
-      "reason": "content/x/day13_post_draft.md Option A採用。Fixed Publishing Schedule TEST 1初日(07:30 JST予定)だが、本Pre-Morning実行時点(08:27)で予定時刻を過ぎており未投稿(投稿はOwner承認後)。",
+      "reason": "content/x/day13_post_draft.md Option A採用。Fixed Publishing Schedule TEST 1初日(07:30 JST予定)だが、予定時刻を過ぎており未投稿(投稿はOwner承認後)。",
       "text": "正直に言うと、投稿時間はずっとバラバラでした。\n\n8時台の日も、17時台の日もあります。\n\n今日から7日間、Xは毎朝7:30・Instagramは7:45に固定します。\n\n時間を揃えたら反応は変わるのか、正直まだ分かりません。\n\nAIでできる仕事は、AIに。\n\nDay 13/100"
     },
     "ig_reel": {
-      "status": "not_ready",
-      "reason": "Day13用Reelは未着手(VOICEVOX 青山龍星を標準音声として次回Routine/Codexタスクで制作予定)。07:45 JST予定は本Pre-Morning実行時点で既に未達。",
-      "video_file": null
+      "status": "ready",
+      "reason": "VOICEVOX青山龍星で制作完了(Codex job task-mu0h2y2i-9lyvlp)。frame0/中間/最終フレーム目視・ffprobe・kana照合(7/7一致)をClaude Business QAで独立確認済み。Fixed Publishing Schedule TEST 1初日の07:45 JST予定は経過済みのため、Owner承認後の投稿となる。",
+      "video_file": "day13-reel.mp4",
+      "caption": "正直に言うと、投稿する時間はずっとバラバラでした。\n\n13時台の日もあれば、8時台、17時台の日もあります。狙って揃えていたわけではなく、その日にできたタイミングで出していました。\n\n今日から7日間、Xは毎朝7時30分、Instagramは7時45分に固定してみます。\n\n時間を揃えたら反応が変わるのか、正直まだ分かりません。分からないまま、まずは試してみます。\n\nAIでできる仕事は、AIに。\n\n100日実験、Day13。\n\nDay 13 / 100\n#AI仕事研究所 #100日実験 #個人事業 #発信の悩み #AIパートナー"
     }
   },
   "carryover": [],
