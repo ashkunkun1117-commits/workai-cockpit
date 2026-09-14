@@ -94,6 +94,12 @@
   document.addEventListener('click', function (ev) {
     var btn = ev.target.closest('[data-copy-key]');
     if (btn) copyText(btn.getAttribute('data-copy-key'), btn);
+    var refreshBtn = ev.target.closest('[data-refresh]');
+    if (refreshBtn && !loading) {
+      refreshBtn.textContent = '更新中…';
+      refreshBtn.disabled = true;
+      load(0);
+    }
   });
 
   function statusBadge(status, readyLabel) {
@@ -264,7 +270,8 @@
 
     var html = '';
     html += '<div class="hdr"><div><div class="daybadge">Day ' + esc(data.business_day) + ' / 100</div><h1>WorkAI Production Cockpit</h1></div>' +
-      '<div class="updated">Data Updated: ' + stamp + '<br>Public Updated: ' + publicStamp + '</div></div>';
+      '<div class="updated">Data Updated: ' + stamp + '<br>Public Updated: ' + publicStamp +
+      '<br><button data-refresh style="margin-top:6px">更新</button></div></div>';
 
     if (staleInfo.stale) {
       html += '<div class="stale-banner">⚠ PUBLIC DATA STALE<div class="sub">' + esc(staleInfo.reason) + '</div></div>';
@@ -319,6 +326,7 @@
   }
 
   function load(attempt) {
+    loading = true;
     var expected = expectedBusinessDayInfo();
     fetch(DATA_URL + '?ts=' + Date.now(), {cache: 'no-store'})
       .then(function (res) { if (!res.ok) throw new Error('HTTP ' + res.status); return res.json(); })
@@ -332,13 +340,16 @@
           };
         }
         render(data, staleInfo);
+        loading = false;
       })
       .catch(function (err) {
         if (attempt < 3) { setTimeout(function () { load(attempt + 1); }, 800 * (attempt + 1)); return; }
         renderFatalError('current.jsonを取得できませんでした(' + err.message + ')。ネットワーク状態を確認し、時間を置いて開き直してください。');
+        loading = false;
       });
   }
 
+  var loading = false;
   load(0);
 })();
 </script>

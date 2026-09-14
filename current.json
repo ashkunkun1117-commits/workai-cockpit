@@ -2,7 +2,7 @@
   "current_date": "2026-09-15",
   "business_day": 14,
   "data_updated_at": "2026-09-14T22:40:00+09:00",
-  "public_updated_at": "2026-09-14T22:51:45.922Z",
+  "public_updated_at": "2026-09-14T23:10:18.825Z",
   "system_health": "attention",
   "system_health_reason": "Morning Routine自動発火の0バイトログ障害が2026-09-14・09-15と2日連続で再発(routine_scheduler.logに記録が残らない=プロセスごと強制終了)。前回の修正(SetThreadExecutionState)では解消せず、Codexへ再調査タスクを作成しディスパッチ済み(b9e281e0-4f66-413a-a67c-40dc22310691、codex job task-mu1tm9f7-qli2ey)。Day13分のX投稿・Instagram Reelは実際にはOwnerが手動投稿済みであることを本Routineで独立確認し、Cockpitへ反映済み。Xブラウザセッションは本日もunauthenticated(閲覧は可能、ログイン操作は要求していない)、Instagramはauthenticated。Day14 X投稿文は確定済み(ready)、Reelは台本確定・Remotion実装中(task a9270f62-372f-4e34-8ba6-b01ad9dca1fd)。",
   "today": {
