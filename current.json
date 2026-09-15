@@ -2,13 +2,14 @@
   "current_date": "2026-09-15",
   "business_day": 14,
   "data_updated_at": "2026-09-15T11:05:00+09:00",
-  "public_updated_at": "2026-09-15T13:25:01.977Z",
+  "public_updated_at": "2026-09-15T14:54:06.107Z",
   "system_health": "attention",
   "system_health_reason": "Morning Routine自動発火の0バイトログ障害が2026-09-14・09-15と2日連続で再発(routine_scheduler.logに記録が残らない=プロセスごと強制終了)。前回の修正(SetThreadExecutionState)では解消せず、Codexへ再調査タスクを作成しディスパッチ済み(b9e281e0-4f66-413a-a67c-40dc22310691、codex job task-mu1tm9f7-qli2ey)。Day14分のX投稿・Instagram Reelは実際にはOwnerが手動投稿済みであることを本Evening Routineで独立確認し、Cockpitへ反映済み。Xブラウザセッションは本日もunauthenticated(タイムライン・個別投稿の閲覧は可能、検索のみログイン必須でリダイレクト確認、ログイン操作は要求していない)、Instagramはauthenticated。Day15分のX投稿文・Reel台本はContent Editorへ作成依頼中(Evening Routine内)。",
   "today": {
     "x_post": {
-      "status": "not_ready",
-      "reason": "COO指令(Shift From Internal Ops to Market & Revenue v1)によりP1はNotta note公開(下記business_progress参照)。Day15の定型Fixed Schedule投稿(旧P1)はP7へ降格、Content Editorの下書きは保留。"
+      "status": "ready",
+      "reason": "Notta note公開済み(2026-09-15 22:32、https://note.com/workai_lab777/n/nc5ad7e7ef364)。COO指令によるMODIFY要件(一次体験・実測値・向いている人・控えめCTA)を満たすX告知文FINAL確定。Owner投稿待ち。Day15の定型Fixed Schedule投稿(旧P1)はP7のまま保留。",
+      "text": "打ち合わせの声を自分で文字にして、要約して、TODOを抜き出す。全部人力でやったら12分でした。\n\n同じ音声をNotta Memoに渡したら2分30秒。\n\n正直、精度はもっと粗いだろうと思っていたので、想像より使えました。\n\n1人で話した音声1本だけの結果なので、複数人の会議でどこまで保つかはまだ分かりません。\n\n打ち合わせの整理に時間を取られてる人には、試す価値があると思います。\n\n詳しい検証はnoteで。\nhttps://note.com/workai_lab777/n/nc5ad7e7ef364\n\nAIでできる仕事は、AIに。"
     },
     "ig_reel": {
       "status": "ready",
@@ -115,11 +116,11 @@
   "approval_queue": [],
   "business_progress": {
     "note_priority": "P1",
-    "notta_note": "NOT_LIVE",
-    "notta_note_note": "noteの下書きに記事本文を入力・保存済み(https://editor.note.com/notes/nc5ad7e7ef364/edit/)。Owner操作は「公開に進む」ボタンを押すのみに圧縮済み。",
+    "notta_note": "LIVE",
+    "notta_note_note": "公開済み(2026-09-15 22:32) https://note.com/workai_lab777/n/nc5ad7e7ef364 。PR表記・A8リンク・6タグとも実配信を確認済み。",
     "x_announcement": "READY",
-    "x_announcement_note": "content/x/notta_announcement_post.mdに確定文面あり。note公開後、URLを差し込んで投稿。",
-    "notta_clicks": "0(note未公開のため計測開始前)",
+    "x_announcement_note": "content/x/notta_announcement_post.mdに実URL差込済みFINAL確定(一次体験・実測値・向いている人・控えめCTA要件を充足)。Owner投稿待ち。",
+    "notta_clicks": "0(X告知投稿後、A8管理画面で計測開始)",
     "automation_reel": "READY",
     "automation_reel_note": "制作完了・QA PASS(day15-reel.mp4)。Owner視聴・投稿承認待ち。",
     "afb_audit": "in_progress",
