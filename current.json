@@ -2,7 +2,7 @@
   "current_date": "2026-09-15",
   "business_day": 14,
   "data_updated_at": "2026-09-15T11:05:00+09:00",
-  "public_updated_at": "2026-09-15T13:05:05.542Z",
+  "public_updated_at": "2026-09-15T13:14:12.999Z",
   "system_health": "attention",
   "system_health_reason": "Morning Routine自動発火の0バイトログ障害が2026-09-14・09-15と2日連続で再発(routine_scheduler.logに記録が残らない=プロセスごと強制終了)。前回の修正(SetThreadExecutionState)では解消せず、Codexへ再調査タスクを作成しディスパッチ済み(b9e281e0-4f66-413a-a67c-40dc22310691、codex job task-mu1tm9f7-qli2ey)。Day14分のX投稿・Instagram Reelは実際にはOwnerが手動投稿済みであることを本Evening Routineで独立確認し、Cockpitへ反映済み。Xブラウザセッションは本日もunauthenticated(タイムライン・個別投稿の閲覧は可能、検索のみログイン必須でリダイレクト確認、ログイン操作は要求していない)、Instagramはauthenticated。Day15分のX投稿文・Reel台本はContent Editorへ作成依頼中(Evening Routine内)。",
   "today": {
@@ -11,8 +11,10 @@
       "reason": "COO指令(Shift From Internal Ops to Market & Revenue v1)によりP1はNotta note公開(下記business_progress参照)。Day15の定型Fixed Schedule投稿(旧P1)はP7へ降格、Content Editorの下書きは保留。"
     },
     "ig_reel": {
-      "status": "not_ready",
-      "reason": "COO指令によりP2は自動化2日停止ストーリー。台本確定・Codexへ制作発注済み(task ece9cb03-9356-41c7-b581-5a014fa8702d)、Remotion実装・VOICEVOX音声・レンダリング中。"
+      "status": "ready",
+      "reason": "COO指令P2「自動化2日停止ストーリー」制作完了。Claude Business QA PASS(frame0/シーン4実体験再現/シーン5コア洞察/最終フレーム目視、キャラクター登場・二重露光なし確認済み)。Owner視聴・投稿承認待ち。",
+      "video_file": "day15-reel.mp4",
+      "caption": "自動化、2日間止まってたのに気づいていませんでした。\n\n毎朝の投稿準備をAIが自動で進めているはずが、PCがスリープするタイミングで処理ごと止まっていました。\n\n気づいたきっかけは、ログでもアラートでもなく、「リール動画はまだですか?」という一言でした。\n\n自動化って、作って終わりじゃないんですよね。\n止まったことに気づける仕組みまでが、自動化なんだと思いました。\n\n同じように何かを自動化してる人・したい人に、少しでも参考になればと思って書きました。\n\nAIでできる仕事は、AIに。\n\n100日実験、Day15。\n\nDay 15 / 100\n#AI仕事研究所 #100日実験 #個人事業 #自動化 #AIパートナー"
     }
   },
   "carryover": [],
@@ -118,8 +120,8 @@
     "x_announcement": "READY",
     "x_announcement_note": "content/x/notta_announcement_post.mdに確定文面あり。note公開後、URLを差し込んで投稿。",
     "notta_clicks": "0(note未公開のため計測開始前)",
-    "automation_reel": "IN_PRODUCTION",
-    "automation_reel_note": "台本確定、Codex制作中(task ece9cb03-9356-41c7-b581-5a014fa8702d)。",
+    "automation_reel": "READY",
+    "automation_reel_note": "制作完了・QA PASS(day15-reel.mp4)。Owner視聴・投稿承認待ち。",
     "afb_audit": "waiting_owner_login",
     "todays_public_market_outputs": 0
   },
