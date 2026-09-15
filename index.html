@@ -287,7 +287,8 @@
       '<div style="margin-top:8px"><b>Notta クリック数:</b> ' + esc(bp.notta_clicks || '0') + '</div>' +
       '<div style="margin-top:8px"><b>自動化2日停止Reel(P2):</b> ' + bpBadge(bp.automation_reel) +
       (bp.automation_reel_note ? '<div style="font-size:11px;color:var(--ink-faint);margin-top:2px">' + esc(bp.automation_reel_note) + '</div>' : '') + '</div>' +
-      '<div style="margin-top:8px"><b>afb案件調査:</b> ' + bpBadge(bp.afb_audit) + '</div>' +
+      '<div style="margin-top:8px"><b>afb案件調査:</b> ' + bpBadge(bp.afb_audit) +
+      (bp.afb_audit_note ? '<div style="font-size:11px;color:var(--ink-faint);margin-top:2px">' + esc(bp.afb_audit_note) + '</div>' : '') + '</div>' +
       '<div style="margin-top:8px"><b>本日の公開済みPUBLIC MARKET OUTPUT数:</b> ' + esc(bp.todays_public_market_outputs != null ? bp.todays_public_market_outputs : 0) + '</div>' +
       '</div></section>';
   }
