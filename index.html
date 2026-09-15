@@ -259,6 +259,39 @@
     return html;
   }
 
+  function bpBadge(state) {
+    var map = {
+      LIVE: ['status', 'LIVE'],
+      NOT_LIVE: ['status notready', 'NOT LIVE'],
+      READY: ['status production', 'READY'],
+      PUBLISHED: ['status', 'PUBLISHED'],
+      IN_PRODUCTION: ['status production', 'IN PRODUCTION'],
+      BLOCKED: ['status notready', 'BLOCKED'],
+      waiting_owner_login: ['status notready', 'WAITING OWNER LOGIN'],
+      in_progress: ['status production', 'IN PROGRESS'],
+      complete: ['status', 'COMPLETE']
+    };
+    var m = map[state] || ['status posted', esc(state)];
+    return '<span class="' + m[0] + '">' + m[1] + '</span>';
+  }
+
+  function renderBusinessProgress(data) {
+    var bp = data.business_progress;
+    if (!bp) return '';
+    return '<section><h2>Business Progress(公開・トラフィック・収益。COO指令により最優先表示)</h2>' +
+      '<div class="txt">' +
+      '<div><b>Notta note(' + esc(bp.note_priority || 'P1') + '):</b> ' + bpBadge(bp.notta_note) +
+      (bp.notta_note_note ? '<div style="font-size:11px;color:var(--ink-faint);margin-top:2px">' + esc(bp.notta_note_note) + '</div>' : '') + '</div>' +
+      '<div style="margin-top:8px"><b>X告知:</b> ' + bpBadge(bp.x_announcement) +
+      (bp.x_announcement_note ? '<div style="font-size:11px;color:var(--ink-faint);margin-top:2px">' + esc(bp.x_announcement_note) + '</div>' : '') + '</div>' +
+      '<div style="margin-top:8px"><b>Notta クリック数:</b> ' + esc(bp.notta_clicks || '0') + '</div>' +
+      '<div style="margin-top:8px"><b>自動化2日停止Reel(P2):</b> ' + bpBadge(bp.automation_reel) +
+      (bp.automation_reel_note ? '<div style="font-size:11px;color:var(--ink-faint);margin-top:2px">' + esc(bp.automation_reel_note) + '</div>' : '') + '</div>' +
+      '<div style="margin-top:8px"><b>afb案件調査:</b> ' + bpBadge(bp.afb_audit) + '</div>' +
+      '<div style="margin-top:8px"><b>本日の公開済みPUBLIC MARKET OUTPUT数:</b> ' + esc(bp.todays_public_market_outputs != null ? bp.todays_public_market_outputs : 0) + '</div>' +
+      '</div></section>';
+  }
+
   function render(data, staleInfo) {
     var app = document.getElementById('app');
     var stamp = fmtStamp(data.data_updated_at);
@@ -280,6 +313,7 @@
     html += '<div class="health ' + healthClass + '">SYSTEM HEALTH: ' + healthLabel +
       (data.system_health_reason ? '<div class="health-reason">' + esc(data.system_health_reason) + '</div>' : '') + '</div>';
 
+    html += renderBusinessProgress(data);
     html += renderToday(data);
     html += renderCarryover(data);
     html += renderApprovalQueue(data);

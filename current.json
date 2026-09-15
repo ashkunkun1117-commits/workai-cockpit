@@ -2,17 +2,17 @@
   "current_date": "2026-09-15",
   "business_day": 14,
   "data_updated_at": "2026-09-15T11:05:00+09:00",
-  "public_updated_at": "2026-09-15T02:04:13.996Z",
+  "public_updated_at": "2026-09-15T13:05:05.542Z",
   "system_health": "attention",
   "system_health_reason": "Morning Routine自動発火の0バイトログ障害が2026-09-14・09-15と2日連続で再発(routine_scheduler.logに記録が残らない=プロセスごと強制終了)。前回の修正(SetThreadExecutionState)では解消せず、Codexへ再調査タスクを作成しディスパッチ済み(b9e281e0-4f66-413a-a67c-40dc22310691、codex job task-mu1tm9f7-qli2ey)。Day14分のX投稿・Instagram Reelは実際にはOwnerが手動投稿済みであることを本Evening Routineで独立確認し、Cockpitへ反映済み。Xブラウザセッションは本日もunauthenticated(タイムライン・個別投稿の閲覧は可能、検索のみログイン必須でリダイレクト確認、ログイン操作は要求していない)、Instagramはauthenticated。Day15分のX投稿文・Reel台本はContent Editorへ作成依頼中(Evening Routine内)。",
   "today": {
     "x_post": {
       "status": "not_ready",
-      "reason": "Day14分は投稿済み(下記history参照)。Day15分は未制作(Content Editorへ作成依頼中、Evening Routine内で先行準備中)。"
+      "reason": "COO指令(Shift From Internal Ops to Market & Revenue v1)によりP1はNotta note公開(下記business_progress参照)。Day15の定型Fixed Schedule投稿(旧P1)はP7へ降格、Content Editorの下書きは保留。"
     },
     "ig_reel": {
       "status": "not_ready",
-      "reason": "Day14分は投稿済み(下記history参照)。Day15分は未制作(台本をContent Editorへ依頼中、Remotion実装・レンダリングは次のステップでCodexへhandoff予定)。"
+      "reason": "COO指令によりP2は自動化2日停止ストーリー。台本確定・Codexへ制作発注済み(task ece9cb03-9356-41c7-b581-5a014fa8702d)、Remotion実装・VOICEVOX音声・レンダリング中。"
     }
   },
   "carryover": [],
@@ -106,8 +106,23 @@
       "verification_note": "views=29, reach(閲覧者)=29, フォロワー以外100%, いいね/コメント/保存/シェアいずれも0(data/instagram/post_insights_log.csvへ記録済み)。相対表示「1日前」のみ確認、正確なpublish時刻は未取得(推測しない)。"
     }
   ],
-  "owner_actions": [],
+  "owner_actions": [
+    "【最優先】note: アカウントへログイン(未作成の場合は新規作成)→ content/articles/notta_memo_verification_v1.mdの「note公開用 完成版」を貼り付けて公開ボタンを押す → 公開URLをClaudeへ共有(X告知投稿・クリック計測を開始します)",
+    "afb: 自動化ブラウザ(X/Instagramと同じプロファイル)でafi-b.comへログインし、案件一覧/検索画面を開いた状態にしておく(案件の選定・比較・スコアリングはClaude側で行うため、Owner自身が案件を探す必要はありません)"
+  ],
   "approval_queue": [],
+  "business_progress": {
+    "note_priority": "P1",
+    "notta_note": "NOT_LIVE",
+    "notta_note_note": "記事本文QA PASS済み(content/articles/notta_memo_verification_v1.md)。公開に必要なOwner操作: noteログイン/新規作成→貼付→公開ボタン。",
+    "x_announcement": "READY",
+    "x_announcement_note": "content/x/notta_announcement_post.mdに確定文面あり。note公開後、URLを差し込んで投稿。",
+    "notta_clicks": "0(note未公開のため計測開始前)",
+    "automation_reel": "IN_PRODUCTION",
+    "automation_reel_note": "台本確定、Codex制作中(task ece9cb03-9356-41c7-b581-5a014fa8702d)。",
+    "afb_audit": "waiting_owner_login",
+    "todays_public_market_outputs": 0
+  },
   "revenue": {
     "revenue_jpy": 0,
     "profit_jpy": 0,
