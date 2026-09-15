@@ -1,15 +1,19 @@
 {
-  "current_date": "2026-09-15",
-  "business_day": 14,
-  "data_updated_at": "2026-09-15T11:05:00+09:00",
-  "public_updated_at": "2026-09-15T14:54:06.107Z",
+  "current_date": "2026-09-16",
+  "business_day": 15,
+  "data_updated_at": "2026-09-16T07:55:00+09:00",
+  "public_updated_at": "2026-09-15T22:56:24.776Z",
   "system_health": "attention",
-  "system_health_reason": "Morning Routine自動発火の0バイトログ障害が2026-09-14・09-15と2日連続で再発(routine_scheduler.logに記録が残らない=プロセスごと強制終了)。前回の修正(SetThreadExecutionState)では解消せず、Codexへ再調査タスクを作成しディスパッチ済み(b9e281e0-4f66-413a-a67c-40dc22310691、codex job task-mu1tm9f7-qli2ey)。Day14分のX投稿・Instagram Reelは実際にはOwnerが手動投稿済みであることを本Evening Routineで独立確認し、Cockpitへ反映済み。Xブラウザセッションは本日もunauthenticated(タイムライン・個別投稿の閲覧は可能、検索のみログイン必須でリダイレクト確認、ログイン操作は要求していない)、Instagramはauthenticated。Day15分のX投稿文・Reel台本はContent Editorへ作成依頼中(Evening Routine内)。",
+  "system_health_reason": "COO指令(2026-09-16 STATUS CORRECTION)によりRoutine ReliabilityはPASSではなく『OBSERVATION CONTINUES』。Sleep Prevention Castバグ修正・手動実行1回のPASSは確認済みだが、実際のタスクスケジューラ自然発火・battery条件解除・複数Routine排他制御の確認が未完了(routine_scheduler.logは2026-09-15 07:25のpremorning失敗以降、後続4回はすべてsuccess:trueで連続)。Day15 ReelはOwner投稿承認待ち(Instagram未投稿を実機確認)。X告知投稿はOwner実行済みだが承認済みFINAL文と異なる簡略版が投稿された(x_announcement_divergence参照)。Xブラウザはunauthenticated(タイムライン閲覧は可能、検索はログイン必須)、Instagramはauthenticated。",
   "today": {
     "x_post": {
-      "status": "ready",
-      "reason": "Notta note公開済み(2026-09-15 22:32、https://note.com/workai_lab777/n/nc5ad7e7ef364)。COO指令によるMODIFY要件(一次体験・実測値・向いている人・控えめCTA)を満たすX告知文FINAL確定。Owner投稿待ち。Day15の定型Fixed Schedule投稿(旧P1)はP7のまま保留。",
-      "text": "打ち合わせの声を自分で文字にして、要約して、TODOを抜き出す。全部人力でやったら12分でした。\n\n同じ音声をNotta Memoに渡したら2分30秒。\n\n正直、精度はもっと粗いだろうと思っていたので、想像より使えました。\n\n1人で話した音声1本だけの結果なので、複数人の会議でどこまで保つかはまだ分かりません。\n\n打ち合わせの整理に時間を取られてる人には、試す価値があると思います。\n\n詳しい検証はnoteで。\nhttps://note.com/workai_lab777/n/nc5ad7e7ef364\n\nAIでできる仕事は、AIに。"
+      "status": "posted_diverged",
+      "reason": "Owner本人がX上でNotta note告知を投稿済み(2026-09-16 07:50 JST時点でPlaywright実機確認、post_url下記、8時間前=2026-09-15 23:50頃投稿と推定)。ただし実際に公開された本文はnote.comのシェアカード(タイトル+ハッシュタグ+リンクのみ)で、Claude QA承認済みだったFINAL文面(一次体験・実測値12分→2分30秒・向いている人限定・控えめCTAを含む全文)とは異なる。Owner操作(note側の「Xでシェア」ボタン等)により簡略版が投稿された可能性が高い。RED操作(投稿)自体はOwnerが独自に実行済みのためClaudeが追加投稿・修正は行わない。Day15新規X投稿枠は本日分Owner Actionなし(定型Fixed Schedule投稿はNotta funnel優先のため引き続き保留)。",
+      "posted_text_actual": "打ち合わせ整理、人力12分→2分半にしてみた話｜Notta Memo検証｜もり | AI仕事研究所 @workai_lab777 #AIとやってみた https://t.co/diA6Z9s1Fs",
+      "post_url": "https://x.com/workai_lab777/status/2099870094256169006",
+      "impressions_observed": 5,
+      "verification_source": "X profile timeline(Playwright、unauthenticated view、本文完全一致)",
+      "verified_at": "2026-09-16T07:50:00+09:00"
     },
     "ig_reel": {
       "status": "ready",
@@ -24,11 +28,21 @@
       "type": "x_post",
       "day": 14,
       "status": "completed",
+      "url": "https://x.com/workai_lab777/status/2099870094256169006",
+      "actual_published_at": null,
+      "verification_source": "X profile timeline(workai_lab777、本文完全一致、相対表示「8h」、2026-09-16 07:50 JST確認)",
+      "verified_at": "2026-09-16T07:50:00+09:00",
+      "verification_note": "Nottaノート告知の追加投稿。impressions=5。本文はnote.comシェアカード(タイトル+リンクのみ)で、承認済みFINAL全文とは異なる簡略版。kpi_daily.csv Day14へx_posts=2件目として反映済み。"
+    },
+    {
+      "type": "x_post",
+      "day": 14,
+      "status": "completed",
       "url": "https://x.com/workai_lab777/status/2099633485350928443",
       "actual_published_at": null,
-      "verification_source": "X timeline(workai_lab777、本文完全一致、相対表示「3h」)",
+      "verification_source": "X timeline(workai_lab777、本文完全一致、相対表示「3h」→2026-09-16 07:50確認時点で「23h」)",
       "verified_at": "2026-09-15T11:00:00+09:00",
-      "verification_note": "impressions=3(投稿ページ実測、投稿から3時間時点のため今後増える可能性あり。正確な投稿時刻は相対表示のみのため未記録)。kpi_daily.csv Day14へ反映済み。"
+      "verification_note": "impressions=3→2026-09-16 07:50時点で5に増加(投稿ページ実測)。kpi_daily.csv Day14へ反映済み(x_impressions=10は2投稿合算)。"
     },
     {
       "type": "ig_reel",
@@ -110,17 +124,16 @@
     }
   ],
   "owner_actions": [
-    "【最優先】note: 下書き(https://editor.note.com/notes/nc5ad7e7ef364/edit/)を開き、内容を確認して「公開に進む」ボタンを押すのみ → 公開URLをClaudeへ共有(X告知投稿・クリック計測を開始します)",
-    "Day15 Reel(自動化2日停止ストーリー): Cockpitで視聴し、問題なければInstagramへ投稿承認"
+    "Day15 Reel(自動化2日停止ストーリー、day15-reel.mp4): Cockpitで視聴し、問題なければInstagramへ投稿承認(2026-09-16 07:50時点でInstagram未投稿を確認)"
   ],
   "approval_queue": [],
   "business_progress": {
     "note_priority": "P1",
     "notta_note": "LIVE",
     "notta_note_note": "公開済み(2026-09-15 22:32) https://note.com/workai_lab777/n/nc5ad7e7ef364 。PR表記・A8リンク・6タグとも実配信を確認済み。",
-    "x_announcement": "READY",
-    "x_announcement_note": "content/x/notta_announcement_post.mdに実URL差込済みFINAL確定(一次体験・実測値・向いている人・控えめCTA要件を充足)。Owner投稿待ち。",
-    "notta_clicks": "0(X告知投稿後、A8管理画面で計測開始)",
+    "x_announcement": "POSTED_DIVERGED",
+    "x_announcement_note": "Owner投稿済み(2026-09-16 07:50 JST Playwright実機確認)。ただし実際の本文はnote.comシェアカード(タイトル+リンクのみ)で、Claude QA承認済みのFINAL全文(一次体験・実測値・向いている人・控えめCTA)とは異なる簡略版だった。投稿自体はOwnerの意思決定でありClaudeは修正・再投稿を行わない。",
+    "notta_clicks": "未取得(A8管理画面で次回確認、投稿は簡略版のためクリック導線がリンクのみである点に留意)",
     "automation_reel": "READY",
     "automation_reel_note": "制作完了・QA PASS(day15-reel.mp4)。Owner視聴・投稿承認待ち。",
     "afb_audit": "in_progress",
@@ -130,8 +143,8 @@
   "revenue": {
     "revenue_jpy": 0,
     "profit_jpy": 0,
-    "day30_remaining": 15,
-    "day100_remaining": 85,
+    "day30_remaining": 16,
+    "day100_remaining": 86,
     "product_signals": 0,
     "blocked_tasks": 0
   },
@@ -139,6 +152,6 @@
     "observation": "Day13(Fixed Publishing Schedule TEST 1初日)はMorning Routine自動発火が失敗したにもかかわらず、Ownerが自主的にX/Instagramへ手動投稿(X: 07:30予定に対し実際は数時間後、IG Reel: 相対表示のみで正確な時刻不明)。制作(Codex)は完了していたため、公開判断だけ人間に残った。2026-09-15朝、Evening Routine不通で滞っていたSNS分析(実測データに基づく)をClaudeが独立実施し、X表示回数(Day9=22→Day10=18→Day11=13→Day12=7→Day13=4)・Instagram Reel再生数(Day10=29→Day12=24→Day13=10)とも5日連続で減少していることを発見。さらに、全3件のReel(Day10/12/13)は外部(非フォロワー)へのリーチ自体は60〜100%と機能しているにもかかわらず、いいね・コメント・保存・シェアが全てゼロという特徴も判明(data/instagram/post_insights_log.csvへ初記録)。2026-09-15夜、本Evening Routineで確認したところDay14分のX投稿・IG Reelは既にOwnerが手動投稿済み(X:3時間前・impressions=3で継続減少、IG:2時間前・インサイトは早すぎるため未取得)。",
     "hypothesis": "表示回数の減少はコンテンツ内容(音声・キャラクター有無・投稿時刻固定化等)の変更と時期が一致しておらず、むしろアカウント立ち上げ初期のアルゴリズム上のブースト減衰、またはリーチはあってもコンテンツが『見た人の興味を引き止められていない』ことが主因の可能性が高い。特に0%エンゲージメント(いいね/保存/シェア皆無)は、リーチの問題ではなく完走率・関心度の問題を示唆する。Day9の『Strategic Reply(能動的に話しかける)』施策で一時的に表示が伸びた実績があるが、この施策はEvening/X Conversation Routineの一部であり、直近2日間Evening Routineが未実行だったため停止していた可能性がある(Morning Routine自動発火の0バイトログ障害がSetThreadExecutionState修正後も09-14・09-15と再発、バッテリー駆動時のタスクスケジューラ条件が真因の可能性がありCodexへ再調査タスクb9e281e0-4f66-413a-a67c-40dc22310691を作成済み)。本Evening RoutineでStrategic Reply再開を試みたが、Xブラウザセッションがunauthenticated(検索ページが明示的にログイン画面へリダイレクト)のため新規候補探索を実行できず、次回Routineへ持ち越し。",
     "decision": "Day12以降のReelはAI音声(VOICEVOX、青山龍星)をデフォルトとし、Owner本人音声はHuman Voice Exception(個人的エピソード等)の場合のみ使用する方針を継続。",
-    "next_experiment": "Fixed Publishing Schedule TEST 1 Day3(Day15)。X 07:30 / Instagram Reel 07:45 JST目標は継続、ただし自動発火の信頼性問題が解消するまでは手動投稿前提で運用する。Strategic Reply再開はXログイン状態が回復次第、優先的に試行する(2026-09-15時点では検索ページがログイン必須でブロッカーではなく再試行待ち)。0%エンゲージメントの原因(フック・完走率)は7日間のFixed Publishing Schedule TEST 1終了時に蓄積データで改めて分析する。Day14分のX投稿・IG Reelは本Evening Routineで独立確認済み(X:投稿3時間時点でimpressions=3、継続減少中。IG:投稿2時間時点のためインサイト取得は見送りDATA UNAVAILABLE)。"
+    "next_experiment": "Notta funnel優先のためFixed Publishing Schedule TEST 1の定型投稿は本日も保留継続。Day15 Reel(自動化2日停止ストーリー)はOwner投稿承認待ち。Strategic Reply再開はXログイン状態が回復次第優先的に試行する(2026-09-16時点も検索用途はunauthenticated、通常タイムライン閲覧は可能)。0%エンゲージメントの原因分析は7日間のFixed Publishing Schedule TEST 1データが揃い次第行う。"
   }
 }
