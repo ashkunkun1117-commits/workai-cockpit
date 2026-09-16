@@ -1,8 +1,8 @@
 {
   "current_date": "2026-09-17",
   "business_day": 16,
-  "data_updated_at": "2026-09-17T05:45:00+09:00",
-  "public_updated_at": "2026-09-16T20:49:44.334Z",
+  "data_updated_at": "2026-09-17T07:10:00+09:00",
+  "public_updated_at": "2026-09-16T22:06:29.507Z",
   "system_health": "attention",
   "system_health_reason": "COO指令(2026-09-16 STATUS CORRECTION)によりRoutine ReliabilityはPASSではなく『OBSERVATION CONTINUES』。Sleep Prevention Castバグ修正・手動実行1回のPASSは確認済みだが、実際のタスクスケジューラ自然発火・battery条件解除・複数Routine排他制御の確認が未完了(routine_scheduler.logは2026-09-15 07:25のpremorning失敗以降、後続4回はすべてsuccess:trueで連続)。Day15 ReelはOwner投稿承認待ち(Instagram未投稿を実機確認)。X告知投稿はOwner実行済みだが承認済みFINAL文と異なる簡略版が投稿された(x_announcement_divergence参照)。Xブラウザはunauthenticated(タイムライン閲覧は可能、検索はログイン必須)、Instagramはauthenticated。",
   "today": {
@@ -20,6 +20,28 @@
   },
   "carryover": [],
   "history": [
+    {
+      "type": "x_post",
+      "day": 15,
+      "status": "completed",
+      "url": "https://x.com/workai_lab777/status/2099995015217094697",
+      "actual_published_at": "2026-09-16T07:53:00+09:00",
+      "verification_source": "X status page(workai_lab777、本文完全一致、投稿ページ表示「7:53 · 2026年9月16日」)",
+      "verified_at": "2026-09-17T07:04:00+09:00",
+      "verification_note": "Morning Routine日次リコンサイルで新規発見(kpi_daily.csv/today.jsonとも未反映だった)。Nottaノート告知の2件目投稿(1件目は9/15付Day14分としてhistory記録済み)。impressions=9(投稿ページ実測)。kpi_daily.csv Day15へx_posts=1として新規反映。"
+    },
+    {
+      "type": "ig_reel",
+      "day": 15,
+      "status": "completed",
+      "url": "https://www.instagram.com/workai_lab777/reel/DdU1MXYSUkk/",
+      "video_file": "day15.mp4",
+      "caption": "自動化、2日間止まってたのに気づいていませんでした。毎朝の投稿準備をAIが自動で進めているはずが、PCがスリープするタイミングで処理ごと止まっていました。気づいたきっかけは、ログでもアラートでもなく、「リール動画はまだですか?」という一言でした。自動化って、作って終わりじゃないんですよね。止まったことに気づける仕組みまでが、自動化なんだと思いました。同じように何かを自動化してる人・したい人に、少しでも参考になればと思って書きました。AIでできる仕事は、AIに。100日実験、Day15。Day 15 / 100",
+      "actual_published_at": null,
+      "verification_source": "Instagram(workai_lab777、キャプション完全一致、投稿ページ相対表示「23時間前」、2026-09-17 07:04 JST確認)",
+      "verified_at": "2026-09-17T07:04:00+09:00",
+      "verification_note": "コメント0件を確認。インサイト(views/reach)はUI上の遷移で取得できず、DATA UNAVAILABLEのまま次回Routineで再取得を試みる(推測しない)。business_progress.automation_reel_noteに記載の2026-09-16 08:03 JST投稿と同一Reel。"
+    },
     {
       "type": "x_post",
       "day": 14,
