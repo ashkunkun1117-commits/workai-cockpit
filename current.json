@@ -1,8 +1,8 @@
 {
-  "current_date": "2026-09-16",
-  "business_day": 15,
-  "data_updated_at": "2026-09-16T07:55:00+09:00",
-  "public_updated_at": "2026-09-16T13:24:21.640Z",
+  "current_date": "2026-09-17",
+  "business_day": 16,
+  "data_updated_at": "2026-09-17T05:45:00+09:00",
+  "public_updated_at": "2026-09-16T20:49:44.334Z",
   "system_health": "attention",
   "system_health_reason": "COO指令(2026-09-16 STATUS CORRECTION)によりRoutine ReliabilityはPASSではなく『OBSERVATION CONTINUES』。Sleep Prevention Castバグ修正・手動実行1回のPASSは確認済みだが、実際のタスクスケジューラ自然発火・battery条件解除・複数Routine排他制御の確認が未完了(routine_scheduler.logは2026-09-15 07:25のpremorning失敗以降、後続4回はすべてsuccess:trueで連続)。Day15 ReelはOwner投稿承認待ち(Instagram未投稿を実機確認)。X告知投稿はOwner実行済みだが承認済みFINAL文と異なる簡略版が投稿された(x_announcement_divergence参照)。Xブラウザはunauthenticated(タイムライン閲覧は可能、検索はログイン必須)、Instagramはauthenticated。",
   "today": {
