@@ -2,7 +2,7 @@
   "current_date": "2026-09-16",
   "business_day": 15,
   "data_updated_at": "2026-09-16T07:55:00+09:00",
-  "public_updated_at": "2026-09-16T12:40:08.150Z",
+  "public_updated_at": "2026-09-16T12:52:31.900Z",
   "system_health": "attention",
   "system_health_reason": "COO指令(2026-09-16 STATUS CORRECTION)によりRoutine ReliabilityはPASSではなく『OBSERVATION CONTINUES』。Sleep Prevention Castバグ修正・手動実行1回のPASSは確認済みだが、実際のタスクスケジューラ自然発火・battery条件解除・複数Routine排他制御の確認が未完了(routine_scheduler.logは2026-09-15 07:25のpremorning失敗以降、後続4回はすべてsuccess:trueで連続)。Day15 ReelはOwner投稿承認待ち(Instagram未投稿を実機確認)。X告知投稿はOwner実行済みだが承認済みFINAL文と異なる簡略版が投稿された(x_announcement_divergence参照)。Xブラウザはunauthenticated(タイムライン閲覧は可能、検索はログイン必須)、Instagramはauthenticated。",
   "today": {
@@ -123,7 +123,11 @@
       "verification_note": "views=29, reach(閲覧者)=29, フォロワー以外100%, いいね/コメント/保存/シェアいずれも0(data/instagram/post_insights_log.csvへ記録済み)。相対表示「1日前」のみ確認、正確なpublish時刻は未取得(推測しない)。"
     }
   ],
-  "owner_actions": [],
+  "owner_actions": [
+    "A8.net(pub.a8.net)への再ログイン: Notta Memoクリック数計測に必要",
+    "afb(afi-b.com)への再ログイン: 新規afb案件調査(TOP3拡大)に必要",
+    "(承認待ち) X返信案1件: @yukissenseへの返信、Approval Queue参照"
+  ],
   "approval_queue": [],
   "business_progress": {
     "note_priority": "P1",
@@ -131,12 +135,16 @@
     "notta_note_note": "公開済み(2026-09-15 22:32) https://note.com/workai_lab777/n/nc5ad7e7ef364 。PR表記・A8リンク・6タグとも実配信を確認済み。",
     "x_announcement": "POSTED_DIVERGED",
     "x_announcement_note": "Owner投稿済み(2026-09-16 07:50 JST Playwright実機確認)。ただし実際の本文はnote.comシェアカード(タイトル+リンクのみ)で、Claude QA承認済みのFINAL全文(一次体験・実測値・向いている人・控えめCTA)とは異なる簡略版だった。投稿自体はOwnerの意思決定でありClaudeは修正・再投稿を行わない。",
-    "notta_clicks": "未取得(A8管理画面で次回確認、投稿は簡略版のためクリック導線がリンクのみである点に留意)",
+    "notta_clicks": "ブロック(A8.netセッション切れ、Owner再ログイン待ち)",
     "automation_reel": "PUBLISHED",
     "automation_reel_note": "Instagram投稿確認済み(2026-09-16 08:03 JST、実機Playwright確認。投稿URL: https://www.instagram.com/workai_lab777/reel/DdU1MXYSUkk/)。07:50時点のMorning Routineチェックでは未投稿だったが、その13分後にOwnerが投稿。owner_actionは解消。",
-    "afb_audit": "in_progress",
-    "afb_audit_note": "AI特集2026を調査、TOP2選定完了(data/affiliate/afb_program_audit_2026-09-15.md)。Notta funnel LIVE化まで新規提携は保留。",
-    "todays_public_market_outputs": 0
+    "afb_audit": "blocked_owner_login",
+    "afb_audit_note": "同上によりTOP3拡大・新規案件抽出は保留中。既存TOP2(Plaud.ai/RecCloud AI、data/affiliate/afb_program_audit_2026-09-15.md)からは変更なし。",
+    "todays_public_market_outputs": 0,
+    "notta_clicks_note": "A8.net(pub.a8.net)・afb(afi-b.com)とも実機確認したところ両方セッション切れでログイン画面表示。Claudeは認証情報を扱えないためOwner再ログインが必要。再ログイン後、Notta Memoクリック数と新規afb案件一覧を取得可能。",
+    "tomorrow_assets": "IN_PRODUCTION",
+    "tomorrow_assets_note": "Day16 Reel(Task Scheduler不具合の原因究明・修正・検証ストーリー)をCodexへディスパッチ済み(task_id: bd924a98-30ec-4258-8b99-c88e5a5b749e)。締切2026-09-17 06:00。VOICEVOX起動が必要な場合はClaudeが対応。",
+    "strategic_reply": "1件Approval Queueへ登録(@yukissense、議事録AI精度がテーマ、Notta実測値と接続)"
   },
   "revenue": {
     "revenue_jpy": 0,

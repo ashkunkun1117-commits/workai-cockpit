@@ -268,6 +268,7 @@
       IN_PRODUCTION: ['status production', 'IN PRODUCTION'],
       BLOCKED: ['status notready', 'BLOCKED'],
       waiting_owner_login: ['status notready', 'WAITING OWNER LOGIN'],
+      blocked_owner_login: ['status notready', 'BLOCKED(OWNER LOGIN)'],
       in_progress: ['status production', 'IN PROGRESS'],
       complete: ['status', 'COMPLETE']
     };
@@ -284,11 +285,15 @@
       (bp.notta_note_note ? '<div style="font-size:11px;color:var(--ink-faint);margin-top:2px">' + esc(bp.notta_note_note) + '</div>' : '') + '</div>' +
       '<div style="margin-top:8px"><b>X告知:</b> ' + bpBadge(bp.x_announcement) +
       (bp.x_announcement_note ? '<div style="font-size:11px;color:var(--ink-faint);margin-top:2px">' + esc(bp.x_announcement_note) + '</div>' : '') + '</div>' +
-      '<div style="margin-top:8px"><b>Notta クリック数:</b> ' + esc(bp.notta_clicks || '0') + '</div>' +
+      '<div style="margin-top:8px"><b>Notta クリック数:</b> ' + esc(bp.notta_clicks || '0') +
+      (bp.notta_clicks_note ? '<div style="font-size:11px;color:var(--ink-faint);margin-top:2px">' + esc(bp.notta_clicks_note) + '</div>' : '') + '</div>' +
       '<div style="margin-top:8px"><b>自動化2日停止Reel(P2):</b> ' + bpBadge(bp.automation_reel) +
       (bp.automation_reel_note ? '<div style="font-size:11px;color:var(--ink-faint);margin-top:2px">' + esc(bp.automation_reel_note) + '</div>' : '') + '</div>' +
       '<div style="margin-top:8px"><b>afb案件調査:</b> ' + bpBadge(bp.afb_audit) +
       (bp.afb_audit_note ? '<div style="font-size:11px;color:var(--ink-faint);margin-top:2px">' + esc(bp.afb_audit_note) + '</div>' : '') + '</div>' +
+      (bp.tomorrow_assets ? '<div style="margin-top:8px"><b>明日の投稿素材(Tomorrow Assets):</b> ' + bpBadge(bp.tomorrow_assets) +
+      (bp.tomorrow_assets_note ? '<div style="font-size:11px;color:var(--ink-faint);margin-top:2px">' + esc(bp.tomorrow_assets_note) + '</div>' : '') + '</div>' : '') +
+      (bp.strategic_reply ? '<div style="margin-top:8px"><b>Strategic Reply:</b> <span style="font-size:11px;color:var(--ink-faint)">' + esc(bp.strategic_reply) + '</span></div>' : '') +
       '<div style="margin-top:8px"><b>本日の公開済みPUBLIC MARKET OUTPUT数:</b> ' + esc(bp.todays_public_market_outputs != null ? bp.todays_public_market_outputs : 0) + '</div>' +
       '</div></section>';
   }
