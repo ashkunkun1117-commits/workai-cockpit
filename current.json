@@ -10,10 +10,10 @@
       "note": "Content Editor作成・Claude QA完了(114字)。承認待ちフロー自体の乖離をテーマにした本文。Owner承認後にClaudeが投稿。"
     },
     "ig_reel": {
-      "status": "blocked",
+      "status": "in_production",
       "video_file": null,
       "url": null,
-      "note": "台本(content/reel-json/day17_approval_gap_story.md)はQA完了だが、レンダリングhandoff(coord-6ada1af1414838df92b894ff8cba75ba)はattempts:0で未着手。原因: Codexクォータ上限(提示リセット時刻2026-09-20T12:21、タイムゾーン未確証)。Pre-Morning Routineの仕様上その場で新規制作は行わない。"
+      "note": "台本(content/reel-json/day17_approval_gap_story.md)はQA完了。Codex handoff(coord-6ada1af1414838df92b894ff8cba75ba)がクォータ上限(提示リセット2026-09-20T12:21、TZ未確証)で2日ブロック継続のため、Morning Routineで本来の担当であるCreative Engineerへ直接再ルーティング(2026-09-18)。レンダリング実行中、完了後にClaude Business QAを行う。"
     }
   },
   "business_progress": {
@@ -30,7 +30,7 @@
     "todays_public_market_outputs": 0,
     "notta_clicks_note": "Owner再ログイン完了、A8.net詳細レポートで確認。X告知(簡略版)経由のクリックはまだ発生していない。note記事内リンクのクリック率は別途確認要。",
     "tomorrow_assets": "IN_PRODUCTION",
-    "tomorrow_assets_note": "Day17 X投稿文(content/x/day17_post.md)・Reel台本(content/reel-json/day17_approval_gap_story.md)はContent Editor作成・Claude QA完了。Reelレンダリングはcoord-6ada1af1414838df92b894ff8cba75ba(Codex handoff)へ委任済み、動画完成待ち。",
+    "tomorrow_assets_note": "Day17 X投稿文(content/x/day17_post.md)・Reel台本(content/reel-json/day17_approval_gap_story.md)はContent Editor作成・Claude QA完了。ReelレンダリングはCodex handoff(coord-6ada1af1414838df92b894ff8cba75ba)が2日ブロック継続のため、2026-09-18 Morning RoutineでCreative Engineerへ再ルーティング、動画完成待ち。",
     "strategic_reply": "Owner承認・投稿完了(@yukissense、https://x.com/workai_lab777/status/2100207692967248246)"
   },
   "carryover": [],
@@ -201,13 +201,13 @@
   "kpi": {
     "revenue_jpy": 0,
     "profit_jpy": 0,
-    "day30_remaining": 16,
-    "day100_remaining": 86,
+    "day30_remaining": 13,
+    "day100_remaining": 83,
     "product_signals": 0,
     "blocked_tasks": 0
   },
   "system_health": "attention",
-  "system_health_reason": "Day17 Reelレンダリング(coord-6ada1af1414838df92b894ff8cba75ba)がCodexクォータ上限(提示リセット2026-09-20T12:21、タイムゾーン未確証)によりattempts:0のままブロック中。Day17 X投稿案は承認待ち(Reel未完成のため単独判断が必要)。Day16 x_post/ig_reelは2026-09-17 Evening Routineで投稿済みをreconcile済み(history参照)。Xブラウザ認証状態は前回確認時unauthenticated、Instagramはauthenticated(いずれも次回Routineで再確認)。",
+  "system_health_reason": "Day17 Reelは、Codex handoff(coord-6ada1af1414838df92b894ff8cba75ba)がクォータ上限(提示リセット2026-09-20T12:21、タイムゾーン未確証)で2日ブロック継続していたため、2026-09-18 Morning RoutineでCreative Engineerへ再ルーティングし制作実行中。Day17 X投稿案は承認待ち(Reel未完成のため単独判断が必要)。Xブラウザ認証状態は本日確認で明示的にunauthenticated確定(/home・/searchとも明示的ログインリダイレクト)、Instagramは前回確認時authenticated(次回Routineで再確認)。",
   "evening_2026_09_17_findings": {},
   "evening_2026-09-17_findings": {
     "manual_publish_verification": "Day16のX投稿・IG Reelとも、today.jsonでは投稿待ち(owner_actions)のまま残っていたが、実際には両方ともOwnerが本日朝(X: 07:32頃、IG: 相対表示から推定07:3x頃)に手動投稿済みだったことをEvening Routineの独立確認で発見。historyへ移動・実測データ記録済み。X本文は今回、承認済みFINAL全文のまま投稿されており、Day14/15で発生したnote.comシェアカード簡略化の乖離は発生しなかった。",
@@ -215,9 +215,15 @@
     "x_state": "unauthenticated(x.com/homeが明示的ログインフォームへリダイレクト)。個別ポストURL・プロフィールページは非ログインでも閲覧可能だったため、これらの範囲でのみ確認を実施した。",
     "ig_state": "authenticated(プロフィール編集・インサイト閲覧が可能)。"
   },
+  "morning_2026-09-18_findings": {
+    "manual_publish_verification": "carryoverは既に空(Evening Routineでreconcile済み)のため今回の追加リコンサイルはなし。",
+    "x_conversation_check": "waiting中3会話を個別スレッドURLで再確認。forestkinoko(Day9)・yukissense(Day16)は返信1件(こちら分のみ)で新規author返信なし変わらず。narisumashi100(Day10、37件スレッド)は引き続き非ログイン表示制限で全件確認不能、次回持ち越し。Approval Queue pending=0のためApproval Batchなし。",
+    "x_state": "unauthenticated確定(/home・/searchとも明示的ログインフォームへリダイレクト、unknownではない)。新規Strategic Reply候補探索は/searchがログイン必須のためスキップ。",
+    "day17_reel_rerouting": "coord-6ada1af1414838df92b894ff8cba75ba(Codex handoff)がクォータ上限で2日ブロック継続中のため、既存Remotionテンプレート・VOICEVOX実装を使う定型のReel制作としてCreative Engineerへ直接再ルーティングし制作実行中(完了後にClaude Business QA予定)。"
+  },
   "current_date": "2026-09-18",
   "data_updated_at": "2026-09-18T05:45:00+09:00",
-  "public_updated_at": "2026-09-17T20:47:46.996Z",
+  "public_updated_at": "2026-09-17T22:06:59.385Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -541,10 +547,10 @@
         "note": "Content Editor作成・Claude QA完了(114字)。承認待ちフロー自体の乖離をテーマにした本文。Owner承認後にClaudeが投稿。"
       },
       "ig_reel": {
-        "status": "blocked",
+        "status": "in_production",
         "video_file": null,
         "url": null,
-        "note": "台本(content/reel-json/day17_approval_gap_story.md)はQA完了だが、レンダリングhandoff(coord-6ada1af1414838df92b894ff8cba75ba)はattempts:0で未着手。原因: Codexクォータ上限(提示リセット時刻2026-09-20T12:21、タイムゾーン未確証)。Pre-Morning Routineの仕様上その場で新規制作は行わない。"
+        "note": "台本(content/reel-json/day17_approval_gap_story.md)はQA完了。Codex handoff(coord-6ada1af1414838df92b894ff8cba75ba)がクォータ上限(提示リセット2026-09-20T12:21、TZ未確証)で2日ブロック継続のため、Morning Routineで本来の担当であるCreative Engineerへ直接再ルーティング(2026-09-18)。レンダリング実行中、完了後にClaude Business QAを行う。"
       }
     },
     "business_progress": {
@@ -561,7 +567,7 @@
       "todays_public_market_outputs": 0,
       "notta_clicks_note": "Owner再ログイン完了、A8.net詳細レポートで確認。X告知(簡略版)経由のクリックはまだ発生していない。note記事内リンクのクリック率は別途確認要。",
       "tomorrow_assets": "IN_PRODUCTION",
-      "tomorrow_assets_note": "Day17 X投稿文(content/x/day17_post.md)・Reel台本(content/reel-json/day17_approval_gap_story.md)はContent Editor作成・Claude QA完了。Reelレンダリングはcoord-6ada1af1414838df92b894ff8cba75ba(Codex handoff)へ委任済み、動画完成待ち。",
+      "tomorrow_assets_note": "Day17 X投稿文(content/x/day17_post.md)・Reel台本(content/reel-json/day17_approval_gap_story.md)はContent Editor作成・Claude QA完了。ReelレンダリングはCodex handoff(coord-6ada1af1414838df92b894ff8cba75ba)が2日ブロック継続のため、2026-09-18 Morning RoutineでCreative Engineerへ再ルーティング、動画完成待ち。",
       "strategic_reply": "Owner承認・投稿完了(@yukissense、https://x.com/workai_lab777/status/2100207692967248246)"
     },
     "carryover": [],
@@ -732,19 +738,25 @@
     "kpi": {
       "revenue_jpy": 0,
       "profit_jpy": 0,
-      "day30_remaining": 16,
-      "day100_remaining": 86,
+      "day30_remaining": 13,
+      "day100_remaining": 83,
       "product_signals": 0,
       "blocked_tasks": 0
     },
     "system_health": "attention",
-    "system_health_reason": "Day17 Reelレンダリング(coord-6ada1af1414838df92b894ff8cba75ba)がCodexクォータ上限(提示リセット2026-09-20T12:21、タイムゾーン未確証)によりattempts:0のままブロック中。Day17 X投稿案は承認待ち(Reel未完成のため単独判断が必要)。Day16 x_post/ig_reelは2026-09-17 Evening Routineで投稿済みをreconcile済み(history参照)。Xブラウザ認証状態は前回確認時unauthenticated、Instagramはauthenticated(いずれも次回Routineで再確認)。",
+    "system_health_reason": "Day17 Reelは、Codex handoff(coord-6ada1af1414838df92b894ff8cba75ba)がクォータ上限(提示リセット2026-09-20T12:21、タイムゾーン未確証)で2日ブロック継続していたため、2026-09-18 Morning RoutineでCreative Engineerへ再ルーティングし制作実行中。Day17 X投稿案は承認待ち(Reel未完成のため単独判断が必要)。Xブラウザ認証状態は本日確認で明示的にunauthenticated確定(/home・/searchとも明示的ログインリダイレクト)、Instagramは前回確認時authenticated(次回Routineで再確認)。",
     "evening_2026_09_17_findings": {},
     "evening_2026-09-17_findings": {
       "manual_publish_verification": "Day16のX投稿・IG Reelとも、today.jsonでは投稿待ち(owner_actions)のまま残っていたが、実際には両方ともOwnerが本日朝(X: 07:32頃、IG: 相対表示から推定07:3x頃)に手動投稿済みだったことをEvening Routineの独立確認で発見。historyへ移動・実測データ記録済み。X本文は今回、承認済みFINAL全文のまま投稿されており、Day14/15で発生したnote.comシェアカード簡略化の乖離は発生しなかった。",
       "x_conversation_check": "waiting中の3会話(forestkinoko Day9, narisumashi100 Day10, yukissense Day16)を個別スレッドURLで確認。forestkinoko/yukissenseは新規返信なし(こちらの返信のみ)。narisumashi100は37件の返信スレッドが非ログインでは全件表示できず(ログイン要求)、新規返信有無を確定できなかった(unauthenticated制約、次回持ち越し)。新規Strategic Reply候補探索はXがunauthenticatedのためスキップ。",
       "x_state": "unauthenticated(x.com/homeが明示的ログインフォームへリダイレクト)。個別ポストURL・プロフィールページは非ログインでも閲覧可能だったため、これらの範囲でのみ確認を実施した。",
       "ig_state": "authenticated(プロフィール編集・インサイト閲覧が可能)。"
+    },
+    "morning_2026-09-18_findings": {
+      "manual_publish_verification": "carryoverは既に空(Evening Routineでreconcile済み)のため今回の追加リコンサイルはなし。",
+      "x_conversation_check": "waiting中3会話を個別スレッドURLで再確認。forestkinoko(Day9)・yukissense(Day16)は返信1件(こちら分のみ)で新規author返信なし変わらず。narisumashi100(Day10、37件スレッド)は引き続き非ログイン表示制限で全件確認不能、次回持ち越し。Approval Queue pending=0のためApproval Batchなし。",
+      "x_state": "unauthenticated確定(/home・/searchとも明示的ログインフォームへリダイレクト、unknownではない)。新規Strategic Reply候補探索は/searchがログイン必須のためスキップ。",
+      "day17_reel_rerouting": "coord-6ada1af1414838df92b894ff8cba75ba(Codex handoff)がクォータ上限で2日ブロック継続中のため、既存Remotionテンプレート・VOICEVOX実装を使う定型のReel制作としてCreative Engineerへ直接再ルーティングし制作実行中(完了後にClaude Business QA予定)。"
     }
   },
   "health_inputs": {
@@ -909,6 +921,27 @@
         "exit_code": 0,
         "success": true,
         "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\evening_2026-09-17_223001.log"
+      },
+      {
+        "routine": "premorning",
+        "scheduled_at": "2026-09-18T05:45:00",
+        "started_at": "2026-09-17T20:49:05.753Z",
+        "finished_at": "2026-09-17T20:49:05.753Z",
+        "exit_code": 0,
+        "success": true,
+        "invocation": "manual_chat_slash_command",
+        "status": "MORNING_READY",
+        "note": "Date Rollover実施: today.json/CockpitともDay16/2026-09-17→Day17/2026-09-18へ更新。Day17 X投稿(content/x/day17_post.md)はready(Owner承認待ち)、Reel(day17.mp4)はCodexクォータ上限(リセット提示2026-09-20)によりblocked、attempts:0のまま未着手であることを正直に表示。get_tasksでDay7v2/Day10/Day16の3件のreview状態タスクがtoday.json historyの実態(既に投稿済み)と乖離していたためdoneへクローズ。Approval Queue pending=0。Cockpit commit 289cc44・push・Pages build built一致・live current.json business_day=17確認PASS。",
+        "log_file": null
+      },
+      {
+        "routine": "premorning",
+        "scheduled_at": "2026-09-18T05:45:00",
+        "started_at": "2026-09-18T05:45:01",
+        "finished_at": "2026-09-18T05:49:23",
+        "exit_code": 0,
+        "success": true,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\premorning_2026-09-18_054501.log"
       }
     ],
     "tasks": [
