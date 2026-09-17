@@ -1,20 +1,8 @@
 {
   "business_day": 16,
   "business_date": "2026-09-17",
-  "generated_at": "2026-09-17T07:10:00+09:00",
-  "today": {
-    "x_post": {
-      "status": "ready",
-      "text": "手動で動いたので、直ったつもりでした。\nでも朝の予約起動は、別の電源設定で止まっていました。\n\n両方とも修正済み。次は人が触らず動くかの確認です。\n「手で動かせる」と「任せられる」を混同していました。\n\nAIでできる仕事は、AIに。\nDay16/100",
-      "reason": "Day16 FINAL、架空成果なし、22:30無人実行結果は未確認と明記"
-    },
-    "ig_reel": {
-      "status": "ready",
-      "video_file": "day16-reel.mp4",
-      "caption": "見えていた不具合を直しただけで、直ったつもりになっていました。\n\n9/15、スリープを防ぐコードのエラーを修正。手動で動いたので、これで大丈夫だと判断していました。\n\nでも9/16の朝、予約時刻になっても動かない。\n別の場所にあった「バッテリー駆動中は起動しない」という電源条件が、予約起動を止めていました。\n\nコードと電源条件。どちらも修正済みです。\nただ、手動でスクリプトを動かす確認では、予約起動の条件までは通っていませんでした。\n\n「手で動かせる」と「任せられる」を混同していたんですよね。\n\n次の確認は、人が触らず、実際の予約経路で起動から完了まで進むこと。\n9/16 22:30の無人実行は別途検証中で、この原稿では結果をまだ確認していません。一度動いたあとも、継続して確かめます。\n\n自動化を直したら、手動テストと無人の予約実行を分けて確認する。自分へのメモとして残します。\n\nAIでできる仕事は、AIに。\nDay 16 / 100\n#AI仕事研究所 #100日実験 #自動化 #仕事効率化 #AIパートナー\n\nVOICEVOX：青山龍星",
-      "reason": "Business QA PASS(frame0/1s二重露光なし/最終フレーム確認、キャラクター登場、架空数値なし)"
-    }
-  },
+  "generated_at": "2026-09-17T22:35:00+09:00",
+  "today": {},
   "business_progress": {
     "note_priority": "P1",
     "notta_note": "LIVE",
@@ -28,12 +16,34 @@
     "afb_audit_note": "Owner再ログイン完了(afb実績も0クリック/0発生を確認)。ただしCOO指令『Notta funnel LIVE化まで新規afb提携は保留』が継続有効のため、TOP3拡大は本日実施せず据え置き。既存TOP2(Plaud.ai/RecCloud AI)のまま。",
     "todays_public_market_outputs": 0,
     "notta_clicks_note": "Owner再ログイン完了、A8.net詳細レポートで確認。X告知(簡略版)経由のクリックはまだ発生していない。note記事内リンクのクリック率は別途確認要。",
-    "tomorrow_assets": "READY",
-    "tomorrow_assets_note": "Day16 Reel完成(day16.mp4, 33.5秒, VOICEVOX音声・キャラクター登場あり)。frame0/1s/最終フレームのQA PASS。Owner視聴・投稿承認待ち。X投稿案(content/x/day16_post.md)も準備済み。",
+    "tomorrow_assets": "NOT_READY",
+    "tomorrow_assets_note": "Day17分の台本・投稿文は本Evening Routine時点で未着手(Content Editorへ委任予定)。",
     "strategic_reply": "Owner承認・投稿完了(@yukissense、https://x.com/workai_lab777/status/2100207692967248246)"
   },
   "carryover": [],
   "history": [
+    {
+      "type": "x_post",
+      "day": 16,
+      "status": "completed",
+      "url": "https://x.com/workai_lab777/status/2100351230371623383",
+      "actual_published_at": "2026-09-17T07:32:00+09:00",
+      "verification_source": "X profile timeline(workai_lab777、本文完全一致、相対表示「15h」、2026-09-17 22:32 JST確認)",
+      "verified_at": "2026-09-17T22:35:00+09:00",
+      "verification_note": "本文はcontent/x/day16_post.mdの承認済みFINAL全文と完全一致(Day14/15と異なりnote.comシェアカードへの簡略化なし)。impressions=4、likes/replies/reposts=0(投稿ページ実測)。actual_published_atは相対表示「15h」から逆算した概算値。"
+    },
+    {
+      "type": "ig_reel",
+      "day": 16,
+      "status": "completed",
+      "url": "https://www.instagram.com/workai_lab777/reel/DdXXL66SrpW/",
+      "video_file": "day16-reel.mp4",
+      "caption": "見えていた不具合を直しただけで、直ったつもりになっていました。\n\n9/15、スリープを防ぐコードのエラーを修正。手動で動いたので、これで大丈夫だと判断していました。\n\nでも9/16の朝、予約時刻になっても動かない。\n別の場所にあった「バッテリー駆動中は起動しない」という電源条件が、予約起動を止めていました。\n\nコードと電源条件。どちらも修正済みです。\nただ、手動でスクリプトを動かす確認では、予約起動の条件までは通っていませんでした。\n\n「手で動かせる」と「任せられる」を混同していたんですよね。\n\n次の確認は、人が触らず、実際の予約経路で起動から完了まで進むこと。\n9/16 22:30の無人実行は別途検証中で、この原稿では結果をまだ確認していません。一度動いたあとも、継続して確かめます。\n\n自動化を直したら、手動テストと無人の予約実行を分けて確認する。自分へのメモとして残します。\n\nAIでできる仕事は、AIに。\nDay 16 / 100\n#AI仕事研究所 #100日実験 #自動化 #仕事効率化 #AIパートナー\n\nVOICEVOX：青山龍星",
+      "actual_published_at": null,
+      "verification_source": "Instagram(workai_lab777、キャプション完全一致、投稿ページ相対表示「15時間前」、2026-09-17 22:32 JST確認)",
+      "verified_at": "2026-09-17T22:35:00+09:00",
+      "verification_note": "Evening Routine Manual Publish Verificationで発見。today.json/Cockpitとも投稿待ちのまま残留していたが、Owner is既にInstagramへ手動投稿済み(15時間前=推定2026-09-17 07:3x JST)。インサイト実測: views=45, reach(閲覧者)=40(フォロワー6.7%/非フォロワー93.3%)、いいね/コメント/保存/シェアいずれも0。"
+    },
     {
       "type": "x_post",
       "day": 15,
@@ -155,9 +165,7 @@
       "verification_note": "views=29, reach(閲覧者)=29, フォロワー以外100%, いいね/コメント/保存/シェアいずれも0(data/instagram/post_insights_log.csvへ記録済み)。相対表示「1日前」のみ確認、正確なpublish時刻は未取得(推測しない)。"
     }
   ],
-  "owner_actions": [
-    "Day16 Reel(day16-reel.mp4)をCockpitで視聴し、問題なければInstagram投稿承認。X投稿(content/x/day16_post.md)も合わせてご確認ください。"
-  ],
+  "owner_actions": [],
   "approval_queue": [],
   "ai_learning": {
     "observation": "Day13(Fixed Publishing Schedule TEST 1初日)はMorning Routine自動発火が失敗したにもかかわらず、Ownerが自主的にX/Instagramへ手動投稿(X: 07:30予定に対し実際は数時間後、IG Reel: 相対表示のみで正確な時刻不明)。制作(Codex)は完了していたため、公開判断だけ人間に残った。2026-09-15朝、Evening Routine不通で滞っていたSNS分析(実測データに基づく)をClaudeが独立実施し、X表示回数(Day9=22→Day10=18→Day11=13→Day12=7→Day13=4)・Instagram Reel再生数(Day10=29→Day12=24→Day13=10)とも5日連続で減少していることを発見。さらに、全3件のReel(Day10/12/13)は外部(非フォロワー)へのリーチ自体は60〜100%と機能しているにもかかわらず、いいね・コメント・保存・シェアが全てゼロという特徴も判明(data/instagram/post_insights_log.csvへ初記録)。2026-09-15夜、本Evening Routineで確認したところDay14分のX投稿・IG Reelは既にOwnerが手動投稿済み(X:3時間前・impressions=3で継続減少、IG:2時間前・インサイトは早すぎるため未取得)。",
@@ -185,9 +193,16 @@
   },
   "system_health": "attention",
   "system_health_reason": "COO指令(2026-09-16 STATUS CORRECTION)によりRoutine ReliabilityはPASSではなく『OBSERVATION CONTINUES』。Sleep Prevention Castバグ修正・手動実行1回のPASSは確認済みだが、実際のタスクスケジューラ自然発火・battery条件解除・複数Routine排他制御の確認が未完了(routine_scheduler.logは2026-09-15 07:25のpremorning失敗以降、後続4回はすべてsuccess:trueで連続)。Day15 ReelはOwner投稿承認待ち(Instagram未投稿を実機確認)。X告知投稿はOwner実行済みだが承認済みFINAL文と異なる簡略版が投稿された(x_announcement_divergence参照)。Xブラウザはunauthenticated(タイムライン閲覧は可能、検索はログイン必須)、Instagramはauthenticated。",
+  "evening_2026_09_17_findings": {},
+  "evening_2026-09-17_findings": {
+    "manual_publish_verification": "Day16のX投稿・IG Reelとも、today.jsonでは投稿待ち(owner_actions)のまま残っていたが、実際には両方ともOwnerが本日朝(X: 07:32頃、IG: 相対表示から推定07:3x頃)に手動投稿済みだったことをEvening Routineの独立確認で発見。historyへ移動・実測データ記録済み。X本文は今回、承認済みFINAL全文のまま投稿されており、Day14/15で発生したnote.comシェアカード簡略化の乖離は発生しなかった。",
+    "x_conversation_check": "waiting中の3会話(forestkinoko Day9, narisumashi100 Day10, yukissense Day16)を個別スレッドURLで確認。forestkinoko/yukissenseは新規返信なし(こちらの返信のみ)。narisumashi100は37件の返信スレッドが非ログインでは全件表示できず(ログイン要求)、新規返信有無を確定できなかった(unauthenticated制約、次回持ち越し)。新規Strategic Reply候補探索はXがunauthenticatedのためスキップ。",
+    "x_state": "unauthenticated(x.com/homeが明示的ログインフォームへリダイレクト)。個別ポストURL・プロフィールページは非ログインでも閲覧可能だったため、これらの範囲でのみ確認を実施した。",
+    "ig_state": "authenticated(プロフィール編集・インサイト閲覧が可能)。"
+  },
   "current_date": "2026-09-17",
-  "data_updated_at": "2026-09-17T07:10:00+09:00",
-  "public_updated_at": "2026-09-17T12:04:21.565Z",
+  "data_updated_at": "2026-09-17T22:35:00+09:00",
+  "public_updated_at": "2026-09-17T13:36:01.977Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -478,26 +493,32 @@
         "cost_jpy": null,
         "profit_jpy": null,
         "human_work_minutes": null
+      },
+      {
+        "day": 16,
+        "date": "2026-09-17",
+        "x_posts": 1,
+        "x_impressions": 4,
+        "x_strategic_replies": null,
+        "x_reply_impressions_avg": null,
+        "ig_posts": 1,
+        "ig_reel_views": 45,
+        "ig_followers": null,
+        "ig_profile_visits": null,
+        "link_clicks": null,
+        "conversions": null,
+        "revenue_jpy": null,
+        "cost_jpy": null,
+        "profit_jpy": null,
+        "human_work_minutes": null
       }
     ]
   },
   "source_manifest": {
     "business_day": 16,
     "business_date": "2026-09-17",
-    "generated_at": "2026-09-17T07:10:00+09:00",
-    "today": {
-      "x_post": {
-        "status": "ready",
-        "text": "手動で動いたので、直ったつもりでした。\nでも朝の予約起動は、別の電源設定で止まっていました。\n\n両方とも修正済み。次は人が触らず動くかの確認です。\n「手で動かせる」と「任せられる」を混同していました。\n\nAIでできる仕事は、AIに。\nDay16/100",
-        "reason": "Day16 FINAL、架空成果なし、22:30無人実行結果は未確認と明記"
-      },
-      "ig_reel": {
-        "status": "ready",
-        "video_file": "day16-reel.mp4",
-        "caption": "見えていた不具合を直しただけで、直ったつもりになっていました。\n\n9/15、スリープを防ぐコードのエラーを修正。手動で動いたので、これで大丈夫だと判断していました。\n\nでも9/16の朝、予約時刻になっても動かない。\n別の場所にあった「バッテリー駆動中は起動しない」という電源条件が、予約起動を止めていました。\n\nコードと電源条件。どちらも修正済みです。\nただ、手動でスクリプトを動かす確認では、予約起動の条件までは通っていませんでした。\n\n「手で動かせる」と「任せられる」を混同していたんですよね。\n\n次の確認は、人が触らず、実際の予約経路で起動から完了まで進むこと。\n9/16 22:30の無人実行は別途検証中で、この原稿では結果をまだ確認していません。一度動いたあとも、継続して確かめます。\n\n自動化を直したら、手動テストと無人の予約実行を分けて確認する。自分へのメモとして残します。\n\nAIでできる仕事は、AIに。\nDay 16 / 100\n#AI仕事研究所 #100日実験 #自動化 #仕事効率化 #AIパートナー\n\nVOICEVOX：青山龍星",
-        "reason": "Business QA PASS(frame0/1s二重露光なし/最終フレーム確認、キャラクター登場、架空数値なし)"
-      }
-    },
+    "generated_at": "2026-09-17T22:35:00+09:00",
+    "today": {},
     "business_progress": {
       "note_priority": "P1",
       "notta_note": "LIVE",
@@ -511,12 +532,34 @@
       "afb_audit_note": "Owner再ログイン完了(afb実績も0クリック/0発生を確認)。ただしCOO指令『Notta funnel LIVE化まで新規afb提携は保留』が継続有効のため、TOP3拡大は本日実施せず据え置き。既存TOP2(Plaud.ai/RecCloud AI)のまま。",
       "todays_public_market_outputs": 0,
       "notta_clicks_note": "Owner再ログイン完了、A8.net詳細レポートで確認。X告知(簡略版)経由のクリックはまだ発生していない。note記事内リンクのクリック率は別途確認要。",
-      "tomorrow_assets": "READY",
-      "tomorrow_assets_note": "Day16 Reel完成(day16.mp4, 33.5秒, VOICEVOX音声・キャラクター登場あり)。frame0/1s/最終フレームのQA PASS。Owner視聴・投稿承認待ち。X投稿案(content/x/day16_post.md)も準備済み。",
+      "tomorrow_assets": "NOT_READY",
+      "tomorrow_assets_note": "Day17分の台本・投稿文は本Evening Routine時点で未着手(Content Editorへ委任予定)。",
       "strategic_reply": "Owner承認・投稿完了(@yukissense、https://x.com/workai_lab777/status/2100207692967248246)"
     },
     "carryover": [],
     "history": [
+      {
+        "type": "x_post",
+        "day": 16,
+        "status": "completed",
+        "url": "https://x.com/workai_lab777/status/2100351230371623383",
+        "actual_published_at": "2026-09-17T07:32:00+09:00",
+        "verification_source": "X profile timeline(workai_lab777、本文完全一致、相対表示「15h」、2026-09-17 22:32 JST確認)",
+        "verified_at": "2026-09-17T22:35:00+09:00",
+        "verification_note": "本文はcontent/x/day16_post.mdの承認済みFINAL全文と完全一致(Day14/15と異なりnote.comシェアカードへの簡略化なし)。impressions=4、likes/replies/reposts=0(投稿ページ実測)。actual_published_atは相対表示「15h」から逆算した概算値。"
+      },
+      {
+        "type": "ig_reel",
+        "day": 16,
+        "status": "completed",
+        "url": "https://www.instagram.com/workai_lab777/reel/DdXXL66SrpW/",
+        "video_file": "day16-reel.mp4",
+        "caption": "見えていた不具合を直しただけで、直ったつもりになっていました。\n\n9/15、スリープを防ぐコードのエラーを修正。手動で動いたので、これで大丈夫だと判断していました。\n\nでも9/16の朝、予約時刻になっても動かない。\n別の場所にあった「バッテリー駆動中は起動しない」という電源条件が、予約起動を止めていました。\n\nコードと電源条件。どちらも修正済みです。\nただ、手動でスクリプトを動かす確認では、予約起動の条件までは通っていませんでした。\n\n「手で動かせる」と「任せられる」を混同していたんですよね。\n\n次の確認は、人が触らず、実際の予約経路で起動から完了まで進むこと。\n9/16 22:30の無人実行は別途検証中で、この原稿では結果をまだ確認していません。一度動いたあとも、継続して確かめます。\n\n自動化を直したら、手動テストと無人の予約実行を分けて確認する。自分へのメモとして残します。\n\nAIでできる仕事は、AIに。\nDay 16 / 100\n#AI仕事研究所 #100日実験 #自動化 #仕事効率化 #AIパートナー\n\nVOICEVOX：青山龍星",
+        "actual_published_at": null,
+        "verification_source": "Instagram(workai_lab777、キャプション完全一致、投稿ページ相対表示「15時間前」、2026-09-17 22:32 JST確認)",
+        "verified_at": "2026-09-17T22:35:00+09:00",
+        "verification_note": "Evening Routine Manual Publish Verificationで発見。today.json/Cockpitとも投稿待ちのまま残留していたが、Owner is既にInstagramへ手動投稿済み(15時間前=推定2026-09-17 07:3x JST)。インサイト実測: views=45, reach(閲覧者)=40(フォロワー6.7%/非フォロワー93.3%)、いいね/コメント/保存/シェアいずれも0。"
+      },
       {
         "type": "x_post",
         "day": 15,
@@ -638,9 +681,7 @@
         "verification_note": "views=29, reach(閲覧者)=29, フォロワー以外100%, いいね/コメント/保存/シェアいずれも0(data/instagram/post_insights_log.csvへ記録済み)。相対表示「1日前」のみ確認、正確なpublish時刻は未取得(推測しない)。"
       }
     ],
-    "owner_actions": [
-      "Day16 Reel(day16-reel.mp4)をCockpitで視聴し、問題なければInstagram投稿承認。X投稿(content/x/day16_post.md)も合わせてご確認ください。"
-    ],
+    "owner_actions": [],
     "approval_queue": [],
     "ai_learning": {
       "observation": "Day13(Fixed Publishing Schedule TEST 1初日)はMorning Routine自動発火が失敗したにもかかわらず、Ownerが自主的にX/Instagramへ手動投稿(X: 07:30予定に対し実際は数時間後、IG Reel: 相対表示のみで正確な時刻不明)。制作(Codex)は完了していたため、公開判断だけ人間に残った。2026-09-15朝、Evening Routine不通で滞っていたSNS分析(実測データに基づく)をClaudeが独立実施し、X表示回数(Day9=22→Day10=18→Day11=13→Day12=7→Day13=4)・Instagram Reel再生数(Day10=29→Day12=24→Day13=10)とも5日連続で減少していることを発見。さらに、全3件のReel(Day10/12/13)は外部(非フォロワー)へのリーチ自体は60〜100%と機能しているにもかかわらず、いいね・コメント・保存・シェアが全てゼロという特徴も判明(data/instagram/post_insights_log.csvへ初記録)。2026-09-15夜、本Evening Routineで確認したところDay14分のX投稿・IG Reelは既にOwnerが手動投稿済み(X:3時間前・impressions=3で継続減少、IG:2時間前・インサイトは早すぎるため未取得)。",
@@ -667,7 +708,14 @@
       "blocked_tasks": 0
     },
     "system_health": "attention",
-    "system_health_reason": "COO指令(2026-09-16 STATUS CORRECTION)によりRoutine ReliabilityはPASSではなく『OBSERVATION CONTINUES』。Sleep Prevention Castバグ修正・手動実行1回のPASSは確認済みだが、実際のタスクスケジューラ自然発火・battery条件解除・複数Routine排他制御の確認が未完了(routine_scheduler.logは2026-09-15 07:25のpremorning失敗以降、後続4回はすべてsuccess:trueで連続)。Day15 ReelはOwner投稿承認待ち(Instagram未投稿を実機確認)。X告知投稿はOwner実行済みだが承認済みFINAL文と異なる簡略版が投稿された(x_announcement_divergence参照)。Xブラウザはunauthenticated(タイムライン閲覧は可能、検索はログイン必須)、Instagramはauthenticated。"
+    "system_health_reason": "COO指令(2026-09-16 STATUS CORRECTION)によりRoutine ReliabilityはPASSではなく『OBSERVATION CONTINUES』。Sleep Prevention Castバグ修正・手動実行1回のPASSは確認済みだが、実際のタスクスケジューラ自然発火・battery条件解除・複数Routine排他制御の確認が未完了(routine_scheduler.logは2026-09-15 07:25のpremorning失敗以降、後続4回はすべてsuccess:trueで連続)。Day15 ReelはOwner投稿承認待ち(Instagram未投稿を実機確認)。X告知投稿はOwner実行済みだが承認済みFINAL文と異なる簡略版が投稿された(x_announcement_divergence参照)。Xブラウザはunauthenticated(タイムライン閲覧は可能、検索はログイン必須)、Instagramはauthenticated。",
+    "evening_2026_09_17_findings": {},
+    "evening_2026-09-17_findings": {
+      "manual_publish_verification": "Day16のX投稿・IG Reelとも、today.jsonでは投稿待ち(owner_actions)のまま残っていたが、実際には両方ともOwnerが本日朝(X: 07:32頃、IG: 相対表示から推定07:3x頃)に手動投稿済みだったことをEvening Routineの独立確認で発見。historyへ移動・実測データ記録済み。X本文は今回、承認済みFINAL全文のまま投稿されており、Day14/15で発生したnote.comシェアカード簡略化の乖離は発生しなかった。",
+      "x_conversation_check": "waiting中の3会話(forestkinoko Day9, narisumashi100 Day10, yukissense Day16)を個別スレッドURLで確認。forestkinoko/yukissenseは新規返信なし(こちらの返信のみ)。narisumashi100は37件の返信スレッドが非ログインでは全件表示できず(ログイン要求)、新規返信有無を確定できなかった(unauthenticated制約、次回持ち越し)。新規Strategic Reply候補探索はXがunauthenticatedのためスキップ。",
+      "x_state": "unauthenticated(x.com/homeが明示的ログインフォームへリダイレクト)。個別ポストURL・プロフィールページは非ログインでも閲覧可能だったため、これらの範囲でのみ確認を実施した。",
+      "ig_state": "authenticated(プロフィール編集・インサイト閲覧が可能)。"
+    }
   },
   "health_inputs": {
     "scheduler": [
