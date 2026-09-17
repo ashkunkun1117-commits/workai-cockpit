@@ -202,7 +202,7 @@
   },
   "current_date": "2026-09-17",
   "data_updated_at": "2026-09-17T22:45:00+09:00",
-  "public_updated_at": "2026-09-17T13:44:53.067Z",
+  "public_updated_at": "2026-09-17T13:54:50.148Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -870,6 +870,15 @@
         "status": "SUCCESS",
         "note": "Manual Publish Verificationで Day16 X投稿・IG Reelの乖離(Owner手動投稿済みなのにtoday.jsonが承認待ちのまま)を発見・reconcile。Cockpit commit f8e03f9・push・deploy検証PASS。X会話3件中2件は新規返信なし確認、narisumashi100は非ログイン制約で確認不能。Day17先行準備は未着手のためContent Editorへ委任。",
         "log_file": null
+      },
+      {
+        "routine": "evening",
+        "scheduled_at": "2026-09-17T22:30:00",
+        "started_at": "2026-09-17T22:30:01",
+        "finished_at": "2026-09-17T22:45:18",
+        "exit_code": 0,
+        "success": true,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\evening_2026-09-17_223001.log"
       }
     ],
     "tasks": [
@@ -888,5 +897,71 @@
         "next_check_at": "2026-09-17T19:30:00.000Z"
       }
     ]
-  }
+  },
+  "experiment_rows": [
+    {
+      "day": "7",
+      "date": "2026-09-07",
+      "hook_type_planned": "result-first",
+      "hook_type_actual": "result-first",
+      "theme": "議事録まとめ作業を15分→1分に検証(実際に投稿済み)",
+      "reel_url": "https://www.instagram.com/workai_lab777/reel/Dc_IdECR1gs/",
+      "posted": "true",
+      "views": "",
+      "avg_watch_pct": "",
+      "likes": "",
+      "saves": "",
+      "shares": "",
+      "profile_visits": "",
+      "follows": ""
+    },
+    {
+      "day": "8",
+      "date": "",
+      "hook_type_planned": "empathy-problem",
+      "hook_type_actual": "empathy-problem",
+      "theme": "見積書の注意書き作成を15分→1分に検証(Phase2移行によりアーカイブ・未公開のままv2へ差し替え)",
+      "reel_url": "remotion-video/out/archive/day08-v1.mp4",
+      "posted": "false",
+      "views": "",
+      "avg_watch_pct": "",
+      "likes": "",
+      "saves": "",
+      "shares": "",
+      "profile_visits": "",
+      "follows": ""
+    },
+    {
+      "day": "8",
+      "date": "2026-09-08",
+      "hook_type_planned": "prompt-reveal",
+      "hook_type_actual": "prompt-reveal",
+      "theme": "プロンプト実物公開型: 見積書の注意書き作成を15分→1分に検証(Winning Patternスコア90採用・COO承認・実投稿済み)",
+      "reel_url": "https://www.instagram.com/workai_lab777/reel/DdC2L8aOr7p/",
+      "posted": "true",
+      "views": "",
+      "avg_watch_pct": "",
+      "likes": "",
+      "saves": "",
+      "shares": "",
+      "profile_visits": "",
+      "follows": ""
+    },
+    {
+      "day": "9",
+      "date": "",
+      "hook_type_planned": "number-comparison",
+      "hook_type_actual": "",
+      "theme": "数字・比較型",
+      "reel_url": "",
+      "posted": "false",
+      "views": "",
+      "avg_watch_pct": "",
+      "likes": "",
+      "saves": "",
+      "shares": "",
+      "profile_visits": "",
+      "follows": ""
+    }
+  ]
 }
