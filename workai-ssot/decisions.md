@@ -4,6 +4,41 @@
 
 ---
 
+## 2026-09-17 22:30 Evening Routine — Manual Publish Verificationで乖離発見・reconcile
+
+Missed Routine Coalescing判定: SUPERSEDEDではない(直近の後続Routineなし)、通常フル実行。
+
+1. **発見**: today.jsonはDay16 X投稿・IG Reelとも「Owner承認待ち(owner_actions)」の
+   ままだったが、独立確認(Playwright、X個別投稿ページ・Instagramプロフィールとも
+   非ログイン/ログイン両対応で閲覧)の結果、Ownerは既に本日朝(推定07:3x JST)に
+   両方とも手動投稿済みだった。X本文は今回、承認済みFINAL全文のまま投稿されており、
+   Day14/15で発生したnote.comシェアカードへの簡略化は今回発生しなかった。
+   実測: X impressions=4/likes=0/replies=0。IG views=45, reach=40
+   (フォロワー6.7%/非フォロワー93.3%)、いいね/コメント/保存/シェアいずれも0。
+   today.json historyへ移動・kpi_daily.csv Day16へ反映済み。
+2. **X Conversation確認**: waiting中3件(forestkinoko Day9, narisumashi100 Day10,
+   yukissense Day16)を個別スレッドで確認。forestkinoko/yukissenseは新規返信なし。
+   narisumashi100(186.9万再生の大型スレッド、返信37件)は非ログインでは全返信を
+   表示できず確認不能(unauthenticated制約)、次回持ち越し。新規Strategic Reply探索は
+   Xがunauthenticatedのためスキップ(x.com/homeが明示的ログインフォームへリダイレクト、
+   個別ポストURL・プロフィールは非ログイン閲覧可能だったためその範囲でのみ確認)。
+   Instagramはauthenticated。
+3. **Cockpit反映**: today.json更新→`generate-production-cockpit.mjs`+
+   `generate-shared-ssot.mjs`実行→workai-cockpitへcommit(f8e03f9)・push。
+   Pages build=built(該当commit一致)、raw.githubusercontent.com/current.json.github.io
+   両方でbusiness_day=16・data_updated_at=22:35反映確認済み。
+4. **タスク管理の既知の齟齬**: data/tasks/tasks.jsonでは541123a2(Cockpit v4redesign)・
+   task-mu5jq8pe(Shared SSOT v1)がstatus=reviewのまま残っているが、実際は本ログの
+   直近2エントリ(Cockpit v4 Decision Dashboard再設計、Cockpit Read Reliability)で
+   実装・Business QA・本番反映まで完了済み。handoff管理タスクのため直接JSON編集は
+   行わず記録のみ(coord-2eabeb...と同様の既知パターン)。
+5. **Day17先行準備**: 本Routine実行時点で未着手。Content Editorへ委任予定
+   (今夜のEvening Routine自体が「22:30無人実行」の実データになるため、Day16の
+   「手で動かせる」と「任せられる」の続編として使えるかは、明日の05:45 Pre-Morning
+   自然発火の実測を待ってから判断する。架空の成功を先取りしない)。
+
+---
+
 ## 2026-09-17 (COO指令 — Cockpit Read Reliability for ChatGPT、実装完了)
 
 GitHub Pages HTML取得時のcache miss対策として、ChatGPT COO向け軽量JSONエンドポイント

@@ -1,6 +1,6 @@
 {
   "business_day": 16,
-  "updated_at": "2026-09-17T13:36:16.032Z",
+  "updated_at": "2026-09-17T13:44:54.095Z",
   "data_stale": false,
   "today": {
     "x": "not_started",
@@ -42,7 +42,7 @@
     },
     {
       "label": "Evening",
-      "state": "yellow"
+      "state": "green"
     },
     {
       "label": "Pending Watch",

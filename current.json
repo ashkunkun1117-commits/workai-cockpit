@@ -1,7 +1,7 @@
 {
   "business_day": 16,
   "business_date": "2026-09-17",
-  "generated_at": "2026-09-17T22:35:00+09:00",
+  "generated_at": "2026-09-17T22:45:00+09:00",
   "today": {},
   "business_progress": {
     "note_priority": "P1",
@@ -16,8 +16,8 @@
     "afb_audit_note": "Owner再ログイン完了(afb実績も0クリック/0発生を確認)。ただしCOO指令『Notta funnel LIVE化まで新規afb提携は保留』が継続有効のため、TOP3拡大は本日実施せず据え置き。既存TOP2(Plaud.ai/RecCloud AI)のまま。",
     "todays_public_market_outputs": 0,
     "notta_clicks_note": "Owner再ログイン完了、A8.net詳細レポートで確認。X告知(簡略版)経由のクリックはまだ発生していない。note記事内リンクのクリック率は別途確認要。",
-    "tomorrow_assets": "NOT_READY",
-    "tomorrow_assets_note": "Day17分の台本・投稿文は本Evening Routine時点で未着手(Content Editorへ委任予定)。",
+    "tomorrow_assets": "IN_PRODUCTION",
+    "tomorrow_assets_note": "Day17 X投稿文(content/x/day17_post.md)・Reel台本(content/reel-json/day17_approval_gap_story.md)はContent Editor作成・Claude QA完了。Reelレンダリングはcoord-6ada1af1414838df92b894ff8cba75ba(Codex handoff)へ委任済み、動画完成待ち。",
     "strategic_reply": "Owner承認・投稿完了(@yukissense、https://x.com/workai_lab777/status/2100207692967248246)"
   },
   "carryover": [],
@@ -201,8 +201,8 @@
     "ig_state": "authenticated(プロフィール編集・インサイト閲覧が可能)。"
   },
   "current_date": "2026-09-17",
-  "data_updated_at": "2026-09-17T22:35:00+09:00",
-  "public_updated_at": "2026-09-17T13:36:01.977Z",
+  "data_updated_at": "2026-09-17T22:45:00+09:00",
+  "public_updated_at": "2026-09-17T13:44:53.067Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -517,7 +517,7 @@
   "source_manifest": {
     "business_day": 16,
     "business_date": "2026-09-17",
-    "generated_at": "2026-09-17T22:35:00+09:00",
+    "generated_at": "2026-09-17T22:45:00+09:00",
     "today": {},
     "business_progress": {
       "note_priority": "P1",
@@ -532,8 +532,8 @@
       "afb_audit_note": "Owner再ログイン完了(afb実績も0クリック/0発生を確認)。ただしCOO指令『Notta funnel LIVE化まで新規afb提携は保留』が継続有効のため、TOP3拡大は本日実施せず据え置き。既存TOP2(Plaud.ai/RecCloud AI)のまま。",
       "todays_public_market_outputs": 0,
       "notta_clicks_note": "Owner再ログイン完了、A8.net詳細レポートで確認。X告知(簡略版)経由のクリックはまだ発生していない。note記事内リンクのクリック率は別途確認要。",
-      "tomorrow_assets": "NOT_READY",
-      "tomorrow_assets_note": "Day17分の台本・投稿文は本Evening Routine時点で未着手(Content Editorへ委任予定)。",
+      "tomorrow_assets": "IN_PRODUCTION",
+      "tomorrow_assets_note": "Day17 X投稿文(content/x/day17_post.md)・Reel台本(content/reel-json/day17_approval_gap_story.md)はContent Editor作成・Claude QA完了。Reelレンダリングはcoord-6ada1af1414838df92b894ff8cba75ba(Codex handoff)へ委任済み、動画完成待ち。",
       "strategic_reply": "Owner承認・投稿完了(@yukissense、https://x.com/workai_lab777/status/2100207692967248246)"
     },
     "carryover": [],
@@ -859,6 +859,17 @@
         "exit_code": 0,
         "success": true,
         "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\morning_2026-09-17_070002.log"
+      },
+      {
+        "routine": "evening",
+        "scheduled_at": "2026-09-17T22:30:00",
+        "started_at": "2026-09-17T22:30:30",
+        "finished_at": "2026-09-17T13:39:40",
+        "exit_code": 0,
+        "success": true,
+        "status": "SUCCESS",
+        "note": "Manual Publish Verificationで Day16 X投稿・IG Reelの乖離(Owner手動投稿済みなのにtoday.jsonが承認待ちのまま)を発見・reconcile。Cockpit commit f8e03f9・push・deploy検証PASS。X会話3件中2件は新規返信なし確認、narisumashi100は非ログイン制約で確認不能。Day17先行準備は未着手のためContent Editorへ委任。",
+        "log_file": null
       }
     ],
     "tasks": [
