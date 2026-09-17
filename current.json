@@ -1,8 +1,21 @@
 {
-  "business_day": 16,
-  "business_date": "2026-09-17",
-  "generated_at": "2026-09-17T22:45:00+09:00",
-  "today": {},
+  "business_day": 17,
+  "business_date": "2026-09-18",
+  "generated_at": "2026-09-18T05:45:00+09:00",
+  "today": {
+    "x_post": {
+      "status": "ready",
+      "text_file": "content/x/day17_post.md",
+      "url": null,
+      "note": "Content Editor作成・Claude QA完了(114字)。承認待ちフロー自体の乖離をテーマにした本文。Owner承認後にClaudeが投稿。"
+    },
+    "ig_reel": {
+      "status": "blocked",
+      "video_file": null,
+      "url": null,
+      "note": "台本(content/reel-json/day17_approval_gap_story.md)はQA完了だが、レンダリングhandoff(coord-6ada1af1414838df92b894ff8cba75ba)はattempts:0で未着手。原因: Codexクォータ上限(提示リセット時刻2026-09-20T12:21、タイムゾーン未確証)。Pre-Morning Routineの仕様上その場で新規制作は行わない。"
+    }
+  },
   "business_progress": {
     "note_priority": "P1",
     "notta_note": "LIVE",
@@ -165,7 +178,9 @@
       "verification_note": "views=29, reach(閲覧者)=29, フォロワー以外100%, いいね/コメント/保存/シェアいずれも0(data/instagram/post_insights_log.csvへ記録済み)。相対表示「1日前」のみ確認、正確なpublish時刻は未取得(推測しない)。"
     }
   ],
-  "owner_actions": [],
+  "owner_actions": [
+    "Day17 X投稿案(content/x/day17_post.md)を確認・投稿承認(Reelは未完成のためX単独の承認可否)"
+  ],
   "approval_queue": [],
   "ai_learning": {
     "observation": "Day13(Fixed Publishing Schedule TEST 1初日)はMorning Routine自動発火が失敗したにもかかわらず、Ownerが自主的にX/Instagramへ手動投稿(X: 07:30予定に対し実際は数時間後、IG Reel: 相対表示のみで正確な時刻不明)。制作(Codex)は完了していたため、公開判断だけ人間に残った。2026-09-15朝、Evening Routine不通で滞っていたSNS分析(実測データに基づく)をClaudeが独立実施し、X表示回数(Day9=22→Day10=18→Day11=13→Day12=7→Day13=4)・Instagram Reel再生数(Day10=29→Day12=24→Day13=10)とも5日連続で減少していることを発見。さらに、全3件のReel(Day10/12/13)は外部(非フォロワー)へのリーチ自体は60〜100%と機能しているにもかかわらず、いいね・コメント・保存・シェアが全てゼロという特徴も判明(data/instagram/post_insights_log.csvへ初記録)。2026-09-15夜、本Evening Routineで確認したところDay14分のX投稿・IG Reelは既にOwnerが手動投稿済み(X:3時間前・impressions=3で継続減少、IG:2時間前・インサイトは早すぎるため未取得)。",
@@ -192,7 +207,7 @@
     "blocked_tasks": 0
   },
   "system_health": "attention",
-  "system_health_reason": "COO指令(2026-09-16 STATUS CORRECTION)によりRoutine ReliabilityはPASSではなく『OBSERVATION CONTINUES』。Sleep Prevention Castバグ修正・手動実行1回のPASSは確認済みだが、実際のタスクスケジューラ自然発火・battery条件解除・複数Routine排他制御の確認が未完了(routine_scheduler.logは2026-09-15 07:25のpremorning失敗以降、後続4回はすべてsuccess:trueで連続)。Day15 ReelはOwner投稿承認待ち(Instagram未投稿を実機確認)。X告知投稿はOwner実行済みだが承認済みFINAL文と異なる簡略版が投稿された(x_announcement_divergence参照)。Xブラウザはunauthenticated(タイムライン閲覧は可能、検索はログイン必須)、Instagramはauthenticated。",
+  "system_health_reason": "Day17 Reelレンダリング(coord-6ada1af1414838df92b894ff8cba75ba)がCodexクォータ上限(提示リセット2026-09-20T12:21、タイムゾーン未確証)によりattempts:0のままブロック中。Day17 X投稿案は承認待ち(Reel未完成のため単独判断が必要)。Day16 x_post/ig_reelは2026-09-17 Evening Routineで投稿済みをreconcile済み(history参照)。Xブラウザ認証状態は前回確認時unauthenticated、Instagramはauthenticated(いずれも次回Routineで再確認)。",
   "evening_2026_09_17_findings": {},
   "evening_2026-09-17_findings": {
     "manual_publish_verification": "Day16のX投稿・IG Reelとも、today.jsonでは投稿待ち(owner_actions)のまま残っていたが、実際には両方ともOwnerが本日朝(X: 07:32頃、IG: 相対表示から推定07:3x頃)に手動投稿済みだったことをEvening Routineの独立確認で発見。historyへ移動・実測データ記録済み。X本文は今回、承認済みFINAL全文のまま投稿されており、Day14/15で発生したnote.comシェアカード簡略化の乖離は発生しなかった。",
@@ -200,9 +215,9 @@
     "x_state": "unauthenticated(x.com/homeが明示的ログインフォームへリダイレクト)。個別ポストURL・プロフィールページは非ログインでも閲覧可能だったため、これらの範囲でのみ確認を実施した。",
     "ig_state": "authenticated(プロフィール編集・インサイト閲覧が可能)。"
   },
-  "current_date": "2026-09-17",
-  "data_updated_at": "2026-09-17T22:45:00+09:00",
-  "public_updated_at": "2026-09-17T14:43:25.555Z",
+  "current_date": "2026-09-18",
+  "data_updated_at": "2026-09-18T05:45:00+09:00",
+  "public_updated_at": "2026-09-17T20:47:46.996Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -515,10 +530,23 @@
     ]
   },
   "source_manifest": {
-    "business_day": 16,
-    "business_date": "2026-09-17",
-    "generated_at": "2026-09-17T22:45:00+09:00",
-    "today": {},
+    "business_day": 17,
+    "business_date": "2026-09-18",
+    "generated_at": "2026-09-18T05:45:00+09:00",
+    "today": {
+      "x_post": {
+        "status": "ready",
+        "text_file": "content/x/day17_post.md",
+        "url": null,
+        "note": "Content Editor作成・Claude QA完了(114字)。承認待ちフロー自体の乖離をテーマにした本文。Owner承認後にClaudeが投稿。"
+      },
+      "ig_reel": {
+        "status": "blocked",
+        "video_file": null,
+        "url": null,
+        "note": "台本(content/reel-json/day17_approval_gap_story.md)はQA完了だが、レンダリングhandoff(coord-6ada1af1414838df92b894ff8cba75ba)はattempts:0で未着手。原因: Codexクォータ上限(提示リセット時刻2026-09-20T12:21、タイムゾーン未確証)。Pre-Morning Routineの仕様上その場で新規制作は行わない。"
+      }
+    },
     "business_progress": {
       "note_priority": "P1",
       "notta_note": "LIVE",
@@ -681,7 +709,9 @@
         "verification_note": "views=29, reach(閲覧者)=29, フォロワー以外100%, いいね/コメント/保存/シェアいずれも0(data/instagram/post_insights_log.csvへ記録済み)。相対表示「1日前」のみ確認、正確なpublish時刻は未取得(推測しない)。"
       }
     ],
-    "owner_actions": [],
+    "owner_actions": [
+      "Day17 X投稿案(content/x/day17_post.md)を確認・投稿承認(Reelは未完成のためX単独の承認可否)"
+    ],
     "approval_queue": [],
     "ai_learning": {
       "observation": "Day13(Fixed Publishing Schedule TEST 1初日)はMorning Routine自動発火が失敗したにもかかわらず、Ownerが自主的にX/Instagramへ手動投稿(X: 07:30予定に対し実際は数時間後、IG Reel: 相対表示のみで正確な時刻不明)。制作(Codex)は完了していたため、公開判断だけ人間に残った。2026-09-15朝、Evening Routine不通で滞っていたSNS分析(実測データに基づく)をClaudeが独立実施し、X表示回数(Day9=22→Day10=18→Day11=13→Day12=7→Day13=4)・Instagram Reel再生数(Day10=29→Day12=24→Day13=10)とも5日連続で減少していることを発見。さらに、全3件のReel(Day10/12/13)は外部(非フォロワー)へのリーチ自体は60〜100%と機能しているにもかかわらず、いいね・コメント・保存・シェアが全てゼロという特徴も判明(data/instagram/post_insights_log.csvへ初記録)。2026-09-15夜、本Evening Routineで確認したところDay14分のX投稿・IG Reelは既にOwnerが手動投稿済み(X:3時間前・impressions=3で継続減少、IG:2時間前・インサイトは早すぎるため未取得)。",
@@ -708,7 +738,7 @@
       "blocked_tasks": 0
     },
     "system_health": "attention",
-    "system_health_reason": "COO指令(2026-09-16 STATUS CORRECTION)によりRoutine ReliabilityはPASSではなく『OBSERVATION CONTINUES』。Sleep Prevention Castバグ修正・手動実行1回のPASSは確認済みだが、実際のタスクスケジューラ自然発火・battery条件解除・複数Routine排他制御の確認が未完了(routine_scheduler.logは2026-09-15 07:25のpremorning失敗以降、後続4回はすべてsuccess:trueで連続)。Day15 ReelはOwner投稿承認待ち(Instagram未投稿を実機確認)。X告知投稿はOwner実行済みだが承認済みFINAL文と異なる簡略版が投稿された(x_announcement_divergence参照)。Xブラウザはunauthenticated(タイムライン閲覧は可能、検索はログイン必須)、Instagramはauthenticated。",
+    "system_health_reason": "Day17 Reelレンダリング(coord-6ada1af1414838df92b894ff8cba75ba)がCodexクォータ上限(提示リセット2026-09-20T12:21、タイムゾーン未確証)によりattempts:0のままブロック中。Day17 X投稿案は承認待ち(Reel未完成のため単独判断が必要)。Day16 x_post/ig_reelは2026-09-17 Evening Routineで投稿済みをreconcile済み(history参照)。Xブラウザ認証状態は前回確認時unauthenticated、Instagramはauthenticated(いずれも次回Routineで再確認)。",
     "evening_2026_09_17_findings": {},
     "evening_2026-09-17_findings": {
       "manual_publish_verification": "Day16のX投稿・IG Reelとも、today.jsonでは投稿待ち(owner_actions)のまま残っていたが、実際には両方ともOwnerが本日朝(X: 07:32頃、IG: 相対表示から推定07:3x頃)に手動投稿済みだったことをEvening Routineの独立確認で発見。historyへ移動・実測データ記録済み。X本文は今回、承認済みFINAL全文のまま投稿されており、Day14/15で発生したnote.comシェアカード簡略化の乖離は発生しなかった。",
