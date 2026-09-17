@@ -4,6 +4,72 @@
 
 ---
 
+## 2026-09-17 (Codexクォータ再枯渇 — Day17 Reel動画は明朝06:00までに間に合わない見込み)
+
+Owner質問「iPhoneでCockpitを開いても、Day17のReel動画・X原稿は明日6時ごろ更新されて
+映るか」への回答調査で発覚。実機確認結果:
+
+- **X投稿文(content/x/day17_post.md)**: Content Editor作成・Claude QA完了済み。
+  Pre-Morning Routine(05:45 JST)がtoday.jsonの既存状態をそのままCockpitへ反映する
+  だけなので、これは06:00までに「Owner承認待ちのドラフト」として表示される見込み
+  (自動投稿はしない、per-post approval原則は継続)。
+- **Reel動画(remotion-video/out/day17.mp4)**: 台本(content/reel-json/
+  day17_approval_gap_story.md)はQA完了だが、レンダリングタスク
+  (coord-6ada1af1414838df92b894ff8cba75ba、Codex handoff)は`attempts:0`で
+  ディスパッチすら未着手だった。
+- `codex-companion.mjs status --all --json`実機確認で、最新のCodex実行
+  (task-mu5jq8pe-6v60ls、2026-09-17T13:10:54Z失敗)が再度クォータ上限に到達して
+  いたことが判明。Codex提示のリセット時刻は「Sep 20th, 2026 12:21 PM」で、
+  本日13時台の従来推定(2026-09-17T19:30Z、太平洋時間仮説に基づく)より大幅に
+  後ろへ後退している(約3日間のブロック)。タイムゾーンは引き続き未確証(太平洋
+  時間仮説を暫定採用)。
+- **結論**: Day17のReel動画はCodexクォータ制約により明朝06:00までに完成する
+  見込みが低い。Pre-Morning Routineは仕様上その場で新規制作を行わないため
+  (pre-morning-routine.md セクション2)、Cockpitには`not_ready`(理由付き)で
+  正直に表示される想定。Ownerへ直接チャットで報告済み。
+- task 4f930d40(Template v2 Pilot Reel)のnext_check_atを2026-09-20T19:21:00Z
+  (保守的换算)へ更新。coord-6ada1af1414838df92b894ff8cba75ba(Day17 Reel render)
+  はhandoff管理下のため通常のupdate_taskでは更新不可(`Managed task: use handoff
+  lifecycle tools`エラー)、ステータスは`assigned`のまま(実質的にブロック中)。
+- **Owner Action候補(未実行、Owner判断待ち)**: Codexクレジット追加購入
+  (https://chatgpt.com/codex/settings/usage)でブロックを早期解除できる可能性
+  があるが、これは決済を伴うためClaudeは実行せず、選択肢として提示するに留める。
+
+---
+
+## 2026-09-17 (Routine Reliability 更新 — 直近3回の自然発火、3勝0敗)
+
+routine_scheduler.log実機確認: 本日夜のEvening Routineが自然発火(22:30:01開始、
+手動介入なし)し、22:45:18に正常完了(exit_code:0、約15分)。前夜(2026-09-16 22:34)の
+Evening失敗(STATUS_CONTROL_C_EXIT、原因未特定のまま)とは異なり、今回はクリーンな成功。
+実行内でDay16 X投稿・IG ReelがOwner手動投稿済みなのにtoday.jsonが「承認待ち」のまま
+だったズレを自己発見・reconcile、Cockpit commit f8e03f9・push・deploy検証PASSも
+この回の中で完了。
+
+これで直近3回の完全無介入の自然発火(2026-09-17 05:45 Pre-Morning、07:00 Morning、
+22:30 Evening)は**3勝0敗**。09-16夜の1敗は原因未特定のまま残るが、それ以降の
+Pre-Morning/Morning/Eveningの3ルーティン全てで最低1回ずつ成功を確認できたため、
+Overall Scheduled Routine Reliabilityは`PARTIAL PASS`から前進したと判断する。
+完全なPASSと確定するには、前夜のEvening失敗の原因が特定されないまま残っている点を
+踏まえ、複数日にわたる継続的な成功を今後も監視する。
+
+## 2026-09-17 (COO指令 — SSOTを実運用へ接続、実装完了)
+
+1. Cockpit v4に「LEARNING」セクション(Latest Learning / Next Experiment)を追加。
+   既存の`data/publish/today.json: ai_learning`と`data/instagram/reel_hook_experiment.csv`
+   から投影(架空データなし)。Next Experimentは未完了実験行(アーカイブ済みを除外し
+   直近のものを選定)、無ければHook Variant Bの既定計画を表示。
+2. `generate-shared-ssot.mjs`が独自に持っていたCSVパース・アクティブ実験選定ロジックを
+   `generate-production-cockpit.mjs`側に共有関数(`parseGenericCsv`/`pickActiveExperiment`)
+   として統合し、2スクリプト間のロジック重複を解消(Cockpit・SSOTが同じ判定結果を返すことを
+   保証)。
+3. `publishing-operations-v4.md`へ「SSOT運用ルール」を追記: Post-Publish Update
+   (投稿確認後、即座にSSOTへURL/theme/hook_type/metrics/learningを反映)・
+   Daily Learning(毎日最低1件、latest_learning/next_hypothesisを更新)・
+   No Handoff Loop(GPT⇄Owner⇄Claudeの手動伝言を廃止、SSOT経由に統一)を常設ルール化。
+4. テスト22/22 PASS。workai-cockpitへcommit(12d445f)・push・raw.githubusercontent.com
+   経由での実データ確認済み。
+
 ## 2026-09-17 22:30 Evening Routine — Manual Publish Verificationで乖離発見・reconcile
 
 Missed Routine Coalescing判定: SUPERSEDEDではない(直近の後続Routineなし)、通常フル実行。

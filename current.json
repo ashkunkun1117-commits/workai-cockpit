@@ -202,7 +202,7 @@
   },
   "current_date": "2026-09-17",
   "data_updated_at": "2026-09-17T22:45:00+09:00",
-  "public_updated_at": "2026-09-17T13:54:50.148Z",
+  "public_updated_at": "2026-09-17T14:43:25.555Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -894,7 +894,7 @@
         "assigned_to": "codex",
         "status": "blocked",
         "waiting_reason": "codex_quota_limit",
-        "next_check_at": "2026-09-17T19:30:00.000Z"
+        "next_check_at": "2026-09-20T19:21:00.000Z"
       }
     ]
   },
