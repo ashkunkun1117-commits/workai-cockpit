@@ -1,0 +1,42 @@
+{
+  "cumulative_revenue_jpy": 0,
+  "cumulative_profit_jpy": null,
+  "current_month_revenue_jpy": 0,
+  "current_month_profit_jpy": null,
+  "first_revenue_achieved": false,
+  "notta_clicks": 0,
+  "affiliate_programs": [
+    {
+      "program": "A8.net",
+      "status": "登録済み(会員)",
+      "partnered_at": null,
+      "reward": null,
+      "epc": null,
+      "confirmation_rate": null
+    },
+    {
+      "program": "ConoHa AI Canvas(GMOインターネット)",
+      "status": "承認済み",
+      "partnered_at": "2026/09/06",
+      "reward": "初回利用500円(エントリー)/2000円(スタンダード)/4000円(アドバンス)",
+      "epc": "4.05",
+      "confirmation_rate": "81%"
+    },
+    {
+      "program": "Notta Memo",
+      "status": "承認済み",
+      "partnered_at": "2026/09/03",
+      "reward": "購入10%",
+      "epc": "5.46",
+      "confirmation_rate": "100%"
+    },
+    {
+      "program": "afb",
+      "status": "承認済み(2026-09-11)",
+      "partnered_at": "2026/09/11",
+      "reward": "未調査(案件ごとに個別、下記afb Program Audit参照)",
+      "epc": null,
+      "confirmation_rate": null
+    }
+  ]
+}

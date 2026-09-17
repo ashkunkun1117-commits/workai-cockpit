@@ -1,0 +1,122 @@
+{
+  "history": [
+    {
+      "day": 7,
+      "date": "2026-09-07",
+      "hook_type_planned": "result-first",
+      "hook_type_actual": "result-first",
+      "theme": "議事録まとめ作業を15分→1分に検証(実際に投稿済み)",
+      "reel_url": "https://www.instagram.com/workai_lab777/reel/Dc_IdECR1gs/",
+      "posted": true,
+      "views": null,
+      "avg_watch_pct": null,
+      "likes": null,
+      "saves": null,
+      "shares": null,
+      "profile_visits": null,
+      "follows": null
+    },
+    {
+      "day": 8,
+      "date": null,
+      "hook_type_planned": "empathy-problem",
+      "hook_type_actual": "empathy-problem",
+      "theme": "見積書の注意書き作成を15分→1分に検証(Phase2移行によりアーカイブ・未公開のままv2へ差し替え)",
+      "reel_url": "remotion-video/out/archive/day08-v1.mp4",
+      "posted": false,
+      "views": null,
+      "avg_watch_pct": null,
+      "likes": null,
+      "saves": null,
+      "shares": null,
+      "profile_visits": null,
+      "follows": null
+    },
+    {
+      "day": 8,
+      "date": "2026-09-08",
+      "hook_type_planned": "prompt-reveal",
+      "hook_type_actual": "prompt-reveal",
+      "theme": "プロンプト実物公開型: 見積書の注意書き作成を15分→1分に検証(Winning Patternスコア90採用・COO承認・実投稿済み)",
+      "reel_url": "https://www.instagram.com/workai_lab777/reel/DdC2L8aOr7p/",
+      "posted": true,
+      "views": null,
+      "avg_watch_pct": null,
+      "likes": null,
+      "saves": null,
+      "shares": null,
+      "profile_visits": null,
+      "follows": null
+    },
+    {
+      "day": 9,
+      "date": null,
+      "hook_type_planned": "number-comparison",
+      "hook_type_actual": null,
+      "theme": "数字・比較型",
+      "reel_url": null,
+      "posted": false,
+      "views": null,
+      "avg_watch_pct": null,
+      "likes": null,
+      "saves": null,
+      "shares": null,
+      "profile_visits": null,
+      "follows": null
+    }
+  ],
+  "planned_next": {
+    "source": "reports/research/claude_code_ai_reel_research.md セクション13〜16(claude.code_ai研究、COO承認済み)",
+    "duration_test": {
+      "baseline": "28-35s",
+      "variants": [
+        "20-25s",
+        "~40s"
+      ],
+      "metrics": [
+        "avg_watch_pct",
+        "completion",
+        "saves",
+        "shares",
+        "profile_visits",
+        "follows"
+      ],
+      "note": "viewsだけで勝敗を決めない"
+    },
+    "hook_variants": [
+      {
+        "id": "A",
+        "name": "RESULT_HOOK",
+        "description": "実測数字/Before-After(例: 12分→2分30秒)"
+      },
+      {
+        "id": "B",
+        "name": "FAILURE_HOOK",
+        "description": "失敗・異常(例: AIが2日間止まってました)"
+      },
+      {
+        "id": "C",
+        "name": "ARTIFACT_HOOK",
+        "description": "実際に作れた成果物(例: このキャラ、AIだけで作りました)"
+      }
+    ],
+    "next_reels": [
+      {
+        "order": 1,
+        "hook_variant": "B",
+        "theme": "Failure Hook(自動化2日停止の実話)",
+        "task_id": "4f930d40-c0d5-493b-8439-fb4d479798de"
+      },
+      {
+        "order": 2,
+        "hook_variant": "C",
+        "theme": "Artifact Hook(WorkAIキャラクター制作過程)"
+      },
+      {
+        "order": 3,
+        "hook_variant": "A",
+        "theme": "Result Hook(Notta 12分→2分30秒)"
+      }
+    ]
+  }
+}
