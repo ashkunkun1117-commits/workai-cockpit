@@ -10,10 +10,10 @@
       "note": "Content Editor作成・Claude QA完了(114字)。承認待ちフロー自体の乖離をテーマにした本文。Owner承認後にClaudeが投稿。"
     },
     "ig_reel": {
-      "status": "in_production",
-      "video_file": null,
+      "status": "ready",
+      "video_file": "day17-reel.mp4",
       "url": null,
-      "note": "台本(content/reel-json/day17_approval_gap_story.md)はQA完了。Codex handoff(coord-6ada1af1414838df92b894ff8cba75ba)がクォータ上限(提示リセット2026-09-20T12:21、TZ未確証)で2日ブロック継続のため、Morning Routineで本来の担当であるCreative Engineerへ直接再ルーティング(2026-09-18)。レンダリング実行中、完了後にClaude Business QAを行う。"
+      "note": "Creative Engineerが制作完了(2026-09-18)。VOICEVOX(青山龍星)音声合成・Remotionレンダリングとも成功(41.713秒、1080x1920 h264+AAC48kHz)。Claude Business QA実施: frame0/コンタクトシート目視確認でサムネイル完成・7シーン表情変化・Day17/100バッジ・ブランド一貫性を確認、ffprobe実測値も報告と一致。台本からの逸脱はVOICEVOX音声エンジンの自然な発音差2件のみ(「Day17」→「デー」読み[Day16と同一前例]、「note.com」の読み方)でテキスト・数値の改変なし、QA PASS。Owner投稿承認待ち。"
     }
   },
   "business_progress": {
@@ -179,7 +179,8 @@
     }
   ],
   "owner_actions": [
-    "Day17 X投稿案(content/x/day17_post.md)を確認・投稿承認(Reelは未完成のためX単独の承認可否)"
+    "Day17 X投稿案(content/x/day17_post.md)を確認・投稿承認",
+    "Day17 Instagram Reel(remotion-video/out/day17.mp4、Claude Business QA PASS済み)を確認・投稿承認"
   ],
   "approval_queue": [],
   "ai_learning": {
@@ -206,8 +207,8 @@
     "product_signals": 0,
     "blocked_tasks": 0
   },
-  "system_health": "attention",
-  "system_health_reason": "Day17 Reelは、Codex handoff(coord-6ada1af1414838df92b894ff8cba75ba)がクォータ上限(提示リセット2026-09-20T12:21、タイムゾーン未確証)で2日ブロック継続していたため、2026-09-18 Morning RoutineでCreative Engineerへ再ルーティングし制作実行中。Day17 X投稿案は承認待ち(Reel未完成のため単独判断が必要)。Xブラウザ認証状態は本日確認で明示的にunauthenticated確定(/home・/searchとも明示的ログインリダイレクト)、Instagramは前回確認時authenticated(次回Routineで再確認)。",
+  "system_health": "normal",
+  "system_health_reason": "Day17 ReelはCreative Engineerへの再ルーティングにより制作完了・Claude Business QA PASS(2026-09-18)。X投稿案・Reelとも現在はOwner投稿承認待ちのみ。Codex handoff(coord-6ada1af1414838df92b894ff8cba75ba)は同一成果物をCreative Engineer側が先に完成させたためSTALE。Xブラウザ認証状態は本日確認で明示的にunauthenticated確定(/home・/searchとも明示的ログインリダイレクト)、Instagramは前回確認時authenticated(次回Routineで再確認)。",
   "evening_2026_09_17_findings": {},
   "evening_2026-09-17_findings": {
     "manual_publish_verification": "Day16のX投稿・IG Reelとも、today.jsonでは投稿待ち(owner_actions)のまま残っていたが、実際には両方ともOwnerが本日朝(X: 07:32頃、IG: 相対表示から推定07:3x頃)に手動投稿済みだったことをEvening Routineの独立確認で発見。historyへ移動・実測データ記録済み。X本文は今回、承認済みFINAL全文のまま投稿されており、Day14/15で発生したnote.comシェアカード簡略化の乖離は発生しなかった。",
@@ -219,11 +220,11 @@
     "manual_publish_verification": "carryoverは既に空(Evening Routineでreconcile済み)のため今回の追加リコンサイルはなし。",
     "x_conversation_check": "waiting中3会話を個別スレッドURLで再確認。forestkinoko(Day9)・yukissense(Day16)は返信1件(こちら分のみ)で新規author返信なし変わらず。narisumashi100(Day10、37件スレッド)は引き続き非ログイン表示制限で全件確認不能、次回持ち越し。Approval Queue pending=0のためApproval Batchなし。",
     "x_state": "unauthenticated確定(/home・/searchとも明示的ログインフォームへリダイレクト、unknownではない)。新規Strategic Reply候補探索は/searchがログイン必須のためスキップ。",
-    "day17_reel_rerouting": "coord-6ada1af1414838df92b894ff8cba75ba(Codex handoff)がクォータ上限で2日ブロック継続中のため、既存Remotionテンプレート・VOICEVOX実装を使う定型のReel制作としてCreative Engineerへ直接再ルーティングし制作実行中(完了後にClaude Business QA予定)。"
+    "day17_reel_rerouting": "coord-6ada1af1414838df92b894ff8cba75ba(Codex handoff)がクォータ上限で2日ブロック継続中のため、既存Remotionテンプレート・VOICEVOX実装を使う定型のReel制作としてCreative Engineerへ直接再ルーティング。制作完了(day17.mp4、41.713秒)、Claude Business QA PASS(frame0/コンタクトシート目視・ffprobe実測確認)。Owner投稿承認待ちへ移行。"
   },
   "current_date": "2026-09-18",
   "data_updated_at": "2026-09-18T05:45:00+09:00",
-  "public_updated_at": "2026-09-17T22:06:59.385Z",
+  "public_updated_at": "2026-09-17T22:18:39.111Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -547,10 +548,10 @@
         "note": "Content Editor作成・Claude QA完了(114字)。承認待ちフロー自体の乖離をテーマにした本文。Owner承認後にClaudeが投稿。"
       },
       "ig_reel": {
-        "status": "in_production",
-        "video_file": null,
+        "status": "ready",
+        "video_file": "day17-reel.mp4",
         "url": null,
-        "note": "台本(content/reel-json/day17_approval_gap_story.md)はQA完了。Codex handoff(coord-6ada1af1414838df92b894ff8cba75ba)がクォータ上限(提示リセット2026-09-20T12:21、TZ未確証)で2日ブロック継続のため、Morning Routineで本来の担当であるCreative Engineerへ直接再ルーティング(2026-09-18)。レンダリング実行中、完了後にClaude Business QAを行う。"
+        "note": "Creative Engineerが制作完了(2026-09-18)。VOICEVOX(青山龍星)音声合成・Remotionレンダリングとも成功(41.713秒、1080x1920 h264+AAC48kHz)。Claude Business QA実施: frame0/コンタクトシート目視確認でサムネイル完成・7シーン表情変化・Day17/100バッジ・ブランド一貫性を確認、ffprobe実測値も報告と一致。台本からの逸脱はVOICEVOX音声エンジンの自然な発音差2件のみ(「Day17」→「デー」読み[Day16と同一前例]、「note.com」の読み方)でテキスト・数値の改変なし、QA PASS。Owner投稿承認待ち。"
       }
     },
     "business_progress": {
@@ -716,7 +717,8 @@
       }
     ],
     "owner_actions": [
-      "Day17 X投稿案(content/x/day17_post.md)を確認・投稿承認(Reelは未完成のためX単独の承認可否)"
+      "Day17 X投稿案(content/x/day17_post.md)を確認・投稿承認",
+      "Day17 Instagram Reel(remotion-video/out/day17.mp4、Claude Business QA PASS済み)を確認・投稿承認"
     ],
     "approval_queue": [],
     "ai_learning": {
@@ -743,8 +745,8 @@
       "product_signals": 0,
       "blocked_tasks": 0
     },
-    "system_health": "attention",
-    "system_health_reason": "Day17 Reelは、Codex handoff(coord-6ada1af1414838df92b894ff8cba75ba)がクォータ上限(提示リセット2026-09-20T12:21、タイムゾーン未確証)で2日ブロック継続していたため、2026-09-18 Morning RoutineでCreative Engineerへ再ルーティングし制作実行中。Day17 X投稿案は承認待ち(Reel未完成のため単独判断が必要)。Xブラウザ認証状態は本日確認で明示的にunauthenticated確定(/home・/searchとも明示的ログインリダイレクト)、Instagramは前回確認時authenticated(次回Routineで再確認)。",
+    "system_health": "normal",
+    "system_health_reason": "Day17 ReelはCreative Engineerへの再ルーティングにより制作完了・Claude Business QA PASS(2026-09-18)。X投稿案・Reelとも現在はOwner投稿承認待ちのみ。Codex handoff(coord-6ada1af1414838df92b894ff8cba75ba)は同一成果物をCreative Engineer側が先に完成させたためSTALE。Xブラウザ認証状態は本日確認で明示的にunauthenticated確定(/home・/searchとも明示的ログインリダイレクト)、Instagramは前回確認時authenticated(次回Routineで再確認)。",
     "evening_2026_09_17_findings": {},
     "evening_2026-09-17_findings": {
       "manual_publish_verification": "Day16のX投稿・IG Reelとも、today.jsonでは投稿待ち(owner_actions)のまま残っていたが、実際には両方ともOwnerが本日朝(X: 07:32頃、IG: 相対表示から推定07:3x頃)に手動投稿済みだったことをEvening Routineの独立確認で発見。historyへ移動・実測データ記録済み。X本文は今回、承認済みFINAL全文のまま投稿されており、Day14/15で発生したnote.comシェアカード簡略化の乖離は発生しなかった。",
@@ -756,7 +758,7 @@
       "manual_publish_verification": "carryoverは既に空(Evening Routineでreconcile済み)のため今回の追加リコンサイルはなし。",
       "x_conversation_check": "waiting中3会話を個別スレッドURLで再確認。forestkinoko(Day9)・yukissense(Day16)は返信1件(こちら分のみ)で新規author返信なし変わらず。narisumashi100(Day10、37件スレッド)は引き続き非ログイン表示制限で全件確認不能、次回持ち越し。Approval Queue pending=0のためApproval Batchなし。",
       "x_state": "unauthenticated確定(/home・/searchとも明示的ログインフォームへリダイレクト、unknownではない)。新規Strategic Reply候補探索は/searchがログイン必須のためスキップ。",
-      "day17_reel_rerouting": "coord-6ada1af1414838df92b894ff8cba75ba(Codex handoff)がクォータ上限で2日ブロック継続中のため、既存Remotionテンプレート・VOICEVOX実装を使う定型のReel制作としてCreative Engineerへ直接再ルーティングし制作実行中(完了後にClaude Business QA予定)。"
+      "day17_reel_rerouting": "coord-6ada1af1414838df92b894ff8cba75ba(Codex handoff)がクォータ上限で2日ブロック継続中のため、既存Remotionテンプレート・VOICEVOX実装を使う定型のReel制作としてCreative Engineerへ直接再ルーティング。制作完了(day17.mp4、41.713秒)、Claude Business QA PASS(frame0/コンタクトシート目視・ffprobe実測確認)。Owner投稿承認待ちへ移行。"
     }
   },
   "health_inputs": {
