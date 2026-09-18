@@ -1,21 +1,17 @@
 {
-  "business_day": 17,
-  "business_date": "2026-09-18",
-  "generated_at": "2026-09-18T05:45:00+09:00",
+  "business_day": 18,
+  "business_date": "2026-09-19",
+  "generated_at": "2026-09-19T05:47:00+09:00",
   "today": {
     "x_post": {
-      "status": "published",
-      "text_file": "content/x/day17_post.md",
-      "url": "https://x.com/workai_lab777/status/2100889446677922224",
-      "note": "Owner手動投稿済み(2026-09-18 19:07 JST)。Evening RoutineのManual Publish Verificationで独立確認(本文完全一致、impressions=19/likes=1/replies=1/reposts=1)。新規返信@kouya_sns01を発見、Approval Batchへ。",
-      "text": "Cockpitは「承認待ち」のままでした。でも実際は、今朝もう自分でX・Instagramに投稿済み。\n\n承認フローを、そもそも待っていなかったんですね。記録とのズレに、今夜気づきました。\n\nAIでできる仕事は、AIに。\nDay17/100"
+      "status": "not_ready",
+      "text_file": null,
+      "note": "Day18 X投稿はまだ未着手。Pre-Morning Routineはその場で新規制作を行わない(仕様どおり)。Morning Routineで制作要否・担当(Content Editor)を判断する。"
     },
     "ig_reel": {
-      "status": "published",
-      "video_file": "day17-reel.mp4",
-      "url": "https://www.instagram.com/workai_lab777/reel/DdbL9u0SRPM/",
-      "note": "Owner手動投稿済み(2026-09-18、相対表示「3時間前」)。Evening RoutineのManual Publish Verificationで独立確認(キャプション完全一致、views=16/reach=12[フォロワー25%/フォロワー以外75%]/いいね・コメント・保存・シェアいずれも0)。",
-      "caption_text": "「承認待ち」の表示のまま、もう投稿は終わっていました。\n\nDay16のX投稿とInstagramのリール、記録の上ではまだ承認待ちのはずでした。\n\nでも実際は、今朝もう自分でX・Instagramに投稿していました。承認を待たずに。\n\n今回は文章がそのまま投稿されていて、これまで何度か起きていたnote.comのカードへの簡略化も起きていませんでした。\n\n承認フロー、そもそも待っていなかったんですよね。自分のタイミングで、もう動いていました。\n\n記録が止まって見えても、人はもう先に動いていることがある。だから、実際の状態を定期的に確認する。今夜、それに気づきました。\n\nAIでできる仕事は、AIに。\nDay 17 / 100\n#AI仕事研究所 #100日実験 #自動化 #仕事効率化 #AIパートナー\n\nVOICEVOX：青山龍星"
+      "status": "not_ready",
+      "video_file": null,
+      "note": "Day18 Reelはまだ未着手。Pre-Morning Routineはその場で新規制作を行わない(仕様どおり)。Morning Routineで制作要否・担当(Content Editor→Creative Engineer)を判断する。"
     }
   },
   "business_progress": {
@@ -235,8 +231,8 @@
   "kpi": {
     "revenue_jpy": 0,
     "profit_jpy": 0,
-    "day30_remaining": 13,
-    "day100_remaining": 83,
+    "day30_remaining": 12,
+    "day100_remaining": 82,
     "product_signals": 0,
     "blocked_tasks": 0
   },
@@ -262,9 +258,9 @@
     "ig_state": "authenticated(プロフィール編集・インサイト閲覧が可能)。",
     "new_strategic_reply_search": "既存Conversation対応・Manual Publish Verificationを優先したため、新規Strategic Reply候補探索は今回実施せず(本日日中に別途@omuat/@panana39/@yukissense分は実施済み、get_reply_ledger参照)。"
   },
-  "current_date": "2026-09-18",
-  "data_updated_at": "2026-09-18T05:45:00+09:00",
-  "public_updated_at": "2026-09-18T14:11:17.698Z",
+  "current_date": "2026-09-19",
+  "data_updated_at": "2026-09-19T05:47:00+09:00",
+  "public_updated_at": "2026-09-18T20:47:20.399Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -595,23 +591,19 @@
     ]
   },
   "source_manifest": {
-    "business_day": 17,
-    "business_date": "2026-09-18",
-    "generated_at": "2026-09-18T05:45:00+09:00",
+    "business_day": 18,
+    "business_date": "2026-09-19",
+    "generated_at": "2026-09-19T05:47:00+09:00",
     "today": {
       "x_post": {
-        "status": "published",
-        "text_file": "content/x/day17_post.md",
-        "url": "https://x.com/workai_lab777/status/2100889446677922224",
-        "note": "Owner手動投稿済み(2026-09-18 19:07 JST)。Evening RoutineのManual Publish Verificationで独立確認(本文完全一致、impressions=19/likes=1/replies=1/reposts=1)。新規返信@kouya_sns01を発見、Approval Batchへ。",
-        "text": "Cockpitは「承認待ち」のままでした。でも実際は、今朝もう自分でX・Instagramに投稿済み。\n\n承認フローを、そもそも待っていなかったんですね。記録とのズレに、今夜気づきました。\n\nAIでできる仕事は、AIに。\nDay17/100"
+        "status": "not_ready",
+        "text_file": null,
+        "note": "Day18 X投稿はまだ未着手。Pre-Morning Routineはその場で新規制作を行わない(仕様どおり)。Morning Routineで制作要否・担当(Content Editor)を判断する。"
       },
       "ig_reel": {
-        "status": "published",
-        "video_file": "day17-reel.mp4",
-        "url": "https://www.instagram.com/workai_lab777/reel/DdbL9u0SRPM/",
-        "note": "Owner手動投稿済み(2026-09-18、相対表示「3時間前」)。Evening RoutineのManual Publish Verificationで独立確認(キャプション完全一致、views=16/reach=12[フォロワー25%/フォロワー以外75%]/いいね・コメント・保存・シェアいずれも0)。",
-        "caption_text": "「承認待ち」の表示のまま、もう投稿は終わっていました。\n\nDay16のX投稿とInstagramのリール、記録の上ではまだ承認待ちのはずでした。\n\nでも実際は、今朝もう自分でX・Instagramに投稿していました。承認を待たずに。\n\n今回は文章がそのまま投稿されていて、これまで何度か起きていたnote.comのカードへの簡略化も起きていませんでした。\n\n承認フロー、そもそも待っていなかったんですよね。自分のタイミングで、もう動いていました。\n\n記録が止まって見えても、人はもう先に動いていることがある。だから、実際の状態を定期的に確認する。今夜、それに気づきました。\n\nAIでできる仕事は、AIに。\nDay 17 / 100\n#AI仕事研究所 #100日実験 #自動化 #仕事効率化 #AIパートナー\n\nVOICEVOX：青山龍星"
+        "status": "not_ready",
+        "video_file": null,
+        "note": "Day18 Reelはまだ未着手。Pre-Morning Routineはその場で新規制作を行わない(仕様どおり)。Morning Routineで制作要否・担当(Content Editor→Creative Engineer)を判断する。"
       }
     },
     "business_progress": {
@@ -831,8 +823,8 @@
     "kpi": {
       "revenue_jpy": 0,
       "profit_jpy": 0,
-      "day30_remaining": 13,
-      "day100_remaining": 83,
+      "day30_remaining": 12,
+      "day100_remaining": 82,
       "product_signals": 0,
       "blocked_tasks": 0
     },
