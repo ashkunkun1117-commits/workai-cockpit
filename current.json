@@ -7,13 +7,15 @@
       "status": "ready",
       "text_file": "content/x/day17_post.md",
       "url": null,
-      "note": "Content Editor作成・Claude QA完了(114字)。承認待ちフロー自体の乖離をテーマにした本文。公開操作はOwnerが公式Xアプリから行う(Claudeは投稿ボタンを押さない、publishing-operations-v4.mdの中核制約)。"
+      "note": "Content Editor作成・Claude QA完了(114字)。承認待ちフロー自体の乖離をテーマにした本文。公開操作はOwnerが公式Xアプリから行う(Claudeは投稿ボタンを押さない、publishing-operations-v4.mdの中核制約)。",
+      "text": "Cockpitは「承認待ち」のままでした。でも実際は、今朝もう自分でX・Instagramに投稿済み。\n\n承認フローを、そもそも待っていなかったんですね。記録とのズレに、今夜気づきました。\n\nAIでできる仕事は、AIに。\nDay17/100"
     },
     "ig_reel": {
       "status": "ready",
       "video_file": "day17-reel.mp4",
       "url": null,
-      "note": "Creative Engineerが制作完了(2026-09-18、remotion-video/out/day17.mp4、41.713秒、1080x1920 h264+AAC48kHz)。Claude Business QA実施: frame0/コンタクトシート目視確認でサムネイル完成・7シーン表情変化・Day17/100バッジ・ブランド一貫性を確認、ffprobe実測値も報告と一致。台本からの逸脱はVOICEVOX音声エンジンの自然な発音差2件のみ(「Day17」→「デー」読み[Day16と同一前例]、「note.com」の読み方)でテキスト・数値の改変なし、QA PASS。Cockpitプレビュー動画(day17-reel.mp4)はOwner承認(2026-09-18)を得てpush済み。公開操作はOwnerが公式Instagramアプリから行う。"
+      "note": "Creative Engineerが制作完了(2026-09-18、remotion-video/out/day17.mp4、41.713秒、1080x1920 h264+AAC48kHz)。Claude Business QA実施: frame0/コンタクトシート目視確認でサムネイル完成・7シーン表情変化・Day17/100バッジ・ブランド一貫性を確認、ffprobe実測値も報告と一致。台本からの逸脱はVOICEVOX音声エンジンの自然な発音差2件のみ(「Day17」→「デー」読み[Day16と同一前例]、「note.com」の読み方)でテキスト・数値の改変なし、QA PASS。Cockpitプレビュー動画(day17-reel.mp4)はOwner承認(2026-09-18)を得てpush済み。公開操作はOwnerが公式Instagramアプリから行う。",
+      "caption_text": "「承認待ち」の表示のまま、もう投稿は終わっていました。\n\nDay16のX投稿とInstagramのリール、記録の上ではまだ承認待ちのはずでした。\n\nでも実際は、今朝もう自分でX・Instagramに投稿していました。承認を待たずに。\n\n今回は文章がそのまま投稿されていて、これまで何度か起きていたnote.comのカードへの簡略化も起きていませんでした。\n\n承認フロー、そもそも待っていなかったんですよね。自分のタイミングで、もう動いていました。\n\n記録が止まって見えても、人はもう先に動いていることがある。だから、実際の状態を定期的に確認する。今夜、それに気づきました。\n\nAIでできる仕事は、AIに。\nDay 17 / 100\n#AI仕事研究所 #100日実験 #自動化 #仕事効率化 #AIパートナー\n\nVOICEVOX：青山龍星"
     }
   },
   "business_progress": {
@@ -225,7 +227,7 @@
   },
   "current_date": "2026-09-18",
   "data_updated_at": "2026-09-18T05:45:00+09:00",
-  "public_updated_at": "2026-09-18T08:54:38.701Z",
+  "public_updated_at": "2026-09-18T09:22:46.154Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -546,13 +548,15 @@
         "status": "ready",
         "text_file": "content/x/day17_post.md",
         "url": null,
-        "note": "Content Editor作成・Claude QA完了(114字)。承認待ちフロー自体の乖離をテーマにした本文。公開操作はOwnerが公式Xアプリから行う(Claudeは投稿ボタンを押さない、publishing-operations-v4.mdの中核制約)。"
+        "note": "Content Editor作成・Claude QA完了(114字)。承認待ちフロー自体の乖離をテーマにした本文。公開操作はOwnerが公式Xアプリから行う(Claudeは投稿ボタンを押さない、publishing-operations-v4.mdの中核制約)。",
+        "text": "Cockpitは「承認待ち」のままでした。でも実際は、今朝もう自分でX・Instagramに投稿済み。\n\n承認フローを、そもそも待っていなかったんですね。記録とのズレに、今夜気づきました。\n\nAIでできる仕事は、AIに。\nDay17/100"
       },
       "ig_reel": {
         "status": "ready",
         "video_file": "day17-reel.mp4",
         "url": null,
-        "note": "Creative Engineerが制作完了(2026-09-18、remotion-video/out/day17.mp4、41.713秒、1080x1920 h264+AAC48kHz)。Claude Business QA実施: frame0/コンタクトシート目視確認でサムネイル完成・7シーン表情変化・Day17/100バッジ・ブランド一貫性を確認、ffprobe実測値も報告と一致。台本からの逸脱はVOICEVOX音声エンジンの自然な発音差2件のみ(「Day17」→「デー」読み[Day16と同一前例]、「note.com」の読み方)でテキスト・数値の改変なし、QA PASS。Cockpitプレビュー動画(day17-reel.mp4)はOwner承認(2026-09-18)を得てpush済み。公開操作はOwnerが公式Instagramアプリから行う。"
+        "note": "Creative Engineerが制作完了(2026-09-18、remotion-video/out/day17.mp4、41.713秒、1080x1920 h264+AAC48kHz)。Claude Business QA実施: frame0/コンタクトシート目視確認でサムネイル完成・7シーン表情変化・Day17/100バッジ・ブランド一貫性を確認、ffprobe実測値も報告と一致。台本からの逸脱はVOICEVOX音声エンジンの自然な発音差2件のみ(「Day17」→「デー」読み[Day16と同一前例]、「note.com」の読み方)でテキスト・数値の改変なし、QA PASS。Cockpitプレビュー動画(day17-reel.mp4)はOwner承認(2026-09-18)を得てpush済み。公開操作はOwnerが公式Instagramアプリから行う。",
+        "caption_text": "「承認待ち」の表示のまま、もう投稿は終わっていました。\n\nDay16のX投稿とInstagramのリール、記録の上ではまだ承認待ちのはずでした。\n\nでも実際は、今朝もう自分でX・Instagramに投稿していました。承認を待たずに。\n\n今回は文章がそのまま投稿されていて、これまで何度か起きていたnote.comのカードへの簡略化も起きていませんでした。\n\n承認フロー、そもそも待っていなかったんですよね。自分のタイミングで、もう動いていました。\n\n記録が止まって見えても、人はもう先に動いていることがある。だから、実際の状態を定期的に確認する。今夜、それに気づきました。\n\nAIでできる仕事は、AIに。\nDay 17 / 100\n#AI仕事研究所 #100日実験 #自動化 #仕事効率化 #AIパートナー\n\nVOICEVOX：青山龍星"
       }
     },
     "business_progress": {
