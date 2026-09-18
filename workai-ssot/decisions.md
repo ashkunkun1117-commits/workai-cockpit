@@ -4,6 +4,50 @@
 
 ---
 
+## 2026-09-19 (COO指令「SSOT Freshness Is Now P0」対応 — 緊急同期実施)
+
+ChatGPT COOがGitHub connector経由でworkai-ssot/current_state.jsonを直接取得できることを
+確認、SSOT freshnessを正式運用要件化。指摘通り、current_state.jsonがPre-Morning Routine
+実行直後(2026-09-19 05:47 JST)の中間状態(today.x/instagram="not_started")のまま
+約2時間stale化していた(原因: Date Rollover直後にpushされたが、その後Content Editorが
+day18draft作成した際に再生成・再pushが行われなかった)。
+
+実機確認(X/Instagram Playwright)で以下を発見・reconcile:
+1. **本日のX投稿状態**: published。https://x.com/workai_lab777/status/2101072793186263329
+   (2026-09-19 07:16 JST、Owner投稿済み、実機確認)。
+2. **本日のInstagram Reel投稿状態**: published。
+   https://www.instagram.com/workai_lab777/reel/DdchiXTyUaQ/(相対表示から2026-09-19早朝、
+   Owner投稿済み、実機確認)。
+3. **Owner Actions**: Revenue Content「Nottaの向かない人」投稿依頼(未投稿、X/IGプロフィール
+   実機確認で不在を確認済み)/A8再ログイン(P0継続)/X Conversation Approval Batch
+   (@kouya_sns01・@panana39、計2件)の3件、実態と一致。
+4. **Revenue Funnel**: Content=12、note/LP=未計測、Click=未計測、CV=0、Revenue=¥0
+   (ボトルネックは引き続きContent→note/LP間の未計測)。
+5. **Strategic Reply status**: 前回(9/18)の3件投稿済み・1件declined状態から変化なし
+   (本日9/19分はまだ未実施)。
+6. **Market Radar status**: 本日(9/19)分は未実施(backyard_health.dateが9/18のまま→
+   generatorの日付一致チェックにより自動的に「本日未実施」表示、fabricationなし)。
+7. **Audience Response status**: 同上、本日分は未実施。
+8. **next_x_status**: posted(Day18確認により)。
+9. **next_reel_status**: posted(同上)。
+10. **business_day**: 18(business_date 2026-09-19)、rollover自体は正常に完了済み。
+
+today.jsonのtoday.x_post/ig_reelをpublished/実URLへ更新、generated_atを更新、
+current_state.json/current.json/ai-status.jsonを再生成しmainへpush(commit 2e6cf53)。
+
+**30分SLAについて(正直な報告)**: `updated_at`フィールドは既存で毎回の再生成時刻を
+正確に記録しているが、「生成から30分経過したら自動的にdata_stale=trueになる」という
+静的ファイルの自己申告的な仕組みは、ファイル自体が経過時間を検知できない(再生成しない限り
+時刻は更新されない)ため、コードだけでは実現できない。現実的な運用は(a)ChatGPT側が
+`updated_at`と現在時刻を比較して自身で鮮度判定する、または(b)日次Routineとは別に
+短間隔(15-20分)の再生成cronを追加し、生成頻度自体で鮮度を担保する、のいずれか。
+今回は前者(a)を前提とし、後者の必要性はCOOの判断を仰ぐ。今後、指定された9つのイベント
+(Owner投稿確認/Revenue Content公開/Strategic Reply投稿/Audience Response検知/A8数値更新/
+Revenue Funnel変化/Owner Action完了/Routine完了/Business Day rollover)発生時は都度
+再生成・pushを行う運用を徹底する。
+
+---
+
 ## 2026-09-19 (Morning Routine — Day18コンテンツ制作完了、X会話フォローアップ、Cockpit最終更新)
 
 Missed Routine Coalescing判定: NOT SUPERSEDED(premorningは本日05:45成功済み・MORNING_READY、
