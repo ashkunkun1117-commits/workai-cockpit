@@ -4,17 +4,17 @@
   "generated_at": "2026-09-18T05:45:00+09:00",
   "today": {
     "x_post": {
-      "status": "ready",
+      "status": "published",
       "text_file": "content/x/day17_post.md",
-      "url": null,
-      "note": "Content Editor作成・Claude QA完了(114字)。承認待ちフロー自体の乖離をテーマにした本文。公開操作はOwnerが公式Xアプリから行う(Claudeは投稿ボタンを押さない、publishing-operations-v4.mdの中核制約)。",
+      "url": "https://x.com/workai_lab777/status/2100889446677922224",
+      "note": "Owner手動投稿済み(2026-09-18 19:07 JST)。Evening RoutineのManual Publish Verificationで独立確認(本文完全一致、impressions=19/likes=1/replies=1/reposts=1)。新規返信@kouya_sns01を発見、Approval Batchへ。",
       "text": "Cockpitは「承認待ち」のままでした。でも実際は、今朝もう自分でX・Instagramに投稿済み。\n\n承認フローを、そもそも待っていなかったんですね。記録とのズレに、今夜気づきました。\n\nAIでできる仕事は、AIに。\nDay17/100"
     },
     "ig_reel": {
-      "status": "ready",
+      "status": "published",
       "video_file": "day17-reel.mp4",
-      "url": null,
-      "note": "Creative Engineerが制作完了(2026-09-18、remotion-video/out/day17.mp4、41.713秒、1080x1920 h264+AAC48kHz)。Claude Business QA実施: frame0/コンタクトシート目視確認でサムネイル完成・7シーン表情変化・Day17/100バッジ・ブランド一貫性を確認、ffprobe実測値も報告と一致。台本からの逸脱はVOICEVOX音声エンジンの自然な発音差2件のみ(「Day17」→「デー」読み[Day16と同一前例]、「note.com」の読み方)でテキスト・数値の改変なし、QA PASS。Cockpitプレビュー動画(day17-reel.mp4)はOwner承認(2026-09-18)を得てpush済み。公開操作はOwnerが公式Instagramアプリから行う。",
+      "url": "https://www.instagram.com/workai_lab777/reel/DdbL9u0SRPM/",
+      "note": "Owner手動投稿済み(2026-09-18、相対表示「3時間前」)。Evening RoutineのManual Publish Verificationで独立確認(キャプション完全一致、views=16/reach=12[フォロワー25%/フォロワー以外75%]/いいね・コメント・保存・シェアいずれも0)。",
       "caption_text": "「承認待ち」の表示のまま、もう投稿は終わっていました。\n\nDay16のX投稿とInstagramのリール、記録の上ではまだ承認待ちのはずでした。\n\nでも実際は、今朝もう自分でX・Instagramに投稿していました。承認を待たずに。\n\n今回は文章がそのまま投稿されていて、これまで何度か起きていたnote.comのカードへの簡略化も起きていませんでした。\n\n承認フロー、そもそも待っていなかったんですよね。自分のタイミングで、もう動いていました。\n\n記録が止まって見えても、人はもう先に動いていることがある。だから、実際の状態を定期的に確認する。今夜、それに気づきました。\n\nAIでできる仕事は、AIに。\nDay 17 / 100\n#AI仕事研究所 #100日実験 #自動化 #仕事効率化 #AIパートナー\n\nVOICEVOX：青山龍星"
     }
   },
@@ -29,7 +29,7 @@
     "automation_reel_note": "Instagram投稿確認済み(2026-09-16 08:03 JST、実機Playwright確認。投稿URL: https://www.instagram.com/workai_lab777/reel/DdU1MXYSUkk/)。07:50時点のMorning Routineチェックでは未投稿だったが、その13分後にOwnerが投稿。owner_actionは解消。",
     "afb_audit": "on_hold",
     "afb_audit_note": "Owner再ログイン完了(afb実績も0クリック/0発生を確認)。ただしCOO指令『Notta funnel LIVE化まで新規afb提携は保留』が継続有効のため、TOP3拡大は本日実施せず据え置き。既存TOP2(Plaud.ai/RecCloud AI)のまま。",
-    "todays_public_market_outputs": 0,
+    "todays_public_market_outputs": 2,
     "notta_clicks_note": "Owner再ログイン完了、A8.net詳細レポートで確認。X告知(簡略版)経由のクリックはまだ発生していない。note記事内リンクのクリック率は別途確認要。",
     "tomorrow_assets": "IN_PRODUCTION",
     "tomorrow_assets_note": "Day17 X投稿文(content/x/day17_post.md)・Reel台本(content/reel-json/day17_approval_gap_story.md)はContent Editor作成・Claude QA完了。ReelレンダリングはCodex handoff(coord-6ada1af1414838df92b894ff8cba75ba)が2日ブロック継続のため、2026-09-18 Morning RoutineでCreative Engineerへ再ルーティング、動画完成待ち。",
@@ -42,10 +42,31 @@
       "audience_response_checked": true,
       "revenue_action_count": 1
     },
-    "backyard_health_note": "Daily Revenue Operating Loop初回実行。Market Radar 10/10(reports/research/market_radar_2026-09-18.md、COO指令で不足2件を追加収集し達成)。Deep Analysis 4件(Market Radar 3件+narisumashi100スレッド追加分、audience_signals_2026-09-18.md)。Strategic Reply 4件中3件投稿済み(@yukissense followup/@omuat/@panana39、Owner承認済み)・1件declined(@free_consultant)。Audience Response確認済みだが@kouya_sns01の6日遅れ検知が判明、PASS条件を『24時間以内検知』へ再定義(COO指令、日次Routineへの実装は未着手)。Revenue Action=1(Notta関連Revenue Content着手、content/reel-json/notta_fit_boundary_story.md、実際のAudience Signal(@yukissense)を根拠に「向かない人」角度で制作開始、Content Generation Guard適用済み。まだdraft、未レンダリング・未投稿)。"
+    "backyard_health_note": "Daily Revenue Operating Loop初回実行。Market Radar 10/10(reports/research/market_radar_2026-09-18.md、COO指令で不足2件を追加収集し達成)。Deep Analysis 4件(Market Radar 3件+narisumashi100スレッド追加分、audience_signals_2026-09-18.md)。Strategic Reply 4件中3件投稿済み(@yukissense followup/@omuat/@panana39、Owner承認済み)・1件declined(@free_consultant)。Audience Response確認済みだが@kouya_sns01の6日遅れ検知が判明、PASS条件を『24時間以内検知』へ再定義(COO指令、日次Routineへの実装はP1で維持、Revenue Content公開後に着手)。Revenue Action=1(Notta関連Revenue Content「向かない人」制作完了、content/reel-json/notta_fit_boundary_story.md、notta-fit-boundary.mp4。VOICEVOX音声・独立QA済み、COO承認(Revenue Experimentとして扱う)、Cockpitへ配信済み、Owner投稿待ち)。"
   },
   "carryover": [],
   "history": [
+    {
+      "type": "x_post",
+      "day": 17,
+      "status": "completed",
+      "url": "https://x.com/workai_lab777/status/2100889446677922224",
+      "actual_published_at": "2026-09-18T19:07:00+09:00",
+      "verification_source": "X status page(workai_lab777、本文完全一致、投稿ページ表示「19:07 · 2026年9月18日」、2026-09-18 22:31 JST確認)",
+      "verified_at": "2026-09-18T22:31:00+09:00",
+      "verification_note": "本文はcontent/x/day17_post.mdの承認済みFINAL全文と完全一致。impressions=19, likes=1, replies=1, reposts=1(投稿ページ実測)。返信1件は新規アカウント@kouya_sns01からの好意的コメント(Approval Batchで返信案提示)。"
+    },
+    {
+      "type": "ig_reel",
+      "day": 17,
+      "status": "completed",
+      "url": "https://www.instagram.com/workai_lab777/reel/DdbL9u0SRPM/",
+      "video_file": "day17-reel.mp4",
+      "actual_published_at": null,
+      "verification_source": "Instagram(workai_lab777、キャプション完全一致、投稿ページ相対表示「3時間前」、2026-09-18 22:33 JST確認、インサイト実測)",
+      "verified_at": "2026-09-18T22:33:00+09:00",
+      "verification_note": "views=16, reach(閲覧者)=12(フォロワー25%/フォロワー以外75%)、いいね/コメント/保存/シェアいずれも0(data/instagram/post_insights_log.csvへ記録済み)。正確なpublish時刻はInstagram UI上取得できず未記録(推測しない)。"
+    },
     {
       "type": "x_post",
       "day": 16,
@@ -190,9 +211,9 @@
     }
   ],
   "owner_actions": [
-    "Day17 X投稿案・Instagram Reel(いずれもClaude QA/Business QA PASS済み)を確認・投稿承認",
-    "Revenue Content「Nottaの向かない人」(content/reel-json/notta_fit_boundary_story.md、notta-fit-boundary.mp4)を確認・投稿承認",
-    "A8.netへの再ログイン(Revenue Ops P0、notta_clicksデータが2日超stale、Claudeはログイン不可のためOwner専管)"
+    "Revenue Content「Nottaの向かない人」(notta-fit-boundary.mp4)はCOO承認済み(Revenue Experiment扱い)。X・Instagramへの投稿操作をお願いします(公開後24時間で指標を追跡します)",
+    "A8.netへの再ログイン(Revenue Ops P0、notta_clicksデータが2日超stale、Claudeはログイン不可のためOwner専管)",
+    "X Conversation Approval Batch(@kouya_sns01への返信案)を確認・投稿承認"
   ],
   "approval_queue": [],
   "ai_learning": {
@@ -220,7 +241,7 @@
     "blocked_tasks": 0
   },
   "system_health": "normal",
-  "system_health_reason": "Day17 ReelはCreative Engineerへの再ルーティングにより制作完了・Claude Business QA PASS(2026-09-18)。X投稿案・Reelとも現在はOwner投稿承認待ちのみ。Codex handoff(coord-6ada1af1414838df92b894ff8cba75ba)は同一成果物をCreative Engineer側が先に完成させたためSTALE。Xブラウザ認証状態は本日確認で明示的にunauthenticated確定(/home・/searchとも明示的ログインリダイレクト)、Instagramは前回確認時authenticated(次回Routineで再確認)。",
+  "system_health_reason": "Day17 X投稿・IG ReelともOwnerが既に手動投稿済みであることをEvening Manual Publish Verificationで確認、historyへ移動済み。Codex handoff(coord-6ada1af1414838df92b894ff8cba75ba)は同一成果物をCreative Engineer側が先に完成させたためSTALE。Xブラウザ認証状態はunauthenticated確定(個別投稿URL/プロフィールは閲覧可)、Instagramはauthenticated。",
   "evening_2026_09_17_findings": {},
   "evening_2026-09-17_findings": {
     "manual_publish_verification": "Day16のX投稿・IG Reelとも、today.jsonでは投稿待ち(owner_actions)のまま残っていたが、実際には両方ともOwnerが本日朝(X: 07:32頃、IG: 相対表示から推定07:3x頃)に手動投稿済みだったことをEvening Routineの独立確認で発見。historyへ移動・実測データ記録済み。X本文は今回、承認済みFINAL全文のまま投稿されており、Day14/15で発生したnote.comシェアカード簡略化の乖離は発生しなかった。",
@@ -234,9 +255,16 @@
     "x_state": "unauthenticated確定(/home・/searchとも明示的ログインフォームへリダイレクト、unknownではない)。新規Strategic Reply候補探索は/searchがログイン必須のためスキップ。",
     "day17_reel_rerouting": "coord-6ada1af1414838df92b894ff8cba75ba(Codex handoff)がクォータ上限で2日ブロック継続中のため、既存Remotionテンプレート・VOICEVOX実装を使う定型のReel制作としてCreative Engineerへ直接再ルーティング。制作完了(day17.mp4、41.713秒)、Claude Business QA PASS(frame0/コンタクトシート目視・ffprobe実測確認)。Owner投稿承認待ちへ移行。"
   },
+  "evening_2026-09-18_findings": {
+    "manual_publish_verification": "Day17のX投稿・IG Reelとも、今回今朝以降にOwnerが既に手動投稿済みだったことをEvening Routineの独立確認で発見(owner_actions/todayに投稿待ちのまま残留していた)。X: 2026-09-18 19:07投稿(本文完全一致、impressions=19/likes=1/replies=1/reposts=1、status/2100889446677922224)。IG: 相対表示「3時間前」投稿(キャプション完全一致、views=16/reach=12[フォロワー25%/非フォロワー75%]、いいね/コメント/保存/シェアいずれも0、reel/DdbL9u0SRPM/)。historyへ移動、kpi_daily.csv Day17行・post_insights_log.csvへ実測反映済み。",
+    "x_conversation_check": "waiting中5会話を確認。forestkinoko(Day9)は返信1件(こちら分のみ)で新規返信なし変わらず。narisumashi100(Day10、683返信の大規模スレッド)は非ログイン制約で自社返信が表示範囲外のため確認不能、次回持ち越し。yukissense(Day16 followup)・omuat(Day17)・panana39(Day17)はいずれも新規author返信なし。新規発見: Day17自社X投稿(status/2100889446677922224)に@kouya_sns01から好意的な一次コメントあり(『このズレを見つけられる人は強い』等)。Class A相当と判断し返信案を作成、Approval Batchへ。",
+    "x_state": "unauthenticated(x.com/homeが公開ランディングページへ明示的にリダイレクト)。個別投稿URL・プロフィールページは非ログインでも閲覧可能だったため、その範囲で確認を実施した。",
+    "ig_state": "authenticated(プロフィール編集・インサイト閲覧が可能)。",
+    "new_strategic_reply_search": "既存Conversation対応・Manual Publish Verificationを優先したため、新規Strategic Reply候補探索は今回実施せず(本日日中に別途@omuat/@panana39/@yukissense分は実施済み、get_reply_ledger参照)。"
+  },
   "current_date": "2026-09-18",
   "data_updated_at": "2026-09-18T05:45:00+09:00",
-  "public_updated_at": "2026-09-18T12:30:34.324Z",
+  "public_updated_at": "2026-09-18T13:39:51.114Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -545,6 +573,24 @@
         "cost_jpy": null,
         "profit_jpy": null,
         "human_work_minutes": null
+      },
+      {
+        "day": 17,
+        "date": "2026-09-18",
+        "x_posts": 1,
+        "x_impressions": 19,
+        "x_strategic_replies": 3,
+        "x_reply_impressions_avg": 12.3,
+        "ig_posts": 1,
+        "ig_reel_views": 16,
+        "ig_followers": 12,
+        "ig_profile_visits": null,
+        "link_clicks": null,
+        "conversions": null,
+        "revenue_jpy": null,
+        "cost_jpy": null,
+        "profit_jpy": null,
+        "human_work_minutes": null
       }
     ]
   },
@@ -554,17 +600,17 @@
     "generated_at": "2026-09-18T05:45:00+09:00",
     "today": {
       "x_post": {
-        "status": "ready",
+        "status": "published",
         "text_file": "content/x/day17_post.md",
-        "url": null,
-        "note": "Content Editor作成・Claude QA完了(114字)。承認待ちフロー自体の乖離をテーマにした本文。公開操作はOwnerが公式Xアプリから行う(Claudeは投稿ボタンを押さない、publishing-operations-v4.mdの中核制約)。",
+        "url": "https://x.com/workai_lab777/status/2100889446677922224",
+        "note": "Owner手動投稿済み(2026-09-18 19:07 JST)。Evening RoutineのManual Publish Verificationで独立確認(本文完全一致、impressions=19/likes=1/replies=1/reposts=1)。新規返信@kouya_sns01を発見、Approval Batchへ。",
         "text": "Cockpitは「承認待ち」のままでした。でも実際は、今朝もう自分でX・Instagramに投稿済み。\n\n承認フローを、そもそも待っていなかったんですね。記録とのズレに、今夜気づきました。\n\nAIでできる仕事は、AIに。\nDay17/100"
       },
       "ig_reel": {
-        "status": "ready",
+        "status": "published",
         "video_file": "day17-reel.mp4",
-        "url": null,
-        "note": "Creative Engineerが制作完了(2026-09-18、remotion-video/out/day17.mp4、41.713秒、1080x1920 h264+AAC48kHz)。Claude Business QA実施: frame0/コンタクトシート目視確認でサムネイル完成・7シーン表情変化・Day17/100バッジ・ブランド一貫性を確認、ffprobe実測値も報告と一致。台本からの逸脱はVOICEVOX音声エンジンの自然な発音差2件のみ(「Day17」→「デー」読み[Day16と同一前例]、「note.com」の読み方)でテキスト・数値の改変なし、QA PASS。Cockpitプレビュー動画(day17-reel.mp4)はOwner承認(2026-09-18)を得てpush済み。公開操作はOwnerが公式Instagramアプリから行う。",
+        "url": "https://www.instagram.com/workai_lab777/reel/DdbL9u0SRPM/",
+        "note": "Owner手動投稿済み(2026-09-18、相対表示「3時間前」)。Evening RoutineのManual Publish Verificationで独立確認(キャプション完全一致、views=16/reach=12[フォロワー25%/フォロワー以外75%]/いいね・コメント・保存・シェアいずれも0)。",
         "caption_text": "「承認待ち」の表示のまま、もう投稿は終わっていました。\n\nDay16のX投稿とInstagramのリール、記録の上ではまだ承認待ちのはずでした。\n\nでも実際は、今朝もう自分でX・Instagramに投稿していました。承認を待たずに。\n\n今回は文章がそのまま投稿されていて、これまで何度か起きていたnote.comのカードへの簡略化も起きていませんでした。\n\n承認フロー、そもそも待っていなかったんですよね。自分のタイミングで、もう動いていました。\n\n記録が止まって見えても、人はもう先に動いていることがある。だから、実際の状態を定期的に確認する。今夜、それに気づきました。\n\nAIでできる仕事は、AIに。\nDay 17 / 100\n#AI仕事研究所 #100日実験 #自動化 #仕事効率化 #AIパートナー\n\nVOICEVOX：青山龍星"
       }
     },
@@ -579,7 +625,7 @@
       "automation_reel_note": "Instagram投稿確認済み(2026-09-16 08:03 JST、実機Playwright確認。投稿URL: https://www.instagram.com/workai_lab777/reel/DdU1MXYSUkk/)。07:50時点のMorning Routineチェックでは未投稿だったが、その13分後にOwnerが投稿。owner_actionは解消。",
       "afb_audit": "on_hold",
       "afb_audit_note": "Owner再ログイン完了(afb実績も0クリック/0発生を確認)。ただしCOO指令『Notta funnel LIVE化まで新規afb提携は保留』が継続有効のため、TOP3拡大は本日実施せず据え置き。既存TOP2(Plaud.ai/RecCloud AI)のまま。",
-      "todays_public_market_outputs": 0,
+      "todays_public_market_outputs": 2,
       "notta_clicks_note": "Owner再ログイン完了、A8.net詳細レポートで確認。X告知(簡略版)経由のクリックはまだ発生していない。note記事内リンクのクリック率は別途確認要。",
       "tomorrow_assets": "IN_PRODUCTION",
       "tomorrow_assets_note": "Day17 X投稿文(content/x/day17_post.md)・Reel台本(content/reel-json/day17_approval_gap_story.md)はContent Editor作成・Claude QA完了。ReelレンダリングはCodex handoff(coord-6ada1af1414838df92b894ff8cba75ba)が2日ブロック継続のため、2026-09-18 Morning RoutineでCreative Engineerへ再ルーティング、動画完成待ち。",
@@ -592,10 +638,31 @@
         "audience_response_checked": true,
         "revenue_action_count": 1
       },
-      "backyard_health_note": "Daily Revenue Operating Loop初回実行。Market Radar 10/10(reports/research/market_radar_2026-09-18.md、COO指令で不足2件を追加収集し達成)。Deep Analysis 4件(Market Radar 3件+narisumashi100スレッド追加分、audience_signals_2026-09-18.md)。Strategic Reply 4件中3件投稿済み(@yukissense followup/@omuat/@panana39、Owner承認済み)・1件declined(@free_consultant)。Audience Response確認済みだが@kouya_sns01の6日遅れ検知が判明、PASS条件を『24時間以内検知』へ再定義(COO指令、日次Routineへの実装は未着手)。Revenue Action=1(Notta関連Revenue Content着手、content/reel-json/notta_fit_boundary_story.md、実際のAudience Signal(@yukissense)を根拠に「向かない人」角度で制作開始、Content Generation Guard適用済み。まだdraft、未レンダリング・未投稿)。"
+      "backyard_health_note": "Daily Revenue Operating Loop初回実行。Market Radar 10/10(reports/research/market_radar_2026-09-18.md、COO指令で不足2件を追加収集し達成)。Deep Analysis 4件(Market Radar 3件+narisumashi100スレッド追加分、audience_signals_2026-09-18.md)。Strategic Reply 4件中3件投稿済み(@yukissense followup/@omuat/@panana39、Owner承認済み)・1件declined(@free_consultant)。Audience Response確認済みだが@kouya_sns01の6日遅れ検知が判明、PASS条件を『24時間以内検知』へ再定義(COO指令、日次Routineへの実装はP1で維持、Revenue Content公開後に着手)。Revenue Action=1(Notta関連Revenue Content「向かない人」制作完了、content/reel-json/notta_fit_boundary_story.md、notta-fit-boundary.mp4。VOICEVOX音声・独立QA済み、COO承認(Revenue Experimentとして扱う)、Cockpitへ配信済み、Owner投稿待ち)。"
     },
     "carryover": [],
     "history": [
+      {
+        "type": "x_post",
+        "day": 17,
+        "status": "completed",
+        "url": "https://x.com/workai_lab777/status/2100889446677922224",
+        "actual_published_at": "2026-09-18T19:07:00+09:00",
+        "verification_source": "X status page(workai_lab777、本文完全一致、投稿ページ表示「19:07 · 2026年9月18日」、2026-09-18 22:31 JST確認)",
+        "verified_at": "2026-09-18T22:31:00+09:00",
+        "verification_note": "本文はcontent/x/day17_post.mdの承認済みFINAL全文と完全一致。impressions=19, likes=1, replies=1, reposts=1(投稿ページ実測)。返信1件は新規アカウント@kouya_sns01からの好意的コメント(Approval Batchで返信案提示)。"
+      },
+      {
+        "type": "ig_reel",
+        "day": 17,
+        "status": "completed",
+        "url": "https://www.instagram.com/workai_lab777/reel/DdbL9u0SRPM/",
+        "video_file": "day17-reel.mp4",
+        "actual_published_at": null,
+        "verification_source": "Instagram(workai_lab777、キャプション完全一致、投稿ページ相対表示「3時間前」、2026-09-18 22:33 JST確認、インサイト実測)",
+        "verified_at": "2026-09-18T22:33:00+09:00",
+        "verification_note": "views=16, reach(閲覧者)=12(フォロワー25%/フォロワー以外75%)、いいね/コメント/保存/シェアいずれも0(data/instagram/post_insights_log.csvへ記録済み)。正確なpublish時刻はInstagram UI上取得できず未記録(推測しない)。"
+      },
       {
         "type": "x_post",
         "day": 16,
@@ -740,9 +807,9 @@
       }
     ],
     "owner_actions": [
-      "Day17 X投稿案・Instagram Reel(いずれもClaude QA/Business QA PASS済み)を確認・投稿承認",
-      "Revenue Content「Nottaの向かない人」(content/reel-json/notta_fit_boundary_story.md、notta-fit-boundary.mp4)を確認・投稿承認",
-      "A8.netへの再ログイン(Revenue Ops P0、notta_clicksデータが2日超stale、Claudeはログイン不可のためOwner専管)"
+      "Revenue Content「Nottaの向かない人」(notta-fit-boundary.mp4)はCOO承認済み(Revenue Experiment扱い)。X・Instagramへの投稿操作をお願いします(公開後24時間で指標を追跡します)",
+      "A8.netへの再ログイン(Revenue Ops P0、notta_clicksデータが2日超stale、Claudeはログイン不可のためOwner専管)",
+      "X Conversation Approval Batch(@kouya_sns01への返信案)を確認・投稿承認"
     ],
     "approval_queue": [],
     "ai_learning": {
@@ -770,7 +837,7 @@
       "blocked_tasks": 0
     },
     "system_health": "normal",
-    "system_health_reason": "Day17 ReelはCreative Engineerへの再ルーティングにより制作完了・Claude Business QA PASS(2026-09-18)。X投稿案・Reelとも現在はOwner投稿承認待ちのみ。Codex handoff(coord-6ada1af1414838df92b894ff8cba75ba)は同一成果物をCreative Engineer側が先に完成させたためSTALE。Xブラウザ認証状態は本日確認で明示的にunauthenticated確定(/home・/searchとも明示的ログインリダイレクト)、Instagramは前回確認時authenticated(次回Routineで再確認)。",
+    "system_health_reason": "Day17 X投稿・IG ReelともOwnerが既に手動投稿済みであることをEvening Manual Publish Verificationで確認、historyへ移動済み。Codex handoff(coord-6ada1af1414838df92b894ff8cba75ba)は同一成果物をCreative Engineer側が先に完成させたためSTALE。Xブラウザ認証状態はunauthenticated確定(個別投稿URL/プロフィールは閲覧可)、Instagramはauthenticated。",
     "evening_2026_09_17_findings": {},
     "evening_2026-09-17_findings": {
       "manual_publish_verification": "Day16のX投稿・IG Reelとも、today.jsonでは投稿待ち(owner_actions)のまま残っていたが、実際には両方ともOwnerが本日朝(X: 07:32頃、IG: 相対表示から推定07:3x頃)に手動投稿済みだったことをEvening Routineの独立確認で発見。historyへ移動・実測データ記録済み。X本文は今回、承認済みFINAL全文のまま投稿されており、Day14/15で発生したnote.comシェアカード簡略化の乖離は発生しなかった。",
@@ -783,6 +850,13 @@
       "x_conversation_check": "waiting中3会話を個別スレッドURLで再確認。forestkinoko(Day9)・yukissense(Day16)は返信1件(こちら分のみ)で新規author返信なし変わらず。narisumashi100(Day10、37件スレッド)は引き続き非ログイン表示制限で全件確認不能、次回持ち越し。Approval Queue pending=0のためApproval Batchなし。",
       "x_state": "unauthenticated確定(/home・/searchとも明示的ログインフォームへリダイレクト、unknownではない)。新規Strategic Reply候補探索は/searchがログイン必須のためスキップ。",
       "day17_reel_rerouting": "coord-6ada1af1414838df92b894ff8cba75ba(Codex handoff)がクォータ上限で2日ブロック継続中のため、既存Remotionテンプレート・VOICEVOX実装を使う定型のReel制作としてCreative Engineerへ直接再ルーティング。制作完了(day17.mp4、41.713秒)、Claude Business QA PASS(frame0/コンタクトシート目視・ffprobe実測確認)。Owner投稿承認待ちへ移行。"
+    },
+    "evening_2026-09-18_findings": {
+      "manual_publish_verification": "Day17のX投稿・IG Reelとも、今回今朝以降にOwnerが既に手動投稿済みだったことをEvening Routineの独立確認で発見(owner_actions/todayに投稿待ちのまま残留していた)。X: 2026-09-18 19:07投稿(本文完全一致、impressions=19/likes=1/replies=1/reposts=1、status/2100889446677922224)。IG: 相対表示「3時間前」投稿(キャプション完全一致、views=16/reach=12[フォロワー25%/非フォロワー75%]、いいね/コメント/保存/シェアいずれも0、reel/DdbL9u0SRPM/)。historyへ移動、kpi_daily.csv Day17行・post_insights_log.csvへ実測反映済み。",
+      "x_conversation_check": "waiting中5会話を確認。forestkinoko(Day9)は返信1件(こちら分のみ)で新規返信なし変わらず。narisumashi100(Day10、683返信の大規模スレッド)は非ログイン制約で自社返信が表示範囲外のため確認不能、次回持ち越し。yukissense(Day16 followup)・omuat(Day17)・panana39(Day17)はいずれも新規author返信なし。新規発見: Day17自社X投稿(status/2100889446677922224)に@kouya_sns01から好意的な一次コメントあり(『このズレを見つけられる人は強い』等)。Class A相当と判断し返信案を作成、Approval Batchへ。",
+      "x_state": "unauthenticated(x.com/homeが公開ランディングページへ明示的にリダイレクト)。個別投稿URL・プロフィールページは非ログインでも閲覧可能だったため、その範囲で確認を実施した。",
+      "ig_state": "authenticated(プロフィール編集・インサイト閲覧が可能)。",
+      "new_strategic_reply_search": "既存Conversation対応・Manual Publish Verificationを優先したため、新規Strategic Reply候補探索は今回実施せず(本日日中に別途@omuat/@panana39/@yukissense分は実施済み、get_reply_ledger参照)。"
     }
   },
   "health_inputs": {
