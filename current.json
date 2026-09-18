@@ -7,13 +7,13 @@
       "status": "ready",
       "text_file": "content/x/day17_post.md",
       "url": null,
-      "note": "Content Editor作成・Claude QA完了(114字)。承認待ちフロー自体の乖離をテーマにした本文。Owner承認後にClaudeが投稿。"
+      "note": "Content Editor作成・Claude QA完了(114字)。承認待ちフロー自体の乖離をテーマにした本文。公開操作はOwnerが公式Xアプリから行う(Claudeは投稿ボタンを押さない、publishing-operations-v4.mdの中核制約)。"
     },
     "ig_reel": {
       "status": "ready",
-      "video_file": null,
+      "video_file": "day17-reel.mp4",
       "url": null,
-      "note": "Creative Engineerが制作完了(2026-09-18、remotion-video/out/day17.mp4、41.713秒、1080x1920 h264+AAC48kHz)。Claude Business QA実施: frame0/コンタクトシート目視確認でサムネイル完成・7シーン表情変化・Day17/100バッジ・ブランド一貫性を確認、ffprobe実測値も報告と一致。台本からの逸脱はVOICEVOX音声エンジンの自然な発音差2件のみ(「Day17」→「デー」読み[Day16と同一前例]、「note.com」の読み方)でテキスト・数値の改変なし、QA PASS。Cockpitへのプレビュー動画アップロード(day17-reel.mp4)はパーミッションブロックにより保留中、Ownerへ確認依頼(下記owner_actions参照)。動画自体はローカルに完成済み。"
+      "note": "Creative Engineerが制作完了(2026-09-18、remotion-video/out/day17.mp4、41.713秒、1080x1920 h264+AAC48kHz)。Claude Business QA実施: frame0/コンタクトシート目視確認でサムネイル完成・7シーン表情変化・Day17/100バッジ・ブランド一貫性を確認、ffprobe実測値も報告と一致。台本からの逸脱はVOICEVOX音声エンジンの自然な発音差2件のみ(「Day17」→「デー」読み[Day16と同一前例]、「note.com」の読み方)でテキスト・数値の改変なし、QA PASS。Cockpitプレビュー動画(day17-reel.mp4)はOwner承認(2026-09-18)を得てpush済み。公開操作はOwnerが公式Instagramアプリから行う。"
     }
   },
   "business_progress": {
@@ -225,7 +225,7 @@
   },
   "current_date": "2026-09-18",
   "data_updated_at": "2026-09-18T05:45:00+09:00",
-  "public_updated_at": "2026-09-17T22:24:05.111Z",
+  "public_updated_at": "2026-09-18T08:54:38.701Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -546,13 +546,13 @@
         "status": "ready",
         "text_file": "content/x/day17_post.md",
         "url": null,
-        "note": "Content Editor作成・Claude QA完了(114字)。承認待ちフロー自体の乖離をテーマにした本文。Owner承認後にClaudeが投稿。"
+        "note": "Content Editor作成・Claude QA完了(114字)。承認待ちフロー自体の乖離をテーマにした本文。公開操作はOwnerが公式Xアプリから行う(Claudeは投稿ボタンを押さない、publishing-operations-v4.mdの中核制約)。"
       },
       "ig_reel": {
         "status": "ready",
-        "video_file": null,
+        "video_file": "day17-reel.mp4",
         "url": null,
-        "note": "Creative Engineerが制作完了(2026-09-18、remotion-video/out/day17.mp4、41.713秒、1080x1920 h264+AAC48kHz)。Claude Business QA実施: frame0/コンタクトシート目視確認でサムネイル完成・7シーン表情変化・Day17/100バッジ・ブランド一貫性を確認、ffprobe実測値も報告と一致。台本からの逸脱はVOICEVOX音声エンジンの自然な発音差2件のみ(「Day17」→「デー」読み[Day16と同一前例]、「note.com」の読み方)でテキスト・数値の改変なし、QA PASS。Cockpitへのプレビュー動画アップロード(day17-reel.mp4)はパーミッションブロックにより保留中、Ownerへ確認依頼(下記owner_actions参照)。動画自体はローカルに完成済み。"
+        "note": "Creative Engineerが制作完了(2026-09-18、remotion-video/out/day17.mp4、41.713秒、1080x1920 h264+AAC48kHz)。Claude Business QA実施: frame0/コンタクトシート目視確認でサムネイル完成・7シーン表情変化・Day17/100バッジ・ブランド一貫性を確認、ffprobe実測値も報告と一致。台本からの逸脱はVOICEVOX音声エンジンの自然な発音差2件のみ(「Day17」→「デー」読み[Day16と同一前例]、「note.com」の読み方)でテキスト・数値の改変なし、QA PASS。Cockpitプレビュー動画(day17-reel.mp4)はOwner承認(2026-09-18)を得てpush済み。公開操作はOwnerが公式Instagramアプリから行う。"
       }
     },
     "business_progress": {
@@ -946,6 +946,15 @@
         "exit_code": 0,
         "success": true,
         "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\premorning_2026-09-18_054501.log"
+      },
+      {
+        "routine": "morning",
+        "scheduled_at": "2026-09-18T07:00:00",
+        "started_at": "2026-09-18T07:00:01",
+        "finished_at": "2026-09-18T07:25:42",
+        "exit_code": 0,
+        "success": true,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\morning_2026-09-18_070001.log"
       }
     ],
     "tasks": [
@@ -955,13 +964,6 @@
         "status": "assigned",
         "waiting_reason": "codex_quota_limit",
         "next_check_at": "2026-09-15T04:00:00.000Z"
-      },
-      {
-        "task_id": "4f930d40-c0d5-493b-8439-fb4d479798de",
-        "assigned_to": "codex",
-        "status": "blocked",
-        "waiting_reason": "codex_quota_limit",
-        "next_check_at": "2026-09-20T19:21:00.000Z"
       }
     ]
   },

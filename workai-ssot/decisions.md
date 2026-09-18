@@ -4,6 +4,33 @@
 
 ---
 
+## 2026-09-18 (Morning Routine — X会話確認・Day17 Reel制作をCreative Engineerへ再ルーティング)
+
+Missed Routine Coalescing判定: NOT SUPERSEDED(本日premorning実行済みだがmorningは未実行のためフル実行)。get_business_day確認: Day17/2026-09-18。
+
+**X Conversation Routine**: X状態は`/home`・`/search`とも明示的ログインフォームへリダイレクトされ`unauthenticated`確定(unknownではない)。個別ポストURLは非ログインでも閲覧可能なため、waiting中3件を個別確認: @forestkinoko(Day9)・@yukissense(Day16)はいずれも返信1件(こちらの返信のみ)で新規author返信なし。@narisumashi100(Day10、37件スレッド)は非ログイン表示制限により全件確認不能、次回持ち越し(前回と同じ制約)。新規Strategic Reply候補探索は`/search`がログイン必須のためスキップ。Approval Queue pending=0のため今回のApproval Batchはなし。
+
+**Day17 Reel制作の再ルーティング**: coord-6ada1af1414838df92b894ff8cba75ba(Codex handoff、Day17 Approval Gap Story Reel制作)がCodexクォータ枯渇(提示リセット2026-09-20)によりattempts:0のまま2日ブロック継続していることを確認。内容を精査したところ、新規アーキテクチャ実装ではなく既存Remotionテンプレート・既存キャラクター素材・既存VOICEVOX実装を使った定型のReel制作(Day10〜16と同一パターン)であり、本来Creative Engineerの担当範囲(CLAUDE.md AI社員招集ルール「動画/画像/Remotion → Creative Engineer」)と判断。COO Immediate Change Principle(明確なbottleneck)に基づき、Codexの空き待ち(最短でも2日後)をせず、Creative Engineerへ直接制作を依頼した。coord-6ada1af1414838df92b894ff8cba75baはCreative Engineer側の成果物が先に揃ったためSTALEとして扱う(Codex側の処理は不要)。
+
+**Day17 Reel制作完了・Claude Business QA PASS**: Creative EngineerがVOICEVOX(青山龍星、engineをこのセッション中に自ら起動し疎通確認)音声合成・Remotionレンダリングを完了(day17.mp4、41.713秒、1080x1920 h264+AAC48kHz、1251フレーム)。Claude Business QA実施内容: (1)frame0(day17-cover.png)・コンタクトシート目視確認でサムネイル完成・7シーンの表情/ジェスチャー変化・Day17/100バッジ・ブランド一貫性を確認、(2)ffprobe実測値がCreative Engineer報告値と一致することを独立検証、(3)台本(day17_approval_gap_story.md)との逸脱2件(「Day17」のVOICEVOX読みが「デイ」ではなく「デー」[Day16と同一前例]、「note.com」の読み方)はいずれも音声エンジンの自然な発音差でテキスト・数値の改変なしと判断、(4)Instagramキャプション(content/instagram/day17_caption.md)が台本のキャプション案と一致することを確認。QA PASS、Owner投稿承認待ちへ移行。
+
+**Cockpitへの動画pushがパーミッションブロック**: workai-cockpit/day17-reel.mp4をgit add/commit/pushしようとしたところ、Claude Code auto modeのclassifierに拒否された(JSON/HTML単体のcommit/pushは成功、video添付時のみブロック)。過去のDay10-16では同様の動画pushが成功していた形跡があり、今回のブロックが恒久方針かセッション固有の判定かは不明。強行突破はせず、リンク切れを避けるため`today.json`の`video_file`を一旦nullに戻し、Cockpit上のダウンロードリンクを非表示にした上でOwnerへ許可を仰ぐ形にした(owner_actionsに記載)。動画自体はremotion-video/out/day17.mp4にローカル完成済みで、制作自体は完了している。
+
+---
+
+## 2026-09-18 (Pre-Morning Routine — Day17 Date Rollover)
+
+today.json/Cockpitとも Day16/2026-09-17 → Day17/2026-09-18 へ更新(手動チャット起動)。
+X投稿(content/x/day17_post.md)はready(Owner承認待ち)、Reel(day17.mp4)はCodexクォータ
+上限(提示リセット2026-09-20T12:21、TZ未確証)により未着手(handoff
+coord-6ada1af1414838df92b894ff8cba75ba、attempts:0)のままblockedとして正直に表示。
+get_tasksでDay7v2/Day10/Day16の3件がreview状態のままtoday.json history(いずれも
+実際は投稿済み)と乖離していたためdoneへクローズ(実態はズレたままにしない)。
+Approval Queue pending=0。Cockpit commit 289cc44・push・Pages build built一致・
+live current.json business_day=17確認までPASS(MORNING_COCKPIT_READY)。
+
+---
+
 ## 2026-09-17 (Codexクォータ再枯渇 — Day17 Reel動画は明朝06:00までに間に合わない見込み)
 
 Owner質問「iPhoneでCockpitを開いても、Day17のReel動画・X原稿は明日6時ごろ更新されて

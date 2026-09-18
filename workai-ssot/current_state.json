@@ -1,18 +1,20 @@
 {
-  "business_day": 16,
-  "updated_at": "2026-09-17T14:43:26.545Z",
+  "business_day": 17,
+  "updated_at": "2026-09-18T08:54:39.589Z",
   "data_stale": false,
   "today": {
-    "x": "not_started",
-    "instagram": "not_started"
+    "x": "ready",
+    "instagram": "ready"
   },
   "owner_actions": [
-    "NO OWNER ACTION REQUIRED"
+    "Day17 X投稿案(content/x/day17_post.md)を確認・投稿承認",
+    "Day17 Instagram Reel(remotion-video/out/day17.mp4、Claude Business QA PASS済み)を確認・投稿承認",
+    "Cockpitへのプレビュー動画アップロード(workai-cockpit/day17-reel.mp4のgit push)がパーミッションブロックにより保留中。チャットで許可いただければClaudeがpushします(動画自体はremotion-video/out/day17.mp4にローカル完成済みのため、この承認はCockpit上でのプレビュー可否のみ)"
   ],
   "revenue_funnel": [
     {
       "label": "content",
-      "value": 12
+      "value": 11
     },
     {
       "label": "note_lp",
@@ -50,7 +52,7 @@
     },
     {
       "label": "Codex",
-      "state": "red"
+      "state": "yellow"
     }
   ],
   "current_business_priority": "Notta revenue funnel (P1)",
@@ -64,8 +66,8 @@
     "reel_url": null,
     "posted": false
   },
-  "next_x_status": "not_started",
-  "next_reel_status": "not_started",
+  "next_x_status": "ready",
+  "next_reel_status": "ready",
   "latest_learning": "Day13(Fixed Publishing Schedule TEST 1初日)はMorning Routine自動発火が失敗したにもかかわらず、Ownerが自主的にX/Instagramへ手動投稿(X: 07:30予定に対し実際は数時間後、IG Reel: 相対表示のみで正確な時刻不明)。制作(Codex)は完了していたため、公開判断だけ人間に残った。2026-09-15朝、Evening Routine不通で滞っていたSNS分析(実測データに基づく)をClaudeが独立実施し、X表示回数(Day9=22→Day10=18→Day11=13→Day12=7→Day13=4)・Instagram Reel再生数(Day10=29→Day12=24→Day13=10)とも5日連続で減少していることを発見。さらに、全3件のReel(Day10/12/13)は外部(非フォロワー)へのリーチ自体…（全文はdata/publish/today.json: ai_learning参照）",
   "next_hypothesis": "Notta funnel優先のためFixed Publishing Schedule TEST 1の定型投稿は本日も保留継続。Day15 Reel(自動化2日停止ストーリー)はOwner投稿承認待ち。Strategic Reply再開はXログイン状態が回復次第優先的に試行する(2026-09-16時点も検索用途はunauthenticated、通常タイムライン閲覧は可能)。0%エンゲージメントの原因分析は7日間のFixed Publishing Schedule TEST 1データが揃い次第行う。"
 }
