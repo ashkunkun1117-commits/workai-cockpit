@@ -13,8 +13,9 @@ COO指令「START DAILY REVENUE OPERATING LOOP NOW」を受け、指定順序で
    DATA STALEへ変更、owner_actionsへ再ログイン依頼を追加。
 2. **waiting Strategic Reply 3件確認**(X実機、ログイン確認済み@workai_lab777):
    - @forestkinoko(9/9): 著者返信なし、無関係な引用ポストのみ。close扱いで良い。
-   - @narisumashi100(9/11): 著者本人の返信はないが、**返信自体が1,339いいね**を獲得(未記録だった
-     実データ、ledger.csvへ追記)。
+   - @narisumashi100(9/11): 著者本人の返信はないが、**返信自体が1,339件の表示(インプレッション)、
+     いいね1件**を獲得(未記録だった実データ、ledger.csvへ追記。当初「1,339いいね」と誤記したが
+     9/18再確認で訂正)。
    - @yukissense(9/16): **本日著者から新規返信あり**(「10名以上の会議では人力メモも必須、固有名詞・
      数字は限界」)。ledger.csv更新、followup_draft追加(未投稿・承認待ち)。
 3. **Market Radar 10件収集**: 8件(目標未達、正直に記録)。`reports/research/market_radar_2026-09-18.md`参照。
@@ -31,6 +32,37 @@ COO指令「START DAILY REVENUE OPERATING LOOP NOW」を受け、指定順序で
 **未実施・積み残し**: COO指令8「BACKYARD HEALTH」のCockpit表示(Market Radar x/10等の日次ダッシュ
 ボード)はまだ実装されていない。Codexへエンジニアリングタスクとして委任予定。X返信候補4件(新規3+
 yukissense followup1件)はOwnerの明示的承認待ち(per-post approval、この指令によっても自動投稿はしない)。
+
+---
+
+## 2026-09-18 (COO DECISION — Strategic Reply実行、追加監査、Market Radar完了、Revenue Content着手)
+
+Owner承認・COO最終判断(1 GO / 2 GO(修正版) / 3 Declined / 4 GO)を受けて実行。
+
+**Strategic Reply投稿(いずれもOwner/COO承認後にClaudeがX実機で投稿・実在確認済み)**:
+- #1 @yukissense followup: https://x.com/workai_lab777/status/2100905910105469372
+- #2 @omuat(修正版「Copilot Studioの自動化では、どこまでAIに任せて、どこから人が確認する設計に
+  していますか？」): https://x.com/workai_lab777/status/2100915176841384059
+- #4 @panana39: https://x.com/workai_lab777/status/2100905018388001133
+- #3 @free_consultant: declined、ledger.csvにdeclined_by_ownerとして記録。
+
+**追加対応**:
+1. narisumashi100スレッドへの返信をDeep Analysis(`reports/research/audience_signals_2026-09-18.md`)。
+   **訂正**: 当初「1,339いいね」と報告したが実機再確認で「1,339件の表示(インプレッション)、
+   いいね1件」が正しい数値だった。ledger.csv・decisions_log内の記載を訂正。
+2. @kouya_sns01が6日間未検知だった根本原因を特定: 日次Routineに「X mentions確認」という
+   ステップ自体が存在しなかった(見逃しではなく、そもそも見る仕組みがなかった)。
+   COO指令によりAudience ResponseのPASS条件を「仕組みの有無」から「24時間以内検知」へ
+   再定義。日次Routineへの実装はまだ未着手(次のエンジニアリングタスク)。
+3. Market Radarを10/10まで追加収集完了(`reports/research/market_radar_2026-09-18.md`、
+   ChatGPT業務キーワードで2件追加)。
+4. Revenue Content 1件に着手: `content/reel-json/notta_fit_boundary_story.md`
+   (Notta「向かない人」— @yukissense実データを根拠に、Content Generation Guard
+   〈Previous/Learning/Change/Hypothesis〉を適用して制作。台本・X投稿案draft完成、
+   まだ音声合成・レンダリング・QA・投稿は未実施)。
+
+today.jsonのbackyard_healthを本日実績(Market Radar10/10, Deep Analysis4, Strategic Reply4,
+Audience Response確認済み, Revenue Action1)へ更新。
 
 ---
 

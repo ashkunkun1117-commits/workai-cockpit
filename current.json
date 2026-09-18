@@ -36,13 +36,13 @@
     "strategic_reply": "Owner承認・投稿完了(@yukissense、https://x.com/workai_lab777/status/2100207692967248246)",
     "backyard_health": {
       "date": "2026-09-18",
-      "market_radar_count": 8,
-      "deep_analysis_count": 3,
-      "strategic_reply_count": 3,
+      "market_radar_count": 10,
+      "deep_analysis_count": 4,
+      "strategic_reply_count": 4,
       "audience_response_checked": true,
-      "revenue_action_count": 0
+      "revenue_action_count": 1
     },
-    "backyard_health_note": "Daily Revenue Operating Loop初回実行。Market Radar 8/10(reports/research/market_radar_2026-09-18.md)、Deep Analysis 3件、Strategic Reply候補3件(data/x-replies/ledger.csv、いずれも未投稿・承認待ち)、Audience Response確認済み(reports/research/audience_signals_2026-09-18.md)。Revenue Action=0(A8ログイン不能でP0のRevenue Ops未実施、正直にRED)。"
+    "backyard_health_note": "Daily Revenue Operating Loop初回実行。Market Radar 10/10(reports/research/market_radar_2026-09-18.md、COO指令で不足2件を追加収集し達成)。Deep Analysis 4件(Market Radar 3件+narisumashi100スレッド追加分、audience_signals_2026-09-18.md)。Strategic Reply 4件中3件投稿済み(@yukissense followup/@omuat/@panana39、Owner承認済み)・1件declined(@free_consultant)。Audience Response確認済みだが@kouya_sns01の6日遅れ検知が判明、PASS条件を『24時間以内検知』へ再定義(COO指令、日次Routineへの実装は未着手)。Revenue Action=1(Notta関連Revenue Content着手、content/reel-json/notta_fit_boundary_story.md、実際のAudience Signal(@yukissense)を根拠に「向かない人」角度で制作開始、Content Generation Guard適用済み。まだdraft、未レンダリング・未投稿)。"
   },
   "carryover": [],
   "history": [
@@ -236,7 +236,7 @@
   },
   "current_date": "2026-09-18",
   "data_updated_at": "2026-09-18T05:45:00+09:00",
-  "public_updated_at": "2026-09-18T10:59:52.552Z",
+  "public_updated_at": "2026-09-18T11:59:52.922Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -586,13 +586,13 @@
       "strategic_reply": "Owner承認・投稿完了(@yukissense、https://x.com/workai_lab777/status/2100207692967248246)",
       "backyard_health": {
         "date": "2026-09-18",
-        "market_radar_count": 8,
-        "deep_analysis_count": 3,
-        "strategic_reply_count": 3,
+        "market_radar_count": 10,
+        "deep_analysis_count": 4,
+        "strategic_reply_count": 4,
         "audience_response_checked": true,
-        "revenue_action_count": 0
+        "revenue_action_count": 1
       },
-      "backyard_health_note": "Daily Revenue Operating Loop初回実行。Market Radar 8/10(reports/research/market_radar_2026-09-18.md)、Deep Analysis 3件、Strategic Reply候補3件(data/x-replies/ledger.csv、いずれも未投稿・承認待ち)、Audience Response確認済み(reports/research/audience_signals_2026-09-18.md)。Revenue Action=0(A8ログイン不能でP0のRevenue Ops未実施、正直にRED)。"
+      "backyard_health_note": "Daily Revenue Operating Loop初回実行。Market Radar 10/10(reports/research/market_radar_2026-09-18.md、COO指令で不足2件を追加収集し達成)。Deep Analysis 4件(Market Radar 3件+narisumashi100スレッド追加分、audience_signals_2026-09-18.md)。Strategic Reply 4件中3件投稿済み(@yukissense followup/@omuat/@panana39、Owner承認済み)・1件declined(@free_consultant)。Audience Response確認済みだが@kouya_sns01の6日遅れ検知が判明、PASS条件を『24時間以内検知』へ再定義(COO指令、日次Routineへの実装は未着手)。Revenue Action=1(Notta関連Revenue Content着手、content/reel-json/notta_fit_boundary_story.md、実際のAudience Signal(@yukissense)を根拠に「向かない人」角度で制作開始、Content Generation Guard適用済み。まだdraft、未レンダリング・未投稿)。"
     },
     "carryover": [],
     "history": [
