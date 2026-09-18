@@ -35,6 +35,31 @@ yukissense followup1件)はOwnerの明示的承認待ち(per-post approval、こ
 
 ---
 
+## 2026-09-18 (COO指令「Revenue Content Production」— Claudeが直接完成まで制作)
+
+Codex委任なし(クォータ制約・新規Video Factory開発ではなく既存パイプライン流用のため)、
+Claudeが直接完成まで実施。
+
+**制作物**: `content/reel-json/notta_fit_boundary_story.md`(Nottaの「向かない人」— 実際に
+10名以上の会議を担当している@yukissense氏の一次情報を根拠に、Notta批判ではなく
+「向く場面/まだ難しい場面」として整理)。
+- Remotion実装: `NottaFitBoundaryStory.tsx`(新規シーンコンポーネント、既存の
+  CharacterPresenter/theme/render pipelineを流用、Video Factory自体の新規開発ではない)。
+- VOICEVOX音声(青山龍星)を実際に合成。silencedetect最大無音1.62秒(Template v2 Pilotで
+  問題化した6秒級の静止画無音とは異なり許容範囲、各シーンの証拠カード等は表示継続)。
+- 最終MP4(30.000秒)・IGキャプション・X投稿案いずれも完成。
+- PR/disclosure判断: 本コンテンツ単体にアフィリエイトリンクを含まないため、
+  PR表示は不要(day08_pr_check.mdの前例を踏襲)。
+- Cockpitへプレビュー動画(notta-fit-boundary.mp4)をpush、owner_actionsへ承認依頼を追加。
+
+**投稿後の追跡計画**: URL・reach・profile intent・note流入・affiliate clickを追跡し、
+Content→note bottleneck改善への効果を検証する(投稿承認後に実施)。
+
+**Separate P1(未着手)**: Audience Response 24h detectionの日次Routine組み込み仕様。
+Codex復活待ちでも手動Daily Checkは継続する方針。
+
+---
+
 ## 2026-09-18 (COO DECISION — Strategic Reply実行、追加監査、Market Radar完了、Revenue Content着手)
 
 Owner承認・COO最終判断(1 GO / 2 GO(修正版) / 3 Declined / 4 GO)を受けて実行。
