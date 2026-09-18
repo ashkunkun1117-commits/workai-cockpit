@@ -33,7 +33,16 @@
     "notta_clicks_note": "Owner再ログイン完了、A8.net詳細レポートで確認。X告知(簡略版)経由のクリックはまだ発生していない。note記事内リンクのクリック率は別途確認要。",
     "tomorrow_assets": "IN_PRODUCTION",
     "tomorrow_assets_note": "Day17 X投稿文(content/x/day17_post.md)・Reel台本(content/reel-json/day17_approval_gap_story.md)はContent Editor作成・Claude QA完了。ReelレンダリングはCodex handoff(coord-6ada1af1414838df92b894ff8cba75ba)が2日ブロック継続のため、2026-09-18 Morning RoutineでCreative Engineerへ再ルーティング、動画完成待ち。",
-    "strategic_reply": "Owner承認・投稿完了(@yukissense、https://x.com/workai_lab777/status/2100207692967248246)"
+    "strategic_reply": "Owner承認・投稿完了(@yukissense、https://x.com/workai_lab777/status/2100207692967248246)",
+    "backyard_health": {
+      "date": "2026-09-18",
+      "market_radar_count": 8,
+      "deep_analysis_count": 3,
+      "strategic_reply_count": 3,
+      "audience_response_checked": true,
+      "revenue_action_count": 0
+    },
+    "backyard_health_note": "Daily Revenue Operating Loop初回実行。Market Radar 8/10(reports/research/market_radar_2026-09-18.md)、Deep Analysis 3件、Strategic Reply候補3件(data/x-replies/ledger.csv、いずれも未投稿・承認待ち)、Audience Response確認済み(reports/research/audience_signals_2026-09-18.md)。Revenue Action=0(A8ログイン不能でP0のRevenue Ops未実施、正直にRED)。"
   },
   "carryover": [],
   "history": [
@@ -227,7 +236,7 @@
   },
   "current_date": "2026-09-18",
   "data_updated_at": "2026-09-18T05:45:00+09:00",
-  "public_updated_at": "2026-09-18T10:51:50.663Z",
+  "public_updated_at": "2026-09-18T10:59:52.552Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -574,7 +583,16 @@
       "notta_clicks_note": "Owner再ログイン完了、A8.net詳細レポートで確認。X告知(簡略版)経由のクリックはまだ発生していない。note記事内リンクのクリック率は別途確認要。",
       "tomorrow_assets": "IN_PRODUCTION",
       "tomorrow_assets_note": "Day17 X投稿文(content/x/day17_post.md)・Reel台本(content/reel-json/day17_approval_gap_story.md)はContent Editor作成・Claude QA完了。ReelレンダリングはCodex handoff(coord-6ada1af1414838df92b894ff8cba75ba)が2日ブロック継続のため、2026-09-18 Morning RoutineでCreative Engineerへ再ルーティング、動画完成待ち。",
-      "strategic_reply": "Owner承認・投稿完了(@yukissense、https://x.com/workai_lab777/status/2100207692967248246)"
+      "strategic_reply": "Owner承認・投稿完了(@yukissense、https://x.com/workai_lab777/status/2100207692967248246)",
+      "backyard_health": {
+        "date": "2026-09-18",
+        "market_radar_count": 8,
+        "deep_analysis_count": 3,
+        "strategic_reply_count": 3,
+        "audience_response_checked": true,
+        "revenue_action_count": 0
+      },
+      "backyard_health_note": "Daily Revenue Operating Loop初回実行。Market Radar 8/10(reports/research/market_radar_2026-09-18.md)、Deep Analysis 3件、Strategic Reply候補3件(data/x-replies/ledger.csv、いずれも未投稿・承認待ち)、Audience Response確認済み(reports/research/audience_signals_2026-09-18.md)。Revenue Action=0(A8ログイン不能でP0のRevenue Ops未実施、正直にRED)。"
     },
     "carryover": [],
     "history": [
