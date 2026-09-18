@@ -4,14 +4,16 @@
   "generated_at": "2026-09-19T05:47:00+09:00",
   "today": {
     "x_post": {
-      "status": "in_production",
-      "text_file": null,
-      "note": "Morning RoutineでContent Editorへ制作依頼済み(@kouya_sns01の好意的コメントが6日間未検知だった実話→PASS条件を24時間以内検知へ再定義した実際の経緯を題材)。完了後Claude Business QAへ。"
+      "status": "ready",
+      "text_file": "content/x/day18_post.md",
+      "note": "Content Editor作成・Claude Business QA PASS。題材: @kouya_sns01の9/12コメントが6日間未検知だった実話→PASS条件を24時間以内検知へ再定義した実際の経緯(reports/decisions_log.md 2026-09-18)。Owner投稿承認待ち。",
+      "text": "9/12についた好意的なコメントに、6日間気づけていませんでした。見逃しではなく、見にいく工程がそもそも仕組みに無かった。基準を「仕組みの有無」から「24時間以内に気づけるか」へ変えました。\n\nAIでできる仕事は、AIに。\nDay18/100"
     },
     "ig_reel": {
       "status": "in_production",
       "video_file": null,
-      "note": "同上題材でContent Editorへ構成案作成を依頼済み。台本QA後Creative Engineerへ制作ルーティング予定。"
+      "note": "台本(content/reel-json/day18_kouya_detection_gap_story.md)Claude Business QA PASS。Creative EngineerへVOICEVOX音声合成・Remotionレンダリングを依頼中。",
+      "caption_text": "応援してくれたコメントに、6日間気づいていませんでした。\n\n9月12日、Xの投稿に「AI制作・人間公開の役割分担が事故を減らす」という、好意的なコメントをいただいていました。\n\n気づいたのは、6日後の9月18日、夜の運用チェックで実機を確認したときです。\n\n原因は「見逃していた」ことではなく、そもそも日次の運用の中に「Xのコメントを確認する」という工程自体が無かったこと。仕組みが元から存在していませんでした。\n\nこの発見を受けて、基準を変えました。「確認する仕組みがあるかどうか」ではなく、「24時間以内に気づけているかどうか」へ。\n\n24時間以内に気づける仕組みへの実装は、まだこれからです。ここは正直に、次の宿題として残します。\n\nAIでできる仕事は、AIに。\nDay 18 / 100\n#AI仕事研究所 #100日実験 #自動化 #仕事効率化 #AIパートナー\n\nVOICEVOX：青山龍星"
     }
   },
   "business_progress": {
@@ -267,7 +269,7 @@
   },
   "current_date": "2026-09-19",
   "data_updated_at": "2026-09-19T05:47:00+09:00",
-  "public_updated_at": "2026-09-18T22:08:02.935Z",
+  "public_updated_at": "2026-09-18T22:11:19.672Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -603,14 +605,16 @@
     "generated_at": "2026-09-19T05:47:00+09:00",
     "today": {
       "x_post": {
-        "status": "in_production",
-        "text_file": null,
-        "note": "Morning RoutineでContent Editorへ制作依頼済み(@kouya_sns01の好意的コメントが6日間未検知だった実話→PASS条件を24時間以内検知へ再定義した実際の経緯を題材)。完了後Claude Business QAへ。"
+        "status": "ready",
+        "text_file": "content/x/day18_post.md",
+        "note": "Content Editor作成・Claude Business QA PASS。題材: @kouya_sns01の9/12コメントが6日間未検知だった実話→PASS条件を24時間以内検知へ再定義した実際の経緯(reports/decisions_log.md 2026-09-18)。Owner投稿承認待ち。",
+        "text": "9/12についた好意的なコメントに、6日間気づけていませんでした。見逃しではなく、見にいく工程がそもそも仕組みに無かった。基準を「仕組みの有無」から「24時間以内に気づけるか」へ変えました。\n\nAIでできる仕事は、AIに。\nDay18/100"
       },
       "ig_reel": {
         "status": "in_production",
         "video_file": null,
-        "note": "同上題材でContent Editorへ構成案作成を依頼済み。台本QA後Creative Engineerへ制作ルーティング予定。"
+        "note": "台本(content/reel-json/day18_kouya_detection_gap_story.md)Claude Business QA PASS。Creative EngineerへVOICEVOX音声合成・Remotionレンダリングを依頼中。",
+        "caption_text": "応援してくれたコメントに、6日間気づいていませんでした。\n\n9月12日、Xの投稿に「AI制作・人間公開の役割分担が事故を減らす」という、好意的なコメントをいただいていました。\n\n気づいたのは、6日後の9月18日、夜の運用チェックで実機を確認したときです。\n\n原因は「見逃していた」ことではなく、そもそも日次の運用の中に「Xのコメントを確認する」という工程自体が無かったこと。仕組みが元から存在していませんでした。\n\nこの発見を受けて、基準を変えました。「確認する仕組みがあるかどうか」ではなく、「24時間以内に気づけているかどうか」へ。\n\n24時間以内に気づける仕組みへの実装は、まだこれからです。ここは正直に、次の宿題として残します。\n\nAIでできる仕事は、AIに。\nDay 18 / 100\n#AI仕事研究所 #100日実験 #自動化 #仕事効率化 #AIパートナー\n\nVOICEVOX：青山龍星"
       }
     },
     "business_progress": {
