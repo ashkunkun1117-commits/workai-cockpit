@@ -4,7 +4,7 @@
   "current_month_revenue_jpy": 0,
   "current_month_profit_jpy": null,
   "first_revenue_achieved": false,
-  "notta_clicks": 0,
+  "notta_clicks": null,
   "affiliate_programs": [
     {
       "program": "A8.net",

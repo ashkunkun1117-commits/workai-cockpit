@@ -4,6 +4,36 @@
 
 ---
 
+## 2026-09-18 (COO指令「Daily Revenue Operating Loop」初回実行 — Steps 1-6実施)
+
+COO指令「START DAILY REVENUE OPERATING LOOP NOW」を受け、指定順序で実行。
+
+1. **A8最新データ取得**: BLOCKED。A8.netはOwnerログイン未確立(pub.a8.netアクセスでログインフォーム
+   表示を実機確認)。ClaudeはログインをOwner専管行為として実行不可。today.jsonのnotta_clicksを
+   DATA STALEへ変更、owner_actionsへ再ログイン依頼を追加。
+2. **waiting Strategic Reply 3件確認**(X実機、ログイン確認済み@workai_lab777):
+   - @forestkinoko(9/9): 著者返信なし、無関係な引用ポストのみ。close扱いで良い。
+   - @narisumashi100(9/11): 著者本人の返信はないが、**返信自体が1,339いいね**を獲得(未記録だった
+     実データ、ledger.csvへ追記)。
+   - @yukissense(9/16): **本日著者から新規返信あり**(「10名以上の会議では人力メモも必須、固有名詞・
+     数字は限界」)。ledger.csv更新、followup_draft追加(未投稿・承認待ち)。
+3. **Market Radar 10件収集**: 8件(目標未達、正直に記録)。`reports/research/market_radar_2026-09-18.md`参照。
+4. **Deep Analysis 3件**: 同ファイル参照(@omuat 21,000いいね/@free_consultant/@panana39)。
+5. **Strategic Reply候補3件**: ledger.csvへ追記(@omuat/@free_consultant/@panana39、いずれも
+   `replied_at`空欄・未投稿・承認待ち)。
+6. **Audience Response確認**: X mentions通知・Instagram(Day16 Reel)を実機確認。**@kouya_sns01(9/12)
+   の未検知コメントを発見**(「AI制作・人間公開の役割分担が事故を減らす」、6日間放置)。
+   `reports/research/audience_signals_2026-09-18.md`参照。
+7. **Revenue Bottleneck更新**: Content→note/LP間のトラッキング欠如は継続。A8データ自体もstale化。
+8. **次のRevenue Content**: 未着手(Steps 1-7優先のため)。COO指令のRevenue Content Mix(Notta軸の
+   複数角度)は次のContent制作サイクルで反映する。
+
+**未実施・積み残し**: COO指令8「BACKYARD HEALTH」のCockpit表示(Market Radar x/10等の日次ダッシュ
+ボード)はまだ実装されていない。Codexへエンジニアリングタスクとして委任予定。X返信候補4件(新規3+
+yukissense followup1件)はOwnerの明示的承認待ち(per-post approval、この指令によっても自動投稿はしない)。
+
+---
+
 ## 2026-09-18 (COO指令「WorkAI Revenue Operating System v1」受領 — BACKYARD AUDIT実施)
 
 COOより、ClaudeをContent ProducerからRevenue Operations Leadへ役割転換する指令。
