@@ -4,14 +4,14 @@
   "generated_at": "2026-09-19T05:47:00+09:00",
   "today": {
     "x_post": {
-      "status": "not_ready",
+      "status": "in_production",
       "text_file": null,
-      "note": "Day18 X投稿はまだ未着手。Pre-Morning Routineはその場で新規制作を行わない(仕様どおり)。Morning Routineで制作要否・担当(Content Editor)を判断する。"
+      "note": "Morning RoutineでContent Editorへ制作依頼済み(@kouya_sns01の好意的コメントが6日間未検知だった実話→PASS条件を24時間以内検知へ再定義した実際の経緯を題材)。完了後Claude Business QAへ。"
     },
     "ig_reel": {
-      "status": "not_ready",
+      "status": "in_production",
       "video_file": null,
-      "note": "Day18 Reelはまだ未着手。Pre-Morning Routineはその場で新規制作を行わない(仕様どおり)。Morning Routineで制作要否・担当(Content Editor→Creative Engineer)を判断する。"
+      "note": "同上題材でContent Editorへ構成案作成を依頼済み。台本QA後Creative Engineerへ制作ルーティング予定。"
     }
   },
   "business_progress": {
@@ -209,7 +209,7 @@
   "owner_actions": [
     "Revenue Content「Nottaの向かない人」(notta-fit-boundary.mp4)はCOO承認済み(Revenue Experiment扱い)。X・Instagramへの投稿操作をお願いします(公開後24時間で指標を追跡します)",
     "A8.netへの再ログイン(Revenue Ops P0、notta_clicksデータが2日超stale、Claudeはログイン不可のためOwner専管)",
-    "X Conversation Approval Batch(@kouya_sns01への返信案)を確認・投稿承認"
+    "X Conversation Approval Batch(@kouya_sns01への再返信案・@panana39への再返信案、計2件)を確認・投稿承認"
   ],
   "approval_queue": [],
   "ai_learning": {
@@ -251,6 +251,13 @@
     "x_state": "unauthenticated確定(/home・/searchとも明示的ログインフォームへリダイレクト、unknownではない)。新規Strategic Reply候補探索は/searchがログイン必須のためスキップ。",
     "day17_reel_rerouting": "coord-6ada1af1414838df92b894ff8cba75ba(Codex handoff)がクォータ上限で2日ブロック継続中のため、既存Remotionテンプレート・VOICEVOX実装を使う定型のReel制作としてCreative Engineerへ直接再ルーティング。制作完了(day17.mp4、41.713秒)、Claude Business QA PASS(frame0/コンタクトシート目視・ffprobe実測確認)。Owner投稿承認待ちへ移行。"
   },
+  "morning_2026-09-19_findings": {
+    "missed_routine_coalescing": "premorningが本日05:45に成功実行済み(MORNING_READY)、Evening Routineはまだ未実行のためSUPERSEDED条件に該当せず、Morning Routineを通常フル実行した。",
+    "x_conversation_check": "waiting中5会話を確認。forestkinoko(Day9)・yukissense(Day16 followup)・omuat(Day17)は新規author返信なし変わらず(いずれも直接投稿URLで返信0件を確認)。narisumashi100(Day10)は683件規模の大規模スレッドで非ログイン制約により引き続き確認不能、次回持ち越し。panana39(Day17)に新規author返信を発見(Class A、1H会議で録音1H+作成0.5Hの1.5HをAIが3分で作成という具体的実務データ)、followup_draft作成しApproval Batchへ。",
+    "kouya_sns01_review_carryover": "前回Evening RoutineでApproval Batch提示済みだったがQueue未登録のまま残っていたfollowup_draft(conversation_status=review)を今回もApproval Batchへ再掲。create_approval呼び出しはledgerとの重複検出でエラーになった(panana39分も同様)ため、Queueへの二重登録はできない仕様と判断、チャットのApproval Batch提示のみで運用continue。",
+    "x_state": "unauthenticated確定(x.com/homeが明示的ログインフォームへリダイレクト)。個別投稿URL・プロフィールページは非ログインでも閲覧可能なためその範囲で確認した。",
+    "content_production": "Day18のX投稿・Reel構成をContent Editorへ依頼(題材: @kouya_sns01の9/12コメントが6日間未検知だった実話→COO指令でPASS条件を24時間以内検知へ再定義、reports/decisions_log.md 2026-09-18エントリ)。作業中のためtoday.x_post/ig_reelはin_production。"
+  },
   "evening_2026-09-18_findings": {
     "manual_publish_verification": "Day17のX投稿・IG Reelとも、今回今朝以降にOwnerが既に手動投稿済みだったことをEvening Routineの独立確認で発見(owner_actions/todayに投稿待ちのまま残留していた)。X: 2026-09-18 19:07投稿(本文完全一致、impressions=19/likes=1/replies=1/reposts=1、status/2100889446677922224)。IG: 相対表示「3時間前」投稿(キャプション完全一致、views=16/reach=12[フォロワー25%/非フォロワー75%]、いいね/コメント/保存/シェアいずれも0、reel/DdbL9u0SRPM/)。historyへ移動、kpi_daily.csv Day17行・post_insights_log.csvへ実測反映済み。",
     "x_conversation_check": "waiting中5会話を確認。forestkinoko(Day9)は返信1件(こちら分のみ)で新規返信なし変わらず。narisumashi100(Day10、683返信の大規模スレッド)は非ログイン制約で自社返信が表示範囲外のため確認不能、次回持ち越し。yukissense(Day16 followup)・omuat(Day17)・panana39(Day17)はいずれも新規author返信なし。新規発見: Day17自社X投稿(status/2100889446677922224)に@kouya_sns01から好意的な一次コメントあり(『このズレを見つけられる人は強い』等)。Class A相当と判断し返信案を作成、Approval Batchへ。",
@@ -260,7 +267,7 @@
   },
   "current_date": "2026-09-19",
   "data_updated_at": "2026-09-19T05:47:00+09:00",
-  "public_updated_at": "2026-09-18T20:47:20.399Z",
+  "public_updated_at": "2026-09-18T22:08:02.935Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -596,14 +603,14 @@
     "generated_at": "2026-09-19T05:47:00+09:00",
     "today": {
       "x_post": {
-        "status": "not_ready",
+        "status": "in_production",
         "text_file": null,
-        "note": "Day18 X投稿はまだ未着手。Pre-Morning Routineはその場で新規制作を行わない(仕様どおり)。Morning Routineで制作要否・担当(Content Editor)を判断する。"
+        "note": "Morning RoutineでContent Editorへ制作依頼済み(@kouya_sns01の好意的コメントが6日間未検知だった実話→PASS条件を24時間以内検知へ再定義した実際の経緯を題材)。完了後Claude Business QAへ。"
       },
       "ig_reel": {
-        "status": "not_ready",
+        "status": "in_production",
         "video_file": null,
-        "note": "Day18 Reelはまだ未着手。Pre-Morning Routineはその場で新規制作を行わない(仕様どおり)。Morning Routineで制作要否・担当(Content Editor→Creative Engineer)を判断する。"
+        "note": "同上題材でContent Editorへ構成案作成を依頼済み。台本QA後Creative Engineerへ制作ルーティング予定。"
       }
     },
     "business_progress": {
@@ -801,7 +808,7 @@
     "owner_actions": [
       "Revenue Content「Nottaの向かない人」(notta-fit-boundary.mp4)はCOO承認済み(Revenue Experiment扱い)。X・Instagramへの投稿操作をお願いします(公開後24時間で指標を追跡します)",
       "A8.netへの再ログイン(Revenue Ops P0、notta_clicksデータが2日超stale、Claudeはログイン不可のためOwner専管)",
-      "X Conversation Approval Batch(@kouya_sns01への返信案)を確認・投稿承認"
+      "X Conversation Approval Batch(@kouya_sns01への再返信案・@panana39への再返信案、計2件)を確認・投稿承認"
     ],
     "approval_queue": [],
     "ai_learning": {
@@ -842,6 +849,13 @@
       "x_conversation_check": "waiting中3会話を個別スレッドURLで再確認。forestkinoko(Day9)・yukissense(Day16)は返信1件(こちら分のみ)で新規author返信なし変わらず。narisumashi100(Day10、37件スレッド)は引き続き非ログイン表示制限で全件確認不能、次回持ち越し。Approval Queue pending=0のためApproval Batchなし。",
       "x_state": "unauthenticated確定(/home・/searchとも明示的ログインフォームへリダイレクト、unknownではない)。新規Strategic Reply候補探索は/searchがログイン必須のためスキップ。",
       "day17_reel_rerouting": "coord-6ada1af1414838df92b894ff8cba75ba(Codex handoff)がクォータ上限で2日ブロック継続中のため、既存Remotionテンプレート・VOICEVOX実装を使う定型のReel制作としてCreative Engineerへ直接再ルーティング。制作完了(day17.mp4、41.713秒)、Claude Business QA PASS(frame0/コンタクトシート目視・ffprobe実測確認)。Owner投稿承認待ちへ移行。"
+    },
+    "morning_2026-09-19_findings": {
+      "missed_routine_coalescing": "premorningが本日05:45に成功実行済み(MORNING_READY)、Evening Routineはまだ未実行のためSUPERSEDED条件に該当せず、Morning Routineを通常フル実行した。",
+      "x_conversation_check": "waiting中5会話を確認。forestkinoko(Day9)・yukissense(Day16 followup)・omuat(Day17)は新規author返信なし変わらず(いずれも直接投稿URLで返信0件を確認)。narisumashi100(Day10)は683件規模の大規模スレッドで非ログイン制約により引き続き確認不能、次回持ち越し。panana39(Day17)に新規author返信を発見(Class A、1H会議で録音1H+作成0.5Hの1.5HをAIが3分で作成という具体的実務データ)、followup_draft作成しApproval Batchへ。",
+      "kouya_sns01_review_carryover": "前回Evening RoutineでApproval Batch提示済みだったがQueue未登録のまま残っていたfollowup_draft(conversation_status=review)を今回もApproval Batchへ再掲。create_approval呼び出しはledgerとの重複検出でエラーになった(panana39分も同様)ため、Queueへの二重登録はできない仕様と判断、チャットのApproval Batch提示のみで運用continue。",
+      "x_state": "unauthenticated確定(x.com/homeが明示的ログインフォームへリダイレクト)。個別投稿URL・プロフィールページは非ログインでも閲覧可能なためその範囲で確認した。",
+      "content_production": "Day18のX投稿・Reel構成をContent Editorへ依頼(題材: @kouya_sns01の9/12コメントが6日間未検知だった実話→COO指令でPASS条件を24時間以内検知へ再定義、reports/decisions_log.md 2026-09-18エントリ)。作業中のためtoday.x_post/ig_reelはin_production。"
     },
     "evening_2026-09-18_findings": {
       "manual_publish_verification": "Day17のX投稿・IG Reelとも、今回今朝以降にOwnerが既に手動投稿済みだったことをEvening Routineの独立確認で発見(owner_actions/todayに投稿待ちのまま残留していた)。X: 2026-09-18 19:07投稿(本文完全一致、impressions=19/likes=1/replies=1/reposts=1、status/2100889446677922224)。IG: 相対表示「3時間前」投稿(キャプション完全一致、views=16/reach=12[フォロワー25%/非フォロワー75%]、いいね/コメント/保存/シェアいずれも0、reel/DdbL9u0SRPM/)。historyへ移動、kpi_daily.csv Day17行・post_insights_log.csvへ実測反映済み。",
@@ -1064,6 +1078,27 @@
         "exit_code": 0,
         "success": true,
         "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\evening_2026-09-18_223002.log"
+      },
+      {
+        "routine": "premorning",
+        "scheduled_at": "2026-09-19T05:45:00",
+        "started_at": "2026-09-19T05:45:02",
+        "finished_at": "2026-09-18T20:48:42.087Z",
+        "exit_code": 0,
+        "success": true,
+        "invocation": "manual_chat_slash_command",
+        "status": "MORNING_READY",
+        "note": "Date Rollover実施: today.json/CockpitともDay17/2026-09-18→Day18/2026-09-19へ更新。Day17分today内容(既にhistory移動済み)を新規TODAYで上書きし重複を解消。Day18 X投稿・Reelとも未着手のためnot_ready(理由付き)で正直に表示、Morning Routineでの制作判断待ち。Approval Queue pending=0。owner_actions(Notta Revenue Content投稿依頼/A8再ログイン/@kouya_sns01返信承認)は引き続き有効なため維持。Cockpit commit bfcd8f4・push・Pages build built一致・live current.json business_day=18確認PASS。",
+        "log_file": null
+      },
+      {
+        "routine": "premorning",
+        "scheduled_at": "2026-09-19T05:45:00",
+        "started_at": "2026-09-19T05:45:02",
+        "finished_at": "2026-09-19T05:48:59",
+        "exit_code": 0,
+        "success": true,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\premorning_2026-09-19_054502.log"
       }
     ],
     "tasks": [
