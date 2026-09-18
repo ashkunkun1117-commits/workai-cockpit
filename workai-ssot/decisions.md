@@ -4,6 +4,65 @@
 
 ---
 
+## 2026-09-19 (Morning Routine — Day18コンテンツ制作完了、X会話フォローアップ、Cockpit最終更新)
+
+Missed Routine Coalescing判定: NOT SUPERSEDED(premorningは本日05:45成功済み・MORNING_READY、
+Evening Routineは未実行のため通常フル実行)。
+
+**X Conversation Routine**: waiting中5会話を確認。forestkinoko(Day9)・yukissense(Day16
+followup)・omuatは新規author返信なし変わらず。narisumashi100(683件規模スレッド)は
+非ログイン制約で今回も確認不能、次回持ち越し。**panana39から新規Class A返信を発見**
+(1H会議で録音1H+作成0.5Hの1.5HをAIが3分で作成、という具体的実務データ)。followup_draft
+作成しledger.csv更新済み。@kouya_sns01の既存followup(前回Evening Routineで一度提示済み
+だがQueue未登録のまま)も含め、計2件をチャットのApproval Batchへ提示(Owner回答待ち)。
+create_approval呼び出しはいずれもledgerとの重複検出でエラーとなり、Queueへの直接登録は
+仕様上できない(チャット提示のみで運用継続)。X状態はunauthenticated確定(個別投稿URL・
+プロフィールは非ログインでも閲覧可)。
+
+**Day18コンテンツ制作**: 題材は実話ベース(@kouya_sns01の2026-09-12コメントが
+2026-09-18まで6日間未検知だった件。原因は見逃しではなく日次Routineに「Xコメント確認」
+ステップ自体が存在しなかったこと。COO指令によりAudience ResponseのPASS条件を
+「仕組みの有無」から「24時間以内検知」へ再定義、という2026-09-18の実際の経緯)。
+Content Editorが `content/x/day18_post.md`(118字)・
+`content/reel-json/day18_kouya_detection_gap_story.md`・`content/instagram/day18_caption.md`
+を作成、Claude Business QA PASS(事実の一次根拠確認、コメント投稿者ハンドル名・実測値は
+プライバシー配慮で本文非掲載、9/18の別件コメントとの混同なし、「解決済み」等の誇張表現なし)。
+Creative Engineerが `remotion-video/out/day18.mp4`(42.34秒、VOICEVOX青山龍星音声あり、
+1080x1920)を制作、Claude Business QA PASS(ffprobeで映像/音声ストリーム実測確認、
+frame0カバー画像を目視確認しOPENING_FRAME_RULES準拠・グリッドクロップsafe area内・
+ハンドル名/実測値非表示を確認)。Owner投稿承認待ちへ移行。
+
+**Cockpit**: today.json更新(X投稿ready・Reelready・owner_actions更新)を3段階で反映、
+`../workai-cockpit`最終commit 5b2e507・push・Deploy検証PASS(Pages build=built・
+commit一致・live current.json business_day=18確認・day18-reel.mp4配信確認200 OK)。
+
+---
+
+## 2026-09-19 (Pre-Morning Routine — Day18 Date Rollover)
+
+Missed Routine Coalescing判定: NOT SUPERSEDED(routine_scheduler.log直近行は2026-09-18
+22:30 eveningまで、本Pre-Morningより後続のRoutineは未実行)。フル実行。
+
+get_business_dayでDay18/2026-09-19を確認。today.json/CockpitともDay17/2026-09-18→
+Day18/2026-09-19へ更新。Day17分のtoday内容(X投稿・IG Reelとも既にOwner投稿済み・
+historyへ移動済み)をそのまま残さず、Day18の新規TODAYへ上書き(重複表示を解消)。
+Day18 X投稿・Reelともまだ未着手のため、Pre-Morningの仕様どおりその場で新規制作は
+行わず、`not_ready`(理由付き)で正直に表示。Morning Routineでの制作要否・担当判断へ
+持ち越す。
+
+Approval Queue pending=0。owner_actions(Revenue Content「Nottaの向かない人」投稿依頼、
+A8.net再ログイン、@kouya_sns01への返信承認)はいずれも未解消のため維持
+(Manual Publish Verification・X Conversation確認はPre-Morningの対象外のため今回は
+実施せず、Morning/Evening Routineへ持ち越す)。get_tasksでDay9企画(53eae3ce、
+2026-09-08作成のままworking)等の古いタスクの滞留を確認したが、Cockpit
+TODAY/CARRYOVER表示への直接影響はないためタスク自体の変更はせず記録のみに留めた
+(次回Morning Routineでの要否判断に委ねる)。
+
+Cockpit commit bfcd8f4・push・deploy検証PASS(Pages build=built、commit一致、
+live current.json business_day=18確認)。MORNING_COCKPIT_READY。
+
+---
+
 ## 2026-09-18 (COO DECISION — Revenue Content「Nottaの向かない人」投稿承認、Revenue Experiment化)
 
 Notta「向かない人」をREGULAR contentではなくRevenue Experimentとして承認。

@@ -1,18 +1,20 @@
 {
   "business_day": 18,
   "business_date": "2026-09-19",
-  "generated_at": "2026-09-19T05:47:00+09:00",
+  "generated_at": "2026-09-19T07:58:00+09:00",
   "today": {
     "x_post": {
-      "status": "ready",
+      "status": "published",
       "text_file": "content/x/day18_post.md",
-      "note": "Content Editor作成・Claude Business QA PASS。題材: @kouya_sns01の9/12コメントが6日間未検知だった実話→PASS条件を24時間以内検知へ再定義した実際の経緯(reports/decisions_log.md 2026-09-18)。Owner投稿承認待ち。",
+      "url": "https://x.com/workai_lab777/status/2101072793186263329",
+      "note": "Owner手動投稿済み(2026-09-19 07:16 JST、実機Playwright確認、本文完全一致)。投稿直後のためimpressions等は未計測(表示が出ていない)。",
       "text": "9/12についた好意的なコメントに、6日間気づけていませんでした。見逃しではなく、見にいく工程がそもそも仕組みに無かった。基準を「仕組みの有無」から「24時間以内に気づけるか」へ変えました。\n\nAIでできる仕事は、AIに。\nDay18/100"
     },
     "ig_reel": {
-      "status": "ready",
+      "status": "published",
       "video_file": "day18-reel.mp4",
-      "note": "Creative Engineer制作完了(42.34秒、VOICEVOX青山龍星音声あり、1080x1920)。Claude Business QA PASS: frame0サムネイル要件(フェードインなし・Day18/100・見出し完成)を目視確認、グリッドクロップ safe area内、ハンドル名・実測値の非表示を確認、ffprobeで映像/音声ストリーム実測確認済み。Owner投稿承認待ち。",
+      "url": "https://www.instagram.com/workai_lab777/reel/DdchiXTyUaQ/",
+      "note": "Owner手動投稿済み(2026-09-19、相対表示「21分前」、実機Playwright確認、キャプション完全一致)。投稿直後のためviews/reachは0または未計測、コメント0件。",
       "caption_text": "応援してくれたコメントに、6日間気づいていませんでした。\n\n9月12日、Xの投稿に「AI制作・人間公開の役割分担が事故を減らす」という、好意的なコメントをいただいていました。\n\n気づいたのは、6日後の9月18日、夜の運用チェックで実機を確認したときです。\n\n原因は「見逃していた」ことではなく、そもそも日次の運用の中に「Xのコメントを確認する」という工程自体が無かったこと。仕組みが元から存在していませんでした。\n\nこの発見を受けて、基準を変えました。「確認する仕組みがあるかどうか」ではなく、「24時間以内に気づけているかどうか」へ。\n\n24時間以内に気づける仕組みへの実装は、まだこれからです。ここは正直に、次の宿題として残します。\n\nAIでできる仕事は、AIに。\nDay 18 / 100\n#AI仕事研究所 #100日実験 #自動化 #仕事効率化 #AIパートナー\n\nVOICEVOX：青山龍星"
     }
   },
@@ -268,8 +270,8 @@
     "new_strategic_reply_search": "既存Conversation対応・Manual Publish Verificationを優先したため、新規Strategic Reply候補探索は今回実施せず(本日日中に別途@omuat/@panana39/@yukissense分は実施済み、get_reply_ledger参照)。"
   },
   "current_date": "2026-09-19",
-  "data_updated_at": "2026-09-19T05:47:00+09:00",
-  "public_updated_at": "2026-09-18T22:20:34.854Z",
+  "data_updated_at": "2026-09-19T07:58:00+09:00",
+  "public_updated_at": "2026-09-18T23:04:29.269Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -602,18 +604,20 @@
   "source_manifest": {
     "business_day": 18,
     "business_date": "2026-09-19",
-    "generated_at": "2026-09-19T05:47:00+09:00",
+    "generated_at": "2026-09-19T07:58:00+09:00",
     "today": {
       "x_post": {
-        "status": "ready",
+        "status": "published",
         "text_file": "content/x/day18_post.md",
-        "note": "Content Editor作成・Claude Business QA PASS。題材: @kouya_sns01の9/12コメントが6日間未検知だった実話→PASS条件を24時間以内検知へ再定義した実際の経緯(reports/decisions_log.md 2026-09-18)。Owner投稿承認待ち。",
+        "url": "https://x.com/workai_lab777/status/2101072793186263329",
+        "note": "Owner手動投稿済み(2026-09-19 07:16 JST、実機Playwright確認、本文完全一致)。投稿直後のためimpressions等は未計測(表示が出ていない)。",
         "text": "9/12についた好意的なコメントに、6日間気づけていませんでした。見逃しではなく、見にいく工程がそもそも仕組みに無かった。基準を「仕組みの有無」から「24時間以内に気づけるか」へ変えました。\n\nAIでできる仕事は、AIに。\nDay18/100"
       },
       "ig_reel": {
-        "status": "ready",
+        "status": "published",
         "video_file": "day18-reel.mp4",
-        "note": "Creative Engineer制作完了(42.34秒、VOICEVOX青山龍星音声あり、1080x1920)。Claude Business QA PASS: frame0サムネイル要件(フェードインなし・Day18/100・見出し完成)を目視確認、グリッドクロップ safe area内、ハンドル名・実測値の非表示を確認、ffprobeで映像/音声ストリーム実測確認済み。Owner投稿承認待ち。",
+        "url": "https://www.instagram.com/workai_lab777/reel/DdchiXTyUaQ/",
+        "note": "Owner手動投稿済み(2026-09-19、相対表示「21分前」、実機Playwright確認、キャプション完全一致)。投稿直後のためviews/reachは0または未計測、コメント0件。",
         "caption_text": "応援してくれたコメントに、6日間気づいていませんでした。\n\n9月12日、Xの投稿に「AI制作・人間公開の役割分担が事故を減らす」という、好意的なコメントをいただいていました。\n\n気づいたのは、6日後の9月18日、夜の運用チェックで実機を確認したときです。\n\n原因は「見逃していた」ことではなく、そもそも日次の運用の中に「Xのコメントを確認する」という工程自体が無かったこと。仕組みが元から存在していませんでした。\n\nこの発見を受けて、基準を変えました。「確認する仕組みがあるかどうか」ではなく、「24時間以内に気づけているかどうか」へ。\n\n24時間以内に気づける仕組みへの実装は、まだこれからです。ここは正直に、次の宿題として残します。\n\nAIでできる仕事は、AIに。\nDay 18 / 100\n#AI仕事研究所 #100日実験 #自動化 #仕事効率化 #AIパートナー\n\nVOICEVOX：青山龍星"
       }
     },
@@ -1103,6 +1107,15 @@
         "exit_code": 0,
         "success": true,
         "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\premorning_2026-09-19_054502.log"
+      },
+      {
+        "routine": "morning",
+        "scheduled_at": "2026-09-19T07:00:00",
+        "started_at": "2026-09-19T07:00:02",
+        "finished_at": "2026-09-19T07:23:55",
+        "exit_code": 0,
+        "success": true,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\morning_2026-09-19_070002.log"
       }
     ],
     "tasks": [
