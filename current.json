@@ -10,9 +10,9 @@
       "text": "9/12についた好意的なコメントに、6日間気づけていませんでした。見逃しではなく、見にいく工程がそもそも仕組みに無かった。基準を「仕組みの有無」から「24時間以内に気づけるか」へ変えました。\n\nAIでできる仕事は、AIに。\nDay18/100"
     },
     "ig_reel": {
-      "status": "in_production",
-      "video_file": null,
-      "note": "台本(content/reel-json/day18_kouya_detection_gap_story.md)Claude Business QA PASS。Creative EngineerへVOICEVOX音声合成・Remotionレンダリングを依頼中。",
+      "status": "ready",
+      "video_file": "day18-reel.mp4",
+      "note": "Creative Engineer制作完了(42.34秒、VOICEVOX青山龍星音声あり、1080x1920)。Claude Business QA PASS: frame0サムネイル要件(フェードインなし・Day18/100・見出し完成)を目視確認、グリッドクロップ safe area内、ハンドル名・実測値の非表示を確認、ffprobeで映像/音声ストリーム実測確認済み。Owner投稿承認待ち。",
       "caption_text": "応援してくれたコメントに、6日間気づいていませんでした。\n\n9月12日、Xの投稿に「AI制作・人間公開の役割分担が事故を減らす」という、好意的なコメントをいただいていました。\n\n気づいたのは、6日後の9月18日、夜の運用チェックで実機を確認したときです。\n\n原因は「見逃していた」ことではなく、そもそも日次の運用の中に「Xのコメントを確認する」という工程自体が無かったこと。仕組みが元から存在していませんでした。\n\nこの発見を受けて、基準を変えました。「確認する仕組みがあるかどうか」ではなく、「24時間以内に気づけているかどうか」へ。\n\n24時間以内に気づける仕組みへの実装は、まだこれからです。ここは正直に、次の宿題として残します。\n\nAIでできる仕事は、AIに。\nDay 18 / 100\n#AI仕事研究所 #100日実験 #自動化 #仕事効率化 #AIパートナー\n\nVOICEVOX：青山龍星"
     }
   },
@@ -269,7 +269,7 @@
   },
   "current_date": "2026-09-19",
   "data_updated_at": "2026-09-19T05:47:00+09:00",
-  "public_updated_at": "2026-09-18T22:11:19.672Z",
+  "public_updated_at": "2026-09-18T22:20:34.854Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -611,9 +611,9 @@
         "text": "9/12についた好意的なコメントに、6日間気づけていませんでした。見逃しではなく、見にいく工程がそもそも仕組みに無かった。基準を「仕組みの有無」から「24時間以内に気づけるか」へ変えました。\n\nAIでできる仕事は、AIに。\nDay18/100"
       },
       "ig_reel": {
-        "status": "in_production",
-        "video_file": null,
-        "note": "台本(content/reel-json/day18_kouya_detection_gap_story.md)Claude Business QA PASS。Creative EngineerへVOICEVOX音声合成・Remotionレンダリングを依頼中。",
+        "status": "ready",
+        "video_file": "day18-reel.mp4",
+        "note": "Creative Engineer制作完了(42.34秒、VOICEVOX青山龍星音声あり、1080x1920)。Claude Business QA PASS: frame0サムネイル要件(フェードインなし・Day18/100・見出し完成)を目視確認、グリッドクロップ safe area内、ハンドル名・実測値の非表示を確認、ffprobeで映像/音声ストリーム実測確認済み。Owner投稿承認待ち。",
         "caption_text": "応援してくれたコメントに、6日間気づいていませんでした。\n\n9月12日、Xの投稿に「AI制作・人間公開の役割分担が事故を減らす」という、好意的なコメントをいただいていました。\n\n気づいたのは、6日後の9月18日、夜の運用チェックで実機を確認したときです。\n\n原因は「見逃していた」ことではなく、そもそも日次の運用の中に「Xのコメントを確認する」という工程自体が無かったこと。仕組みが元から存在していませんでした。\n\nこの発見を受けて、基準を変えました。「確認する仕組みがあるかどうか」ではなく、「24時間以内に気づけているかどうか」へ。\n\n24時間以内に気づける仕組みへの実装は、まだこれからです。ここは正直に、次の宿題として残します。\n\nAIでできる仕事は、AIに。\nDay 18 / 100\n#AI仕事研究所 #100日実験 #自動化 #仕事効率化 #AIパートナー\n\nVOICEVOX：青山龍星"
       }
     },
