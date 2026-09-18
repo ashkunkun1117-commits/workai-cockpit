@@ -304,5 +304,23 @@
     "cost_jpy": null,
     "profit_jpy": null,
     "human_work_minutes": null
+  },
+  {
+    "day": 17,
+    "date": "2026-09-18",
+    "x_posts": 1,
+    "x_impressions": 19,
+    "x_strategic_replies": 3,
+    "x_reply_impressions_avg": 12.3,
+    "ig_posts": 1,
+    "ig_reel_views": 16,
+    "ig_followers": 12,
+    "ig_profile_visits": null,
+    "link_clicks": null,
+    "conversions": null,
+    "revenue_jpy": null,
+    "cost_jpy": null,
+    "profit_jpy": null,
+    "human_work_minutes": null
   }
 ]

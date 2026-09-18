@@ -4,6 +4,50 @@
 
 ---
 
+## 2026-09-18 (COO DECISION — Revenue Content「Nottaの向かない人」投稿承認、Revenue Experiment化)
+
+Notta「向かない人」をREGULAR contentではなくRevenue Experimentとして承認。
+Hypothesis(COO明記): Nottaを万能扱いせず、一次情報付きで「向く場面/まだ難しい場面」を
+正直に示すことで、信頼とnote流入が改善する。
+
+投稿後24時間で追跡する指標(views単独で成否判定しない): X impressions / IG views /
+profile visits / note traffic / affiliate clicks / CV / replies・comments。24時間後に
+Result/Learning/Next ChangeをSSOTへ記録する。
+
+**公開操作はOwnerが実施**(publishing-operations-v4.mdの中核制約は本指令によっても変更なし、
+Claudeは投稿ボタンを押さない)。owner_actionsへ投稿依頼を反映、24hトラッキング用タスク
+(task_id: 1001b4e9-e3ea-44a0-be3e-2be48da4891f)をwaiting/owner_publish_pendingで登録、
+次回Routineでの投稿確認後にnext_check_atを投稿時刻+24hへ再設定する。
+
+Audience Response 24h DetectionはP1のまま維持、Revenue Content公開後に着手する方針を
+COOが再確認。
+
+---
+
+## 2026-09-18 (Evening Routine — Day17 Manual Publish Verification / X Conversation)
+
+Evening Routine(22:30枠、手動起動)を実行。
+
+1. **Manual Publish Verification**: Day17のX投稿・IG Reelとも、today.json/owner_actions上は
+   投稿待ちのまま残っていたが、実際にはOwnerが両方とも既に手動投稿済みだったことを独立確認で発見。
+   X: 2026-09-18 19:07投稿(https://x.com/workai_lab777/status/2100889446677922224、本文完全一致、
+   impressions=19/likes=1/replies=1/reposts=1)。IG: reel/DdbL9u0SRPM/(相対表示「3時間前」、
+   キャプション完全一致、views=16/reach=12)。history移動・kpi_daily.csv Day17行・
+   post_insights_log.csvへ実測反映済み。Cockpit commit 83fa807・push・deploy検証PASS
+   (business_day=17一致)。
+2. **X Conversation確認**: waiting中5会話(forestkinoko/narisumashi100/yukissense followup/
+   omuat/panana39)を確認、新規author返信なし(narisumashi100は非ログイン制約で確認不能、
+   次回持ち越し)。**新規発見**: 自社Day17投稿(承認フローと実態のズレがテーマ)に@kouya_sns01
+   (9/12の6日遅れ検知とは別の新規コメント)から好意的な一次コメントあり。Class A相当と判断し
+   返信案をledgerへ記録(conversation_status=review)。Approval Queueへのcreate_approval登録は
+   ledger内容との完全一致によりDUPLICATE判定されたため見送り、ledgerのreview状態とチャット上の
+   Approval Batch提示のみで管理する。
+3. **並行してAuto Handoff/Codex側でRevenue Content「Nottaの向かない人」
+   (content/reel-json/notta_fit_boundary_story.md、notta-fit-boundary.mp4)が完成・独立QA・
+   COO承認(Revenue Experiment扱い)まで完了しているのを確認、owner_actionsへ反映済み(Owner投稿承認待ち)。
+
+---
+
 ## 2026-09-18 (COO指令「Daily Revenue Operating Loop」初回実行 — Steps 1-6実施)
 
 COO指令「START DAILY REVENUE OPERATING LOOP NOW」を受け、指定順序で実行。

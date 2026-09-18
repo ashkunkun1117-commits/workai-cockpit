@@ -264,7 +264,7 @@
   },
   "current_date": "2026-09-18",
   "data_updated_at": "2026-09-18T05:45:00+09:00",
-  "public_updated_at": "2026-09-18T13:39:51.114Z",
+  "public_updated_at": "2026-09-18T13:44:47.671Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -1051,6 +1051,27 @@
         "exit_code": 0,
         "success": true,
         "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\morning_2026-09-18_070001.log"
+      },
+      {
+        "routine": "evening",
+        "scheduled_at": "2026-09-18T22:30:00",
+        "started_at": "2026-09-18T13:42:21.427Z",
+        "finished_at": "2026-09-18T13:42:21.427Z",
+        "exit_code": 0,
+        "success": true,
+        "invocation": "manual_chat_slash_command",
+        "status": "SUCCESS",
+        "note": "Manual Publish VerificationでDay17 X投稿・IG Reelとも既にOwner投稿済みと判明、historyへ移動。X会話5件確認(新規author返信なし4件、narisumashi100は非ログイン制約で確認不能)。自社Day17投稿に@kouya_sns01から新規コメント発見、返信案作成しApproval Batchへ(ledgerで重複検出のためqueue登録はスキップ)。並行してRevenue Content(notta-fit-boundary.mp4)がCodex/Auto Handoff側で完成・COO承認済みとなりOwner投稿待ちに。Cockpit commit 83fa807・push・deploy検証PASS(business_day=17一致)。",
+        "log_file": null
+      },
+      {
+        "routine": "evening",
+        "scheduled_at": "2026-09-18T22:30:00",
+        "started_at": "2026-09-18T22:30:02",
+        "finished_at": "2026-09-18T22:43:42",
+        "exit_code": 0,
+        "success": true,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\evening_2026-09-18_223002.log"
       }
     ],
     "tasks": [
@@ -1060,6 +1081,13 @@
         "status": "assigned",
         "waiting_reason": "codex_quota_limit",
         "next_check_at": "2026-09-15T04:00:00.000Z"
+      },
+      {
+        "task_id": "1001b4e9-e3ea-44a0-be3e-2be48da4891f",
+        "assigned_to": "claude",
+        "status": "waiting",
+        "waiting_reason": "owner_publish_pending",
+        "next_check_at": "2026-09-18T22:00:00.000Z"
       }
     ]
   },
