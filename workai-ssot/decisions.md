@@ -17,6 +17,28 @@ commit(ca17db7)・push・Pages build built一致・live current.json business_da
 
 ---
 
+## 2026-09-19 (COO ADDENDUM「Source Freshness」— updated_at / source_checked_at分離)
+
+「SSOTを再生成した時刻」と「一次データを実際に確認した時刻」を分離。
+
+- `data/publish/today.json: business_progress.notta_clicks_checked_at`(構造化ISO
+  timestamp)を新設、A8.net一次データの実際の確認時刻を記録(現在値:
+  2026-09-16T22:06:00+09:00、Owner再ログイン待ちで更新できていない)。
+- `scripts/generate-shared-ssot.mjs: buildFreshness()`へ`revenue.source_checked_at`/
+  `data_stale`、`metrics.source_checked_at`/`data_stale`、`audience_response.source_checked_at`/
+  `data_stale`を追加。SSOTファイルを今日再生成しても、source_checked_atが当日でなければ
+  data_stale=falseにしない。
+
+**実データ確認**(commit 2ede609): `revenue.data_stale=true`(source_checked_at
+2026-09-16のまま)、`metrics.data_stale=false`(kpi_daily.csvに本日2026-09-19の実データあり、
+Day18分x_impressions等)、`audience_response.data_stale=true`(前日分のまま)。
+「ファイルは最新、元データは古い」という誤認をrevenue/metrics/audience_responseの
+3セクションで区別できることを確認。
+
+回帰テスト2件追加、計48件全PASS。
+
+---
+
 ## 2026-09-19 (COO指令「Learning/Hypothesis Freshness」対応 — 事実確認と新規safeguard追加)
 
 COOから「latest_learning=Day13中心、next_hypothesis=Day15前提のまま」との指摘を受け実データ確認。
