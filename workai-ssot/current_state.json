@@ -1,6 +1,6 @@
 {
   "business_day": 18,
-  "updated_at": "2026-09-19T07:27:06.087Z",
+  "updated_at": "2026-09-19T09:18:51.101Z",
   "data_stale": false,
   "today": {
     "x": "posted",
@@ -68,6 +68,41 @@
   },
   "next_x_status": "posted",
   "next_reel_status": "posted",
-  "latest_learning": "Day13(Fixed Publishing Schedule TEST 1初日)はMorning Routine自動発火が失敗したにもかかわらず、Ownerが自主的にX/Instagramへ手動投稿(X: 07:30予定に対し実際は数時間後、IG Reel: 相対表示のみで正確な時刻不明)。制作(Codex)は完了していたため、公開判断だけ人間に残った。2026-09-15朝、Evening Routine不通で滞っていたSNS分析(実測データに基づく)をClaudeが独立実施し、X表示回数(Day9=22→Day10=18→Day11=13→Day12=7→Day13=4)・Instagram Reel再生数(Day10=29→Day12=24→Day13=10)とも5日連続で減少していることを発見。さらに、全3件のReel(Day10/12/13)は外部(非フォロワー)へのリーチ自体…（全文はdata/publish/today.json: ai_learning参照）",
-  "next_hypothesis": "Notta funnel優先のためFixed Publishing Schedule TEST 1の定型投稿は本日も保留継続。Day15 Reel(自動化2日停止ストーリー)はOwner投稿承認待ち。Strategic Reply再開はXログイン状態が回復次第優先的に試行する(2026-09-16時点も検索用途はunauthenticated、通常タイムライン閲覧は可能)。0%エンゲージメントの原因分析は7日間のFixed Publishing Schedule TEST 1データが揃い次第行う。"
+  "latest_learning": "Day17〜19にかけて、AI側の「記録」と実際の状態がズレる同型の問題が3回連続で発覚した: (1)Day17=承認待ち表示のままOwnerが先に投稿済み、(2)Day18=@kouya_sns01の好意的コメントに6日間気づけていなかった(確認する工程自体が無かった)、(3)Day19=ChatGPT COOが見ていたSSOTがDate Rollover直後の中間状態のまま2時間古かった(再生成タイミングの抜け)。さらにImplementation Auditで、claude.code_ai Reel Research(Template v2・Hook Variant・evidence overlay・importance-weighted pacing)が2026-09-17策定後、日次Reel生成pipeline(DayNCharacterHybrid.tsx)に一度も接続されてい…（全文はdata/publish/today.json: ai_learning参照）",
+  "next_hypothesis": "Day19 Reel(Template v2 canonical component検証第1弾、Hook Variant B_FAILURE)はOwner投稿承認待ち。Audience Response 24時間以内検知の日次Routine組み込みはP1で継続(未着手)。Revenue Content「Nottaの向かない人」も投稿承認待ちのまま(投稿後24時間追跡タスク登録済み)。",
+  "freshness": {
+    "today": {
+      "updated_at": "2026-09-19T09:18:51.101Z",
+      "business_day": 18
+    },
+    "revenue": {
+      "updated_at": "2026-09-19T09:18:51.101Z",
+      "data_stale": false
+    },
+    "market_radar": {
+      "date": "2026-09-18",
+      "status": "not_started"
+    },
+    "strategic_reply": {
+      "date": "2026-09-18",
+      "status": "not_started"
+    },
+    "audience_response": {
+      "date": "2026-09-18",
+      "status": "not_started"
+    },
+    "experiment": {
+      "day": 19,
+      "date": "2026-09-19",
+      "stale": false,
+      "flag": null
+    },
+    "learning": {
+      "day": 18,
+      "status": null,
+      "stale": false,
+      "flag": null,
+      "reason": null
+    }
+  }
 }

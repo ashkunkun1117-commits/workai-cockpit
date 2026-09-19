@@ -231,10 +231,11 @@
   ],
   "approval_queue": [],
   "ai_learning": {
-    "observation": "Day13(Fixed Publishing Schedule TEST 1初日)はMorning Routine自動発火が失敗したにもかかわらず、Ownerが自主的にX/Instagramへ手動投稿(X: 07:30予定に対し実際は数時間後、IG Reel: 相対表示のみで正確な時刻不明)。制作(Codex)は完了していたため、公開判断だけ人間に残った。2026-09-15朝、Evening Routine不通で滞っていたSNS分析(実測データに基づく)をClaudeが独立実施し、X表示回数(Day9=22→Day10=18→Day11=13→Day12=7→Day13=4)・Instagram Reel再生数(Day10=29→Day12=24→Day13=10)とも5日連続で減少していることを発見。さらに、全3件のReel(Day10/12/13)は外部(非フォロワー)へのリーチ自体は60〜100%と機能しているにもかかわらず、いいね・コメント・保存・シェアが全てゼロという特徴も判明(data/instagram/post_insights_log.csvへ初記録)。2026-09-15夜、本Evening Routineで確認したところDay14分のX投稿・IG Reelは既にOwnerが手動投稿済み(X:3時間前・impressions=3で継続減少、IG:2時間前・インサイトは早すぎるため未取得)。",
-    "hypothesis": "表示回数の減少はコンテンツ内容(音声・キャラクター有無・投稿時刻固定化等)の変更と時期が一致しておらず、むしろアカウント立ち上げ初期のアルゴリズム上のブースト減衰、またはリーチはあってもコンテンツが『見た人の興味を引き止められていない』ことが主因の可能性が高い。特に0%エンゲージメント(いいね/保存/シェア皆無)は、リーチの問題ではなく完走率・関心度の問題を示唆する。Day9の『Strategic Reply(能動的に話しかける)』施策で一時的に表示が伸びた実績があるが、この施策はEvening/X Conversation Routineの一部であり、直近2日間Evening Routineが未実行だったため停止していた可能性がある(Morning Routine自動発火の0バイトログ障害がSetThreadExecutionState修正後も09-14・09-15と再発、バッテリー駆動時のタスクスケジューラ条件が真因の可能性がありCodexへ再調査タスクb9e281e0-4f66-413a-a67c-40dc22310691を作成済み)。本Evening RoutineでStrategic Reply再開を試みたが、Xブラウザセッションがunauthenticated(検索ページが明示的にログイン画面へリダイレクト)のため新規候補探索を実行できず、次回Routineへ持ち越し。",
-    "decision": "Day12以降のReelはAI音声(VOICEVOX、青山龍星)をデフォルトとし、Owner本人音声はHuman Voice Exception(個人的エピソード等)の場合のみ使用する方針を継続。",
-    "next_experiment": "Notta funnel優先のためFixed Publishing Schedule TEST 1の定型投稿は本日も保留継続。Day15 Reel(自動化2日停止ストーリー)はOwner投稿承認待ち。Strategic Reply再開はXログイン状態が回復次第優先的に試行する(2026-09-16時点も検索用途はunauthenticated、通常タイムライン閲覧は可能)。0%エンゲージメントの原因分析は7日間のFixed Publishing Schedule TEST 1データが揃い次第行う。"
+    "day": 18,
+    "observation": "Day17〜19にかけて、AI側の「記録」と実際の状態がズレる同型の問題が3回連続で発覚した: (1)Day17=承認待ち表示のままOwnerが先に投稿済み、(2)Day18=@kouya_sns01の好意的コメントに6日間気づけていなかった(確認する工程自体が無かった)、(3)Day19=ChatGPT COOが見ていたSSOTがDate Rollover直後の中間状態のまま2時間古かった(再生成タイミングの抜け)。さらにImplementation Auditで、claude.code_ai Reel Research(Template v2・Hook Variant・evidence overlay・importance-weighted pacing)が2026-09-17策定後、日次Reel生成pipeline(DayNCharacterHybrid.tsx)に一度も接続されていなかったことも判明。",
+    "hypothesis": "個別のバグではなく共通パターンがある: 「一度作った記録・生成物は、その後の実態変化に追従して更新され続ける」という前提が運用のどこにも保証されていなかった(Cockpit/SSOTの再生成タイミング、Audience Response監視、Research→Production接続のいずれも)。都度reconcileする一過性の対応ではなく、イベント駆動での再生成・QA checklistでの機械的検証に倒すことで再発を防げる可能性が高い。",
+    "decision": "Template v2をcanonical component化(remotion-video/src/TemplateV2.tsx)し、DayNCharacterHybrid.tsxの複製運用を廃止。Hook Variant/evidence overlay/importance-weighted pacing/CTA分離をQA checklist(publishing-operations-v4.md)で機械的に検証必須化(1つでもFAILならREADY禁止)。",
+    "next_experiment": "Day19 Reel(Template v2 canonical component検証第1弾、Hook Variant B_FAILURE)はOwner投稿承認待ち。Audience Response 24時間以内検知の日次Routine組み込みはP1で継続(未着手)。Revenue Content「Nottaの向かない人」も投稿承認待ちのまま(投稿後24時間追跡タスク登録済み)。"
   },
   "morning_2026-09-16_findings": {
     "stale_codex_task_closed": "coord-2eabeb666e9c161e39b98867afc5fd92(Day15 Fixed Schedule Test Day3台本のReel制作)はcontent方針がautomation_gap_storyへ既に差し替わり、day15.mp4として完成・QA PASS済みのためSUPERSEDEDとして扱う(decisions_log.md 2026-09-16参照)。Managed task(handoff)はassigned_to=codexで自分ではclaimできず、ツール上のstatus変更はできなかったため記録のみ。",
@@ -285,7 +286,7 @@
   },
   "current_date": "2026-09-19",
   "data_updated_at": "2026-09-19T07:58:00+09:00",
-  "public_updated_at": "2026-09-18T23:46:48.633Z",
+  "public_updated_at": "2026-09-19T09:18:50.545Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -848,10 +849,11 @@
     ],
     "approval_queue": [],
     "ai_learning": {
-      "observation": "Day13(Fixed Publishing Schedule TEST 1初日)はMorning Routine自動発火が失敗したにもかかわらず、Ownerが自主的にX/Instagramへ手動投稿(X: 07:30予定に対し実際は数時間後、IG Reel: 相対表示のみで正確な時刻不明)。制作(Codex)は完了していたため、公開判断だけ人間に残った。2026-09-15朝、Evening Routine不通で滞っていたSNS分析(実測データに基づく)をClaudeが独立実施し、X表示回数(Day9=22→Day10=18→Day11=13→Day12=7→Day13=4)・Instagram Reel再生数(Day10=29→Day12=24→Day13=10)とも5日連続で減少していることを発見。さらに、全3件のReel(Day10/12/13)は外部(非フォロワー)へのリーチ自体は60〜100%と機能しているにもかかわらず、いいね・コメント・保存・シェアが全てゼロという特徴も判明(data/instagram/post_insights_log.csvへ初記録)。2026-09-15夜、本Evening Routineで確認したところDay14分のX投稿・IG Reelは既にOwnerが手動投稿済み(X:3時間前・impressions=3で継続減少、IG:2時間前・インサイトは早すぎるため未取得)。",
-      "hypothesis": "表示回数の減少はコンテンツ内容(音声・キャラクター有無・投稿時刻固定化等)の変更と時期が一致しておらず、むしろアカウント立ち上げ初期のアルゴリズム上のブースト減衰、またはリーチはあってもコンテンツが『見た人の興味を引き止められていない』ことが主因の可能性が高い。特に0%エンゲージメント(いいね/保存/シェア皆無)は、リーチの問題ではなく完走率・関心度の問題を示唆する。Day9の『Strategic Reply(能動的に話しかける)』施策で一時的に表示が伸びた実績があるが、この施策はEvening/X Conversation Routineの一部であり、直近2日間Evening Routineが未実行だったため停止していた可能性がある(Morning Routine自動発火の0バイトログ障害がSetThreadExecutionState修正後も09-14・09-15と再発、バッテリー駆動時のタスクスケジューラ条件が真因の可能性がありCodexへ再調査タスクb9e281e0-4f66-413a-a67c-40dc22310691を作成済み)。本Evening RoutineでStrategic Reply再開を試みたが、Xブラウザセッションがunauthenticated(検索ページが明示的にログイン画面へリダイレクト)のため新規候補探索を実行できず、次回Routineへ持ち越し。",
-      "decision": "Day12以降のReelはAI音声(VOICEVOX、青山龍星)をデフォルトとし、Owner本人音声はHuman Voice Exception(個人的エピソード等)の場合のみ使用する方針を継続。",
-      "next_experiment": "Notta funnel優先のためFixed Publishing Schedule TEST 1の定型投稿は本日も保留継続。Day15 Reel(自動化2日停止ストーリー)はOwner投稿承認待ち。Strategic Reply再開はXログイン状態が回復次第優先的に試行する(2026-09-16時点も検索用途はunauthenticated、通常タイムライン閲覧は可能)。0%エンゲージメントの原因分析は7日間のFixed Publishing Schedule TEST 1データが揃い次第行う。"
+      "day": 18,
+      "observation": "Day17〜19にかけて、AI側の「記録」と実際の状態がズレる同型の問題が3回連続で発覚した: (1)Day17=承認待ち表示のままOwnerが先に投稿済み、(2)Day18=@kouya_sns01の好意的コメントに6日間気づけていなかった(確認する工程自体が無かった)、(3)Day19=ChatGPT COOが見ていたSSOTがDate Rollover直後の中間状態のまま2時間古かった(再生成タイミングの抜け)。さらにImplementation Auditで、claude.code_ai Reel Research(Template v2・Hook Variant・evidence overlay・importance-weighted pacing)が2026-09-17策定後、日次Reel生成pipeline(DayNCharacterHybrid.tsx)に一度も接続されていなかったことも判明。",
+      "hypothesis": "個別のバグではなく共通パターンがある: 「一度作った記録・生成物は、その後の実態変化に追従して更新され続ける」という前提が運用のどこにも保証されていなかった(Cockpit/SSOTの再生成タイミング、Audience Response監視、Research→Production接続のいずれも)。都度reconcileする一過性の対応ではなく、イベント駆動での再生成・QA checklistでの機械的検証に倒すことで再発を防げる可能性が高い。",
+      "decision": "Template v2をcanonical component化(remotion-video/src/TemplateV2.tsx)し、DayNCharacterHybrid.tsxの複製運用を廃止。Hook Variant/evidence overlay/importance-weighted pacing/CTA分離をQA checklist(publishing-operations-v4.md)で機械的に検証必須化(1つでもFAILならREADY禁止)。",
+      "next_experiment": "Day19 Reel(Template v2 canonical component検証第1弾、Hook Variant B_FAILURE)はOwner投稿承認待ち。Audience Response 24時間以内検知の日次Routine組み込みはP1で継続(未着手)。Revenue Content「Nottaの向かない人」も投稿承認待ちのまま(投稿後24時間追跡タスク登録済み)。"
     },
     "morning_2026-09-16_findings": {
       "stale_codex_task_closed": "coord-2eabeb666e9c161e39b98867afc5fd92(Day15 Fixed Schedule Test Day3台本のReel制作)はcontent方針がautomation_gap_storyへ既に差し替わり、day15.mp4として完成・QA PASS済みのためSUPERSEDEDとして扱う(decisions_log.md 2026-09-16参照)。Managed task(handoff)はassigned_to=codexで自分ではclaimできず、ツール上のstatus変更はできなかったため記録のみ。",
