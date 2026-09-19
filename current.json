@@ -39,6 +39,7 @@
     "x_announcement": "POSTED_DIVERGED",
     "x_announcement_note": "Owner投稿済み(2026-09-16 07:50 JST Playwright実機確認)。ただし実際の本文はnote.comシェアカード(タイトル+リンクのみ)で、Claude QA承認済みのFINAL全文(一次体験・実測値・向いている人・控えめCTA)とは異なる簡略版だった。投稿自体はOwnerの意思決定でありClaudeは修正・再投稿を行わない。",
     "notta_clicks": "DATA STALE(前回実測2026-09-16 22:06時点で0。A8.netログイン未確立のため2026-09-18時点で再確認不能、Owner再ログインが必要)",
+    "notta_clicks_checked_at": "2026-09-16T22:06:00+09:00",
     "automation_reel": "PUBLISHED",
     "automation_reel_note": "Instagram投稿確認済み(2026-09-16 08:03 JST、実機Playwright確認。投稿URL: https://www.instagram.com/workai_lab777/reel/DdU1MXYSUkk/)。07:50時点のMorning Routineチェックでは未投稿だったが、その13分後にOwnerが投稿。owner_actionは解消。",
     "afb_audit": "on_hold",
@@ -298,7 +299,7 @@
   },
   "current_date": "2026-09-19",
   "data_updated_at": "2026-09-19T22:35:00+09:00",
-  "public_updated_at": "2026-09-19T13:35:34.643Z",
+  "public_updated_at": "2026-09-19T14:58:13.003Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -687,6 +688,7 @@
       "x_announcement": "POSTED_DIVERGED",
       "x_announcement_note": "Owner投稿済み(2026-09-16 07:50 JST Playwright実機確認)。ただし実際の本文はnote.comシェアカード(タイトル+リンクのみ)で、Claude QA承認済みのFINAL全文(一次体験・実測値・向いている人・控えめCTA)とは異なる簡略版だった。投稿自体はOwnerの意思決定でありClaudeは修正・再投稿を行わない。",
       "notta_clicks": "DATA STALE(前回実測2026-09-16 22:06時点で0。A8.netログイン未確立のため2026-09-18時点で再確認不能、Owner再ログインが必要)",
+      "notta_clicks_checked_at": "2026-09-16T22:06:00+09:00",
       "automation_reel": "PUBLISHED",
       "automation_reel_note": "Instagram投稿確認済み(2026-09-16 08:03 JST、実機Playwright確認。投稿URL: https://www.instagram.com/workai_lab777/reel/DdU1MXYSUkk/)。07:50時点のMorning Routineチェックでは未投稿だったが、その13分後にOwnerが投稿。owner_actionは解消。",
       "afb_audit": "on_hold",
@@ -1188,6 +1190,15 @@
         "exit_code": 0,
         "success": true,
         "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\morning_2026-09-19_070002.log"
+      },
+      {
+        "routine": "evening",
+        "scheduled_at": "2026-09-19T22:30:00",
+        "started_at": "2026-09-19T22:30:02",
+        "finished_at": "2026-09-19T22:38:30",
+        "exit_code": 0,
+        "success": true,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\evening_2026-09-19_223002.log"
       }
     ],
     "tasks": [

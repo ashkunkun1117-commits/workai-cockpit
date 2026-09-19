@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-09-19 (Evening Routine実行記録)
+
+Day18 Evening Routine実行。Missed Routine Coalescing判定でSUPERSEDEDに非該当のため通常フル実行。
+Day18実績確定: X投稿impressions=3・返信0件、IG Reel views=96/reach=92(kpi_daily.csv・
+post_insights_log.csvへ反映済み)。X会話waiting中(forestkinoko/omuat/yukissense)は新規返信なし、
+narisumashi100は引き続きunauthenticated制約で確認不能。panana39・kouya_sns01のfollowup_draftは
+Owner承認待ちのままApproval Batchへ再掲(create_approval側の重複検出でQueue登録不可の既知制約)。
+Day19先行準備は既に完了済みのため追加制作なし。Cockpit/Shared SSOTを再生成しworkai-cockpitへ
+commit(ca17db7)・push・Pages build built一致・live current.json business_day=18確認PASS。
+新しい戦略変更・方針変更はなし。
+
+---
+
 ## 2026-09-19 (COO指令「Learning/Hypothesis Freshness」対応 — 事実確認と新規safeguard追加)
 
 COOから「latest_learning=Day13中心、next_hypothesis=Day15前提のまま」との指摘を受け実データ確認。
