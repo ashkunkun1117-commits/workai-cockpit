@@ -63,6 +63,22 @@
       "shares": null,
       "profile_visits": null,
       "follows": null
+    },
+    {
+      "day": 19,
+      "date": "2026-09-19",
+      "hook_type_planned": "B_FAILURE",
+      "hook_type_actual": "B_FAILURE",
+      "theme": "SSOT freshness gap(Date Rollover直後の中間状態がpushされたまま再生成されなかった実話)",
+      "reel_url": null,
+      "posted": false,
+      "views": null,
+      "avg_watch_pct": null,
+      "likes": null,
+      "saves": null,
+      "shares": null,
+      "profile_visits": null,
+      "follows": null
     }
   ],
   "planned_next": {

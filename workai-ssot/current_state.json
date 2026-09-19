@@ -1,6 +1,6 @@
 {
   "business_day": 18,
-  "updated_at": "2026-09-18T23:06:35.594Z",
+  "updated_at": "2026-09-18T23:46:49.716Z",
   "data_stale": false,
   "today": {
     "x": "posted",
@@ -58,11 +58,11 @@
   "current_business_priority": "Notta revenue funnel (P1)",
   "current_bottleneck": "content → note_lp：未計測（成果の低下とは未判定）",
   "active_experiment": {
-    "day": 9,
-    "date": null,
-    "hook_type_planned": "number-comparison",
-    "hook_type_actual": null,
-    "theme": "数字・比較型",
+    "day": 19,
+    "date": "2026-09-19",
+    "hook_type_planned": "B_FAILURE",
+    "hook_type_actual": "B_FAILURE",
+    "theme": "SSOT freshness gap(Date Rollover直後の中間状態がpushされたまま再生成されなかった実話)",
     "reel_url": null,
     "posted": false
   },

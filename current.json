@@ -18,6 +18,20 @@
       "caption_text": "応援してくれたコメントに、6日間気づいていませんでした。\n\n9月12日、Xの投稿に「AI制作・人間公開の役割分担が事故を減らす」という、好意的なコメントをいただいていました。\n\n気づいたのは、6日後の9月18日、夜の運用チェックで実機を確認したときです。\n\n原因は「見逃していた」ことではなく、そもそも日次の運用の中に「Xのコメントを確認する」という工程自体が無かったこと。仕組みが元から存在していませんでした。\n\nこの発見を受けて、基準を変えました。「確認する仕組みがあるかどうか」ではなく、「24時間以内に気づけているかどうか」へ。\n\n24時間以内に気づける仕組みへの実装は、まだこれからです。ここは正直に、次の宿題として残します。\n\nAIでできる仕事は、AIに。\nDay 18 / 100\n#AI仕事研究所 #100日実験 #自動化 #仕事効率化 #AIパートナー\n\nVOICEVOX：青山龍星"
     }
   },
+  "tomorrow": {
+    "x_post": {
+      "status": "ready",
+      "text_file": "content/x/day19_post.md",
+      "note": "Template v2 Production Migration後、最初のCanonical Component検証Reel。COO承認のSSOT Freshness Gap実話(2026-09-19)。Owner投稿承認待ち。",
+      "text": "ChatGPT COOが見ていたSSOTは、2時間前のままでした。\n\nDay18の投稿は終わっていたのに「未着手」のまま。\n\n原因は見逃しではなく、更新直後のまま再生成していなかったこと。\n\n実態が変わるたびに再生成する運用へ変えました。\n\nAIでできる仕事は、AIに。\nDay19/100"
+    },
+    "ig_reel": {
+      "status": "ready",
+      "video_file": "day19.mp4",
+      "note": "Claude制作完了(Template v2 canonical component、32.93秒、VOICEVOX青山龍星、Hook Variant B_FAILURE)。独立QA PASS(ffprobe/silencedetect/frame目視、reel_hook_experiment.csv自動記録確認)。Owner投稿承認待ち。",
+      "caption_text": "ChatGPT COOが見ていたSSOTは、2時間前のままでした。\n\nDay18のX投稿もInstagram Reelも、もう投稿は終わっていました。でもSSOT上は「未着手」のまま記録されていました。\n\n原因は見逃しではありません。Date Rolloverの直後にpushしたまま、その後下書きを作った時点で再生成していなかったこと。中間状態が、そのまま古い記録として残っていました。\n\nこれを受けて、投稿確認やRevenue Content公開など、実態が変わるたびにSSOTを再生成してpushする運用へ変えました。\n\nAIでできる仕事は、AIに。\nDay 19 / 100\n#AI仕事研究所 #100日実験 #自動化 #仕事効率化 #AIパートナー\n\nVOICEVOX：青山龍星"
+    }
+  },
   "business_progress": {
     "note_priority": "P1",
     "notta_note": "LIVE",
@@ -271,7 +285,7 @@
   },
   "current_date": "2026-09-19",
   "data_updated_at": "2026-09-19T07:58:00+09:00",
-  "public_updated_at": "2026-09-18T23:04:29.269Z",
+  "public_updated_at": "2026-09-18T23:46:48.633Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -619,6 +633,20 @@
         "url": "https://www.instagram.com/workai_lab777/reel/DdchiXTyUaQ/",
         "note": "Owner手動投稿済み(2026-09-19、相対表示「21分前」、実機Playwright確認、キャプション完全一致)。投稿直後のためviews/reachは0または未計測、コメント0件。",
         "caption_text": "応援してくれたコメントに、6日間気づいていませんでした。\n\n9月12日、Xの投稿に「AI制作・人間公開の役割分担が事故を減らす」という、好意的なコメントをいただいていました。\n\n気づいたのは、6日後の9月18日、夜の運用チェックで実機を確認したときです。\n\n原因は「見逃していた」ことではなく、そもそも日次の運用の中に「Xのコメントを確認する」という工程自体が無かったこと。仕組みが元から存在していませんでした。\n\nこの発見を受けて、基準を変えました。「確認する仕組みがあるかどうか」ではなく、「24時間以内に気づけているかどうか」へ。\n\n24時間以内に気づける仕組みへの実装は、まだこれからです。ここは正直に、次の宿題として残します。\n\nAIでできる仕事は、AIに。\nDay 18 / 100\n#AI仕事研究所 #100日実験 #自動化 #仕事効率化 #AIパートナー\n\nVOICEVOX：青山龍星"
+      }
+    },
+    "tomorrow": {
+      "x_post": {
+        "status": "ready",
+        "text_file": "content/x/day19_post.md",
+        "note": "Template v2 Production Migration後、最初のCanonical Component検証Reel。COO承認のSSOT Freshness Gap実話(2026-09-19)。Owner投稿承認待ち。",
+        "text": "ChatGPT COOが見ていたSSOTは、2時間前のままでした。\n\nDay18の投稿は終わっていたのに「未着手」のまま。\n\n原因は見逃しではなく、更新直後のまま再生成していなかったこと。\n\n実態が変わるたびに再生成する運用へ変えました。\n\nAIでできる仕事は、AIに。\nDay19/100"
+      },
+      "ig_reel": {
+        "status": "ready",
+        "video_file": "day19.mp4",
+        "note": "Claude制作完了(Template v2 canonical component、32.93秒、VOICEVOX青山龍星、Hook Variant B_FAILURE)。独立QA PASS(ffprobe/silencedetect/frame目視、reel_hook_experiment.csv自動記録確認)。Owner投稿承認待ち。",
+        "caption_text": "ChatGPT COOが見ていたSSOTは、2時間前のままでした。\n\nDay18のX投稿もInstagram Reelも、もう投稿は終わっていました。でもSSOT上は「未着手」のまま記録されていました。\n\n原因は見逃しではありません。Date Rolloverの直後にpushしたまま、その後下書きを作った時点で再生成していなかったこと。中間状態が、そのまま古い記録として残っていました。\n\nこれを受けて、投稿確認やRevenue Content公開など、実態が変わるたびにSSOTを再生成してpushする運用へ変えました。\n\nAIでできる仕事は、AIに。\nDay 19 / 100\n#AI仕事研究所 #100日実験 #自動化 #仕事効率化 #AIパートナー\n\nVOICEVOX：青山龍星"
       }
     },
     "business_progress": {
@@ -1190,6 +1218,22 @@
       "hook_type_planned": "number-comparison",
       "hook_type_actual": "",
       "theme": "数字・比較型",
+      "reel_url": "",
+      "posted": "false",
+      "views": "",
+      "avg_watch_pct": "",
+      "likes": "",
+      "saves": "",
+      "shares": "",
+      "profile_visits": "",
+      "follows": ""
+    },
+    {
+      "day": "19",
+      "date": "2026-09-19",
+      "hook_type_planned": "B_FAILURE",
+      "hook_type_actual": "B_FAILURE",
+      "theme": "SSOT freshness gap(Date Rollover直後の中間状態がpushされたまま再生成されなかった実話)",
       "reel_url": "",
       "posted": "false",
       "views": "",
