@@ -4,6 +4,27 @@
 
 ---
 
+## 2026-09-19 (COO指令「Learning/Hypothesis Freshness」対応 — 事実確認と新規safeguard追加)
+
+COOから「latest_learning=Day13中心、next_hypothesis=Day15前提のまま」との指摘を受け実データ確認。
+**前回のSSOT Freshness v2対応(commit 9d4f35d)時点で既にDay18-19の内容へ更新・push済み**
+だったことをraw.githubusercontent.com実機確認で確認(updated_at 2026-09-19T09:25:42Z、
+latest_learning/next_hypothesisともDay17-19の実際の内容)。COOの指摘は反映前の
+古いスナップショットに基づくものと判断、同じ修正の重複実施はしていない。
+
+新規に以下を実装(COO指令項目3・4):
+- `freshness.semantic_stale`: `active_experiment.day`と`ai_learning.day`が2日を超えて
+  乖離した場合にtrueとするクロスセクション整合性チェック(`buildFreshness`)。
+  各セクションが個別には「新しい」と判定されても、全体として一貫した状況を示している
+  とは限らないケースを検出する。
+- QA checklistへ「Reel Production Validation完了時にai_learningも同時更新する」運用を
+  明記(publishing-operations-v4.md)。
+
+回帰テスト1件追加、計46件全PASS。実データ確認: semantic_stale=false(experiment day19 /
+learning day18、乖離1日で正常範囲)。
+
+---
+
 ## 2026-09-19 (COO指令「SSOT Freshness v2」— section-level + semantic staleness detection)
 
 cronによる30分定期再生成は追加しない(infrastructureを増やさない、event-driven update

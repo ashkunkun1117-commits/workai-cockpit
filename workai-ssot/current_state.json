@@ -1,6 +1,6 @@
 {
   "business_day": 18,
-  "updated_at": "2026-09-19T09:40:54.178Z",
+  "updated_at": "2026-09-19T09:52:10.340Z",
   "data_stale": false,
   "today": {
     "x": "posted",
@@ -72,11 +72,11 @@
   "next_hypothesis": "Day19 Reel(Template v2 canonical component検証第1弾、Hook Variant B_FAILURE)はOwner投稿承認待ち。Audience Response 24時間以内検知の日次Routine組み込みはP1で継続(未着手)。Revenue Content「Nottaの向かない人」も投稿承認待ちのまま(投稿後24時間追跡タスク登録済み)。",
   "freshness": {
     "today": {
-      "updated_at": "2026-09-19T09:40:54.178Z",
+      "updated_at": "2026-09-19T09:52:10.340Z",
       "business_day": 18
     },
     "revenue": {
-      "updated_at": "2026-09-19T09:40:54.178Z",
+      "updated_at": "2026-09-19T09:52:10.340Z",
       "data_stale": false
     },
     "market_radar": {
