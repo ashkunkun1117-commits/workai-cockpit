@@ -4,6 +4,41 @@
 
 ---
 
+## 2026-09-19 (COO指令「SSOT Freshness v2」— section-level + semantic staleness detection)
+
+cronによる30分定期再生成は追加しない(infrastructureを増やさない、event-driven update
+を基本とする、というCOO判断を採用)。代わりに以下を実装。
+
+1. **Global freshness**: `updated_at`は既存維持。ChatGPT COO側が現在時刻との差を確認する
+   運用とする(30分超=GLOBAL STALE可能性、という判定はCOO側で実施)。
+2. **Section freshness**: `workai-ssot/current_state.json`へ`freshness`オブジェクトを新設
+   (today/revenue/market_radar/strategic_reply/audience_response/experiment/learning、
+   各セクションが独自のdate/day/statusを持つ)。
+3. **Semantic stale detection**: `scripts/generate-shared-ssot.mjs: buildFreshness()`が、
+   ファイル生成時刻が新しくてもセクション内容がbusiness_dayより古い場合に
+   `EXPERIMENT_STALE`/`LEARNING_STALE`を機械的に検出。ただし「今日以降に予定されている
+   未投稿の実験」は正当な計画であり、staleとは扱わない(過去日に取り残された未投稿のみ
+   stale判定)。
+4. **Current Fix**: `data/publish/today.json: ai_learning`を実態確認して更新。
+   従来Day13中心のまま放置されていた内容を、Day17-19の実際の出来事
+   (承認ズレ・Audience Response検知漏れ・SSOT鮮度ギャップ・Template v2 Research→Production
+   接続断絶)を反映した内容へ書き換え、`day: 18`を追加。`active_experiment`もDay9のまま
+   放置されていたが、Template v2作業で`reel_hook_experiment.csv`へDay19を記録した副次効果で
+   Day19へ自己修復済みだったことを確認。
+5. **Event-driven update**: cronは追加せず、Owner publish verification/Revenue data
+   update/Market Radar completion/Strategic Reply execution/Audience Response check/
+   Experiment update/Routine completion/Business Day rollover/Owner Action completionの
+   都度、再生成・pushを徹底する方針を継続。
+6. **COO Read Rule**: global updated_at・section freshness・business_day整合性の3点で
+   判断する運用を前提に設計。
+
+**回帰テスト**: `scripts/generate-shared-ssot.test.mjs`に4件追加(experiment/learningの
+stale判定、no_new_data honesty、backyard_healthベースのsection status)。全45件PASS
+(既存分含む)。実データ確認: market_radar/strategic_reply/audience_responseは
+backyard_health.dateが前日(9/18)のままのため、正しく`not_started`(false green防止)。
+
+---
+
 ## 2026-09-19 (COO指令「Template v2 Production Migration」FULL GO — P0-1〜7完全実装)
 
 Implementation Auditで確認された「Research→Production接続の断絶」を、7項目すべて実装して解消。
