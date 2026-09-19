@@ -4,6 +4,42 @@
 
 ---
 
+## 2026-09-19 (COO指令「Template v2 Production Migration」FULL GO — P0-1〜7完全実装)
+
+Implementation Auditで確認された「Research→Production接続の断絶」を、7項目すべて実装して解消。
+NO NEW FACTORY(既存Remotion資産を最小変更で流用)。
+
+1. **canonical化**: `remotion-video/src/TemplateV2.tsx`を新設。`DayNCharacterHybrid.tsx`の
+   per-day複製をやめ、単一コンポーネント+`content/reel-json/dayN.json`データへ統合。
+2. **Daily Pipeline接続**: `remotion-video/scripts/{prepare-template-v2-voice,render-template-v2}.mjs`
+   (`--day=N`引数の汎用スクリプト)。旧テンプレートへの後戻り経路を用意していない
+   (Creative Engineer fallbackという概念自体を今回のcanonical化で置き換え)。
+3. **Hook Variant Tracking再開**: `dayN.json`に`hook_variant`(A_RESULT/B_FAILURE/C_ARTIFACT)を
+   必須化(`scripts/template-v2-lib.mjs: validateTemplateV2Content`がQA FAIL判定)。
+   `render-template-v2.mjs`が`data/instagram/reel_hook_experiment.csv`へ自動記録(idempotent)。
+4. **Evidence Overlay**: `TemplateV2.tsx`に組み込み。Day19では
+   `workai-ssot/current_state.json`の実際のフィールド値を捏造なしで引用。
+5. **Importance Weighted Pacing**: `computeScenePacing()`(文字数比例だけに頼らず、
+   importance最大のシーンを構造的に最長にする)。`validateTemplateV2Content`が
+   この不変条件をQA時に検証。
+6. **CTA**: 最終シーンのみ専用レイアウト(他シーンと同一レイアウト禁止)、3〜4.5秒に制限。
+7. **QA CHECKLIST**: `.claude/skills/workai-daily-ops/references/publishing-operations-v4.md`
+   へ「Template v2 QA Checklist」セクションを新設、8項目・1つでもFAILならREADY禁止と明記。
+
+**回帰テスト**: `scripts/template-v2-lib.test.mjs`(新規12件)+既存`generate-production-cockpit.test.mjs`
+(23件)=**計35件、全PASS**。
+
+**Next Reel Validation(Day19、SSOT freshness gap実話)**: 実際にcanonical pipelineで
+制作・独立QA完了。Hook Variant=B_FAILURE(記録済み)、core_insight最長、CTA4.5秒視覚分離、
+VOICEVOX音声あり、Cockpit Preview/Download/X Copy/IG Caption Copyいずれも実機確認済み
+(workai-cockpitのtomorrowバケット、commit 07d1823)。制作中に2件の実バグを自己発見・修正
+(CTAシーンでバッジとラベルが重なる/evidence cardとキャラクターが重なる)。まだOwner投稿承認待ち、
+外部投稿は未実行。
+
+**SSOT freshness**: 前エントリで対応済み、本作業でも都度再生成・push(commit 07d1823)を実施。
+
+---
+
 ## 2026-09-19 (COO指令「SSOT Freshness Is Now P0」対応 — 緊急同期実施)
 
 ChatGPT COOがGitHub connector経由でworkai-ssot/current_state.jsonを直接取得できることを
