@@ -1,5 +1,22 @@
 [
   {
+    "date": "2026-09-19",
+    "platform": "x",
+    "theme": null,
+    "hook_type": null,
+    "content_type": "post",
+    "url": "https://x.com/workai_lab777/status/2101072793186263329",
+    "views": null,
+    "impressions": null,
+    "likes": null,
+    "comments": null,
+    "saves": null,
+    "shares": null,
+    "profile_visits": null,
+    "clicks": null,
+    "learning": "impressions=3、返信0件(投稿から約15時間後実測、kpi_daily.csv Day18行へ反映済み)。"
+  },
+  {
     "date": "2026-09-18",
     "platform": "x",
     "theme": null,
@@ -83,6 +100,23 @@
     "profile_visits": null,
     "clicks": null,
     "learning": "impressions=10, likes=1, replies=1(投稿ページ実測、kpi_daily.csv Day11へ反映済み)"
+  },
+  {
+    "date": null,
+    "platform": "instagram",
+    "theme": null,
+    "hook_type": null,
+    "content_type": "reel",
+    "url": "https://www.instagram.com/workai_lab777/reel/DdchiXTyUaQ/",
+    "views": 96,
+    "impressions": null,
+    "likes": 0,
+    "comments": 0,
+    "saves": 0,
+    "shares": 0,
+    "profile_visits": 0,
+    "clicks": null,
+    "learning": "投稿から約14時間後実測: views=96, reach(閲覧者)=92(フォロワー2.1%/非フォロワー97.9%)、いいね/コメント/保存/シェアいずれも0(post_insights_log.csvへ記録済み)。正確なpublish時刻はInstagram UI上取得できず未記録(推測しない)。"
   },
   {
     "date": null,

@@ -1,7 +1,7 @@
 {
   "business_day": 19,
   "business_date": "2026-09-20",
-  "generated_at": "2026-09-20T05:47:00+09:00",
+  "generated_at": "2026-09-20T07:10:00+09:00",
   "today": {
     "x_post": {
       "status": "ready",
@@ -18,14 +18,14 @@
   },
   "tomorrow": {
     "x_post": {
-      "status": "not_ready",
+      "status": "in_production",
       "text_file": null,
-      "note": "Day20分は未着手。Morning Routine(07:00)でContent Editorへ制作依頼予定。"
+      "note": "Day20分をContent Editorへ制作依頼済み(Morning Routine内)。題材: forestkinoko/tianyezhiz60405/himazin_bivarの3アカウントから独立に受けた『浮いた時間の使い道』という未回答の実際の指摘に正面から向き合う回。捏造禁止・正直な現状のみ使用を指示済み。"
     },
     "ig_reel": {
-      "status": "not_ready",
+      "status": "in_production",
       "video_file": null,
-      "note": "Day20分は未着手。Morning Routine(07:00)でCreative Engineerへ制作依頼予定。"
+      "note": "Content Editor完成後、Creative EngineerへReel制作を依頼予定(Template v2 canonical component使用)。"
     }
   },
   "business_progress": {
@@ -266,16 +266,26 @@
     "codex_da79a4b8_reconciliation": "[ENG][P0] Codexバックグラウンドジョブ dispatch前Task SSOT登録の強制(da79a4b8)がstatus=assigned/waiting_reason=codex_quota_limitのままnext_check_at(2026-09-15T13:00 JST)を超過し、Pending Task Watch checker(status=waitingのみ監視)が拾えていない可能性を発見。codex:codex-rescue subagent経由で生存確認・再開を依頼(task-mu4ndxin-arofol、結果は別途確認)。",
     "x_state": "unauthenticated(明示的ログイン要求を確認)。既存waiting会話(@forestkinoko Day9, @narisumashi100 Day10)の新規返信確認・新規Strategic Reply候補探索は今回スキップ、次回Routineへ持ち越し。"
   },
+  "morning_2026-09-20_findings": {
+    "missed_routine_coalescing": "premorningが本日05:45〜05:50に成功実行済み(MORNING_READY)、Evening Routineはまだ未実行のためSUPERSEDED条件に該当せず、Morning Routineを通常フル実行した。",
+    "manual_publish_verification": "carryoverは空。Day19 X投稿・IG Reel・Notta Revenue Content(notta-fit-boundary.mp4)のいずれも実機Playwright確認(2026-09-20 07:0x JST)で未投稿と確認(Xプロフィール最新投稿・Instagramグリッド最新ともDay18のまま)。today.jsonの状態(ready/owner_actions)は実態と一致しており、reconcileは不要だった。",
+    "x_conversation_check": "waiting中4会話を確認。forestkinoko(Day9)・omuat(Day17)・yukissense(Day16 followup)はいずれも新規author返信なし(こちらの返信のみ)。narisumashi100(Day10、683件規模スレッド)は引き続き非ログイン制約で全件確認不能、次回持ち越し。panana39・kouya_sns01のfollowup_draft(review状態)は変化なし、Approval Batchへ再掲。",
+    "x_state": "unauthenticated確定(x.com/workai_lab777への直接アクセスで明示的ログインフォーム表示)。個別投稿URL・プロフィールページは非ログインでも閲覧可能なためその範囲で確認した。",
+    "ig_state": "authenticated(プロフィール編集リンクが表示、インサイト閲覧可能)。",
+    "content_production": "Day20 Own Content(X投稿・Reel台本・IGキャプション)をContent Editorへ依頼(作業中)。題材選定の根拠: 2026-09-07〜09にかけて@forestkinoko/@tianyezhiz60405/@himazin_bivarの3アカウントから独立に『AIで浮いた時間を実際どう使っているか』という同種の指摘・質問を受けており(data/x-replies/ledger.csv実データ)、Own Content側ではまだ正面から扱っていなかった。Day16-19が4日連続で内部システムバグの話だったため、Audience Value(Final Business Test基準4)を優先し話題を切り替えた。捏造禁止・回答が『まだ設計できていない』という正直な内容でもそのまま使うよう指示済み。",
+    "codex_handoff": "新規Engineering Task作成なし。既存review状態タスク(Cockpit v4/Shared SSOT v1/Pending Task Watch v1/Template v2 Pilot)はいずれもreview_status=passで変化なし。Codexクォータのリセット提示日(2026-09-20)が本日のため、リセット後の状態は次回の技術的ボトルネック発生時に確認する。",
+    "owner_action_backlog_note": "Notta Revenue Content投稿依頼(2026-09-18作成、task 1001b4e9はwatch_state=OVERDUEのまま2日超経過)・A8.net再ログイン(2026-09-16 22:06以降stale)・X Approval Batch(@panana39/@kouya_sns01)の3件が複数日にわたり未消化。Ownerの作業時間制約(CLAUDE.md Human Time原則、1日30分以内目安)を踏まえ、催促の頻度は増やさずBriefで正直に可視化するに留めた。"
+  },
   "kpi": {
     "revenue_jpy": 0,
     "profit_jpy": 0,
-    "day30_remaining": 12,
-    "day100_remaining": 82,
+    "day30_remaining": 11,
+    "day100_remaining": 81,
     "product_signals": 0,
     "blocked_tasks": 0
   },
   "system_health": "normal",
-  "system_health_reason": "Day17 X投稿・IG ReelともOwnerが既に手動投稿済みであることをEvening Manual Publish Verificationで確認、historyへ移動済み。Codex handoff(coord-6ada1af1414838df92b894ff8cba75ba)は同一成果物をCreative Engineer側が先に完成させたためSTALE。Xブラウザ認証状態はunauthenticated確定(個別投稿URL/プロフィールは閲覧可)、Instagramはauthenticated。",
+  "system_health_reason": "Day19 X投稿・IG Reel・Notta Revenue Contentはいずれもまだ未投稿(2026-09-20 07:0x JST実機Playwright確認、Xプロフィール最新はDay18のまま、Instagramグリッド最新もDay18 reel/DdchiXTyUaQ/のまま)。Xはunauthenticated確定(明示的ログインフォーム表示)、Instagramはauthenticated。既存waiting会話(forestkinoko/omuat/yukissense)は新規author返信なし、narisumashi100(683件規模)は引き続き非ログイン制約で確認不能。",
   "evening_2026_09_17_findings": {},
   "evening_2026-09-17_findings": {
     "manual_publish_verification": "Day16のX投稿・IG Reelとも、today.jsonでは投稿待ち(owner_actions)のまま残っていたが、実際には両方ともOwnerが本日朝(X: 07:32頃、IG: 相対表示から推定07:3x頃)に手動投稿済みだったことをEvening Routineの独立確認で発見。historyへ移動・実測データ記録済み。X本文は今回、承認済みFINAL全文のまま投稿されており、Day14/15で発生したnote.comシェアカード簡略化の乖離は発生しなかった。",
@@ -316,8 +326,8 @@
     "codex_result_review": "get_tasks(status=review)の5件(Auto Handoff受入・Pending Task Watch v1・Template v2 Pilot・Cockpit v4・Shared SSOT v1)はいずれもreview_status=passで過去にClaude Business QA完了済み、本日新規の変化なし。Codexクォータは2026-09-20リセット予定のため新規Engineering Handoffは作成せず待機。"
   },
   "current_date": "2026-09-20",
-  "data_updated_at": "2026-09-20T05:47:00+09:00",
-  "public_updated_at": "2026-09-19T20:48:33.963Z",
+  "data_updated_at": "2026-09-20T07:10:00+09:00",
+  "public_updated_at": "2026-09-19T22:06:22.783Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -668,7 +678,7 @@
   "source_manifest": {
     "business_day": 19,
     "business_date": "2026-09-20",
-    "generated_at": "2026-09-20T05:47:00+09:00",
+    "generated_at": "2026-09-20T07:10:00+09:00",
     "today": {
       "x_post": {
         "status": "ready",
@@ -685,14 +695,14 @@
     },
     "tomorrow": {
       "x_post": {
-        "status": "not_ready",
+        "status": "in_production",
         "text_file": null,
-        "note": "Day20分は未着手。Morning Routine(07:00)でContent Editorへ制作依頼予定。"
+        "note": "Day20分をContent Editorへ制作依頼済み(Morning Routine内)。題材: forestkinoko/tianyezhiz60405/himazin_bivarの3アカウントから独立に受けた『浮いた時間の使い道』という未回答の実際の指摘に正面から向き合う回。捏造禁止・正直な現状のみ使用を指示済み。"
       },
       "ig_reel": {
-        "status": "not_ready",
+        "status": "in_production",
         "video_file": null,
-        "note": "Day20分は未着手。Morning Routine(07:00)でCreative Engineerへ制作依頼予定。"
+        "note": "Content Editor完成後、Creative EngineerへReel制作を依頼予定(Template v2 canonical component使用)。"
       }
     },
     "business_progress": {
@@ -933,16 +943,26 @@
       "codex_da79a4b8_reconciliation": "[ENG][P0] Codexバックグラウンドジョブ dispatch前Task SSOT登録の強制(da79a4b8)がstatus=assigned/waiting_reason=codex_quota_limitのままnext_check_at(2026-09-15T13:00 JST)を超過し、Pending Task Watch checker(status=waitingのみ監視)が拾えていない可能性を発見。codex:codex-rescue subagent経由で生存確認・再開を依頼(task-mu4ndxin-arofol、結果は別途確認)。",
       "x_state": "unauthenticated(明示的ログイン要求を確認)。既存waiting会話(@forestkinoko Day9, @narisumashi100 Day10)の新規返信確認・新規Strategic Reply候補探索は今回スキップ、次回Routineへ持ち越し。"
     },
+    "morning_2026-09-20_findings": {
+      "missed_routine_coalescing": "premorningが本日05:45〜05:50に成功実行済み(MORNING_READY)、Evening Routineはまだ未実行のためSUPERSEDED条件に該当せず、Morning Routineを通常フル実行した。",
+      "manual_publish_verification": "carryoverは空。Day19 X投稿・IG Reel・Notta Revenue Content(notta-fit-boundary.mp4)のいずれも実機Playwright確認(2026-09-20 07:0x JST)で未投稿と確認(Xプロフィール最新投稿・Instagramグリッド最新ともDay18のまま)。today.jsonの状態(ready/owner_actions)は実態と一致しており、reconcileは不要だった。",
+      "x_conversation_check": "waiting中4会話を確認。forestkinoko(Day9)・omuat(Day17)・yukissense(Day16 followup)はいずれも新規author返信なし(こちらの返信のみ)。narisumashi100(Day10、683件規模スレッド)は引き続き非ログイン制約で全件確認不能、次回持ち越し。panana39・kouya_sns01のfollowup_draft(review状態)は変化なし、Approval Batchへ再掲。",
+      "x_state": "unauthenticated確定(x.com/workai_lab777への直接アクセスで明示的ログインフォーム表示)。個別投稿URL・プロフィールページは非ログインでも閲覧可能なためその範囲で確認した。",
+      "ig_state": "authenticated(プロフィール編集リンクが表示、インサイト閲覧可能)。",
+      "content_production": "Day20 Own Content(X投稿・Reel台本・IGキャプション)をContent Editorへ依頼(作業中)。題材選定の根拠: 2026-09-07〜09にかけて@forestkinoko/@tianyezhiz60405/@himazin_bivarの3アカウントから独立に『AIで浮いた時間を実際どう使っているか』という同種の指摘・質問を受けており(data/x-replies/ledger.csv実データ)、Own Content側ではまだ正面から扱っていなかった。Day16-19が4日連続で内部システムバグの話だったため、Audience Value(Final Business Test基準4)を優先し話題を切り替えた。捏造禁止・回答が『まだ設計できていない』という正直な内容でもそのまま使うよう指示済み。",
+      "codex_handoff": "新規Engineering Task作成なし。既存review状態タスク(Cockpit v4/Shared SSOT v1/Pending Task Watch v1/Template v2 Pilot)はいずれもreview_status=passで変化なし。Codexクォータのリセット提示日(2026-09-20)が本日のため、リセット後の状態は次回の技術的ボトルネック発生時に確認する。",
+      "owner_action_backlog_note": "Notta Revenue Content投稿依頼(2026-09-18作成、task 1001b4e9はwatch_state=OVERDUEのまま2日超経過)・A8.net再ログイン(2026-09-16 22:06以降stale)・X Approval Batch(@panana39/@kouya_sns01)の3件が複数日にわたり未消化。Ownerの作業時間制約(CLAUDE.md Human Time原則、1日30分以内目安)を踏まえ、催促の頻度は増やさずBriefで正直に可視化するに留めた。"
+    },
     "kpi": {
       "revenue_jpy": 0,
       "profit_jpy": 0,
-      "day30_remaining": 12,
-      "day100_remaining": 82,
+      "day30_remaining": 11,
+      "day100_remaining": 81,
       "product_signals": 0,
       "blocked_tasks": 0
     },
     "system_health": "normal",
-    "system_health_reason": "Day17 X投稿・IG ReelともOwnerが既に手動投稿済みであることをEvening Manual Publish Verificationで確認、historyへ移動済み。Codex handoff(coord-6ada1af1414838df92b894ff8cba75ba)は同一成果物をCreative Engineer側が先に完成させたためSTALE。Xブラウザ認証状態はunauthenticated確定(個別投稿URL/プロフィールは閲覧可)、Instagramはauthenticated。",
+    "system_health_reason": "Day19 X投稿・IG Reel・Notta Revenue Contentはいずれもまだ未投稿(2026-09-20 07:0x JST実機Playwright確認、Xプロフィール最新はDay18のまま、Instagramグリッド最新もDay18 reel/DdchiXTyUaQ/のまま)。Xはunauthenticated確定(明示的ログインフォーム表示)、Instagramはauthenticated。既存waiting会話(forestkinoko/omuat/yukissense)は新規author返信なし、narisumashi100(683件規模)は引き続き非ログイン制約で確認不能。",
     "evening_2026_09_17_findings": {},
     "evening_2026-09-17_findings": {
       "manual_publish_verification": "Day16のX投稿・IG Reelとも、today.jsonでは投稿待ち(owner_actions)のまま残っていたが、実際には両方ともOwnerが本日朝(X: 07:32頃、IG: 相対表示から推定07:3x頃)に手動投稿済みだったことをEvening Routineの独立確認で発見。historyへ移動・実測データ記録済み。X本文は今回、承認済みFINAL全文のまま投稿されており、Day14/15で発生したnote.comシェアカード簡略化の乖離は発生しなかった。",
@@ -1235,6 +1255,27 @@
         "exit_code": 0,
         "success": true,
         "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\evening_2026-09-19_223002.log"
+      },
+      {
+        "routine": "premorning",
+        "scheduled_at": "2026-09-20T05:45:00",
+        "started_at": "2026-09-20T05:47:00",
+        "finished_at": "2026-09-20T05:50:00",
+        "exit_code": 0,
+        "success": true,
+        "invocation": "manual_chat_slash_command",
+        "status": "MORNING_READY",
+        "note": "Date Rollover実施: today.json/CockpitともDay18/2026-09-19→Day19/2026-09-20へ更新。Day18分をhistoryへ移動。Day19 X投稿・Reelともready(Owner投稿承認待ち)。Day20分は未着手のためnot_readyで正直に表示。Approval Queue pending=0。Cockpit commit b2d7911・push・Pages build built一致・live current.json business_day=19確認PASS。",
+        "log_file": null
+      },
+      {
+        "routine": "premorning",
+        "scheduled_at": "2026-09-20T05:45:00",
+        "started_at": "2026-09-20T05:45:02",
+        "finished_at": "2026-09-20T05:50:42",
+        "exit_code": 0,
+        "success": true,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\premorning_2026-09-20_054502.log"
       }
     ],
     "tasks": [

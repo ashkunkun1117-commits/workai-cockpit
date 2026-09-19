@@ -1,20 +1,20 @@
 {
-  "business_day": 18,
-  "updated_at": "2026-09-19T15:01:56.433Z",
-  "data_stale": true,
+  "business_day": 19,
+  "updated_at": "2026-09-19T22:06:23.645Z",
+  "data_stale": false,
   "today": {
-    "x": "posted",
-    "instagram": "posted"
+    "x": "ready",
+    "instagram": "ready"
   },
   "owner_actions": [
+    "Day19 X投稿(content/x/day19_post.md)・IG Reel(day19.mp4)を確認・投稿承認",
     "Revenue Content「Nottaの向かない人」(notta-fit-boundary.mp4)はCOO承認済み(Revenue Experiment扱い)。X・Instagramへの投稿操作をお願いします(公開後24時間で指標を追跡します)",
-    "A8.netへの再ログイン(Revenue Ops P0、notta_clicksデータが2日超stale、Claudeはログイン不可のためOwner専管)",
-    "X Conversation Approval Batch(@kouya_sns01への再返信案・@panana39への再返信案、計2件)を確認・投稿承認"
+    "A8.netへの再ログイン(Revenue Ops P0、notta_clicksデータが2日超stale、Claudeはログイン不可のためOwner専管)"
   ],
   "revenue_funnel": [
     {
       "label": "content",
-      "value": 14
+      "value": 13
     },
     {
       "label": "note_lp",
@@ -40,7 +40,7 @@
     },
     {
       "label": "Morning",
-      "state": "green"
+      "state": "yellow"
     },
     {
       "label": "Evening",
@@ -66,22 +66,22 @@
     "reel_url": null,
     "posted": false
   },
-  "next_x_status": "posted",
-  "next_reel_status": "posted",
+  "next_x_status": "ready",
+  "next_reel_status": "ready",
   "latest_learning": "Day17〜19にかけて、AI側の「記録」と実際の状態がズレる同型の問題が3回連続で発覚した: (1)Day17=承認待ち表示のままOwnerが先に投稿済み、(2)Day18=@kouya_sns01の好意的コメントに6日間気づけていなかった(確認する工程自体が無かった)、(3)Day19=ChatGPT COOが見ていたSSOTがDate Rollover直後の中間状態のまま2時間古かった(再生成タイミングの抜け)。さらにImplementation Auditで、claude.code_ai Reel Research(Template v2・Hook Variant・evidence overlay・importance-weighted pacing)が2026-09-17策定後、日次Reel生成pipeline(DayNCharacterHybrid.tsx)に一度も接続されてい…（全文はdata/publish/today.json: ai_learning参照）",
   "next_hypothesis": "Day19 Reel(Template v2 canonical component検証第1弾、Hook Variant B_FAILURE)はOwner投稿承認待ち。Audience Response 24時間以内検知の日次Routine組み込みはP1で継続(未着手)。Revenue Content「Nottaの向かない人」も投稿承認待ちのまま(投稿後24時間追跡タスク登録済み)。",
   "freshness": {
     "today": {
-      "updated_at": "2026-09-19T15:01:56.433Z",
-      "business_day": 18
+      "updated_at": "2026-09-19T22:06:23.645Z",
+      "business_day": 19
     },
     "revenue": {
-      "updated_at": "2026-09-19T15:01:56.433Z",
+      "updated_at": "2026-09-19T22:06:23.645Z",
       "source_checked_at": "2026-09-16T22:06:00+09:00",
       "data_stale": true
     },
     "metrics": {
-      "updated_at": "2026-09-19T15:01:56.433Z",
+      "updated_at": "2026-09-19T22:06:23.645Z",
       "source_checked_at": "2026-09-19",
       "data_stale": true
     },
@@ -108,9 +108,9 @@
     "learning": {
       "day": 18,
       "status": null,
-      "stale": false,
-      "flag": null,
-      "reason": null
+      "stale": true,
+      "flag": "LEARNING_STALE",
+      "reason": "ai_learning.day (18) is older than the current business_day (19)"
     },
     "semantic_stale": false,
     "semantic_stale_reason": null

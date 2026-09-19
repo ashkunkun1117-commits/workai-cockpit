@@ -4,6 +4,20 @@
 
 ---
 
+## 2026-09-20 (Pre-Morning Routine — Day19 Date Rollover)
+
+Missed Routine Coalescing判定: 直近routine_scheduler.logはEvening(2026-09-19 22:30〜22:38)まで
+成功実行済み、後続のPre-Morning/Morningは未実行のためSUPERSEDEDに非該当、通常フル実行。
+today.json/CockpitともDay18/2026-09-19 → Day19/2026-09-20へ更新。Day18分(X投稿
+status/2101072793186263329・IG Reel reel/DdchiXTyUaQ/、いずれもEvening時点で実測済み)を
+historyへ移動。Day19 X投稿(content/x/day19_post.md)・Reel(day19.mp4、Template v2 canonical
+component検証第1弾)はいずれもready、Owner投稿承認待ちとしてTODAYへ反映。Day20分は未着手のため
+not_readyのまま正直に表示。carryover該当なし(get_tasksのreview状態5件は既存Business QA
+PASS済みで変化なし)。Approval Queue pending=0。Cockpit commit b2d7911・push・Pages build built
+一致・live current.json business_day=19確認までPASS(MORNING_COCKPIT_READY)。
+
+---
+
 ## 2026-09-19 (Evening Routine実行記録)
 
 Day18 Evening Routine実行。Missed Routine Coalescing判定でSUPERSEDEDに非該当のため通常フル実行。
