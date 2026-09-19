@@ -1,24 +1,8 @@
 {
-  "business_day": 18,
-  "business_date": "2026-09-19",
-  "generated_at": "2026-09-19T22:35:00+09:00",
+  "business_day": 19,
+  "business_date": "2026-09-20",
+  "generated_at": "2026-09-20T05:47:00+09:00",
   "today": {
-    "x_post": {
-      "status": "published",
-      "text_file": "content/x/day18_post.md",
-      "url": "https://x.com/workai_lab777/status/2101072793186263329",
-      "note": "Owner手動投稿済み(2026-09-19 07:16 JST、実機Playwright確認、本文完全一致)。Evening時点実測: impressions=3、返信0件。",
-      "text": "9/12についた好意的なコメントに、6日間気づけていませんでした。見逃しではなく、見にいく工程がそもそも仕組みに無かった。基準を「仕組みの有無」から「24時間以内に気づけるか」へ変えました。\n\nAIでできる仕事は、AIに。\nDay18/100"
-    },
-    "ig_reel": {
-      "status": "published",
-      "video_file": "day18-reel.mp4",
-      "url": "https://www.instagram.com/workai_lab777/reel/DdchiXTyUaQ/",
-      "note": "Owner手動投稿済み(2026-09-19、実機Playwright確認、キャプション完全一致)。Evening時点実測(投稿から約14時間後): views=96, reach(閲覧者)=92(フォロワー2.1%/非フォロワー97.9%)、いいね/コメント/保存/シェアいずれも0。",
-      "caption_text": "応援してくれたコメントに、6日間気づいていませんでした。\n\n9月12日、Xの投稿に「AI制作・人間公開の役割分担が事故を減らす」という、好意的なコメントをいただいていました。\n\n気づいたのは、6日後の9月18日、夜の運用チェックで実機を確認したときです。\n\n原因は「見逃していた」ことではなく、そもそも日次の運用の中に「Xのコメントを確認する」という工程自体が無かったこと。仕組みが元から存在していませんでした。\n\nこの発見を受けて、基準を変えました。「確認する仕組みがあるかどうか」ではなく、「24時間以内に気づけているかどうか」へ。\n\n24時間以内に気づける仕組みへの実装は、まだこれからです。ここは正直に、次の宿題として残します。\n\nAIでできる仕事は、AIに。\nDay 18 / 100\n#AI仕事研究所 #100日実験 #自動化 #仕事効率化 #AIパートナー\n\nVOICEVOX：青山龍星"
-    }
-  },
-  "tomorrow": {
     "x_post": {
       "status": "ready",
       "text_file": "content/x/day19_post.md",
@@ -30,6 +14,18 @@
       "video_file": "day19.mp4",
       "note": "Claude制作完了(Template v2 canonical component、32.93秒、VOICEVOX青山龍星、Hook Variant B_FAILURE)。独立QA PASS(ffprobe/silencedetect/frame目視、reel_hook_experiment.csv自動記録確認)。Owner投稿承認待ち。",
       "caption_text": "ChatGPT COOが見ていたSSOTは、2時間前のままでした。\n\nDay18のX投稿もInstagram Reelも、もう投稿は終わっていました。でもSSOT上は「未着手」のまま記録されていました。\n\n原因は見逃しではありません。Date Rolloverの直後にpushしたまま、その後下書きを作った時点で再生成していなかったこと。中間状態が、そのまま古い記録として残っていました。\n\nこれを受けて、投稿確認やRevenue Content公開など、実態が変わるたびにSSOTを再生成してpushする運用へ変えました。\n\nAIでできる仕事は、AIに。\nDay 19 / 100\n#AI仕事研究所 #100日実験 #自動化 #仕事効率化 #AIパートナー\n\nVOICEVOX：青山龍星"
+    }
+  },
+  "tomorrow": {
+    "x_post": {
+      "status": "not_ready",
+      "text_file": null,
+      "note": "Day20分は未着手。Morning Routine(07:00)でContent Editorへ制作依頼予定。"
+    },
+    "ig_reel": {
+      "status": "not_ready",
+      "video_file": null,
+      "note": "Day20分は未着手。Morning Routine(07:00)でCreative Engineerへ制作依頼予定。"
     }
   },
   "business_progress": {
@@ -61,6 +57,27 @@
   },
   "carryover": [],
   "history": [
+    {
+      "type": "x_post",
+      "day": 18,
+      "status": "completed",
+      "url": "https://x.com/workai_lab777/status/2101072793186263329",
+      "actual_published_at": "2026-09-19T07:16:00+09:00",
+      "verification_source": "実機Playwright確認(workai_lab777、本文完全一致)、Evening Routine Manual Publish Verification",
+      "verified_at": "2026-09-19T22:35:00+09:00",
+      "verification_note": "impressions=3、返信0件(投稿から約15時間後実測、kpi_daily.csv Day18行へ反映済み)。"
+    },
+    {
+      "type": "ig_reel",
+      "day": 18,
+      "status": "completed",
+      "url": "https://www.instagram.com/workai_lab777/reel/DdchiXTyUaQ/",
+      "video_file": "day18-reel.mp4",
+      "actual_published_at": null,
+      "verification_source": "実機Playwright確認(workai_lab777、キャプション完全一致)、Evening Routine Manual Publish Verification",
+      "verified_at": "2026-09-19T22:35:00+09:00",
+      "verification_note": "投稿から約14時間後実測: views=96, reach(閲覧者)=92(フォロワー2.1%/非フォロワー97.9%)、いいね/コメント/保存/シェアいずれも0(post_insights_log.csvへ記録済み)。正確なpublish時刻はInstagram UI上取得できず未記録(推測しない)。"
+    },
     {
       "type": "x_post",
       "day": 17,
@@ -226,6 +243,7 @@
     }
   ],
   "owner_actions": [
+    "Day19 X投稿(content/x/day19_post.md)・IG Reel(day19.mp4)を確認・投稿承認",
     "Revenue Content「Nottaの向かない人」(notta-fit-boundary.mp4)はCOO承認済み(Revenue Experiment扱い)。X・Instagramへの投稿操作をお願いします(公開後24時間で指標を追跡します)",
     "A8.netへの再ログイン(Revenue Ops P0、notta_clicksデータが2日超stale、Claudeはログイン不可のためOwner専管)",
     "X Conversation Approval Batch(@kouya_sns01への再返信案・@panana39への再返信案、計2件)を確認・投稿承認"
@@ -297,9 +315,9 @@
     "revenue_check": "Notta Revenue Content(notta-fit-boundary.mp4)はCOO承認済みのままOwner投稿待ち。notta_clicksは引き続きA8.net再ログイン待ちでDATA STALE。Revenue/Profitとも0円のまま変化なし。",
     "codex_result_review": "get_tasks(status=review)の5件(Auto Handoff受入・Pending Task Watch v1・Template v2 Pilot・Cockpit v4・Shared SSOT v1)はいずれもreview_status=passで過去にClaude Business QA完了済み、本日新規の変化なし。Codexクォータは2026-09-20リセット予定のため新規Engineering Handoffは作成せず待機。"
   },
-  "current_date": "2026-09-19",
-  "data_updated_at": "2026-09-19T22:35:00+09:00",
-  "public_updated_at": "2026-09-19T14:58:13.003Z",
+  "current_date": "2026-09-20",
+  "data_updated_at": "2026-09-20T05:47:00+09:00",
+  "public_updated_at": "2026-09-19T20:48:33.963Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -648,26 +666,10 @@
     ]
   },
   "source_manifest": {
-    "business_day": 18,
-    "business_date": "2026-09-19",
-    "generated_at": "2026-09-19T22:35:00+09:00",
+    "business_day": 19,
+    "business_date": "2026-09-20",
+    "generated_at": "2026-09-20T05:47:00+09:00",
     "today": {
-      "x_post": {
-        "status": "published",
-        "text_file": "content/x/day18_post.md",
-        "url": "https://x.com/workai_lab777/status/2101072793186263329",
-        "note": "Owner手動投稿済み(2026-09-19 07:16 JST、実機Playwright確認、本文完全一致)。Evening時点実測: impressions=3、返信0件。",
-        "text": "9/12についた好意的なコメントに、6日間気づけていませんでした。見逃しではなく、見にいく工程がそもそも仕組みに無かった。基準を「仕組みの有無」から「24時間以内に気づけるか」へ変えました。\n\nAIでできる仕事は、AIに。\nDay18/100"
-      },
-      "ig_reel": {
-        "status": "published",
-        "video_file": "day18-reel.mp4",
-        "url": "https://www.instagram.com/workai_lab777/reel/DdchiXTyUaQ/",
-        "note": "Owner手動投稿済み(2026-09-19、実機Playwright確認、キャプション完全一致)。Evening時点実測(投稿から約14時間後): views=96, reach(閲覧者)=92(フォロワー2.1%/非フォロワー97.9%)、いいね/コメント/保存/シェアいずれも0。",
-        "caption_text": "応援してくれたコメントに、6日間気づいていませんでした。\n\n9月12日、Xの投稿に「AI制作・人間公開の役割分担が事故を減らす」という、好意的なコメントをいただいていました。\n\n気づいたのは、6日後の9月18日、夜の運用チェックで実機を確認したときです。\n\n原因は「見逃していた」ことではなく、そもそも日次の運用の中に「Xのコメントを確認する」という工程自体が無かったこと。仕組みが元から存在していませんでした。\n\nこの発見を受けて、基準を変えました。「確認する仕組みがあるかどうか」ではなく、「24時間以内に気づけているかどうか」へ。\n\n24時間以内に気づける仕組みへの実装は、まだこれからです。ここは正直に、次の宿題として残します。\n\nAIでできる仕事は、AIに。\nDay 18 / 100\n#AI仕事研究所 #100日実験 #自動化 #仕事効率化 #AIパートナー\n\nVOICEVOX：青山龍星"
-      }
-    },
-    "tomorrow": {
       "x_post": {
         "status": "ready",
         "text_file": "content/x/day19_post.md",
@@ -679,6 +681,18 @@
         "video_file": "day19.mp4",
         "note": "Claude制作完了(Template v2 canonical component、32.93秒、VOICEVOX青山龍星、Hook Variant B_FAILURE)。独立QA PASS(ffprobe/silencedetect/frame目視、reel_hook_experiment.csv自動記録確認)。Owner投稿承認待ち。",
         "caption_text": "ChatGPT COOが見ていたSSOTは、2時間前のままでした。\n\nDay18のX投稿もInstagram Reelも、もう投稿は終わっていました。でもSSOT上は「未着手」のまま記録されていました。\n\n原因は見逃しではありません。Date Rolloverの直後にpushしたまま、その後下書きを作った時点で再生成していなかったこと。中間状態が、そのまま古い記録として残っていました。\n\nこれを受けて、投稿確認やRevenue Content公開など、実態が変わるたびにSSOTを再生成してpushする運用へ変えました。\n\nAIでできる仕事は、AIに。\nDay 19 / 100\n#AI仕事研究所 #100日実験 #自動化 #仕事効率化 #AIパートナー\n\nVOICEVOX：青山龍星"
+      }
+    },
+    "tomorrow": {
+      "x_post": {
+        "status": "not_ready",
+        "text_file": null,
+        "note": "Day20分は未着手。Morning Routine(07:00)でContent Editorへ制作依頼予定。"
+      },
+      "ig_reel": {
+        "status": "not_ready",
+        "video_file": null,
+        "note": "Day20分は未着手。Morning Routine(07:00)でCreative Engineerへ制作依頼予定。"
       }
     },
     "business_progress": {
@@ -710,6 +724,27 @@
     },
     "carryover": [],
     "history": [
+      {
+        "type": "x_post",
+        "day": 18,
+        "status": "completed",
+        "url": "https://x.com/workai_lab777/status/2101072793186263329",
+        "actual_published_at": "2026-09-19T07:16:00+09:00",
+        "verification_source": "実機Playwright確認(workai_lab777、本文完全一致)、Evening Routine Manual Publish Verification",
+        "verified_at": "2026-09-19T22:35:00+09:00",
+        "verification_note": "impressions=3、返信0件(投稿から約15時間後実測、kpi_daily.csv Day18行へ反映済み)。"
+      },
+      {
+        "type": "ig_reel",
+        "day": 18,
+        "status": "completed",
+        "url": "https://www.instagram.com/workai_lab777/reel/DdchiXTyUaQ/",
+        "video_file": "day18-reel.mp4",
+        "actual_published_at": null,
+        "verification_source": "実機Playwright確認(workai_lab777、キャプション完全一致)、Evening Routine Manual Publish Verification",
+        "verified_at": "2026-09-19T22:35:00+09:00",
+        "verification_note": "投稿から約14時間後実測: views=96, reach(閲覧者)=92(フォロワー2.1%/非フォロワー97.9%)、いいね/コメント/保存/シェアいずれも0(post_insights_log.csvへ記録済み)。正確なpublish時刻はInstagram UI上取得できず未記録(推測しない)。"
+      },
       {
         "type": "x_post",
         "day": 17,
@@ -875,6 +910,7 @@
       }
     ],
     "owner_actions": [
+      "Day19 X投稿(content/x/day19_post.md)・IG Reel(day19.mp4)を確認・投稿承認",
       "Revenue Content「Nottaの向かない人」(notta-fit-boundary.mp4)はCOO承認済み(Revenue Experiment扱い)。X・Instagramへの投稿操作をお願いします(公開後24時間で指標を追跡します)",
       "A8.netへの再ログイン(Revenue Ops P0、notta_clicksデータが2日超stale、Claudeはログイン不可のためOwner専管)",
       "X Conversation Approval Batch(@kouya_sns01への再返信案・@panana39への再返信案、計2件)を確認・投稿承認"
