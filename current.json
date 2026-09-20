@@ -21,12 +21,12 @@
     "x_post": {
       "status": "not_ready",
       "text_file": null,
-      "note": "Day21分は本Evening Routine時点で未着手。Content Editorへ先行制作を依頼予定(次工程)。"
+      "note": "Content Editorが検討の結果、意図的に見送り(content/reel-json/day21_skip-rationale.md)。候補2件(Notta新規市場シグナル/SSOT乖離ストーリー)とも捏造・水増しになるため不採用と判断、Claudeも同意。@ozge_boyraz46/@andymochizukiへの戦略返信が実際に送信され本人から返信を得られた時点で一次体験として再検討。"
     },
     "ig_reel": {
       "status": "not_ready",
       "video_file": null,
-      "note": "Day21分は未着手。Content Editor完成後にCreative Engineerへ引き継ぐ。"
+      "note": "X投稿と同じ理由で見送り。Reel制作(Creative Engineer)への引き継ぎも発生せず。"
     }
   },
   "business_progress": {
@@ -379,7 +379,7 @@
   },
   "current_date": "2026-09-21",
   "data_updated_at": "2026-09-21T00:20:00+09:00",
-  "public_updated_at": "2026-09-20T15:15:08.954Z",
+  "public_updated_at": "2026-09-20T15:21:10.487Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -768,12 +768,12 @@
       "x_post": {
         "status": "not_ready",
         "text_file": null,
-        "note": "Day21分は本Evening Routine時点で未着手。Content Editorへ先行制作を依頼予定(次工程)。"
+        "note": "Content Editorが検討の結果、意図的に見送り(content/reel-json/day21_skip-rationale.md)。候補2件(Notta新規市場シグナル/SSOT乖離ストーリー)とも捏造・水増しになるため不採用と判断、Claudeも同意。@ozge_boyraz46/@andymochizukiへの戦略返信が実際に送信され本人から返信を得られた時点で一次体験として再検討。"
       },
       "ig_reel": {
         "status": "not_ready",
         "video_file": null,
-        "note": "Day21分は未着手。Content Editor完成後にCreative Engineerへ引き継ぐ。"
+        "note": "X投稿と同じ理由で見送り。Reel制作(Creative Engineer)への引き継ぎも発生せず。"
       }
     },
     "business_progress": {
@@ -1407,6 +1407,18 @@
         "exit_code": 0,
         "success": true,
         "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\morning_2026-09-20_070002.log"
+      },
+      {
+        "routine": "evening",
+        "scheduled_at": "2026-09-21T22:30:00",
+        "started_at": "2026-09-21T00:05:00.000Z",
+        "finished_at": "2026-09-20T15:19:08.643Z",
+        "exit_code": 0,
+        "success": true,
+        "invocation": "manual_chat_slash_command",
+        "status": "SUCCESS",
+        "note": "Day20 Date Rollover代行(Pre-Morning/Morning未実行のため)。Day20 X投稿・Reel制作完了済みをClaude Business QA PASSさせready化、Owner投稿承認へ。未反映Owner追加X投稿(Notta note再訴求)をhistory/kpi_daily.csvへ反映。stale戦略返信下書き3件は時間減衰により見送り。Cockpit commit e564f0a・push・現行current.json実機確認PASS(business_day=20一致、builds API側はbuilding表示のまま)。",
+        "log_file": null
       }
     ],
     "tasks": [
