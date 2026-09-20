@@ -286,7 +286,8 @@
   ],
   "owner_actions": [
     "Revenue Content「Nottaの向かない人」(notta-fit-boundary.mp4)はCOO承認済み(Revenue Experiment扱い)。X・Instagramへの投稿操作をお願いします(公開後24時間で指標を追跡します)。2026-09-21 00:1x JST時点で実機確認、まだ未投稿(task 1001b4e9はOVERDUE)。",
-    "Day20 X投稿(content/x/day20_post.md)・Instagram Reel(day20.mp4+content/instagram/day20_caption.md)はClaude Business QA PASS済み。投稿操作をお願いします。"
+    "Day20 X投稿(content/x/day20_post.md)・Instagram Reel(day20.mp4+content/instagram/day20_caption.md)はClaude Business QA PASS済み。投稿操作をお願いします。",
+    "(緊急度低・お手すきの際で可) Xの自動化用ブラウザが2026-09-17から5日連続で未ログイン状態です(Instagram側は継続してログイン済み)。新規の戦略返信候補探索がブロックされています。ご都合の良いタイミングでPlaywrightブラウザ側のXへ再ログインをお願いします。"
   ],
   "approval_queue": [],
   "ai_learning": {
@@ -315,6 +316,16 @@
     "content_production": "Day20 Own Content(X投稿・Reel台本・IGキャプション)をContent Editorへ依頼(作業中)。題材選定の根拠: 2026-09-07〜09にかけて@forestkinoko/@tianyezhiz60405/@himazin_bivarの3アカウントから独立に『AIで浮いた時間を実際どう使っているか』という同種の指摘・質問を受けており(data/x-replies/ledger.csv実データ)、Own Content側ではまだ正面から扱っていなかった。Day16-19が4日連続で内部システムバグの話だったため、Audience Value(Final Business Test基準4)を優先し話題を切り替えた。捏造禁止・回答が『まだ設計できていない』という正直な内容でもそのまま使うよう指示済み。",
     "codex_handoff": "新規Engineering Task作成なし。既存review状態タスク(Cockpit v4/Shared SSOT v1/Pending Task Watch v1/Template v2 Pilot)はいずれもreview_status=passで変化なし。Codexクォータのリセット提示日(2026-09-20)が本日のため、リセット後の状態は次回の技術的ボトルネック発生時に確認する。",
     "owner_action_backlog_note": "Notta Revenue Content投稿依頼(2026-09-18作成、task 1001b4e9はwatch_state=OVERDUEのまま2日超経過)・A8.net再ログイン(2026-09-16 22:06以降stale)・X Approval Batch(@panana39/@kouya_sns01)の3件が複数日にわたり未消化。Ownerの作業時間制約(CLAUDE.md Human Time原則、1日30分以内目安)を踏まえ、催促の頻度は増やさずBriefで正直に可視化するに留めた。"
+  },
+  "morning_2026-09-21_findings": {
+    "missed_routine_coalescing": "直前のEvening(00:05〜00:21)がDay20 Date Rollover/Cockpit更新を代行済みだが、当日Morning(07:00)自体は未実行だったためSUPERSEDEDに該当せず、通常フル実行した。",
+    "manual_publish_verification": "carryoverは空のまま。X/Instagram実機確認、Day20 X投稿・IG Reel・Notta Revenue Contentとも前回Evening確認時点(00:20頃)から変化なく未投稿。reconcile不要。",
+    "x_conversation_check": "waiting中4会話(forestkinoko/narisumashi100/yukissense/omuat)を再確認、いずれも新規author返信なし(narisumashi100は引き続き非ログイン制約で確認不能)。自社投稿にも新規コメントなし。Approval Batch該当0件。",
+    "x_state": "unauthenticated確定(/home・/notifications・/searchいずれも明示的ログインフォームへリダイレクト)。2026-09-17から5日連続。Instagramはこの間ずっとauthenticatedのままで、2026-09-08〜10のブラウザプロファイル競合による誤検知とはパターンが異なると判断し、owner_actionsへ軽い再ログイン依頼を追加した(緊急度低、既存2件を優先)。",
+    "ig_state": "authenticated(プロフィール編集リンク表示)。",
+    "day21_content": "day21_skip-rationale.mdの見送り判断を維持。@ozge_boyraz46/@andymochizuki宛下書きは未投稿のままSTALEのため再検討条件(本人から返信取得)は未達。Content Editorへの新規制作指示は今回見送り、tomorrow.status=not_readyを維持。",
+    "cockpit": "前回Evening更新分(commit e564f0a、business_day=20)と本番Cockpitのcurrent.jsonが完全一致することを実機curlで確認済みのため、再生成・再pushは行わなかった。",
+    "codex_handoff": "da79a4b8(2026-09-15からassigned停止)・task 1001b4e9(Notta 24hトラッキング、OVERDUE)とも変化なし。優先順位(市場接触>コンテンツ公開>計測>収益検証>新規Infrastructure)に照らし新規Engineering Handoffは起票せず。"
   },
   "kpi": {
     "revenue_jpy": 0,
@@ -379,7 +390,7 @@
   },
   "current_date": "2026-09-21",
   "data_updated_at": "2026-09-21T00:20:00+09:00",
-  "public_updated_at": "2026-09-20T15:21:10.487Z",
+  "public_updated_at": "2026-09-20T22:10:27.842Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -1033,7 +1044,8 @@
     ],
     "owner_actions": [
       "Revenue Content「Nottaの向かない人」(notta-fit-boundary.mp4)はCOO承認済み(Revenue Experiment扱い)。X・Instagramへの投稿操作をお願いします(公開後24時間で指標を追跡します)。2026-09-21 00:1x JST時点で実機確認、まだ未投稿(task 1001b4e9はOVERDUE)。",
-      "Day20 X投稿(content/x/day20_post.md)・Instagram Reel(day20.mp4+content/instagram/day20_caption.md)はClaude Business QA PASS済み。投稿操作をお願いします。"
+      "Day20 X投稿(content/x/day20_post.md)・Instagram Reel(day20.mp4+content/instagram/day20_caption.md)はClaude Business QA PASS済み。投稿操作をお願いします。",
+      "(緊急度低・お手すきの際で可) Xの自動化用ブラウザが2026-09-17から5日連続で未ログイン状態です(Instagram側は継続してログイン済み)。新規の戦略返信候補探索がブロックされています。ご都合の良いタイミングでPlaywrightブラウザ側のXへ再ログインをお願いします。"
     ],
     "approval_queue": [],
     "ai_learning": {
@@ -1062,6 +1074,16 @@
       "content_production": "Day20 Own Content(X投稿・Reel台本・IGキャプション)をContent Editorへ依頼(作業中)。題材選定の根拠: 2026-09-07〜09にかけて@forestkinoko/@tianyezhiz60405/@himazin_bivarの3アカウントから独立に『AIで浮いた時間を実際どう使っているか』という同種の指摘・質問を受けており(data/x-replies/ledger.csv実データ)、Own Content側ではまだ正面から扱っていなかった。Day16-19が4日連続で内部システムバグの話だったため、Audience Value(Final Business Test基準4)を優先し話題を切り替えた。捏造禁止・回答が『まだ設計できていない』という正直な内容でもそのまま使うよう指示済み。",
       "codex_handoff": "新規Engineering Task作成なし。既存review状態タスク(Cockpit v4/Shared SSOT v1/Pending Task Watch v1/Template v2 Pilot)はいずれもreview_status=passで変化なし。Codexクォータのリセット提示日(2026-09-20)が本日のため、リセット後の状態は次回の技術的ボトルネック発生時に確認する。",
       "owner_action_backlog_note": "Notta Revenue Content投稿依頼(2026-09-18作成、task 1001b4e9はwatch_state=OVERDUEのまま2日超経過)・A8.net再ログイン(2026-09-16 22:06以降stale)・X Approval Batch(@panana39/@kouya_sns01)の3件が複数日にわたり未消化。Ownerの作業時間制約(CLAUDE.md Human Time原則、1日30分以内目安)を踏まえ、催促の頻度は増やさずBriefで正直に可視化するに留めた。"
+    },
+    "morning_2026-09-21_findings": {
+      "missed_routine_coalescing": "直前のEvening(00:05〜00:21)がDay20 Date Rollover/Cockpit更新を代行済みだが、当日Morning(07:00)自体は未実行だったためSUPERSEDEDに該当せず、通常フル実行した。",
+      "manual_publish_verification": "carryoverは空のまま。X/Instagram実機確認、Day20 X投稿・IG Reel・Notta Revenue Contentとも前回Evening確認時点(00:20頃)から変化なく未投稿。reconcile不要。",
+      "x_conversation_check": "waiting中4会話(forestkinoko/narisumashi100/yukissense/omuat)を再確認、いずれも新規author返信なし(narisumashi100は引き続き非ログイン制約で確認不能)。自社投稿にも新規コメントなし。Approval Batch該当0件。",
+      "x_state": "unauthenticated確定(/home・/notifications・/searchいずれも明示的ログインフォームへリダイレクト)。2026-09-17から5日連続。Instagramはこの間ずっとauthenticatedのままで、2026-09-08〜10のブラウザプロファイル競合による誤検知とはパターンが異なると判断し、owner_actionsへ軽い再ログイン依頼を追加した(緊急度低、既存2件を優先)。",
+      "ig_state": "authenticated(プロフィール編集リンク表示)。",
+      "day21_content": "day21_skip-rationale.mdの見送り判断を維持。@ozge_boyraz46/@andymochizuki宛下書きは未投稿のままSTALEのため再検討条件(本人から返信取得)は未達。Content Editorへの新規制作指示は今回見送り、tomorrow.status=not_readyを維持。",
+      "cockpit": "前回Evening更新分(commit e564f0a、business_day=20)と本番Cockpitのcurrent.jsonが完全一致することを実機curlで確認済みのため、再生成・再pushは行わなかった。",
+      "codex_handoff": "da79a4b8(2026-09-15からassigned停止)・task 1001b4e9(Notta 24hトラッキング、OVERDUE)とも変化なし。優先順位(市場接触>コンテンツ公開>計測>収益検証>新規Infrastructure)に照らし新規Engineering Handoffは起票せず。"
     },
     "kpi": {
       "revenue_jpy": 0,
@@ -1419,6 +1441,35 @@
         "status": "SUCCESS",
         "note": "Day20 Date Rollover代行(Pre-Morning/Morning未実行のため)。Day20 X投稿・Reel制作完了済みをClaude Business QA PASSさせready化、Owner投稿承認へ。未反映Owner追加X投稿(Notta note再訴求)をhistory/kpi_daily.csvへ反映。stale戦略返信下書き3件は時間減衰により見送り。Cockpit commit e564f0a・push・現行current.json実機確認PASS(business_day=20一致、builds API側はbuilding表示のまま)。",
         "log_file": null
+      },
+      {
+        "routine": "evening",
+        "scheduled_at": "2026-09-21T22:30:00",
+        "started_at": "2026-09-21T00:05:42",
+        "finished_at": "2026-09-21T00:21:24",
+        "exit_code": 0,
+        "success": true,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\evening_2026-09-21_000542.log"
+      },
+      {
+        "routine": "premorning",
+        "scheduled_at": "2026-09-21T05:45:00",
+        "started_at": "2026-09-20T20:46:30.932Z",
+        "finished_at": "2026-09-20T20:46:30.933Z",
+        "exit_code": 0,
+        "success": true,
+        "status": "MISSED_SUPERSEDED",
+        "note": "Day20/2026-09-21へのDate Rollover・Cockpit更新は既に先行のEvening Routine実行(commit e564f0a、started_at 2026-09-21T00:05)で完了済み。get_business_day=Day20、today.json generated_at=2026-09-21T00:20+09:00、Public Cockpit(current.json)ともbusiness_day=20で一致確認。Approval Queue pending=0、owner_actionsも当日分のみで陳腐化なし。フル実行(市場分析等)は行わずreconciliationのみ。",
+        "log_file": null
+      },
+      {
+        "routine": "premorning",
+        "scheduled_at": "2026-09-21T05:45:00",
+        "started_at": "2026-09-21T05:45:02",
+        "finished_at": "2026-09-21T05:46:47",
+        "exit_code": 0,
+        "success": true,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\premorning_2026-09-21_054502.log"
       }
     ],
     "tasks": [
