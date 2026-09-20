@@ -1,6 +1,6 @@
 {
   "business_day": 19,
-  "updated_at": "2026-09-20T01:35:30.359Z",
+  "updated_at": "2026-09-20T01:36:50.953Z",
   "data_stale": false,
   "today": {
     "x": "posted",
@@ -71,16 +71,16 @@
   "next_hypothesis": "Revenue Content「Nottaの向かない人」は投稿承認待ちのまま(投稿後24時間追跡タスク登録済み)。A8.netログイン未確立が継続(4日超stale)、Owner再ログインが最優先のOwner Action。次のNotta Revenue Contentは『ハードウェア型AIボイスレコーダーとの比較』角度を検討価値あり(@ozge_boyraz46から着想)。",
   "freshness": {
     "today": {
-      "updated_at": "2026-09-20T01:35:30.359Z",
+      "updated_at": "2026-09-20T01:36:50.953Z",
       "business_day": 19
     },
     "revenue": {
-      "updated_at": "2026-09-20T01:35:30.359Z",
+      "updated_at": "2026-09-20T01:36:50.953Z",
       "source_checked_at": "2026-09-16T22:06:00+09:00",
       "data_stale": true
     },
     "metrics": {
-      "updated_at": "2026-09-20T01:35:30.359Z",
+      "updated_at": "2026-09-20T01:36:50.953Z",
       "source_checked_at": "2026-09-20",
       "data_stale": false
     },
