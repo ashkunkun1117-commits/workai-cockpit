@@ -4,6 +4,22 @@
 
 ---
 
+## 2026-09-20 (COO指令「POST OWNER ACTION RECONCILIATION」対応)
+
+指令内容: Owner Action完了後の実態確認(A8最新データ/X Strategic Reply/Notta Revenue Content/SSOT・Cockpit更新)。推測禁止、実確認できたデータのみ反映。
+
+**A8最新データ**: Owner再ログイン完了を実機確認(メディアID a26090152374、サイト名workai_lab777様で認証済み画面表示)。Notta Memoプログラム(s00000024524002)を個別指定し、2026年1月〜9月の期間で成果詳細レポートを確認したが「指定された条件で表示できるレポートデータがありません」= clicks/CV/revenueとも実質0のまま変化なし。`notta_clicks_checked_at`を2026-09-20T11:08:00+09:00へ更新(推測ではなく実機確認に基づく)。
+
+**X Strategic Reply**: 前回ターンで承認・投稿済みの2件(@kouya_sns01: status/2101484636295909588、@panana39: status/2101485002110468334)を再確認、ledger.csvは既にclosed。新規の変化なし。
+
+**Notta Revenue Content**: X最新ポスト(実機確認、直近はDay19 SSOT投稿のまま)・Instagramグリッド(直近10件を実機確認、Day19〜Day8相当まで該当キャプションなし)いずれも「Nottaの向かない人」への言及・該当動画を検出できず。引き続き未投稿と判定、24h追跡タスクは未起動のまま。
+
+**owner_actions更新**: 「A8.netへの再ログイン」は解消(Owner完了)につき削除。新規に「note記事内Nottaリンクのハイパーリンク化」を追加(前回指令でリンク自体は正しいがプレーンテキスト未リンク化と判明した実データに基づく)。Revenue Content投稿依頼は継続。
+
+**結論**: A8のclicks=0は「トラッキング不備」ではなく「note記事側のリンク未設置(クリックできないプレーンテキスト)」が原因と確定。Owner Actionとして明確化した。
+
+---
+
 ## 2026-09-20 (COO指令「Day19 Operational Refresh」対応)
 
 指令内容: 新規インフラ開発は行わず、Freshness v2でSTALEになった項目を実データで更新する運用日。優先順位: metrics→audience_response→revenue(stale維持)→learning(実データのみ)→Market Radar/Strategic Reply通常運用。
