@@ -4,6 +4,23 @@
 
 ---
 
+## 2026-09-20 (COO指令「Revenue Funnel Restart」対応 — LINK FIXED確認・Experiment Start)
+
+Owner がnote記事(nc5ad7e7ef364)内のNotta A8リンクを修正。実機Playwrightで5項目すべて確認:
+1. クリック可能な`<a href>`タグ化(修正前はプレーンテキストだった段落が`<a>`要素に変化) — PASS
+2. href = `https://px.a8.net/svt/ejp?a8mat=4BC2EH+5NM9O2+5988+BWVTE` — PASS
+3. 実際にクリック(computerツールによる実クリック、JS `.click()`ではない)し、遷移先が`https://shop.notta.ai/ja-jp?a8=...s00000024524002`であることを確認、Program ID(s00000024524002)完全一致 — PASS
+4. Notta公式ストアへの実遷移 — PASS
+5. a8トラッキングパラメータ(`a8=...`)が遷移後も維持 — PASS
+
+**Revenue Experiment正式START**: 2026-09-20T12:48:00+09:00。それ以前のA8 click=0はpre-fix invalid periodとして`today.json`に記録(削除せず、需要評価からは除外)。24h/48h/72h追跡タスクを`create_task`で登録(task_id 98ce9bc9-01da-4279-8acd-91b689b142e7、next_check_at 2026-09-21T12:48 JST)。
+
+**owner_actionsから「リンク修正」を削除**(完了)。Revenue Content「Nottaの向かない人」の投稿依頼は継続(未投稿を実機再確認)。
+
+**current_bottleneckについての制約**: COO指令は`current_bottleneck`を「note LP → affiliate click（導線修正済み、CTR検証中）」へ更新するよう求めたが、この値は`generate-production-cockpit.mjs`の`detectBottleneck()`がfunnel実データ(content/note_lp/click/cv/revenue)から自動算出する仕様であり、手動の自由記述ではない。`note_lp`(note記事のページビュー数)は現状どのデータソースからも取得しておらず値が常にnullのため、アルゴリズムは常に最初の未計測段階である「content → note_lp」で停止し、`click`段階の状態(修正済み/CTR検証中)には到達し得ない。これは今回の作業で新たに発生した制約ではなく既存のギャップであり、正確な表示のためにはnote記事のページビュー計測の追加(新規インフラ)が必要。今回は正直にこの構造的制約を記録し、`current_bottleneck`の文言をハードコードで上書きする(=実データと矛盾する固定文字列を埋め込む)ことはしなかった。source_checked_atは実確認時刻(2026-09-20T12:48+09:00)へ更新、`freshness.revenue.data_stale`はfalseに解消。
+
+---
+
 ## 2026-09-20 (COO指令「POST OWNER ACTION RECONCILIATION」対応)
 
 指令内容: Owner Action完了後の実態確認(A8最新データ/X Strategic Reply/Notta Revenue Content/SSOT・Cockpit更新)。推測禁止、実確認できたデータのみ反映。

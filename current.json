@@ -37,14 +37,16 @@
     "notta_note_note": "公開済み(2026-09-15 22:32) https://note.com/workai_lab777/n/nc5ad7e7ef364 。PR表記・A8リンク・6タグとも実配信を確認済み。",
     "x_announcement": "POSTED_DIVERGED",
     "x_announcement_note": "Owner投稿済み(2026-09-16 07:50 JST Playwright実機確認)。ただし実際の本文はnote.comシェアカード(タイトル+リンクのみ)で、Claude QA承認済みのFINAL全文(一次体験・実測値・向いている人・控えめCTA)とは異なる簡略版だった。投稿自体はOwnerの意思決定でありClaudeは修正・再投稿を行わない。",
-    "notta_clicks": "0(Owner再ログイン完了、A8.net実機確認。Notta Memoプログラム個別指定・2026年1〜9月期間でも「表示できるレポートデータがありません」= clicks/CV/revenueとも実質0)。原因はnote記事(nc5ad7e7ef364)内のNottaリンクがクリック不可のプレーンテキストのまま公開されていたこと(実機検証済み、A8トラッキング自体・遷移先・Program ID一致は正常)。",
-    "notta_clicks_checked_at": "2026-09-20T11:08:00+09:00",
+    "notta_clicks": "LINK FIXED(2026-09-20T12:48 JST実機確認: クリック可能な<a>タグ化・href=px.a8.net・Program ID s00000024524002一致・実クリックでshop.notta.aiへ遷移・a8トラッキングパラメータ維持、5項目すべてPASS)。これをNotta Revenue Experimentの正式STARTとする。それ以前のA8 click=0はpre-fix invalid periodとして記録するが需要評価には使わない(削除しない)。修正後のclicks/CV/revenueは24h/48h/72hで実機追跡(task 98ce9bc9-01da-4279-8acd-91b689b142e7)。",
+    "notta_clicks_checked_at": "2026-09-20T12:48:00+09:00",
+    "notta_revenue_experiment_start": "2026-09-20T12:48:00+09:00",
+    "notta_revenue_experiment_pre_fix_invalid_period": "〜2026-09-20T12:48:00+09:00(A8 click=0、リンク未クリック化のため需要評価対象外)",
     "automation_reel": "PUBLISHED",
     "automation_reel_note": "Instagram投稿確認済み(2026-09-16 08:03 JST、実機Playwright確認。投稿URL: https://www.instagram.com/workai_lab777/reel/DdU1MXYSUkk/)。07:50時点のMorning Routineチェックでは未投稿だったが、その13分後にOwnerが投稿。owner_actionは解消。",
     "afb_audit": "on_hold",
     "afb_audit_note": "Owner再ログイン完了(afb実績も0クリック/0発生を確認)。ただしCOO指令『Notta funnel LIVE化まで新規afb提携は保留』が継続有効のため、TOP3拡大は本日実施せず据え置き。既存TOP2(Plaud.ai/RecCloud AI)のまま。",
     "todays_public_market_outputs": 2,
-    "notta_clicks_note": "2026-09-20 11:08 JST再確認(実機Playwright、Notta Memoプログラム個別指定・2026年1〜9月): clicks=0, CV=0, revenue=¥0のまま変化なし。note記事本文のNottaリンクURLを直接検証したところ、正しいA8アフィリエイトリンク(px.a8.net/svt/ejp、Program ID s00000024524002と一致、遷移先はshop.notta.aiで正常)だが、クリック可能な<a>タグではなくプレーンテキストとして公開されていることを発見。クリックスルー導線がそもそも機能していなかったのがclicks=0の主因と判断(note traffic不足ではなくlink installation不備)。",
+    "notta_clicks_note": "2026-09-20T12:48 JST、Owner修正後を実機Playwrightで再確認: note記事(nc5ad7e7ef364)内のNottaリンクがクリック可能な<a href=\"https://px.a8.net/svt/ejp?a8mat=4BC2EH+5NM9O2+5988+BWVTE\">に修正済み。実際にクリックしてshop.notta.ai(a8=...s00000024524002)へ遷移することを確認、Program ID一致・トラッキングパラメータ維持を実証。Revenue Experiment正式START。24h/48h/72hでnote traffic/A8 clicks/CV/revenueを追跡予定(task 98ce9bc9-01da-4279-8acd-91b689b142e7)。",
     "tomorrow_assets": "IN_PRODUCTION",
     "tomorrow_assets_note": "Day17 X投稿文(content/x/day17_post.md)・Reel台本(content/reel-json/day17_approval_gap_story.md)はContent Editor作成・Claude QA完了。ReelレンダリングはCodex handoff(coord-6ada1af1414838df92b894ff8cba75ba)が2日ブロック継続のため、2026-09-18 Morning RoutineでCreative Engineerへ再ルーティング、動画完成待ち。",
     "strategic_reply": "Owner承認・投稿完了(@yukissense、https://x.com/workai_lab777/status/2100207692967248246)",
@@ -267,8 +269,7 @@
     }
   ],
   "owner_actions": [
-    "Revenue Content「Nottaの向かない人」(notta-fit-boundary.mp4)はCOO承認済み(Revenue Experiment扱い)。X・Instagramへの投稿操作をお願いします(公開後24時間で指標を追跡します)。2026-09-20 11:0x JST時点で実機確認、まだ未投稿。",
-    "note記事(https://note.com/workai_lab777/n/nc5ad7e7ef364)内のNottaリンクをクリック可能なハイパーリンクに修正してください(現在プレーンテキストのため読者がクリックできない状態。A8トラッキング自体・遷移先URLは正常と実機確認済み)"
+    "Revenue Content「Nottaの向かない人」(notta-fit-boundary.mp4)はCOO承認済み(Revenue Experiment扱い)。X・Instagramへの投稿操作をお願いします(公開後24時間で指標を追跡します)。2026-09-20 12:48 JST時点で実機確認、まだ未投稿。"
   ],
   "approval_queue": [],
   "ai_learning": {
@@ -276,7 +277,7 @@
     "observation": "Day19 ReelはTemplate v2 canonical componentでの初の検証としてOwnerが実際に投稿(X impressions=7、IG投稿直後)。Market Radar(2026-09-20、12件収集)で、Notta「向かない人」の主張(単発音源・少人数向け、大人数・固有名詞重視の会議には限界)を独立に補強する実例が見つかった: @andymochizuki(いいね91,000)が『AI議事録は文字起こし・要約はできても構造化・論点抽出は別の技術』という実務上の失敗談を投稿。@ozge_boyraz46は23,000円のAIボイスレコーダーを実購入しており、Notta Memo(低価格帯)との比較企画の需要が実在することを確認。",
     "hypothesis": "「効率化の代償を正直に語る」テーマへの反応の強さは一過性ではなく、Market Radarのたびに再現している。Revenue Contentの優先角度として固定化してよい可能性が高い。",
     "decision": "Template v2をcanonical component化(remotion-video/src/TemplateV2.tsx)し、DayNCharacterHybrid.tsxの複製運用を廃止。Hook Variant/evidence overlay/importance-weighted pacing/CTA分離をQA checklist(publishing-operations-v4.md)で機械的に検証必須化(1つでもFAILならREADY禁止)。",
-    "next_experiment": "Revenue Content「Nottaの向かない人」は投稿承認待ちのまま(投稿後24時間追跡タスク登録済み、2026-09-20 11:0x JST時点で未投稿を再確認)。A8.net再ログインはOwnerが完了、clicks/CV/revenueは0のまま変化なしだが、原因がnote記事内リンクの未クリック化(プレーンテキスト公開)にあることを実機検証で特定。Owner Actionとしてリンク修正を依頼済み。次のNotta Revenue Contentは『ハードウェア型AIボイスレコーダーとの比較』角度を検討価値あり(@ozge_boyraz46から着想)。"
+    "next_experiment": "Owner がnote記事内Nottaリンクをハイパーリンク化、2026-09-20T12:48 JST実機確認でPASS(クリック可能・href=px.a8.net・Program ID一致・実クリックでshop.notta.aiへ遷移・トラッキング維持)。これをNotta Revenue Experimentの正式STARTとし、それ以前のA8 click=0はpre-fix invalid periodとして需要評価対象から除外。24h/48h/72hでnote traffic/A8 clicks/CV/revenueを追跡(task 98ce9bc9-01da-4279-8acd-91b689b142e7)。Revenue Content「Nottaの向かない人」はX/Instagramとも依然未投稿(別Owner Action、継続)。次のNotta Revenue Contentは『ハードウェア型AIボイスレコーダーとの比較』角度を検討価値あり(@ozge_boyraz46から着想)。"
   },
   "morning_2026-09-16_findings": {
     "stale_codex_task_closed": "coord-2eabeb666e9c161e39b98867afc5fd92(Day15 Fixed Schedule Test Day3台本のReel制作)はcontent方針がautomation_gap_storyへ既に差し替わり、day15.mp4として完成・QA PASS済みのためSUPERSEDEDとして扱う(decisions_log.md 2026-09-16参照)。Managed task(handoff)はassigned_to=codexで自分ではclaimできず、ツール上のstatus変更はできなかったため記録のみ。",
@@ -349,7 +350,7 @@
   },
   "current_date": "2026-09-20",
   "data_updated_at": "2026-09-20T07:10:00+09:00",
-  "public_updated_at": "2026-09-20T02:10:14.389Z",
+  "public_updated_at": "2026-09-20T03:51:40.531Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -754,14 +755,16 @@
       "notta_note_note": "公開済み(2026-09-15 22:32) https://note.com/workai_lab777/n/nc5ad7e7ef364 。PR表記・A8リンク・6タグとも実配信を確認済み。",
       "x_announcement": "POSTED_DIVERGED",
       "x_announcement_note": "Owner投稿済み(2026-09-16 07:50 JST Playwright実機確認)。ただし実際の本文はnote.comシェアカード(タイトル+リンクのみ)で、Claude QA承認済みのFINAL全文(一次体験・実測値・向いている人・控えめCTA)とは異なる簡略版だった。投稿自体はOwnerの意思決定でありClaudeは修正・再投稿を行わない。",
-      "notta_clicks": "0(Owner再ログイン完了、A8.net実機確認。Notta Memoプログラム個別指定・2026年1〜9月期間でも「表示できるレポートデータがありません」= clicks/CV/revenueとも実質0)。原因はnote記事(nc5ad7e7ef364)内のNottaリンクがクリック不可のプレーンテキストのまま公開されていたこと(実機検証済み、A8トラッキング自体・遷移先・Program ID一致は正常)。",
-      "notta_clicks_checked_at": "2026-09-20T11:08:00+09:00",
+      "notta_clicks": "LINK FIXED(2026-09-20T12:48 JST実機確認: クリック可能な<a>タグ化・href=px.a8.net・Program ID s00000024524002一致・実クリックでshop.notta.aiへ遷移・a8トラッキングパラメータ維持、5項目すべてPASS)。これをNotta Revenue Experimentの正式STARTとする。それ以前のA8 click=0はpre-fix invalid periodとして記録するが需要評価には使わない(削除しない)。修正後のclicks/CV/revenueは24h/48h/72hで実機追跡(task 98ce9bc9-01da-4279-8acd-91b689b142e7)。",
+      "notta_clicks_checked_at": "2026-09-20T12:48:00+09:00",
+      "notta_revenue_experiment_start": "2026-09-20T12:48:00+09:00",
+      "notta_revenue_experiment_pre_fix_invalid_period": "〜2026-09-20T12:48:00+09:00(A8 click=0、リンク未クリック化のため需要評価対象外)",
       "automation_reel": "PUBLISHED",
       "automation_reel_note": "Instagram投稿確認済み(2026-09-16 08:03 JST、実機Playwright確認。投稿URL: https://www.instagram.com/workai_lab777/reel/DdU1MXYSUkk/)。07:50時点のMorning Routineチェックでは未投稿だったが、その13分後にOwnerが投稿。owner_actionは解消。",
       "afb_audit": "on_hold",
       "afb_audit_note": "Owner再ログイン完了(afb実績も0クリック/0発生を確認)。ただしCOO指令『Notta funnel LIVE化まで新規afb提携は保留』が継続有効のため、TOP3拡大は本日実施せず据え置き。既存TOP2(Plaud.ai/RecCloud AI)のまま。",
       "todays_public_market_outputs": 2,
-      "notta_clicks_note": "2026-09-20 11:08 JST再確認(実機Playwright、Notta Memoプログラム個別指定・2026年1〜9月): clicks=0, CV=0, revenue=¥0のまま変化なし。note記事本文のNottaリンクURLを直接検証したところ、正しいA8アフィリエイトリンク(px.a8.net/svt/ejp、Program ID s00000024524002と一致、遷移先はshop.notta.aiで正常)だが、クリック可能な<a>タグではなくプレーンテキストとして公開されていることを発見。クリックスルー導線がそもそも機能していなかったのがclicks=0の主因と判断(note traffic不足ではなくlink installation不備)。",
+      "notta_clicks_note": "2026-09-20T12:48 JST、Owner修正後を実機Playwrightで再確認: note記事(nc5ad7e7ef364)内のNottaリンクがクリック可能な<a href=\"https://px.a8.net/svt/ejp?a8mat=4BC2EH+5NM9O2+5988+BWVTE\">に修正済み。実際にクリックしてshop.notta.ai(a8=...s00000024524002)へ遷移することを確認、Program ID一致・トラッキングパラメータ維持を実証。Revenue Experiment正式START。24h/48h/72hでnote traffic/A8 clicks/CV/revenueを追跡予定(task 98ce9bc9-01da-4279-8acd-91b689b142e7)。",
       "tomorrow_assets": "IN_PRODUCTION",
       "tomorrow_assets_note": "Day17 X投稿文(content/x/day17_post.md)・Reel台本(content/reel-json/day17_approval_gap_story.md)はContent Editor作成・Claude QA完了。ReelレンダリングはCodex handoff(coord-6ada1af1414838df92b894ff8cba75ba)が2日ブロック継続のため、2026-09-18 Morning RoutineでCreative Engineerへ再ルーティング、動画完成待ち。",
       "strategic_reply": "Owner承認・投稿完了(@yukissense、https://x.com/workai_lab777/status/2100207692967248246)",
@@ -984,8 +987,7 @@
       }
     ],
     "owner_actions": [
-      "Revenue Content「Nottaの向かない人」(notta-fit-boundary.mp4)はCOO承認済み(Revenue Experiment扱い)。X・Instagramへの投稿操作をお願いします(公開後24時間で指標を追跡します)。2026-09-20 11:0x JST時点で実機確認、まだ未投稿。",
-      "note記事(https://note.com/workai_lab777/n/nc5ad7e7ef364)内のNottaリンクをクリック可能なハイパーリンクに修正してください(現在プレーンテキストのため読者がクリックできない状態。A8トラッキング自体・遷移先URLは正常と実機確認済み)"
+      "Revenue Content「Nottaの向かない人」(notta-fit-boundary.mp4)はCOO承認済み(Revenue Experiment扱い)。X・Instagramへの投稿操作をお願いします(公開後24時間で指標を追跡します)。2026-09-20 12:48 JST時点で実機確認、まだ未投稿。"
     ],
     "approval_queue": [],
     "ai_learning": {
@@ -993,7 +995,7 @@
       "observation": "Day19 ReelはTemplate v2 canonical componentでの初の検証としてOwnerが実際に投稿(X impressions=7、IG投稿直後)。Market Radar(2026-09-20、12件収集)で、Notta「向かない人」の主張(単発音源・少人数向け、大人数・固有名詞重視の会議には限界)を独立に補強する実例が見つかった: @andymochizuki(いいね91,000)が『AI議事録は文字起こし・要約はできても構造化・論点抽出は別の技術』という実務上の失敗談を投稿。@ozge_boyraz46は23,000円のAIボイスレコーダーを実購入しており、Notta Memo(低価格帯)との比較企画の需要が実在することを確認。",
       "hypothesis": "「効率化の代償を正直に語る」テーマへの反応の強さは一過性ではなく、Market Radarのたびに再現している。Revenue Contentの優先角度として固定化してよい可能性が高い。",
       "decision": "Template v2をcanonical component化(remotion-video/src/TemplateV2.tsx)し、DayNCharacterHybrid.tsxの複製運用を廃止。Hook Variant/evidence overlay/importance-weighted pacing/CTA分離をQA checklist(publishing-operations-v4.md)で機械的に検証必須化(1つでもFAILならREADY禁止)。",
-      "next_experiment": "Revenue Content「Nottaの向かない人」は投稿承認待ちのまま(投稿後24時間追跡タスク登録済み、2026-09-20 11:0x JST時点で未投稿を再確認)。A8.net再ログインはOwnerが完了、clicks/CV/revenueは0のまま変化なしだが、原因がnote記事内リンクの未クリック化(プレーンテキスト公開)にあることを実機検証で特定。Owner Actionとしてリンク修正を依頼済み。次のNotta Revenue Contentは『ハードウェア型AIボイスレコーダーとの比較』角度を検討価値あり(@ozge_boyraz46から着想)。"
+      "next_experiment": "Owner がnote記事内Nottaリンクをハイパーリンク化、2026-09-20T12:48 JST実機確認でPASS(クリック可能・href=px.a8.net・Program ID一致・実クリックでshop.notta.aiへ遷移・トラッキング維持)。これをNotta Revenue Experimentの正式STARTとし、それ以前のA8 click=0はpre-fix invalid periodとして需要評価対象から除外。24h/48h/72hでnote traffic/A8 clicks/CV/revenueを追跡(task 98ce9bc9-01da-4279-8acd-91b689b142e7)。Revenue Content「Nottaの向かない人」はX/Instagramとも依然未投稿(別Owner Action、継続)。次のNotta Revenue Contentは『ハードウェア型AIボイスレコーダーとの比較』角度を検討価値あり(@ozge_boyraz46から着想)。"
     },
     "morning_2026-09-16_findings": {
       "stale_codex_task_closed": "coord-2eabeb666e9c161e39b98867afc5fd92(Day15 Fixed Schedule Test Day3台本のReel制作)はcontent方針がautomation_gap_storyへ既に差し替わり、day15.mp4として完成・QA PASS済みのためSUPERSEDEDとして扱う(decisions_log.md 2026-09-16参照)。Managed task(handoff)はassigned_to=codexで自分ではclaimできず、ツール上のstatus変更はできなかったため記録のみ。",
