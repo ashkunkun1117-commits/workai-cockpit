@@ -7,14 +7,14 @@
       "status": "published",
       "text_file": "content/x/day19_post.md",
       "url": "https://x.com/workai_lab777/status/2101448233365196931",
-      "note": "Owner手動投稿済み(2026-09-20 08:07 JST、実機Playwright確認、本文完全一致)。impressions=7(投稿ページ実測、投稿直後のため他指標は未計測)。",
+      "note": "Owner手動投稿済み(2026-09-20 08:07 JST、実機Playwright確認、本文完全一致)。impressions=8、いいね/返信/リポスト/ブックマークいずれも0(2026-09-20 10:29 JST再測、kpi_daily.csv Day19行へ反映済み)。",
       "text": "ChatGPT COOが見ていたSSOTは、2時間前のままでした。\n\nDay18の投稿は終わっていたのに「未着手」のまま。\n\n原因は見逃しではなく、更新直後のまま再生成していなかったこと。\n\n実態が変わるたびに再生成する運用へ変えました。\n\nAIでできる仕事は、AIに。\nDay19/100"
     },
     "ig_reel": {
       "status": "published",
       "video_file": "day19.mp4",
       "url": "https://www.instagram.com/workai_lab777/reel/DdfKCSzyade/",
-      "note": "Owner手動投稿済み(2026-09-20、相対表示「1時間前」、実機Playwright確認、キャプション完全一致)。投稿直後のためviews/reachは未計測、コメント0件。Template v2 canonical component検証Reel(Hook Variant B_FAILURE)、reel_hook_experiment.csvへposted=true反映済み。",
+      "note": "Owner手動投稿済み(2026-09-20、実機Playwright確認、キャプション完全一致)。views=16, reach(閲覧者)=12(フォロワー25%/非フォロワー75%)、いいね/コメント/保存/シェアいずれも0(2026-09-20 10:29 JST実測、kpi_daily.csv Day19行へ反映済み)。Template v2 canonical component検証Reel(Hook Variant B_FAILURE)、reel_hook_experiment.csvへposted=true反映済み。",
       "caption_text": "ChatGPT COOが見ていたSSOTは、2時間前のままでした。\n\nDay18のX投稿もInstagram Reelも、もう投稿は終わっていました。でもSSOT上は「未着手」のまま記録されていました。\n\n原因は見逃しではありません。Date Rolloverの直後にpushしたまま、その後下書きを作った時点で再生成していなかったこと。中間状態が、そのまま古い記録として残っていました。\n\nこれを受けて、投稿確認やRevenue Content公開など、実態が変わるたびにSSOTを再生成してpushする運用へ変えました。\n\nAIでできる仕事は、AIに。\nDay 19 / 100\n#AI仕事研究所 #100日実験 #自動化 #仕事効率化 #AIパートナー\n\nVOICEVOX：青山龍星"
     }
   },
@@ -67,8 +67,8 @@
       "url": "https://x.com/workai_lab777/status/2101448233365196931",
       "actual_published_at": "2026-09-20T08:07:00+09:00",
       "verification_source": "実機Playwright確認(workai_lab777、本文完全一致、投稿ページ表示「午前8:07・2026年9月20日」)",
-      "verified_at": "2026-09-20T09:33:00+09:00",
-      "verification_note": "impressions=7(投稿ページ実測、投稿から約1.5時間後、他指標は未計測)。"
+      "verified_at": "2026-09-20T10:29:00+09:00",
+      "verification_note": "impressions=8、いいね/返信/リポスト/ブックマークいずれも0(投稿ページ実測、投稿から約2.4時間後、kpi_daily.csv Day19行へ反映済み)。"
     },
     {
       "type": "ig_reel",
@@ -77,9 +77,9 @@
       "url": "https://www.instagram.com/workai_lab777/reel/DdfKCSzyade/",
       "video_file": "day19.mp4",
       "actual_published_at": null,
-      "verification_source": "実機Playwright確認(workai_lab777、キャプション完全一致、投稿ページ相対表示「1時間前」)",
-      "verified_at": "2026-09-20T09:33:00+09:00",
-      "verification_note": "Template v2 canonical component検証Reel(Hook Variant B_FAILURE)。投稿直後のためviews/reach未計測、コメント0件。正確なpublish時刻は相対表示のみのため未記録(推測しない)。"
+      "verification_source": "実機Playwright確認(workai_lab777、キャプション完全一致、投稿ページ相対表示「2時間前」、インサイト実測)",
+      "verified_at": "2026-09-20T10:29:00+09:00",
+      "verification_note": "Template v2 canonical component検証Reel(Hook Variant B_FAILURE)。views=16, reach(閲覧者)=12(フォロワー25%/非フォロワー75%)、いいね/コメント/保存/シェアいずれも0(data/analytics/kpi_daily.csv Day19行へ反映済み)。正確なpublish時刻は相対表示のみのため未記録(推測しない)。"
     },
     {
       "type": "x_post",
@@ -268,8 +268,7 @@
   ],
   "owner_actions": [
     "Revenue Content「Nottaの向かない人」(notta-fit-boundary.mp4)はCOO承認済み(Revenue Experiment扱い)。X・Instagramへの投稿操作をお願いします(公開後24時間で指標を追跡します)",
-    "A8.netへの再ログイン(Revenue Ops P0、notta_clicksデータが4日超stale、Claudeはログイン不可のためOwner専管)",
-    "X Conversation Approval Batch(@kouya_sns01への再返信案・@panana39への再返信案、計2件)を確認・投稿承認"
+    "A8.netへの再ログイン(Revenue Ops P0、notta_clicksデータが4日超stale、Claudeはログイン不可のためOwner専管)"
   ],
   "approval_queue": [],
   "ai_learning": {
@@ -350,7 +349,7 @@
   },
   "current_date": "2026-09-20",
   "data_updated_at": "2026-09-20T07:10:00+09:00",
-  "public_updated_at": "2026-09-20T01:12:38.142Z",
+  "public_updated_at": "2026-09-20T01:35:29.372Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -695,6 +694,24 @@
         "cost_jpy": null,
         "profit_jpy": null,
         "human_work_minutes": null
+      },
+      {
+        "day": 19,
+        "date": "2026-09-20",
+        "x_posts": 1,
+        "x_impressions": 8,
+        "x_strategic_replies": null,
+        "x_reply_impressions_avg": null,
+        "ig_posts": 1,
+        "ig_reel_views": 16,
+        "ig_followers": 12,
+        "ig_profile_visits": null,
+        "link_clicks": null,
+        "conversions": null,
+        "revenue_jpy": null,
+        "cost_jpy": null,
+        "profit_jpy": null,
+        "human_work_minutes": null
       }
     ]
   },
@@ -707,14 +724,14 @@
         "status": "published",
         "text_file": "content/x/day19_post.md",
         "url": "https://x.com/workai_lab777/status/2101448233365196931",
-        "note": "Owner手動投稿済み(2026-09-20 08:07 JST、実機Playwright確認、本文完全一致)。impressions=7(投稿ページ実測、投稿直後のため他指標は未計測)。",
+        "note": "Owner手動投稿済み(2026-09-20 08:07 JST、実機Playwright確認、本文完全一致)。impressions=8、いいね/返信/リポスト/ブックマークいずれも0(2026-09-20 10:29 JST再測、kpi_daily.csv Day19行へ反映済み)。",
         "text": "ChatGPT COOが見ていたSSOTは、2時間前のままでした。\n\nDay18の投稿は終わっていたのに「未着手」のまま。\n\n原因は見逃しではなく、更新直後のまま再生成していなかったこと。\n\n実態が変わるたびに再生成する運用へ変えました。\n\nAIでできる仕事は、AIに。\nDay19/100"
       },
       "ig_reel": {
         "status": "published",
         "video_file": "day19.mp4",
         "url": "https://www.instagram.com/workai_lab777/reel/DdfKCSzyade/",
-        "note": "Owner手動投稿済み(2026-09-20、相対表示「1時間前」、実機Playwright確認、キャプション完全一致)。投稿直後のためviews/reachは未計測、コメント0件。Template v2 canonical component検証Reel(Hook Variant B_FAILURE)、reel_hook_experiment.csvへposted=true反映済み。",
+        "note": "Owner手動投稿済み(2026-09-20、実機Playwright確認、キャプション完全一致)。views=16, reach(閲覧者)=12(フォロワー25%/非フォロワー75%)、いいね/コメント/保存/シェアいずれも0(2026-09-20 10:29 JST実測、kpi_daily.csv Day19行へ反映済み)。Template v2 canonical component検証Reel(Hook Variant B_FAILURE)、reel_hook_experiment.csvへposted=true反映済み。",
         "caption_text": "ChatGPT COOが見ていたSSOTは、2時間前のままでした。\n\nDay18のX投稿もInstagram Reelも、もう投稿は終わっていました。でもSSOT上は「未着手」のまま記録されていました。\n\n原因は見逃しではありません。Date Rolloverの直後にpushしたまま、その後下書きを作った時点で再生成していなかったこと。中間状態が、そのまま古い記録として残っていました。\n\nこれを受けて、投稿確認やRevenue Content公開など、実態が変わるたびにSSOTを再生成してpushする運用へ変えました。\n\nAIでできる仕事は、AIに。\nDay 19 / 100\n#AI仕事研究所 #100日実験 #自動化 #仕事効率化 #AIパートナー\n\nVOICEVOX：青山龍星"
       }
     },
@@ -767,8 +784,8 @@
         "url": "https://x.com/workai_lab777/status/2101448233365196931",
         "actual_published_at": "2026-09-20T08:07:00+09:00",
         "verification_source": "実機Playwright確認(workai_lab777、本文完全一致、投稿ページ表示「午前8:07・2026年9月20日」)",
-        "verified_at": "2026-09-20T09:33:00+09:00",
-        "verification_note": "impressions=7(投稿ページ実測、投稿から約1.5時間後、他指標は未計測)。"
+        "verified_at": "2026-09-20T10:29:00+09:00",
+        "verification_note": "impressions=8、いいね/返信/リポスト/ブックマークいずれも0(投稿ページ実測、投稿から約2.4時間後、kpi_daily.csv Day19行へ反映済み)。"
       },
       {
         "type": "ig_reel",
@@ -777,9 +794,9 @@
         "url": "https://www.instagram.com/workai_lab777/reel/DdfKCSzyade/",
         "video_file": "day19.mp4",
         "actual_published_at": null,
-        "verification_source": "実機Playwright確認(workai_lab777、キャプション完全一致、投稿ページ相対表示「1時間前」)",
-        "verified_at": "2026-09-20T09:33:00+09:00",
-        "verification_note": "Template v2 canonical component検証Reel(Hook Variant B_FAILURE)。投稿直後のためviews/reach未計測、コメント0件。正確なpublish時刻は相対表示のみのため未記録(推測しない)。"
+        "verification_source": "実機Playwright確認(workai_lab777、キャプション完全一致、投稿ページ相対表示「2時間前」、インサイト実測)",
+        "verified_at": "2026-09-20T10:29:00+09:00",
+        "verification_note": "Template v2 canonical component検証Reel(Hook Variant B_FAILURE)。views=16, reach(閲覧者)=12(フォロワー25%/非フォロワー75%)、いいね/コメント/保存/シェアいずれも0(data/analytics/kpi_daily.csv Day19行へ反映済み)。正確なpublish時刻は相対表示のみのため未記録(推測しない)。"
       },
       {
         "type": "x_post",
@@ -968,8 +985,7 @@
     ],
     "owner_actions": [
       "Revenue Content「Nottaの向かない人」(notta-fit-boundary.mp4)はCOO承認済み(Revenue Experiment扱い)。X・Instagramへの投稿操作をお願いします(公開後24時間で指標を追跡します)",
-      "A8.netへの再ログイン(Revenue Ops P0、notta_clicksデータが4日超stale、Claudeはログイン不可のためOwner専管)",
-      "X Conversation Approval Batch(@kouya_sns01への再返信案・@panana39への再返信案、計2件)を確認・投稿承認"
+      "A8.netへの再ログイン(Revenue Ops P0、notta_clicksデータが4日超stale、Claudeはログイン不可のためOwner専管)"
     ],
     "approval_queue": [],
     "ai_learning": {

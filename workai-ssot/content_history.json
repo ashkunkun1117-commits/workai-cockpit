@@ -14,7 +14,7 @@
     "shares": null,
     "profile_visits": null,
     "clicks": null,
-    "learning": "impressions=7(投稿ページ実測、投稿から約1.5時間後、他指標は未計測)。"
+    "learning": "impressions=8、いいね/返信/リポスト/ブックマークいずれも0(投稿ページ実測、投稿から約2.4時間後、kpi_daily.csv Day19行へ反映済み)。"
   },
   {
     "date": "2026-09-19",
@@ -133,7 +133,7 @@
     "shares": null,
     "profile_visits": null,
     "clicks": null,
-    "learning": "Template v2 canonical component検証Reel(Hook Variant B_FAILURE)。投稿直後のためviews/reach未計測、コメント0件。正確なpublish時刻は相対表示のみのため未記録(推測しない)。"
+    "learning": "Template v2 canonical component検証Reel(Hook Variant B_FAILURE)。views=16, reach(閲覧者)=12(フォロワー25%/非フォロワー75%)、いいね/コメント/保存/シェアいずれも0(data/analytics/kpi_daily.csv Day19行へ反映済み)。正確なpublish時刻は相対表示のみのため未記録(推測しない)。"
   },
   {
     "date": null,

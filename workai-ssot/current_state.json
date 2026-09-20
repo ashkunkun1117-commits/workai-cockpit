@@ -1,6 +1,6 @@
 {
   "business_day": 19,
-  "updated_at": "2026-09-20T01:16:43.206Z",
+  "updated_at": "2026-09-20T01:35:30.359Z",
   "data_stale": false,
   "today": {
     "x": "posted",
@@ -8,13 +8,12 @@
   },
   "owner_actions": [
     "Revenue Content「Nottaの向かない人」(notta-fit-boundary.mp4)はCOO承認済み(Revenue Experiment扱い)。X・Instagramへの投稿操作をお願いします(公開後24時間で指標を追跡します)",
-    "A8.netへの再ログイン(Revenue Ops P0、notta_clicksデータが4日超stale、Claudeはログイン不可のためOwner専管)",
-    "X Conversation Approval Batch(@kouya_sns01への再返信案・@panana39への再返信案、計2件)を確認・投稿承認"
+    "A8.netへの再ログイン(Revenue Ops P0、notta_clicksデータが4日超stale、Claudeはログイン不可のためOwner専管)"
   ],
   "revenue_funnel": [
     {
       "label": "content",
-      "value": 13
+      "value": 15
     },
     {
       "label": "note_lp",
@@ -72,18 +71,18 @@
   "next_hypothesis": "Revenue Content「Nottaの向かない人」は投稿承認待ちのまま(投稿後24時間追跡タスク登録済み)。A8.netログイン未確立が継続(4日超stale)、Owner再ログインが最優先のOwner Action。次のNotta Revenue Contentは『ハードウェア型AIボイスレコーダーとの比較』角度を検討価値あり(@ozge_boyraz46から着想)。",
   "freshness": {
     "today": {
-      "updated_at": "2026-09-20T01:16:43.206Z",
+      "updated_at": "2026-09-20T01:35:30.359Z",
       "business_day": 19
     },
     "revenue": {
-      "updated_at": "2026-09-20T01:16:43.206Z",
+      "updated_at": "2026-09-20T01:35:30.359Z",
       "source_checked_at": "2026-09-16T22:06:00+09:00",
       "data_stale": true
     },
     "metrics": {
-      "updated_at": "2026-09-20T01:16:43.206Z",
-      "source_checked_at": "2026-09-19",
-      "data_stale": true
+      "updated_at": "2026-09-20T01:35:30.359Z",
+      "source_checked_at": "2026-09-20",
+      "data_stale": false
     },
     "market_radar": {
       "date": "2026-09-20",
