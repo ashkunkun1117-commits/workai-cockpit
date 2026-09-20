@@ -4,6 +4,18 @@
 
 ---
 
+## 2026-09-20 (COO指令「Day19 Operational Refresh」対応)
+
+指令内容: 新規インフラ開発は行わず、Freshness v2でSTALEになった項目を実データで更新する運用日。優先順位: metrics→audience_response→revenue(stale維持)→learning(実データのみ)→Market Radar/Strategic Reply通常運用。
+
+**現状点検**: 直前の「CLOSE TODAY'S BUSINESS LOOP」対応で`freshness`を確認したところ、`audience_response`(status:completed)・`learning`(day:19、stale:false)は既に解消済みだった。`metrics`のみ`data_stale:true`(source_checked_at:"2026-09-19"、本日分未反映)。`revenue`は指令通りA8.netログイン未確立のためstale維持(推測更新禁止)。
+
+**metrics解消**: X投稿(status/2101448233365196931)を実機Playwright再確認しimpressions=8(いいね/返信/リポスト/ブックマークいずれも0)、Instagram Reel(reel/DdfKCSzyade/)のインサイトを実測しviews=16・reach=12(フォロワー25%/非フォロワー75%、いいね/コメント/保存/シェア0)。`data/analytics/kpi_daily.csv`にDay19行(2026-09-20)を追加し反映。SSOT再生成後`freshness.metrics.data_stale`はfalseへ解消(source_checked_atはkpi_daily.csv最新行の日付から自動算出、手動タイムスタンプ操作なし)。
+
+**X Conversation Approval Batch実行**: Owner承認(チャットで「X返信承認2件 @kouya_sns01 @panana39 こちら承認します」)を受け、review状態だったfollowup_draft2件を実機Playwrightで実際に投稿(既存のStrategic Reply運用ルール=Claudeが投稿実行、per-item chat承認に基づく)。@kouya_sns01への返信: https://x.com/workai_lab777/status/2101484636295909588 。@panana39への返信: https://x.com/workai_lab777/status/2101485002110468334 。両方とも投稿後に実機再確認し、宛先・本文の完全一致を検証済み。`data/x-replies/ledger.csv`のconversation_statusをclosedへ更新、`today.json`のowner_actionsから解消項目を削除(3件→2件)。
+
+---
+
 ## 2026-09-20 (Morning Routine — Day20コンテンツ話題転換、Manual Publish Verification)
 
 Missed Routine Coalescing判定: NOT SUPERSEDED(premorningは本日05:45成功済み、Evening未実行)、通常フル実行。
