@@ -41,6 +41,14 @@
     "notta_clicks_checked_at": "2026-09-20T12:48:00+09:00",
     "notta_revenue_experiment_start": "2026-09-20T12:48:00+09:00",
     "notta_revenue_experiment_pre_fix_invalid_period": "〜2026-09-20T12:48:00+09:00(A8 click=0、リンク未クリック化のため需要評価対象外)",
+    "revenue_content": {
+      "label": "Notta Revenue Experiment",
+      "status": "ready",
+      "video_file": "notta-revenue-v2.mp4",
+      "caption_text": "Notta Memo、便利だけど全員には向かないと思います。\n\n少人数の打ち合わせや、録音をあとで整理する用途にはかなり便利。実測で12分→2分30秒になりました。\n\n一方で、実際に10名以上の会議を担当している方からは「固有名詞や数字は限界があり、聞き直しや別資料の確認も含めて結局会議と同じくらいの時間がかかる」という声をもらいました。\n\n向くのは、単発音源・少人数の打ち合わせ・録音の振り返り。\n向きにくいのは、大人数の会議・固有名詞が多い会議・数字の厳密性が必要な場面。\n\n便利かどうかより、「どの仕事を任せるか」で判断するのが大事だと思っています。\n\n実際に使って分かった向き・不向きは、プロフィール欄のリンクからnote記事にまとめました。\n\n※記事内にアフィリエイトリンクを含みます。\n\nAIでできる仕事は、AIに。\n#AI仕事研究所 #100日実験 #Notta #議事録効率化 #AIパートナー",
+      "note_url": "https://note.com/workai_lab777/n/nc5ad7e7ef364",
+      "note": "COO指令「Notta Revenue Reel Production」対応。Template v2 canonical component使用(Hook Variant B_FAILURE)。VOICEVOX音声合成・独立QA完了(ffprobe/silencedetect/frame目視、31.753秒)。制作詳細はcontent/reel-json/notta-revenue-v2.md参照。Codexが使用量上限で実装前に失敗したため、Claudeが直接実装(script generalization + Cockpit配信機能)。Reel本編にアフィリエイトURLは含まない(Reel→note→A8導線)。"
+    },
     "automation_reel": "PUBLISHED",
     "automation_reel_note": "Instagram投稿確認済み(2026-09-16 08:03 JST、実機Playwright確認。投稿URL: https://www.instagram.com/workai_lab777/reel/DdU1MXYSUkk/)。07:50時点のMorning Routineチェックでは未投稿だったが、その13分後にOwnerが投稿。owner_actionは解消。",
     "afb_audit": "on_hold",
@@ -350,7 +358,7 @@
   },
   "current_date": "2026-09-20",
   "data_updated_at": "2026-09-20T07:10:00+09:00",
-  "public_updated_at": "2026-09-20T03:51:40.531Z",
+  "public_updated_at": "2026-09-20T09:33:59.096Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -759,6 +767,14 @@
       "notta_clicks_checked_at": "2026-09-20T12:48:00+09:00",
       "notta_revenue_experiment_start": "2026-09-20T12:48:00+09:00",
       "notta_revenue_experiment_pre_fix_invalid_period": "〜2026-09-20T12:48:00+09:00(A8 click=0、リンク未クリック化のため需要評価対象外)",
+      "revenue_content": {
+        "label": "Notta Revenue Experiment",
+        "status": "ready",
+        "video_file": "notta-revenue-v2.mp4",
+        "caption_text": "Notta Memo、便利だけど全員には向かないと思います。\n\n少人数の打ち合わせや、録音をあとで整理する用途にはかなり便利。実測で12分→2分30秒になりました。\n\n一方で、実際に10名以上の会議を担当している方からは「固有名詞や数字は限界があり、聞き直しや別資料の確認も含めて結局会議と同じくらいの時間がかかる」という声をもらいました。\n\n向くのは、単発音源・少人数の打ち合わせ・録音の振り返り。\n向きにくいのは、大人数の会議・固有名詞が多い会議・数字の厳密性が必要な場面。\n\n便利かどうかより、「どの仕事を任せるか」で判断するのが大事だと思っています。\n\n実際に使って分かった向き・不向きは、プロフィール欄のリンクからnote記事にまとめました。\n\n※記事内にアフィリエイトリンクを含みます。\n\nAIでできる仕事は、AIに。\n#AI仕事研究所 #100日実験 #Notta #議事録効率化 #AIパートナー",
+        "note_url": "https://note.com/workai_lab777/n/nc5ad7e7ef364",
+        "note": "COO指令「Notta Revenue Reel Production」対応。Template v2 canonical component使用(Hook Variant B_FAILURE)。VOICEVOX音声合成・独立QA完了(ffprobe/silencedetect/frame目視、31.753秒)。制作詳細はcontent/reel-json/notta-revenue-v2.md参照。Codexが使用量上限で実装前に失敗したため、Claudeが直接実装(script generalization + Cockpit配信機能)。Reel本編にアフィリエイトURLは含まない(Reel→note→A8導線)。"
+      },
       "automation_reel": "PUBLISHED",
       "automation_reel_note": "Instagram投稿確認済み(2026-09-16 08:03 JST、実機Playwright確認。投稿URL: https://www.instagram.com/workai_lab777/reel/DdU1MXYSUkk/)。07:50時点のMorning Routineチェックでは未投稿だったが、その13分後にOwnerが投稿。owner_actionは解消。",
       "afb_audit": "on_hold",

@@ -4,6 +4,41 @@
 
 ---
 
+## 2026-09-20 (COO指令「Notta Revenue Reel Production」対応)
+
+指令内容: 修正済みNotta A8導線(note→アフィリエイトリンク)へ質の高いトラフィックを送るための
+専用Revenue Content Reel制作。Template v2 canonical component使用、Hook Variant B_FAILURE、
+「便利だけど向かない人もいます」という正直なポジショニング、実際の音声evidence使用必須。
+
+**役割分担の運用**: CLAUDE.mdのマーケティング役割分担ルール(プラン=Claude、実装=Codex)に従い、
+content/reel-json/notta-revenue-v2.json(Template v2コンテンツ)を自分で作成した上で、
+スクリプト汎用化(`render-template-v2.mjs`/`prepare-template-v2-voice.mjs`の`--slug=`対応)と
+Production Cockpitへの新規「REVENUE CONTENT」配信セクション追加をCodexへ依頼
+(`task-mu9l4h5u-54yb46`)。CodexはVOICEVOX疎通確認コマンド1つを実行した直後に使用量上限へ到達し
+実装前に失敗(進捗ゼロ、対象ファイルへの変更なしを確認済み)。Revenue Content制作の緊急性を
+優先し、Claudeが直接両実装を行った(理由をこのログとcontent/reel-json/notta-revenue-v2.mdに
+明記)。
+
+**成果物**: `remotion-video/out/notta-revenue-v2.mp4`(31.753秒、1080x1920、h264+AAC)。
+VOICEVOX音声合成(青山龍星)・独立QA(ffprobe/silencedetect/frame目視)完了。
+
+**自己発見・修正した実バグ**: 初回レンダーでcore_insightシーンに4.79秒の無音区間(fill率49%)を
+発見(Template v2 Pilotの過去の無音バグと同一パターン)。台本を2回調整し3.20秒(62.5%)まで
+圧縮。importance-weighted pacingの共有ライブラリ側の係数は変更せず、コンテンツ側のみで対応。
+
+**Cockpit機能追加**: `business_progress.revenue_content`(label/status/video_file/caption_text/
+note_url)を読み、`status: in_production`ではPreview/Downloadを表示せずキャプションのみ、
+`ready`/`posted`でPreview+Download+キャプションを表示する「REVENUE CONTENT」セクションを
+新設(既存の安全な相対mp4パス正規表現・draftBlockヘルパーを再利用)。テスト5件追加、
+既存回帰なし(53/53 pass)。実機ブラウザ確認(ローカル静的サーバ経由)で動画再生・
+ダウンロードリンク・キャプションコピー(実クリックでクリップボード書き込み確認)すべて動作確認済み。
+
+`today.json`の`business_progress.revenue_content.status`を`ready`に設定、
+Production Cockpitへ配信済み。Reel本編にアフィリエイトURLは含まない(Reel→note→A8導線)。
+Owner投稿可能な状態。
+
+---
+
 ## 2026-09-20 (COO指令「Revenue Funnel Restart」対応 — LINK FIXED確認・Experiment Start)
 
 Owner がnote記事(nc5ad7e7ef364)内のNotta A8リンクを修正。実機Playwrightで5項目すべて確認:
