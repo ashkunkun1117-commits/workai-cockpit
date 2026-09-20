@@ -4,6 +4,18 @@
 
 ---
 
+## 2026-09-20 (Morning Routine — Day20コンテンツ話題転換、Manual Publish Verification)
+
+Missed Routine Coalescing判定: NOT SUPERSEDED(premorningは本日05:45成功済み、Evening未実行)、通常フル実行。
+
+Manual Publish Verification: Day19 X投稿・IG Reel・Notta Revenue Content(notta-fit-boundary.mp4)いずれも実機Playwright確認で未投稿(Xプロフィール・Instagramグリッドとも最新はDay18のまま)。today.jsonの記録は実態と一致、reconcile不要だった。X Conversation Routineでwaiting中4会話(forestkinoko/omuat/yukissense/narisumashi100)を確認、新規author返信なし(narisumashi100は683件規模スレッドにつき非ログイン制約で引き続き確認不能)。panana39・kouya_sns01のfollowup_draftを再度Approval Batchとして提示(Owner未承認のまま)。
+
+**Day20コンテンツ話題選定の判断**: Day16〜19が4日連続でAI運用の内部バグ・記録ズレを題材にしていたため、Audience Value(Final Business Test基準4)を優先し話題を転換した。2026-09-07〜09にかけて@forestkinoko/@tianyezhiz60405/@himazin_bivarの3アカウントから独立に「AIで浮いた時間を実際どう使っているか」という同種の指摘・質問を受けており(data/x-replies/ledger.csv実データ)、Own Content側では正面から扱っていなかった実際の未解決論点だったため、Day20はこれに答える回とするようContent Editorへ依頼した(捏造禁止、正直な現状のみ使用を明示指示)。
+
+Codex Handoff: 新規タスク作成なし(既存review状態4件は変化なし)。Cockpit再生成・commit(d1579c2)・push・Deploy検証PASS(business_day=19一致)。
+
+---
+
 ## 2026-09-20 (Pre-Morning Routine — Day19 Date Rollover)
 
 Missed Routine Coalescing判定: 直近routine_scheduler.logはEvening(2026-09-19 22:30〜22:38)まで

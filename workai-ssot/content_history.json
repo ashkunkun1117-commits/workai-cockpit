@@ -1,5 +1,22 @@
 [
   {
+    "date": "2026-09-20",
+    "platform": "x",
+    "theme": null,
+    "hook_type": null,
+    "content_type": "post",
+    "url": "https://x.com/workai_lab777/status/2101448233365196931",
+    "views": null,
+    "impressions": null,
+    "likes": null,
+    "comments": null,
+    "saves": null,
+    "shares": null,
+    "profile_visits": null,
+    "clicks": null,
+    "learning": "impressions=7(投稿ページ実測、投稿から約1.5時間後、他指標は未計測)。"
+  },
+  {
     "date": "2026-09-19",
     "platform": "x",
     "theme": null,
@@ -100,6 +117,23 @@
     "profile_visits": null,
     "clicks": null,
     "learning": "impressions=10, likes=1, replies=1(投稿ページ実測、kpi_daily.csv Day11へ反映済み)"
+  },
+  {
+    "date": null,
+    "platform": "instagram",
+    "theme": "SSOT freshness gap(Date Rollover直後の中間状態がpushされたまま再生成されなかった実話)",
+    "hook_type": "B_FAILURE",
+    "content_type": "reel",
+    "url": "https://www.instagram.com/workai_lab777/reel/DdfKCSzyade/",
+    "views": null,
+    "impressions": null,
+    "likes": null,
+    "comments": null,
+    "saves": null,
+    "shares": null,
+    "profile_visits": null,
+    "clicks": null,
+    "learning": "Template v2 canonical component検証Reel(Hook Variant B_FAILURE)。投稿直後のためviews/reach未計測、コメント0件。正確なpublish時刻は相対表示のみのため未記録(推測しない)。"
   },
   {
     "date": null,

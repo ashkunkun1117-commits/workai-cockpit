@@ -4,15 +4,17 @@
   "generated_at": "2026-09-20T07:10:00+09:00",
   "today": {
     "x_post": {
-      "status": "ready",
+      "status": "published",
       "text_file": "content/x/day19_post.md",
-      "note": "Template v2 Production Migration後、最初のCanonical Component検証Reel。COO承認のSSOT Freshness Gap実話(2026-09-19)。Owner投稿承認待ち。",
+      "url": "https://x.com/workai_lab777/status/2101448233365196931",
+      "note": "Owner手動投稿済み(2026-09-20 08:07 JST、実機Playwright確認、本文完全一致)。impressions=7(投稿ページ実測、投稿直後のため他指標は未計測)。",
       "text": "ChatGPT COOが見ていたSSOTは、2時間前のままでした。\n\nDay18の投稿は終わっていたのに「未着手」のまま。\n\n原因は見逃しではなく、更新直後のまま再生成していなかったこと。\n\n実態が変わるたびに再生成する運用へ変えました。\n\nAIでできる仕事は、AIに。\nDay19/100"
     },
     "ig_reel": {
-      "status": "ready",
+      "status": "published",
       "video_file": "day19.mp4",
-      "note": "Claude制作完了(Template v2 canonical component、32.93秒、VOICEVOX青山龍星、Hook Variant B_FAILURE)。独立QA PASS(ffprobe/silencedetect/frame目視、reel_hook_experiment.csv自動記録確認)。Owner投稿承認待ち。",
+      "url": "https://www.instagram.com/workai_lab777/reel/DdfKCSzyade/",
+      "note": "Owner手動投稿済み(2026-09-20、相対表示「1時間前」、実機Playwright確認、キャプション完全一致)。投稿直後のためviews/reachは未計測、コメント0件。Template v2 canonical component検証Reel(Hook Variant B_FAILURE)、reel_hook_experiment.csvへposted=true反映済み。",
       "caption_text": "ChatGPT COOが見ていたSSOTは、2時間前のままでした。\n\nDay18のX投稿もInstagram Reelも、もう投稿は終わっていました。でもSSOT上は「未着手」のまま記録されていました。\n\n原因は見逃しではありません。Date Rolloverの直後にpushしたまま、その後下書きを作った時点で再生成していなかったこと。中間状態が、そのまま古い記録として残っていました。\n\nこれを受けて、投稿確認やRevenue Content公開など、実態が変わるたびにSSOTを再生成してpushする運用へ変えました。\n\nAIでできる仕事は、AIに。\nDay 19 / 100\n#AI仕事研究所 #100日実験 #自動化 #仕事効率化 #AIパートナー\n\nVOICEVOX：青山龍星"
     }
   },
@@ -25,7 +27,8 @@
     "ig_reel": {
       "status": "in_production",
       "video_file": null,
-      "note": "Content Editor完成後、Creative EngineerへReel制作を依頼予定(Template v2 canonical component使用)。"
+      "note": "Content Editor完成後、Creative EngineerへReel制作を依頼予定(Template v2 canonical component使用)。",
+      "caption_text": "2日間で、3人から同じ指摘をもらいました。\n\n9月8日と9日、独立した3つのアカウントから「AIで時短できても、その浮いた時間の使い道までは語られていない」という、同じ角度の指摘を受けました。そのうちの1人には直接、「浮いた14分を実際に何へ使うようにしているのか」と聞かれました。\n\nそのとき、正直に答えました。「まだそこまで明確に設計できていません。今はとにかく検証を重ねている段階です」と。\n\n12日以上経った今も、答えは変わっていません。見積書の注意書き作成は、今も15分が1分のままです。でも、浮いた14分の使い道は、あのときと同じくまだ設計できていません。\n\n時短をゴールにしない。浮いた時間を何に使うかまで含めて、次の検証テーマにします。\n\nAIでできる仕事は、AIに。\nDay 20 / 100\n#AI仕事研究所 #100日実験 #自動化 #仕事効率化 #AIパートナー\n\nVOICEVOX：青山龍星"
     }
   },
   "business_progress": {
@@ -34,7 +37,7 @@
     "notta_note_note": "公開済み(2026-09-15 22:32) https://note.com/workai_lab777/n/nc5ad7e7ef364 。PR表記・A8リンク・6タグとも実配信を確認済み。",
     "x_announcement": "POSTED_DIVERGED",
     "x_announcement_note": "Owner投稿済み(2026-09-16 07:50 JST Playwright実機確認)。ただし実際の本文はnote.comシェアカード(タイトル+リンクのみ)で、Claude QA承認済みのFINAL全文(一次体験・実測値・向いている人・控えめCTA)とは異なる簡略版だった。投稿自体はOwnerの意思決定でありClaudeは修正・再投稿を行わない。",
-    "notta_clicks": "DATA STALE(前回実測2026-09-16 22:06時点で0。A8.netログイン未確立のため2026-09-18時点で再確認不能、Owner再ログインが必要)",
+    "notta_clicks": "DATA STALE(前回実測2026-09-16 22:06時点で0。A8.netログイン未確立のため2026-09-20時点も再確認不能、Owner再ログインが必要)",
     "notta_clicks_checked_at": "2026-09-16T22:06:00+09:00",
     "automation_reel": "PUBLISHED",
     "automation_reel_note": "Instagram投稿確認済み(2026-09-16 08:03 JST、実機Playwright確認。投稿URL: https://www.instagram.com/workai_lab777/reel/DdU1MXYSUkk/)。07:50時点のMorning Routineチェックでは未投稿だったが、その13分後にOwnerが投稿。owner_actionは解消。",
@@ -46,17 +49,38 @@
     "tomorrow_assets_note": "Day17 X投稿文(content/x/day17_post.md)・Reel台本(content/reel-json/day17_approval_gap_story.md)はContent Editor作成・Claude QA完了。ReelレンダリングはCodex handoff(coord-6ada1af1414838df92b894ff8cba75ba)が2日ブロック継続のため、2026-09-18 Morning RoutineでCreative Engineerへ再ルーティング、動画完成待ち。",
     "strategic_reply": "Owner承認・投稿完了(@yukissense、https://x.com/workai_lab777/status/2100207692967248246)",
     "backyard_health": {
-      "date": "2026-09-18",
-      "market_radar_count": 10,
-      "deep_analysis_count": 4,
-      "strategic_reply_count": 4,
+      "date": "2026-09-20",
+      "market_radar_count": 12,
+      "deep_analysis_count": 3,
+      "strategic_reply_count": 3,
       "audience_response_checked": true,
-      "revenue_action_count": 1
+      "revenue_action_count": 0
     },
-    "backyard_health_note": "Daily Revenue Operating Loop初回実行。Market Radar 10/10(reports/research/market_radar_2026-09-18.md、COO指令で不足2件を追加収集し達成)。Deep Analysis 4件(Market Radar 3件+narisumashi100スレッド追加分、audience_signals_2026-09-18.md)。Strategic Reply 4件中3件投稿済み(@yukissense followup/@omuat/@panana39、Owner承認済み)・1件declined(@free_consultant)。Audience Response確認済みだが@kouya_sns01の6日遅れ検知が判明、PASS条件を『24時間以内検知』へ再定義(COO指令、日次Routineへの実装はP1で維持、Revenue Content公開後に着手)。Revenue Action=1(Notta関連Revenue Content「向かない人」制作完了、content/reel-json/notta_fit_boundary_story.md、notta-fit-boundary.mp4。VOICEVOX音声・独立QA済み、COO承認(Revenue Experimentとして扱う)、Cockpitへ配信済み、Owner投稿待ち)。"
+    "backyard_health_note": "COO指令「CLOSE TODAY'S BUSINESS LOOP」対応。Market Radar 12/10(reports/research/market_radar_2026-09-20.md)。Deep Analysis 3件(@andymochizuki/@ozge_boyraz46/@akagami_sns)。Strategic Reply候補3件をledger.csvへ追記(未投稿・承認待ち)。Audience Response確認済み(X mentions実機確認、新規未対応メンションなし、既存分は既にApproval Batchでキュー済み)。Revenue Action=0(A8.netログイン未確立が継続、正直にRED。Owner再ログイン待ち)。"
   },
   "carryover": [],
   "history": [
+    {
+      "type": "x_post",
+      "day": 19,
+      "status": "completed",
+      "url": "https://x.com/workai_lab777/status/2101448233365196931",
+      "actual_published_at": "2026-09-20T08:07:00+09:00",
+      "verification_source": "実機Playwright確認(workai_lab777、本文完全一致、投稿ページ表示「午前8:07・2026年9月20日」)",
+      "verified_at": "2026-09-20T09:33:00+09:00",
+      "verification_note": "impressions=7(投稿ページ実測、投稿から約1.5時間後、他指標は未計測)。"
+    },
+    {
+      "type": "ig_reel",
+      "day": 19,
+      "status": "completed",
+      "url": "https://www.instagram.com/workai_lab777/reel/DdfKCSzyade/",
+      "video_file": "day19.mp4",
+      "actual_published_at": null,
+      "verification_source": "実機Playwright確認(workai_lab777、キャプション完全一致、投稿ページ相対表示「1時間前」)",
+      "verified_at": "2026-09-20T09:33:00+09:00",
+      "verification_note": "Template v2 canonical component検証Reel(Hook Variant B_FAILURE)。投稿直後のためviews/reach未計測、コメント0件。正確なpublish時刻は相対表示のみのため未記録(推測しない)。"
+    },
     {
       "type": "x_post",
       "day": 18,
@@ -243,18 +267,17 @@
     }
   ],
   "owner_actions": [
-    "Day19 X投稿(content/x/day19_post.md)・IG Reel(day19.mp4)を確認・投稿承認",
     "Revenue Content「Nottaの向かない人」(notta-fit-boundary.mp4)はCOO承認済み(Revenue Experiment扱い)。X・Instagramへの投稿操作をお願いします(公開後24時間で指標を追跡します)",
-    "A8.netへの再ログイン(Revenue Ops P0、notta_clicksデータが2日超stale、Claudeはログイン不可のためOwner専管)",
+    "A8.netへの再ログイン(Revenue Ops P0、notta_clicksデータが4日超stale、Claudeはログイン不可のためOwner専管)",
     "X Conversation Approval Batch(@kouya_sns01への再返信案・@panana39への再返信案、計2件)を確認・投稿承認"
   ],
   "approval_queue": [],
   "ai_learning": {
-    "day": 18,
-    "observation": "Day17〜19にかけて、AI側の「記録」と実際の状態がズレる同型の問題が3回連続で発覚した: (1)Day17=承認待ち表示のままOwnerが先に投稿済み、(2)Day18=@kouya_sns01の好意的コメントに6日間気づけていなかった(確認する工程自体が無かった)、(3)Day19=ChatGPT COOが見ていたSSOTがDate Rollover直後の中間状態のまま2時間古かった(再生成タイミングの抜け)。さらにImplementation Auditで、claude.code_ai Reel Research(Template v2・Hook Variant・evidence overlay・importance-weighted pacing)が2026-09-17策定後、日次Reel生成pipeline(DayNCharacterHybrid.tsx)に一度も接続されていなかったことも判明。",
-    "hypothesis": "個別のバグではなく共通パターンがある: 「一度作った記録・生成物は、その後の実態変化に追従して更新され続ける」という前提が運用のどこにも保証されていなかった(Cockpit/SSOTの再生成タイミング、Audience Response監視、Research→Production接続のいずれも)。都度reconcileする一過性の対応ではなく、イベント駆動での再生成・QA checklistでの機械的検証に倒すことで再発を防げる可能性が高い。",
+    "day": 19,
+    "observation": "Day19 ReelはTemplate v2 canonical componentでの初の検証としてOwnerが実際に投稿(X impressions=7、IG投稿直後)。Market Radar(2026-09-20、12件収集)で、Notta「向かない人」の主張(単発音源・少人数向け、大人数・固有名詞重視の会議には限界)を独立に補強する実例が見つかった: @andymochizuki(いいね91,000)が『AI議事録は文字起こし・要約はできても構造化・論点抽出は別の技術』という実務上の失敗談を投稿。@ozge_boyraz46は23,000円のAIボイスレコーダーを実購入しており、Notta Memo(低価格帯)との比較企画の需要が実在することを確認。",
+    "hypothesis": "「効率化の代償を正直に語る」テーマへの反応の強さは一過性ではなく、Market Radarのたびに再現している。Revenue Contentの優先角度として固定化してよい可能性が高い。",
     "decision": "Template v2をcanonical component化(remotion-video/src/TemplateV2.tsx)し、DayNCharacterHybrid.tsxの複製運用を廃止。Hook Variant/evidence overlay/importance-weighted pacing/CTA分離をQA checklist(publishing-operations-v4.md)で機械的に検証必須化(1つでもFAILならREADY禁止)。",
-    "next_experiment": "Day19 Reel(Template v2 canonical component検証第1弾、Hook Variant B_FAILURE)はOwner投稿承認待ち。Audience Response 24時間以内検知の日次Routine組み込みはP1で継続(未着手)。Revenue Content「Nottaの向かない人」も投稿承認待ちのまま(投稿後24時間追跡タスク登録済み)。"
+    "next_experiment": "Revenue Content「Nottaの向かない人」は投稿承認待ちのまま(投稿後24時間追跡タスク登録済み)。A8.netログイン未確立が継続(4日超stale)、Owner再ログインが最優先のOwner Action。次のNotta Revenue Contentは『ハードウェア型AIボイスレコーダーとの比較』角度を検討価値あり(@ozge_boyraz46から着想)。"
   },
   "morning_2026-09-16_findings": {
     "stale_codex_task_closed": "coord-2eabeb666e9c161e39b98867afc5fd92(Day15 Fixed Schedule Test Day3台本のReel制作)はcontent方針がautomation_gap_storyへ既に差し替わり、day15.mp4として完成・QA PASS済みのためSUPERSEDEDとして扱う(decisions_log.md 2026-09-16参照)。Managed task(handoff)はassigned_to=codexで自分ではclaimできず、ツール上のstatus変更はできなかったため記録のみ。",
@@ -327,7 +350,7 @@
   },
   "current_date": "2026-09-20",
   "data_updated_at": "2026-09-20T07:10:00+09:00",
-  "public_updated_at": "2026-09-19T22:06:22.783Z",
+  "public_updated_at": "2026-09-20T01:12:38.142Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -681,15 +704,17 @@
     "generated_at": "2026-09-20T07:10:00+09:00",
     "today": {
       "x_post": {
-        "status": "ready",
+        "status": "published",
         "text_file": "content/x/day19_post.md",
-        "note": "Template v2 Production Migration後、最初のCanonical Component検証Reel。COO承認のSSOT Freshness Gap実話(2026-09-19)。Owner投稿承認待ち。",
+        "url": "https://x.com/workai_lab777/status/2101448233365196931",
+        "note": "Owner手動投稿済み(2026-09-20 08:07 JST、実機Playwright確認、本文完全一致)。impressions=7(投稿ページ実測、投稿直後のため他指標は未計測)。",
         "text": "ChatGPT COOが見ていたSSOTは、2時間前のままでした。\n\nDay18の投稿は終わっていたのに「未着手」のまま。\n\n原因は見逃しではなく、更新直後のまま再生成していなかったこと。\n\n実態が変わるたびに再生成する運用へ変えました。\n\nAIでできる仕事は、AIに。\nDay19/100"
       },
       "ig_reel": {
-        "status": "ready",
+        "status": "published",
         "video_file": "day19.mp4",
-        "note": "Claude制作完了(Template v2 canonical component、32.93秒、VOICEVOX青山龍星、Hook Variant B_FAILURE)。独立QA PASS(ffprobe/silencedetect/frame目視、reel_hook_experiment.csv自動記録確認)。Owner投稿承認待ち。",
+        "url": "https://www.instagram.com/workai_lab777/reel/DdfKCSzyade/",
+        "note": "Owner手動投稿済み(2026-09-20、相対表示「1時間前」、実機Playwright確認、キャプション完全一致)。投稿直後のためviews/reachは未計測、コメント0件。Template v2 canonical component検証Reel(Hook Variant B_FAILURE)、reel_hook_experiment.csvへposted=true反映済み。",
         "caption_text": "ChatGPT COOが見ていたSSOTは、2時間前のままでした。\n\nDay18のX投稿もInstagram Reelも、もう投稿は終わっていました。でもSSOT上は「未着手」のまま記録されていました。\n\n原因は見逃しではありません。Date Rolloverの直後にpushしたまま、その後下書きを作った時点で再生成していなかったこと。中間状態が、そのまま古い記録として残っていました。\n\nこれを受けて、投稿確認やRevenue Content公開など、実態が変わるたびにSSOTを再生成してpushする運用へ変えました。\n\nAIでできる仕事は、AIに。\nDay 19 / 100\n#AI仕事研究所 #100日実験 #自動化 #仕事効率化 #AIパートナー\n\nVOICEVOX：青山龍星"
       }
     },
@@ -702,7 +727,8 @@
       "ig_reel": {
         "status": "in_production",
         "video_file": null,
-        "note": "Content Editor完成後、Creative EngineerへReel制作を依頼予定(Template v2 canonical component使用)。"
+        "note": "Content Editor完成後、Creative EngineerへReel制作を依頼予定(Template v2 canonical component使用)。",
+        "caption_text": "2日間で、3人から同じ指摘をもらいました。\n\n9月8日と9日、独立した3つのアカウントから「AIで時短できても、その浮いた時間の使い道までは語られていない」という、同じ角度の指摘を受けました。そのうちの1人には直接、「浮いた14分を実際に何へ使うようにしているのか」と聞かれました。\n\nそのとき、正直に答えました。「まだそこまで明確に設計できていません。今はとにかく検証を重ねている段階です」と。\n\n12日以上経った今も、答えは変わっていません。見積書の注意書き作成は、今も15分が1分のままです。でも、浮いた14分の使い道は、あのときと同じくまだ設計できていません。\n\n時短をゴールにしない。浮いた時間を何に使うかまで含めて、次の検証テーマにします。\n\nAIでできる仕事は、AIに。\nDay 20 / 100\n#AI仕事研究所 #100日実験 #自動化 #仕事効率化 #AIパートナー\n\nVOICEVOX：青山龍星"
       }
     },
     "business_progress": {
@@ -711,7 +737,7 @@
       "notta_note_note": "公開済み(2026-09-15 22:32) https://note.com/workai_lab777/n/nc5ad7e7ef364 。PR表記・A8リンク・6タグとも実配信を確認済み。",
       "x_announcement": "POSTED_DIVERGED",
       "x_announcement_note": "Owner投稿済み(2026-09-16 07:50 JST Playwright実機確認)。ただし実際の本文はnote.comシェアカード(タイトル+リンクのみ)で、Claude QA承認済みのFINAL全文(一次体験・実測値・向いている人・控えめCTA)とは異なる簡略版だった。投稿自体はOwnerの意思決定でありClaudeは修正・再投稿を行わない。",
-      "notta_clicks": "DATA STALE(前回実測2026-09-16 22:06時点で0。A8.netログイン未確立のため2026-09-18時点で再確認不能、Owner再ログインが必要)",
+      "notta_clicks": "DATA STALE(前回実測2026-09-16 22:06時点で0。A8.netログイン未確立のため2026-09-20時点も再確認不能、Owner再ログインが必要)",
       "notta_clicks_checked_at": "2026-09-16T22:06:00+09:00",
       "automation_reel": "PUBLISHED",
       "automation_reel_note": "Instagram投稿確認済み(2026-09-16 08:03 JST、実機Playwright確認。投稿URL: https://www.instagram.com/workai_lab777/reel/DdU1MXYSUkk/)。07:50時点のMorning Routineチェックでは未投稿だったが、その13分後にOwnerが投稿。owner_actionは解消。",
@@ -723,17 +749,38 @@
       "tomorrow_assets_note": "Day17 X投稿文(content/x/day17_post.md)・Reel台本(content/reel-json/day17_approval_gap_story.md)はContent Editor作成・Claude QA完了。ReelレンダリングはCodex handoff(coord-6ada1af1414838df92b894ff8cba75ba)が2日ブロック継続のため、2026-09-18 Morning RoutineでCreative Engineerへ再ルーティング、動画完成待ち。",
       "strategic_reply": "Owner承認・投稿完了(@yukissense、https://x.com/workai_lab777/status/2100207692967248246)",
       "backyard_health": {
-        "date": "2026-09-18",
-        "market_radar_count": 10,
-        "deep_analysis_count": 4,
-        "strategic_reply_count": 4,
+        "date": "2026-09-20",
+        "market_radar_count": 12,
+        "deep_analysis_count": 3,
+        "strategic_reply_count": 3,
         "audience_response_checked": true,
-        "revenue_action_count": 1
+        "revenue_action_count": 0
       },
-      "backyard_health_note": "Daily Revenue Operating Loop初回実行。Market Radar 10/10(reports/research/market_radar_2026-09-18.md、COO指令で不足2件を追加収集し達成)。Deep Analysis 4件(Market Radar 3件+narisumashi100スレッド追加分、audience_signals_2026-09-18.md)。Strategic Reply 4件中3件投稿済み(@yukissense followup/@omuat/@panana39、Owner承認済み)・1件declined(@free_consultant)。Audience Response確認済みだが@kouya_sns01の6日遅れ検知が判明、PASS条件を『24時間以内検知』へ再定義(COO指令、日次Routineへの実装はP1で維持、Revenue Content公開後に着手)。Revenue Action=1(Notta関連Revenue Content「向かない人」制作完了、content/reel-json/notta_fit_boundary_story.md、notta-fit-boundary.mp4。VOICEVOX音声・独立QA済み、COO承認(Revenue Experimentとして扱う)、Cockpitへ配信済み、Owner投稿待ち)。"
+      "backyard_health_note": "COO指令「CLOSE TODAY'S BUSINESS LOOP」対応。Market Radar 12/10(reports/research/market_radar_2026-09-20.md)。Deep Analysis 3件(@andymochizuki/@ozge_boyraz46/@akagami_sns)。Strategic Reply候補3件をledger.csvへ追記(未投稿・承認待ち)。Audience Response確認済み(X mentions実機確認、新規未対応メンションなし、既存分は既にApproval Batchでキュー済み)。Revenue Action=0(A8.netログイン未確立が継続、正直にRED。Owner再ログイン待ち)。"
     },
     "carryover": [],
     "history": [
+      {
+        "type": "x_post",
+        "day": 19,
+        "status": "completed",
+        "url": "https://x.com/workai_lab777/status/2101448233365196931",
+        "actual_published_at": "2026-09-20T08:07:00+09:00",
+        "verification_source": "実機Playwright確認(workai_lab777、本文完全一致、投稿ページ表示「午前8:07・2026年9月20日」)",
+        "verified_at": "2026-09-20T09:33:00+09:00",
+        "verification_note": "impressions=7(投稿ページ実測、投稿から約1.5時間後、他指標は未計測)。"
+      },
+      {
+        "type": "ig_reel",
+        "day": 19,
+        "status": "completed",
+        "url": "https://www.instagram.com/workai_lab777/reel/DdfKCSzyade/",
+        "video_file": "day19.mp4",
+        "actual_published_at": null,
+        "verification_source": "実機Playwright確認(workai_lab777、キャプション完全一致、投稿ページ相対表示「1時間前」)",
+        "verified_at": "2026-09-20T09:33:00+09:00",
+        "verification_note": "Template v2 canonical component検証Reel(Hook Variant B_FAILURE)。投稿直後のためviews/reach未計測、コメント0件。正確なpublish時刻は相対表示のみのため未記録(推測しない)。"
+      },
       {
         "type": "x_post",
         "day": 18,
@@ -920,18 +967,17 @@
       }
     ],
     "owner_actions": [
-      "Day19 X投稿(content/x/day19_post.md)・IG Reel(day19.mp4)を確認・投稿承認",
       "Revenue Content「Nottaの向かない人」(notta-fit-boundary.mp4)はCOO承認済み(Revenue Experiment扱い)。X・Instagramへの投稿操作をお願いします(公開後24時間で指標を追跡します)",
-      "A8.netへの再ログイン(Revenue Ops P0、notta_clicksデータが2日超stale、Claudeはログイン不可のためOwner専管)",
+      "A8.netへの再ログイン(Revenue Ops P0、notta_clicksデータが4日超stale、Claudeはログイン不可のためOwner専管)",
       "X Conversation Approval Batch(@kouya_sns01への再返信案・@panana39への再返信案、計2件)を確認・投稿承認"
     ],
     "approval_queue": [],
     "ai_learning": {
-      "day": 18,
-      "observation": "Day17〜19にかけて、AI側の「記録」と実際の状態がズレる同型の問題が3回連続で発覚した: (1)Day17=承認待ち表示のままOwnerが先に投稿済み、(2)Day18=@kouya_sns01の好意的コメントに6日間気づけていなかった(確認する工程自体が無かった)、(3)Day19=ChatGPT COOが見ていたSSOTがDate Rollover直後の中間状態のまま2時間古かった(再生成タイミングの抜け)。さらにImplementation Auditで、claude.code_ai Reel Research(Template v2・Hook Variant・evidence overlay・importance-weighted pacing)が2026-09-17策定後、日次Reel生成pipeline(DayNCharacterHybrid.tsx)に一度も接続されていなかったことも判明。",
-      "hypothesis": "個別のバグではなく共通パターンがある: 「一度作った記録・生成物は、その後の実態変化に追従して更新され続ける」という前提が運用のどこにも保証されていなかった(Cockpit/SSOTの再生成タイミング、Audience Response監視、Research→Production接続のいずれも)。都度reconcileする一過性の対応ではなく、イベント駆動での再生成・QA checklistでの機械的検証に倒すことで再発を防げる可能性が高い。",
+      "day": 19,
+      "observation": "Day19 ReelはTemplate v2 canonical componentでの初の検証としてOwnerが実際に投稿(X impressions=7、IG投稿直後)。Market Radar(2026-09-20、12件収集)で、Notta「向かない人」の主張(単発音源・少人数向け、大人数・固有名詞重視の会議には限界)を独立に補強する実例が見つかった: @andymochizuki(いいね91,000)が『AI議事録は文字起こし・要約はできても構造化・論点抽出は別の技術』という実務上の失敗談を投稿。@ozge_boyraz46は23,000円のAIボイスレコーダーを実購入しており、Notta Memo(低価格帯)との比較企画の需要が実在することを確認。",
+      "hypothesis": "「効率化の代償を正直に語る」テーマへの反応の強さは一過性ではなく、Market Radarのたびに再現している。Revenue Contentの優先角度として固定化してよい可能性が高い。",
       "decision": "Template v2をcanonical component化(remotion-video/src/TemplateV2.tsx)し、DayNCharacterHybrid.tsxの複製運用を廃止。Hook Variant/evidence overlay/importance-weighted pacing/CTA分離をQA checklist(publishing-operations-v4.md)で機械的に検証必須化(1つでもFAILならREADY禁止)。",
-      "next_experiment": "Day19 Reel(Template v2 canonical component検証第1弾、Hook Variant B_FAILURE)はOwner投稿承認待ち。Audience Response 24時間以内検知の日次Routine組み込みはP1で継続(未着手)。Revenue Content「Nottaの向かない人」も投稿承認待ちのまま(投稿後24時間追跡タスク登録済み)。"
+      "next_experiment": "Revenue Content「Nottaの向かない人」は投稿承認待ちのまま(投稿後24時間追跡タスク登録済み)。A8.netログイン未確立が継続(4日超stale)、Owner再ログインが最優先のOwner Action。次のNotta Revenue Contentは『ハードウェア型AIボイスレコーダーとの比較』角度を検討価値あり(@ozge_boyraz46から着想)。"
     },
     "morning_2026-09-16_findings": {
       "stale_codex_task_closed": "coord-2eabeb666e9c161e39b98867afc5fd92(Day15 Fixed Schedule Test Day3台本のReel制作)はcontent方針がautomation_gap_storyへ既に差し替わり、day15.mp4として完成・QA PASS済みのためSUPERSEDEDとして扱う(decisions_log.md 2026-09-16参照)。Managed task(handoff)はassigned_to=codexで自分ではclaimできず、ツール上のstatus変更はできなかったため記録のみ。",
@@ -1276,6 +1322,15 @@
         "exit_code": 0,
         "success": true,
         "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\premorning_2026-09-20_054502.log"
+      },
+      {
+        "routine": "morning",
+        "scheduled_at": "2026-09-20T07:00:00",
+        "started_at": "2026-09-20T07:00:02",
+        "finished_at": "2026-09-20T07:20:46",
+        "exit_code": 0,
+        "success": true,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\morning_2026-09-20_070002.log"
       }
     ],
     "tasks": [
@@ -1366,6 +1421,22 @@
       "hook_type_planned": "B_FAILURE",
       "hook_type_actual": "B_FAILURE",
       "theme": "SSOT freshness gap(Date Rollover直後の中間状態がpushされたまま再生成されなかった実話)",
+      "reel_url": "https://www.instagram.com/workai_lab777/reel/DdfKCSzyade/",
+      "posted": "true",
+      "views": "",
+      "avg_watch_pct": "",
+      "likes": "",
+      "saves": "",
+      "shares": "",
+      "profile_visits": "",
+      "follows": ""
+    },
+    {
+      "day": "20",
+      "date": "2026-09-20",
+      "hook_type_planned": "A_RESULT",
+      "hook_type_actual": "A_RESULT",
+      "theme": "浮いた時間の使い道(2日間で独立した3人から同じ指摘を受け、12日以上経った今も正直に未解決のままという実話)",
       "reel_url": "",
       "posted": "false",
       "views": "",

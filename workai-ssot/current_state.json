@@ -1,15 +1,15 @@
 {
   "business_day": 19,
-  "updated_at": "2026-09-19T22:06:23.645Z",
+  "updated_at": "2026-09-20T01:12:39.014Z",
   "data_stale": false,
   "today": {
-    "x": "ready",
-    "instagram": "ready"
+    "x": "posted",
+    "instagram": "posted"
   },
   "owner_actions": [
-    "Day19 X投稿(content/x/day19_post.md)・IG Reel(day19.mp4)を確認・投稿承認",
     "Revenue Content「Nottaの向かない人」(notta-fit-boundary.mp4)はCOO承認済み(Revenue Experiment扱い)。X・Instagramへの投稿操作をお願いします(公開後24時間で指標を追跡します)",
-    "A8.netへの再ログイン(Revenue Ops P0、notta_clicksデータが2日超stale、Claudeはログイン不可のためOwner専管)"
+    "A8.netへの再ログイン(Revenue Ops P0、notta_clicksデータが4日超stale、Claudeはログイン不可のためOwner専管)",
+    "X Conversation Approval Batch(@kouya_sns01への再返信案・@panana39への再返信案、計2件)を確認・投稿承認"
   ],
   "revenue_funnel": [
     {
@@ -40,7 +40,7 @@
     },
     {
       "label": "Morning",
-      "state": "yellow"
+      "state": "green"
     },
     {
       "label": "Evening",
@@ -58,59 +58,59 @@
   "current_business_priority": "Notta revenue funnel (P1)",
   "current_bottleneck": "content → note_lp：未計測（成果の低下とは未判定）",
   "active_experiment": {
-    "day": 19,
-    "date": "2026-09-19",
-    "hook_type_planned": "B_FAILURE",
-    "hook_type_actual": "B_FAILURE",
-    "theme": "SSOT freshness gap(Date Rollover直後の中間状態がpushされたまま再生成されなかった実話)",
+    "day": 20,
+    "date": "2026-09-20",
+    "hook_type_planned": "A_RESULT",
+    "hook_type_actual": "A_RESULT",
+    "theme": "浮いた時間の使い道(2日間で独立した3人から同じ指摘を受け、12日以上経った今も正直に未解決のままという実話)",
     "reel_url": null,
     "posted": false
   },
-  "next_x_status": "ready",
-  "next_reel_status": "ready",
-  "latest_learning": "Day17〜19にかけて、AI側の「記録」と実際の状態がズレる同型の問題が3回連続で発覚した: (1)Day17=承認待ち表示のままOwnerが先に投稿済み、(2)Day18=@kouya_sns01の好意的コメントに6日間気づけていなかった(確認する工程自体が無かった)、(3)Day19=ChatGPT COOが見ていたSSOTがDate Rollover直後の中間状態のまま2時間古かった(再生成タイミングの抜け)。さらにImplementation Auditで、claude.code_ai Reel Research(Template v2・Hook Variant・evidence overlay・importance-weighted pacing)が2026-09-17策定後、日次Reel生成pipeline(DayNCharacterHybrid.tsx)に一度も接続されてい…（全文はdata/publish/today.json: ai_learning参照）",
-  "next_hypothesis": "Day19 Reel(Template v2 canonical component検証第1弾、Hook Variant B_FAILURE)はOwner投稿承認待ち。Audience Response 24時間以内検知の日次Routine組み込みはP1で継続(未着手)。Revenue Content「Nottaの向かない人」も投稿承認待ちのまま(投稿後24時間追跡タスク登録済み)。",
+  "next_x_status": "posted",
+  "next_reel_status": "posted",
+  "latest_learning": "Day19 ReelはTemplate v2 canonical componentでの初の検証としてOwnerが実際に投稿(X impressions=7、IG投稿直後)。Market Radar(2026-09-20、12件収集)で、Notta「向かない人」の主張(単発音源・少人数向け、大人数・固有名詞重視の会議には限界)を独立に補強する実例が見つかった: @andymochizuki(いいね91,000)が『AI議事録は文字起こし・要約はできても構造化・論点抽出は別の技術』という実務上の失敗談を投稿。@ozge_boyraz46は23,000円のAIボイスレコーダーを実購入しており、Notta Memo(低価格帯)との比較企画の需要が実在することを確認。",
+  "next_hypothesis": "Revenue Content「Nottaの向かない人」は投稿承認待ちのまま(投稿後24時間追跡タスク登録済み)。A8.netログイン未確立が継続(4日超stale)、Owner再ログインが最優先のOwner Action。次のNotta Revenue Contentは『ハードウェア型AIボイスレコーダーとの比較』角度を検討価値あり(@ozge_boyraz46から着想)。",
   "freshness": {
     "today": {
-      "updated_at": "2026-09-19T22:06:23.645Z",
+      "updated_at": "2026-09-20T01:12:39.014Z",
       "business_day": 19
     },
     "revenue": {
-      "updated_at": "2026-09-19T22:06:23.645Z",
+      "updated_at": "2026-09-20T01:12:39.014Z",
       "source_checked_at": "2026-09-16T22:06:00+09:00",
       "data_stale": true
     },
     "metrics": {
-      "updated_at": "2026-09-19T22:06:23.645Z",
+      "updated_at": "2026-09-20T01:12:39.014Z",
       "source_checked_at": "2026-09-19",
       "data_stale": true
     },
     "market_radar": {
-      "date": "2026-09-18",
-      "status": "not_started"
+      "date": "2026-09-20",
+      "status": "completed"
     },
     "strategic_reply": {
-      "date": "2026-09-18",
-      "status": "not_started"
+      "date": "2026-09-20",
+      "status": "completed"
     },
     "audience_response": {
-      "date": "2026-09-18",
-      "source_checked_at": "2026-09-18",
-      "status": "not_started",
-      "data_stale": true
+      "date": "2026-09-20",
+      "source_checked_at": "2026-09-20",
+      "status": "completed",
+      "data_stale": false
     },
     "experiment": {
-      "day": 19,
-      "date": "2026-09-19",
+      "day": 20,
+      "date": "2026-09-20",
       "stale": false,
       "flag": null
     },
     "learning": {
-      "day": 18,
+      "day": 19,
       "status": null,
-      "stale": true,
-      "flag": "LEARNING_STALE",
-      "reason": "ai_learning.day (18) is older than the current business_day (19)"
+      "stale": false,
+      "flag": null,
+      "reason": null
     },
     "semantic_stale": false,
     "semantic_stale_reason": null
