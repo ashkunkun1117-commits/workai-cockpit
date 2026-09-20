@@ -1,7 +1,7 @@
 {
   "business_day": 20,
   "business_date": "2026-09-21",
-  "generated_at": "2026-09-21T00:20:00+09:00",
+  "generated_at": "2026-09-21T07:10:00+09:00",
   "today": {
     "x_post": {
       "status": "ready",
@@ -324,7 +324,7 @@
     "x_state": "unauthenticated確定(/home・/notifications・/searchいずれも明示的ログインフォームへリダイレクト)。2026-09-17から5日連続。Instagramはこの間ずっとauthenticatedのままで、2026-09-08〜10のブラウザプロファイル競合による誤検知とはパターンが異なると判断し、owner_actionsへ軽い再ログイン依頼を追加した(緊急度低、既存2件を優先)。",
     "ig_state": "authenticated(プロフィール編集リンク表示)。",
     "day21_content": "day21_skip-rationale.mdの見送り判断を維持。@ozge_boyraz46/@andymochizuki宛下書きは未投稿のままSTALEのため再検討条件(本人から返信取得)は未達。Content Editorへの新規制作指示は今回見送り、tomorrow.status=not_readyを維持。",
-    "cockpit": "前回Evening更新分(commit e564f0a、business_day=20)と本番Cockpitのcurrent.jsonが完全一致することを実機curlで確認済みのため、再生成・再pushは行わなかった。",
+    "cockpit": "owner_actionsへX再ログイン依頼を追加したためCockpitを再生成・再push(commit ad9fad5)。Pages builds APIは`building`表示のまま遅延していたが、実機curlでcurrent.jsonの新owner_actions配列(3件)配信を確認PASS。",
     "codex_handoff": "da79a4b8(2026-09-15からassigned停止)・task 1001b4e9(Notta 24hトラッキング、OVERDUE)とも変化なし。優先順位(市場接触>コンテンツ公開>計測>収益検証>新規Infrastructure)に照らし新規Engineering Handoffは起票せず。"
   },
   "kpi": {
@@ -389,8 +389,8 @@
     "next_day_prep": "Day21のX投稿・Reelは本Routine終了時点で未着手。Content Editorへ先行制作を依頼(次工程、バックグラウンド)。"
   },
   "current_date": "2026-09-21",
-  "data_updated_at": "2026-09-21T00:20:00+09:00",
-  "public_updated_at": "2026-09-20T22:10:27.842Z",
+  "data_updated_at": "2026-09-21T07:10:00+09:00",
+  "public_updated_at": "2026-09-20T22:12:48.625Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -759,7 +759,7 @@
   "source_manifest": {
     "business_day": 20,
     "business_date": "2026-09-21",
-    "generated_at": "2026-09-21T00:20:00+09:00",
+    "generated_at": "2026-09-21T07:10:00+09:00",
     "today": {
       "x_post": {
         "status": "ready",
@@ -1082,7 +1082,7 @@
       "x_state": "unauthenticated確定(/home・/notifications・/searchいずれも明示的ログインフォームへリダイレクト)。2026-09-17から5日連続。Instagramはこの間ずっとauthenticatedのままで、2026-09-08〜10のブラウザプロファイル競合による誤検知とはパターンが異なると判断し、owner_actionsへ軽い再ログイン依頼を追加した(緊急度低、既存2件を優先)。",
       "ig_state": "authenticated(プロフィール編集リンク表示)。",
       "day21_content": "day21_skip-rationale.mdの見送り判断を維持。@ozge_boyraz46/@andymochizuki宛下書きは未投稿のままSTALEのため再検討条件(本人から返信取得)は未達。Content Editorへの新規制作指示は今回見送り、tomorrow.status=not_readyを維持。",
-      "cockpit": "前回Evening更新分(commit e564f0a、business_day=20)と本番Cockpitのcurrent.jsonが完全一致することを実機curlで確認済みのため、再生成・再pushは行わなかった。",
+      "cockpit": "owner_actionsへX再ログイン依頼を追加したためCockpitを再生成・再push(commit ad9fad5)。Pages builds APIは`building`表示のまま遅延していたが、実機curlでcurrent.jsonの新owner_actions配列(3件)配信を確認PASS。",
       "codex_handoff": "da79a4b8(2026-09-15からassigned停止)・task 1001b4e9(Notta 24hトラッキング、OVERDUE)とも変化なし。優先順位(市場接触>コンテンツ公開>計測>収益検証>新規Infrastructure)に照らし新規Engineering Handoffは起票せず。"
     },
     "kpi": {
