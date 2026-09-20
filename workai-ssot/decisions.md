@@ -43,6 +43,24 @@ commit(ca17db7)・push・Pages build built一致・live current.json business_da
 
 ---
 
+## 2026-09-20 (COO指令「CLOSE TODAY'S BUSINESS LOOP」対応)
+
+Day19 X投稿([status/2101448233365196931](https://x.com/workai_lab777/status/2101448233365196931)、
+08:07 JST)・IG Reel([reel/DdfKCSzyade](https://www.instagram.com/workai_lab777/reel/DdfKCSzyade/))
+とも実機Playwright確認でOwner投稿済みと判明、today.json/reel_hook_experiment.csv(posted=true)へ
+reconcile。Market Radar 12件収集([market_radar_2026-09-20.md](reports/research/market_radar_2026-09-20.md))、
+Deep Analysis 3件(@andymochizuki/@ozge_boyraz46/@akagami_sns)。Strategic Reply候補3件をledger.csvへ
+追記(未投稿・承認待ち) — **追記時にCSVクォート漏れ(カンマを含む値の未エスケープ)による
+カラムずれを自己発見、即修正**(parseGenericCsvで22列に正しくパースされることを確認)。
+Audience Response実機確認(新規未対応メンションなし、既存分は既にApproval Batch済み)。
+
+Revenue Ops: A8.netログイン依然未確立(4日超stale)、`source_checked_at`は2026-09-16のまま
+更新せず正直にdata_stale=true維持(「SSOTを再生成したからfresh」にしていない)。Notta Revenue
+Content「向かない人」は未投稿を確認、Owner Actionとして維持。owner_actionsを実態に合わせ3件へ整理
+(Day19分は解消済みのため削除)。
+
+---
+
 ## 2026-09-19 (COO ADDENDUM「Source Freshness」— updated_at / source_checked_at分離)
 
 「SSOTを再生成した時刻」と「一次データを実際に確認した時刻」を分離。
