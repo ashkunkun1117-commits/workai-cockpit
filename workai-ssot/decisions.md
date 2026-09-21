@@ -4,6 +4,52 @@
 
 ---
 
+## 2026-09-21 (COO指令「P1/P2 VALIDATION PASS / RENDER: GO」対応 — 統合Reel制作・QA完了)
+
+COOがPhase 2 Review PackageをPASSと判定、P1とP2を別Reelにせず1本のストーリーへ統合するよう指示
+(CORE STORY: VOICE RECOGNITION→TRANSCRIPT ERROR→AI DAILY REPORT→ERROR SURVIVES→HUMAN CHECK IS
+STILL REQUIRED)。メイン数字は「10語中6語完全一致」のみ使用、65%部分点・TIME SAVEDはReel内で
+不使用、Notta全体への一般化はせず「今回のテスト」と明示的に限定、というCOOのQA READY条件に
+すべて準拠して制作した。
+
+**役割分担(CLAUDE.md方針どおり)**: 台本・尺設計・Reel企画はClaude。Cockpit配信機能
+(`business_progress.revenue_content`単数から`revenue_contents`配列への一般化)はCodexへ実装
+委任(task-mub8c8nb-sg9ee7)。Codexはサンドボックスの書き込み権限がworkai-lab外に限定されて
+いたため直接編集できず、検証済みパッチとして納品(一時コピーで31 PASS/0 FAIL)。Claudeが
+パッチ内容をレビューし`patch -p1`で適用、全体テスト56/56 PASSを確認。VOICEVOX音声合成・
+Remotionレンダリングは、CodexのサンドボックスがVOICEVOXエンジンに到達できないため
+(前回Notta Revenue Reel制作時と同じ制約)、引き続きClaudeが直接実行。
+
+**自己発見・修正したバグ2件**:
+1. HOOKシーンのtitleが3行になり、bodyの統計box(「10語中6語完全一致」)と文字が重なった
+   コンテンツ側の問題。titleを2行に短縮して解消。
+2. `TemplateV2.tsx`共有コンポーネント側の潜在バグ: evidence roleのシーンでbodyボックスの
+   左右配置がscene index(偶奇)基準になっており、evidence用キャラクター(常に右側固定)と
+   衝突しうる設計になっていた。このパイプラインでevidenceシーンにbodyフィールドを持つ
+   ケースが今回初めて発生したため顕在化。今後の全Reelに影響する共有コンポーネントのバグと
+   判断し、evidence roleのbodyボックスを常にキャラクターと反対側(左)に固定する修正を
+   `TemplateV2.tsx`へ適用(scene_role判定を追加、index非依存化)。既存の投稿済み・
+   レンダリング済みReel(notta-revenue-v2等)はmp4ファイルとして固定済みのため無影響、
+   今後の新規レンダリングにのみ適用される。
+
+**CTA尺の調整**: COO指令「CTA最後3〜4秒のみ」を満たすため、ナレーション文字数を2回調整。
+1回目(23文字)はslot自体は3.83秒に収まったが、実際のVOICEVOX合成音声がslot推定より
+約1.6秒短く、CTAシーンの半分近くが無音になっていることをsilencedetectで発見。2回目
+(24文字、「Nottaが向く仕事・向かない仕事はnoteへ。」)でslot 4.00秒・無音ギャップを
+約1.33秒まで圧縮、`cta_visually_separated_and_3to4sec`をPASSさせた。
+
+最終MP4(notta-voice-validation.mp4、28.10秒)はストリーム検証・decode検証・cover hash・
+silencedetect(最大無音2.06秒、core_insightシーン末尾のimportance-boost設計上の構造的
+トレードオフとして許容、notta-revenue-v2の前例3.20秒より改善)・5シーン全frame目視の
+いずれもPASS。Production CockpitのREVENUE CONTENTセクションを複数件対応へ一般化し
+(`revenue_contents`配列、既存`revenue_content`単数との後方互換維持)、1本目
+(notta-revenue-v2、Owner投稿待ち継続)・2本目(notta-voice-validation)とも独立表示。
+COOへDELIVERY指定フォーマット(REEL STATUS/DURATION/FINAL HOOK/P1 EVIDENCE/P2 EVIDENCE/
+CORE INSIGHT/CTA/IGキャプション/QA RESULT)で報告済み。COO指令どおり、Owner投稿は
+COO最終レビュー後とし、今回はowner_actionsへの追加を行っていない。
+
+---
+
 ## 2026-09-21 (Notta P1/P2 Owner実機検証結果受領 — Phase 2 COO Review Package提出)
 
 Wait State中にOwnerから、自然な肉声・自身のNottaアカウントで録音した2本(2026-09-21 21:04/21:05)の

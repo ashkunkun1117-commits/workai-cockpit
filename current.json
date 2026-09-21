@@ -40,11 +40,22 @@
     "notta_revenue_experiment_start": "2026-09-20T12:48:00+09:00",
     "notta_revenue_experiment_pre_fix_invalid_period": "〜2026-09-20T12:48:00+09:00(A8 click=0、リンク未クリック化のため需要評価対象外)",
     "notta_p1_p2_validation": {
-      "status": "review_submitted",
+      "status": "rendered_awaiting_coo_delivery_review",
       "report_path": "reports/notta-p1-p2-validation-2026-09-21.md",
+      "reel_content_path": "content/reel-json/notta-voice-validation.md",
       "task_id": "5ea5e2ad-1beb-4e88-aa09-261f4ba068f5",
-      "note": "COO指令「Next Reel Validation Sprint」Phase1。Owner本人の肉声・自身のNottaアカウントで実施(2026-09-21 21:04/21:05)。P1専門用語10語: 厳密一致6/10(60%)、部分点込み65%。P2音声メモ日報: 誤変換2件(不陸→振込、防火戸→ボーカド)、TIME SAVEDは未実測のため非報告。Phase 2 COO Review Package提出済み、Render未実施(COO判断待ち)。"
+      "note": "COO指令「P1/P2 VALIDATION PASS / RENDER: GO」を受け、P1+P2を1本のReelに統合制作・QA PASS済み(notta-voice-validation.mp4、Cockpit配信済み)。COOへDELIVERY報告(REEL STATUS/DURATION/FINAL HOOK/P1 EVIDENCE/P2 EVIDENCE/CORE INSIGHT/CTA/IG CAPTION/QA RESULT)提出済み。Owner投稿はCOO最終レビュー後(COO指令どおり、owner_actionsへはまだ追加していない)。"
     },
+    "revenue_contents": [
+      {
+        "label": "Notta P1/P2実機検証(専門用語×AI日報)",
+        "status": "ready",
+        "video_file": "notta-voice-validation.mp4",
+        "caption_text": "Nottaに、建設現場の専門用語10個を聞かせてみました。\n\n結果、正解は6個。\n\n石膏ボードは完璧でしたが、竪穴区画→縦穴加工、防火戸→防火度、見切り材→2キリ材、と3つ誤変換になりました。\n\nじゃあ、この文字起こしをAIに日報化させれば直るのか。試してみました。\n\n不陸あり→振込あり、防火戸→ボーカド。\n\nAI整形後も、誤認識はそのまま原文で残りました。\n\nAIは文章を整えてくれます。でも、元の情報が間違っていたら、綺麗に間違った文章になります。\n\nだから現場では、AIに任せる部分と、人が確認する部分を分けたほうがいいと思っています。\n\n※あくまで今回、Owner本人の肉声で試した実測結果です。Notta全体の性能を評価したものではありません。\n\nNottaが向く仕事・向かない仕事は、プロフィール欄のリンクからnote記事にまとめました。\n\n※記事内にアフィリエイトリンクを含みます。\n\nAIでできる仕事は、AIに。\n#AI仕事研究所 #100日実験 #Notta #議事録効率化 #AIパートナー",
+        "note_url": "https://note.com/workai_lab777/n/nc5ad7e7ef364",
+        "note": "COO指令「P1/P2 VALIDATION PASS / RENDER: GO」対応。P1+P2を1本のストーリーに統合(COO指令どおり)。Owner本人の肉声によるNotta実機検証(reports/notta-p1-p2-validation-2026-09-21.md)が一次情報。TemplateV2.tsx共有コンポーネントの潜在レイアウトバグ(evidence role bodyボックスの左右衝突)を自己発見・修正。制作詳細はcontent/reel-json/notta-voice-validation.md参照。Cockpit配信機能(複数Revenue Content対応)はCodexへ一部委任、パッチをClaudeがレビュー・適用。"
+      }
+    ],
     "revenue_content": {
       "label": "Notta Revenue Experiment",
       "status": "ready",
@@ -395,7 +406,7 @@
   },
   "current_date": "2026-09-21",
   "data_updated_at": "2026-09-21T07:10:00+09:00",
-  "public_updated_at": "2026-09-21T12:25:29.077Z",
+  "public_updated_at": "2026-09-21T13:00:13.811Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -803,11 +814,22 @@
       "notta_revenue_experiment_start": "2026-09-20T12:48:00+09:00",
       "notta_revenue_experiment_pre_fix_invalid_period": "〜2026-09-20T12:48:00+09:00(A8 click=0、リンク未クリック化のため需要評価対象外)",
       "notta_p1_p2_validation": {
-        "status": "review_submitted",
+        "status": "rendered_awaiting_coo_delivery_review",
         "report_path": "reports/notta-p1-p2-validation-2026-09-21.md",
+        "reel_content_path": "content/reel-json/notta-voice-validation.md",
         "task_id": "5ea5e2ad-1beb-4e88-aa09-261f4ba068f5",
-        "note": "COO指令「Next Reel Validation Sprint」Phase1。Owner本人の肉声・自身のNottaアカウントで実施(2026-09-21 21:04/21:05)。P1専門用語10語: 厳密一致6/10(60%)、部分点込み65%。P2音声メモ日報: 誤変換2件(不陸→振込、防火戸→ボーカド)、TIME SAVEDは未実測のため非報告。Phase 2 COO Review Package提出済み、Render未実施(COO判断待ち)。"
+        "note": "COO指令「P1/P2 VALIDATION PASS / RENDER: GO」を受け、P1+P2を1本のReelに統合制作・QA PASS済み(notta-voice-validation.mp4、Cockpit配信済み)。COOへDELIVERY報告(REEL STATUS/DURATION/FINAL HOOK/P1 EVIDENCE/P2 EVIDENCE/CORE INSIGHT/CTA/IG CAPTION/QA RESULT)提出済み。Owner投稿はCOO最終レビュー後(COO指令どおり、owner_actionsへはまだ追加していない)。"
       },
+      "revenue_contents": [
+        {
+          "label": "Notta P1/P2実機検証(専門用語×AI日報)",
+          "status": "ready",
+          "video_file": "notta-voice-validation.mp4",
+          "caption_text": "Nottaに、建設現場の専門用語10個を聞かせてみました。\n\n結果、正解は6個。\n\n石膏ボードは完璧でしたが、竪穴区画→縦穴加工、防火戸→防火度、見切り材→2キリ材、と3つ誤変換になりました。\n\nじゃあ、この文字起こしをAIに日報化させれば直るのか。試してみました。\n\n不陸あり→振込あり、防火戸→ボーカド。\n\nAI整形後も、誤認識はそのまま原文で残りました。\n\nAIは文章を整えてくれます。でも、元の情報が間違っていたら、綺麗に間違った文章になります。\n\nだから現場では、AIに任せる部分と、人が確認する部分を分けたほうがいいと思っています。\n\n※あくまで今回、Owner本人の肉声で試した実測結果です。Notta全体の性能を評価したものではありません。\n\nNottaが向く仕事・向かない仕事は、プロフィール欄のリンクからnote記事にまとめました。\n\n※記事内にアフィリエイトリンクを含みます。\n\nAIでできる仕事は、AIに。\n#AI仕事研究所 #100日実験 #Notta #議事録効率化 #AIパートナー",
+          "note_url": "https://note.com/workai_lab777/n/nc5ad7e7ef364",
+          "note": "COO指令「P1/P2 VALIDATION PASS / RENDER: GO」対応。P1+P2を1本のストーリーに統合(COO指令どおり)。Owner本人の肉声によるNotta実機検証(reports/notta-p1-p2-validation-2026-09-21.md)が一次情報。TemplateV2.tsx共有コンポーネントの潜在レイアウトバグ(evidence role bodyボックスの左右衝突)を自己発見・修正。制作詳細はcontent/reel-json/notta-voice-validation.md参照。Cockpit配信機能(複数Revenue Content対応)はCodexへ一部委任、パッチをClaudeがレビュー・適用。"
+        }
+      ],
       "revenue_content": {
         "label": "Notta Revenue Experiment",
         "status": "ready",
