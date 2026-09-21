@@ -1,7 +1,7 @@
 {
   "business_day": 21,
   "business_date": "2026-09-22",
-  "generated_at": "2026-09-22T05:50:00+09:00",
+  "generated_at": "2026-09-22T07:20:00+09:00",
   "today": {
     "x_post": {
       "status": "not_ready",
@@ -411,6 +411,15 @@
     "revenue_check": "Notta Revenue Content(notta-fit-boundary.mp4)はCOO承認済みのままOwner投稿待ち。notta_clicksは引き続きA8.net再ログイン待ちでDATA STALE。Revenue/Profitとも0円のまま変化なし。",
     "codex_result_review": "get_tasks(status=review)の5件(Auto Handoff受入・Pending Task Watch v1・Template v2 Pilot・Cockpit v4・Shared SSOT v1)はいずれもreview_status=passで過去にClaude Business QA完了済み、本日新規の変化なし。Codexクォータは2026-09-20リセット予定のため新規Engineering Handoffは作成せず待機。"
   },
+  "morning_2026-09-22_findings": {
+    "missed_routine_coalescing": "本日05:45 Pre-Morningは既にDate Rollover(Day20→Day21)を成功実行済み(MORNING_READY)だが、当日07:00 Morning Routine自体は未実行だったためSUPERSEDEDに該当せず、通常フル実行した。",
+    "manual_publish_verification": "carryoverは空のまま。owner_actions記載のNotta P1/P2統合Reel(notta-voice-validation.mp4)は実機確認(X profile timeline・Instagram grid)で依然未投稿(X最新投稿はDay20のまま10h前、IG最新ReelもDay20のまま)。reconcile不要。",
+    "x_conversation_check": "waiting中4会話(forestkinoko/omuat/yukissense followup/narisumashi100)を実機Playwrightで再確認、いずれも新規author返信なし(自社投稿・自社返信とも返信数0)。narisumashi100は引き続き非ログイン制約で全件確認不能。@ozge_boyraz46/@andymochizuki/@akagami_sensの3件は依然replied_at空欄のまま未送信(2026-09-20作成、2日超経過で経過時間スコア上STALE)、今回も送信しない。自社Day20投稿(impressions 8→12に増加)にも新規コメントなし。Approval Batch該当0件。",
+    "x_state": "unauthenticated確定(x.com/homeが明示的ログインフォームへリダイレクト)。6日連続。個別投稿URL・プロフィールページは非ログインでも閲覧可能なためその範囲で確認した。",
+    "ig_state": "authenticated(プロフィール編集リンク表示)。フォロワー数が11人に減少していることを確認(kpi_daily.csv記録のDay17=12人・Day19=12人から-1人、今回のRoutineで初めて観測)。",
+    "day22_content": "Content Editorへ、フォロワー-1人という本日の新規一次データを提示し、Day22 Own Content(制作可否判断含む)を依頼(バックグラウンド実行中)。Day21の見送り判断(day21_skip-rationale.md)は再検討条件未達のまま維持。",
+    "codex_handoff": "get_tasks(review/waiting/blocked)を確認、review 5件・waiting 2件(1001b4e9 on_hold/56831bad owner_publish_pending)とも変化なし、blocked 0件。da79a4b8は現在queryに現れず(過去解消済みと判断)。新規Engineering Handoffは起票せず。"
+  },
   "evening_2026-09-21_findings": {
     "missed_routine_coalescing": "2026-09-20 Evening・2026-09-21 Pre-Morning/Morningとも実行記録なし(routine_scheduler.log直近はmorning_2026-09-20 07:20:46で途切れ)。後続のPre-Morning/Morningが成功していないためSUPERSEDED条件に該当せず、フル実行した。today.jsonがDay19のまま1日以上更新されていなかったため、本Routineで初めてDay20へのDate Rolloverを実施(Pre-Morning相当の作業を代行)。",
     "day20_content_discovery": "today.jsonはDay20 X投稿・Reelとも『未着手』のまま停止していたが、実ファイル確認の結果content/x/day20_post.md・content/reel-json/day20.json・remotion-video/out/day20.mp4(44.35秒、cover/frame検証ファイルまで)いずれも制作完了済みと判明(SSOTの更新漏れ、Codex/Content Editor/Creative Engineerの制作自体は正常に進んでいた)。day20-verification.jsonのclaude_business_qaが『NOT PERFORMED』のまま未実施だったため、本Routineでframe0/decode/audio/CTA要件・本文の一次データ根拠を確認しPASS判定、today.jsonをready状態へ更新した。",
@@ -435,8 +444,8 @@
     "revenue_check": "Revenue/Profitとも0円のまま変化なし。Notta Revenue Experiment(24h/48h/72h追跡、task 98ce9bc9)はA8.net未ログインのためクリック実測は継続DATA UNAVAILABLE。"
   },
   "current_date": "2026-09-22",
-  "data_updated_at": "2026-09-22T05:50:00+09:00",
-  "public_updated_at": "2026-09-21T20:46:59.021Z",
+  "data_updated_at": "2026-09-22T07:20:00+09:00",
+  "public_updated_at": "2026-09-21T22:05:19.959Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -823,7 +832,7 @@
   "source_manifest": {
     "business_day": 21,
     "business_date": "2026-09-22",
-    "generated_at": "2026-09-22T05:50:00+09:00",
+    "generated_at": "2026-09-22T07:20:00+09:00",
     "today": {
       "x_post": {
         "status": "not_ready",
@@ -1233,6 +1242,15 @@
       "revenue_check": "Notta Revenue Content(notta-fit-boundary.mp4)はCOO承認済みのままOwner投稿待ち。notta_clicksは引き続きA8.net再ログイン待ちでDATA STALE。Revenue/Profitとも0円のまま変化なし。",
       "codex_result_review": "get_tasks(status=review)の5件(Auto Handoff受入・Pending Task Watch v1・Template v2 Pilot・Cockpit v4・Shared SSOT v1)はいずれもreview_status=passで過去にClaude Business QA完了済み、本日新規の変化なし。Codexクォータは2026-09-20リセット予定のため新規Engineering Handoffは作成せず待機。"
     },
+    "morning_2026-09-22_findings": {
+      "missed_routine_coalescing": "本日05:45 Pre-Morningは既にDate Rollover(Day20→Day21)を成功実行済み(MORNING_READY)だが、当日07:00 Morning Routine自体は未実行だったためSUPERSEDEDに該当せず、通常フル実行した。",
+      "manual_publish_verification": "carryoverは空のまま。owner_actions記載のNotta P1/P2統合Reel(notta-voice-validation.mp4)は実機確認(X profile timeline・Instagram grid)で依然未投稿(X最新投稿はDay20のまま10h前、IG最新ReelもDay20のまま)。reconcile不要。",
+      "x_conversation_check": "waiting中4会話(forestkinoko/omuat/yukissense followup/narisumashi100)を実機Playwrightで再確認、いずれも新規author返信なし(自社投稿・自社返信とも返信数0)。narisumashi100は引き続き非ログイン制約で全件確認不能。@ozge_boyraz46/@andymochizuki/@akagami_sensの3件は依然replied_at空欄のまま未送信(2026-09-20作成、2日超経過で経過時間スコア上STALE)、今回も送信しない。自社Day20投稿(impressions 8→12に増加)にも新規コメントなし。Approval Batch該当0件。",
+      "x_state": "unauthenticated確定(x.com/homeが明示的ログインフォームへリダイレクト)。6日連続。個別投稿URL・プロフィールページは非ログインでも閲覧可能なためその範囲で確認した。",
+      "ig_state": "authenticated(プロフィール編集リンク表示)。フォロワー数が11人に減少していることを確認(kpi_daily.csv記録のDay17=12人・Day19=12人から-1人、今回のRoutineで初めて観測)。",
+      "day22_content": "Content Editorへ、フォロワー-1人という本日の新規一次データを提示し、Day22 Own Content(制作可否判断含む)を依頼(バックグラウンド実行中)。Day21の見送り判断(day21_skip-rationale.md)は再検討条件未達のまま維持。",
+      "codex_handoff": "get_tasks(review/waiting/blocked)を確認、review 5件・waiting 2件(1001b4e9 on_hold/56831bad owner_publish_pending)とも変化なし、blocked 0件。da79a4b8は現在queryに現れず(過去解消済みと判断)。新規Engineering Handoffは起票せず。"
+    },
     "evening_2026-09-21_findings": {
       "missed_routine_coalescing": "2026-09-20 Evening・2026-09-21 Pre-Morning/Morningとも実行記録なし(routine_scheduler.log直近はmorning_2026-09-20 07:20:46で途切れ)。後続のPre-Morning/Morningが成功していないためSUPERSEDED条件に該当せず、フル実行した。today.jsonがDay19のまま1日以上更新されていなかったため、本Routineで初めてDay20へのDate Rolloverを実施(Pre-Morning相当の作業を代行)。",
       "day20_content_discovery": "today.jsonはDay20 X投稿・Reelとも『未着手』のまま停止していたが、実ファイル確認の結果content/x/day20_post.md・content/reel-json/day20.json・remotion-video/out/day20.mp4(44.35秒、cover/frame検証ファイルまで)いずれも制作完了済みと判明(SSOTの更新漏れ、Codex/Content Editor/Creative Engineerの制作自体は正常に進んでいた)。day20-verification.jsonのclaude_business_qaが『NOT PERFORMED』のまま未実施だったため、本Routineでframe0/decode/audio/CTA要件・本文の一次データ根拠を確認しPASS判定、today.jsonをready状態へ更新した。",
@@ -1622,6 +1640,27 @@
         "exit_code": 0,
         "success": true,
         "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\evening_2026-09-21_223002.log"
+      },
+      {
+        "routine": "premorning",
+        "scheduled_at": "2026-09-22T05:45:00",
+        "started_at": "2026-09-21T20:48:55.477Z",
+        "finished_at": "2026-09-21T20:48:55.477Z",
+        "exit_code": 0,
+        "success": true,
+        "invocation": "manual_chat_slash_command",
+        "status": "MORNING_READY",
+        "note": "Date Rollover実施: today.json/CockpitともDay20/2026-09-21→Day21/2026-09-22へ更新。Day21 X投稿・Reelは見送り判断維持(再検討条件未達、get_reply_ledger確認済み)。Day22分は未着手のためnot_readyで正直に表示。Approval Queue pending=0。Cockpit commit 7f86b573・push・Pages build built一致・live current.json business_day=21確認PASS。",
+        "log_file": null
+      },
+      {
+        "routine": "premorning",
+        "scheduled_at": "2026-09-22T05:45:00",
+        "started_at": "2026-09-22T05:45:02",
+        "finished_at": "2026-09-22T05:49:02",
+        "exit_code": 0,
+        "success": true,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\premorning_2026-09-22_054502.log"
       }
     ],
     "tasks": [
