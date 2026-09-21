@@ -42,12 +42,14 @@
     "notta_revenue_experiment_start": "2026-09-20T12:48:00+09:00",
     "notta_revenue_experiment_pre_fix_invalid_period": "〜2026-09-20T12:48:00+09:00(A8 click=0、リンク未クリック化のため需要評価対象外)",
     "notta_p1_p2_validation": {
-      "status": "rendered_awaiting_coo_delivery_review",
+      "status": "coo_final_pass_publish_go_awaiting_owner_post",
       "report_path": "reports/notta-p1-p2-validation-2026-09-21.md",
       "reel_content_path": "content/reel-json/notta-voice-validation.md",
       "task_id": "5ea5e2ad-1beb-4e88-aa09-261f4ba068f5",
-      "note": "COO指令「P1/P2 VALIDATION PASS / RENDER: GO」を受け、P1+P2を1本のReelに統合制作・QA PASS済み(notta-voice-validation.mp4、Cockpit配信済み)。COOへDELIVERY報告(REEL STATUS/DURATION/FINAL HOOK/P1 EVIDENCE/P2 EVIDENCE/CORE INSIGHT/CTA/IG CAPTION/QA RESULT)提出済み。Owner投稿はCOO最終レビュー後(COO指令どおり、owner_actionsへはまだ追加していない)。"
+      "tracking_task_id": "56831bad-f74d-4839-a6ea-cfaf3adc5be1",
+      "note": "COO最終指令「FINAL PASS / PUBLISH GO」。新Reel戦略の基準コンテンツとして扱う。owner_actionsへ投稿依頼を追加済み。投稿競合を避けるため、notta-fit-boundary.mp4の投稿はHOLD(task 1001b4e9をwaiting_reason=on_hold_pending_notta_voice_validation_baselineへ更新)。24hトラッキング用タスク56831badを新規作成。"
     },
+    "notta_fit_boundary_hold": "COO指令によりHOLD(2026-09-21)。notta-voice-validation.mp4(新Reel戦略の基準コンテンツ)の投稿・24hデータ取得を優先し、投稿競合を避けるため一時停止。owner_actionsからも削除済み。再開条件: notta-voice-validation.mp4の24hトラッキング完了後、COOが重複Owner Action整理を指示。",
     "revenue_contents": [
       {
         "label": "Notta P1/P2実機検証(専門用語×AI日報)",
@@ -325,7 +327,7 @@
     }
   ],
   "owner_actions": [
-    "Revenue Content「Nottaの向かない人」(notta-fit-boundary.mp4)はCOO承認済み(Revenue Experiment扱い)。X・Instagramへの投稿操作をお願いします(公開後24時間で指標を追跡します)。2026-09-21 22:31 JST時点で実機確認、まだ未投稿(task 1001b4e9はOVERDUE、作成から3日超)。"
+    "【COO最終承認・PUBLISH GO】Notta P1/P2実機検証Reel(notta-voice-validation.mp4)をX・Instagramへ投稿してください。新Reel戦略の基準コンテンツです。投稿後24時間でReel URL/公開時刻/views/reach/フォロワー外%/いいね/保存/シェア/コメント/プロフィールアクセス/フォロー/note流入/A8クリック/CV/売上を追跡します(views単独では判断しません、特にprofile visit/save/share/follow/note・A8クリックを重視)。投稿競合を避けるため、他のNotta Revenue Content(notta-fit-boundary.mp4「Nottaの向かない人」)は本Reel投稿・24hデータ取得後まで見送りです。そちらの投稿操作は今は不要です。"
   ],
   "approval_queue": [],
   "ai_learning": {
@@ -439,7 +441,7 @@
   },
   "current_date": "2026-09-21",
   "data_updated_at": "2026-09-21T22:40:00+09:00",
-  "public_updated_at": "2026-09-21T13:38:04.810Z",
+  "public_updated_at": "2026-09-21T13:47:03.309Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -867,12 +869,14 @@
       "notta_revenue_experiment_start": "2026-09-20T12:48:00+09:00",
       "notta_revenue_experiment_pre_fix_invalid_period": "〜2026-09-20T12:48:00+09:00(A8 click=0、リンク未クリック化のため需要評価対象外)",
       "notta_p1_p2_validation": {
-        "status": "rendered_awaiting_coo_delivery_review",
+        "status": "coo_final_pass_publish_go_awaiting_owner_post",
         "report_path": "reports/notta-p1-p2-validation-2026-09-21.md",
         "reel_content_path": "content/reel-json/notta-voice-validation.md",
         "task_id": "5ea5e2ad-1beb-4e88-aa09-261f4ba068f5",
-        "note": "COO指令「P1/P2 VALIDATION PASS / RENDER: GO」を受け、P1+P2を1本のReelに統合制作・QA PASS済み(notta-voice-validation.mp4、Cockpit配信済み)。COOへDELIVERY報告(REEL STATUS/DURATION/FINAL HOOK/P1 EVIDENCE/P2 EVIDENCE/CORE INSIGHT/CTA/IG CAPTION/QA RESULT)提出済み。Owner投稿はCOO最終レビュー後(COO指令どおり、owner_actionsへはまだ追加していない)。"
+        "tracking_task_id": "56831bad-f74d-4839-a6ea-cfaf3adc5be1",
+        "note": "COO最終指令「FINAL PASS / PUBLISH GO」。新Reel戦略の基準コンテンツとして扱う。owner_actionsへ投稿依頼を追加済み。投稿競合を避けるため、notta-fit-boundary.mp4の投稿はHOLD(task 1001b4e9をwaiting_reason=on_hold_pending_notta_voice_validation_baselineへ更新)。24hトラッキング用タスク56831badを新規作成。"
       },
+      "notta_fit_boundary_hold": "COO指令によりHOLD(2026-09-21)。notta-voice-validation.mp4(新Reel戦略の基準コンテンツ)の投稿・24hデータ取得を優先し、投稿競合を避けるため一時停止。owner_actionsからも削除済み。再開条件: notta-voice-validation.mp4の24hトラッキング完了後、COOが重複Owner Action整理を指示。",
       "revenue_contents": [
         {
           "label": "Notta P1/P2実機検証(専門用語×AI日報)",
@@ -1150,7 +1154,7 @@
       }
     ],
     "owner_actions": [
-      "Revenue Content「Nottaの向かない人」(notta-fit-boundary.mp4)はCOO承認済み(Revenue Experiment扱い)。X・Instagramへの投稿操作をお願いします(公開後24時間で指標を追跡します)。2026-09-21 22:31 JST時点で実機確認、まだ未投稿(task 1001b4e9はOVERDUE、作成から3日超)。"
+      "【COO最終承認・PUBLISH GO】Notta P1/P2実機検証Reel(notta-voice-validation.mp4)をX・Instagramへ投稿してください。新Reel戦略の基準コンテンツです。投稿後24時間でReel URL/公開時刻/views/reach/フォロワー外%/いいね/保存/シェア/コメント/プロフィールアクセス/フォロー/note流入/A8クリック/CV/売上を追跡します(views単独では判断しません、特にprofile visit/save/share/follow/note・A8クリックを重視)。投稿競合を避けるため、他のNotta Revenue Content(notta-fit-boundary.mp4「Nottaの向かない人」)は本Reel投稿・24hデータ取得後まで見送りです。そちらの投稿操作は今は不要です。"
     ],
     "approval_queue": [],
     "ai_learning": {
@@ -1607,6 +1611,27 @@
         "exit_code": 0,
         "success": true,
         "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\morning_2026-09-21_070002.log"
+      },
+      {
+        "routine": "evening",
+        "scheduled_at": "2026-09-21T22:30:00",
+        "started_at": "2026-09-21T13:40:17.913Z",
+        "finished_at": "2026-09-21T13:40:17.914Z",
+        "exit_code": 0,
+        "success": true,
+        "invocation": "manual_chat_slash_command",
+        "status": "SUCCESS",
+        "note": "22:30定時Evening Routine実データ実行(直前2件のevening entryは早朝Date Rollover代行の繰り上げ実行)。X Conversation Routine実行(waiting4件確認、新規返信なし)。Manual Publish Verification: Day20 X投稿・IG Reelとも実機確認でOwner投稿済みと判明、history反映・owner_actions解消・KPI記録。Notta Revenue Content(notta-fit-boundary.mp4)は3日超OVERDUE継続。Day21見送り判断維持。Cockpit commit bd64955・push・Deploy検証PASS(current.json generated_at=22:40確認)。",
+        "log_file": null
+      },
+      {
+        "routine": "evening",
+        "scheduled_at": "2026-09-21T22:30:00",
+        "started_at": "2026-09-21T22:30:02",
+        "finished_at": "2026-09-21T22:40:33",
+        "exit_code": 0,
+        "success": true,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\evening_2026-09-21_223002.log"
       }
     ],
     "tasks": [
@@ -1621,8 +1646,15 @@
         "task_id": "1001b4e9-e3ea-44a0-be3e-2be48da4891f",
         "assigned_to": "claude",
         "status": "waiting",
+        "waiting_reason": "on_hold_pending_notta_voice_validation_baseline",
+        "next_check_at": null
+      },
+      {
+        "task_id": "56831bad-f74d-4839-a6ea-cfaf3adc5be1",
+        "assigned_to": "claude",
+        "status": "waiting",
         "waiting_reason": "owner_publish_pending",
-        "next_check_at": "2026-09-18T22:00:00.000Z"
+        "next_check_at": null
       }
     ]
   },

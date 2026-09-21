@@ -4,6 +4,48 @@
 
 ---
 
+## 2026-09-21 (COO FINAL DECISION — Notta P1/P2統合Reel PUBLISH GO、投稿競合回避のためHOLD調整)
+
+COOがNotta P1/P2統合Reel(notta-voice-validation.mp4)をFINAL PASS/PUBLISH GOと判定、
+新Reel戦略の最初の基準コンテンツとして扱うよう指示。投稿競合を避けるため、
+①旧Revenue Content「Nottaの向かない人」(notta-fit-boundary.mp4)、②旧方針で作成済みの
+Day20 Reel、の2件を一旦HOLDし、新Reelを先に投稿して24hデータを取得するよう指示された。
+
+**事実確認・COOへの訂正報告が必要な点**: ②のDay20 Reelは、COOのこの指令が届く前に、
+既にOwnerが投稿済み(実機Playwright確認、2026-09-21 22:33 JST、直前のEvening Routine
+巡回中に発見・history記録済み)だった。したがってDay20 ReelについてはHOLD対象として
+扱う余地がなく(既に公開済みのため)、対応不要と判断した。この経緯はCOOへの報告で
+正直に伝える。
+
+①のnotta-fit-boundary.mp4については指令どおりHOLD処理を実施: owner_actionsから該当項目を
+削除、workai-mcp task 1001b4e9のwaiting_reasonを`on_hold_pending_notta_voice_validation_baseline`
+へ更新(next_check_atはnullにし、再開条件を明記)。
+
+owner_actionsを新Reel投稿依頼(notta-voice-validation.mp4)の1件に更新。COO指定の24h追跡
+指標(Reel URL/publish time/views/reach/non-follower%/likes/saves/shares/comments/
+profile visits/follows/note traffic/A8 clicks/CV/revenue、views単独判断禁止、
+profile visit/save/share/follow/note・A8クリックを最重要視)をworkai-mcp task
+56831badとして新規登録(waiting_reason=owner_publish_pending)。24h評価完了・COOによる
+指示後に旧Notta Revenue Contentとの重複Owner Action整理を行う(COO指令どおり、今回は
+まだ実施しない)。
+
+---
+
+## 2026-09-21 (Evening Routine 22:30 JST定時実行 — Day20投稿確認・Notta Revenue Content継続OVERDUE)
+
+同日早朝(09:05頃)に発火した"evening"ログエントリはDate Rollover代行のための繰り上げ実行であり、
+本エントリが実際の22:30定時巡回。Day20のX投稿・IG Reelとも、Ownerが承認済みFINAL全文どおりに
+投稿済み(投稿から約2時間経過)であることを実機Playwrightで確認。X impressions=8、
+IG views=1・reach=1、いずれも投稿直後で低水準。today.json/kpi_daily.csv/post_insights_log.csvへ
+実測反映、owner_actionsから該当2項目のうち1件(Day20投稿分)を解消、Production Cockpitを
+再生成・push・Deploy検証PASS。X waiting会話4件(forestkinoko/narisumashi100/yukissense/omuat)は
+いずれも新規author返信なし。Revenue Content「Nottaの向かない人」(notta-fit-boundary.mp4)は
+作成から3日超Owner投稿待ちのままOVERDUE継続、Revenue Funnelのボトルネックであり続けている。
+Day21 Own Contentは、Content Editorの見送り判断(day21_skip-rationale.md、再検討条件未達)を
+新データなしのため維持し、無理な新規制作は行わなかった。
+
+---
+
 ## 2026-09-21 (COO指令「P1/P2 VALIDATION PASS / RENDER: GO」対応 — 統合Reel制作・QA完了)
 
 COOがPhase 2 Review PackageをPASSと判定、P1とP2を別Reelにせず1本のストーリーへ統合するよう指示
