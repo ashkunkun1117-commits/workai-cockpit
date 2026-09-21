@@ -4,6 +4,30 @@
 
 ---
 
+## 2026-09-21 (Notta P1/P2 Owner実機検証結果受領 — Phase 2 COO Review Package提出)
+
+Wait State中にOwnerから、自然な肉声・自身のNottaアカウントで録音した2本(2026-09-21 21:04/21:05)の
+文字起こし結果(スクリーンショット2枚)が届いた。VOICEVOX等の代替検証は一切行わず、これを唯一のProofとして
+そのまま評価した。
+
+**P1(専門用語10語)**: 厳密一致6/10(60%)、部分点込み65%。ベスト誤変換例は「防火戸→防火度」(同音異義語、
+設備名が抽象概念に変化)。ベスト正解例は「石膏ボード」(複合専門語が完全一致)。誤変換3件(竪穴区画→縦穴加工、
+防火戸→防火度、見切り材→2キリ材)、部分点2件(LGS→LGSスタジオ=直後にハルシネーション語が付加、
+巾木→ハバキ=カタカナ化)は、いずれもNotta出力をそのまま引用しており修正していない。
+
+**P2(音声メモ→日報)**: 誤変換2件(不陸あり→振込あり、防火戸→ボーカド)、いずれも文脈が完全に破綻する
+レベル。AI日報整形を試したところ、Notta生出力をそのまま入力するとこの2箇所は自動修正されず「原文ママ」の
+まま日報に残ることを確認した(人間チェック必須という結論)。HUMAN BASELINE/AI TIME/TIME SAVEDは
+今回Owner側で時間計測をしていないため「要検証(未実測)」のまま報告し、過去の「12分→2分30秒」という
+別ケースの実測値とは混同しない。
+
+結果はreports/notta-p1-p2-validation-2026-09-21.mdにPhase 2 COO Review Package形式(P1/P2それぞれ
+TEST RESULT/ACCURACY/BEST ERROR/BEST CORRECT/VIEWER VALUE/REVENUE ANGLE/hook候補3件)でまとめ、
+Render(動画制作)は指令どおり未着手のまま提出。workai-mcp task 5ea5e2ad-1beb-4e88-aa09-261f4ba068f5
+をstatus=reviewへ更新。today.jsonのowner_actionsから当該項目を削除(Owner対応完了)。
+
+---
+
 ## 2026-09-21 (COO指令「Owner-Assisted Proof Collection」対応 — Claude Wait State開始)
 
 前ターンでP1(Notta×建設専門用語)・P2(音声メモ→日報)の実機検証をNotta公式のサインアップ不要
