@@ -1,34 +1,29 @@
 {
-  "business_day": 20,
-  "business_date": "2026-09-21",
-  "generated_at": "2026-09-21T22:40:00+09:00",
+  "business_day": 21,
+  "business_date": "2026-09-22",
+  "generated_at": "2026-09-22T05:50:00+09:00",
   "today": {
     "x_post": {
-      "status": "posted",
-      "text_file": "content/x/day20_post.md",
-      "url": "https://x.com/workai_lab777/status/2101993052596510901",
-      "note": "Owner投稿済み(実機Playwright確認、2026-09-21 22:32 JST時点で「2h」前表示、本文完全一致)。impressions=8、likes/replies/reposts=0。",
-      "text": "2日間で、3人から同じ指摘をもらいました。\n\n「浮いた14分、実際どう使ってますか？」\n\n正直、まだそこまで設計できていません。見積書の注意書きは今も15分→1分のまま。\n\n時短をゴールにせず、次はここに向き合います。\n\nAIでできる仕事は、AIに。\nDay20/100"
+      "status": "not_ready",
+      "text_file": null,
+      "note": "Content Editorが検討の結果、意図的に見送り継続(content/reel-json/day21_skip-rationale.md)。再検討条件(@ozge_boyraz46/@andymochizukiへの戦略返信が実際に送信され本人から返信を得られること)は2026-09-22 Pre-Morning時点でも未達(get_reply_ledger確認、両アカウントともreplied_at空欄のまま)。"
     },
     "ig_reel": {
-      "status": "posted",
-      "video_file": "day20.mp4",
-      "caption_file": "content/instagram/day20_caption.md",
-      "url": "https://www.instagram.com/workai_lab777/reel/DdjBzPNysBs/",
-      "note": "Owner投稿済み(実機Playwright確認、2026-09-21 22:33 JST時点で「2時間前」表示、キャプション完全一致)。views=1, reach=1(フォロワー0%/非フォロワー100%)、いいね/コメント/保存/シェアいずれも0。",
-      "caption_text": "2日間で、3人から同じ指摘をもらいました。\n\n9月8日と9日、独立した3つのアカウントから「AIで時短できても、その浮いた時間の使い道までは語られていない」という、同じ角度の指摘を受けました。そのうちの1人には直接、「浮いた14分を実際に何へ使うようにしているのか」と聞かれました。\n\nそのとき、正直に答えました。「まだそこまで明確に設計できていません。今はとにかく検証を重ねている段階です」と。\n\n12日以上経った今も、答えは変わっていません。見積書の注意書き作成は、今も15分が1分のままです。でも、浮いた14分の使い道は、あのときと同じくまだ設計できていません。\n\n時短をゴールにしない。浮いた時間を何に使うかまで含めて、次の検証テーマにします。\n\nAIでできる仕事は、AIに。\nDay 20 / 100\n#AI仕事研究所 #100日実験 #自動化 #仕事効率化 #AIパートナー\n\nVOICEVOX：青山龍星"
+      "status": "not_ready",
+      "video_file": null,
+      "note": "X投稿と同じ理由で見送り継続。Reel制作(Creative Engineer)への引き継ぎも発生せず。"
     }
   },
   "tomorrow": {
     "x_post": {
       "status": "not_ready",
       "text_file": null,
-      "note": "Content Editorが検討の結果、意図的に見送り(content/reel-json/day21_skip-rationale.md)。候補2件(Notta新規市場シグナル/SSOT乖離ストーリー)とも捏造・水増しになるため不採用と判断、Claudeも同意。@ozge_boyraz46/@andymochizukiへの戦略返信が実際に送信され本人から返信を得られた時点で一次体験として再検討。"
+      "note": "Day22分は未着手。Morning Routine(07:00)での制作判断待ち。"
     },
     "ig_reel": {
       "status": "not_ready",
       "video_file": null,
-      "note": "X投稿と同じ理由で見送り。Reel制作(Creative Engineer)への引き継ぎも発生せず。"
+      "note": "Day22分は未着手。Morning Routine(07:00)での制作判断待ち。"
     }
   },
   "business_progress": {
@@ -370,8 +365,8 @@
   "kpi": {
     "revenue_jpy": 0,
     "profit_jpy": 0,
-    "day30_remaining": 10,
-    "day100_remaining": 80,
+    "day30_remaining": 9,
+    "day100_remaining": 79,
     "product_signals": 0,
     "blocked_tasks": 0
   },
@@ -439,9 +434,9 @@
     "codex_result_review": "get_tasks(status=review)5件を確認、いずれもreview_status=pass(1件はCOO最終レビュー待ちのpending)で変化なし。status=waitingは1001b4e9のみ(OVERDUE継続)。優先順位(市場接触>コンテンツ公開>計測>収益検証>新規Infrastructure)に照らし新規Engineering Handoffは起票せず。",
     "revenue_check": "Revenue/Profitとも0円のまま変化なし。Notta Revenue Experiment(24h/48h/72h追跡、task 98ce9bc9)はA8.net未ログインのためクリック実測は継続DATA UNAVAILABLE。"
   },
-  "current_date": "2026-09-21",
-  "data_updated_at": "2026-09-21T22:40:00+09:00",
-  "public_updated_at": "2026-09-21T13:47:03.309Z",
+  "current_date": "2026-09-22",
+  "data_updated_at": "2026-09-22T05:50:00+09:00",
+  "public_updated_at": "2026-09-21T20:46:59.021Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -826,36 +821,31 @@
     ]
   },
   "source_manifest": {
-    "business_day": 20,
-    "business_date": "2026-09-21",
-    "generated_at": "2026-09-21T22:40:00+09:00",
+    "business_day": 21,
+    "business_date": "2026-09-22",
+    "generated_at": "2026-09-22T05:50:00+09:00",
     "today": {
       "x_post": {
-        "status": "posted",
-        "text_file": "content/x/day20_post.md",
-        "url": "https://x.com/workai_lab777/status/2101993052596510901",
-        "note": "Owner投稿済み(実機Playwright確認、2026-09-21 22:32 JST時点で「2h」前表示、本文完全一致)。impressions=8、likes/replies/reposts=0。",
-        "text": "2日間で、3人から同じ指摘をもらいました。\n\n「浮いた14分、実際どう使ってますか？」\n\n正直、まだそこまで設計できていません。見積書の注意書きは今も15分→1分のまま。\n\n時短をゴールにせず、次はここに向き合います。\n\nAIでできる仕事は、AIに。\nDay20/100"
+        "status": "not_ready",
+        "text_file": null,
+        "note": "Content Editorが検討の結果、意図的に見送り継続(content/reel-json/day21_skip-rationale.md)。再検討条件(@ozge_boyraz46/@andymochizukiへの戦略返信が実際に送信され本人から返信を得られること)は2026-09-22 Pre-Morning時点でも未達(get_reply_ledger確認、両アカウントともreplied_at空欄のまま)。"
       },
       "ig_reel": {
-        "status": "posted",
-        "video_file": "day20.mp4",
-        "caption_file": "content/instagram/day20_caption.md",
-        "url": "https://www.instagram.com/workai_lab777/reel/DdjBzPNysBs/",
-        "note": "Owner投稿済み(実機Playwright確認、2026-09-21 22:33 JST時点で「2時間前」表示、キャプション完全一致)。views=1, reach=1(フォロワー0%/非フォロワー100%)、いいね/コメント/保存/シェアいずれも0。",
-        "caption_text": "2日間で、3人から同じ指摘をもらいました。\n\n9月8日と9日、独立した3つのアカウントから「AIで時短できても、その浮いた時間の使い道までは語られていない」という、同じ角度の指摘を受けました。そのうちの1人には直接、「浮いた14分を実際に何へ使うようにしているのか」と聞かれました。\n\nそのとき、正直に答えました。「まだそこまで明確に設計できていません。今はとにかく検証を重ねている段階です」と。\n\n12日以上経った今も、答えは変わっていません。見積書の注意書き作成は、今も15分が1分のままです。でも、浮いた14分の使い道は、あのときと同じくまだ設計できていません。\n\n時短をゴールにしない。浮いた時間を何に使うかまで含めて、次の検証テーマにします。\n\nAIでできる仕事は、AIに。\nDay 20 / 100\n#AI仕事研究所 #100日実験 #自動化 #仕事効率化 #AIパートナー\n\nVOICEVOX：青山龍星"
+        "status": "not_ready",
+        "video_file": null,
+        "note": "X投稿と同じ理由で見送り継続。Reel制作(Creative Engineer)への引き継ぎも発生せず。"
       }
     },
     "tomorrow": {
       "x_post": {
         "status": "not_ready",
         "text_file": null,
-        "note": "Content Editorが検討の結果、意図的に見送り(content/reel-json/day21_skip-rationale.md)。候補2件(Notta新規市場シグナル/SSOT乖離ストーリー)とも捏造・水増しになるため不採用と判断、Claudeも同意。@ozge_boyraz46/@andymochizukiへの戦略返信が実際に送信され本人から返信を得られた時点で一次体験として再検討。"
+        "note": "Day22分は未着手。Morning Routine(07:00)での制作判断待ち。"
       },
       "ig_reel": {
         "status": "not_ready",
         "video_file": null,
-        "note": "X投稿と同じ理由で見送り。Reel制作(Creative Engineer)への引き継ぎも発生せず。"
+        "note": "Day22分は未着手。Morning Routine(07:00)での制作判断待ち。"
       }
     },
     "business_progress": {
@@ -1197,8 +1187,8 @@
     "kpi": {
       "revenue_jpy": 0,
       "profit_jpy": 0,
-      "day30_remaining": 10,
-      "day100_remaining": 80,
+      "day30_remaining": 9,
+      "day100_remaining": 79,
       "product_signals": 0,
       "blocked_tasks": 0
     },
