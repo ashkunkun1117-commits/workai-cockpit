@@ -120,6 +120,23 @@
   },
   {
     "date": null,
+    "platform": "x",
+    "theme": null,
+    "hook_type": null,
+    "content_type": "post",
+    "url": "https://x.com/workai_lab777/status/2101524051240141219",
+    "views": null,
+    "impressions": null,
+    "likes": null,
+    "comments": null,
+    "saves": null,
+    "shares": null,
+    "profile_visits": null,
+    "clicks": null,
+    "learning": "Day番号を持たないOwner追加投稿(Notta note記事nc5ad7e7ef364の「向く人・向かない人」角度での再訴求、リンク先t.co→note.com本文一致確認済み)。Evening Routine巡回中に新規発見、today.json/kpi_daily.csvとも未反映だったため今回追加。impressions=10、いいね/返信/リポスト/ブックマークいずれも0(2026-09-21 00:09 JST実測)。kpi_daily.csv Day19行(2026-09-20)のx_postsを1→2、x_impressionsを8→18へ反映済み(投稿時刻は業務日Day19の範囲内と判断)。"
+  },
+  {
+    "date": null,
     "platform": "instagram",
     "theme": "SSOT freshness gap(Date Rollover直後の中間状態がpushされたまま再生成されなかった実話)",
     "hook_type": "B_FAILURE",

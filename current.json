@@ -287,7 +287,7 @@
   "owner_actions": [
     "Revenue Content「Nottaの向かない人」(notta-fit-boundary.mp4)はCOO承認済み(Revenue Experiment扱い)。X・Instagramへの投稿操作をお願いします(公開後24時間で指標を追跡します)。2026-09-21 00:1x JST時点で実機確認、まだ未投稿(task 1001b4e9はOVERDUE)。",
     "Day20 X投稿(content/x/day20_post.md)・Instagram Reel(day20.mp4+content/instagram/day20_caption.md)はClaude Business QA PASS済み。投稿操作をお願いします。",
-    "(緊急度低・お手すきの際で可) Xの自動化用ブラウザが2026-09-17から5日連続で未ログイン状態です(Instagram側は継続してログイン済み)。新規の戦略返信候補探索がブロックされています。ご都合の良いタイミングでPlaywrightブラウザ側のXへ再ログインをお願いします。"
+    "【COO指令 Next Reel Validation Sprint】P1/P2検証用にOwner本人のスマホで自然な発話を2本録音し、ご自身のNottaアカウントで文字起こしした結果(テキスト)をお願いします。P1: ALC/LGS/石膏ボード/竪穴区画/防火戸/見切り材/下地補強/クロス貼替/造作/巾木を含む自然な現場文章。P2: 「今日は3階のクロス貼替完了。洗面所の下地に一部不陸あり。明日大工さんに補修依頼。防火戸は午後納品予定。」という音声メモ。VOICEVOX合成音声はTTSのため実務検証として不採用、Owner本人の肉声が必須(COO判断)。結果受領までClaudeは動画制作・代替検証を行いません。"
   ],
   "approval_queue": [],
   "ai_learning": {
@@ -390,7 +390,7 @@
   },
   "current_date": "2026-09-21",
   "data_updated_at": "2026-09-21T07:10:00+09:00",
-  "public_updated_at": "2026-09-20T22:12:48.625Z",
+  "public_updated_at": "2026-09-21T00:17:32.890Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -1045,7 +1045,7 @@
     "owner_actions": [
       "Revenue Content「Nottaの向かない人」(notta-fit-boundary.mp4)はCOO承認済み(Revenue Experiment扱い)。X・Instagramへの投稿操作をお願いします(公開後24時間で指標を追跡します)。2026-09-21 00:1x JST時点で実機確認、まだ未投稿(task 1001b4e9はOVERDUE)。",
       "Day20 X投稿(content/x/day20_post.md)・Instagram Reel(day20.mp4+content/instagram/day20_caption.md)はClaude Business QA PASS済み。投稿操作をお願いします。",
-      "(緊急度低・お手すきの際で可) Xの自動化用ブラウザが2026-09-17から5日連続で未ログイン状態です(Instagram側は継続してログイン済み)。新規の戦略返信候補探索がブロックされています。ご都合の良いタイミングでPlaywrightブラウザ側のXへ再ログインをお願いします。"
+      "【COO指令 Next Reel Validation Sprint】P1/P2検証用にOwner本人のスマホで自然な発話を2本録音し、ご自身のNottaアカウントで文字起こしした結果(テキスト)をお願いします。P1: ALC/LGS/石膏ボード/竪穴区画/防火戸/見切り材/下地補強/クロス貼替/造作/巾木を含む自然な現場文章。P2: 「今日は3階のクロス貼替完了。洗面所の下地に一部不陸あり。明日大工さんに補修依頼。防火戸は午後納品予定。」という音声メモ。VOICEVOX合成音声はTTSのため実務検証として不採用、Owner本人の肉声が必須(COO判断)。結果受領までClaudeは動画制作・代替検証を行いません。"
     ],
     "approval_queue": [],
     "ai_learning": {
@@ -1470,6 +1470,27 @@
         "exit_code": 0,
         "success": true,
         "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\premorning_2026-09-21_054502.log"
+      },
+      {
+        "routine": "morning",
+        "scheduled_at": "2026-09-21T07:00:00",
+        "started_at": "2026-09-21T07:14:34",
+        "finished_at": "2026-09-21T07:14:34",
+        "exit_code": 0,
+        "success": true,
+        "invocation": "manual_chat_slash_command",
+        "status": "SUCCESS",
+        "note": "X Conversation Routine実行(waiting4件確認、新規返信なし)、Manual Publish Verification実行(reconcile不要)、X unauthenticated 5日連続確認しowner_actionsへ再ログイン依頼を軽く追加、Day21は見送り判断を維持、Cockpit再生成・push(commit 535ad27)・Deploy検証PASS(current.json generated_at=07:10確認)。",
+        "log_file": null
+      },
+      {
+        "routine": "morning",
+        "scheduled_at": "2026-09-21T07:00:00",
+        "started_at": "2026-09-21T07:00:02",
+        "finished_at": "2026-09-21T07:14:49",
+        "exit_code": 0,
+        "success": true,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\morning_2026-09-21_070002.log"
       }
     ],
     "tasks": [

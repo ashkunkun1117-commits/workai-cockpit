@@ -4,6 +4,122 @@
 
 ---
 
+## 2026-09-21 (COO指令「Owner-Assisted Proof Collection」対応 — Claude Wait State開始)
+
+前ターンでP1(Notta×建設専門用語)・P2(音声メモ→日報)の実機検証をNotta公式のサインアップ不要
+無料ツール(notta.ai/en/tools/audio-to-text-converter)で試みたが、VOICEVOX合成音声をアップロードした
+初回操作で「Transcription limit reached」となり結果を得られなかったことをそのまま報告(捏造なし)。
+
+COOはこのBLOCKED判断を「正しい、PASS」と評価した上で、重要な方針変更を指示:
+**VOICEVOX合成音声は今後この検証の最終Proofとして使用しない**(TTS音声では「実際の現場従事者の
+自然な発話」を検証したことにならず、実務検証として弱いため)。
+
+**新しい進め方**: Owner本人がスマホで自然な発話を2本録音し、Owner自身のNottaアカウントで文字起こし
+した結果を提供する。それまでClaudeは動画制作を開始せず、VOICEVOX代替やその他の代替検証も一切行わない
+(Claude Wait State)。
+
+- P1録音対象: ALC/LGS/石膏ボード/竪穴区画/防火戸/見切り材/下地補強/クロス貼替/造作/巾木を含む
+  自然な現場文章。
+- P2録音対象: 「今日は3階のクロス貼替完了。洗面所の下地に一部不陸あり。明日大工さんに補修依頼。
+  防火戸は午後納品予定。」
+
+Owner Actionとして`today.json`に登録(優先度低かったX自動化ブラウザ再ログイン依頼を一時的に外し、
+max-3ルール内で追加)。workai-mcpにも追跡タスクを登録(task 5ea5e2ad-1beb-4e88-aa09-261f4ba068f5、
+waiting_reason=owner_input_pending)。
+
+結果受領後の作業(Phase 2 Review Packageのみ、Render禁止)は指令どおり: P1はTERM/EXPECTED/
+NOTTA OUTPUT/CORRECT-PARTIAL-WRONG表、P2はRAW VOICE CONTENT/NOTTA TRANSCRIPT/AI-FORMATTED
+DAILY REPORTを作成する。誤認識は修正せずそのままEvidenceとして保存し、結果が弱ければ動画化しない。
+
+---
+
+## 2026-09-21 (Morning Routine)
+
+Missed Routine Coalescing判定: 直前のEvening(2026-09-21 00:05〜00:21実行)がDay20への
+Date Rollover・Cockpit更新を代行済みだが、当日Morning(07:00)自体はまだ未実行だったため
+SUPERSEDEDに該当せず、通常フル実行した。
+
+**X Conversation Routine**: waiting中4会話(forestkinoko Day9・narisumashi100 Day10・
+yukissense Day16 followup・omuat Day17)を個別スレッドURLで再確認、いずれも新規author
+返信なし(narisumashi100は引き続き683件規模スレッドにつき非ログイン制約で確認不能)。
+自社Xプロフィールの直近投稿にも新規コメントなし。新規Class A/B該当0件、Approval Batchなし。
+
+**Manual Publish Verification**: carryoverは空のまま。Xプロフィール・Instagramグリッドを
+実機確認したが、Day20 X投稿・IG Reel・Notta Revenue Content(notta-fit-boundary.mp4)は
+いずれも前回Evening確認時点(00:20頃)から変化なく未投稿。today.json/owner_actionsとも
+実態と一致しており、reconcileの必要なし。
+
+**X unauthenticated状態の継続(2026-09-17〜09-21、5日連続)**: x.com/home・/notifications・
+/searchいずれも明示的ログインフォームへリダイレクトされることを実機確認(3-state判定の
+unauthenticated基準を満たす、unknownではない)。同一Playwrightブラウザ内でInstagramは
+この間ずっとauthenticatedのままであり、2026-09-08〜10に起きたブラウザプロファイル競合による
+誤検知(decisions_log.md該当エントリ参照)とはパターンが異なる(あちらは一時的・Instagram/X
+両方に影響、今回はXのみ・5日間一貫)。新規Strategic Reply候補探索(/search)がブロックされ
+市場接触(Final Business Test優先順位1位)に影響しているため、今回初めてOwner Actionとして
+「XへのPlaywrightブラウザ再ログイン」を軽く提示する(緊急度低、既存2件のOwner Actionを
+優先、Ownerの都合の良いタイミングでで良い旨を明記)。
+
+**Day21 Own Content**: 前回Evening時点の「Content Editorへ先行制作を依頼」というnextとは
+別に、day21_skip-rationale.mdの見送り判断(捏造回避)は依然有効と判断。@ozge_boyraz46/
+@andymochizuki宛の戦略返信下書き3件は前回Evening時点で時間減衰によりSTALE判定済みで
+本Routineでも投稿していないため、「本人から返信を得られた時点で再検討」という再検討条件は
+今回も満たされていない。Day21を無理に埋めず、tomorrow.status=not_readyを維持した
+(Human Voice/一次体験原則を優先、Own Content担当のContent Editorへの新規制作指示は
+今回見送り)。
+
+**Cockpit**: 前回Evening更新分(commit e564f0a、business_day=20)自体のtoday/history/KPI
+内容には変更なし。本Routineでowner_actionsへX再ログイン依頼を1件追加したため、
+`node scripts/generate-production-cockpit.mjs`を再実行しcommit ad9fad5をpush、実機curlで
+新しいowner_actions配列(3件目まで)が配信済みであることを確認した(Pages builds API自体は
+`status: building`のまま応答が遅延していたが、配信内容(current.json)は最新化を確認済み、
+既存パターンと同様)。
+
+**Codex/Task**: da79a4b8([ENG][P0] Dispatch前Task SSOT登録強制)は2026-09-15から
+status=assigned停止のまま変化なし。task 1001b4e9(Notta 24hトラッキング)はOwner投稿待ちの
+waitingのままOVERDUE継続。いずれも技術インフラ属性で「市場接触>コンテンツ公開>計測>
+収益検証>新規Infrastructure」の優先順位に照らし、新規Engineering Handoffは今回も起票せず。
+
+## 2026-09-21 (Pre-Morning Routine — SUPERSEDED)
+
+Pre-Morning Routine(05:45分)が遅延発火。判定時点で直前のEvening Routine実行が
+既にDay20(2026-09-21)へのDate Rollover・Cockpit更新を代行済み(get_business_day/
+today.json/Public Cockpit いずれもbusiness_day=20で一致、Approval Queue pending=0)
+だったため、Missed Routine CoalescingによりSUPERSEDEDと判定。フル実行はせず
+reconciliation確認のみ実施(記録漏れなし)。詳細はroutine_scheduler.logの
+該当MISSED_SUPERSEDEDエントリを参照。
+
+## 2026-09-21 (Evening Routine — Day20 Date Rollover・SSOT乖離解消)
+
+2026-09-20 EveningおよびPre-Morning/Morning(2026-09-21分)いずれもroutine_scheduler.logに
+実行記録がなく、today.jsonがDay19(2026-09-20)のまま1日以上更新されていなかった。
+Missed Routine Coalescing判定の結果、後続のPre-Morning/Morningが成功していないため
+SUPERSEDEDに該当せず、Evening Routineをフル実行しDate Rollover(Pre-Morning相当作業)も
+代行した。
+
+**発見・是正した乖離**: Day20 X投稿(content/x/day20_post.md)・Reel(day20.mp4、44.35秒、
+Template v2 canonical)はいずれも制作済みだったにも関わらず、today.jsonは「未着手」のまま、
+day20-verification.jsonのclaude_business_qaも「NOT PERFORMED」のまま放置されていた。
+本Routineでframe0/decode/audio/CTA要件・本文の一次データ根拠(ledger.csv行7/9/11)を確認し
+PASS判定、today.json/タスクDB(task db00deae)をready/owner_approvalへ更新した。
+
+また、Xタイムライン実機確認で、today.json/kpi_daily.csvいずれにも未反映だったOwner追加投稿
+(Notta note記事の「向く人・向かない人」再訴求、status/2101524051240141219、11h前・10 views)
+を発見、historyおよびkpi_daily.csv Day19行(x_posts 1→2、x_impressions 8→18)へ反映した。
+
+2026-09-20 Morning Routineでledger.csvに追記された新規戦略返信下書き3件
+(@ozge_boyraz46/@andymochizuki/@akagami_sns)は未投稿のまま24時間以上経過し、
+X戦略返信ルールの経過時間スコア(12時間超は原則0点)に照らし鮮度を失ったと判断、
+今回は投稿を見送った(ledger.csv自体は改変せず、STALE判断のみここに記録)。
+
+**追記**: Content EditorへDay21のOwn Content先行制作(Next Day先行準備)を依頼したところ、
+検討した2候補(Notta新規市場シグナル/本Routine自身が発見したSSOT乖離ストーリー)とも
+「まだ起きていない対話を起きたかのように書く」「Human Voice素材に該当しない一次体験不在」
+という理由で見送りと判断(`content/reel-json/day21_skip-rationale.md`)。Claudeもこの
+判断を追認した(捏造してでも毎日枠を埋めるより、Human Voice/一次体験原則を優先)。
+Day21分は現時点でtomorrow.status=not_readyのまま、実データが出た時点で再検討する。
+
+---
+
 ## 2026-09-20 (COO指令「Notta Revenue Reel Production」対応)
 
 指令内容: 修正済みNotta A8導線(note→アフィリエイトリンク)へ質の高いトラフィックを送るための

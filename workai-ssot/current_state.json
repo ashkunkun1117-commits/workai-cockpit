@@ -1,18 +1,20 @@
 {
-  "business_day": 19,
-  "updated_at": "2026-09-20T09:36:22.748Z",
+  "business_day": 20,
+  "updated_at": "2026-09-21T00:18:52.062Z",
   "data_stale": false,
   "today": {
-    "x": "posted",
-    "instagram": "posted"
+    "x": "ready",
+    "instagram": "ready"
   },
   "owner_actions": [
-    "Revenue Content「Nottaの向かない人」(notta-fit-boundary.mp4)はCOO承認済み(Revenue Experiment扱い)。X・Instagramへの投稿操作をお願いします(公開後24時間で指標を追跡します)。2026-09-20 12:48 JST時点で実機確認、まだ未投稿。"
+    "Revenue Content「Nottaの向かない人」(notta-fit-boundary.mp4)はCOO承認済み(Revenue Experiment扱い)。X・Instagramへの投稿操作をお願いします(公開後24時間で指標を追跡します)。2026-09-21 00:1x JST時点で実機確認、まだ未投稿(task 1001b4e9はOVERDUE)。",
+    "Day20 X投稿(content/x/day20_post.md)・Instagram Reel(day20.mp4+content/instagram/day20_caption.md)はClaude Business QA PASS済み。投稿操作をお願いします。",
+    "【COO指令 Next Reel Validation Sprint】P1/P2検証用にOwner本人のスマホで自然な発話を2本録音し、ご自身のNottaアカウントで文字起こしした結果(テキスト)をお願いします。P1: ALC/LGS/石膏ボード/竪穴区画/防火戸/見切り材/下地補強/クロス貼替/造作/巾木を含む自然な現場文章。P2: 「今日は3階のクロス貼替完了。洗面所の下地に一部不陸あり。明日大工さんに補修依頼。防火戸は午後納品予定。」という音声メモ。VOICEVOX合成音声はTTSのため実務検証として不採用、Owner本人の肉声が必須(COO判断)。結果受領までClaudeは動画制作・代替検証を行いません。"
   ],
   "revenue_funnel": [
     {
       "label": "content",
-      "value": 15
+      "value": 14
     },
     {
       "label": "note_lp",
@@ -64,38 +66,38 @@
     "reel_url": null,
     "posted": false
   },
-  "next_x_status": "posted",
-  "next_reel_status": "posted",
+  "next_x_status": "ready",
+  "next_reel_status": "ready",
   "latest_learning": "Day19 ReelはTemplate v2 canonical componentでの初の検証としてOwnerが実際に投稿(X impressions=7、IG投稿直後)。Market Radar(2026-09-20、12件収集)で、Notta「向かない人」の主張(単発音源・少人数向け、大人数・固有名詞重視の会議には限界)を独立に補強する実例が見つかった: @andymochizuki(いいね91,000)が『AI議事録は文字起こし・要約はできても構造化・論点抽出は別の技術』という実務上の失敗談を投稿。@ozge_boyraz46は23,000円のAIボイスレコーダーを実購入しており、Notta Memo(低価格帯)との比較企画の需要が実在することを確認。",
   "next_hypothesis": "Owner がnote記事内Nottaリンクをハイパーリンク化、2026-09-20T12:48 JST実機確認でPASS(クリック可能・href=px.a8.net・Program ID一致・実クリックでshop.notta.aiへ遷移・トラッキング維持)。これをNotta Revenue Experimentの正式STARTとし、それ以前のA8 click=0はpre-fix invalid periodとして需要評価対象から除外。24h/48h/72hでnote traffic/A8 clicks/CV/revenueを追跡(task 98ce9bc9-01da-4279-8acd-91…（全文はdata/publish/today.json: ai_learning参照）",
   "freshness": {
     "today": {
-      "updated_at": "2026-09-20T09:36:22.748Z",
-      "business_day": 19
+      "updated_at": "2026-09-21T00:18:52.062Z",
+      "business_day": 20
     },
     "revenue": {
-      "updated_at": "2026-09-20T09:36:22.748Z",
+      "updated_at": "2026-09-21T00:18:52.062Z",
       "source_checked_at": "2026-09-20T12:48:00+09:00",
-      "data_stale": false
+      "data_stale": true
     },
     "metrics": {
-      "updated_at": "2026-09-20T09:36:22.748Z",
+      "updated_at": "2026-09-21T00:18:52.062Z",
       "source_checked_at": "2026-09-20",
-      "data_stale": false
+      "data_stale": true
     },
     "market_radar": {
       "date": "2026-09-20",
-      "status": "completed"
+      "status": "not_started"
     },
     "strategic_reply": {
       "date": "2026-09-20",
-      "status": "completed"
+      "status": "not_started"
     },
     "audience_response": {
       "date": "2026-09-20",
       "source_checked_at": "2026-09-20",
-      "status": "completed",
-      "data_stale": false
+      "status": "not_started",
+      "data_stale": true
     },
     "experiment": {
       "day": 20,
@@ -106,9 +108,9 @@
     "learning": {
       "day": 19,
       "status": null,
-      "stale": false,
-      "flag": null,
-      "reason": null
+      "stale": true,
+      "flag": "LEARNING_STALE",
+      "reason": "ai_learning.day (19) is older than the current business_day (20)"
     },
     "semantic_stale": false,
     "semantic_stale_reason": null
