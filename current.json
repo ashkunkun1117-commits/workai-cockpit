@@ -27,6 +27,8 @@
     }
   },
   "business_progress": {
+    "production_mode": "proof_acquisition",
+    "production_mode_note": "COO指令「PROOF ACQUISITION MODE」(2026-09-22)。既存Proof(見積書15分→1分、Notta実測、フォロワー数変動)は主要テーマで使用済み/新規性が弱いため、新規Reel/Own Content制作は無理に再開しない。日次投稿数を埋めるための既存テーマ焼き直しは禁止。新しいProofが取れるまで、Routineは新規一次データ候補を最大3件(TASK/WHY IT MATTERS/HOW TO TEST/OWNER EFFORT(原則10分以内)/POSSIBLE REEL ANGLE/REVENUE CONNECTION/FUTURE CORE-BUSINESS VALUE)提案する(references/proof-acquisition-mode.md)。制作再開はCOOの明示的な指示、または新Proof取得のいずれかによる。",
     "note_priority": "P1",
     "notta_note": "LIVE",
     "notta_note_note": "公開済み(2026-09-15 22:32) https://note.com/workai_lab777/n/nc5ad7e7ef364 。PR表記・A8リンク・6タグとも実配信を確認済み。",
@@ -445,7 +447,7 @@
   },
   "current_date": "2026-09-22",
   "data_updated_at": "2026-09-22T07:20:00+09:00",
-  "public_updated_at": "2026-09-22T10:37:42.975Z",
+  "public_updated_at": "2026-09-22T10:58:24.727Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -858,6 +860,8 @@
       }
     },
     "business_progress": {
+      "production_mode": "proof_acquisition",
+      "production_mode_note": "COO指令「PROOF ACQUISITION MODE」(2026-09-22)。既存Proof(見積書15分→1分、Notta実測、フォロワー数変動)は主要テーマで使用済み/新規性が弱いため、新規Reel/Own Content制作は無理に再開しない。日次投稿数を埋めるための既存テーマ焼き直しは禁止。新しいProofが取れるまで、Routineは新規一次データ候補を最大3件(TASK/WHY IT MATTERS/HOW TO TEST/OWNER EFFORT(原則10分以内)/POSSIBLE REEL ANGLE/REVENUE CONNECTION/FUTURE CORE-BUSINESS VALUE)提案する(references/proof-acquisition-mode.md)。制作再開はCOOの明示的な指示、または新Proof取得のいずれかによる。",
       "note_priority": "P1",
       "notta_note": "LIVE",
       "notta_note_note": "公開済み(2026-09-15 22:32) https://note.com/workai_lab777/n/nc5ad7e7ef364 。PR表記・A8リンク・6タグとも実配信を確認済み。",

@@ -4,6 +4,35 @@
 
 ---
 
+## 2026-09-22 (COO指令「PROOF ACQUISITION MODE」対応)
+
+COOが新規Reel制作の一時停止を指示。既存Proof(見積書15分→1分、Notta P1/P2実測、
+フォロワー数変動)は主要テーマで使用済み、または新規性が弱いため、日次投稿数を
+埋めるための既存テーマ焼き直しを明示的に禁止。優先をCONTENT PRODUCTIONから
+NEW PROOF ACQUISITIONへ切り替える。
+
+**実施した変更**:
+1. 新規参照ファイル`.claude/skills/workai-daily-ops/references/
+   proof-acquisition-mode.md`を作成。モード発動中はRoutineが新規制作を無理に
+   再開せず、新しい一次データ候補を最大3件(TASK/WHY IT MATTERS/HOW TO TEST/
+   OWNER EFFORT[原則10分以内]/POSSIBLE REEL ANGLE/REVENUE CONNECTION/
+   FUTURE CORE-BUSINESS VALUEの7項目)提案するルールを明記。
+2. `workai-daily-ops/SKILL.md`の「事前に必ず読む」へ本ファイルへの参照を追加
+   (新規制作判断の前に必ず確認する位置づけ)。
+3. `data/publish/today.json`の`business_progress.production_mode`を
+   `"proof_acquisition"`に設定、発動理由・解除条件を記録。
+
+**今回提案した3件の新規Proof候補**(チャットで提示、Owner effort全て10分以内):
+1. 実務メール/報告書のBefore-After実測(見積書以外の別タスクでの再現性検証)
+2. AI判断ミスの実例収集(Owner自身の直近の小さな失敗談、B_FAILURE hookの新ネタ)
+3. 視聴者からの直接の声(DM/コメント実例、Audience qualitative evidenceの
+   逆方向データ)
+
+制作再開はCOOの明示的な指示、または上記候補のいずれかで新Proofが実際に取得できた
+時点のいずれか。Cockpit/SSOT再生成・push済み。
+
+---
+
 ## 2026-09-22 (COO指令「DATA FIX PASS / CONTENT HOLD RULE MODIFY」対応)
 
 COOが前回のData Reliability Fix(auth 4-state化、Market Radar VERIFIED/UNVERIFIED
