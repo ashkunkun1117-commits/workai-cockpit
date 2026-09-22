@@ -365,14 +365,6 @@
     "cockpit": "owner_actionsへX再ログイン依頼を追加したためCockpitを再生成・再push(commit ad9fad5)。Pages builds APIは`building`表示のまま遅延していたが、実機curlでcurrent.jsonの新owner_actions配列(3件)配信を確認PASS。",
     "codex_handoff": "da79a4b8(2026-09-15からassigned停止)・task 1001b4e9(Notta 24hトラッキング、OVERDUE)とも変化なし。優先順位(市場接触>コンテンツ公開>計測>収益検証>新規Infrastructure)に照らし新規Engineering Handoffは起票せず。"
   },
-  "kpi": {
-    "revenue_jpy": 0,
-    "profit_jpy": 0,
-    "day30_remaining": 9,
-    "day100_remaining": 79,
-    "product_signals": 0,
-    "blocked_tasks": 0
-  },
   "system_health": "normal",
   "system_health_reason": "Day20 X投稿・IG Reelとも本日Ownerが承認済みFINAL全文どおりに投稿済みを実機確認(X impressions=8、IG views=1、いずれも投稿直後)。Notta Revenue Content(notta-fit-boundary.mp4)は引き続き未投稿(task 1001b4e9 OVERDUE、作成から3日超)。Xはunauthenticated確定、Instagramはauthenticated。既存waiting会話(forestkinoko/omuat/yukissense)は新規author返信なし、narisumashi100(683件規模)は引き続き非ログイン制約で確認不能。",
   "evening_2026_09_17_findings": {},
@@ -448,7 +440,7 @@
   },
   "current_date": "2026-09-22",
   "data_updated_at": "2026-09-22T07:20:00+09:00",
-  "public_updated_at": "2026-09-22T11:05:31.610Z",
+  "public_updated_at": "2026-09-22T11:49:58.026Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -1198,14 +1190,6 @@
       "day21_content": "day21_skip-rationale.mdの見送り判断を維持。@ozge_boyraz46/@andymochizuki宛下書きは未投稿のままSTALEのため再検討条件(本人から返信取得)は未達。Content Editorへの新規制作指示は今回見送り、tomorrow.status=not_readyを維持。",
       "cockpit": "owner_actionsへX再ログイン依頼を追加したためCockpitを再生成・再push(commit ad9fad5)。Pages builds APIは`building`表示のまま遅延していたが、実機curlでcurrent.jsonの新owner_actions配列(3件)配信を確認PASS。",
       "codex_handoff": "da79a4b8(2026-09-15からassigned停止)・task 1001b4e9(Notta 24hトラッキング、OVERDUE)とも変化なし。優先順位(市場接触>コンテンツ公開>計測>収益検証>新規Infrastructure)に照らし新規Engineering Handoffは起票せず。"
-    },
-    "kpi": {
-      "revenue_jpy": 0,
-      "profit_jpy": 0,
-      "day30_remaining": 9,
-      "day100_remaining": 79,
-      "product_signals": 0,
-      "blocked_tasks": 0
     },
     "system_health": "normal",
     "system_health_reason": "Day20 X投稿・IG Reelとも本日Ownerが承認済みFINAL全文どおりに投稿済みを実機確認(X impressions=8、IG views=1、いずれも投稿直後)。Notta Revenue Content(notta-fit-boundary.mp4)は引き続き未投稿(task 1001b4e9 OVERDUE、作成から3日超)。Xはunauthenticated確定、Instagramはauthenticated。既存waiting会話(forestkinoko/omuat/yukissense)は新規author返信なし、narisumashi100(683件規模)は引き続き非ログイン制約で確認不能。",

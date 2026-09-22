@@ -4,6 +4,42 @@
 
 ---
 
+## 2026-09-22 (COO指令「REVENUE TRACKING RELIABILITY」対応 — 再発防止ルール制定)
+
+COOがtask 98ce9bc9漏れ修正をPASSとした上で、再発防止ルールを指示。
+
+**実スキーマとの整合性確認**: COO提案の4値(waiting/in_progress/done/cancelled)
+のうち`in_progress`・`cancelled`はworkai-mcpの実際のtask status enum
+(backlog/assigned/working/review/approved/done/blocked/waiting/
+owner_approval)に存在しないため、正直にマッピングして採用した:
+waiting→`waiting`、in_progress→`working`(Revenue Experimentトラッキングは
+通常「待つ」タスクのためほぼ経由しない)、done→`done`、cancelled→`done`+
+result欄に`CANCELLED: <理由>`明記(`blocked`は意味が異なるため不採用)。
+
+`create_task`ツールには`status`パラメータが存在しないことを仕様確認(新規作成は
+常に`backlog`から始まる)。そのため「作成後、同じ作業単位で必ず`update_task`
+により`status=waiting`へ移す」ことを必須手順として明文化した
+(`references/revenue-experiment-task-rules.md`新規作成)。
+
+**正直に記載した既知の限界**: 「期限超過時に自動的にOwner Actionへ出る」仕組みは
+現時点で未実装(Codex完了検知→Claude起動の自動連携ギャップがtask 8c6221d5として
+既にbacklogに存在)。完全自動化の代わりに、Routine実行のたびに
+`get_tasks(status=waiting)`でRevenue Experiment関連タスクの期限超過を明示的に
+確認する運用ルールを`workai-daily-ops/SKILL.md`へ追加(6.6)。
+
+**NO FAKE ZERO**: DATA UNAVAILABLE/UNAUTHENTICATED/NOT CHECKEDの3ラベルを
+新設し、0を入れない運用を明文化。合わせて`data/publish/today.json`の
+トップレベル`kpi`ブロック(`revenue_jpy: 0`等)が、実は生成スクリプトのどこからも
+読まれていない死んだフィールドだったことを発見・削除した(実際のrevenue計算は
+`summarize()`が既にmeasured/unmeasuredを区別して行っており、この死んだ
+フィールドとは無関係。テスト56/56 PASS維持を確認し、参照ゼロであることを
+裏付けた)。
+
+現在アクティブな3件のRevenue Experiment関連タスク(98ce9bc9/1001b4e9/56831bad)
+はすべて`status=waiting`であることを確認済み。Cockpit/SSOT再生成・push済み。
+
+---
+
 ## 2026-09-22 (COO指令「PROOF ACQUISITION PRIORITY」対応 — 優先順位確定・SSOT freshness実施)
 
 COOが3候補にP1(実務メール/報告書Before-After実測)>P2(AI判断ミス自然発生ログ)>
