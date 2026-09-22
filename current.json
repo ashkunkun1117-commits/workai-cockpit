@@ -1,12 +1,12 @@
 {
   "business_day": 22,
   "business_date": "2026-09-23",
-  "generated_at": "2026-09-23T05:46:00+09:00",
+  "generated_at": "2026-09-23T07:10:00+09:00",
   "today": {
     "x_post": {
       "status": "not_ready",
       "text_file": null,
-      "note": "Day22分はProof Acquisition Mode継続中(COO指令2026-09-22)のため見送り継続(content/reel-json/day22_skip-rationale.md)。Content Editorが新規一次データ候補を3件提案済み(content/reel-json/day22_proof_candidates.md、P1=実務メール/報告書Before-After・P2=AI判断ミス自然発生ログ・P3=戦略返信4件の返信待ち)。いずれも自然発生待ちで本日時点は未取得。次回Morning Routineで候補の発生有無を確認し、取得できていれば制作判断へ進む。"
+      "note": "Day22分はProof Acquisition Mode継続中(COO指令2026-09-22)のため見送り継続(content/reel-json/day22_skip-rationale.md)。Morning Routine(2026-09-23 07:xx実機確認)でP1(実務メール/報告書)・P2(AI判断ミス自然発生ログ)とも本日時点で未発生を確認。P3(戦略返信4件の返信待ち)はX側が本日も確定unauthenticated(8日連続、ログインフォーム実機確認)のため確認不能、次回へ持ち越し。次回Routineで再確認する。"
     },
     "ig_reel": {
       "status": "not_ready",
@@ -461,9 +461,21 @@
     "day22_content": "Proof Acquisition Mode継続中(COO指令2026-09-22)。新規Reel/Own Content制作は無理に再開しない方針を維持。Day22分は引き続きnot_ready。Content Editorへの新規一次データ候補提案の再依頼は次回Morning Routineで実施(本Routineでは新規発見なし)。",
     "revenue_check": "Revenue/Profitとも0円のまま変化なし。Notta P1/P2 Reelの最重要指標(profile visit/save/share/follow)はいずれも0。Notta note経由A8クリックは引き続きA8.netログイン待ちでDATA UNAVAILABLE。"
   },
+  "morning_2026-09-23_findings": {
+    "checked_at": "2026-09-23T07:10:00+09:00",
+    "x_state": "unauthenticated",
+    "x_state_note": "実機Playwright確認(x.com/home→ログインフォームへ明示的リダイレクト、x.com/workai_lab777プロフィールページでも「Xにログインまたは登録してください」サイドバー表示)。8日連続unauthenticated確定。最新自社投稿は引き続き9/21(Day20)のみ、Day21/Day22のX投稿は確認できず(Notta P1/P2 ReelのX投稿はOwner未実施のまま)。ledger.csv waiting 8件(forestkinoko/narisumashi100/yukissense/omuat/ozge_boyraz46/andymochizuki/akagami_sns/misaki_hennyu)は新規返信有無を確認不能のため持ち越し。新規Strategic Reply候補探索も本日はスキップ。",
+    "ig_state": "authenticated",
+    "ig_state_note": "実機Playwright確認(instagram.com/workai_lab777、プロフィールを編集/プロフェッショナルダッシュボード等ログイン限定要素を確認)。投稿22件・フォロワー12人(前回評価と一致)、Notta P1/P2 Reel(reel/DdkRCRGSdy3/)以降の新規投稿なし。Manual Publish Verification: carryover配列は空、reconcileする新規項目なし。",
+    "revenue_experiment_checkpoints": "task 56831bad(IG 24hトラッキング) next_check_at 2026-09-23T08:40 JST、task 98ce9bc9(A8 72hチェック) next_check_at 2026-09-23T12:48 JSTともに本Routine実行時点(07:10 JST)ではまだ未到来。get_tasks(waiting)3件・backlog2件を確認、next_check_atの過去超過なし。",
+    "handoff_queue_note": "get_handoff_queueにcoord-2eabeb66(Day15 Reel制作)・coord-6ada1af1(Day17 Reel制作)がstatus=assigned/attempts=0のまま残存を確認。Day15/17ともIG投稿は既に完了済み(kpi_daily.csv確認、他経路で制作済み)のため実質的にSTALEと推測されるが、lease/token無しでは安全にfinish/fail出来ないため今回はクリーンアップを実行せず記録のみ(次回対応検討)。",
+    "business_bottleneck": "Revenue測定がA8.net未ログイン(7日超)でブロックされたまま。72hチェックポイント(本日12:48 JST)到来時点でもOwner未ログインならNotta Revenue Experimentの主要指標(clicks/CV/revenue)がDATA UNAVAILABLEのまま終了する見込み。",
+    "hypothesis": "KEEP。Proof Acquisition Mode継続(新規一次データ未取得)。COO指令の解除・新Proof取得まで新規Reel/X投稿制作は再開しない。",
+    "green_actions_today": "新規実行なし(全チェックポイント未到来、Production Pause継続、Approval Queue pending=0)。08:40/12:48のチェックポイント到来時に別途対応が必要。"
+  },
   "current_date": "2026-09-23",
-  "data_updated_at": "2026-09-23T05:46:00+09:00",
-  "public_updated_at": "2026-09-22T20:46:40.339Z",
+  "data_updated_at": "2026-09-23T07:10:00+09:00",
+  "public_updated_at": "2026-09-22T22:05:17.075Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -868,12 +880,12 @@
   "source_manifest": {
     "business_day": 22,
     "business_date": "2026-09-23",
-    "generated_at": "2026-09-23T05:46:00+09:00",
+    "generated_at": "2026-09-23T07:10:00+09:00",
     "today": {
       "x_post": {
         "status": "not_ready",
         "text_file": null,
-        "note": "Day22分はProof Acquisition Mode継続中(COO指令2026-09-22)のため見送り継続(content/reel-json/day22_skip-rationale.md)。Content Editorが新規一次データ候補を3件提案済み(content/reel-json/day22_proof_candidates.md、P1=実務メール/報告書Before-After・P2=AI判断ミス自然発生ログ・P3=戦略返信4件の返信待ち)。いずれも自然発生待ちで本日時点は未取得。次回Morning Routineで候補の発生有無を確認し、取得できていれば制作判断へ進む。"
+        "note": "Day22分はProof Acquisition Mode継続中(COO指令2026-09-22)のため見送り継続(content/reel-json/day22_skip-rationale.md)。Morning Routine(2026-09-23 07:xx実機確認)でP1(実務メール/報告書)・P2(AI判断ミス自然発生ログ)とも本日時点で未発生を確認。P3(戦略返信4件の返信待ち)はX側が本日も確定unauthenticated(8日連続、ログインフォーム実機確認)のため確認不能、次回へ持ち越し。次回Routineで再確認する。"
       },
       "ig_reel": {
         "status": "not_ready",
@@ -1327,6 +1339,18 @@
       "codex_result_review": "get_tasks(status=review)5件を確認、いずれもreview_status=pass(1件はCOO最終レビュー待ちのpending)で変化なし。新規Engineering Handoffは起票せず。",
       "day22_content": "Proof Acquisition Mode継続中(COO指令2026-09-22)。新規Reel/Own Content制作は無理に再開しない方針を維持。Day22分は引き続きnot_ready。Content Editorへの新規一次データ候補提案の再依頼は次回Morning Routineで実施(本Routineでは新規発見なし)。",
       "revenue_check": "Revenue/Profitとも0円のまま変化なし。Notta P1/P2 Reelの最重要指標(profile visit/save/share/follow)はいずれも0。Notta note経由A8クリックは引き続きA8.netログイン待ちでDATA UNAVAILABLE。"
+    },
+    "morning_2026-09-23_findings": {
+      "checked_at": "2026-09-23T07:10:00+09:00",
+      "x_state": "unauthenticated",
+      "x_state_note": "実機Playwright確認(x.com/home→ログインフォームへ明示的リダイレクト、x.com/workai_lab777プロフィールページでも「Xにログインまたは登録してください」サイドバー表示)。8日連続unauthenticated確定。最新自社投稿は引き続き9/21(Day20)のみ、Day21/Day22のX投稿は確認できず(Notta P1/P2 ReelのX投稿はOwner未実施のまま)。ledger.csv waiting 8件(forestkinoko/narisumashi100/yukissense/omuat/ozge_boyraz46/andymochizuki/akagami_sns/misaki_hennyu)は新規返信有無を確認不能のため持ち越し。新規Strategic Reply候補探索も本日はスキップ。",
+      "ig_state": "authenticated",
+      "ig_state_note": "実機Playwright確認(instagram.com/workai_lab777、プロフィールを編集/プロフェッショナルダッシュボード等ログイン限定要素を確認)。投稿22件・フォロワー12人(前回評価と一致)、Notta P1/P2 Reel(reel/DdkRCRGSdy3/)以降の新規投稿なし。Manual Publish Verification: carryover配列は空、reconcileする新規項目なし。",
+      "revenue_experiment_checkpoints": "task 56831bad(IG 24hトラッキング) next_check_at 2026-09-23T08:40 JST、task 98ce9bc9(A8 72hチェック) next_check_at 2026-09-23T12:48 JSTともに本Routine実行時点(07:10 JST)ではまだ未到来。get_tasks(waiting)3件・backlog2件を確認、next_check_atの過去超過なし。",
+      "handoff_queue_note": "get_handoff_queueにcoord-2eabeb66(Day15 Reel制作)・coord-6ada1af1(Day17 Reel制作)がstatus=assigned/attempts=0のまま残存を確認。Day15/17ともIG投稿は既に完了済み(kpi_daily.csv確認、他経路で制作済み)のため実質的にSTALEと推測されるが、lease/token無しでは安全にfinish/fail出来ないため今回はクリーンアップを実行せず記録のみ(次回対応検討)。",
+      "business_bottleneck": "Revenue測定がA8.net未ログイン(7日超)でブロックされたまま。72hチェックポイント(本日12:48 JST)到来時点でもOwner未ログインならNotta Revenue Experimentの主要指標(clicks/CV/revenue)がDATA UNAVAILABLEのまま終了する見込み。",
+      "hypothesis": "KEEP。Proof Acquisition Mode継続(新規一次データ未取得)。COO指令の解除・新Proof取得まで新規Reel/X投稿制作は再開しない。",
+      "green_actions_today": "新規実行なし(全チェックポイント未到来、Production Pause継続、Approval Queue pending=0)。08:40/12:48のチェックポイント到来時に別途対応が必要。"
     }
   },
   "health_inputs": {
@@ -1745,6 +1769,27 @@
         "exit_code": 0,
         "success": true,
         "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\evening_2026-09-22_223002.log"
+      },
+      {
+        "routine": "premorning",
+        "scheduled_at": "2026-09-23T05:45:00",
+        "started_at": "2026-09-23T05:45:02",
+        "finished_at": "2026-09-23T05:47:30",
+        "exit_code": 0,
+        "success": true,
+        "invocation": "manual_chat_slash_command",
+        "status": "MORNING_READY",
+        "note": "Date Rollover実施: today.json/CockpitともDay21/2026-09-22→Day22/2026-09-23へ更新。Day22 X投稿・Reelは引き続きProof Acquisition Mode(COO指令2026-09-22)により見送り継続(content/reel-json/day22_skip-rationale.md)。Content Editorが用意したday22_proof_candidates.md(P1実務メール/報告書, P2 AI判断ミスログ, P3戦略返信4件返信待ち)はいずれも自然発生待ちで未取得のためnot_readyを維持、Morning Routineでの候補発生確認待ち。Day23分は未着手のためnot_readyで正直に表示。Approval Queue pending=0。owner_actions(Notta P1/P2 X投稿依頼/A8再ログイン)は引き続き有効なため維持(Pre-Morningでは実機再検証せず)。get_tasks(waiting)3件・backlog2件を確認、next_check_atの過去超過なし(overdueバグなし)。Cockpit commit 9171bf5・push・Pages build APIはbuilding止まり(既知パターン)だが実配信current.json business_day=22・data_updated_at一致確認でPASS。",
+        "log_file": null
+      },
+      {
+        "routine": "premorning",
+        "scheduled_at": "2026-09-23T05:45:00",
+        "started_at": "2026-09-23T05:45:02",
+        "finished_at": "2026-09-23T05:48:43",
+        "exit_code": 0,
+        "success": true,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\premorning_2026-09-23_054502.log"
       }
     ],
     "tasks": [
