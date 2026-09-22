@@ -1,7 +1,7 @@
 {
   "business_day": 21,
   "business_date": "2026-09-22",
-  "generated_at": "2026-09-22T07:20:00+09:00",
+  "generated_at": "2026-09-22T22:45:00+09:00",
   "today": {
     "x_post": {
       "status": "not_ready",
@@ -40,7 +40,7 @@
     "notta_revenue_experiment_start": "2026-09-20T12:48:00+09:00",
     "notta_revenue_experiment_pre_fix_invalid_period": "〜2026-09-20T12:48:00+09:00(A8 click=0、リンク未クリック化のため需要評価対象外)",
     "notta_p1_p2_validation": {
-      "status": "coo_final_pass_publish_go_awaiting_owner_post",
+      "status": "posted_ig_pending_x",
       "report_path": "reports/notta-p1-p2-validation-2026-09-21.md",
       "reel_content_path": "content/reel-json/notta-voice-validation.md",
       "task_id": "5ea5e2ad-1beb-4e88-aa09-261f4ba068f5",
@@ -87,6 +87,17 @@
   },
   "carryover": [],
   "history": [
+    {
+      "type": "ig_reel",
+      "day": 21,
+      "label": "Notta P1/P2実機検証Reel(notta-voice-validation.mp4)",
+      "status": "completed",
+      "url": "https://www.instagram.com/workai_lab777/reel/DdkRCRGSdy3/",
+      "actual_published_at": null,
+      "verification_source": "実機Playwright確認(workai_lab777、キャプション完全一致、投稿ページ相対表示「14時間前」、2026-09-22 22:34 JST確認、インサイト実測)",
+      "verified_at": "2026-09-22T22:34:00+09:00",
+      "verification_note": "新Reel戦略の基準コンテンツ(COO PUBLISH GO)。views=157, reach(閲覧者)=146(フォロワー1.9%/非フォロワー98.1%)、いいね/コメント/保存/シェア/プロフィールアクティビティ/フォローいずれも0(data/instagram/post_insights_log.csvへ記録済み)。X側は同時点でまだ未投稿(別途トラッキング)。正確なpublish時刻はInstagram UI上取得できず未記録(推測しない)。"
+    },
     {
       "type": "x_post",
       "day": 20,
@@ -325,7 +336,8 @@
     }
   ],
   "owner_actions": [
-    "【COO最終承認・PUBLISH GO】Notta P1/P2実機検証Reel(notta-voice-validation.mp4)をX・Instagramへ投稿してください。新Reel戦略の基準コンテンツです。投稿後24時間でReel URL/公開時刻/views/reach/フォロワー外%/いいね/保存/シェア/コメント/プロフィールアクセス/フォロー/note流入/A8クリック/CV/売上を追跡します(views単独では判断しません、特にprofile visit/save/share/follow/note・A8クリックを重視)。投稿競合を避けるため、他のNotta Revenue Content(notta-fit-boundary.mp4「Nottaの向かない人」)は本Reel投稿・24hデータ取得後まで見送りです。そちらの投稿操作は今は不要です。"
+    "【継続】Notta P1/P2実機検証ReelはInstagramへ投稿済み確認(2026-09-22実機確認、reel/DdkRCRGSdy3/)。X側はまだ未投稿です。新Reel戦略の基準コンテンツのため、可能であればXにも同内容を投稿してください(X投稿分は別途24h計測します)。投稿競合を避けるため、他のNotta Revenue Content(notta-fit-boundary.mp4「Nottaの向かない人」)は引き続き見送りです。",
+    "【継続・緊急度低】A8.netが7日連続でログアウト状態です(Notta Revenue Experiment 48hチェックポイント時点でも未ログイン)。お手すきの際に一度ログインしていただけると、クリック数・CV・売上の実測を再開できます(Claudeは代行できません)。"
   ],
   "approval_queue": [],
   "ai_learning": {
@@ -438,9 +450,20 @@
     "codex_result_review": "get_tasks(status=review)5件を確認、いずれもreview_status=pass(1件はCOO最終レビュー待ちのpending)で変化なし。status=waitingは1001b4e9のみ(OVERDUE継続)。優先順位(市場接触>コンテンツ公開>計測>収益検証>新規Infrastructure)に照らし新規Engineering Handoffは起票せず。",
     "revenue_check": "Revenue/Profitとも0円のまま変化なし。Notta Revenue Experiment(24h/48h/72h追跡、task 98ce9bc9)はA8.net未ログインのためクリック実測は継続DATA UNAVAILABLE。"
   },
+  "evening_2026-09-22_findings": {
+    "missed_routine_coalescing": "本日07:00 Morning Routineは実行済みだが、22:30定時Evening Routineは未実行のためSUPERSEDEDに該当せず、通常フル実行した。",
+    "manual_publish_verification_major_finding": "owner_actions記載のNotta P1/P2実機検証Reel(notta-voice-validation.mp4)がInstagramへ投稿済みであることを実機確認で新規発見(reel/DdkRCRGSdy3/、キャプション完全一致、相対表示「14時間前」)。インサイト実測: views=157, reach=146(フォロワー1.9%/非フォロワー98.1%)、いいね/コメント/保存/シェア/プロフィールアクティビティ/フォローいずれも0。X側は同時点で未投稿(X最新投稿は依然Day20/9-21のまま)。today.json historyへ追加、record_post_insight・update_kpi(Day21)で反映済み。task 56831bad(24hトラッキング)をIG投稿基準でwaiting継続へ更新(next_check_at≈投稿+24h)。owner_actionsをX投稿依頼のみへ縮小。",
+    "x_conversation_check": "waiting中8会話(forestkinoko/narisumashi100/yukissense followup/omuat/ozge_boyraz46/andymochizuki/akagami_sns/misaki_hennyu)を確認しようとしたが、個別スレッドURL・自社返信URLとも「Xにログインまたは登録してください」の明示的ログインフォームで返信スレッド自体が非表示(以前の『個別投稿は非ログインでも閲覧可能』という前提が本日は成立せず、元ツイート本文のみ見えて返信一覧は完全にゲート)。新規返信の有無は確認不能のため『無し』と断定せず、確認不能のまま次回へ持ち越し(unauthenticated確定、7日連続)。自社Day20投稿への新規コメントも同様に確認不能。",
+    "x_state": "unauthenticated確定(x.com/workai_lab777アクセス自体は閲覧できるが、返信スレッド表示に明示的ログイン要求。個別ポストURLでも同様)。7日連続。",
+    "ig_state": "authenticated(プロフィール編集・インサイト閲覧・メッセージ受信箱とも表示)。フォロワー12人(2026-09-22 22:34実機確認、VERIFIED)。今朝Morning Routineの『11人』記録とは異なる値のため、フォロワー数の単発観測を強い根拠として扱わない方針を維持(生データはkpi_daily.csv Day21行へ12人として記録)。",
+    "a8_check": "A8.net実機アクセス、確定unauthenticated(ログインID/PASSフォーム表示)。task 98ce9bc9の48hチェックポイント(2026-09-22T12:48 JST)はデータ取得できずDATA UNAVAILABLEのまま、next_check_atを72h(2026-09-23T12:48 JST)へ設定。",
+    "codex_result_review": "get_tasks(status=review)5件を確認、いずれもreview_status=pass(1件はCOO最終レビュー待ちのpending)で変化なし。新規Engineering Handoffは起票せず。",
+    "day22_content": "Proof Acquisition Mode継続中(COO指令2026-09-22)。新規Reel/Own Content制作は無理に再開しない方針を維持。Day22分は引き続きnot_ready。Content Editorへの新規一次データ候補提案の再依頼は次回Morning Routineで実施(本Routineでは新規発見なし)。",
+    "revenue_check": "Revenue/Profitとも0円のまま変化なし。Notta P1/P2 Reelの最重要指標(profile visit/save/share/follow)はいずれも0。Notta note経由A8クリックは引き続きA8.netログイン待ちでDATA UNAVAILABLE。"
+  },
   "current_date": "2026-09-22",
-  "data_updated_at": "2026-09-22T07:20:00+09:00",
-  "public_updated_at": "2026-09-22T11:49:58.026Z",
+  "data_updated_at": "2026-09-22T22:45:00+09:00",
+  "public_updated_at": "2026-09-22T13:37:48.939Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -821,13 +844,31 @@
         "cost_jpy": null,
         "profit_jpy": null,
         "human_work_minutes": null
+      },
+      {
+        "day": 21,
+        "date": "2026-09-22",
+        "x_posts": 0,
+        "x_impressions": null,
+        "x_strategic_replies": 4,
+        "x_reply_impressions_avg": null,
+        "ig_posts": 1,
+        "ig_reel_views": 157,
+        "ig_followers": 12,
+        "ig_profile_visits": 0,
+        "link_clicks": 0,
+        "conversions": 0,
+        "revenue_jpy": 0,
+        "cost_jpy": null,
+        "profit_jpy": 0,
+        "human_work_minutes": null
       }
     ]
   },
   "source_manifest": {
     "business_day": 21,
     "business_date": "2026-09-22",
-    "generated_at": "2026-09-22T07:20:00+09:00",
+    "generated_at": "2026-09-22T22:45:00+09:00",
     "today": {
       "x_post": {
         "status": "not_ready",
@@ -866,7 +907,7 @@
       "notta_revenue_experiment_start": "2026-09-20T12:48:00+09:00",
       "notta_revenue_experiment_pre_fix_invalid_period": "〜2026-09-20T12:48:00+09:00(A8 click=0、リンク未クリック化のため需要評価対象外)",
       "notta_p1_p2_validation": {
-        "status": "coo_final_pass_publish_go_awaiting_owner_post",
+        "status": "posted_ig_pending_x",
         "report_path": "reports/notta-p1-p2-validation-2026-09-21.md",
         "reel_content_path": "content/reel-json/notta-voice-validation.md",
         "task_id": "5ea5e2ad-1beb-4e88-aa09-261f4ba068f5",
@@ -913,6 +954,17 @@
     },
     "carryover": [],
     "history": [
+      {
+        "type": "ig_reel",
+        "day": 21,
+        "label": "Notta P1/P2実機検証Reel(notta-voice-validation.mp4)",
+        "status": "completed",
+        "url": "https://www.instagram.com/workai_lab777/reel/DdkRCRGSdy3/",
+        "actual_published_at": null,
+        "verification_source": "実機Playwright確認(workai_lab777、キャプション完全一致、投稿ページ相対表示「14時間前」、2026-09-22 22:34 JST確認、インサイト実測)",
+        "verified_at": "2026-09-22T22:34:00+09:00",
+        "verification_note": "新Reel戦略の基準コンテンツ(COO PUBLISH GO)。views=157, reach(閲覧者)=146(フォロワー1.9%/非フォロワー98.1%)、いいね/コメント/保存/シェア/プロフィールアクティビティ/フォローいずれも0(data/instagram/post_insights_log.csvへ記録済み)。X側は同時点でまだ未投稿(別途トラッキング)。正確なpublish時刻はInstagram UI上取得できず未記録(推測しない)。"
+      },
       {
         "type": "x_post",
         "day": 20,
@@ -1151,7 +1203,8 @@
       }
     ],
     "owner_actions": [
-      "【COO最終承認・PUBLISH GO】Notta P1/P2実機検証Reel(notta-voice-validation.mp4)をX・Instagramへ投稿してください。新Reel戦略の基準コンテンツです。投稿後24時間でReel URL/公開時刻/views/reach/フォロワー外%/いいね/保存/シェア/コメント/プロフィールアクセス/フォロー/note流入/A8クリック/CV/売上を追跡します(views単独では判断しません、特にprofile visit/save/share/follow/note・A8クリックを重視)。投稿競合を避けるため、他のNotta Revenue Content(notta-fit-boundary.mp4「Nottaの向かない人」)は本Reel投稿・24hデータ取得後まで見送りです。そちらの投稿操作は今は不要です。"
+      "【継続】Notta P1/P2実機検証ReelはInstagramへ投稿済み確認(2026-09-22実機確認、reel/DdkRCRGSdy3/)。X側はまだ未投稿です。新Reel戦略の基準コンテンツのため、可能であればXにも同内容を投稿してください(X投稿分は別途24h計測します)。投稿競合を避けるため、他のNotta Revenue Content(notta-fit-boundary.mp4「Nottaの向かない人」)は引き続き見送りです。",
+      "【継続・緊急度低】A8.netが7日連続でログアウト状態です(Notta Revenue Experiment 48hチェックポイント時点でも未ログイン)。お手すきの際に一度ログインしていただけると、クリック数・CV・売上の実測を再開できます(Claudeは代行できません)。"
     ],
     "approval_queue": [],
     "ai_learning": {
@@ -1263,6 +1316,17 @@
       "day21_content": "Content Editor作成済みのday21_skip-rationale.mdを確認。見送り判断の再検討条件(@ozge_boyraz46/@andymochizukiへの戦略返信が実際に送信され本人から返信を得られること)は未達(いずれもreplied_at空欄のまま未投稿)。新しい一次体験データも本Routine中に発生しなかったため、見送り判断を維持しContent Editorへの新規制作指示は行わなかった。tomorrow.status=not_readyのまま。",
       "codex_result_review": "get_tasks(status=review)5件を確認、いずれもreview_status=pass(1件はCOO最終レビュー待ちのpending)で変化なし。status=waitingは1001b4e9のみ(OVERDUE継続)。優先順位(市場接触>コンテンツ公開>計測>収益検証>新規Infrastructure)に照らし新規Engineering Handoffは起票せず。",
       "revenue_check": "Revenue/Profitとも0円のまま変化なし。Notta Revenue Experiment(24h/48h/72h追跡、task 98ce9bc9)はA8.net未ログインのためクリック実測は継続DATA UNAVAILABLE。"
+    },
+    "evening_2026-09-22_findings": {
+      "missed_routine_coalescing": "本日07:00 Morning Routineは実行済みだが、22:30定時Evening Routineは未実行のためSUPERSEDEDに該当せず、通常フル実行した。",
+      "manual_publish_verification_major_finding": "owner_actions記載のNotta P1/P2実機検証Reel(notta-voice-validation.mp4)がInstagramへ投稿済みであることを実機確認で新規発見(reel/DdkRCRGSdy3/、キャプション完全一致、相対表示「14時間前」)。インサイト実測: views=157, reach=146(フォロワー1.9%/非フォロワー98.1%)、いいね/コメント/保存/シェア/プロフィールアクティビティ/フォローいずれも0。X側は同時点で未投稿(X最新投稿は依然Day20/9-21のまま)。today.json historyへ追加、record_post_insight・update_kpi(Day21)で反映済み。task 56831bad(24hトラッキング)をIG投稿基準でwaiting継続へ更新(next_check_at≈投稿+24h)。owner_actionsをX投稿依頼のみへ縮小。",
+      "x_conversation_check": "waiting中8会話(forestkinoko/narisumashi100/yukissense followup/omuat/ozge_boyraz46/andymochizuki/akagami_sns/misaki_hennyu)を確認しようとしたが、個別スレッドURL・自社返信URLとも「Xにログインまたは登録してください」の明示的ログインフォームで返信スレッド自体が非表示(以前の『個別投稿は非ログインでも閲覧可能』という前提が本日は成立せず、元ツイート本文のみ見えて返信一覧は完全にゲート)。新規返信の有無は確認不能のため『無し』と断定せず、確認不能のまま次回へ持ち越し(unauthenticated確定、7日連続)。自社Day20投稿への新規コメントも同様に確認不能。",
+      "x_state": "unauthenticated確定(x.com/workai_lab777アクセス自体は閲覧できるが、返信スレッド表示に明示的ログイン要求。個別ポストURLでも同様)。7日連続。",
+      "ig_state": "authenticated(プロフィール編集・インサイト閲覧・メッセージ受信箱とも表示)。フォロワー12人(2026-09-22 22:34実機確認、VERIFIED)。今朝Morning Routineの『11人』記録とは異なる値のため、フォロワー数の単発観測を強い根拠として扱わない方針を維持(生データはkpi_daily.csv Day21行へ12人として記録)。",
+      "a8_check": "A8.net実機アクセス、確定unauthenticated(ログインID/PASSフォーム表示)。task 98ce9bc9の48hチェックポイント(2026-09-22T12:48 JST)はデータ取得できずDATA UNAVAILABLEのまま、next_check_atを72h(2026-09-23T12:48 JST)へ設定。",
+      "codex_result_review": "get_tasks(status=review)5件を確認、いずれもreview_status=pass(1件はCOO最終レビュー待ちのpending)で変化なし。新規Engineering Handoffは起票せず。",
+      "day22_content": "Proof Acquisition Mode継続中(COO指令2026-09-22)。新規Reel/Own Content制作は無理に再開しない方針を維持。Day22分は引き続きnot_ready。Content Editorへの新規一次データ候補提案の再依頼は次回Morning Routineで実施(本Routineでは新規発見なし)。",
+      "revenue_check": "Revenue/Profitとも0円のまま変化なし。Notta P1/P2 Reelの最重要指標(profile visit/save/share/follow)はいずれも0。Notta note経由A8クリックは引き続きA8.netログイン待ちでDATA UNAVAILABLE。"
     }
   },
   "health_inputs": {
@@ -1682,14 +1746,14 @@
         "assigned_to": "claude",
         "status": "waiting",
         "waiting_reason": "a8_login_required",
-        "next_check_at": "2026-09-22T12:48:00+09:00"
+        "next_check_at": "2026-09-23T12:48:00+09:00"
       },
       {
         "task_id": "56831bad-f74d-4839-a6ea-cfaf3adc5be1",
         "assigned_to": "claude",
         "status": "waiting",
-        "waiting_reason": "owner_publish_pending",
-        "next_check_at": null
+        "waiting_reason": "tracking_24h_window_ig_posted_x_pending",
+        "next_check_at": "2026-09-22T23:40:00.000Z"
       }
     ]
   },
