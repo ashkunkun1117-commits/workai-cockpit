@@ -6,7 +6,7 @@
     "x_post": {
       "status": "not_ready",
       "text_file": null,
-      "note": "Content Editorが検討の結果、意図的に見送り継続(content/reel-json/day21_skip-rationale.md)。再検討条件(@ozge_boyraz46/@andymochizukiへの戦略返信が実際に送信され本人から返信を得られること)は2026-09-22 Pre-Morning時点でも未達(get_reply_ledger確認、両アカウントともreplied_at空欄のまま)。"
+      "note": "Day21分はContent Editor検討の結果、一次体験ベースの新規角度なしとして見送り継続(content/reel-json/day21_skip-rationale.md)。旧再開条件(外部本人からの返信を得ること)はCOO指令Content Hold Rule Modify(2026-09-22)により撤回済み(references/publishing-operations-v4.md「Production Gate: Proof-Based Production」)。見送り自体の理由(新規一次体験なし)は現行のSKIP CRITERIAに照らしても妥当なため維持。次回制作判断でProof-Based Productionにより再評価予定。"
     },
     "ig_reel": {
       "status": "not_ready",
@@ -18,7 +18,7 @@
     "x_post": {
       "status": "not_ready",
       "text_file": null,
-      "note": "Day22分は未着手。Morning Routine(07:00)での制作判断待ち。"
+      "note": "Day22分はContent Editor検討の結果、一次体験ベースの新規角度なしとして見送り(content/reel-json/day22_skip-rationale.md)。フォロワー-1人という実測値は検討したが、もりの反応が未発生のため捏造せずに成立させられず不採用(現行SKIP CRITERIAでも妥当)。旧再開条件(外部本人返信)はContent Hold Rule Modifyにより撤回済み、当該戦略返信自体は2026-09-22にOwner承認済みで送信済み。次回Morning Routineでの制作判断待ち。"
     },
     "ig_reel": {
       "status": "not_ready",
@@ -326,11 +326,11 @@
   ],
   "approval_queue": [],
   "ai_learning": {
-    "day": 19,
-    "observation": "Day19 ReelはTemplate v2 canonical componentでの初の検証としてOwnerが実際に投稿(X impressions=7、IG投稿直後)。Market Radar(2026-09-20、12件収集)で、Notta「向かない人」の主張(単発音源・少人数向け、大人数・固有名詞重視の会議には限界)を独立に補強する実例が見つかった: @andymochizuki(いいね91,000)が『AI議事録は文字起こし・要約はできても構造化・論点抽出は別の技術』という実務上の失敗談を投稿。@ozge_boyraz46は23,000円のAIボイスレコーダーを実購入しており、Notta Memo(低価格帯)との比較企画の需要が実在することを確認。",
-    "hypothesis": "「効率化の代償を正直に語る」テーマへの反応の強さは一過性ではなく、Market Radarのたびに再現している。Revenue Contentの優先角度として固定化してよい可能性が高い。",
-    "decision": "Template v2をcanonical component化(remotion-video/src/TemplateV2.tsx)し、DayNCharacterHybrid.tsxの複製運用を廃止。Hook Variant/evidence overlay/importance-weighted pacing/CTA分離をQA checklist(publishing-operations-v4.md)で機械的に検証必須化(1つでもFAILならREADY禁止)。",
-    "next_experiment": "Owner がnote記事内Nottaリンクをハイパーリンク化、2026-09-20T12:48 JST実機確認でPASS(クリック可能・href=px.a8.net・Program ID一致・実クリックでshop.notta.aiへ遷移・トラッキング維持)。これをNotta Revenue Experimentの正式STARTとし、それ以前のA8 click=0はpre-fix invalid periodとして需要評価対象から除外。24h/48h/72hでnote traffic/A8 clicks/CV/revenueを追跡(task 98ce9bc9-01da-4279-8acd-91b689b142e7)。Revenue Content「Nottaの向かない人」はX/Instagramとも依然未投稿(別Owner Action、継続)。次のNotta Revenue Contentは『ハードウェア型AIボイスレコーダーとの比較』角度を検討価値あり(@ozge_boyraz46から着想)。"
+    "day": 21,
+    "observation": "COO最終指令によりNotta P1/P2実機検証Reel(notta-voice-validation.mp4)がFINAL PASS/PUBLISH GOとなり、新Reel戦略の基準コンテンツに指定された(Owner本人の肉声・実機Notta検証、10語中6語正解、AI日報整形後も誤認識残存という一次データがCore Story)。同時に、data reliability issue(X login判定の3-state→4-state化、Market Radar数値のVERIFIED/UNVERIFIED区分制定)とContent Hold Rule見直し(「外部本人返信必須」条件を撤回、IDEA→AVAILABLE PROOF→COO JUDGMENT→PRODUCTIONへ変更)がCOO指令で確定した。",
+    "hypothesis": "「効率化の代償を正直に語る」テーマへの反応の強さは引き続き有効な仮説だが、それに加えて『外部返信を待たずとも、Owner本人の実測・実務経験・実演等の一次証拠があれば制作着手してよい』という新しい制作原則のほうが、日次制作停止を防ぐ上でより優先度が高い学びとなった。",
+    "decision": "Content Hold Rule改訂によりCOO Judgment付きProof-Based Production原則を正式採用(PROOF種別A〜G、外部返信はG=補助的Evidenceの1種のみで必須条件ではない)。Data Reliability Fixにより外部SNS数値はVERIFIED以外を強い根拠に使わない運用へ変更(過去のMarket Radar数値は原本保持のままUNVERIFIED固定)。",
+    "next_experiment": "Owner投稿承認待ち: notta-voice-validation.mp4(24hトラッキング task 56831bad)。Revenue Content「Nottaの向かない人」(notta-fit-boundary.mp4)は投稿競合回避のためHOLD継続(task 1001b4e9)。次のOwn Content候補はProof-Based Production原則に基づき再評価中(見積書説明文15分→1分・Notta実測・Owner実務等の既存VERIFIED proofから、外部返信を待たずに検討)。"
   },
   "morning_2026-09-16_findings": {
     "stale_codex_task_closed": "coord-2eabeb666e9c161e39b98867afc5fd92(Day15 Fixed Schedule Test Day3台本のReel制作)はcontent方針がautomation_gap_storyへ既に差し替わり、day15.mp4として完成・QA PASS済みのためSUPERSEDEDとして扱う(decisions_log.md 2026-09-16参照)。Managed task(handoff)はassigned_to=codexで自分ではclaimできず、ツール上のstatus変更はできなかったため記録のみ。",
@@ -445,7 +445,7 @@
   },
   "current_date": "2026-09-22",
   "data_updated_at": "2026-09-22T07:20:00+09:00",
-  "public_updated_at": "2026-09-22T09:12:33.544Z",
+  "public_updated_at": "2026-09-22T10:37:42.975Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -837,7 +837,7 @@
       "x_post": {
         "status": "not_ready",
         "text_file": null,
-        "note": "Content Editorが検討の結果、意図的に見送り継続(content/reel-json/day21_skip-rationale.md)。再検討条件(@ozge_boyraz46/@andymochizukiへの戦略返信が実際に送信され本人から返信を得られること)は2026-09-22 Pre-Morning時点でも未達(get_reply_ledger確認、両アカウントともreplied_at空欄のまま)。"
+        "note": "Day21分はContent Editor検討の結果、一次体験ベースの新規角度なしとして見送り継続(content/reel-json/day21_skip-rationale.md)。旧再開条件(外部本人からの返信を得ること)はCOO指令Content Hold Rule Modify(2026-09-22)により撤回済み(references/publishing-operations-v4.md「Production Gate: Proof-Based Production」)。見送り自体の理由(新規一次体験なし)は現行のSKIP CRITERIAに照らしても妥当なため維持。次回制作判断でProof-Based Productionにより再評価予定。"
       },
       "ig_reel": {
         "status": "not_ready",
@@ -849,7 +849,7 @@
       "x_post": {
         "status": "not_ready",
         "text_file": null,
-        "note": "Day22分は未着手。Morning Routine(07:00)での制作判断待ち。"
+        "note": "Day22分はContent Editor検討の結果、一次体験ベースの新規角度なしとして見送り(content/reel-json/day22_skip-rationale.md)。フォロワー-1人という実測値は検討したが、もりの反応が未発生のため捏造せずに成立させられず不採用(現行SKIP CRITERIAでも妥当)。旧再開条件(外部本人返信)はContent Hold Rule Modifyにより撤回済み、当該戦略返信自体は2026-09-22にOwner承認済みで送信済み。次回Morning Routineでの制作判断待ち。"
       },
       "ig_reel": {
         "status": "not_ready",
@@ -1157,11 +1157,11 @@
     ],
     "approval_queue": [],
     "ai_learning": {
-      "day": 19,
-      "observation": "Day19 ReelはTemplate v2 canonical componentでの初の検証としてOwnerが実際に投稿(X impressions=7、IG投稿直後)。Market Radar(2026-09-20、12件収集)で、Notta「向かない人」の主張(単発音源・少人数向け、大人数・固有名詞重視の会議には限界)を独立に補強する実例が見つかった: @andymochizuki(いいね91,000)が『AI議事録は文字起こし・要約はできても構造化・論点抽出は別の技術』という実務上の失敗談を投稿。@ozge_boyraz46は23,000円のAIボイスレコーダーを実購入しており、Notta Memo(低価格帯)との比較企画の需要が実在することを確認。",
-      "hypothesis": "「効率化の代償を正直に語る」テーマへの反応の強さは一過性ではなく、Market Radarのたびに再現している。Revenue Contentの優先角度として固定化してよい可能性が高い。",
-      "decision": "Template v2をcanonical component化(remotion-video/src/TemplateV2.tsx)し、DayNCharacterHybrid.tsxの複製運用を廃止。Hook Variant/evidence overlay/importance-weighted pacing/CTA分離をQA checklist(publishing-operations-v4.md)で機械的に検証必須化(1つでもFAILならREADY禁止)。",
-      "next_experiment": "Owner がnote記事内Nottaリンクをハイパーリンク化、2026-09-20T12:48 JST実機確認でPASS(クリック可能・href=px.a8.net・Program ID一致・実クリックでshop.notta.aiへ遷移・トラッキング維持)。これをNotta Revenue Experimentの正式STARTとし、それ以前のA8 click=0はpre-fix invalid periodとして需要評価対象から除外。24h/48h/72hでnote traffic/A8 clicks/CV/revenueを追跡(task 98ce9bc9-01da-4279-8acd-91b689b142e7)。Revenue Content「Nottaの向かない人」はX/Instagramとも依然未投稿(別Owner Action、継続)。次のNotta Revenue Contentは『ハードウェア型AIボイスレコーダーとの比較』角度を検討価値あり(@ozge_boyraz46から着想)。"
+      "day": 21,
+      "observation": "COO最終指令によりNotta P1/P2実機検証Reel(notta-voice-validation.mp4)がFINAL PASS/PUBLISH GOとなり、新Reel戦略の基準コンテンツに指定された(Owner本人の肉声・実機Notta検証、10語中6語正解、AI日報整形後も誤認識残存という一次データがCore Story)。同時に、data reliability issue(X login判定の3-state→4-state化、Market Radar数値のVERIFIED/UNVERIFIED区分制定)とContent Hold Rule見直し(「外部本人返信必須」条件を撤回、IDEA→AVAILABLE PROOF→COO JUDGMENT→PRODUCTIONへ変更)がCOO指令で確定した。",
+      "hypothesis": "「効率化の代償を正直に語る」テーマへの反応の強さは引き続き有効な仮説だが、それに加えて『外部返信を待たずとも、Owner本人の実測・実務経験・実演等の一次証拠があれば制作着手してよい』という新しい制作原則のほうが、日次制作停止を防ぐ上でより優先度が高い学びとなった。",
+      "decision": "Content Hold Rule改訂によりCOO Judgment付きProof-Based Production原則を正式採用(PROOF種別A〜G、外部返信はG=補助的Evidenceの1種のみで必須条件ではない)。Data Reliability Fixにより外部SNS数値はVERIFIED以外を強い根拠に使わない運用へ変更(過去のMarket Radar数値は原本保持のままUNVERIFIED固定)。",
+      "next_experiment": "Owner投稿承認待ち: notta-voice-validation.mp4(24hトラッキング task 56831bad)。Revenue Content「Nottaの向かない人」(notta-fit-boundary.mp4)は投稿競合回避のためHOLD継続(task 1001b4e9)。次のOwn Content候補はProof-Based Production原則に基づき再評価中(見積書説明文15分→1分・Notta実測・Owner実務等の既存VERIFIED proofから、外部返信を待たずに検討)。"
     },
     "morning_2026-09-16_findings": {
       "stale_codex_task_closed": "coord-2eabeb666e9c161e39b98867afc5fd92(Day15 Fixed Schedule Test Day3台本のReel制作)はcontent方針がautomation_gap_storyへ既に差し替わり、day15.mp4として完成・QA PASS済みのためSUPERSEDEDとして扱う(decisions_log.md 2026-09-16参照)。Managed task(handoff)はassigned_to=codexで自分ではclaimできず、ツール上のstatus変更はできなかったため記録のみ。",

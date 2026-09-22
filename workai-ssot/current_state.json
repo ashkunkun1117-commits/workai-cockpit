@@ -1,6 +1,6 @@
 {
   "business_day": 21,
-  "updated_at": "2026-09-22T09:12:34.448Z",
+  "updated_at": "2026-09-22T10:38:09.475Z",
   "data_stale": false,
   "today": {
     "x": "not_started",
@@ -66,20 +66,20 @@
   },
   "next_x_status": "not_started",
   "next_reel_status": "not_started",
-  "latest_learning": "Day19 ReelはTemplate v2 canonical componentでの初の検証としてOwnerが実際に投稿(X impressions=7、IG投稿直後)。Market Radar(2026-09-20、12件収集)で、Notta「向かない人」の主張(単発音源・少人数向け、大人数・固有名詞重視の会議には限界)を独立に補強する実例が見つかった: @andymochizuki(いいね91,000)が『AI議事録は文字起こし・要約はできても構造化・論点抽出は別の技術』という実務上の失敗談を投稿。@ozge_boyraz46は23,000円のAIボイスレコーダーを実購入しており、Notta Memo(低価格帯)との比較企画の需要が実在することを確認。",
-  "next_hypothesis": "Owner がnote記事内Nottaリンクをハイパーリンク化、2026-09-20T12:48 JST実機確認でPASS(クリック可能・href=px.a8.net・Program ID一致・実クリックでshop.notta.aiへ遷移・トラッキング維持)。これをNotta Revenue Experimentの正式STARTとし、それ以前のA8 click=0はpre-fix invalid periodとして需要評価対象から除外。24h/48h/72hでnote traffic/A8 clicks/CV/revenueを追跡(task 98ce9bc9-01da-4279-8acd-91…（全文はdata/publish/today.json: ai_learning参照）",
+  "latest_learning": "COO最終指令によりNotta P1/P2実機検証Reel(notta-voice-validation.mp4)がFINAL PASS/PUBLISH GOとなり、新Reel戦略の基準コンテンツに指定された(Owner本人の肉声・実機Notta検証、10語中6語正解、AI日報整形後も誤認識残存という一次データがCore Story)。同時に、data reliability issue(X login判定の3-state→4-state化、Market Radar数値のVERIFIED/UNVERIFIED区分制定)とContent Hold Rule見直し(「外部本人返信必須」条件を撤回、IDEA→AVAILABLE PROOF→COO JUDGMENT→PRODUCTIONへ変更)がCOO指令で確定した。",
+  "next_hypothesis": "Owner投稿承認待ち: notta-voice-validation.mp4(24hトラッキング task 56831bad)。Revenue Content「Nottaの向かない人」(notta-fit-boundary.mp4)は投稿競合回避のためHOLD継続(task 1001b4e9)。次のOwn Content候補はProof-Based Production原則に基づき再評価中(見積書説明文15分→1分・Notta実測・Owner実務等の既存VERIFIED proofから、外部返信を待たずに検討)。",
   "freshness": {
     "today": {
-      "updated_at": "2026-09-22T09:12:34.448Z",
+      "updated_at": "2026-09-22T10:38:09.475Z",
       "business_day": 21
     },
     "revenue": {
-      "updated_at": "2026-09-22T09:12:34.448Z",
+      "updated_at": "2026-09-22T10:38:09.475Z",
       "source_checked_at": "2026-09-20T12:48:00+09:00",
       "data_stale": true
     },
     "metrics": {
-      "updated_at": "2026-09-22T09:12:34.448Z",
+      "updated_at": "2026-09-22T10:38:09.475Z",
       "source_checked_at": "2026-09-21",
       "data_stale": true
     },
@@ -104,11 +104,11 @@
       "flag": "EXPERIMENT_STALE"
     },
     "learning": {
-      "day": 19,
+      "day": 21,
       "status": null,
-      "stale": true,
-      "flag": "LEARNING_STALE",
-      "reason": "ai_learning.day (19) is older than the current business_day (21)"
+      "stale": false,
+      "flag": null,
+      "reason": null
     },
     "semantic_stale": false,
     "semantic_stale_reason": null

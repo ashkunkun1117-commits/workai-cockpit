@@ -4,6 +4,110 @@
 
 ---
 
+## 2026-09-22 (COO指令「DATA FIX PASS / CONTENT HOLD RULE MODIFY」対応)
+
+COOが前回のData Reliability Fix(auth 4-state化、Market Radar VERIFIED/UNVERIFIED
+区分)をPASSと正式採用。追加で、609いいねのような出典不能な過去数値は原本保持のまま
+「今後の判断上はUNVERIFIED固定」とする運用を明確化した
+(`external-metric-verification.md`・`market_radar_2026-09-18/20.md`へ反映、
+`data/x-replies/ledger.csv`のakagami_sns行にVERIFIED値21いいね/1,886表示を追記)。
+
+**Content Hold Rule撤回の調査結果**: Explore subagentによる調査で、「外部本人から
+返信が来るまで新規コンテンツ制作を止める」というルールは、実はCLAUDE.md/
+エージェント定義/skillのどこにも正式に定義されておらず、`day21_skip-rationale.md`で
+一度だけ独自に採用され`day22_skip-rationale.md`へそのままコピーされた「一回限りの
+判断」に過ぎなかったことが判明した。唯一の正式な制作前ゲートは
+`publishing-operations-v4.md`の「Content Generation Guard」
+(Previous/Learning/Change/Hypothesis)であり、返信待ち条件はそこにも存在しなかった。
+
+**実施した修正**:
+1. `publishing-operations-v4.md`に新セクション「Production Gate: Proof-Based
+   Production」を追加。`IDEA→AVAILABLE PROOF→COO JUDGMENT→PRODUCTION`の原則と、
+   使用可能なPROOF種別A〜G(外部本人返信はG=補助的Evidenceのみで必須条件ではない)、
+   SKIP CRITERIA(「返信が来ていない」単独はSKIP理由にしない)を明記。
+2. `content-editor.md`のEscalation Rulesへ上記ゲートへの参照を追加。
+3. `day21_skip-rationale.md`・`day22_skip-rationale.md`に、旧再開条件が撤回された
+   旨の注記を追加(原本は保持、遡及書き換えはしない)。ただし両メモの本体の見送り
+   判断(一次体験ベースの新規角度なし/もりの反応が未発生)自体は新SKIP CRITERIAに
+   照らしても妥当なため維持。
+4. `today.json`の`today.x_post`/`tomorrow.x_post`ノートを、旧ルール前提の文言から
+   新ルール(Proof-Based Production)を踏まえた文言へ更新。
+
+**SSOT鮮度チェック**: `ai_learning.day`が19のまま(top-level business_dayは21)で
+2日分stale、かつ`next_experiment`が既にDay21で不採用済みの「ハードウェア型
+ボイスレコーダー比較」角度を未だ推奨し続け、HOLD済みのnotta-fit-boundary.mp4を
+「依然投稿待ち」と記載するなど、内容自体も現状と乖離していたことを確認
+(Explore subagent調査)。`ai_learning`をDay21時点の実態(Content Hold Rule Modify、
+notta-voice-validation.mp4のPUBLISH GO、Data Reliability Fix)へ更新した。
+`business_progress.revenue_content`(単数、notta-revenue-v2)と`revenue_contents`
+(配列、notta-voice-validation)が別々に"ready"表示されている点は、投稿順序を
+意図的に分離して管理している設計(投稿競合回避のため新Reelを先に投稿)であり、
+staleness bugではないと判断し変更せず。
+
+Cockpit/SSOT再生成・push済み。
+
+---
+
+## 2026-09-22 (COO指令「DATA RELIABILITY FIX」対応 — X login 4-state化・Market Radar検証ルール制定)
+
+COO指令を受け、①X login status判定(Routine=unauthenticated確定 vs 実機=ログイン済み)
+②Market Radar数値(記録609いいね vs 実機21いいね)の2件を「単発の誤差」ではなく
+data reliability issueとして根本原因を調査・修正した。
+
+**調査結果(Explore subagentによる読み取り専用調査)**:
+- 「Routine」はコードではなく、Windowsタスクスケジューラ(`automations/run-daily-routine.ps1`)
+  が`.claude/skills/workai-daily-ops/SKILL.md`をノンインタラクティブに呼び出す構成。
+  実際の判定ロジックはすべて指示書(Markdown)であり、LLMが毎回Playwright MCPで
+  画面を目視して判定する。永続的なセッション/cookieキャッシュや、実行間の
+  クロスチェック機構は存在しない。
+- X login判定は既に2026-09-11のCOO指令「Social Login State Fix」で3-state化
+  (authenticated/unauthenticated/unknown)されていたが、「前回の記録と今回の
+  実機確認が食い違った場合にどうするか」という4つ目のケースが定義されておらず、
+  今回のように「unauthenticated確定」が検証なしに複数日蓄積される問題が
+  再発していた。
+- Market Radarには専用skill/scriptが一度も存在せず(2026-09-18のCOO監査で
+  「実施実績なし(NOT VERIFIED)」と既に指摘済み)、`x-strategic-reply/SKILL.md`
+  ステップ3の手法(検索結果ページをLLMが目視して転記)を流用していた。個別投稿を
+  開かず検索結果一覧のみから数値を読み取るケースが多く、検証状態を記録する
+  フィールドも存在しなかった。
+
+**実施した修正(新規インフラ追加ではなく、既存指示書の改訂+1件の短い参照ファイル追加)**:
+1. `.claude/skills/workai-daily-ops/references/x-conversation-routine.md`
+   セクション0を3-state→4-state化(`conflicted`追加)。前回記録と今回実機確認が
+   食い違う場合は上書きせず`conflicted`として記録し、Owner Action生成や自動停止
+   判断を行わない(unknownと同様の扱い)。COO提示のCase1/Case2をワークド・
+   イグザンプルとして本文に明記(回帰テストの代替、詳細はFIX参照)。
+2. 新規参照ファイル`.claude/skills/workai-daily-ops/references/
+   external-metric-verification.md`を作成。外部SNS数値に
+   metric_value/metric_type/source_url/source_checked_at/verification_status
+   (VERIFIED/UNVERIFIED/STALE/CONFLICTED)を必須付帯させるルールを制定。
+   企画評価の強い根拠として使えるのはVERIFIEDのみ。
+3. `.claude/skills/x-strategic-reply/SKILL.md`ステップ3を改訂し、個別投稿ページを
+   開いて確認した数値のみVERIFIEDとして扱うルールを追加、上記参照ファイルへリンク。
+4. 既存のMarket Radarレポート2件(`market_radar_2026-09-18.md`・
+   `market_radar_2026-09-20.md`)に遡及訂正ではなく冒頭注記を追加(捏造防止原則に
+   基づき、過去データの書き換えではなく注記による対応)。
+
+**回帰テストについて(正直な制約の説明)**: 本システムはアプリケーションコードではなく
+指示書ベースであり、`node --test`等のコードレベル回帰テストの対象にできない
+(調査の結果、x_state/Market Radar数値を消費する実装コードは一切存在しないことを
+確認済み)。指示書内にCOO提示の2ケースをワークド・イグザンプルとして明記する形で
+代替した。将来これらの判定がコードで消費されるようになった場合は、node:testでの
+自動テストに置き換える。
+
+**影響範囲**: today.json・Cockpit・ledger.csvのスキーマ変更なし(今回の修正は
+指示書レイヤーのみ)。過去の「unauthenticated確定」記録(2026-09-17〜09-22の
+各findingsブロック)、および一時的に生成されたX再ログインOwner Action
+(現在は既に解消済み)は、旧ルール下での記録として残す(遡及書き換えはしない)。
+Market Radarの「609いいね」記載も同様、注記のみで原本は保持。
+
+別件として、`.agents/skills/workai-daily-ops/SKILL.md`(Codex向けの古いミラー)が
+今回更新した`.claude/skills/workai-daily-ops/SKILL.md`系と既に乖離していることを
+調査で発見した。今回のCOO指令の範囲外のため修正していないが、将来Codexが
+Routineを独立実行する場合の潜在リスクとして記録しておく。
+
+---
+
 ## 2026-09-22 (Owner指示「Xの人気投稿に対しての返信内容をお願いします」→「すべて返信お願いします」対応)
 
 Ownerから直接、X人気投稿への返信案作成を依頼された。既存ledger.csv・market_radar_2026-09-20.mdを確認し、
