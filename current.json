@@ -1,12 +1,12 @@
 {
-  "business_day": 21,
-  "business_date": "2026-09-22",
-  "generated_at": "2026-09-22T22:45:00+09:00",
+  "business_day": 22,
+  "business_date": "2026-09-23",
+  "generated_at": "2026-09-23T05:46:00+09:00",
   "today": {
     "x_post": {
       "status": "not_ready",
       "text_file": null,
-      "note": "Day21分はContent Editor検討の結果、一次体験ベースの新規角度なしとして見送り継続(content/reel-json/day21_skip-rationale.md)。旧再開条件(外部本人からの返信を得ること)はCOO指令Content Hold Rule Modify(2026-09-22)により撤回済み(references/publishing-operations-v4.md「Production Gate: Proof-Based Production」)。見送り自体の理由(新規一次体験なし)は現行のSKIP CRITERIAに照らしても妥当なため維持。次回制作判断でProof-Based Productionにより再評価予定。"
+      "note": "Day22分はProof Acquisition Mode継続中(COO指令2026-09-22)のため見送り継続(content/reel-json/day22_skip-rationale.md)。Content Editorが新規一次データ候補を3件提案済み(content/reel-json/day22_proof_candidates.md、P1=実務メール/報告書Before-After・P2=AI判断ミス自然発生ログ・P3=戦略返信4件の返信待ち)。いずれも自然発生待ちで本日時点は未取得。次回Morning Routineで候補の発生有無を確認し、取得できていれば制作判断へ進む。"
     },
     "ig_reel": {
       "status": "not_ready",
@@ -18,12 +18,12 @@
     "x_post": {
       "status": "not_ready",
       "text_file": null,
-      "note": "Day22分はContent Editor検討の結果、一次体験ベースの新規角度なしとして見送り(content/reel-json/day22_skip-rationale.md)。フォロワー-1人という実測値は検討したが、もりの反応が未発生のため捏造せずに成立させられず不採用(現行SKIP CRITERIAでも妥当)。旧再開条件(外部本人返信)はContent Hold Rule Modifyにより撤回済み、当該戦略返信自体は2026-09-22にOwner承認済みで送信済み。次回Morning Routineでの制作判断待ち。"
+      "note": "Day23分は未着手。Proof Acquisition Mode継続中のため、新しい一次データ(day22_proof_candidates.mdのP1/P2/P3のいずれか)が得られない限り新規制作は再開しない。Morning Routineでの判断待ち。"
     },
     "ig_reel": {
       "status": "not_ready",
       "video_file": null,
-      "note": "Day22分は未着手。Morning Routine(07:00)での制作判断待ち。"
+      "note": "Day23分は未着手。Morning Routine(07:00)での制作判断待ち。"
     }
   },
   "business_progress": {
@@ -461,9 +461,9 @@
     "day22_content": "Proof Acquisition Mode継続中(COO指令2026-09-22)。新規Reel/Own Content制作は無理に再開しない方針を維持。Day22分は引き続きnot_ready。Content Editorへの新規一次データ候補提案の再依頼は次回Morning Routineで実施(本Routineでは新規発見なし)。",
     "revenue_check": "Revenue/Profitとも0円のまま変化なし。Notta P1/P2 Reelの最重要指標(profile visit/save/share/follow)はいずれも0。Notta note経由A8クリックは引き続きA8.netログイン待ちでDATA UNAVAILABLE。"
   },
-  "current_date": "2026-09-22",
-  "data_updated_at": "2026-09-22T22:45:00+09:00",
-  "public_updated_at": "2026-09-22T13:37:48.939Z",
+  "current_date": "2026-09-23",
+  "data_updated_at": "2026-09-23T05:46:00+09:00",
+  "public_updated_at": "2026-09-22T20:46:40.339Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -866,14 +866,14 @@
     ]
   },
   "source_manifest": {
-    "business_day": 21,
-    "business_date": "2026-09-22",
-    "generated_at": "2026-09-22T22:45:00+09:00",
+    "business_day": 22,
+    "business_date": "2026-09-23",
+    "generated_at": "2026-09-23T05:46:00+09:00",
     "today": {
       "x_post": {
         "status": "not_ready",
         "text_file": null,
-        "note": "Day21分はContent Editor検討の結果、一次体験ベースの新規角度なしとして見送り継続(content/reel-json/day21_skip-rationale.md)。旧再開条件(外部本人からの返信を得ること)はCOO指令Content Hold Rule Modify(2026-09-22)により撤回済み(references/publishing-operations-v4.md「Production Gate: Proof-Based Production」)。見送り自体の理由(新規一次体験なし)は現行のSKIP CRITERIAに照らしても妥当なため維持。次回制作判断でProof-Based Productionにより再評価予定。"
+        "note": "Day22分はProof Acquisition Mode継続中(COO指令2026-09-22)のため見送り継続(content/reel-json/day22_skip-rationale.md)。Content Editorが新規一次データ候補を3件提案済み(content/reel-json/day22_proof_candidates.md、P1=実務メール/報告書Before-After・P2=AI判断ミス自然発生ログ・P3=戦略返信4件の返信待ち)。いずれも自然発生待ちで本日時点は未取得。次回Morning Routineで候補の発生有無を確認し、取得できていれば制作判断へ進む。"
       },
       "ig_reel": {
         "status": "not_ready",
@@ -885,12 +885,12 @@
       "x_post": {
         "status": "not_ready",
         "text_file": null,
-        "note": "Day22分はContent Editor検討の結果、一次体験ベースの新規角度なしとして見送り(content/reel-json/day22_skip-rationale.md)。フォロワー-1人という実測値は検討したが、もりの反応が未発生のため捏造せずに成立させられず不採用(現行SKIP CRITERIAでも妥当)。旧再開条件(外部本人返信)はContent Hold Rule Modifyにより撤回済み、当該戦略返信自体は2026-09-22にOwner承認済みで送信済み。次回Morning Routineでの制作判断待ち。"
+        "note": "Day23分は未着手。Proof Acquisition Mode継続中のため、新しい一次データ(day22_proof_candidates.mdのP1/P2/P3のいずれか)が得られない限り新規制作は再開しない。Morning Routineでの判断待ち。"
       },
       "ig_reel": {
         "status": "not_ready",
         "video_file": null,
-        "note": "Day22分は未着手。Morning Routine(07:00)での制作判断待ち。"
+        "note": "Day23分は未着手。Morning Routine(07:00)での制作判断待ち。"
       }
     },
     "business_progress": {
@@ -1724,6 +1724,27 @@
         "exit_code": 0,
         "success": true,
         "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\morning_2026-09-22_070002.log"
+      },
+      {
+        "routine": "evening",
+        "scheduled_at": "2026-09-22T22:30:00",
+        "started_at": "2026-09-22T22:31:54",
+        "finished_at": "2026-09-22T13:42:19.524Z",
+        "exit_code": 0,
+        "success": true,
+        "invocation": "manual_chat_slash_command",
+        "status": "SUCCESS",
+        "note": "22:30定時Evening Routine実行。X Conversation Routineは今回、個別投稿URLでも返信スレッドが完全にログインゲートされ新規返信有無を確認不能(unauthenticated7日連続、断定せず持ち越し)。Manual Publish VerificationでNotta P1/P2 Reel(notta-voice-validation.mp4)のInstagram投稿を新規発見(views=157/reach=146、行動系指標は全0)、X側は未投稿。task 56831bad/98ce9bc9更新、kpi_daily.csv Day21反映。Day22はProof Acquisition Mode継続のためContent Editorへ新規一次データ候補3件の作成を依頼(バックグラウンド)。Cockpit commit 2688e24・push・Deploy検証PASS(current.json generated_at=22:45確認)。",
+        "log_file": null
+      },
+      {
+        "routine": "evening",
+        "scheduled_at": "2026-09-22T22:30:00",
+        "started_at": "2026-09-22T22:30:02",
+        "finished_at": "2026-09-22T22:42:46",
+        "exit_code": 0,
+        "success": true,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\evening_2026-09-22_223002.log"
       }
     ],
     "tasks": [
