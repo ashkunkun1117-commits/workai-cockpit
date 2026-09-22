@@ -1,6 +1,6 @@
 {
   "business_day": 21,
-  "updated_at": "2026-09-22T10:58:25.646Z",
+  "updated_at": "2026-09-22T11:05:52.736Z",
   "data_stale": false,
   "today": {
     "x": "not_started",
@@ -46,7 +46,7 @@
     },
     {
       "label": "Pending Watch",
-      "state": "green"
+      "state": "yellow"
     },
     {
       "label": "Codex",
@@ -70,16 +70,16 @@
   "next_hypothesis": "Owner投稿承認待ち: notta-voice-validation.mp4(24hトラッキング task 56831bad)。Revenue Content「Nottaの向かない人」(notta-fit-boundary.mp4)は投稿競合回避のためHOLD継続(task 1001b4e9)。次のOwn Content候補はProof-Based Production原則に基づき再評価中(見積書説明文15分→1分・Notta実測・Owner実務等の既存VERIFIED proofから、外部返信を待たずに検討)。",
   "freshness": {
     "today": {
-      "updated_at": "2026-09-22T10:58:25.646Z",
+      "updated_at": "2026-09-22T11:05:52.736Z",
       "business_day": 21
     },
     "revenue": {
-      "updated_at": "2026-09-22T10:58:25.646Z",
+      "updated_at": "2026-09-22T11:05:52.736Z",
       "source_checked_at": "2026-09-20T12:48:00+09:00",
       "data_stale": true
     },
     "metrics": {
-      "updated_at": "2026-09-22T10:58:25.646Z",
+      "updated_at": "2026-09-22T11:05:52.736Z",
       "source_checked_at": "2026-09-21",
       "data_stale": true
     },

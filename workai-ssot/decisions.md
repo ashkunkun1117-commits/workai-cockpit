@@ -4,6 +4,38 @@
 
 ---
 
+## 2026-09-22 (COO指令「PROOF ACQUISITION PRIORITY」対応 — 優先順位確定・SSOT freshness実施)
+
+COOが3候補にP1(実務メール/報告書Before-After実測)>P2(AI判断ミス自然発生ログ)>
+P3(視聴者からの直接反応)の優先順位を指定。P1/P2は自然発生時のみ実施しテスト用
+タスクを意図的に作らない、P3は補助Evidenceで返信不着をSKIP条件にしないことを
+明記。`proof-acquisition-mode.md`へ反映。
+
+**Production Pause ≠ Business Pause**の明示指示を受け、Revenue Monitoring/
+Metrics/Audience ResponseはProof Acquisition Mode中も継続する運用を明文化。
+
+**SSOT freshness実施結果(2026-09-22実機確認)**:
+- **active_experiment/revenue**: task 98ce9bc9(Notta Revenue Experiment
+  24h/48h/72hトラッキング)が`status=backlog`のまま放置され、Pending Task Watch
+  (status=waitingのみ監視)の対象外になっていたため、24hチェックポイント
+  (2026-09-21T12:48予定)が誰にも気づかれず未実施だったバグを発見。
+  `status=waiting`へ修正、next_check_atを48hチェック(2026-09-22T12:48)へ再設定。
+- A8.net再確認: ログインID/PASSフォーム表示、確定unauthenticated
+  (4-state判定基準準拠、false-negativeではなく実際の未ログイン)。Owner再ログイン
+  待ち継続、Claudeは代行不可(パスワード入力禁止)。
+- note.com: ログイン済み確認できたが、PV/アクセス解析ページの正しいURLをこの
+  セッションでは特定できず(guessせず正直に記録、次回特定する)。
+- **metrics**: `data/analytics/kpi_daily.csv`はDay20(2026-09-21)行まで存在、
+  Day21(2026-09-22、本日)は今のところ投稿が無いため行を追加していない
+  (架空の0埋め行を作らない判断)。
+- **audience_response**: 本日投稿した戦略返信4件のうち3件
+  (@andymochizuki/@akagami_sns/@misaki_hennyu)を実機再確認、いずれも新規author
+  返信なし(投稿から数時間、想定どおり)。@ozge_boyraz46は未再確認(次回持ち越し)。
+
+Cockpit/SSOT再生成・push済み。
+
+---
+
 ## 2026-09-22 (COO指令「PROOF ACQUISITION MODE」対応)
 
 COOが新規Reel制作の一時停止を指示。既存Proof(見積書15分→1分、Notta P1/P2実測、
