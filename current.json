@@ -71,7 +71,7 @@
     "notta_clicks_note": "2026-09-20T12:48 JST、Owner修正後を実機Playwrightで再確認: note記事(nc5ad7e7ef364)内のNottaリンクがクリック可能な<a href=\"https://px.a8.net/svt/ejp?a8mat=4BC2EH+5NM9O2+5988+BWVTE\">に修正済み。実際にクリックしてshop.notta.ai(a8=...s00000024524002)へ遷移することを確認、Program ID一致・トラッキングパラメータ維持を実証。Revenue Experiment正式START。24h/48h/72hでnote traffic/A8 clicks/CV/revenueを追跡予定(task 98ce9bc9-01da-4279-8acd-91b689b142e7)。",
     "tomorrow_assets": "IN_PRODUCTION",
     "tomorrow_assets_note": "Day17 X投稿文(content/x/day17_post.md)・Reel台本(content/reel-json/day17_approval_gap_story.md)はContent Editor作成・Claude QA完了。ReelレンダリングはCodex handoff(coord-6ada1af1414838df92b894ff8cba75ba)が2日ブロック継続のため、2026-09-18 Morning RoutineでCreative Engineerへ再ルーティング、動画完成待ち。",
-    "strategic_reply": "Owner承認・投稿完了(@yukissense、https://x.com/workai_lab777/status/2100207692967248246)",
+    "strategic_reply": "2026-09-22実機投稿4件完了: @andymochizuki(https://x.com/workai_lab777/status/2102323437155078609)、@ozge_boyraz46(https://x.com/workai_lab777/status/2102323688720969932)、@akagami_sns(https://x.com/workai_lab777/status/2102324289156555071)、@misaki_hennyu(https://x.com/workai_lab777/status/2102324476696564134、本日X検索で新規発見)。Owner「すべて返信お願いします」の明示承認を受け実行。前者3件は2026-09-20 Morning Routine作成のSTALE判定済み下書きだったが、Owner承認により送信(Xログイン状態が朝のRoutine確認時「unauthenticated確定」から実際には回復していたことも本対応中に判明、詳細はdecisions_log参照)。ledger.csv更新済み(3件のreplied_at追記+akagami_snsのpost_url新規取得、misaki_hennyu新規行追加)。",
     "backyard_health": {
       "date": "2026-09-20",
       "market_radar_count": 12,
@@ -445,7 +445,7 @@
   },
   "current_date": "2026-09-22",
   "data_updated_at": "2026-09-22T07:20:00+09:00",
-  "public_updated_at": "2026-09-21T22:05:19.959Z",
+  "public_updated_at": "2026-09-22T09:12:33.544Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -902,7 +902,7 @@
       "notta_clicks_note": "2026-09-20T12:48 JST、Owner修正後を実機Playwrightで再確認: note記事(nc5ad7e7ef364)内のNottaリンクがクリック可能な<a href=\"https://px.a8.net/svt/ejp?a8mat=4BC2EH+5NM9O2+5988+BWVTE\">に修正済み。実際にクリックしてshop.notta.ai(a8=...s00000024524002)へ遷移することを確認、Program ID一致・トラッキングパラメータ維持を実証。Revenue Experiment正式START。24h/48h/72hでnote traffic/A8 clicks/CV/revenueを追跡予定(task 98ce9bc9-01da-4279-8acd-91b689b142e7)。",
       "tomorrow_assets": "IN_PRODUCTION",
       "tomorrow_assets_note": "Day17 X投稿文(content/x/day17_post.md)・Reel台本(content/reel-json/day17_approval_gap_story.md)はContent Editor作成・Claude QA完了。ReelレンダリングはCodex handoff(coord-6ada1af1414838df92b894ff8cba75ba)が2日ブロック継続のため、2026-09-18 Morning RoutineでCreative Engineerへ再ルーティング、動画完成待ち。",
-      "strategic_reply": "Owner承認・投稿完了(@yukissense、https://x.com/workai_lab777/status/2100207692967248246)",
+      "strategic_reply": "2026-09-22実機投稿4件完了: @andymochizuki(https://x.com/workai_lab777/status/2102323437155078609)、@ozge_boyraz46(https://x.com/workai_lab777/status/2102323688720969932)、@akagami_sns(https://x.com/workai_lab777/status/2102324289156555071)、@misaki_hennyu(https://x.com/workai_lab777/status/2102324476696564134、本日X検索で新規発見)。Owner「すべて返信お願いします」の明示承認を受け実行。前者3件は2026-09-20 Morning Routine作成のSTALE判定済み下書きだったが、Owner承認により送信(Xログイン状態が朝のRoutine確認時「unauthenticated確定」から実際には回復していたことも本対応中に判明、詳細はdecisions_log参照)。ledger.csv更新済み(3件のreplied_at追記+akagami_snsのpost_url新規取得、misaki_hennyu新規行追加)。",
       "backyard_health": {
         "date": "2026-09-20",
         "market_radar_count": 12,
@@ -1661,6 +1661,15 @@
         "exit_code": 0,
         "success": true,
         "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\premorning_2026-09-22_054502.log"
+      },
+      {
+        "routine": "morning",
+        "scheduled_at": "2026-09-22T07:00:00",
+        "started_at": "2026-09-22T07:00:02",
+        "finished_at": "2026-09-22T07:07:58",
+        "exit_code": 0,
+        "success": true,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\morning_2026-09-22_070002.log"
       }
     ],
     "tasks": [

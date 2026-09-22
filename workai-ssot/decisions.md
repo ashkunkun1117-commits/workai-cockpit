@@ -4,6 +4,77 @@
 
 ---
 
+## 2026-09-22 (Owner指示「Xの人気投稿に対しての返信内容をお願いします」→「すべて返信お願いします」対応)
+
+Ownerから直接、X人気投稿への返信案作成を依頼された。既存ledger.csv・market_radar_2026-09-20.mdを確認し、
+①@andymochizuki(いいね256/表示92,000超、9/20作成のSTALE下書き)②@ozge_boyraz46(9/20作成のSTALE下書き)
+③@akagami_sns(9/20作成のSTALE下書き、post_url未取得のまま残存)の3件に加え、④@misaki_hennyu
+(本日X検索(from:検索・話題のポスト)で新規発見、ローカルWhisper+AI構造化で議事録56分→13分という
+実務データ)を新たに見つけ、計4件の返信案を提示。Ownerから「すべて返信お願いします」の明示承認を得て、
+Playwrightで実際に4件とも投稿・実機確認した。
+
+**重要な発見(正直に記録)**: 本日Morning Routine(07:00相当)の記録では「X: unauthenticated確定
+(6日連続)」となっていたが、本対応でX(x.com/search等)へ実際にアクセスしたところ、workai_lab777として
+既にログイン済み(認証済みアカウント表示、ホームタイムライン閲覧可能)だった。Routineのチェックと
+本対応の時間差(またはブラウザセッション状態の違い)により、ログイン状態の判定が食い違った可能性がある。
+次回Routineでこの状態が再現するか要観察。
+
+**STALE判定の上書きについて**: ①②③はX戦略返信ルールの経過時間スコア(12時間超は原則0点)に照らし
+2026-09-21時点で「今回は送信しない」と判断していたが、今回はOwner本人の明示的な承認(「すべて返信
+お願いします」)を得たため、鮮度スコアより人間承認を優先して送信した。これは自動ルーティンの判断を
+Owner明示指示が上書きした正当なケースであり、ルール自体は変更していない。
+
+**@akagami_sns discrepancy**: market_radar_2026-09-20.mdには「いいね609」と記録されていたが、
+実機確認では該当ポスト(https://x.com/akagami_sns/status/2101409877608525913)のいいねは21件
+(表示1,886件)だった。609という数値の出典は不明(別ポストとの混同、または記録ミスの可能性)。
+返信内容自体は投稿テーマと一致しているため送信は実行したが、Market Radarの数値精度に既知の
+データ品質問題があることをここに記録する。
+
+投稿4件のURLはすべてledger.csvへ記録済み(3件は既存行のreplied_at追記、1件は新規行追加)。
+today.json business_progress.strategic_replyを更新。
+
+---
+
+## 2026-09-22 (Morning Routine 07:00相当 — X会話確認・Day22見送り継続・Cockpit更新)
+
+Missed Routine Coalescing: 直前のPre-Morning(05:45)はDate Rollover(Day20→Day21)を
+成功実行済みだが、当日Morning自体は未実行だったためSUPERSEDEDに該当せず、通常フル実行。
+X Conversation Routine: waiting中4会話(forestkinoko/omuat/yukissense followup/
+narisumashi100)を実機Playwrightで再確認、いずれも新規author返信なし(narisumashi100は
+引き続き非ログイン制約で確認不能)。自社Day20投稿(impressions 8→12)にも新規コメントなし。
+Approval Batch該当0件。@ozge_boyraz46/@andymochizuki/@akagami_snsの戦略返信3件は
+2026-09-20作成のまま2日超未送信でSTALE、今回も送信しない。Manual Publish Verification:
+carryover空、Notta P1/P2統合Reel(notta-voice-validation.mp4)は依然Owner未投稿
+(X/IG実機確認)、reconcile不要。X状態unauthenticated確定(6日連続、Human Time配慮により
+再催促はしない)、IG状態authenticated。
+
+新規一次データ: Instagramフォロワー数が11人に減少していることを確認(kpi_daily.csv記録の
+Day17=12人・Day19=12人から-1人、初観測)。Content Editorへ、この事実を根拠にDay22 Own
+Content制作可否の判断を依頼したところ、「Owner本人の反応が存在しない状態で感情を創作する
+ことはHuman Voice原則違反」「11〜12人規模での±1人はノイズの可能性が高い」との理由で
+見送り判断(content/reel-json/day22_skip-rationale.md作成)。Day21に続きDay22も新規制作
+見送りを維持する。Production Cockpitを再生成・push(workai-cockpit commit fb5de28)・
+Deploy検証PASS(Pages build status=built、commit一致、live current.json
+generated_at=07:20/business_day=21確認)。get_tasks(review/waiting/blocked)は前日から
+変化なし、新規Engineering Handoffは起票せず。
+
+---
+
+## 2026-09-22 (Pre-Morning Routine 05:45相当 — Date Rollover Day20→Day21、MORNING_READY)
+
+Missed Routine Coalescing判定: 直近ログ(evening 2026-09-21 22:30〜22:40)以降、本日分の
+premorning/morningとも未実行のためSUPERSEDEDに該当せず、通常どおり実行。get_business_day=
+Day21/2026-09-22を確認。today.json/CockpitともDay20→Day21へDate Rollover(Day20分は
+既にhistory記録済みのため重複なし)。Day21 X投稿・Reelは前日Content Editorの見送り判断
+(content/reel-json/day21_skip-rationale.md)を維持: get_reply_ledgerで再検討条件
+(@ozge_boyraz46/@andymochizukiからの返信)を確認したが両者ともreplied_at空欄のまま未達。
+Day22分は未着手のためnot_readyで正直に表示。Approval Queue pending=0。get_tasks(waiting/
+review)は前日から変化なし(Notta P1/P2 Reel投稿待ちowner_actionは継続有効)。Cockpit
+commit 7f86b573・push・Pages build built一致・live current.json business_day=21確認PASS
+(3回目リトライで反映)。
+
+---
+
 ## 2026-09-21 (COO FINAL DECISION — Notta P1/P2統合Reel PUBLISH GO、投稿競合回避のためHOLD調整)
 
 COOがNotta P1/P2統合Reel(notta-voice-validation.mp4)をFINAL PASS/PUBLISH GOと判定、

@@ -1,10 +1,10 @@
 {
-  "business_day": 20,
-  "updated_at": "2026-09-21T13:48:17.587Z",
+  "business_day": 21,
+  "updated_at": "2026-09-22T09:12:34.448Z",
   "data_stale": false,
   "today": {
-    "x": "posted",
-    "instagram": "posted"
+    "x": "not_started",
+    "instagram": "not_started"
   },
   "owner_actions": [
     "【COO最終承認・PUBLISH GO】Notta P1/P2実機検証Reel(notta-voice-validation.mp4)をX・Instagramへ投稿してください。新Reel戦略の基準コンテンツです。投稿後24時間でReel URL/公開時刻/views/reach/フォロワー外%/いいね/保存/シェア/コメント/プロフィールアクセス/フォロー/note流入/A8クリック/CV/売上を追跡します(views単独では判断しません、特にprofile visit/save/share/follow/note・A8クリックを重視)。投稿競合を避けるため、他のNotta Revenue Content(notta-fit-boundary.mp4「Nottaの向かない人」)は本Reel投稿・24hデータ取得後まで見送りです。そちらの投稿操作は今は不要です。"
@@ -12,7 +12,7 @@
   "revenue_funnel": [
     {
       "label": "content",
-      "value": 16
+      "value": 13
     },
     {
       "label": "note_lp",
@@ -64,24 +64,24 @@
     "reel_url": null,
     "posted": false
   },
-  "next_x_status": "posted",
-  "next_reel_status": "posted",
+  "next_x_status": "not_started",
+  "next_reel_status": "not_started",
   "latest_learning": "Day19 ReelはTemplate v2 canonical componentでの初の検証としてOwnerが実際に投稿(X impressions=7、IG投稿直後)。Market Radar(2026-09-20、12件収集)で、Notta「向かない人」の主張(単発音源・少人数向け、大人数・固有名詞重視の会議には限界)を独立に補強する実例が見つかった: @andymochizuki(いいね91,000)が『AI議事録は文字起こし・要約はできても構造化・論点抽出は別の技術』という実務上の失敗談を投稿。@ozge_boyraz46は23,000円のAIボイスレコーダーを実購入しており、Notta Memo(低価格帯)との比較企画の需要が実在することを確認。",
   "next_hypothesis": "Owner がnote記事内Nottaリンクをハイパーリンク化、2026-09-20T12:48 JST実機確認でPASS(クリック可能・href=px.a8.net・Program ID一致・実クリックでshop.notta.aiへ遷移・トラッキング維持)。これをNotta Revenue Experimentの正式STARTとし、それ以前のA8 click=0はpre-fix invalid periodとして需要評価対象から除外。24h/48h/72hでnote traffic/A8 clicks/CV/revenueを追跡(task 98ce9bc9-01da-4279-8acd-91…（全文はdata/publish/today.json: ai_learning参照）",
   "freshness": {
     "today": {
-      "updated_at": "2026-09-21T13:48:17.587Z",
-      "business_day": 20
+      "updated_at": "2026-09-22T09:12:34.448Z",
+      "business_day": 21
     },
     "revenue": {
-      "updated_at": "2026-09-21T13:48:17.587Z",
+      "updated_at": "2026-09-22T09:12:34.448Z",
       "source_checked_at": "2026-09-20T12:48:00+09:00",
       "data_stale": true
     },
     "metrics": {
-      "updated_at": "2026-09-21T13:48:17.587Z",
+      "updated_at": "2026-09-22T09:12:34.448Z",
       "source_checked_at": "2026-09-21",
-      "data_stale": false
+      "data_stale": true
     },
     "market_radar": {
       "date": "2026-09-20",
@@ -100,15 +100,15 @@
     "experiment": {
       "day": 20,
       "date": "2026-09-20",
-      "stale": false,
-      "flag": null
+      "stale": true,
+      "flag": "EXPERIMENT_STALE"
     },
     "learning": {
       "day": 19,
       "status": null,
       "stale": true,
       "flag": "LEARNING_STALE",
-      "reason": "ai_learning.day (19) is older than the current business_day (20)"
+      "reason": "ai_learning.day (19) is older than the current business_day (21)"
     },
     "semantic_stale": false,
     "semantic_stale_reason": null
