@@ -493,9 +493,22 @@
     "owner_actions": "既存2件(Notta P1/P2ReelのX投稿依頼、A8.net再ログイン依頼)は引き続き有効な外部依存のため変更なし。",
     "gate": "MORNING_READY(not_readyの正直な表示・Approval Queue空・owner_actions最新・stale項目なしをすべて確認)。"
   },
+  "morning_2026-09-24_findings": {
+    "checked_at": "2026-09-24T07:01:00+09:00",
+    "missed_routine_coalescing": "routine_scheduler.logに本日分のmorning実行記録なし(直近はpremorning 05:45成功のみ)。SUPERSEDED条件に該当せず、Morning Routineを通常フル実行した。",
+    "x_state": "unauthenticated確定(x.com/home→明示的ログインフォーム(id/passwordフィールド付きonboarding/loginページ)へリダイレクトを実機確認)。10日連続。ledger.csv waiting 8件(forestkinoko/narisumashi100/yukissense/omuat/ozge_boyraz46/andymochizuki/akagami_sns/misaki_hennyu)は新規返信有無を今回も確認不能のため持ち越し、新規Strategic Reply候補探索もスキップ。",
+    "ig_state": "authenticated(プロフィール編集・プロフェッショナルダッシュボードリンクを実機確認)。フォロワー13人(前回2026-09-23確認の12人から+1、VERIFIED)。投稿22件のまま新規投稿なし、carryover空・reconcile対象なし。kpi_daily.csv Day22行へig_followers=13を反映済み。",
+    "task_hygiene": "task 5ea5e2ad(Owner録音P1/P2 Notta実機検証)のnext_actionが『COO最終レビュー・投稿承認待ち』のまま2026-09-22のInstagram投稿確認後も更新されていなかったため、statusをdoneへ更新しトラッキングはtask 56831badへ移管済みである旨を記録(内容の再制作・追加確認は発生していない)。",
+    "revenue_experiment_checkpoints": "task 56831bad・98ce9bc9とも next_check_at=2026-09-24T22:30 JSTで本Routine実行時点(07:01 JST)では未到来。get_tasks(waiting)3件、next_check_atの過去超過なし。",
+    "handoff_queue_note": "get_handoff_queueのcoord-2eabeb66(Day15 Reel)・coord-6ada1af1(Day17 Reel)は前回同様status=assigned/attempts=0のまま残存(Day15/17とも他経路で制作・投稿済みのためSTALE推定)。lease/token無しでは安全にfinish/fail不可のため今回もクリーンアップ見送り、記録のみ。",
+    "day23_content": "Proof Acquisition Mode継続中(COO指令2026-09-22)。day22_proof_candidates.mdのP1(実務メール/報告書)・P2(AI判断ミス自然発生ログ)とも本日時点で未発生、P3(戦略返信4件の返信待ち)はX unauthenticatedのため確認不能。新規Reel/Own Content制作は再開せず、Day23分もnot_readyを維持。",
+    "business_bottleneck": "Revenue測定(A8.net 10日連続未ログイン)とAudience Response確認(X 10日連続unauthenticated)がともにOwnerログイン待ちでブロックされたまま。Production自体はProof Acquisition Modeにより意図的停止中。",
+    "hypothesis": "KEEP。Proof Acquisition Mode継続(新規一次データ未取得)。COO指令の解除・新Proof取得まで新規Reel/X投稿制作は再開しない。",
+    "green_actions_today": "task 5ea5e2adのステータス整理、kpi_daily.csv Day22行へig_followers=13反映。他は全チェックポイント未到来のためRevenue Experiment側の新規実行なし(Approval Queue pending=0)。"
+  },
   "current_date": "2026-09-24",
   "data_updated_at": "2026-09-24T05:45:00+09:00",
-  "public_updated_at": "2026-09-23T20:46:38.644Z",
+  "public_updated_at": "2026-09-23T22:02:51.402Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -904,7 +917,7 @@
         "x_reply_impressions_avg": null,
         "ig_posts": 0,
         "ig_reel_views": null,
-        "ig_followers": null,
+        "ig_followers": 13,
         "ig_profile_visits": null,
         "link_clicks": null,
         "conversions": null,
@@ -1409,6 +1422,19 @@
       "waiting_tasks_check": "get_tasks(status=waiting)3件(1001b4e9/98ce9bc9/56831bad)を確認、いずれもnext_check_atが2026-09-24T22:30以降または該当なし(on_hold)でoverdueなし。get_tasks(status=backlog)2件はEngineering Task(Codex assigned)でRevenue Experiment該当外。",
       "owner_actions": "既存2件(Notta P1/P2ReelのX投稿依頼、A8.net再ログイン依頼)は引き続き有効な外部依存のため変更なし。",
       "gate": "MORNING_READY(not_readyの正直な表示・Approval Queue空・owner_actions最新・stale項目なしをすべて確認)。"
+    },
+    "morning_2026-09-24_findings": {
+      "checked_at": "2026-09-24T07:01:00+09:00",
+      "missed_routine_coalescing": "routine_scheduler.logに本日分のmorning実行記録なし(直近はpremorning 05:45成功のみ)。SUPERSEDED条件に該当せず、Morning Routineを通常フル実行した。",
+      "x_state": "unauthenticated確定(x.com/home→明示的ログインフォーム(id/passwordフィールド付きonboarding/loginページ)へリダイレクトを実機確認)。10日連続。ledger.csv waiting 8件(forestkinoko/narisumashi100/yukissense/omuat/ozge_boyraz46/andymochizuki/akagami_sns/misaki_hennyu)は新規返信有無を今回も確認不能のため持ち越し、新規Strategic Reply候補探索もスキップ。",
+      "ig_state": "authenticated(プロフィール編集・プロフェッショナルダッシュボードリンクを実機確認)。フォロワー13人(前回2026-09-23確認の12人から+1、VERIFIED)。投稿22件のまま新規投稿なし、carryover空・reconcile対象なし。kpi_daily.csv Day22行へig_followers=13を反映済み。",
+      "task_hygiene": "task 5ea5e2ad(Owner録音P1/P2 Notta実機検証)のnext_actionが『COO最終レビュー・投稿承認待ち』のまま2026-09-22のInstagram投稿確認後も更新されていなかったため、statusをdoneへ更新しトラッキングはtask 56831badへ移管済みである旨を記録(内容の再制作・追加確認は発生していない)。",
+      "revenue_experiment_checkpoints": "task 56831bad・98ce9bc9とも next_check_at=2026-09-24T22:30 JSTで本Routine実行時点(07:01 JST)では未到来。get_tasks(waiting)3件、next_check_atの過去超過なし。",
+      "handoff_queue_note": "get_handoff_queueのcoord-2eabeb66(Day15 Reel)・coord-6ada1af1(Day17 Reel)は前回同様status=assigned/attempts=0のまま残存(Day15/17とも他経路で制作・投稿済みのためSTALE推定)。lease/token無しでは安全にfinish/fail不可のため今回もクリーンアップ見送り、記録のみ。",
+      "day23_content": "Proof Acquisition Mode継続中(COO指令2026-09-22)。day22_proof_candidates.mdのP1(実務メール/報告書)・P2(AI判断ミス自然発生ログ)とも本日時点で未発生、P3(戦略返信4件の返信待ち)はX unauthenticatedのため確認不能。新規Reel/Own Content制作は再開せず、Day23分もnot_readyを維持。",
+      "business_bottleneck": "Revenue測定(A8.net 10日連続未ログイン)とAudience Response確認(X 10日連続unauthenticated)がともにOwnerログイン待ちでブロックされたまま。Production自体はProof Acquisition Modeにより意図的停止中。",
+      "hypothesis": "KEEP。Proof Acquisition Mode継続(新規一次データ未取得)。COO指令の解除・新Proof取得まで新規Reel/X投稿制作は再開しない。",
+      "green_actions_today": "task 5ea5e2adのステータス整理、kpi_daily.csv Day22行へig_followers=13反映。他は全チェックポイント未到来のためRevenue Experiment側の新規実行なし(Approval Queue pending=0)。"
     }
   },
   "health_inputs": {
@@ -1890,6 +1916,27 @@
         "exit_code": 0,
         "success": true,
         "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\evening_2026-09-23_223002.log"
+      },
+      {
+        "routine": "premorning",
+        "scheduled_at": "2026-09-24T05:45:00",
+        "started_at": "2026-09-23T20:49:39.937Z",
+        "finished_at": "2026-09-23T20:49:39.938Z",
+        "exit_code": 0,
+        "success": true,
+        "invocation": "manual_chat_slash_command",
+        "status": "MORNING_READY",
+        "note": "Date Rollover実施: today.json/CockpitともDay22/2026-09-23→Day23/2026-09-24へ更新。旧today(Day22)はProof Acquisition Modeによる意図的見送りのためSTALE/CLOSE扱い(CARRYOVERへ入れず)。Day23分は未着手のためnot_readyで正直に表示、Proof Acquisition Mode継続(P1/P2未発生、P3はX9日連続unauthenticatedで確認不能)。Approval Queue pending=0。get_tasks(waiting)3件、next_check_at過去超過なし。owner_actions(Notta X投稿依頼/A8再ログイン)維持。Cockpit commit 0052ea2・push・Pages builds一覧でstatus=built確認、live current.json business_day=23・current_date=2026-09-24一致確認でPASS。",
+        "log_file": null
+      },
+      {
+        "routine": "premorning",
+        "scheduled_at": "2026-09-24T05:45:00",
+        "started_at": "2026-09-24T05:45:02",
+        "finished_at": "2026-09-24T05:49:49",
+        "exit_code": 0,
+        "success": true,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\premorning_2026-09-24_054502.log"
       }
     ],
     "tasks": [
