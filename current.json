@@ -1,7 +1,7 @@
 {
   "business_day": 22,
   "business_date": "2026-09-23",
-  "generated_at": "2026-09-23T07:10:00+09:00",
+  "generated_at": "2026-09-23T22:33:00+09:00",
   "today": {
     "x_post": {
       "status": "not_ready",
@@ -486,8 +486,8 @@
     "human_time": "本Routine実行中、Owner操作は発生せず(0分)。"
   },
   "current_date": "2026-09-23",
-  "data_updated_at": "2026-09-23T07:10:00+09:00",
-  "public_updated_at": "2026-09-23T13:33:35.249Z",
+  "data_updated_at": "2026-09-23T22:33:00+09:00",
+  "public_updated_at": "2026-09-23T13:35:11.376Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -910,7 +910,7 @@
   "source_manifest": {
     "business_day": 22,
     "business_date": "2026-09-23",
-    "generated_at": "2026-09-23T07:10:00+09:00",
+    "generated_at": "2026-09-23T22:33:00+09:00",
     "today": {
       "x_post": {
         "status": "not_ready",
