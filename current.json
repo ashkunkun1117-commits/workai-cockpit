@@ -27,8 +27,33 @@
     }
   },
   "business_progress": {
-    "production_mode": "proof_acquisition",
-    "production_mode_note": "COO指令「PROOF ACQUISITION MODE」(2026-09-22)。既存Proof(見積書15分→1分、Notta実測、フォロワー数変動)は主要テーマで使用済み/新規性が弱いため、新規Reel/Own Content制作は無理に再開しない。日次投稿数を埋めるための既存テーマ焼き直しは禁止。新しいProofが取れるまで、Routineは新規一次データ候補を最大3件(TASK/WHY IT MATTERS/HOW TO TEST/OWNER EFFORT(原則10分以内)/POSSIBLE REEL ANGLE/REVENUE CONNECTION/FUTURE CORE-BUSINESS VALUE)提案する(references/proof-acquisition-mode.md)。制作再開はCOOの明示的な指示、または新Proof取得のいずれかによる。優先順位はCOO指令「PROOF ACQUISITION PRIORITY」(2026-09-22)によりP1=実務メール/報告書Before-After実測(Owner実務で自然発生時のみ、テスト用タスクを作らない)、P2=AI判断ミスの自然発生ログ(意図的に失敗させない)、P3=視聴者からの直接反応(補助Evidence、返信/DM不着はSKIP条件にしない)。Production Pause ≠ Business Pauseのため、Revenue Monitoring/Metrics/Audience Responseは本モード中も継続する。",
+    "production_mode": "audience_growth_revenue_engine",
+    "production_mode_note": "【2026-09-24更新】COO指令「AUDIENCE GROWTH + REVENUE ENGINE」により、Proof Acquisition Mode(2026-09-22〜09-24)の新規制作停止は終了。運用を「投稿制作中心」から「Audience Growth Engine + Revenue Engineの同時構築」へ変更(references/audience-growth-revenue-engine.md)。5 Growth Channels(Organic Posts/Revenue Content/Strategic Replies/Targeted Following/Buzz Candidate Posts)を並行運用し、次の10投稿はContent Mix(Reach/Awareness 50%・Trust/Authority 30%・Revenue 20%)に従う。Targeted FollowingはStrategic Repliesと同様、Owner/COOのバッチ承認後にのみ実行(Claude独断でのフォロー実行はしない、提案時点)。Proof-Based Production原則(捏造禁止・実在するEvidence必須、Proof種別A〜G)自体は撤回されておらず、制作再開後も個々のコンテンツの品質ゲートとして継続適用する。旧モードの経緯はreferences/proof-acquisition-mode.md参照(履歴は書き換えず、終了記録を追記)。",
+    "production_mode_proof_acquisition_history_note": "2026-09-22〜09-24はProof Acquisition Mode(新規Reel/Own Content制作を一時停止、新規一次データ候補提案優先)だった。この間の経緯・優先順位(P1実務Before-After/P2 AI判断ミス自然発生/P3視聴者反応)はreferences/proof-acquisition-mode.mdに保存済み。",
+    "content_mix_tracker": {
+      "window_size": 10,
+      "target_mix": {
+        "reach_awareness": 0.5,
+        "trust_authority": 0.3,
+        "revenue": 0.2
+      },
+      "started_at": "2026-09-24",
+      "posts": [
+        {
+          "seq": 1,
+          "content": "notta-voice-validation.mp4 X投稿(content/x/notta-voice-validation_post.md)",
+          "category": "revenue",
+          "status": "x_copy_media_ready_awaiting_owner_post",
+          "note": "Notta P1/P2実測(10語中6語完全一致)。IGは2026-09-22投稿済み(reel/DdkRCRGSdy3/)、X投稿は本日X COPY+MEDIA READY状態、Owner投稿待ち。"
+        }
+      ],
+      "counts_so_far": {
+        "reach_awareness": 0,
+        "trust_authority": 0,
+        "revenue": 1
+      },
+      "note": "この配列はAudience Growth + Revenue Engine開始(2026-09-24)以降に新規・確認された投稿のみを追加する。過去(Day1〜23)の投稿は遡って分類しない(履歴を書き換えない)。10件到達ごとにミックス達成率を振り返る。"
+    },
     "revenue_monitoring_continues_note": "COO指令(2026-09-22)によりProof Acquisition Mode中もRevenue/Metrics/Audience Response追跡は継続。2026-09-22実機確認で発見: task 98ce9bc9(Notta Revenue Experiment 24h/48h/72hトラッキング)がstatus=backlogのまま放置され、Pending Task Watch(status=waitingのみ監視)の対象外になり24hチェック(2026-09-21T12:48予定)が未実施だったバグを発見・修正(status=waitingへ変更、next_check_at=2026-09-22T12:48で48hチェックへ)。A8.net再確認: ログインID/PASSフォーム表示、確定unauthenticated(4-state判定、false-negativeではなく実際の未ログイン)。Owner再ログイン待ち継続。X audience response: 本日投稿した戦略返信4件(@andymochizuki/@ozge_boyraz46/@akagami_sns/@misaki_hennyu)のうち3件を実機再確認、いずれも新規author返信なし(投稿から数時間、想定どおり)。",
     "note_priority": "P1",
     "notta_note": "LIVE",
@@ -510,13 +535,14 @@
     "trigger": "Owner主導の対話セッション(定期Routineではない)。「A8ログイン画面までお願いします」の依頼を受け、Claudeがhttps://www.a8.net/へ実機ナビゲートしログインフォームを表示、Owner自身がログインID/PASSを入力(Claudeは認証情報の入力を代行していない)。Ownerから「ログイン完了」の報告を受け、media-console.a8.netでauthenticated状態を実機確認した。",
     "revenue_check_98ce9bc9": "A8.net再ログイン確定を受け、task 98ce9bc9(Notta Revenue Experiment 24h/48h/72hトラッキング)の実データチェックを実施しstatus=doneへクローズ。実績: リンク修正(2026-09-20T12:48 JST)後〜2026-09-24で A8クリック合計2件(09/20・09/23に各1件)、CV(発生件数)0、発生金額0円、確定件数0、確定金額0円。note.com側アクセス解析は本日も未ログイン(ログインボタン確認)のためDATA UNAVAILABLEのまま。詳細はtask 98ce9bc9のresultフィールド・business_progress.notta_revenue_experiment_resultへ記録。",
     "owner_actions_update": "A8.net再ログイン依頼はOwner対応完了により owner_actions から削除。残るOwner Actionは notta-voice-validation.mp4のX投稿依頼のみ(1件)。",
-    "next": "③48h/72h Revenue Checkは本セッションで完了。④SSOT反映は本findings・notta_revenue_experiment_result・task更新・decisions_logで対応済み。残る優先事項は①Owner側のX投稿、⑤新Proofの自然発生待ち(Proof Acquisition Mode継続)。",
+    "next": "③48h/72h Revenue Checkは本セッションで完了。④SSOT反映は本findings・notta_revenue_experiment_result・task更新・decisions_logで対応済み。残る優先事項は①Owner側のX投稿、⑤新Proofの自然発生待ち(Proof Acquisition Modeは同日中にAUDIENCE GROWTH + REVENUE ENGINE指令により終了、下記参照)。",
     "reality_check_publish_state": "COO指令「REALITY CHECK」対応。notta-voice-validation.mp4のX/Instagram投稿状態を実機で3-state判定(POSTED/NOT POSTED/UNKNOWN)。Instagram: POSTED(reel/DdkRCRGSdy3/、プロフィールグリッド最新項目、2026-09-22確認時点から変化なし)。X: NOT POSTED(x.com/workai_lab777をログアウト状態で実機確認、最新投稿は2026-09-21付Day20「2日間で、3人から同じ指摘をもらいました」で日付連続(9/19〜9/21)に欠落なし、Notta関連の新規投稿は存在しない)。Owner申告「昨日投稿済み」とはX側で一致しない(IGは既に2026-09-22投稿済みのため「昨日」には該当しない)。投稿済み媒体(IG)へは再投稿依頼を出さず、owner_actionsはX投稿依頼のみを維持。task 56831badへ記録済み。",
-    "x_publish_package_complete": "COO指令「COMPLETE X PUBLISH PACKAGE」対応。X未投稿の根本原因はOwnerの投稿忘れではなくX用投稿本文が未作成だったことと判明(IG投稿時はキャプション制作済みだったが、X向け専用コピーの制作が漏れていた)。notta-voice-validation.mp4は制作済みのため新規制作・再Renderは行わず、X投稿本文のみ新規作成(content/x/notta-voice-validation_post.md、137字・X標準カウント、実測「10語中6語完全一致」に限定・誤変換例2個・note URLのみ・アフィリエイトURL直接不使用・PR表示は既存方針どおりnote記事側のみで足りる)。owner_actionsを「X投稿してください」から「X COPY + MEDIA READY」状態へ更新。"
+    "x_publish_package_complete": "COO指令「COMPLETE X PUBLISH PACKAGE」対応。X未投稿の根本原因はOwnerの投稿忘れではなくX用投稿本文が未作成だったことと判明(IG投稿時はキャプション制作済みだったが、X向け専用コピーの制作が漏れていた)。notta-voice-validation.mp4は制作済みのため新規制作・再Renderは行わず、X投稿本文のみ新規作成(content/x/notta-voice-validation_post.md、137字・X標準カウント、実測「10語中6語完全一致」に限定・誤変換例2個・note URLのみ・アフィリエイトURL直接不使用・PR表示は既存方針どおりnote記事側のみで足りる)。owner_actionsを「X投稿してください」から「X COPY + MEDIA READY」状態へ更新。",
+    "audience_growth_revenue_engine_adopted": "COO指令「AUDIENCE GROWTH + REVENUE ENGINE」対応。運用を「投稿制作中心」から「Audience Growth Engine + Revenue Engineの同時構築」へ変更(references/audience-growth-revenue-engine.md新規作成、SKILL.md「事前に必ず読む」へ6.7として追加)。Proof Acquisition Mode(2026-09-22)の新規制作停止はこれにより終了(references/proof-acquisition-mode.mdへ終了記録を追記、履歴は書き換えず)。5 Growth Channels・Content Mix(Reach50%/Trust30%/Revenue20%、content_mix_tracker新設)・X Daily Operating Loop・Measurementを採用。Targeted Following(新チャネル)はStrategic Repliesと同様Owner/COOのバッチ承認後に実行する運用とし、Claude独断では実行しない(この分類はClaude提案、COOの確認待ち)。"
   },
   "current_date": "2026-09-24",
   "data_updated_at": "2026-09-24T07:02:00+09:00",
-  "public_updated_at": "2026-09-23T22:52:34.896Z",
+  "public_updated_at": "2026-09-23T22:58:16.801Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -965,8 +991,33 @@
       }
     },
     "business_progress": {
-      "production_mode": "proof_acquisition",
-      "production_mode_note": "COO指令「PROOF ACQUISITION MODE」(2026-09-22)。既存Proof(見積書15分→1分、Notta実測、フォロワー数変動)は主要テーマで使用済み/新規性が弱いため、新規Reel/Own Content制作は無理に再開しない。日次投稿数を埋めるための既存テーマ焼き直しは禁止。新しいProofが取れるまで、Routineは新規一次データ候補を最大3件(TASK/WHY IT MATTERS/HOW TO TEST/OWNER EFFORT(原則10分以内)/POSSIBLE REEL ANGLE/REVENUE CONNECTION/FUTURE CORE-BUSINESS VALUE)提案する(references/proof-acquisition-mode.md)。制作再開はCOOの明示的な指示、または新Proof取得のいずれかによる。優先順位はCOO指令「PROOF ACQUISITION PRIORITY」(2026-09-22)によりP1=実務メール/報告書Before-After実測(Owner実務で自然発生時のみ、テスト用タスクを作らない)、P2=AI判断ミスの自然発生ログ(意図的に失敗させない)、P3=視聴者からの直接反応(補助Evidence、返信/DM不着はSKIP条件にしない)。Production Pause ≠ Business Pauseのため、Revenue Monitoring/Metrics/Audience Responseは本モード中も継続する。",
+      "production_mode": "audience_growth_revenue_engine",
+      "production_mode_note": "【2026-09-24更新】COO指令「AUDIENCE GROWTH + REVENUE ENGINE」により、Proof Acquisition Mode(2026-09-22〜09-24)の新規制作停止は終了。運用を「投稿制作中心」から「Audience Growth Engine + Revenue Engineの同時構築」へ変更(references/audience-growth-revenue-engine.md)。5 Growth Channels(Organic Posts/Revenue Content/Strategic Replies/Targeted Following/Buzz Candidate Posts)を並行運用し、次の10投稿はContent Mix(Reach/Awareness 50%・Trust/Authority 30%・Revenue 20%)に従う。Targeted FollowingはStrategic Repliesと同様、Owner/COOのバッチ承認後にのみ実行(Claude独断でのフォロー実行はしない、提案時点)。Proof-Based Production原則(捏造禁止・実在するEvidence必須、Proof種別A〜G)自体は撤回されておらず、制作再開後も個々のコンテンツの品質ゲートとして継続適用する。旧モードの経緯はreferences/proof-acquisition-mode.md参照(履歴は書き換えず、終了記録を追記)。",
+      "production_mode_proof_acquisition_history_note": "2026-09-22〜09-24はProof Acquisition Mode(新規Reel/Own Content制作を一時停止、新規一次データ候補提案優先)だった。この間の経緯・優先順位(P1実務Before-After/P2 AI判断ミス自然発生/P3視聴者反応)はreferences/proof-acquisition-mode.mdに保存済み。",
+      "content_mix_tracker": {
+        "window_size": 10,
+        "target_mix": {
+          "reach_awareness": 0.5,
+          "trust_authority": 0.3,
+          "revenue": 0.2
+        },
+        "started_at": "2026-09-24",
+        "posts": [
+          {
+            "seq": 1,
+            "content": "notta-voice-validation.mp4 X投稿(content/x/notta-voice-validation_post.md)",
+            "category": "revenue",
+            "status": "x_copy_media_ready_awaiting_owner_post",
+            "note": "Notta P1/P2実測(10語中6語完全一致)。IGは2026-09-22投稿済み(reel/DdkRCRGSdy3/)、X投稿は本日X COPY+MEDIA READY状態、Owner投稿待ち。"
+          }
+        ],
+        "counts_so_far": {
+          "reach_awareness": 0,
+          "trust_authority": 0,
+          "revenue": 1
+        },
+        "note": "この配列はAudience Growth + Revenue Engine開始(2026-09-24)以降に新規・確認された投稿のみを追加する。過去(Day1〜23)の投稿は遡って分類しない(履歴を書き換えない)。10件到達ごとにミックス達成率を振り返る。"
+      },
       "revenue_monitoring_continues_note": "COO指令(2026-09-22)によりProof Acquisition Mode中もRevenue/Metrics/Audience Response追跡は継続。2026-09-22実機確認で発見: task 98ce9bc9(Notta Revenue Experiment 24h/48h/72hトラッキング)がstatus=backlogのまま放置され、Pending Task Watch(status=waitingのみ監視)の対象外になり24hチェック(2026-09-21T12:48予定)が未実施だったバグを発見・修正(status=waitingへ変更、next_check_at=2026-09-22T12:48で48hチェックへ)。A8.net再確認: ログインID/PASSフォーム表示、確定unauthenticated(4-state判定、false-negativeではなく実際の未ログイン)。Owner再ログイン待ち継続。X audience response: 本日投稿した戦略返信4件(@andymochizuki/@ozge_boyraz46/@akagami_sns/@misaki_hennyu)のうち3件を実機再確認、いずれも新規author返信なし(投稿から数時間、想定どおり)。",
       "note_priority": "P1",
       "notta_note": "LIVE",
@@ -1448,9 +1499,10 @@
       "trigger": "Owner主導の対話セッション(定期Routineではない)。「A8ログイン画面までお願いします」の依頼を受け、Claudeがhttps://www.a8.net/へ実機ナビゲートしログインフォームを表示、Owner自身がログインID/PASSを入力(Claudeは認証情報の入力を代行していない)。Ownerから「ログイン完了」の報告を受け、media-console.a8.netでauthenticated状態を実機確認した。",
       "revenue_check_98ce9bc9": "A8.net再ログイン確定を受け、task 98ce9bc9(Notta Revenue Experiment 24h/48h/72hトラッキング)の実データチェックを実施しstatus=doneへクローズ。実績: リンク修正(2026-09-20T12:48 JST)後〜2026-09-24で A8クリック合計2件(09/20・09/23に各1件)、CV(発生件数)0、発生金額0円、確定件数0、確定金額0円。note.com側アクセス解析は本日も未ログイン(ログインボタン確認)のためDATA UNAVAILABLEのまま。詳細はtask 98ce9bc9のresultフィールド・business_progress.notta_revenue_experiment_resultへ記録。",
       "owner_actions_update": "A8.net再ログイン依頼はOwner対応完了により owner_actions から削除。残るOwner Actionは notta-voice-validation.mp4のX投稿依頼のみ(1件)。",
-      "next": "③48h/72h Revenue Checkは本セッションで完了。④SSOT反映は本findings・notta_revenue_experiment_result・task更新・decisions_logで対応済み。残る優先事項は①Owner側のX投稿、⑤新Proofの自然発生待ち(Proof Acquisition Mode継続)。",
+      "next": "③48h/72h Revenue Checkは本セッションで完了。④SSOT反映は本findings・notta_revenue_experiment_result・task更新・decisions_logで対応済み。残る優先事項は①Owner側のX投稿、⑤新Proofの自然発生待ち(Proof Acquisition Modeは同日中にAUDIENCE GROWTH + REVENUE ENGINE指令により終了、下記参照)。",
       "reality_check_publish_state": "COO指令「REALITY CHECK」対応。notta-voice-validation.mp4のX/Instagram投稿状態を実機で3-state判定(POSTED/NOT POSTED/UNKNOWN)。Instagram: POSTED(reel/DdkRCRGSdy3/、プロフィールグリッド最新項目、2026-09-22確認時点から変化なし)。X: NOT POSTED(x.com/workai_lab777をログアウト状態で実機確認、最新投稿は2026-09-21付Day20「2日間で、3人から同じ指摘をもらいました」で日付連続(9/19〜9/21)に欠落なし、Notta関連の新規投稿は存在しない)。Owner申告「昨日投稿済み」とはX側で一致しない(IGは既に2026-09-22投稿済みのため「昨日」には該当しない)。投稿済み媒体(IG)へは再投稿依頼を出さず、owner_actionsはX投稿依頼のみを維持。task 56831badへ記録済み。",
-      "x_publish_package_complete": "COO指令「COMPLETE X PUBLISH PACKAGE」対応。X未投稿の根本原因はOwnerの投稿忘れではなくX用投稿本文が未作成だったことと判明(IG投稿時はキャプション制作済みだったが、X向け専用コピーの制作が漏れていた)。notta-voice-validation.mp4は制作済みのため新規制作・再Renderは行わず、X投稿本文のみ新規作成(content/x/notta-voice-validation_post.md、137字・X標準カウント、実測「10語中6語完全一致」に限定・誤変換例2個・note URLのみ・アフィリエイトURL直接不使用・PR表示は既存方針どおりnote記事側のみで足りる)。owner_actionsを「X投稿してください」から「X COPY + MEDIA READY」状態へ更新。"
+      "x_publish_package_complete": "COO指令「COMPLETE X PUBLISH PACKAGE」対応。X未投稿の根本原因はOwnerの投稿忘れではなくX用投稿本文が未作成だったことと判明(IG投稿時はキャプション制作済みだったが、X向け専用コピーの制作が漏れていた)。notta-voice-validation.mp4は制作済みのため新規制作・再Renderは行わず、X投稿本文のみ新規作成(content/x/notta-voice-validation_post.md、137字・X標準カウント、実測「10語中6語完全一致」に限定・誤変換例2個・note URLのみ・アフィリエイトURL直接不使用・PR表示は既存方針どおりnote記事側のみで足りる)。owner_actionsを「X投稿してください」から「X COPY + MEDIA READY」状態へ更新。",
+      "audience_growth_revenue_engine_adopted": "COO指令「AUDIENCE GROWTH + REVENUE ENGINE」対応。運用を「投稿制作中心」から「Audience Growth Engine + Revenue Engineの同時構築」へ変更(references/audience-growth-revenue-engine.md新規作成、SKILL.md「事前に必ず読む」へ6.7として追加)。Proof Acquisition Mode(2026-09-22)の新規制作停止はこれにより終了(references/proof-acquisition-mode.mdへ終了記録を追記、履歴は書き換えず)。5 Growth Channels・Content Mix(Reach50%/Trust30%/Revenue20%、content_mix_tracker新設)・X Daily Operating Loop・Measurementを採用。Targeted Following(新チャネル)はStrategic Repliesと同様Owner/COOのバッチ承認後に実行する運用とし、Claude独断では実行しない(この分類はClaude提案、COOの確認待ち)。"
     }
   },
   "health_inputs": {
