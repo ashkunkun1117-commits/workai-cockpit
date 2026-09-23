@@ -1,12 +1,12 @@
 {
-  "business_day": 22,
-  "business_date": "2026-09-23",
-  "generated_at": "2026-09-23T22:33:00+09:00",
+  "business_day": 23,
+  "business_date": "2026-09-24",
+  "generated_at": "2026-09-24T05:45:00+09:00",
   "today": {
     "x_post": {
       "status": "not_ready",
       "text_file": null,
-      "note": "Day22分はProof Acquisition Mode継続中(COO指令2026-09-22)のため見送り継続(content/reel-json/day22_skip-rationale.md)。Morning Routine(2026-09-23 07:xx実機確認)でP1(実務メール/報告書)・P2(AI判断ミス自然発生ログ)とも本日時点で未発生を確認。P3(戦略返信4件の返信待ち)はX側が本日も確定unauthenticated(8日連続、ログインフォーム実機確認)のため確認不能、次回へ持ち越し。次回Routineで再確認する。"
+      "note": "Day23分。Proof Acquisition Mode継続中(COO指令2026-09-22)のため見送り継続。2026-09-23 Evening Routine時点でP1(実務メール/報告書)・P2(AI判断ミス自然発生ログ)とも未発生を確認済み。P3(戦略返信4件の返信待ち)はX側が9日連続unauthenticatedのため確認不能。Morning Routineで新規発生の有無を再確認する。"
     },
     "ig_reel": {
       "status": "not_ready",
@@ -18,12 +18,12 @@
     "x_post": {
       "status": "not_ready",
       "text_file": null,
-      "note": "Day23分は未着手。Proof Acquisition Mode継続中のため、新しい一次データ(day22_proof_candidates.mdのP1/P2/P3のいずれか)が得られない限り新規制作は再開しない。Morning Routineでの判断待ち。"
+      "note": "Day24分は未着手。Proof Acquisition Mode継続中のため、新しい一次データ(day22_proof_candidates.mdのP1/P2/P3のいずれか)が得られない限り新規制作は再開しない。Morning Routineでの判断待ち。"
     },
     "ig_reel": {
       "status": "not_ready",
       "video_file": null,
-      "note": "Day23分は未着手。Morning Routine(07:00)での制作判断待ち。"
+      "note": "Day24分は未着手。Morning Routine(07:00)での制作判断待ち。"
     }
   },
   "business_progress": {
@@ -485,9 +485,17 @@
     "revenue_check": "Revenue/Profitとも0円のまま変化なし。",
     "human_time": "本Routine実行中、Owner操作は発生せず(0分)。"
   },
-  "current_date": "2026-09-23",
-  "data_updated_at": "2026-09-23T22:33:00+09:00",
-  "public_updated_at": "2026-09-23T13:35:11.376Z",
+  "premorning_2026-09-24_findings": {
+    "missed_routine_coalescing": "直前のEvening(2026-09-23 22:30〜22:37)が最後の成功実行で、その後Pre-Morning/Morningは未実行。SUPERSEDED条件に該当せず、Pre-Morning Routineを通常実行した。",
+    "date_rollover": "get_business_dayでbusiness_day=23/business_date=2026-09-24を確認(暗算なし)。today.jsonのtoday/tomorrowをDay23/Day24へロールオーバー。旧today(Day22)はProof Acquisition Modeによる意図的な見送り(day22_skip-rationale.md)であり、外部依存でも再検討中でもないためCARRYOVERへは入れずSTALE/CLOSE扱い(Cockpitへ表示しない)。",
+    "approval_queue": "get_approvals(pending)=0件。",
+    "waiting_tasks_check": "get_tasks(status=waiting)3件(1001b4e9/98ce9bc9/56831bad)を確認、いずれもnext_check_atが2026-09-24T22:30以降または該当なし(on_hold)でoverdueなし。get_tasks(status=backlog)2件はEngineering Task(Codex assigned)でRevenue Experiment該当外。",
+    "owner_actions": "既存2件(Notta P1/P2ReelのX投稿依頼、A8.net再ログイン依頼)は引き続き有効な外部依存のため変更なし。",
+    "gate": "MORNING_READY(not_readyの正直な表示・Approval Queue空・owner_actions最新・stale項目なしをすべて確認)。"
+  },
+  "current_date": "2026-09-24",
+  "data_updated_at": "2026-09-24T05:45:00+09:00",
+  "public_updated_at": "2026-09-23T20:46:38.644Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -908,14 +916,14 @@
     ]
   },
   "source_manifest": {
-    "business_day": 22,
-    "business_date": "2026-09-23",
-    "generated_at": "2026-09-23T22:33:00+09:00",
+    "business_day": 23,
+    "business_date": "2026-09-24",
+    "generated_at": "2026-09-24T05:45:00+09:00",
     "today": {
       "x_post": {
         "status": "not_ready",
         "text_file": null,
-        "note": "Day22分はProof Acquisition Mode継続中(COO指令2026-09-22)のため見送り継続(content/reel-json/day22_skip-rationale.md)。Morning Routine(2026-09-23 07:xx実機確認)でP1(実務メール/報告書)・P2(AI判断ミス自然発生ログ)とも本日時点で未発生を確認。P3(戦略返信4件の返信待ち)はX側が本日も確定unauthenticated(8日連続、ログインフォーム実機確認)のため確認不能、次回へ持ち越し。次回Routineで再確認する。"
+        "note": "Day23分。Proof Acquisition Mode継続中(COO指令2026-09-22)のため見送り継続。2026-09-23 Evening Routine時点でP1(実務メール/報告書)・P2(AI判断ミス自然発生ログ)とも未発生を確認済み。P3(戦略返信4件の返信待ち)はX側が9日連続unauthenticatedのため確認不能。Morning Routineで新規発生の有無を再確認する。"
       },
       "ig_reel": {
         "status": "not_ready",
@@ -927,12 +935,12 @@
       "x_post": {
         "status": "not_ready",
         "text_file": null,
-        "note": "Day23分は未着手。Proof Acquisition Mode継続中のため、新しい一次データ(day22_proof_candidates.mdのP1/P2/P3のいずれか)が得られない限り新規制作は再開しない。Morning Routineでの判断待ち。"
+        "note": "Day24分は未着手。Proof Acquisition Mode継続中のため、新しい一次データ(day22_proof_candidates.mdのP1/P2/P3のいずれか)が得られない限り新規制作は再開しない。Morning Routineでの判断待ち。"
       },
       "ig_reel": {
         "status": "not_ready",
         "video_file": null,
-        "note": "Day23分は未着手。Morning Routine(07:00)での制作判断待ち。"
+        "note": "Day24分は未着手。Morning Routine(07:00)での制作判断待ち。"
       }
     },
     "business_progress": {
@@ -1393,6 +1401,14 @@
       "codex_result_review": "get_tasks(waiting)3件(1001b4e9/98ce9bc9/56831bad)を確認、いずれも既知の状態のまま。新規Engineering Handoffは起票せず。",
       "revenue_check": "Revenue/Profitとも0円のまま変化なし。",
       "human_time": "本Routine実行中、Owner操作は発生せず(0分)。"
+    },
+    "premorning_2026-09-24_findings": {
+      "missed_routine_coalescing": "直前のEvening(2026-09-23 22:30〜22:37)が最後の成功実行で、その後Pre-Morning/Morningは未実行。SUPERSEDED条件に該当せず、Pre-Morning Routineを通常実行した。",
+      "date_rollover": "get_business_dayでbusiness_day=23/business_date=2026-09-24を確認(暗算なし)。today.jsonのtoday/tomorrowをDay23/Day24へロールオーバー。旧today(Day22)はProof Acquisition Modeによる意図的な見送り(day22_skip-rationale.md)であり、外部依存でも再検討中でもないためCARRYOVERへは入れずSTALE/CLOSE扱い(Cockpitへ表示しない)。",
+      "approval_queue": "get_approvals(pending)=0件。",
+      "waiting_tasks_check": "get_tasks(status=waiting)3件(1001b4e9/98ce9bc9/56831bad)を確認、いずれもnext_check_atが2026-09-24T22:30以降または該当なし(on_hold)でoverdueなし。get_tasks(status=backlog)2件はEngineering Task(Codex assigned)でRevenue Experiment該当外。",
+      "owner_actions": "既存2件(Notta P1/P2ReelのX投稿依頼、A8.net再ログイン依頼)は引き続き有効な外部依存のため変更なし。",
+      "gate": "MORNING_READY(not_readyの正直な表示・Approval Queue空・owner_actions最新・stale項目なしをすべて確認)。"
     }
   },
   "health_inputs": {
@@ -1853,6 +1869,27 @@
         "exit_code": 0,
         "success": true,
         "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\morning_2026-09-23_070002.log"
+      },
+      {
+        "routine": "evening",
+        "scheduled_at": "2026-09-23T22:30:00",
+        "started_at": "2026-09-23T13:31:00.000Z",
+        "finished_at": "2026-09-23T13:36:52.000Z",
+        "exit_code": 0,
+        "success": true,
+        "invocation": "manual_chat_slash_command",
+        "status": "SUCCESS",
+        "note": "22:30定時相当のEvening Routine実行。X unauthenticated確定(9日連続、ledger waiting8件は持ち越し)。Manual Publish Verification: carryover空、reconcile不要。Notta P1/P2 Reel 24h相当チェック(task 56831bad): views=158/reach=147/likes=1、profile visit/save/share/follow=0のまま横ばい。Notta Revenue Experiment 72hチェック(task 98ce9bc9): A8.net確定unauthenticated(9日連続)、クリック/CV/revenue引き続きDATA UNAVAILABLE。Proof Acquisition Mode継続、Day22見送り・Day23未着手。Approval Queue pending=0、Product Signal新規0件。Cockpit commit afc575d・push・Deploy検証PASS(current.json generated_at=22:33確認)。",
+        "log_file": null
+      },
+      {
+        "routine": "evening",
+        "scheduled_at": "2026-09-23T22:30:00",
+        "started_at": "2026-09-23T22:30:02",
+        "finished_at": "2026-09-23T22:37:17",
+        "exit_code": 0,
+        "success": true,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\evening_2026-09-23_223002.log"
       }
     ],
     "tasks": [
