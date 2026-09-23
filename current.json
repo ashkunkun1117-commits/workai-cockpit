@@ -473,9 +473,21 @@
     "hypothesis": "KEEP。Proof Acquisition Mode継続(新規一次データ未取得)。COO指令の解除・新Proof取得まで新規Reel/X投稿制作は再開しない。",
     "green_actions_today": "新規実行なし(全チェックポイント未到来、Production Pause継続、Approval Queue pending=0)。08:40/12:48のチェックポイント到来時に別途対応が必要。"
   },
+  "evening_2026-09-23_findings": {
+    "checked_at": "2026-09-23T22:31:00+09:00",
+    "missed_routine_coalescing": "翌日(Day23)分のpremorning/morningはまだ未実行のためSUPERSEDED条件に該当せず、Evening Routineを通常フル実行した。",
+    "x_state": "unauthenticated確定(x.com/home→明示的ログインフォームへリダイレクト、ID/PASS入力欄を実機確認)。9日連続。ledger.csv waiting 8件は新規返信有無を今回も確認不能のため持ち越し、新規Strategic Reply候補探索もスキップ。",
+    "ig_state": "authenticated(プロフィール編集・インサイト閲覧可能)。",
+    "manual_publish_verification": "carryover空のまま、reconcileする新規項目なし。",
+    "revenue_experiment_checkpoints": "task 56831bad(Notta P1/P2 Reel 24h相当チェック、実施済み・約38h経過時点): views=158, reach=147(フォロワー2.5%/非フォロワー97.5%), likes=1, comments/saves/shares/プロフィールアクティビティ/フォロー数いずれも0(前回22:34時点からほぼ横ばい)。record_post_insight・update_kpi(Day21)へ反映済み、next_check_atを2026-09-24T22:30へ再設定。task 98ce9bc9(A8.net 72hチェック、12:48 JST予定分を22:31 JSTに実施): A8.net実機アクセス、確定unauthenticated(9日連続)、クリック/CV/revenueは引き続きDATA UNAVAILABLE。next_check_atを2026-09-24T22:30へ再設定(緊急度は上げない)。",
+    "day23_content": "Proof Acquisition Mode継続中(COO指令2026-09-22)。P1(実務メール/報告書)・P2(AI判断ミス自然発生ログ)とも本日時点で未発生、P3(戦略返信4件の返信待ち)はX unauthenticatedのため確認不能。新規Reel/Own Content制作は再開せず、Day23分もnot_readyを維持。",
+    "codex_result_review": "get_tasks(waiting)3件(1001b4e9/98ce9bc9/56831bad)を確認、いずれも既知の状態のまま。新規Engineering Handoffは起票せず。",
+    "revenue_check": "Revenue/Profitとも0円のまま変化なし。",
+    "human_time": "本Routine実行中、Owner操作は発生せず(0分)。"
+  },
   "current_date": "2026-09-23",
   "data_updated_at": "2026-09-23T07:10:00+09:00",
-  "public_updated_at": "2026-09-22T22:05:17.075Z",
+  "public_updated_at": "2026-09-23T13:33:35.249Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -865,7 +877,7 @@
         "x_strategic_replies": 4,
         "x_reply_impressions_avg": null,
         "ig_posts": 1,
-        "ig_reel_views": 157,
+        "ig_reel_views": 158,
         "ig_followers": 12,
         "ig_profile_visits": 0,
         "link_clicks": 0,
@@ -873,6 +885,24 @@
         "revenue_jpy": 0,
         "cost_jpy": null,
         "profit_jpy": 0,
+        "human_work_minutes": null
+      },
+      {
+        "day": 22,
+        "date": "2026-09-23",
+        "x_posts": 0,
+        "x_impressions": null,
+        "x_strategic_replies": null,
+        "x_reply_impressions_avg": null,
+        "ig_posts": 0,
+        "ig_reel_views": null,
+        "ig_followers": null,
+        "ig_profile_visits": null,
+        "link_clicks": null,
+        "conversions": null,
+        "revenue_jpy": null,
+        "cost_jpy": null,
+        "profit_jpy": null,
         "human_work_minutes": null
       }
     ]
@@ -1351,6 +1381,18 @@
       "business_bottleneck": "Revenue測定がA8.net未ログイン(7日超)でブロックされたまま。72hチェックポイント(本日12:48 JST)到来時点でもOwner未ログインならNotta Revenue Experimentの主要指標(clicks/CV/revenue)がDATA UNAVAILABLEのまま終了する見込み。",
       "hypothesis": "KEEP。Proof Acquisition Mode継続(新規一次データ未取得)。COO指令の解除・新Proof取得まで新規Reel/X投稿制作は再開しない。",
       "green_actions_today": "新規実行なし(全チェックポイント未到来、Production Pause継続、Approval Queue pending=0)。08:40/12:48のチェックポイント到来時に別途対応が必要。"
+    },
+    "evening_2026-09-23_findings": {
+      "checked_at": "2026-09-23T22:31:00+09:00",
+      "missed_routine_coalescing": "翌日(Day23)分のpremorning/morningはまだ未実行のためSUPERSEDED条件に該当せず、Evening Routineを通常フル実行した。",
+      "x_state": "unauthenticated確定(x.com/home→明示的ログインフォームへリダイレクト、ID/PASS入力欄を実機確認)。9日連続。ledger.csv waiting 8件は新規返信有無を今回も確認不能のため持ち越し、新規Strategic Reply候補探索もスキップ。",
+      "ig_state": "authenticated(プロフィール編集・インサイト閲覧可能)。",
+      "manual_publish_verification": "carryover空のまま、reconcileする新規項目なし。",
+      "revenue_experiment_checkpoints": "task 56831bad(Notta P1/P2 Reel 24h相当チェック、実施済み・約38h経過時点): views=158, reach=147(フォロワー2.5%/非フォロワー97.5%), likes=1, comments/saves/shares/プロフィールアクティビティ/フォロー数いずれも0(前回22:34時点からほぼ横ばい)。record_post_insight・update_kpi(Day21)へ反映済み、next_check_atを2026-09-24T22:30へ再設定。task 98ce9bc9(A8.net 72hチェック、12:48 JST予定分を22:31 JSTに実施): A8.net実機アクセス、確定unauthenticated(9日連続)、クリック/CV/revenueは引き続きDATA UNAVAILABLE。next_check_atを2026-09-24T22:30へ再設定(緊急度は上げない)。",
+      "day23_content": "Proof Acquisition Mode継続中(COO指令2026-09-22)。P1(実務メール/報告書)・P2(AI判断ミス自然発生ログ)とも本日時点で未発生、P3(戦略返信4件の返信待ち)はX unauthenticatedのため確認不能。新規Reel/Own Content制作は再開せず、Day23分もnot_readyを維持。",
+      "codex_result_review": "get_tasks(waiting)3件(1001b4e9/98ce9bc9/56831bad)を確認、いずれも既知の状態のまま。新規Engineering Handoffは起票せず。",
+      "revenue_check": "Revenue/Profitとも0円のまま変化なし。",
+      "human_time": "本Routine実行中、Owner操作は発生せず(0分)。"
     }
   },
   "health_inputs": {
@@ -1790,6 +1832,27 @@
         "exit_code": 0,
         "success": true,
         "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\premorning_2026-09-23_054502.log"
+      },
+      {
+        "routine": "morning",
+        "scheduled_at": "2026-09-23T07:00:00",
+        "started_at": "2026-09-23T07:02:00",
+        "finished_at": "2026-09-23T07:12:00",
+        "exit_code": 0,
+        "success": true,
+        "invocation": "manual_chat_slash_command",
+        "status": "SUCCESS",
+        "note": "X実機確認unauthenticated確定(8日連続、新規自社投稿なし)。IG実機確認authenticated(フォロワー12人、新規投稿なし、Manual Publish Verification: carryover0件)。Revenue Experimentチェックポイント(56831bad 08:40/98ce9bc9 12:48 JST)いずれも未到来・overdueなし。get_handoff_queueでDay15/17 Reel制作の古いCodex handoff(assigned/attempts0)がSTALE疑いと判明、lease無しのため記録のみ。Proof Acquisition Mode継続(P1/P2未発生、P3はX未確認)。Approval Queue pending=0。Cockpit commit b161fcc・push・Deploy検証PASS(current.json business_day=22・data_updated_at=07:10確認)。",
+        "log_file": null
+      },
+      {
+        "routine": "morning",
+        "scheduled_at": "2026-09-23T07:00:00",
+        "started_at": "2026-09-23T07:00:02",
+        "finished_at": "2026-09-23T07:07:25",
+        "exit_code": 0,
+        "success": true,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\morning_2026-09-23_070002.log"
       }
     ],
     "tasks": [
@@ -1812,14 +1875,14 @@
         "assigned_to": "claude",
         "status": "waiting",
         "waiting_reason": "a8_login_required",
-        "next_check_at": "2026-09-23T12:48:00+09:00"
+        "next_check_at": "2026-09-24T22:30:00+09:00"
       },
       {
         "task_id": "56831bad-f74d-4839-a6ea-cfaf3adc5be1",
         "assigned_to": "claude",
         "status": "waiting",
         "waiting_reason": "tracking_24h_window_ig_posted_x_pending",
-        "next_check_at": "2026-09-22T23:40:00.000Z"
+        "next_check_at": "2026-09-24T22:30:00+09:00"
       }
     ]
   },
