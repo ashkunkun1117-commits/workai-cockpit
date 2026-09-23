@@ -510,11 +510,12 @@
     "trigger": "Owner主導の対話セッション(定期Routineではない)。「A8ログイン画面までお願いします」の依頼を受け、Claudeがhttps://www.a8.net/へ実機ナビゲートしログインフォームを表示、Owner自身がログインID/PASSを入力(Claudeは認証情報の入力を代行していない)。Ownerから「ログイン完了」の報告を受け、media-console.a8.netでauthenticated状態を実機確認した。",
     "revenue_check_98ce9bc9": "A8.net再ログイン確定を受け、task 98ce9bc9(Notta Revenue Experiment 24h/48h/72hトラッキング)の実データチェックを実施しstatus=doneへクローズ。実績: リンク修正(2026-09-20T12:48 JST)後〜2026-09-24で A8クリック合計2件(09/20・09/23に各1件)、CV(発生件数)0、発生金額0円、確定件数0、確定金額0円。note.com側アクセス解析は本日も未ログイン(ログインボタン確認)のためDATA UNAVAILABLEのまま。詳細はtask 98ce9bc9のresultフィールド・business_progress.notta_revenue_experiment_resultへ記録。",
     "owner_actions_update": "A8.net再ログイン依頼はOwner対応完了により owner_actions から削除。残るOwner Actionは notta-voice-validation.mp4のX投稿依頼のみ(1件)。",
-    "next": "③48h/72h Revenue Checkは本セッションで完了。④SSOT反映は本findings・notta_revenue_experiment_result・task更新・decisions_logで対応済み。残る優先事項は①Owner側のX投稿、⑤新Proofの自然発生待ち(Proof Acquisition Mode継続)。"
+    "next": "③48h/72h Revenue Checkは本セッションで完了。④SSOT反映は本findings・notta_revenue_experiment_result・task更新・decisions_logで対応済み。残る優先事項は①Owner側のX投稿、⑤新Proofの自然発生待ち(Proof Acquisition Mode継続)。",
+    "reality_check_publish_state": "COO指令「REALITY CHECK」対応。notta-voice-validation.mp4のX/Instagram投稿状態を実機で3-state判定(POSTED/NOT POSTED/UNKNOWN)。Instagram: POSTED(reel/DdkRCRGSdy3/、プロフィールグリッド最新項目、2026-09-22確認時点から変化なし)。X: NOT POSTED(x.com/workai_lab777をログアウト状態で実機確認、最新投稿は2026-09-21付Day20「2日間で、3人から同じ指摘をもらいました」で日付連続(9/19〜9/21)に欠落なし、Notta関連の新規投稿は存在しない)。Owner申告「昨日投稿済み」とはX側で一致しない(IGは既に2026-09-22投稿済みのため「昨日」には該当しない)。投稿済み媒体(IG)へは再投稿依頼を出さず、owner_actionsはX投稿依頼のみを維持。task 56831badへ記録済み。"
   },
   "current_date": "2026-09-24",
   "data_updated_at": "2026-09-24T07:02:00+09:00",
-  "public_updated_at": "2026-09-23T22:30:31.909Z",
+  "public_updated_at": "2026-09-23T22:45:07.014Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -1446,7 +1447,8 @@
       "trigger": "Owner主導の対話セッション(定期Routineではない)。「A8ログイン画面までお願いします」の依頼を受け、Claudeがhttps://www.a8.net/へ実機ナビゲートしログインフォームを表示、Owner自身がログインID/PASSを入力(Claudeは認証情報の入力を代行していない)。Ownerから「ログイン完了」の報告を受け、media-console.a8.netでauthenticated状態を実機確認した。",
       "revenue_check_98ce9bc9": "A8.net再ログイン確定を受け、task 98ce9bc9(Notta Revenue Experiment 24h/48h/72hトラッキング)の実データチェックを実施しstatus=doneへクローズ。実績: リンク修正(2026-09-20T12:48 JST)後〜2026-09-24で A8クリック合計2件(09/20・09/23に各1件)、CV(発生件数)0、発生金額0円、確定件数0、確定金額0円。note.com側アクセス解析は本日も未ログイン(ログインボタン確認)のためDATA UNAVAILABLEのまま。詳細はtask 98ce9bc9のresultフィールド・business_progress.notta_revenue_experiment_resultへ記録。",
       "owner_actions_update": "A8.net再ログイン依頼はOwner対応完了により owner_actions から削除。残るOwner Actionは notta-voice-validation.mp4のX投稿依頼のみ(1件)。",
-      "next": "③48h/72h Revenue Checkは本セッションで完了。④SSOT反映は本findings・notta_revenue_experiment_result・task更新・decisions_logで対応済み。残る優先事項は①Owner側のX投稿、⑤新Proofの自然発生待ち(Proof Acquisition Mode継続)。"
+      "next": "③48h/72h Revenue Checkは本セッションで完了。④SSOT反映は本findings・notta_revenue_experiment_result・task更新・decisions_logで対応済み。残る優先事項は①Owner側のX投稿、⑤新Proofの自然発生待ち(Proof Acquisition Mode継続)。",
+      "reality_check_publish_state": "COO指令「REALITY CHECK」対応。notta-voice-validation.mp4のX/Instagram投稿状態を実機で3-state判定(POSTED/NOT POSTED/UNKNOWN)。Instagram: POSTED(reel/DdkRCRGSdy3/、プロフィールグリッド最新項目、2026-09-22確認時点から変化なし)。X: NOT POSTED(x.com/workai_lab777をログアウト状態で実機確認、最新投稿は2026-09-21付Day20「2日間で、3人から同じ指摘をもらいました」で日付連続(9/19〜9/21)に欠落なし、Notta関連の新規投稿は存在しない)。Owner申告「昨日投稿済み」とはX側で一致しない(IGは既に2026-09-22投稿済みのため「昨日」には該当しない)。投稿済み媒体(IG)へは再投稿依頼を出さず、owner_actionsはX投稿依頼のみを維持。task 56831badへ記録済み。"
     }
   },
   "health_inputs": {
