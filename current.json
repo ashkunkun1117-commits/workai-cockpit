@@ -83,8 +83,10 @@
         "status": "ready",
         "video_file": "notta-voice-validation.mp4",
         "caption_text": "Nottaに、建設現場の専門用語10個を聞かせてみました。\n\n結果、正解は6個。\n\n石膏ボードは完璧でしたが、竪穴区画→縦穴加工、防火戸→防火度、見切り材→2キリ材、と3つ誤変換になりました。\n\nじゃあ、この文字起こしをAIに日報化させれば直るのか。試してみました。\n\n不陸あり→振込あり、防火戸→ボーカド。\n\nAI整形後も、誤認識はそのまま原文で残りました。\n\nAIは文章を整えてくれます。でも、元の情報が間違っていたら、綺麗に間違った文章になります。\n\nだから現場では、AIに任せる部分と、人が確認する部分を分けたほうがいいと思っています。\n\n※あくまで今回、Owner本人の肉声で試した実測結果です。Notta全体の性能を評価したものではありません。\n\nNottaが向く仕事・向かない仕事は、プロフィール欄のリンクからnote記事にまとめました。\n\n※記事内にアフィリエイトリンクを含みます。\n\nAIでできる仕事は、AIに。\n#AI仕事研究所 #100日実験 #Notta #議事録効率化 #AIパートナー",
+        "x_copy_text": "今回、現場の専門用語10語をNottaに試したところ、6語が完全一致でした。\n石膏ボードは完璧でしたが、「竪穴区画→縦穴加工」「防火戸→防火度」は誤変換に。\n向く仕事・向かない仕事は、noteにまとめました。\nhttps://note.com/workai_lab777/n/nc5ad7e7ef364\n#AI仕事研究所",
+        "x_post_status": "not_posted",
         "note_url": "https://note.com/workai_lab777/n/nc5ad7e7ef364",
-        "note": "COO指令「P1/P2 VALIDATION PASS / RENDER: GO」対応。P1+P2を1本のストーリーに統合(COO指令どおり)。Owner本人の肉声によるNotta実機検証(reports/notta-p1-p2-validation-2026-09-21.md)が一次情報。TemplateV2.tsx共有コンポーネントの潜在レイアウトバグ(evidence role bodyボックスの左右衝突)を自己発見・修正。制作詳細はcontent/reel-json/notta-voice-validation.md参照。Cockpit配信機能(複数Revenue Content対応)はCodexへ一部委任、パッチをClaudeがレビュー・適用。"
+        "note": "COO指令「P1/P2 VALIDATION PASS / RENDER: GO」対応。P1+P2を1本のストーリーに統合(COO指令どおり)。Owner本人の肉声によるNotta実機検証(reports/notta-p1-p2-validation-2026-09-21.md)が一次情報。TemplateV2.tsx共有コンポーネントの潜在レイアウトバグ(evidence role bodyボックスの左右衝突)を自己発見・修正。制作詳細はcontent/reel-json/notta-voice-validation.md参照。Cockpit配信機能(複数Revenue Content対応)はCodexへ一部委任、パッチをClaudeがレビュー・適用。X投稿本文(x_copy_text)はCOO指令「COMPLETE X PUBLISH PACKAGE」(2026-09-24)対応、content/x/notta-voice-validation_post.md参照、137字・X標準カウント。"
       }
     ],
     "revenue_content": {
@@ -369,11 +371,11 @@
   ],
   "approval_queue": [],
   "ai_learning": {
-    "day": 21,
-    "observation": "COO最終指令によりNotta P1/P2実機検証Reel(notta-voice-validation.mp4)がFINAL PASS/PUBLISH GOとなり、新Reel戦略の基準コンテンツに指定された(Owner本人の肉声・実機Notta検証、10語中6語正解、AI日報整形後も誤認識残存という一次データがCore Story)。同時に、data reliability issue(X login判定の3-state→4-state化、Market Radar数値のVERIFIED/UNVERIFIED区分制定)とContent Hold Rule見直し(「外部本人返信必須」条件を撤回、IDEA→AVAILABLE PROOF→COO JUDGMENT→PRODUCTIONへ変更)がCOO指令で確定した。",
-    "hypothesis": "「効率化の代償を正直に語る」テーマへの反応の強さは引き続き有効な仮説だが、それに加えて『外部返信を待たずとも、Owner本人の実測・実務経験・実演等の一次証拠があれば制作着手してよい』という新しい制作原則のほうが、日次制作停止を防ぐ上でより優先度が高い学びとなった。",
-    "decision": "Content Hold Rule改訂によりCOO Judgment付きProof-Based Production原則を正式採用(PROOF種別A〜G、外部返信はG=補助的Evidenceの1種のみで必須条件ではない)。Data Reliability Fixにより外部SNS数値はVERIFIED以外を強い根拠に使わない運用へ変更(過去のMarket Radar数値は原本保持のままUNVERIFIED固定)。",
-    "next_experiment": "Owner投稿承認待ち: notta-voice-validation.mp4(24hトラッキング task 56831bad)。Revenue Content「Nottaの向かない人」(notta-fit-boundary.mp4)は投稿競合回避のためHOLD継続(task 1001b4e9)。次のOwn Content候補はProof-Based Production原則に基づき再評価中(見積書説明文15分→1分・Notta実測・Owner実務等の既存VERIFIED proofから、外部返信を待たずに検討)。"
+    "day": 23,
+    "observation": "Notta Revenue Experiment(A8リンク修正後、task 98ce9bc9)は72h超過確定でclick数2・CV0・revenue0という実データが出た。notta-voice-validation.mp4はInstagram投稿済み(reel/DdkRCRGSdy3/)だがX側は投稿本文自体が未作成だったことが判明し、X未投稿の原因は「Owner の投稿忘れ」ではなく「制作側の準備不足」だった。この2点を受け、COOが運用の軸を「投稿制作中心」から「Audience Growth Engine + Revenue Engineの同時構築」へ転換(5 Growth Channels・Content Mix・Daily Loop)。Proof Acquisition Mode(2026-09-22発動)は制作再開承認により2026-09-24付で終了。",
+    "hypothesis": "『クリックは発生してもCVがゼロ』という実データは、Notta単体のRevenue導線(note→アフィリエイトリンク)だけでは購買までの距離が遠いことを示唆している。加えて『投稿本文が無くて投稿できていなかった』という今回の反省は、動画さえ完成すれば公開まで進むという前提が誤りだったことを意味する。今後はコンテンツ制作を「動画完成」ではなく「X copy・media・CTA・PR確認・投稿ステータスが揃ったpublish packageの完成」まで含めて完了と定義する。",
+    "decision": "COO指令によりAudience Growth + Revenue Engineへ移行(Content Mix Reach50%/Trust30%/Revenue20%、目標比率でノルマ化はしない、優先順位QUALITY>PROOF>BUSINESS VALUE>MIX RATIO)。Targeted Followingは完全自律実行を禁止し、日次バッチ承認制で運用。Proof-Based Production原則(捏造禁止)は制作再開後も品質ゲートとして存続。",
+    "next_experiment": "Owner投稿待ち: notta-voice-validation.mp4のXパッケージ(content/x/notta-voice-validation_post.md)が完成済み。Revenue Content「Nottaの向かない人」(notta-fit-boundary.mp4)は投稿競合回避のためHOLD継続(task 1001b4e9)。Audience Growth Daily Loopの初回実運転(Targeted Following/Strategic Reply/Reach/Revenue/Buzz各候補)をCOOへ提出予定。"
   },
   "morning_2026-09-16_findings": {
     "stale_codex_task_closed": "coord-2eabeb666e9c161e39b98867afc5fd92(Day15 Fixed Schedule Test Day3台本のReel制作)はcontent方針がautomation_gap_storyへ既に差し替わり、day15.mp4として完成・QA PASS済みのためSUPERSEDEDとして扱う(decisions_log.md 2026-09-16参照)。Managed task(handoff)はassigned_to=codexで自分ではclaimできず、ツール上のstatus変更はできなかったため記録のみ。",
@@ -545,7 +547,7 @@
   },
   "current_date": "2026-09-24",
   "data_updated_at": "2026-09-24T22:35:00+09:00",
-  "public_updated_at": "2026-09-24T13:37:30.838Z",
+  "public_updated_at": "2026-09-24T14:06:41.852Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -1050,8 +1052,10 @@
           "status": "ready",
           "video_file": "notta-voice-validation.mp4",
           "caption_text": "Nottaに、建設現場の専門用語10個を聞かせてみました。\n\n結果、正解は6個。\n\n石膏ボードは完璧でしたが、竪穴区画→縦穴加工、防火戸→防火度、見切り材→2キリ材、と3つ誤変換になりました。\n\nじゃあ、この文字起こしをAIに日報化させれば直るのか。試してみました。\n\n不陸あり→振込あり、防火戸→ボーカド。\n\nAI整形後も、誤認識はそのまま原文で残りました。\n\nAIは文章を整えてくれます。でも、元の情報が間違っていたら、綺麗に間違った文章になります。\n\nだから現場では、AIに任せる部分と、人が確認する部分を分けたほうがいいと思っています。\n\n※あくまで今回、Owner本人の肉声で試した実測結果です。Notta全体の性能を評価したものではありません。\n\nNottaが向く仕事・向かない仕事は、プロフィール欄のリンクからnote記事にまとめました。\n\n※記事内にアフィリエイトリンクを含みます。\n\nAIでできる仕事は、AIに。\n#AI仕事研究所 #100日実験 #Notta #議事録効率化 #AIパートナー",
+          "x_copy_text": "今回、現場の専門用語10語をNottaに試したところ、6語が完全一致でした。\n石膏ボードは完璧でしたが、「竪穴区画→縦穴加工」「防火戸→防火度」は誤変換に。\n向く仕事・向かない仕事は、noteにまとめました。\nhttps://note.com/workai_lab777/n/nc5ad7e7ef364\n#AI仕事研究所",
+          "x_post_status": "not_posted",
           "note_url": "https://note.com/workai_lab777/n/nc5ad7e7ef364",
-          "note": "COO指令「P1/P2 VALIDATION PASS / RENDER: GO」対応。P1+P2を1本のストーリーに統合(COO指令どおり)。Owner本人の肉声によるNotta実機検証(reports/notta-p1-p2-validation-2026-09-21.md)が一次情報。TemplateV2.tsx共有コンポーネントの潜在レイアウトバグ(evidence role bodyボックスの左右衝突)を自己発見・修正。制作詳細はcontent/reel-json/notta-voice-validation.md参照。Cockpit配信機能(複数Revenue Content対応)はCodexへ一部委任、パッチをClaudeがレビュー・適用。"
+          "note": "COO指令「P1/P2 VALIDATION PASS / RENDER: GO」対応。P1+P2を1本のストーリーに統合(COO指令どおり)。Owner本人の肉声によるNotta実機検証(reports/notta-p1-p2-validation-2026-09-21.md)が一次情報。TemplateV2.tsx共有コンポーネントの潜在レイアウトバグ(evidence role bodyボックスの左右衝突)を自己発見・修正。制作詳細はcontent/reel-json/notta-voice-validation.md参照。Cockpit配信機能(複数Revenue Content対応)はCodexへ一部委任、パッチをClaudeがレビュー・適用。X投稿本文(x_copy_text)はCOO指令「COMPLETE X PUBLISH PACKAGE」(2026-09-24)対応、content/x/notta-voice-validation_post.md参照、137字・X標準カウント。"
         }
       ],
       "revenue_content": {
@@ -1336,11 +1340,11 @@
     ],
     "approval_queue": [],
     "ai_learning": {
-      "day": 21,
-      "observation": "COO最終指令によりNotta P1/P2実機検証Reel(notta-voice-validation.mp4)がFINAL PASS/PUBLISH GOとなり、新Reel戦略の基準コンテンツに指定された(Owner本人の肉声・実機Notta検証、10語中6語正解、AI日報整形後も誤認識残存という一次データがCore Story)。同時に、data reliability issue(X login判定の3-state→4-state化、Market Radar数値のVERIFIED/UNVERIFIED区分制定)とContent Hold Rule見直し(「外部本人返信必須」条件を撤回、IDEA→AVAILABLE PROOF→COO JUDGMENT→PRODUCTIONへ変更)がCOO指令で確定した。",
-      "hypothesis": "「効率化の代償を正直に語る」テーマへの反応の強さは引き続き有効な仮説だが、それに加えて『外部返信を待たずとも、Owner本人の実測・実務経験・実演等の一次証拠があれば制作着手してよい』という新しい制作原則のほうが、日次制作停止を防ぐ上でより優先度が高い学びとなった。",
-      "decision": "Content Hold Rule改訂によりCOO Judgment付きProof-Based Production原則を正式採用(PROOF種別A〜G、外部返信はG=補助的Evidenceの1種のみで必須条件ではない)。Data Reliability Fixにより外部SNS数値はVERIFIED以外を強い根拠に使わない運用へ変更(過去のMarket Radar数値は原本保持のままUNVERIFIED固定)。",
-      "next_experiment": "Owner投稿承認待ち: notta-voice-validation.mp4(24hトラッキング task 56831bad)。Revenue Content「Nottaの向かない人」(notta-fit-boundary.mp4)は投稿競合回避のためHOLD継続(task 1001b4e9)。次のOwn Content候補はProof-Based Production原則に基づき再評価中(見積書説明文15分→1分・Notta実測・Owner実務等の既存VERIFIED proofから、外部返信を待たずに検討)。"
+      "day": 23,
+      "observation": "Notta Revenue Experiment(A8リンク修正後、task 98ce9bc9)は72h超過確定でclick数2・CV0・revenue0という実データが出た。notta-voice-validation.mp4はInstagram投稿済み(reel/DdkRCRGSdy3/)だがX側は投稿本文自体が未作成だったことが判明し、X未投稿の原因は「Owner の投稿忘れ」ではなく「制作側の準備不足」だった。この2点を受け、COOが運用の軸を「投稿制作中心」から「Audience Growth Engine + Revenue Engineの同時構築」へ転換(5 Growth Channels・Content Mix・Daily Loop)。Proof Acquisition Mode(2026-09-22発動)は制作再開承認により2026-09-24付で終了。",
+      "hypothesis": "『クリックは発生してもCVがゼロ』という実データは、Notta単体のRevenue導線(note→アフィリエイトリンク)だけでは購買までの距離が遠いことを示唆している。加えて『投稿本文が無くて投稿できていなかった』という今回の反省は、動画さえ完成すれば公開まで進むという前提が誤りだったことを意味する。今後はコンテンツ制作を「動画完成」ではなく「X copy・media・CTA・PR確認・投稿ステータスが揃ったpublish packageの完成」まで含めて完了と定義する。",
+      "decision": "COO指令によりAudience Growth + Revenue Engineへ移行(Content Mix Reach50%/Trust30%/Revenue20%、目標比率でノルマ化はしない、優先順位QUALITY>PROOF>BUSINESS VALUE>MIX RATIO)。Targeted Followingは完全自律実行を禁止し、日次バッチ承認制で運用。Proof-Based Production原則(捏造禁止)は制作再開後も品質ゲートとして存続。",
+      "next_experiment": "Owner投稿待ち: notta-voice-validation.mp4のXパッケージ(content/x/notta-voice-validation_post.md)が完成済み。Revenue Content「Nottaの向かない人」(notta-fit-boundary.mp4)は投稿競合回避のためHOLD継続(task 1001b4e9)。Audience Growth Daily Loopの初回実運転(Targeted Following/Strategic Reply/Reach/Revenue/Buzz各候補)をCOOへ提出予定。"
     },
     "morning_2026-09-16_findings": {
       "stale_codex_task_closed": "coord-2eabeb666e9c161e39b98867afc5fd92(Day15 Fixed Schedule Test Day3台本のReel制作)はcontent方針がautomation_gap_storyへ既に差し替わり、day15.mp4として完成・QA PASS済みのためSUPERSEDEDとして扱う(decisions_log.md 2026-09-16参照)。Managed task(handoff)はassigned_to=codexで自分ではclaimできず、ツール上のstatus変更はできなかったため記録のみ。",
@@ -2032,6 +2036,15 @@
         "exit_code": 0,
         "success": true,
         "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\morning_2026-09-24_070002.log"
+      },
+      {
+        "routine": "evening",
+        "scheduled_at": "2026-09-24T22:30:00",
+        "started_at": "2026-09-24T22:30:02",
+        "finished_at": "2026-09-24T22:39:53",
+        "exit_code": 0,
+        "success": true,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\evening_2026-09-24_223002.log"
       }
     ],
     "tasks": [
