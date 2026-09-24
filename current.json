@@ -1,7 +1,7 @@
 {
   "business_day": 24,
   "business_date": "2026-09-25",
-  "generated_at": "2026-09-25T05:45:57+09:00",
+  "generated_at": "2026-09-25T07:10:00+09:00",
   "today": {
     "x_post": {
       "status": "ready",
@@ -45,8 +45,8 @@
           "seq": 1,
           "content": "notta-voice-validation.mp4 X投稿(content/x/notta-voice-validation_post.md)",
           "category": "revenue",
-          "status": "x_copy_media_ready_awaiting_owner_post",
-          "note": "Notta P1/P2実測(10語中6語完全一致)。IGは2026-09-22投稿済み(reel/DdkRCRGSdy3/)、X投稿は本日X COPY+MEDIA READY状態、Owner投稿待ち。"
+          "status": "posted",
+          "note": "2026-09-25 Morning RoutineでOwner投稿済みを発見(2026-09-24 07:53 JST、status/2102894234219262367、プロフィール固定ツイート)。24h時点実測: views=15、いいね/返信/リポスト=0。IGは2026-09-22投稿済み(reel/DdkRCRGSdy3/)。"
         },
         {
           "seq": 2,
@@ -105,11 +105,11 @@
     },
     "revenue_content": {
       "label": "Notta Revenue Experiment",
-      "status": "ready",
+      "status": "posted",
       "video_file": "notta-revenue-v2.mp4",
       "caption_text": "Notta Memo、便利だけど全員には向かないと思います。\n\n少人数の打ち合わせや、録音をあとで整理する用途にはかなり便利。実測で12分→2分30秒になりました。\n\n一方で、実際に10名以上の会議を担当している方からは「固有名詞や数字は限界があり、聞き直しや別資料の確認も含めて結局会議と同じくらいの時間がかかる」という声をもらいました。\n\n向くのは、単発音源・少人数の打ち合わせ・録音の振り返り。\n向きにくいのは、大人数の会議・固有名詞が多い会議・数字の厳密性が必要な場面。\n\n便利かどうかより、「どの仕事を任せるか」で判断するのが大事だと思っています。\n\n実際に使って分かった向き・不向きは、プロフィール欄のリンクからnote記事にまとめました。\n\n※記事内にアフィリエイトリンクを含みます。\n\nAIでできる仕事は、AIに。\n#AI仕事研究所 #100日実験 #Notta #議事録効率化 #AIパートナー",
       "note_url": "https://note.com/workai_lab777/n/nc5ad7e7ef364",
-      "note": "COO指令「Notta Revenue Reel Production」対応。Template v2 canonical component使用(Hook Variant B_FAILURE)。VOICEVOX音声合成・独立QA完了(ffprobe/silencedetect/frame目視、31.753秒)。制作詳細はcontent/reel-json/notta-revenue-v2.md参照。Codexが使用量上限で実装前に失敗したため、Claudeが直接実装(script generalization + Cockpit配信機能)。Reel本編にアフィリエイトURLは含まない(Reel→note→A8導線)。"
+      "note": "COO指令「Notta Revenue Reel Production」対応。Template v2 canonical component使用(Hook Variant B_FAILURE)。VOICEVOX音声合成・独立QA完了(ffprobe/silencedetect/frame目視、31.753秒)。制作詳細はcontent/reel-json/notta-revenue-v2.md参照。Codexが使用量上限で実装前に失敗したため、Claudeが直接実装(script generalization + Cockpit配信機能)。Reel本編にアフィリエイトURLは含まない(Reel→note→A8導線)。2026-09-25 Morning RoutineでOwner投稿済みを発見(2026-09-24 13:03頃JST、reel/Ddp5nxIxrlJ/、キャプション完全一致)。24h時点実測: views=23, reach=19(非フォロワー100%)、いいね/コメント/保存/シェア/プロフィールアクティビティ/フォローいずれも0。追跡タスクee95e24b新規作成。X側投稿は未確認。"
     },
     "automation_reel": "PUBLISHED",
     "automation_reel_note": "Instagram投稿確認済み(2026-09-16 08:03 JST、実機Playwright確認。投稿URL: https://www.instagram.com/workai_lab777/reel/DdU1MXYSUkk/)。07:50時点のMorning Routineチェックでは未投稿だったが、その13分後にOwnerが投稿。owner_actionは解消。",
@@ -128,10 +128,33 @@
       "audience_response_checked": true,
       "revenue_action_count": 0
     },
-    "backyard_health_note": "COO指令「CLOSE TODAY'S BUSINESS LOOP」対応。Market Radar 12/10(reports/research/market_radar_2026-09-20.md)。Deep Analysis 3件(@andymochizuki/@ozge_boyraz46/@akagami_sns)。Strategic Reply候補3件をledger.csvへ追記(未投稿・承認待ち)。Audience Response確認済み(X mentions実機確認、新規未対応メンションなし、既存分は既にApproval Batchでキュー済み)。Revenue Action=0(A8.netログイン未確立が継続、正直にRED。Owner再ログイン待ち)。"
+    "backyard_health_note": "COO指令「CLOSE TODAY'S BUSINESS LOOP」対応。Market Radar 12/10(reports/research/market_radar_2026-09-20.md)。Deep Analysis 3件(@andymochizuki/@ozge_boyraz46/@akagami_sns)。Strategic Reply候補3件をledger.csvへ追記(未投稿・承認待ち)。Audience Response確認済み(X mentions実機確認、新規未対応メンションなし、既存分は既にApproval Batchでキュー済み)。Revenue Action=0(A8.netログイン未確立が継続、正直にRED。Owner再ログイン待ち)。",
+    "morning_routine_2026-09-25_note": "X実機確認: 明示的ログイン画面表示によりunauthenticated確定(直近記録と一致、conflictedなし)。プロフィールタイムライン(ログイン不要な範囲)は閲覧でき、Notta P1/P2 X投稿(2026-09-24 07:53投稿)を新規発見・reconcile。ledger.csv waiting 8件(@forestkinoko/@narisumashi100/@yukissense/@omuat/@ozge_boyraz46/@andymochizuki/@akagami_sns/@misaki_hennyu)の返信スレッド新着確認は、個別スレッドの返信表示がログインゲートされているためNOT CHECKED(次回Routineへ持ち越し、再ログイン依頼はしない)。IG実機確認: authenticated、フォロワー12人(2026-09-23記録の13人から-1、Reason不明・自然減の可能性、要注視)。IG側でnotta-revenue-v2.mp4の投稿を新規発見・reconcile(24h実測記録・追跡タスクee95e24b新規作成)。"
   },
   "carryover": [],
   "history": [
+    {
+      "type": "ig_reel",
+      "day": 23,
+      "label": "Notta Revenue Experiment v2(notta-revenue-v2.mp4、向く人・向かない人)",
+      "status": "completed",
+      "url": "https://www.instagram.com/workai_lab777/reel/Ddp5nxIxrlJ/",
+      "actual_published_at": "2026-09-24T13:03:00+09:00",
+      "verification_source": "実機Playwright確認(workai_lab777、キャプション完全一致、投稿ページ相対表示「18時間前」、2026-09-25 07:03 JST確認、インサイト実測)",
+      "verified_at": "2026-09-25T07:03:00+09:00",
+      "verification_note": "2026-09-25 Morning RoutineでOwner投稿済みを新規発見(today.jsonはstatus=readyのまま追跡タスク未作成だった)。24h時点実測: views=23, reach(閲覧者)=19(フォロワー0%/非フォロワー100%)、いいね/コメント/保存/シェア/プロフィールアクティビティ/フォローいずれも0(data/instagram/post_insights_log.csvへ記録済み)。追跡タスクee95e24b-80bc-4195-b418-be6ce8c151d1新規作成、48h/72hチェック予定。actual_published_atは相対表示「18時間前」からの逆算概算値。"
+    },
+    {
+      "type": "x_post",
+      "day": 23,
+      "label": "Notta P1/P2実機検証 X投稿(notta-voice-validation_post.md)",
+      "status": "completed",
+      "url": "https://x.com/workai_lab777/status/2102894234219262367",
+      "actual_published_at": "2026-09-24T07:53:00+09:00",
+      "verification_source": "実機Playwright確認(workai_lab777、本文完全一致、投稿ページ表示「7:53 · 2026年9月24日」、2026-09-25 07:02 JST確認)",
+      "verified_at": "2026-09-25T07:02:00+09:00",
+      "verification_note": "2026-09-25 Morning RoutineでOwner投稿済みを新規発見(プロフィール固定ツイート)。本文はcontent/x/notta-voice-validation_post.mdのx_copy_textと実質一致(note.comカードの表示簡略化含む)。24h経過時点(23h強)の実測: views=15、いいね/返信/リポストいずれも0。task 56831bad-f74d-4839-a6ea-cfaf3adc5be1のX側24hチェックポイントとして記録、48hチェック(2026-09-26T07:53)へ継続。"
+    },
     {
       "type": "ig_reel",
       "day": 21,
@@ -563,8 +586,8 @@
     "account_repositioning_proposal": "COO指令「TODAY'S BUSINESS EXECUTION」PRIORITY 4対応。reports/account-repositioning-proposal-2026-09-24.mdへ記録。WHY THIS CHANGEはkpi_daily.csv実データ(X impressions 1桁〜19・Xフォロワー8人・IGフォロワー10→13人・revenue全期間0円)に基づく。Profile bio 3案・固定Xポスト構成案・IG固定投稿/Reel企画案・Revenue接続・将来のリフォーム/リノベ集客資産接続(Owner本人の建築現場実務背景に基づく仮説)を記載。プロフィール変更・投稿はいずれも未実行、COOレビュー待ち。"
   },
   "current_date": "2026-09-25",
-  "data_updated_at": "2026-09-25T05:45:57+09:00",
-  "public_updated_at": "2026-09-24T20:46:43.512Z",
+  "data_updated_at": "2026-09-25T07:10:00+09:00",
+  "public_updated_at": "2026-09-24T22:05:37.797Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -981,13 +1004,31 @@
         "cost_jpy": null,
         "profit_jpy": null,
         "human_work_minutes": null
+      },
+      {
+        "day": 23,
+        "date": "2026-09-24",
+        "x_posts": 1,
+        "x_impressions": 15,
+        "x_strategic_replies": null,
+        "x_reply_impressions_avg": null,
+        "ig_posts": 1,
+        "ig_reel_views": 23,
+        "ig_followers": null,
+        "ig_profile_visits": null,
+        "link_clicks": null,
+        "conversions": null,
+        "revenue_jpy": null,
+        "cost_jpy": null,
+        "profit_jpy": null,
+        "human_work_minutes": null
       }
     ]
   },
   "source_manifest": {
     "business_day": 24,
     "business_date": "2026-09-25",
-    "generated_at": "2026-09-25T05:45:57+09:00",
+    "generated_at": "2026-09-25T07:10:00+09:00",
     "today": {
       "x_post": {
         "status": "ready",
@@ -1031,8 +1072,8 @@
             "seq": 1,
             "content": "notta-voice-validation.mp4 X投稿(content/x/notta-voice-validation_post.md)",
             "category": "revenue",
-            "status": "x_copy_media_ready_awaiting_owner_post",
-            "note": "Notta P1/P2実測(10語中6語完全一致)。IGは2026-09-22投稿済み(reel/DdkRCRGSdy3/)、X投稿は本日X COPY+MEDIA READY状態、Owner投稿待ち。"
+            "status": "posted",
+            "note": "2026-09-25 Morning RoutineでOwner投稿済みを発見(2026-09-24 07:53 JST、status/2102894234219262367、プロフィール固定ツイート)。24h時点実測: views=15、いいね/返信/リポスト=0。IGは2026-09-22投稿済み(reel/DdkRCRGSdy3/)。"
           },
           {
             "seq": 2,
@@ -1091,11 +1132,11 @@
       },
       "revenue_content": {
         "label": "Notta Revenue Experiment",
-        "status": "ready",
+        "status": "posted",
         "video_file": "notta-revenue-v2.mp4",
         "caption_text": "Notta Memo、便利だけど全員には向かないと思います。\n\n少人数の打ち合わせや、録音をあとで整理する用途にはかなり便利。実測で12分→2分30秒になりました。\n\n一方で、実際に10名以上の会議を担当している方からは「固有名詞や数字は限界があり、聞き直しや別資料の確認も含めて結局会議と同じくらいの時間がかかる」という声をもらいました。\n\n向くのは、単発音源・少人数の打ち合わせ・録音の振り返り。\n向きにくいのは、大人数の会議・固有名詞が多い会議・数字の厳密性が必要な場面。\n\n便利かどうかより、「どの仕事を任せるか」で判断するのが大事だと思っています。\n\n実際に使って分かった向き・不向きは、プロフィール欄のリンクからnote記事にまとめました。\n\n※記事内にアフィリエイトリンクを含みます。\n\nAIでできる仕事は、AIに。\n#AI仕事研究所 #100日実験 #Notta #議事録効率化 #AIパートナー",
         "note_url": "https://note.com/workai_lab777/n/nc5ad7e7ef364",
-        "note": "COO指令「Notta Revenue Reel Production」対応。Template v2 canonical component使用(Hook Variant B_FAILURE)。VOICEVOX音声合成・独立QA完了(ffprobe/silencedetect/frame目視、31.753秒)。制作詳細はcontent/reel-json/notta-revenue-v2.md参照。Codexが使用量上限で実装前に失敗したため、Claudeが直接実装(script generalization + Cockpit配信機能)。Reel本編にアフィリエイトURLは含まない(Reel→note→A8導線)。"
+        "note": "COO指令「Notta Revenue Reel Production」対応。Template v2 canonical component使用(Hook Variant B_FAILURE)。VOICEVOX音声合成・独立QA完了(ffprobe/silencedetect/frame目視、31.753秒)。制作詳細はcontent/reel-json/notta-revenue-v2.md参照。Codexが使用量上限で実装前に失敗したため、Claudeが直接実装(script generalization + Cockpit配信機能)。Reel本編にアフィリエイトURLは含まない(Reel→note→A8導線)。2026-09-25 Morning RoutineでOwner投稿済みを発見(2026-09-24 13:03頃JST、reel/Ddp5nxIxrlJ/、キャプション完全一致)。24h時点実測: views=23, reach=19(非フォロワー100%)、いいね/コメント/保存/シェア/プロフィールアクティビティ/フォローいずれも0。追跡タスクee95e24b新規作成。X側投稿は未確認。"
       },
       "automation_reel": "PUBLISHED",
       "automation_reel_note": "Instagram投稿確認済み(2026-09-16 08:03 JST、実機Playwright確認。投稿URL: https://www.instagram.com/workai_lab777/reel/DdU1MXYSUkk/)。07:50時点のMorning Routineチェックでは未投稿だったが、その13分後にOwnerが投稿。owner_actionは解消。",
@@ -1114,10 +1155,33 @@
         "audience_response_checked": true,
         "revenue_action_count": 0
       },
-      "backyard_health_note": "COO指令「CLOSE TODAY'S BUSINESS LOOP」対応。Market Radar 12/10(reports/research/market_radar_2026-09-20.md)。Deep Analysis 3件(@andymochizuki/@ozge_boyraz46/@akagami_sns)。Strategic Reply候補3件をledger.csvへ追記(未投稿・承認待ち)。Audience Response確認済み(X mentions実機確認、新規未対応メンションなし、既存分は既にApproval Batchでキュー済み)。Revenue Action=0(A8.netログイン未確立が継続、正直にRED。Owner再ログイン待ち)。"
+      "backyard_health_note": "COO指令「CLOSE TODAY'S BUSINESS LOOP」対応。Market Radar 12/10(reports/research/market_radar_2026-09-20.md)。Deep Analysis 3件(@andymochizuki/@ozge_boyraz46/@akagami_sns)。Strategic Reply候補3件をledger.csvへ追記(未投稿・承認待ち)。Audience Response確認済み(X mentions実機確認、新規未対応メンションなし、既存分は既にApproval Batchでキュー済み)。Revenue Action=0(A8.netログイン未確立が継続、正直にRED。Owner再ログイン待ち)。",
+      "morning_routine_2026-09-25_note": "X実機確認: 明示的ログイン画面表示によりunauthenticated確定(直近記録と一致、conflictedなし)。プロフィールタイムライン(ログイン不要な範囲)は閲覧でき、Notta P1/P2 X投稿(2026-09-24 07:53投稿)を新規発見・reconcile。ledger.csv waiting 8件(@forestkinoko/@narisumashi100/@yukissense/@omuat/@ozge_boyraz46/@andymochizuki/@akagami_sns/@misaki_hennyu)の返信スレッド新着確認は、個別スレッドの返信表示がログインゲートされているためNOT CHECKED(次回Routineへ持ち越し、再ログイン依頼はしない)。IG実機確認: authenticated、フォロワー12人(2026-09-23記録の13人から-1、Reason不明・自然減の可能性、要注視)。IG側でnotta-revenue-v2.mp4の投稿を新規発見・reconcile(24h実測記録・追跡タスクee95e24b新規作成)。"
     },
     "carryover": [],
     "history": [
+      {
+        "type": "ig_reel",
+        "day": 23,
+        "label": "Notta Revenue Experiment v2(notta-revenue-v2.mp4、向く人・向かない人)",
+        "status": "completed",
+        "url": "https://www.instagram.com/workai_lab777/reel/Ddp5nxIxrlJ/",
+        "actual_published_at": "2026-09-24T13:03:00+09:00",
+        "verification_source": "実機Playwright確認(workai_lab777、キャプション完全一致、投稿ページ相対表示「18時間前」、2026-09-25 07:03 JST確認、インサイト実測)",
+        "verified_at": "2026-09-25T07:03:00+09:00",
+        "verification_note": "2026-09-25 Morning RoutineでOwner投稿済みを新規発見(today.jsonはstatus=readyのまま追跡タスク未作成だった)。24h時点実測: views=23, reach(閲覧者)=19(フォロワー0%/非フォロワー100%)、いいね/コメント/保存/シェア/プロフィールアクティビティ/フォローいずれも0(data/instagram/post_insights_log.csvへ記録済み)。追跡タスクee95e24b-80bc-4195-b418-be6ce8c151d1新規作成、48h/72hチェック予定。actual_published_atは相対表示「18時間前」からの逆算概算値。"
+      },
+      {
+        "type": "x_post",
+        "day": 23,
+        "label": "Notta P1/P2実機検証 X投稿(notta-voice-validation_post.md)",
+        "status": "completed",
+        "url": "https://x.com/workai_lab777/status/2102894234219262367",
+        "actual_published_at": "2026-09-24T07:53:00+09:00",
+        "verification_source": "実機Playwright確認(workai_lab777、本文完全一致、投稿ページ表示「7:53 · 2026年9月24日」、2026-09-25 07:02 JST確認)",
+        "verified_at": "2026-09-25T07:02:00+09:00",
+        "verification_note": "2026-09-25 Morning RoutineでOwner投稿済みを新規発見(プロフィール固定ツイート)。本文はcontent/x/notta-voice-validation_post.mdのx_copy_textと実質一致(note.comカードの表示簡略化含む)。24h経過時点(23h強)の実測: views=15、いいね/返信/リポストいずれも0。task 56831bad-f74d-4839-a6ea-cfaf3adc5be1のX側24hチェックポイントとして記録、48hチェック(2026-09-26T07:53)へ継続。"
+      },
       {
         "type": "ig_reel",
         "day": 21,
@@ -2079,6 +2143,27 @@
         "exit_code": 0,
         "success": true,
         "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\evening_2026-09-24_223002.log"
+      },
+      {
+        "routine": "premorning",
+        "scheduled_at": "2026-09-25T05:45:00",
+        "started_at": "2026-09-25T05:45:02",
+        "finished_at": "2026-09-24T20:48:07.056Z",
+        "exit_code": 0,
+        "success": true,
+        "invocation": "manual_chat_slash_command",
+        "status": "MORNING_READY",
+        "note": "Date Rollover実施: today.json/CockpitともDay23/2026-09-24→Day24/2026-09-25へ更新。Day23分TODAY(X投稿・Reelとも見送り継続でnot_ready)はSTALE/CLOSE、decisions_log.mdへ記録。旧tomorrow(Day24 X投稿=content/x/day24_post.md ready、Reel=caption完成/JSON未着手)を新TODAYへ昇格。Day25分は未着手のためnot_readyで正直に表示。Approval Queue pending=0。get_tasks(waiting)3件(1001b4e9 HOLD継続/56831bad next_check_at=07:00でoverdueなし/06f3c8d3 Xログイン待ち)はいずれもDay境界処理対象外、Morning Routineの継続監視に委ねる。Cockpit commit 3bd04d8・push・Pages build built一致(build 1237344594)・live current.json business_day=24・current_date=2026-09-25確認PASS。",
+        "log_file": null
+      },
+      {
+        "routine": "premorning",
+        "scheduled_at": "2026-09-25T05:45:00",
+        "started_at": "2026-09-25T05:45:02",
+        "finished_at": "2026-09-25T05:48:13",
+        "exit_code": 0,
+        "success": true,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\premorning_2026-09-25_054502.log"
       }
     ],
     "tasks": [
@@ -2100,8 +2185,8 @@
         "task_id": "56831bad-f74d-4839-a6ea-cfaf3adc5be1",
         "assigned_to": "claude",
         "status": "waiting",
-        "waiting_reason": "tool_unavailable_playwright_retry_next_routine",
-        "next_check_at": "2026-09-25T07:00:00+09:00"
+        "waiting_reason": "x_24h_checkpoint_done_awaiting_48h",
+        "next_check_at": "2026-09-26T07:53:00+09:00"
       },
       {
         "task_id": "06f3c8d3-9aa1-4cbb-8d3c-e1340483db28",
@@ -2109,6 +2194,13 @@
         "status": "waiting",
         "waiting_reason": "x_login_required",
         "next_check_at": null
+      },
+      {
+        "task_id": "ee95e24b-80bc-4195-b418-be6ce8c151d1",
+        "assigned_to": "claude",
+        "status": "waiting",
+        "waiting_reason": "awaiting_24h_checkpoint",
+        "next_check_at": "2026-09-25T13:03:00+09:00"
       }
     ]
   },
