@@ -1,7 +1,7 @@
 {
   "business_day": 24,
   "business_date": "2026-09-25",
-  "generated_at": "2026-09-25T07:10:00+09:00",
+  "generated_at": "2026-09-25T07:20:00+09:00",
   "today": {
     "x_post": {
       "status": "ready",
@@ -10,9 +10,9 @@
       "text": "Nottaのアフィリエイトリンクを直してから4日間の実測です。\n\nクリック2件、成約0件、売上0円。72時間を過ぎても変わらず。\n\nただ、クリック2件ではCVの良し悪しを判断すること自体ができません。\nCVを改善する前に、まずクリックの母数を増やす必要があります。\n\n次は投稿の中身だけでなく、認知・返信・導線も同時に増やして検証します。\n\nAIでできる仕事は、AIに。\nDay24/100"
     },
     "ig_reel": {
-      "status": "not_ready",
-      "video_file": null,
-      "note": "Day24分。キャプション・Reel構成案(hook/problem/result/learning/CTA)はcontent/instagram/day24_caption.mdに完成済み・Claude Business QA完了。JSON化(content/reel-json/day24.json)・Remotionレンダリングは未着手、Morning RoutineでCreative Engineerへの引き継ぎ判断待ち。",
+      "status": "ready",
+      "video_file": "day24.mp4",
+      "note": "Day24分。Creative Engineer制作完了(Template v2、Hook Variant B_FAILURE)。ffprobe: h264 1080x1920 30fps 29.833s、AAC音声あり、decode PASS。silencedetect最大ギャップ1.54s(既存許容範囲内)。frame0はOPENING_FRAME_RULES準拠(「クリック2件。成約0件。」中央帯・Day24/100バッジ・フェードインなし、Claude目視確認済み)。evidence欄はA8.net実機確認(task 98ce9bc9)の事実引用として使用、架空の発言・数字なし。Content/instagram/day24_caption.mdとの数字一致もClaude確認済み。Claude Business QA PASS、Owner投稿承認待ち。",
       "caption_text": "Nottaのアフィリエイトリンクを直してから、4日間の実測結果です。\n\nクリック数:2件\n成約(CV):0件\n売上:0円\n\n72時間を大幅に過ぎても、この数字は変わりませんでした。\n\n正直に言うと、なぜ伸びなかったのか、まだ分かっていません。\nただ、今回はっきり分かったことがあります。\n「クリックされる」ことと「売れる」ことは、別の話だということです。\n\nAI仕事研究所は、AIをうまく使えたことだけを見せるアカウントではありません。\nうまくいかなかったことも、そのまま記録していきます。\n\nNottaを実際に使って分かった「向く仕事・向かない仕事」は、プロフィール欄のリンクから\nnote記事にまとめています。\n※記事内にアフィリエイトリンクを含みます。\n\nAIでできる仕事は、AIに。\nDay 24 / 100\n#AI仕事研究所 #100日実験 #Notta #アフィリエイト実験 #AI活用"
     }
   },
@@ -586,8 +586,8 @@
     "account_repositioning_proposal": "COO指令「TODAY'S BUSINESS EXECUTION」PRIORITY 4対応。reports/account-repositioning-proposal-2026-09-24.mdへ記録。WHY THIS CHANGEはkpi_daily.csv実データ(X impressions 1桁〜19・Xフォロワー8人・IGフォロワー10→13人・revenue全期間0円)に基づく。Profile bio 3案・固定Xポスト構成案・IG固定投稿/Reel企画案・Revenue接続・将来のリフォーム/リノベ集客資産接続(Owner本人の建築現場実務背景に基づく仮説)を記載。プロフィール変更・投稿はいずれも未実行、COOレビュー待ち。"
   },
   "current_date": "2026-09-25",
-  "data_updated_at": "2026-09-25T07:10:00+09:00",
-  "public_updated_at": "2026-09-24T22:05:37.797Z",
+  "data_updated_at": "2026-09-25T07:20:00+09:00",
+  "public_updated_at": "2026-09-24T22:20:27.609Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -1028,7 +1028,7 @@
   "source_manifest": {
     "business_day": 24,
     "business_date": "2026-09-25",
-    "generated_at": "2026-09-25T07:10:00+09:00",
+    "generated_at": "2026-09-25T07:20:00+09:00",
     "today": {
       "x_post": {
         "status": "ready",
@@ -1037,9 +1037,9 @@
         "text": "Nottaのアフィリエイトリンクを直してから4日間の実測です。\n\nクリック2件、成約0件、売上0円。72時間を過ぎても変わらず。\n\nただ、クリック2件ではCVの良し悪しを判断すること自体ができません。\nCVを改善する前に、まずクリックの母数を増やす必要があります。\n\n次は投稿の中身だけでなく、認知・返信・導線も同時に増やして検証します。\n\nAIでできる仕事は、AIに。\nDay24/100"
       },
       "ig_reel": {
-        "status": "not_ready",
-        "video_file": null,
-        "note": "Day24分。キャプション・Reel構成案(hook/problem/result/learning/CTA)はcontent/instagram/day24_caption.mdに完成済み・Claude Business QA完了。JSON化(content/reel-json/day24.json)・Remotionレンダリングは未着手、Morning RoutineでCreative Engineerへの引き継ぎ判断待ち。",
+        "status": "ready",
+        "video_file": "day24.mp4",
+        "note": "Day24分。Creative Engineer制作完了(Template v2、Hook Variant B_FAILURE)。ffprobe: h264 1080x1920 30fps 29.833s、AAC音声あり、decode PASS。silencedetect最大ギャップ1.54s(既存許容範囲内)。frame0はOPENING_FRAME_RULES準拠(「クリック2件。成約0件。」中央帯・Day24/100バッジ・フェードインなし、Claude目視確認済み)。evidence欄はA8.net実機確認(task 98ce9bc9)の事実引用として使用、架空の発言・数字なし。Content/instagram/day24_caption.mdとの数字一致もClaude確認済み。Claude Business QA PASS、Owner投稿承認待ち。",
         "caption_text": "Nottaのアフィリエイトリンクを直してから、4日間の実測結果です。\n\nクリック数:2件\n成約(CV):0件\n売上:0円\n\n72時間を大幅に過ぎても、この数字は変わりませんでした。\n\n正直に言うと、なぜ伸びなかったのか、まだ分かっていません。\nただ、今回はっきり分かったことがあります。\n「クリックされる」ことと「売れる」ことは、別の話だということです。\n\nAI仕事研究所は、AIをうまく使えたことだけを見せるアカウントではありません。\nうまくいかなかったことも、そのまま記録していきます。\n\nNottaを実際に使って分かった「向く仕事・向かない仕事」は、プロフィール欄のリンクから\nnote記事にまとめています。\n※記事内にアフィリエイトリンクを含みます。\n\nAIでできる仕事は、AIに。\nDay 24 / 100\n#AI仕事研究所 #100日実験 #Notta #アフィリエイト実験 #AI活用"
       }
     },
@@ -2164,6 +2164,17 @@
         "exit_code": 0,
         "success": true,
         "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\premorning_2026-09-25_054502.log"
+      },
+      {
+        "routine": "morning",
+        "scheduled_at": "2026-09-25T07:00:00",
+        "started_at": "2026-09-24T22:01:00.000Z",
+        "finished_at": "2026-09-24T22:10:23.761Z",
+        "exit_code": 0,
+        "success": true,
+        "invocation": "manual_chat_slash_command",
+        "status": "SUCCESS",
+        "note": "X unauthenticated確定(ログイン画面表示)、IG authenticated。プロフィールタイムライン閲覧中にnotta-voice-validation.mp4 X投稿(2026-09-24 07:53、views=15)とnotta-revenue-v2.mp4 IG Reel(2026-09-24 13:03頃、views=23/reach=19)の投稿見落としを新規発見・reconcile(kpi_daily.csv Day23新規作成、post_insights_log.csv記録、task 56831bad更新・ee95e24b新規作成)。manual-publish-verification.mdのスコープをrevenue_content/content_mix_trackerへ拡張(再発防止)。ledger waiting8件は返信スレッドがログインゲートのためNOT CHECKED。Cockpit commit 13e585c・push・Deploy検証PASS(current.json generated_at=07:10確認)。Day24 IG Reel制作をCreative Engineerへ委任(バックグラウンド)。"
       }
     ],
     "tasks": [
@@ -2291,6 +2302,22 @@
       "hook_type_planned": "A_RESULT",
       "hook_type_actual": "A_RESULT",
       "theme": "浮いた時間の使い道(2日間で独立した3人から同じ指摘を受け、12日以上経った今も正直に未解決のままという実話)",
+      "reel_url": "",
+      "posted": "false",
+      "views": "",
+      "avg_watch_pct": "",
+      "likes": "",
+      "saves": "",
+      "shares": "",
+      "profile_visits": "",
+      "follows": ""
+    },
+    {
+      "day": "24",
+      "date": "2026-09-25",
+      "hook_type_planned": "B_FAILURE",
+      "hook_type_actual": "B_FAILURE",
+      "theme": "Notta A8アフィリエイト実験: クリック2件・成約0件(2026-09-20クリック計測修正後4日間実測、72時間経過後も変化なし)",
       "reel_url": "",
       "posted": "false",
       "views": "",
