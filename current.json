@@ -1,29 +1,29 @@
 {
   "business_day": 23,
   "business_date": "2026-09-24",
-  "generated_at": "2026-09-24T07:02:00+09:00",
+  "generated_at": "2026-09-24T22:35:00+09:00",
   "today": {
     "x_post": {
       "status": "not_ready",
       "text_file": null,
-      "note": "Day23分。Proof Acquisition Mode継続中(COO指令2026-09-22)のため見送り継続。2026-09-23 Evening Routine時点でP1(実務メール/報告書)・P2(AI判断ミス自然発生ログ)とも未発生を確認済み。P3(戦略返信4件の返信待ち)はX側が9日連続unauthenticatedのため確認不能。Morning Routineで新規発生の有無を再確認する。"
+      "note": "Day23分。2026-09-24 COO指令によりProof Acquisition Modeは終了、Audience Growth + Revenue Engineへ移行済み(production_mode参照)。Day23自体の新規Own Content制作はまだ着手していない(本日はNotta Revenue Experiment結果確定・X publish package整備・Reality Check対応で工数を使用)。別途、Notta Revenue Content(notta-voice-validation.mp4)のX投稿文は完成済みでOwner投稿待ち(revenue_contents参照、こちらはDay23枠ではなくOwner Action扱い)。"
     },
     "ig_reel": {
       "status": "not_ready",
       "video_file": null,
-      "note": "X投稿と同じ理由で見送り継続。Reel制作(Creative Engineer)への引き継ぎも発生せず。"
+      "note": "X投稿と同じ理由で本日は新規Day23 Reel制作は見送り(工数はNotta Revenue Experiment確定対応に使用)。"
     }
   },
   "tomorrow": {
     "x_post": {
-      "status": "not_ready",
+      "status": "in_progress",
       "text_file": null,
-      "note": "Day24分は未着手。Proof Acquisition Mode継続中のため、新しい一次データ(day22_proof_candidates.mdのP1/P2/P3のいずれか)が得られない限り新規制作は再開しない。Morning Routineでの判断待ち。"
+      "note": "Day24分。2026-09-24 Evening RoutineでContent Editorへドラフト作成をバックグラウンド依頼済み(本日確定したNotta Revenue Experiment実測結果(A8クリック2件/CV0/売上0円)、またはX投稿実態不一致(Owner申告と実機確認の食い違い)のいずれかを実データとして使用、Mori's Reactionが存在しない場合は捏造せず見送り判断も許容)。結果は次回Routineでレビューする。"
     },
     "ig_reel": {
       "status": "not_ready",
       "video_file": null,
-      "note": "Day24分は未着手。Morning Routine(07:00)での制作判断待ち。"
+      "note": "Day24分。X投稿文の確定後、Creative EngineerへReel化を依頼予定(次回Routine判断)。"
     }
   },
   "business_progress": {
@@ -55,6 +55,7 @@
       "note": "この配列はAudience Growth + Revenue Engine開始(2026-09-24)以降に新規・確認された投稿のみを追加する。過去(Day1〜23)の投稿は遡って分類しない(履歴を書き換えない)。10件到達ごとにミックス達成率を振り返る。【COO決定2026-09-24】この比率は目標であり厳格ノルマではない。Proofが弱い場合、比率合わせのためだけに弱い投稿を作らない(優先順位: QUALITY>PROOF>BUSINESS VALUE>MIX RATIO)。"
     },
     "revenue_monitoring_continues_note": "COO指令(2026-09-22)によりProof Acquisition Mode中もRevenue/Metrics/Audience Response追跡は継続。2026-09-22実機確認で発見: task 98ce9bc9(Notta Revenue Experiment 24h/48h/72hトラッキング)がstatus=backlogのまま放置され、Pending Task Watch(status=waitingのみ監視)の対象外になり24hチェック(2026-09-21T12:48予定)が未実施だったバグを発見・修正(status=waitingへ変更、next_check_at=2026-09-22T12:48で48hチェックへ)。A8.net再確認: ログインID/PASSフォーム表示、確定unauthenticated(4-state判定、false-negativeではなく実際の未ログイン)。Owner再ログイン待ち継続。X audience response: 本日投稿した戦略返信4件(@andymochizuki/@ozge_boyraz46/@akagami_sns/@misaki_hennyu)のうち3件を実機再確認、いずれも新規author返信なし(投稿から数時間、想定どおり)。",
+    "evening_2026-09-24_playwright_unavailable_note": "22:30相当のEvening Routine実行時、Playwright MCPサーバーが本セッションへCONNECT_TIMEOUT(30秒)で接続できず。X Conversation Routine・Manual Publish Verification・X/Instagram実測データ収集・task 56831bad(Notta P1/P2 Reel 24hトラッキング)の実機チェックはいずれもNOT CHECKED(取得手段はあるが今回未実施、UNAUTHENTICATEDではない、NO FAKE ZERO原則により0を入れない)。carryover自体は0件のため影響は限定的。次回Morning Routine(2026-09-25 07:00)で再試行する。",
     "note_priority": "P1",
     "notta_note": "LIVE",
     "notta_note_note": "公開済み(2026-09-15 22:32) https://note.com/workai_lab777/n/nc5ad7e7ef364 。PR表記・A8リンク・6タグとも実配信を確認済み。",
@@ -541,8 +542,8 @@
     "audience_growth_revenue_engine_adopted": "COO指令「AUDIENCE GROWTH + REVENUE ENGINE」対応。運用を「投稿制作中心」から「Audience Growth Engine + Revenue Engineの同時構築」へ変更(references/audience-growth-revenue-engine.md新規作成、SKILL.md「事前に必ず読む」へ6.7として追加)。Proof Acquisition Mode(2026-09-22)の新規制作停止はこれにより終了(references/proof-acquisition-mode.mdへ終了記録を追記、履歴は書き換えず)。5 Growth Channels・Content Mix(Reach50%/Trust30%/Revenue20%、content_mix_tracker新設)・X Daily Operating Loop・Measurementを採用。Targeted Followingの権限分類はCOO決定「TARGETED FOLLOWING PERMISSION」(2026-09-24)で確定: 完全自律実行は不可、毎日5〜10件の候補(ACCOUNT/CATEGORY/WHY TARGET/WHY NOW/RECENT POST RELEVANCE/FOLLOW+REPLY POSSIBILITY/RISK・LOW-QUALITY SIGNAL)を提示しOwner/COOの日次バッチ承認後に実行(1件ずつの承認は不要)。Content Mixは目標比率でありノルマ化禁止、優先順位QUALITY>PROOF>BUSINESS VALUE>MIX RATIOも確定。"
   },
   "current_date": "2026-09-24",
-  "data_updated_at": "2026-09-24T07:02:00+09:00",
-  "public_updated_at": "2026-09-23T23:04:07.161Z",
+  "data_updated_at": "2026-09-24T22:35:00+09:00",
+  "public_updated_at": "2026-09-24T13:33:40.039Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -965,29 +966,29 @@
   "source_manifest": {
     "business_day": 23,
     "business_date": "2026-09-24",
-    "generated_at": "2026-09-24T07:02:00+09:00",
+    "generated_at": "2026-09-24T22:35:00+09:00",
     "today": {
       "x_post": {
         "status": "not_ready",
         "text_file": null,
-        "note": "Day23分。Proof Acquisition Mode継続中(COO指令2026-09-22)のため見送り継続。2026-09-23 Evening Routine時点でP1(実務メール/報告書)・P2(AI判断ミス自然発生ログ)とも未発生を確認済み。P3(戦略返信4件の返信待ち)はX側が9日連続unauthenticatedのため確認不能。Morning Routineで新規発生の有無を再確認する。"
+        "note": "Day23分。2026-09-24 COO指令によりProof Acquisition Modeは終了、Audience Growth + Revenue Engineへ移行済み(production_mode参照)。Day23自体の新規Own Content制作はまだ着手していない(本日はNotta Revenue Experiment結果確定・X publish package整備・Reality Check対応で工数を使用)。別途、Notta Revenue Content(notta-voice-validation.mp4)のX投稿文は完成済みでOwner投稿待ち(revenue_contents参照、こちらはDay23枠ではなくOwner Action扱い)。"
       },
       "ig_reel": {
         "status": "not_ready",
         "video_file": null,
-        "note": "X投稿と同じ理由で見送り継続。Reel制作(Creative Engineer)への引き継ぎも発生せず。"
+        "note": "X投稿と同じ理由で本日は新規Day23 Reel制作は見送り(工数はNotta Revenue Experiment確定対応に使用)。"
       }
     },
     "tomorrow": {
       "x_post": {
-        "status": "not_ready",
+        "status": "in_progress",
         "text_file": null,
-        "note": "Day24分は未着手。Proof Acquisition Mode継続中のため、新しい一次データ(day22_proof_candidates.mdのP1/P2/P3のいずれか)が得られない限り新規制作は再開しない。Morning Routineでの判断待ち。"
+        "note": "Day24分。2026-09-24 Evening RoutineでContent Editorへドラフト作成をバックグラウンド依頼済み(本日確定したNotta Revenue Experiment実測結果(A8クリック2件/CV0/売上0円)、またはX投稿実態不一致(Owner申告と実機確認の食い違い)のいずれかを実データとして使用、Mori's Reactionが存在しない場合は捏造せず見送り判断も許容)。結果は次回Routineでレビューする。"
       },
       "ig_reel": {
         "status": "not_ready",
         "video_file": null,
-        "note": "Day24分は未着手。Morning Routine(07:00)での制作判断待ち。"
+        "note": "Day24分。X投稿文の確定後、Creative EngineerへReel化を依頼予定(次回Routine判断)。"
       }
     },
     "business_progress": {
@@ -1019,6 +1020,7 @@
         "note": "この配列はAudience Growth + Revenue Engine開始(2026-09-24)以降に新規・確認された投稿のみを追加する。過去(Day1〜23)の投稿は遡って分類しない(履歴を書き換えない)。10件到達ごとにミックス達成率を振り返る。【COO決定2026-09-24】この比率は目標であり厳格ノルマではない。Proofが弱い場合、比率合わせのためだけに弱い投稿を作らない(優先順位: QUALITY>PROOF>BUSINESS VALUE>MIX RATIO)。"
       },
       "revenue_monitoring_continues_note": "COO指令(2026-09-22)によりProof Acquisition Mode中もRevenue/Metrics/Audience Response追跡は継続。2026-09-22実機確認で発見: task 98ce9bc9(Notta Revenue Experiment 24h/48h/72hトラッキング)がstatus=backlogのまま放置され、Pending Task Watch(status=waitingのみ監視)の対象外になり24hチェック(2026-09-21T12:48予定)が未実施だったバグを発見・修正(status=waitingへ変更、next_check_at=2026-09-22T12:48で48hチェックへ)。A8.net再確認: ログインID/PASSフォーム表示、確定unauthenticated(4-state判定、false-negativeではなく実際の未ログイン)。Owner再ログイン待ち継続。X audience response: 本日投稿した戦略返信4件(@andymochizuki/@ozge_boyraz46/@akagami_sns/@misaki_hennyu)のうち3件を実機再確認、いずれも新規author返信なし(投稿から数時間、想定どおり)。",
+      "evening_2026-09-24_playwright_unavailable_note": "22:30相当のEvening Routine実行時、Playwright MCPサーバーが本セッションへCONNECT_TIMEOUT(30秒)で接続できず。X Conversation Routine・Manual Publish Verification・X/Instagram実測データ収集・task 56831bad(Notta P1/P2 Reel 24hトラッキング)の実機チェックはいずれもNOT CHECKED(取得手段はあるが今回未実施、UNAUTHENTICATEDではない、NO FAKE ZERO原則により0を入れない)。carryover自体は0件のため影響は限定的。次回Morning Routine(2026-09-25 07:00)で再試行する。",
       "note_priority": "P1",
       "notta_note": "LIVE",
       "notta_note_note": "公開済み(2026-09-15 22:32) https://note.com/workai_lab777/n/nc5ad7e7ef364 。PR表記・A8リンク・6タグとも実配信を確認済み。",
@@ -2047,8 +2049,8 @@
         "task_id": "56831bad-f74d-4839-a6ea-cfaf3adc5be1",
         "assigned_to": "claude",
         "status": "waiting",
-        "waiting_reason": "tracking_24h_window_ig_posted_x_pending",
-        "next_check_at": "2026-09-24T22:30:00+09:00"
+        "waiting_reason": "tool_unavailable_playwright_retry_next_routine",
+        "next_check_at": "2026-09-25T07:00:00+09:00"
       }
     ]
   },
