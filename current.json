@@ -96,6 +96,13 @@
         "note": "COO指令「P1/P2 VALIDATION PASS / RENDER: GO」対応。P1+P2を1本のストーリーに統合(COO指令どおり)。Owner本人の肉声によるNotta実機検証(reports/notta-p1-p2-validation-2026-09-21.md)が一次情報。TemplateV2.tsx共有コンポーネントの潜在レイアウトバグ(evidence role bodyボックスの左右衝突)を自己発見・修正。制作詳細はcontent/reel-json/notta-voice-validation.md参照。Cockpit配信機能(複数Revenue Content対応)はCodexへ一部委任、パッチをClaudeがレビュー・適用。X投稿本文(x_copy_text)はCOO指令「COMPLETE X PUBLISH PACKAGE」(2026-09-24)対応、content/x/notta-voice-validation_post.md参照、137字・X標準カウント。"
       }
     ],
+    "account_pivot_reel": {
+      "label": "Account Pivot Reel(自分たちの話→あなたの仕事の話)",
+      "status": "produced_awaiting_coo_review",
+      "video_file": "account-pivot-reel.mp4",
+      "caption_text": "約20日間、AIで発信してきました。\n\n正直、リーチはずっと伸び悩んでいました。\nXインプレッション1桁〜19、Xフォロワー8人、IGフォロワーは8日間で10→13人。(2026-09-24時点の実測)\n\nこれから届けるのは、自分たちの実験の裏側ではなく、あなたの仕事をAIでどこまで減らせるか、という話です。これが約束です。\n\n議事録12分→2分半。見積の説明15分→1分。\nうまくいかなかった話も公開します(Notta案件: クリック2件・成約0件)。\n\nあなたの仕事、AIでどう減らせるか。コメントで教えてください。\n\nAIでできる仕事は、AIに。\nDay24/100\n#AI仕事研究所 #100日実験 #個人事業 #AIパートナー",
+      "note": "COO指令「TODAY'S BUSINESS EXECUTION」PRIORITY 4→COO REVIEW RESULT「INSTAGRAM PIVOT REEL: PRODUCTION GO」対応。構成比(過去20%/新方針60%/CTA20%)指定どおり制作(実測21.3/64.6/14.0%、CTAのみTemplate v2パイプラインの技術制約(3-4.5秒固定)により目標を下回るが正直に記録)。制作詳細・QA結果はcontent/reel-json/account-pivot-reel.md参照。動画は既存Templateパイプラインで新規制作(notta-voice-validation.mp4等の再利用ではない)。Owner投稿依頼はまだ出していない、COOレビュー待ち。"
+    },
     "revenue_content": {
       "label": "Notta Revenue Experiment",
       "status": "ready",
@@ -557,7 +564,7 @@
   },
   "current_date": "2026-09-24",
   "data_updated_at": "2026-09-24T22:35:00+09:00",
-  "public_updated_at": "2026-09-24T14:21:28.529Z",
+  "public_updated_at": "2026-09-24T14:40:12.723Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -1075,6 +1082,13 @@
           "note": "COO指令「P1/P2 VALIDATION PASS / RENDER: GO」対応。P1+P2を1本のストーリーに統合(COO指令どおり)。Owner本人の肉声によるNotta実機検証(reports/notta-p1-p2-validation-2026-09-21.md)が一次情報。TemplateV2.tsx共有コンポーネントの潜在レイアウトバグ(evidence role bodyボックスの左右衝突)を自己発見・修正。制作詳細はcontent/reel-json/notta-voice-validation.md参照。Cockpit配信機能(複数Revenue Content対応)はCodexへ一部委任、パッチをClaudeがレビュー・適用。X投稿本文(x_copy_text)はCOO指令「COMPLETE X PUBLISH PACKAGE」(2026-09-24)対応、content/x/notta-voice-validation_post.md参照、137字・X標準カウント。"
         }
       ],
+      "account_pivot_reel": {
+        "label": "Account Pivot Reel(自分たちの話→あなたの仕事の話)",
+        "status": "produced_awaiting_coo_review",
+        "video_file": "account-pivot-reel.mp4",
+        "caption_text": "約20日間、AIで発信してきました。\n\n正直、リーチはずっと伸び悩んでいました。\nXインプレッション1桁〜19、Xフォロワー8人、IGフォロワーは8日間で10→13人。(2026-09-24時点の実測)\n\nこれから届けるのは、自分たちの実験の裏側ではなく、あなたの仕事をAIでどこまで減らせるか、という話です。これが約束です。\n\n議事録12分→2分半。見積の説明15分→1分。\nうまくいかなかった話も公開します(Notta案件: クリック2件・成約0件)。\n\nあなたの仕事、AIでどう減らせるか。コメントで教えてください。\n\nAIでできる仕事は、AIに。\nDay24/100\n#AI仕事研究所 #100日実験 #個人事業 #AIパートナー",
+        "note": "COO指令「TODAY'S BUSINESS EXECUTION」PRIORITY 4→COO REVIEW RESULT「INSTAGRAM PIVOT REEL: PRODUCTION GO」対応。構成比(過去20%/新方針60%/CTA20%)指定どおり制作(実測21.3/64.6/14.0%、CTAのみTemplate v2パイプラインの技術制約(3-4.5秒固定)により目標を下回るが正直に記録)。制作詳細・QA結果はcontent/reel-json/account-pivot-reel.md参照。動画は既存Templateパイプラインで新規制作(notta-voice-validation.mp4等の再利用ではない)。Owner投稿依頼はまだ出していない、COOレビュー待ち。"
+      },
       "revenue_content": {
         "label": "Notta Revenue Experiment",
         "status": "ready",
