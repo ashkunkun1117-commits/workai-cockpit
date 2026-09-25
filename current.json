@@ -147,6 +147,33 @@
         },
         "note_a8_reference": "変化なし(A8クリック累計2件・CV0・revenue0円、task 98ce9bc9、2026-09-24時点)"
       },
+      "phase2_interim_check_4h": {
+        "checked_at": "2026-09-25T14:05:00+09:00",
+        "status_label": "INTERIM_REFERENCE_ONLY_NOT_24H",
+        "ig_reel_insights": {
+          "viewers": 17,
+          "follower_pct": 35.3,
+          "non_follower_pct": 64.7,
+          "likes": 0,
+          "comments": 0,
+          "saves": 0,
+          "shares": 0,
+          "follows_from_post": 0
+        },
+        "ig_profile": {
+          "followers": 16,
+          "following": 10
+        },
+        "x_pivot_post": {
+          "impressions": 22
+        },
+        "x_profile": {
+          "followers": 8,
+          "following": 6
+        },
+        "coo_judgment": "COO 4H CHECK JUDGMENT(2026-09-25)でPASS判定。DELTA/BOTTLENECK/NEXT ACTIONは確定しない。IGフォロワー+4・非フォロワーリーチ比率64.7%・X表示22に注目するが、Pivot Reel/Bio/Pin/既存流入のどれが要因か切り分けられないため成功判定は禁止。"
+      },
+      "phase2_freeze_until_24h": "COO 4H CHECK JUDGMENT指令(2026-09-25)により2026-09-26T10:01 JSTの24hチェックポイントまで凍結: プロフィール再変更禁止・固定投稿の差し替え禁止・Pivot系の追加投稿禁止・Phase 2の大きな導線変更禁止。通常の自然な返信・会話・フォローは可。",
       "caption_text": "約20日間、AIで発信してきました。\n\n正直、リーチはずっと伸び悩んでいました。\nXインプレッション1桁〜19、Xフォロワー8人、IGフォロワーは8日間で10→13人。(2026-09-24時点の実測)\n\nこれから届けるのは、自分たちの実験の裏側ではなく、あなたの仕事をAIでどこまで減らせるか、という話です。これが約束です。\n\n議事録12分→2分半。見積の説明15分→1分。\nうまくいかなかった話も公開します(Notta案件: クリック2件・成約0件)。\n\nあなたの仕事、AIでどう減らせるか。コメントで教えてください。\n\nAIでできる仕事は、AIに。\nDay24/100\n#AI仕事研究所 #100日実験 #個人事業 #AIパートナー",
       "x_pivot_post_text": "これから、AIで「あなたの仕事」をどう減らせるか、実務データで届けます。\n\n議事録12分→2分半。見積の説明15分→1分。\nうまくいかなかった話(Notta案件: クリック2件・成約0件)も、実測のまま公開します。\n\n会社員6年→独立。建築・リフォーム現場の実務経験があります。\n現場の言葉が分かるからこそ、本当に使える・使えないをそのまま伝えます。\n\n「この作業、AIで減らせる?」あなたの実務の悩みをコメントで教えてください。\n\nAIでできる仕事は、AIに。",
       "profile_bio_text": "その仕事、AIでどこまで減らせるか実測。\n議事録12分→2分半｜見積説明15分→1分\n成功も失敗も、実務データで公開します。\n建築・リフォーム実務×AI｜100日で別軸収入0→1",
@@ -638,7 +665,7 @@
   },
   "current_date": "2026-09-25",
   "data_updated_at": "2026-09-25T07:20:00+09:00",
-  "public_updated_at": "2026-09-25T01:11:45.463Z",
+  "public_updated_at": "2026-09-25T05:21:24.447Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -1225,6 +1252,33 @@
           },
           "note_a8_reference": "変化なし(A8クリック累計2件・CV0・revenue0円、task 98ce9bc9、2026-09-24時点)"
         },
+        "phase2_interim_check_4h": {
+          "checked_at": "2026-09-25T14:05:00+09:00",
+          "status_label": "INTERIM_REFERENCE_ONLY_NOT_24H",
+          "ig_reel_insights": {
+            "viewers": 17,
+            "follower_pct": 35.3,
+            "non_follower_pct": 64.7,
+            "likes": 0,
+            "comments": 0,
+            "saves": 0,
+            "shares": 0,
+            "follows_from_post": 0
+          },
+          "ig_profile": {
+            "followers": 16,
+            "following": 10
+          },
+          "x_pivot_post": {
+            "impressions": 22
+          },
+          "x_profile": {
+            "followers": 8,
+            "following": 6
+          },
+          "coo_judgment": "COO 4H CHECK JUDGMENT(2026-09-25)でPASS判定。DELTA/BOTTLENECK/NEXT ACTIONは確定しない。IGフォロワー+4・非フォロワーリーチ比率64.7%・X表示22に注目するが、Pivot Reel/Bio/Pin/既存流入のどれが要因か切り分けられないため成功判定は禁止。"
+        },
+        "phase2_freeze_until_24h": "COO 4H CHECK JUDGMENT指令(2026-09-25)により2026-09-26T10:01 JSTの24hチェックポイントまで凍結: プロフィール再変更禁止・固定投稿の差し替え禁止・Pivot系の追加投稿禁止・Phase 2の大きな導線変更禁止。通常の自然な返信・会話・フォローは可。",
         "caption_text": "約20日間、AIで発信してきました。\n\n正直、リーチはずっと伸び悩んでいました。\nXインプレッション1桁〜19、Xフォロワー8人、IGフォロワーは8日間で10→13人。(2026-09-24時点の実測)\n\nこれから届けるのは、自分たちの実験の裏側ではなく、あなたの仕事をAIでどこまで減らせるか、という話です。これが約束です。\n\n議事録12分→2分半。見積の説明15分→1分。\nうまくいかなかった話も公開します(Notta案件: クリック2件・成約0件)。\n\nあなたの仕事、AIでどう減らせるか。コメントで教えてください。\n\nAIでできる仕事は、AIに。\nDay24/100\n#AI仕事研究所 #100日実験 #個人事業 #AIパートナー",
         "x_pivot_post_text": "これから、AIで「あなたの仕事」をどう減らせるか、実務データで届けます。\n\n議事録12分→2分半。見積の説明15分→1分。\nうまくいかなかった話(Notta案件: クリック2件・成約0件)も、実測のまま公開します。\n\n会社員6年→独立。建築・リフォーム現場の実務経験があります。\n現場の言葉が分かるからこそ、本当に使える・使えないをそのまま伝えます。\n\n「この作業、AIで減らせる?」あなたの実務の悩みをコメントで教えてください。\n\nAIでできる仕事は、AIに。",
         "profile_bio_text": "その仕事、AIでどこまで減らせるか実測。\n議事録12分→2分半｜見積説明15分→1分\n成功も失敗も、実務データで公開します。\n建築・リフォーム実務×AI｜100日で別軸収入0→1",
