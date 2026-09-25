@@ -64,17 +64,23 @@
         },
         {
           "seq": 4,
-          "content": "Account Pivot Reel(content/reel-json/account-pivot-reel.json、IG固定投稿予定)",
+          "content": "Account Pivot Reel(content/reel-json/account-pivot-reel.json)",
           "category": "trust_authority",
-          "status": "ready_awaiting_owner_post",
-          "note": "COO PRODUCTION GO→最終承認(2026-09-25「COOオッケーです」)済み。owner_actionsへ投稿依頼追加済み、Owner投稿はまだ確認できていない。"
+          "status": "posted",
+          "note": "COO PRODUCTION GO→最終承認→PUBLISH GO。2026-09-25T10:01 JST頃投稿済み実機確認(reel/DdsOFB6S6_D/)。同時にX/IG Bio変更・固定Xポスト投稿+PINも完了、PHASE 2開始(task 4ab515ca、24hチェックポイント2026-09-26T10:01)。"
+        },
+        {
+          "seq": 5,
+          "content": "固定Xポスト(Pivot宣言、x_pivot_post_text)",
+          "category": "trust_authority",
+          "status": "posted",
+          "note": "2026-09-25T10:01 JST投稿・プロフィールに固定確認(status/2103288637605691840、231字)。Account Pivot Reelと同一のPhase 2ローンチ施策。"
         }
       ],
       "counts_so_far": {
         "reach_awareness": 0,
-        "trust_authority": 1,
-        "revenue": 2,
-        "pending_owner_post": 1
+        "trust_authority": 3,
+        "revenue": 2
       },
       "note": "この配列はAudience Growth + Revenue Engine開始(2026-09-24)以降に新規・確認された投稿のみを追加する。過去(Day1〜23)の投稿は遡って分類しない(履歴を書き換えない)。10件到達ごとにミックス達成率を振り返る。【COO決定2026-09-24】この比率は目標であり厳格ノルマではない。Proofが弱い場合、比率合わせのためだけに弱い投稿を作らない(優先順位: QUALITY>PROOF>BUSINESS VALUE>MIX RATIO)。"
     },
@@ -113,12 +119,38 @@
     ],
     "account_pivot_reel": {
       "label": "Account Pivot Reel(自分たちの話→あなたの仕事の話)",
-      "status": "ready",
+      "status": "posted",
       "video_file": "account-pivot-reel.mp4",
+      "posted_url": "https://www.instagram.com/workai_lab777/reel/DdsOFB6S6_D/",
+      "x_pivot_post_url": "https://x.com/workai_lab777/status/2103288637605691840",
+      "phase2_start_time": "2026-09-25T10:01:00+09:00",
+      "phase2_baseline": {
+        "checked_at": "2026-09-25T10:14:00+09:00",
+        "ig_reel_insights": {
+          "views": "not_yet_available",
+          "likes": 0,
+          "comments": 0,
+          "saves": 0,
+          "shares": 0,
+          "follows_from_post": 0
+        },
+        "ig_profile": {
+          "followers": 12,
+          "following": 9
+        },
+        "x_pivot_post": {
+          "impressions": 7
+        },
+        "x_profile": {
+          "followers": 8,
+          "following": 6
+        },
+        "note_a8_reference": "変化なし(A8クリック累計2件・CV0・revenue0円、task 98ce9bc9、2026-09-24時点)"
+      },
       "caption_text": "約20日間、AIで発信してきました。\n\n正直、リーチはずっと伸び悩んでいました。\nXインプレッション1桁〜19、Xフォロワー8人、IGフォロワーは8日間で10→13人。(2026-09-24時点の実測)\n\nこれから届けるのは、自分たちの実験の裏側ではなく、あなたの仕事をAIでどこまで減らせるか、という話です。これが約束です。\n\n議事録12分→2分半。見積の説明15分→1分。\nうまくいかなかった話も公開します(Notta案件: クリック2件・成約0件)。\n\nあなたの仕事、AIでどう減らせるか。コメントで教えてください。\n\nAIでできる仕事は、AIに。\nDay24/100\n#AI仕事研究所 #100日実験 #個人事業 #AIパートナー",
       "x_pivot_post_text": "これから、AIで「あなたの仕事」をどう減らせるか、実務データで届けます。\n\n議事録12分→2分半。見積の説明15分→1分。\nうまくいかなかった話(Notta案件: クリック2件・成約0件)も、実測のまま公開します。\n\n会社員6年→独立。建築・リフォーム現場の実務経験があります。\n現場の言葉が分かるからこそ、本当に使える・使えないをそのまま伝えます。\n\n「この作業、AIで減らせる?」あなたの実務の悩みをコメントで教えてください。\n\nAIでできる仕事は、AIに。",
       "profile_bio_text": "その仕事、AIでどこまで減らせるか実測。\n議事録12分→2分半｜見積説明15分→1分\n成功も失敗も、実務データで公開します。\n建築・リフォーム実務×AI｜100日で別軸収入0→1",
-      "note": "COO指令「TODAY'S BUSINESS EXECUTION」PRIORITY 4→COO REVIEW RESULT「INSTAGRAM PIVOT REEL: PRODUCTION GO」対応。構成比(過去20%/新方針60%/CTA20%)指定どおり制作(実測21.3/64.6/14.0%、CTAのみTemplate v2パイプラインの技術制約(3-4.5秒固定)により目標を下回るが正直に記録)。制作詳細・QA結果はcontent/reel-json/account-pivot-reel.md参照。動画は既存Templateパイプラインで新規制作(notta-voice-validation.mp4等の再利用ではない)。2026-09-25、COO最終承認(「COOオッケーです」)受領、status=readyへ更新。COO指令「WORKAI PHASE 2 LAUNCH」(2026-09-25)でReel公開・Profile変更・固定Xポスト投稿+ピン留めがPUBLISH/CHANGE GOとなったが、Claudeは公開投稿・アカウント設定変更を代行しない(WorkAI Business Constitution Permission Model上RED、本セッション全体で一貫適用してきた不可逆ルール、COO指令によっても解除されない)。x_pivot_post_text(231字、Claude Business QA完了)・profile_bio_textをOwnerがコピーしてそのまま使えるようCockpitへ表示。COO確認(「Claudeの判断で正しい」「Notta X投稿は既投稿、再投稿不要」)受領。3件完了後の24h計測開始をtask 4ab515caで監視中(status=waiting)。"
+      "note": "COO指令「TODAY'S BUSINESS EXECUTION」PRIORITY 4→COO REVIEW RESULT「INSTAGRAM PIVOT REEL: PRODUCTION GO」対応。構成比(過去20%/新方針60%/CTA20%)指定どおり制作(実測21.3/64.6/14.0%、CTAのみTemplate v2パイプラインの技術制約(3-4.5秒固定)により目標を下回るが正直に記録)。制作詳細・QA結果はcontent/reel-json/account-pivot-reel.md参照。動画は既存Templateパイプラインで新規制作(notta-voice-validation.mp4等の再利用ではない)。2026-09-25、COO最終承認(「COOオッケーです」)受領、status=readyへ更新。COO指令「WORKAI PHASE 2 LAUNCH」(2026-09-25)でReel公開・Profile変更・固定Xポスト投稿+ピン留めがPUBLISH/CHANGE GOとなったが、Claudeは公開投稿・アカウント設定変更を代行しない(WorkAI Business Constitution Permission Model上RED、本セッション全体で一貫適用してきた不可逆ルール、COO指令によっても解除されない)。x_pivot_post_text(231字、Claude Business QA完了)・profile_bio_textをOwnerがコピーしてそのまま使えるようCockpitへ表示。COO確認(「Claudeの判断で正しい」「Notta X投稿は既投稿、再投稿不要」)受領。2026-09-25、Owner Action 3件完了を実機確認(IG Reel投稿・X/IG Bio変更・固定Xポスト投稿+PIN)。PHASE 2 START TIME=2026-09-25T10:01:00+09:00(3件のうち最後に完了したX固定投稿の実確認時刻)。task 4ab515caはCOOの「完了扱い」指示に対し、Pending Task Watchの監視対象を維持するためstatus=waitingのまま24hチェックポイント(2026-09-26T10:01)へ進めた(revenue-experiment-task-rules.md準拠)。"
     },
     "revenue_content": {
       "label": "Notta Revenue Experiment",
@@ -420,9 +452,7 @@
       "verification_note": "views=29, reach(閲覧者)=29, フォロワー以外100%, いいね/コメント/保存/シェアいずれも0(data/instagram/post_insights_log.csvへ記録済み)。相対表示「1日前」のみ確認、正確なpublish時刻は未取得(推測しない)。"
     }
   ],
-  "owner_actions": [
-    "【COO PHASE 2 LAUNCH承認済み・Owner実行が必要な3件】(1)Account Pivot Reelの投稿: 動画account-pivot-reel.mp4・キャプションをCockpitからコピーしてInstagramへ投稿してください。(2)プロフィールBio変更: Cockpitの「プロフィールBio」をコピーしてX・Instagram両方に設定してください。(3)固定Xポストの投稿+ピン留め: Cockpitの「固定Xポスト」をコピーして投稿し、投稿後にXの「...」メニューから「プロフィールに固定」を選んでください。この3件は公開投稿・アカウント設定変更にあたるため、Claudeは代行せず準備のみ行っています。参考: reports/account-repositioning-proposal-2026-09-24.md。"
-  ],
+  "owner_actions": [],
   "approval_queue": [],
   "ai_learning": {
     "day": 23,
@@ -608,7 +638,7 @@
   },
   "current_date": "2026-09-25",
   "data_updated_at": "2026-09-25T07:20:00+09:00",
-  "public_updated_at": "2026-09-25T00:50:18.892Z",
+  "public_updated_at": "2026-09-25T01:11:45.463Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -1112,17 +1142,23 @@
           },
           {
             "seq": 4,
-            "content": "Account Pivot Reel(content/reel-json/account-pivot-reel.json、IG固定投稿予定)",
+            "content": "Account Pivot Reel(content/reel-json/account-pivot-reel.json)",
             "category": "trust_authority",
-            "status": "ready_awaiting_owner_post",
-            "note": "COO PRODUCTION GO→最終承認(2026-09-25「COOオッケーです」)済み。owner_actionsへ投稿依頼追加済み、Owner投稿はまだ確認できていない。"
+            "status": "posted",
+            "note": "COO PRODUCTION GO→最終承認→PUBLISH GO。2026-09-25T10:01 JST頃投稿済み実機確認(reel/DdsOFB6S6_D/)。同時にX/IG Bio変更・固定Xポスト投稿+PINも完了、PHASE 2開始(task 4ab515ca、24hチェックポイント2026-09-26T10:01)。"
+          },
+          {
+            "seq": 5,
+            "content": "固定Xポスト(Pivot宣言、x_pivot_post_text)",
+            "category": "trust_authority",
+            "status": "posted",
+            "note": "2026-09-25T10:01 JST投稿・プロフィールに固定確認(status/2103288637605691840、231字)。Account Pivot Reelと同一のPhase 2ローンチ施策。"
           }
         ],
         "counts_so_far": {
           "reach_awareness": 0,
-          "trust_authority": 1,
-          "revenue": 2,
-          "pending_owner_post": 1
+          "trust_authority": 3,
+          "revenue": 2
         },
         "note": "この配列はAudience Growth + Revenue Engine開始(2026-09-24)以降に新規・確認された投稿のみを追加する。過去(Day1〜23)の投稿は遡って分類しない(履歴を書き換えない)。10件到達ごとにミックス達成率を振り返る。【COO決定2026-09-24】この比率は目標であり厳格ノルマではない。Proofが弱い場合、比率合わせのためだけに弱い投稿を作らない(優先順位: QUALITY>PROOF>BUSINESS VALUE>MIX RATIO)。"
       },
@@ -1161,12 +1197,38 @@
       ],
       "account_pivot_reel": {
         "label": "Account Pivot Reel(自分たちの話→あなたの仕事の話)",
-        "status": "ready",
+        "status": "posted",
         "video_file": "account-pivot-reel.mp4",
+        "posted_url": "https://www.instagram.com/workai_lab777/reel/DdsOFB6S6_D/",
+        "x_pivot_post_url": "https://x.com/workai_lab777/status/2103288637605691840",
+        "phase2_start_time": "2026-09-25T10:01:00+09:00",
+        "phase2_baseline": {
+          "checked_at": "2026-09-25T10:14:00+09:00",
+          "ig_reel_insights": {
+            "views": "not_yet_available",
+            "likes": 0,
+            "comments": 0,
+            "saves": 0,
+            "shares": 0,
+            "follows_from_post": 0
+          },
+          "ig_profile": {
+            "followers": 12,
+            "following": 9
+          },
+          "x_pivot_post": {
+            "impressions": 7
+          },
+          "x_profile": {
+            "followers": 8,
+            "following": 6
+          },
+          "note_a8_reference": "変化なし(A8クリック累計2件・CV0・revenue0円、task 98ce9bc9、2026-09-24時点)"
+        },
         "caption_text": "約20日間、AIで発信してきました。\n\n正直、リーチはずっと伸び悩んでいました。\nXインプレッション1桁〜19、Xフォロワー8人、IGフォロワーは8日間で10→13人。(2026-09-24時点の実測)\n\nこれから届けるのは、自分たちの実験の裏側ではなく、あなたの仕事をAIでどこまで減らせるか、という話です。これが約束です。\n\n議事録12分→2分半。見積の説明15分→1分。\nうまくいかなかった話も公開します(Notta案件: クリック2件・成約0件)。\n\nあなたの仕事、AIでどう減らせるか。コメントで教えてください。\n\nAIでできる仕事は、AIに。\nDay24/100\n#AI仕事研究所 #100日実験 #個人事業 #AIパートナー",
         "x_pivot_post_text": "これから、AIで「あなたの仕事」をどう減らせるか、実務データで届けます。\n\n議事録12分→2分半。見積の説明15分→1分。\nうまくいかなかった話(Notta案件: クリック2件・成約0件)も、実測のまま公開します。\n\n会社員6年→独立。建築・リフォーム現場の実務経験があります。\n現場の言葉が分かるからこそ、本当に使える・使えないをそのまま伝えます。\n\n「この作業、AIで減らせる?」あなたの実務の悩みをコメントで教えてください。\n\nAIでできる仕事は、AIに。",
         "profile_bio_text": "その仕事、AIでどこまで減らせるか実測。\n議事録12分→2分半｜見積説明15分→1分\n成功も失敗も、実務データで公開します。\n建築・リフォーム実務×AI｜100日で別軸収入0→1",
-        "note": "COO指令「TODAY'S BUSINESS EXECUTION」PRIORITY 4→COO REVIEW RESULT「INSTAGRAM PIVOT REEL: PRODUCTION GO」対応。構成比(過去20%/新方針60%/CTA20%)指定どおり制作(実測21.3/64.6/14.0%、CTAのみTemplate v2パイプラインの技術制約(3-4.5秒固定)により目標を下回るが正直に記録)。制作詳細・QA結果はcontent/reel-json/account-pivot-reel.md参照。動画は既存Templateパイプラインで新規制作(notta-voice-validation.mp4等の再利用ではない)。2026-09-25、COO最終承認(「COOオッケーです」)受領、status=readyへ更新。COO指令「WORKAI PHASE 2 LAUNCH」(2026-09-25)でReel公開・Profile変更・固定Xポスト投稿+ピン留めがPUBLISH/CHANGE GOとなったが、Claudeは公開投稿・アカウント設定変更を代行しない(WorkAI Business Constitution Permission Model上RED、本セッション全体で一貫適用してきた不可逆ルール、COO指令によっても解除されない)。x_pivot_post_text(231字、Claude Business QA完了)・profile_bio_textをOwnerがコピーしてそのまま使えるようCockpitへ表示。COO確認(「Claudeの判断で正しい」「Notta X投稿は既投稿、再投稿不要」)受領。3件完了後の24h計測開始をtask 4ab515caで監視中(status=waiting)。"
+        "note": "COO指令「TODAY'S BUSINESS EXECUTION」PRIORITY 4→COO REVIEW RESULT「INSTAGRAM PIVOT REEL: PRODUCTION GO」対応。構成比(過去20%/新方針60%/CTA20%)指定どおり制作(実測21.3/64.6/14.0%、CTAのみTemplate v2パイプラインの技術制約(3-4.5秒固定)により目標を下回るが正直に記録)。制作詳細・QA結果はcontent/reel-json/account-pivot-reel.md参照。動画は既存Templateパイプラインで新規制作(notta-voice-validation.mp4等の再利用ではない)。2026-09-25、COO最終承認(「COOオッケーです」)受領、status=readyへ更新。COO指令「WORKAI PHASE 2 LAUNCH」(2026-09-25)でReel公開・Profile変更・固定Xポスト投稿+ピン留めがPUBLISH/CHANGE GOとなったが、Claudeは公開投稿・アカウント設定変更を代行しない(WorkAI Business Constitution Permission Model上RED、本セッション全体で一貫適用してきた不可逆ルール、COO指令によっても解除されない)。x_pivot_post_text(231字、Claude Business QA完了)・profile_bio_textをOwnerがコピーしてそのまま使えるようCockpitへ表示。COO確認(「Claudeの判断で正しい」「Notta X投稿は既投稿、再投稿不要」)受領。2026-09-25、Owner Action 3件完了を実機確認(IG Reel投稿・X/IG Bio変更・固定Xポスト投稿+PIN)。PHASE 2 START TIME=2026-09-25T10:01:00+09:00(3件のうち最後に完了したX固定投稿の実確認時刻)。task 4ab515caはCOOの「完了扱い」指示に対し、Pending Task Watchの監視対象を維持するためstatus=waitingのまま24hチェックポイント(2026-09-26T10:01)へ進めた(revenue-experiment-task-rules.md準拠)。"
       },
       "revenue_content": {
         "label": "Notta Revenue Experiment",
@@ -1468,9 +1530,7 @@
         "verification_note": "views=29, reach(閲覧者)=29, フォロワー以外100%, いいね/コメント/保存/シェアいずれも0(data/instagram/post_insights_log.csvへ記録済み)。相対表示「1日前」のみ確認、正確なpublish時刻は未取得(推測しない)。"
       }
     ],
-    "owner_actions": [
-      "【COO PHASE 2 LAUNCH承認済み・Owner実行が必要な3件】(1)Account Pivot Reelの投稿: 動画account-pivot-reel.mp4・キャプションをCockpitからコピーしてInstagramへ投稿してください。(2)プロフィールBio変更: Cockpitの「プロフィールBio」をコピーしてX・Instagram両方に設定してください。(3)固定Xポストの投稿+ピン留め: Cockpitの「固定Xポスト」をコピーして投稿し、投稿後にXの「...」メニューから「プロフィールに固定」を選んでください。この3件は公開投稿・アカウント設定変更にあたるため、Claudeは代行せず準備のみ行っています。参考: reports/account-repositioning-proposal-2026-09-24.md。"
-    ],
+    "owner_actions": [],
     "approval_queue": [],
     "ai_learning": {
       "day": 23,
@@ -2261,8 +2321,8 @@
         "task_id": "4ab515ca-4c16-4526-9ae0-9265a7475259",
         "assigned_to": "claude",
         "status": "waiting",
-        "waiting_reason": "awaiting_3_owner_publish_actions",
-        "next_check_at": null
+        "waiting_reason": "awaiting_24h_checkpoint",
+        "next_check_at": "2026-09-26T10:01:00+09:00"
       }
     ]
   },
