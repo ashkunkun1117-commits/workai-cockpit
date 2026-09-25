@@ -52,14 +52,29 @@
           "seq": 2,
           "content": "Day24 X投稿(content/x/day24_post.md)",
           "category": "trust_authority",
-          "status": "draft_qa_complete_awaiting_owner_approval",
-          "note": "Notta Revenue Experiment確定結果(A8クリック2件/CV0/売上0円)を一次根拠とする透明な結果報告。Content Editor作成・Claude Business QA完了(2026-09-24自律Evening Routine)。"
+          "status": "posted",
+          "note": "Notta Revenue Experiment確定結果(A8クリック2件/CV0/売上0円)を一次根拠とする透明な結果報告。Content Editor作成・Claude Business QA完了(2026-09-24自律Evening Routine)。2026-09-25実機確認でX投稿済み(本文完全一致、5いいね)。IGでも同内容Reel投稿済み(reel/DdsAlqFypym/)。"
+        },
+        {
+          "seq": 3,
+          "content": "notta-revenue-v2.mp4 IG投稿",
+          "category": "revenue",
+          "status": "posted",
+          "note": "2026-09-25 Morning Routineが実機確認で新規発見(Owner投稿、2026-09-24 13:03頃、reel/Ddp5nxIxrlJ/、キャプション完全一致)。today.json側にトラッキングタスクが無かったためtask ee95e24bを新規作成、24h/48h/72hを追跡中。"
+        },
+        {
+          "seq": 4,
+          "content": "Account Pivot Reel(content/reel-json/account-pivot-reel.json、IG固定投稿予定)",
+          "category": "trust_authority",
+          "status": "ready_awaiting_owner_post",
+          "note": "COO PRODUCTION GO→最終承認(2026-09-25「COOオッケーです」)済み。owner_actionsへ投稿依頼追加済み、Owner投稿はまだ確認できていない。"
         }
       ],
       "counts_so_far": {
         "reach_awareness": 0,
         "trust_authority": 1,
-        "revenue": 1
+        "revenue": 2,
+        "pending_owner_post": 1
       },
       "note": "この配列はAudience Growth + Revenue Engine開始(2026-09-24)以降に新規・確認された投稿のみを追加する。過去(Day1〜23)の投稿は遡って分類しない(履歴を書き換えない)。10件到達ごとにミックス達成率を振り返る。【COO決定2026-09-24】この比率は目標であり厳格ノルマではない。Proofが弱い場合、比率合わせのためだけに弱い投稿を作らない(優先順位: QUALITY>PROOF>BUSINESS VALUE>MIX RATIO)。"
     },
@@ -87,13 +102,13 @@
     "revenue_contents": [
       {
         "label": "Notta P1/P2実機検証(専門用語×AI日報)",
-        "status": "ready",
+        "status": "posted",
         "video_file": "notta-voice-validation.mp4",
         "caption_text": "Nottaに、建設現場の専門用語10個を聞かせてみました。\n\n結果、正解は6個。\n\n石膏ボードは完璧でしたが、竪穴区画→縦穴加工、防火戸→防火度、見切り材→2キリ材、と3つ誤変換になりました。\n\nじゃあ、この文字起こしをAIに日報化させれば直るのか。試してみました。\n\n不陸あり→振込あり、防火戸→ボーカド。\n\nAI整形後も、誤認識はそのまま原文で残りました。\n\nAIは文章を整えてくれます。でも、元の情報が間違っていたら、綺麗に間違った文章になります。\n\nだから現場では、AIに任せる部分と、人が確認する部分を分けたほうがいいと思っています。\n\n※あくまで今回、Owner本人の肉声で試した実測結果です。Notta全体の性能を評価したものではありません。\n\nNottaが向く仕事・向かない仕事は、プロフィール欄のリンクからnote記事にまとめました。\n\n※記事内にアフィリエイトリンクを含みます。\n\nAIでできる仕事は、AIに。\n#AI仕事研究所 #100日実験 #Notta #議事録効率化 #AIパートナー",
         "x_copy_text": "今回、現場の専門用語10語をNottaに試したところ、6語が完全一致でした。\n石膏ボードは完璧でしたが、「竪穴区画→縦穴加工」「防火戸→防火度」は誤変換に。\n実際の誤変換と、向く仕事・向かない仕事をnoteにまとめました。\nhttps://note.com/workai_lab777/n/nc5ad7e7ef364\n#AI仕事研究所",
-        "x_post_status": "not_posted",
+        "x_post_status": "posted",
         "note_url": "https://note.com/workai_lab777/n/nc5ad7e7ef364",
-        "note": "COO指令「P1/P2 VALIDATION PASS / RENDER: GO」対応。P1+P2を1本のストーリーに統合(COO指令どおり)。Owner本人の肉声によるNotta実機検証(reports/notta-p1-p2-validation-2026-09-21.md)が一次情報。TemplateV2.tsx共有コンポーネントの潜在レイアウトバグ(evidence role bodyボックスの左右衝突)を自己発見・修正。制作詳細はcontent/reel-json/notta-voice-validation.md参照。Cockpit配信機能(複数Revenue Content対応)はCodexへ一部委任、パッチをClaudeがレビュー・適用。X投稿本文(x_copy_text)はCOO指令「COMPLETE X PUBLISH PACKAGE」(2026-09-24)対応、content/x/notta-voice-validation_post.md参照、137字・X標準カウント。"
+        "note": "COO指令「P1/P2 VALIDATION PASS / RENDER: GO」対応。P1+P2を1本のストーリーに統合(COO指令どおり)。Owner本人の肉声によるNotta実機検証(reports/notta-p1-p2-validation-2026-09-21.md)が一次情報。TemplateV2.tsx共有コンポーネントの潜在レイアウトバグ(evidence role bodyボックスの左右衝突)を自己発見・修正。制作詳細はcontent/reel-json/notta-voice-validation.md参照。Cockpit配信機能(複数Revenue Content対応)はCodexへ一部委任、パッチをClaudeがレビュー・適用。X投稿本文(x_copy_text)はCOO指令「COMPLETE X PUBLISH PACKAGE」(2026-09-24)対応、content/x/notta-voice-validation_post.md参照、137字・X標準カウント。2026-09-25実機確認: X投稿済み(2026-09-24 07:53 JST、固定ツイート、status/2102894234219262367、task 56831bad記録)。ただし実際の投稿文はMODIFY後(CTA強化版)ではなくMODIFY前の文面(「実際の誤変換と、」が付く前のバージョン)だった。Ownerが投稿ボタンを押した時点でCockpitの反映タイミングが投稿より後だった可能性がある。投稿済みのため過去の投稿文は書き換えない(捏造回避の原則どおり、x_copy_textは今後の参考用として最新版を保持するに留める)。"
       }
     ],
     "account_pivot_reel": {
@@ -404,9 +419,7 @@
     }
   ],
   "owner_actions": [
-    "【新規・COO最終承認済み】Account Pivot Reel(「自分たちの話」から「あなたの仕事の話」への方針転換)が完成しました。動画はaccount-pivot-reel.mp4、キャプション案はbusiness_progress.account_pivot_reel.caption_textを参照してください(チャットでも送付済み)。Instagram固定投稿として投稿をご検討ください。プロフィールbio・固定Xポストの変更案もreports/account-repositioning-proposal-2026-09-24.mdにまとめてあります(こちらは投稿文面の参考用、実際の変更はOwnerご自身の判断でお願いします)。",
-    "【X COPY + MEDIA READY】Notta P1/P2実機検証Reel、X投稿パッケージが完成しました(CTAをCOOレビューで強化済み)。本文はcontent/x/notta-voice-validation_post.md、動画はnotta-voice-validation.mp4(制作済み)です。お手すきの際にXへ投稿してください(投稿後24hで計測します)。Instagramは投稿済み確認済み(reel/DdkRCRGSdy3/)のため再投稿は不要です。投稿競合を避けるため、他のNotta Revenue Content(notta-fit-boundary.mp4「Nottaの向かない人」)は引き続き見送りです。",
-    "【継続・緊急度低】Xが10日以上ログアウト状態です。お手すきの際に一度ログインしていただけると、(1)上記Notta投稿の実測開始、(2)COO承認済みのTargeted Following候補3件(@himazin_bivar/@yukissense/@tianyezhiz60405)のフォロー実行、の両方が進められます(Claudeは代行できません)。"
+    "【新規・COO最終承認済み】Account Pivot Reel(「自分たちの話」から「あなたの仕事の話」への方針転換)が完成しました。動画はaccount-pivot-reel.mp4、キャプション案はbusiness_progress.account_pivot_reel.caption_textを参照してください(チャットでも送付済み)。Instagram固定投稿として投稿をご検討ください。プロフィールbio・固定Xポストの変更案もreports/account-repositioning-proposal-2026-09-24.mdにまとめてあります(こちらは投稿文面の参考用、実際の変更はOwnerご自身の判断でお願いします)。"
   ],
   "approval_queue": [],
   "ai_learning": {
@@ -586,9 +599,14 @@
     "audience_growth_daily_loop_first_run": "COO指令「TODAY'S BUSINESS EXECUTION」PRIORITY 3対応。reports/audience-growth-daily-loop-2026-09-24.mdへ記録。A: Targeted Following候補7件(3件は本日実機再確認、4件はledgerベース)、@kouya_sns01は大規模フォロー/フォロワー比1:1・宣伝型プロフィールのためRISK判定で除外。B: X検索がログイン必須でブロックされ新規Strategic Reply候補ソース不可(0件、正直に報告、弱い候補の水増しなし)。C: day24_post.md(Trust/Authority、Owner承認待ち)。D: 新規Revenue Content機会なし(Proof未発生、0件)。E: 新規Buzz投稿は作らず、既存notta-voice-validation X投稿文とday24_post.mdをBuzz Candidateとしても扱う。Owner/COOバッチ承認はまだ得ていない(提案段階)。",
     "account_repositioning_proposal": "COO指令「TODAY'S BUSINESS EXECUTION」PRIORITY 4対応。reports/account-repositioning-proposal-2026-09-24.mdへ記録。WHY THIS CHANGEはkpi_daily.csv実データ(X impressions 1桁〜19・Xフォロワー8人・IGフォロワー10→13人・revenue全期間0円)に基づく。Profile bio 3案・固定Xポスト構成案・IG固定投稿/Reel企画案・Revenue接続・将来のリフォーム/リノベ集客資産接続(Owner本人の建築現場実務背景に基づく仮説)を記載。プロフィール変更・投稿はいずれも未実行、COOレビュー待ち。"
   },
+  "owner_session_2026-09-25_findings": {
+    "trigger": "Owner主導の対話セッション。「Xログイン画面までお願いします」の依頼を受けx.com/loginへナビゲート、Owner自身がログイン(Claudeは認証情報を代行していない)。「ログイン完了」報告を受け、x.com/home(投稿コンポーザー・アバター表示)で実機authenticated確認。",
+    "posting_reconciliation": "X認証回復後の実機確認で、Notta X投稿(pinned、2026-09-24 07:53 JST)・Day24 X投稿(本文完全一致)・Day24 IG Reel(reel/DdsAlqFypym/)がいずれもOwnerにより既に投稿済みと判明(自律Morning Routineが同日中に一部先行発見・task 56831bad/ee95e24bへ記録済み)。Notta X投稿の実際の本文はCOO REVIEW RESULTによるMODIFY後のCTA強化版ではなく、MODIFY前のバージョンだった(投稿タイミングとCockpit反映タイミングのズレによるものと推測、断定はしない)。投稿済みのため本文は書き換えず、today.jsonのx_copy_textには最新版を参考情報として保持するのみとした。Account Pivot Reelは未投稿のまま(owner_actions継続)。",
+    "targeted_following_execution": "task 06f3c8d3のGO NOW 3件を実行。@himazin_bivar(新規フォロー、フォロワー573→574)・@yukissense(新規フォロー、相互フォローに、71→72)は実行完了。@tianyezhiz60405は実機確認の結果、workai_lab777の元々の「4フォロー中」に既に含まれていたと判明(重複承認だったが実害なし、新規アクションなし)。結果、workai_lab777のフォロー中は4→6件。RECHECK THEN GO 3件・HOLD 1件は未実行のまま次回に持ち越し。詳細はreports/audience-growth-daily-loop-2026-09-24.mdへ追記済み。"
+  },
   "current_date": "2026-09-25",
   "data_updated_at": "2026-09-25T07:20:00+09:00",
-  "public_updated_at": "2026-09-24T22:42:39.747Z",
+  "public_updated_at": "2026-09-25T00:21:57.985Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -1080,14 +1098,29 @@
             "seq": 2,
             "content": "Day24 X投稿(content/x/day24_post.md)",
             "category": "trust_authority",
-            "status": "draft_qa_complete_awaiting_owner_approval",
-            "note": "Notta Revenue Experiment確定結果(A8クリック2件/CV0/売上0円)を一次根拠とする透明な結果報告。Content Editor作成・Claude Business QA完了(2026-09-24自律Evening Routine)。"
+            "status": "posted",
+            "note": "Notta Revenue Experiment確定結果(A8クリック2件/CV0/売上0円)を一次根拠とする透明な結果報告。Content Editor作成・Claude Business QA完了(2026-09-24自律Evening Routine)。2026-09-25実機確認でX投稿済み(本文完全一致、5いいね)。IGでも同内容Reel投稿済み(reel/DdsAlqFypym/)。"
+          },
+          {
+            "seq": 3,
+            "content": "notta-revenue-v2.mp4 IG投稿",
+            "category": "revenue",
+            "status": "posted",
+            "note": "2026-09-25 Morning Routineが実機確認で新規発見(Owner投稿、2026-09-24 13:03頃、reel/Ddp5nxIxrlJ/、キャプション完全一致)。today.json側にトラッキングタスクが無かったためtask ee95e24bを新規作成、24h/48h/72hを追跡中。"
+          },
+          {
+            "seq": 4,
+            "content": "Account Pivot Reel(content/reel-json/account-pivot-reel.json、IG固定投稿予定)",
+            "category": "trust_authority",
+            "status": "ready_awaiting_owner_post",
+            "note": "COO PRODUCTION GO→最終承認(2026-09-25「COOオッケーです」)済み。owner_actionsへ投稿依頼追加済み、Owner投稿はまだ確認できていない。"
           }
         ],
         "counts_so_far": {
           "reach_awareness": 0,
           "trust_authority": 1,
-          "revenue": 1
+          "revenue": 2,
+          "pending_owner_post": 1
         },
         "note": "この配列はAudience Growth + Revenue Engine開始(2026-09-24)以降に新規・確認された投稿のみを追加する。過去(Day1〜23)の投稿は遡って分類しない(履歴を書き換えない)。10件到達ごとにミックス達成率を振り返る。【COO決定2026-09-24】この比率は目標であり厳格ノルマではない。Proofが弱い場合、比率合わせのためだけに弱い投稿を作らない(優先順位: QUALITY>PROOF>BUSINESS VALUE>MIX RATIO)。"
       },
@@ -1115,13 +1148,13 @@
       "revenue_contents": [
         {
           "label": "Notta P1/P2実機検証(専門用語×AI日報)",
-          "status": "ready",
+          "status": "posted",
           "video_file": "notta-voice-validation.mp4",
           "caption_text": "Nottaに、建設現場の専門用語10個を聞かせてみました。\n\n結果、正解は6個。\n\n石膏ボードは完璧でしたが、竪穴区画→縦穴加工、防火戸→防火度、見切り材→2キリ材、と3つ誤変換になりました。\n\nじゃあ、この文字起こしをAIに日報化させれば直るのか。試してみました。\n\n不陸あり→振込あり、防火戸→ボーカド。\n\nAI整形後も、誤認識はそのまま原文で残りました。\n\nAIは文章を整えてくれます。でも、元の情報が間違っていたら、綺麗に間違った文章になります。\n\nだから現場では、AIに任せる部分と、人が確認する部分を分けたほうがいいと思っています。\n\n※あくまで今回、Owner本人の肉声で試した実測結果です。Notta全体の性能を評価したものではありません。\n\nNottaが向く仕事・向かない仕事は、プロフィール欄のリンクからnote記事にまとめました。\n\n※記事内にアフィリエイトリンクを含みます。\n\nAIでできる仕事は、AIに。\n#AI仕事研究所 #100日実験 #Notta #議事録効率化 #AIパートナー",
           "x_copy_text": "今回、現場の専門用語10語をNottaに試したところ、6語が完全一致でした。\n石膏ボードは完璧でしたが、「竪穴区画→縦穴加工」「防火戸→防火度」は誤変換に。\n実際の誤変換と、向く仕事・向かない仕事をnoteにまとめました。\nhttps://note.com/workai_lab777/n/nc5ad7e7ef364\n#AI仕事研究所",
-          "x_post_status": "not_posted",
+          "x_post_status": "posted",
           "note_url": "https://note.com/workai_lab777/n/nc5ad7e7ef364",
-          "note": "COO指令「P1/P2 VALIDATION PASS / RENDER: GO」対応。P1+P2を1本のストーリーに統合(COO指令どおり)。Owner本人の肉声によるNotta実機検証(reports/notta-p1-p2-validation-2026-09-21.md)が一次情報。TemplateV2.tsx共有コンポーネントの潜在レイアウトバグ(evidence role bodyボックスの左右衝突)を自己発見・修正。制作詳細はcontent/reel-json/notta-voice-validation.md参照。Cockpit配信機能(複数Revenue Content対応)はCodexへ一部委任、パッチをClaudeがレビュー・適用。X投稿本文(x_copy_text)はCOO指令「COMPLETE X PUBLISH PACKAGE」(2026-09-24)対応、content/x/notta-voice-validation_post.md参照、137字・X標準カウント。"
+          "note": "COO指令「P1/P2 VALIDATION PASS / RENDER: GO」対応。P1+P2を1本のストーリーに統合(COO指令どおり)。Owner本人の肉声によるNotta実機検証(reports/notta-p1-p2-validation-2026-09-21.md)が一次情報。TemplateV2.tsx共有コンポーネントの潜在レイアウトバグ(evidence role bodyボックスの左右衝突)を自己発見・修正。制作詳細はcontent/reel-json/notta-voice-validation.md参照。Cockpit配信機能(複数Revenue Content対応)はCodexへ一部委任、パッチをClaudeがレビュー・適用。X投稿本文(x_copy_text)はCOO指令「COMPLETE X PUBLISH PACKAGE」(2026-09-24)対応、content/x/notta-voice-validation_post.md参照、137字・X標準カウント。2026-09-25実機確認: X投稿済み(2026-09-24 07:53 JST、固定ツイート、status/2102894234219262367、task 56831bad記録)。ただし実際の投稿文はMODIFY後(CTA強化版)ではなくMODIFY前の文面(「実際の誤変換と、」が付く前のバージョン)だった。Ownerが投稿ボタンを押した時点でCockpitの反映タイミングが投稿より後だった可能性がある。投稿済みのため過去の投稿文は書き換えない(捏造回避の原則どおり、x_copy_textは今後の参考用として最新版を保持するに留める)。"
         }
       ],
       "account_pivot_reel": {
@@ -1432,9 +1465,7 @@
       }
     ],
     "owner_actions": [
-      "【新規・COO最終承認済み】Account Pivot Reel(「自分たちの話」から「あなたの仕事の話」への方針転換)が完成しました。動画はaccount-pivot-reel.mp4、キャプション案はbusiness_progress.account_pivot_reel.caption_textを参照してください(チャットでも送付済み)。Instagram固定投稿として投稿をご検討ください。プロフィールbio・固定Xポストの変更案もreports/account-repositioning-proposal-2026-09-24.mdにまとめてあります(こちらは投稿文面の参考用、実際の変更はOwnerご自身の判断でお願いします)。",
-      "【X COPY + MEDIA READY】Notta P1/P2実機検証Reel、X投稿パッケージが完成しました(CTAをCOOレビューで強化済み)。本文はcontent/x/notta-voice-validation_post.md、動画はnotta-voice-validation.mp4(制作済み)です。お手すきの際にXへ投稿してください(投稿後24hで計測します)。Instagramは投稿済み確認済み(reel/DdkRCRGSdy3/)のため再投稿は不要です。投稿競合を避けるため、他のNotta Revenue Content(notta-fit-boundary.mp4「Nottaの向かない人」)は引き続き見送りです。",
-      "【継続・緊急度低】Xが10日以上ログアウト状態です。お手すきの際に一度ログインしていただけると、(1)上記Notta投稿の実測開始、(2)COO承認済みのTargeted Following候補3件(@himazin_bivar/@yukissense/@tianyezhiz60405)のフォロー実行、の両方が進められます(Claudeは代行できません)。"
+      "【新規・COO最終承認済み】Account Pivot Reel(「自分たちの話」から「あなたの仕事の話」への方針転換)が完成しました。動画はaccount-pivot-reel.mp4、キャプション案はbusiness_progress.account_pivot_reel.caption_textを参照してください(チャットでも送付済み)。Instagram固定投稿として投稿をご検討ください。プロフィールbio・固定Xポストの変更案もreports/account-repositioning-proposal-2026-09-24.mdにまとめてあります(こちらは投稿文面の参考用、実際の変更はOwnerご自身の判断でお願いします)。"
     ],
     "approval_queue": [],
     "ai_learning": {
@@ -1613,6 +1644,11 @@
       "audience_growth_revenue_engine_adopted": "COO指令「AUDIENCE GROWTH + REVENUE ENGINE」対応。運用を「投稿制作中心」から「Audience Growth Engine + Revenue Engineの同時構築」へ変更(references/audience-growth-revenue-engine.md新規作成、SKILL.md「事前に必ず読む」へ6.7として追加)。Proof Acquisition Mode(2026-09-22)の新規制作停止はこれにより終了(references/proof-acquisition-mode.mdへ終了記録を追記、履歴は書き換えず)。5 Growth Channels・Content Mix(Reach50%/Trust30%/Revenue20%、content_mix_tracker新設)・X Daily Operating Loop・Measurementを採用。Targeted Followingの権限分類はCOO決定「TARGETED FOLLOWING PERMISSION」(2026-09-24)で確定: 完全自律実行は不可、毎日5〜10件の候補(ACCOUNT/CATEGORY/WHY TARGET/WHY NOW/RECENT POST RELEVANCE/FOLLOW+REPLY POSSIBILITY/RISK・LOW-QUALITY SIGNAL)を提示しOwner/COOの日次バッチ承認後に実行(1件ずつの承認は不要)。Content Mixは目標比率でありノルマ化禁止、優先順位QUALITY>PROOF>BUSINESS VALUE>MIX RATIOも確定。",
       "audience_growth_daily_loop_first_run": "COO指令「TODAY'S BUSINESS EXECUTION」PRIORITY 3対応。reports/audience-growth-daily-loop-2026-09-24.mdへ記録。A: Targeted Following候補7件(3件は本日実機再確認、4件はledgerベース)、@kouya_sns01は大規模フォロー/フォロワー比1:1・宣伝型プロフィールのためRISK判定で除外。B: X検索がログイン必須でブロックされ新規Strategic Reply候補ソース不可(0件、正直に報告、弱い候補の水増しなし)。C: day24_post.md(Trust/Authority、Owner承認待ち)。D: 新規Revenue Content機会なし(Proof未発生、0件)。E: 新規Buzz投稿は作らず、既存notta-voice-validation X投稿文とday24_post.mdをBuzz Candidateとしても扱う。Owner/COOバッチ承認はまだ得ていない(提案段階)。",
       "account_repositioning_proposal": "COO指令「TODAY'S BUSINESS EXECUTION」PRIORITY 4対応。reports/account-repositioning-proposal-2026-09-24.mdへ記録。WHY THIS CHANGEはkpi_daily.csv実データ(X impressions 1桁〜19・Xフォロワー8人・IGフォロワー10→13人・revenue全期間0円)に基づく。Profile bio 3案・固定Xポスト構成案・IG固定投稿/Reel企画案・Revenue接続・将来のリフォーム/リノベ集客資産接続(Owner本人の建築現場実務背景に基づく仮説)を記載。プロフィール変更・投稿はいずれも未実行、COOレビュー待ち。"
+    },
+    "owner_session_2026-09-25_findings": {
+      "trigger": "Owner主導の対話セッション。「Xログイン画面までお願いします」の依頼を受けx.com/loginへナビゲート、Owner自身がログイン(Claudeは認証情報を代行していない)。「ログイン完了」報告を受け、x.com/home(投稿コンポーザー・アバター表示)で実機authenticated確認。",
+      "posting_reconciliation": "X認証回復後の実機確認で、Notta X投稿(pinned、2026-09-24 07:53 JST)・Day24 X投稿(本文完全一致)・Day24 IG Reel(reel/DdsAlqFypym/)がいずれもOwnerにより既に投稿済みと判明(自律Morning Routineが同日中に一部先行発見・task 56831bad/ee95e24bへ記録済み)。Notta X投稿の実際の本文はCOO REVIEW RESULTによるMODIFY後のCTA強化版ではなく、MODIFY前のバージョンだった(投稿タイミングとCockpit反映タイミングのズレによるものと推測、断定はしない)。投稿済みのため本文は書き換えず、today.jsonのx_copy_textには最新版を参考情報として保持するのみとした。Account Pivot Reelは未投稿のまま(owner_actions継続)。",
+      "targeted_following_execution": "task 06f3c8d3のGO NOW 3件を実行。@himazin_bivar(新規フォロー、フォロワー573→574)・@yukissense(新規フォロー、相互フォローに、71→72)は実行完了。@tianyezhiz60405は実機確認の結果、workai_lab777の元々の「4フォロー中」に既に含まれていたと判明(重複承認だったが実害なし、新規アクションなし)。結果、workai_lab777のフォロー中は4→6件。RECHECK THEN GO 3件・HOLD 1件は未実行のまま次回に持ち越し。詳細はreports/audience-growth-daily-loop-2026-09-24.mdへ追記済み。"
     }
   },
   "health_inputs": {
@@ -2209,13 +2245,6 @@
         "status": "waiting",
         "waiting_reason": "x_24h_checkpoint_done_awaiting_48h",
         "next_check_at": "2026-09-26T07:53:00+09:00"
-      },
-      {
-        "task_id": "06f3c8d3-9aa1-4cbb-8d3c-e1340483db28",
-        "assigned_to": "claude",
-        "status": "waiting",
-        "waiting_reason": "x_login_required",
-        "next_check_at": null
       },
       {
         "task_id": "ee95e24b-80bc-4195-b418-be6ce8c151d1",
