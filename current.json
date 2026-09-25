@@ -118,7 +118,7 @@
       "caption_text": "約20日間、AIで発信してきました。\n\n正直、リーチはずっと伸び悩んでいました。\nXインプレッション1桁〜19、Xフォロワー8人、IGフォロワーは8日間で10→13人。(2026-09-24時点の実測)\n\nこれから届けるのは、自分たちの実験の裏側ではなく、あなたの仕事をAIでどこまで減らせるか、という話です。これが約束です。\n\n議事録12分→2分半。見積の説明15分→1分。\nうまくいかなかった話も公開します(Notta案件: クリック2件・成約0件)。\n\nあなたの仕事、AIでどう減らせるか。コメントで教えてください。\n\nAIでできる仕事は、AIに。\nDay24/100\n#AI仕事研究所 #100日実験 #個人事業 #AIパートナー",
       "x_pivot_post_text": "これから、AIで「あなたの仕事」をどう減らせるか、実務データで届けます。\n\n議事録12分→2分半。見積の説明15分→1分。\nうまくいかなかった話(Notta案件: クリック2件・成約0件)も、実測のまま公開します。\n\n会社員6年→独立。建築・リフォーム現場の実務経験があります。\n現場の言葉が分かるからこそ、本当に使える・使えないをそのまま伝えます。\n\n「この作業、AIで減らせる?」あなたの実務の悩みをコメントで教えてください。\n\nAIでできる仕事は、AIに。",
       "profile_bio_text": "その仕事、AIでどこまで減らせるか実測。\n議事録12分→2分半｜見積説明15分→1分\n成功も失敗も、実務データで公開します。\n建築・リフォーム実務×AI｜100日で別軸収入0→1",
-      "note": "COO指令「TODAY'S BUSINESS EXECUTION」PRIORITY 4→COO REVIEW RESULT「INSTAGRAM PIVOT REEL: PRODUCTION GO」対応。構成比(過去20%/新方針60%/CTA20%)指定どおり制作(実測21.3/64.6/14.0%、CTAのみTemplate v2パイプラインの技術制約(3-4.5秒固定)により目標を下回るが正直に記録)。制作詳細・QA結果はcontent/reel-json/account-pivot-reel.md参照。動画は既存Templateパイプラインで新規制作(notta-voice-validation.mp4等の再利用ではない)。2026-09-25、COO最終承認(「COOオッケーです」)受領、status=readyへ更新。COO指令「WORKAI PHASE 2 LAUNCH」(2026-09-25)でReel公開・Profile変更・固定Xポスト投稿+ピン留めがPUBLISH/CHANGE GOとなったが、Claudeは公開投稿・アカウント設定変更を代行しない(WorkAI Business Constitution Permission Model上RED、本セッション全体で一貫適用してきた不可逆ルール、COO指令によっても解除されない)。x_pivot_post_text(231字、Claude Business QA完了)・profile_bio_textをOwnerがコピーしてそのまま使えるようCockpitへ表示。"
+      "note": "COO指令「TODAY'S BUSINESS EXECUTION」PRIORITY 4→COO REVIEW RESULT「INSTAGRAM PIVOT REEL: PRODUCTION GO」対応。構成比(過去20%/新方針60%/CTA20%)指定どおり制作(実測21.3/64.6/14.0%、CTAのみTemplate v2パイプラインの技術制約(3-4.5秒固定)により目標を下回るが正直に記録)。制作詳細・QA結果はcontent/reel-json/account-pivot-reel.md参照。動画は既存Templateパイプラインで新規制作(notta-voice-validation.mp4等の再利用ではない)。2026-09-25、COO最終承認(「COOオッケーです」)受領、status=readyへ更新。COO指令「WORKAI PHASE 2 LAUNCH」(2026-09-25)でReel公開・Profile変更・固定Xポスト投稿+ピン留めがPUBLISH/CHANGE GOとなったが、Claudeは公開投稿・アカウント設定変更を代行しない(WorkAI Business Constitution Permission Model上RED、本セッション全体で一貫適用してきた不可逆ルール、COO指令によっても解除されない)。x_pivot_post_text(231字、Claude Business QA完了)・profile_bio_textをOwnerがコピーしてそのまま使えるようCockpitへ表示。COO確認(「Claudeの判断で正しい」「Notta X投稿は既投稿、再投稿不要」)受領。3件完了後の24h計測開始をtask 4ab515caで監視中(status=waiting)。"
     },
     "revenue_content": {
       "label": "Notta Revenue Experiment",
@@ -608,7 +608,7 @@
   },
   "current_date": "2026-09-25",
   "data_updated_at": "2026-09-25T07:20:00+09:00",
-  "public_updated_at": "2026-09-25T00:30:16.898Z",
+  "public_updated_at": "2026-09-25T00:50:18.892Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -1166,7 +1166,7 @@
         "caption_text": "約20日間、AIで発信してきました。\n\n正直、リーチはずっと伸び悩んでいました。\nXインプレッション1桁〜19、Xフォロワー8人、IGフォロワーは8日間で10→13人。(2026-09-24時点の実測)\n\nこれから届けるのは、自分たちの実験の裏側ではなく、あなたの仕事をAIでどこまで減らせるか、という話です。これが約束です。\n\n議事録12分→2分半。見積の説明15分→1分。\nうまくいかなかった話も公開します(Notta案件: クリック2件・成約0件)。\n\nあなたの仕事、AIでどう減らせるか。コメントで教えてください。\n\nAIでできる仕事は、AIに。\nDay24/100\n#AI仕事研究所 #100日実験 #個人事業 #AIパートナー",
         "x_pivot_post_text": "これから、AIで「あなたの仕事」をどう減らせるか、実務データで届けます。\n\n議事録12分→2分半。見積の説明15分→1分。\nうまくいかなかった話(Notta案件: クリック2件・成約0件)も、実測のまま公開します。\n\n会社員6年→独立。建築・リフォーム現場の実務経験があります。\n現場の言葉が分かるからこそ、本当に使える・使えないをそのまま伝えます。\n\n「この作業、AIで減らせる?」あなたの実務の悩みをコメントで教えてください。\n\nAIでできる仕事は、AIに。",
         "profile_bio_text": "その仕事、AIでどこまで減らせるか実測。\n議事録12分→2分半｜見積説明15分→1分\n成功も失敗も、実務データで公開します。\n建築・リフォーム実務×AI｜100日で別軸収入0→1",
-        "note": "COO指令「TODAY'S BUSINESS EXECUTION」PRIORITY 4→COO REVIEW RESULT「INSTAGRAM PIVOT REEL: PRODUCTION GO」対応。構成比(過去20%/新方針60%/CTA20%)指定どおり制作(実測21.3/64.6/14.0%、CTAのみTemplate v2パイプラインの技術制約(3-4.5秒固定)により目標を下回るが正直に記録)。制作詳細・QA結果はcontent/reel-json/account-pivot-reel.md参照。動画は既存Templateパイプラインで新規制作(notta-voice-validation.mp4等の再利用ではない)。2026-09-25、COO最終承認(「COOオッケーです」)受領、status=readyへ更新。COO指令「WORKAI PHASE 2 LAUNCH」(2026-09-25)でReel公開・Profile変更・固定Xポスト投稿+ピン留めがPUBLISH/CHANGE GOとなったが、Claudeは公開投稿・アカウント設定変更を代行しない(WorkAI Business Constitution Permission Model上RED、本セッション全体で一貫適用してきた不可逆ルール、COO指令によっても解除されない)。x_pivot_post_text(231字、Claude Business QA完了)・profile_bio_textをOwnerがコピーしてそのまま使えるようCockpitへ表示。"
+        "note": "COO指令「TODAY'S BUSINESS EXECUTION」PRIORITY 4→COO REVIEW RESULT「INSTAGRAM PIVOT REEL: PRODUCTION GO」対応。構成比(過去20%/新方針60%/CTA20%)指定どおり制作(実測21.3/64.6/14.0%、CTAのみTemplate v2パイプラインの技術制約(3-4.5秒固定)により目標を下回るが正直に記録)。制作詳細・QA結果はcontent/reel-json/account-pivot-reel.md参照。動画は既存Templateパイプラインで新規制作(notta-voice-validation.mp4等の再利用ではない)。2026-09-25、COO最終承認(「COOオッケーです」)受領、status=readyへ更新。COO指令「WORKAI PHASE 2 LAUNCH」(2026-09-25)でReel公開・Profile変更・固定Xポスト投稿+ピン留めがPUBLISH/CHANGE GOとなったが、Claudeは公開投稿・アカウント設定変更を代行しない(WorkAI Business Constitution Permission Model上RED、本セッション全体で一貫適用してきた不可逆ルール、COO指令によっても解除されない)。x_pivot_post_text(231字、Claude Business QA完了)・profile_bio_textをOwnerがコピーしてそのまま使えるようCockpitへ表示。COO確認(「Claudeの判断で正しい」「Notta X投稿は既投稿、再投稿不要」)受領。3件完了後の24h計測開始をtask 4ab515caで監視中(status=waiting)。"
       },
       "revenue_content": {
         "label": "Notta Revenue Experiment",
@@ -2256,6 +2256,13 @@
         "status": "waiting",
         "waiting_reason": "awaiting_24h_checkpoint",
         "next_check_at": "2026-09-25T13:03:00+09:00"
+      },
+      {
+        "task_id": "4ab515ca-4c16-4526-9ae0-9265a7475259",
+        "assigned_to": "claude",
+        "status": "waiting",
+        "waiting_reason": "awaiting_3_owner_publish_actions",
+        "next_check_at": null
       }
     ]
   },
