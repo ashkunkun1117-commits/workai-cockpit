@@ -1,18 +1,20 @@
 {
   "business_day": 24,
   "business_date": "2026-09-25",
-  "generated_at": "2026-09-25T07:20:00+09:00",
+  "generated_at": "2026-09-25T22:40:00+09:00",
   "today": {
     "x_post": {
-      "status": "ready",
+      "status": "completed",
       "text_file": "content/x/day24_post.md",
-      "note": "Day24分。Content Editor作成・Claude Business QA完了(2026-09-24 22:50頃)、COO REVIEW RESULTによりMODIFY済み(2026-09-24)。一次データ: Notta Revenue Experiment確定結果(A8クリック2件/CV0/売上0円、72h超過後も変化なし)。本文195字、X上限280字に収まる。Owner投稿承認待ち。",
+      "url": "https://x.com/workai_lab777/status/2103243641573806310",
+      "note": "2026-09-25 Evening Routine実機確認でOwner投稿済みと判明(本文完全一致、posted約15h前=2026-09-25T07:3x頃JST)。24h未満時点実測: views=15、いいね/返信/リポスト=0。historyへ移動済み。",
       "text": "Nottaのアフィリエイトリンクを直してから4日間の実測です。\n\nクリック2件、成約0件、売上0円。72時間を過ぎても変わらず。\n\nただ、クリック2件ではCVの良し悪しを判断すること自体ができません。\nCVを改善する前に、まずクリックの母数を増やす必要があります。\n\n次は投稿の中身だけでなく、認知・返信・導線も同時に増やして検証します。\n\nAIでできる仕事は、AIに。\nDay24/100"
     },
     "ig_reel": {
-      "status": "ready",
+      "status": "completed",
       "video_file": "day24.mp4",
-      "note": "Day24分。Creative Engineer制作完了(Template v2、Hook Variant B_FAILURE)。ffprobe: h264 1080x1920 30fps 29.833s、AAC音声あり、decode PASS。silencedetect最大ギャップ1.54s(既存許容範囲内)。frame0はOPENING_FRAME_RULES準拠(「クリック2件。成約0件。」中央帯・Day24/100バッジ・フェードインなし、Claude目視確認済み)。evidence欄はA8.net実機確認(task 98ce9bc9)の事実引用として使用、架空の発言・数字なし。Content/instagram/day24_caption.mdとの数字一致もClaude確認済み。Claude Business QA PASS、Owner投稿承認待ち。",
+      "url": "https://www.instagram.com/workai_lab777/reel/DdsAlqFypym/",
+      "note": "2026-09-25 Evening Routine実機確認でOwner投稿済みと判明(キャプション完全一致、posted約14h前=2026-09-25T08:3x頃JST)。実測: views=91, reach=86(フォロワー0%/非フォロワー100%)、いいね/コメント/保存/シェア/プロフィールアクティビティ/フォローいずれも0。historyへ移動済み。",
       "caption_text": "Nottaのアフィリエイトリンクを直してから、4日間の実測結果です。\n\nクリック数:2件\n成約(CV):0件\n売上:0円\n\n72時間を大幅に過ぎても、この数字は変わりませんでした。\n\n正直に言うと、なぜ伸びなかったのか、まだ分かっていません。\nただ、今回はっきり分かったことがあります。\n「クリックされる」ことと「売れる」ことは、別の話だということです。\n\nAI仕事研究所は、AIをうまく使えたことだけを見せるアカウントではありません。\nうまくいかなかったことも、そのまま記録していきます。\n\nNottaを実際に使って分かった「向く仕事・向かない仕事」は、プロフィール欄のリンクから\nnote記事にまとめています。\n※記事内にアフィリエイトリンクを含みます。\n\nAIでできる仕事は、AIに。\nDay 24 / 100\n#AI仕事研究所 #100日実験 #Notta #アフィリエイト実験 #AI活用"
     }
   },
@@ -205,10 +207,34 @@
       "revenue_action_count": 0
     },
     "backyard_health_note": "COO指令「CLOSE TODAY'S BUSINESS LOOP」対応。Market Radar 12/10(reports/research/market_radar_2026-09-20.md)。Deep Analysis 3件(@andymochizuki/@ozge_boyraz46/@akagami_sns)。Strategic Reply候補3件をledger.csvへ追記(未投稿・承認待ち)。Audience Response確認済み(X mentions実機確認、新規未対応メンションなし、既存分は既にApproval Batchでキュー済み)。Revenue Action=0(A8.netログイン未確立が継続、正直にRED。Owner再ログイン待ち)。",
-    "morning_routine_2026-09-25_note": "X実機確認: 明示的ログイン画面表示によりunauthenticated確定(直近記録と一致、conflictedなし)。プロフィールタイムライン(ログイン不要な範囲)は閲覧でき、Notta P1/P2 X投稿(2026-09-24 07:53投稿)を新規発見・reconcile。ledger.csv waiting 8件(@forestkinoko/@narisumashi100/@yukissense/@omuat/@ozge_boyraz46/@andymochizuki/@akagami_sns/@misaki_hennyu)の返信スレッド新着確認は、個別スレッドの返信表示がログインゲートされているためNOT CHECKED(次回Routineへ持ち越し、再ログイン依頼はしない)。IG実機確認: authenticated、フォロワー12人(2026-09-23記録の13人から-1、Reason不明・自然減の可能性、要注視)。IG側でnotta-revenue-v2.mp4の投稿を新規発見・reconcile(24h実測記録・追跡タスクee95e24b新規作成)。"
+    "morning_routine_2026-09-25_note": "X実機確認: 明示的ログイン画面表示によりunauthenticated確定(直近記録と一致、conflictedなし)。プロフィールタイムライン(ログイン不要な範囲)は閲覧でき、Notta P1/P2 X投稿(2026-09-24 07:53投稿)を新規発見・reconcile。ledger.csv waiting 8件(@forestkinoko/@narisumashi100/@yukissense/@omuat/@ozge_boyraz46/@andymochizuki/@akagami_sns/@misaki_hennyu)の返信スレッド新着確認は、個別スレッドの返信表示がログインゲートされているためNOT CHECKED(次回Routineへ持ち越し、再ログイン依頼はしない)。IG実機確認: authenticated、フォロワー12人(2026-09-23記録の13人から-1、Reason不明・自然減の可能性、要注視)。IG側でnotta-revenue-v2.mp4の投稿を新規発見・reconcile(24h実測記録・追跡タスクee95e24b新規作成)。",
+    "evening_routine_2026-09-25_note": "Manual Publish Verification: today.jsonのtop-level today.x_post/ig_reel(Day24分、day24_post.md/day24.mp4)がstatus=readyのまま残留していたが、実機Playwright確認でいずれも既にOwner投稿済み(X: status/2103243641573806310、IG: reel/DdsAlqFypym/)と判明。content_mix_tracker(seq2)には既に反映済みだったが、today表示側の更新漏れがあったため今回reconcile・historyへ移動した。task ee95e24b(notta-revenue-v2.mp4)は次回チェックポイント(13:03)超過後の実質24hチェックを実施(views=60/reach=57、次回48h=2026-09-26T13:03)。X unauthenticated確定継続(11日連続)、ただしプロフィール・個別投稿ページは非ログインで閲覧可能な範囲で確認(固定Xポスト表示37件に増加、IGフォロワー16人でPhase2 4h時点から横ばい)。ledger waiting会話の新規author返信は確認できる範囲で0件(スレッド全体はログインゲートで一部NOT CHECKED)。Phase2 24hチェックポイント(2026-09-26T10:01)まではプロフィール・固定投稿・Pivot系の変更を行わない凍結を継続。kpi_daily.csv Day24行を新規作成(x_posts=2/x_impressions=52/ig_posts=2/ig_reel_views=91/ig_followers=16)。"
   },
   "carryover": [],
   "history": [
+    {
+      "type": "ig_reel",
+      "day": 24,
+      "label": "Day24 Reel(notta-fit-boundary型、「クリック2件。成約0件。」)",
+      "status": "completed",
+      "video_file": "day24.mp4",
+      "url": "https://www.instagram.com/workai_lab777/reel/DdsAlqFypym/",
+      "actual_published_at": null,
+      "verification_source": "実機Playwright確認(workai_lab777、キャプション完全一致、投稿ページ相対表示「14時間前」、2026-09-25 22:33 JST確認、インサイト実測)",
+      "verified_at": "2026-09-25T22:33:00+09:00",
+      "verification_note": "2026-09-25 Evening RoutineのManual Publish VerificationでOwner投稿済みを新規発見(today.jsonはstatus=readyのまま残留していた、content_mix_trackerには既に反映済み)。14h時点実測: views=91, reach(閲覧者)=86(フォロワー0%/非フォロワー100%)、いいね/コメント/保存/シェア/プロフィールアクティビティ/フォローいずれも0(post_insights_log.csvへ記録済み)。"
+    },
+    {
+      "type": "x_post",
+      "day": 24,
+      "label": "Day24 X投稿(Notta Revenue Experiment確定結果の透明な報告)",
+      "status": "completed",
+      "url": "https://x.com/workai_lab777/status/2103243641573806310",
+      "actual_published_at": null,
+      "verification_source": "実機Playwright確認(workai_lab777、本文完全一致、投稿ページ相対表示「15時間前」、2026-09-25 22:31 JST確認)",
+      "verified_at": "2026-09-25T22:31:00+09:00",
+      "verification_note": "2026-09-25 Evening RoutineのManual Publish VerificationでOwner投稿済みを新規発見(today.jsonはstatus=readyのまま残留していた、content_mix_trackerには既に反映済み)。本文はcontent/x/day24_post.mdのFINAL全文と完全一致。15h時点実測: views=15、いいね/返信/リポストいずれも0。"
+    },
     {
       "type": "ig_reel",
       "day": 23,
@@ -664,8 +690,8 @@
     "targeted_following_execution": "task 06f3c8d3のGO NOW 3件を実行。@himazin_bivar(新規フォロー、フォロワー573→574)・@yukissense(新規フォロー、相互フォローに、71→72)は実行完了。@tianyezhiz60405は実機確認の結果、workai_lab777の元々の「4フォロー中」に既に含まれていたと判明(重複承認だったが実害なし、新規アクションなし)。結果、workai_lab777のフォロー中は4→6件。RECHECK THEN GO 3件・HOLD 1件は未実行のまま次回に持ち越し。詳細はreports/audience-growth-daily-loop-2026-09-24.mdへ追記済み。"
   },
   "current_date": "2026-09-25",
-  "data_updated_at": "2026-09-25T07:20:00+09:00",
-  "public_updated_at": "2026-09-25T05:21:24.447Z",
+  "data_updated_at": "2026-09-25T22:40:00+09:00",
+  "public_updated_at": "2026-09-25T13:37:00.426Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -1100,24 +1126,44 @@
         "cost_jpy": null,
         "profit_jpy": null,
         "human_work_minutes": null
+      },
+      {
+        "day": 24,
+        "date": "2026-09-25",
+        "x_posts": 2,
+        "x_impressions": 52,
+        "x_strategic_replies": null,
+        "x_reply_impressions_avg": null,
+        "ig_posts": 2,
+        "ig_reel_views": 91,
+        "ig_followers": 16,
+        "ig_profile_visits": null,
+        "link_clicks": 0,
+        "conversions": 0,
+        "revenue_jpy": 0,
+        "cost_jpy": null,
+        "profit_jpy": null,
+        "human_work_minutes": null
       }
     ]
   },
   "source_manifest": {
     "business_day": 24,
     "business_date": "2026-09-25",
-    "generated_at": "2026-09-25T07:20:00+09:00",
+    "generated_at": "2026-09-25T22:40:00+09:00",
     "today": {
       "x_post": {
-        "status": "ready",
+        "status": "completed",
         "text_file": "content/x/day24_post.md",
-        "note": "Day24分。Content Editor作成・Claude Business QA完了(2026-09-24 22:50頃)、COO REVIEW RESULTによりMODIFY済み(2026-09-24)。一次データ: Notta Revenue Experiment確定結果(A8クリック2件/CV0/売上0円、72h超過後も変化なし)。本文195字、X上限280字に収まる。Owner投稿承認待ち。",
+        "url": "https://x.com/workai_lab777/status/2103243641573806310",
+        "note": "2026-09-25 Evening Routine実機確認でOwner投稿済みと判明(本文完全一致、posted約15h前=2026-09-25T07:3x頃JST)。24h未満時点実測: views=15、いいね/返信/リポスト=0。historyへ移動済み。",
         "text": "Nottaのアフィリエイトリンクを直してから4日間の実測です。\n\nクリック2件、成約0件、売上0円。72時間を過ぎても変わらず。\n\nただ、クリック2件ではCVの良し悪しを判断すること自体ができません。\nCVを改善する前に、まずクリックの母数を増やす必要があります。\n\n次は投稿の中身だけでなく、認知・返信・導線も同時に増やして検証します。\n\nAIでできる仕事は、AIに。\nDay24/100"
       },
       "ig_reel": {
-        "status": "ready",
+        "status": "completed",
         "video_file": "day24.mp4",
-        "note": "Day24分。Creative Engineer制作完了(Template v2、Hook Variant B_FAILURE)。ffprobe: h264 1080x1920 30fps 29.833s、AAC音声あり、decode PASS。silencedetect最大ギャップ1.54s(既存許容範囲内)。frame0はOPENING_FRAME_RULES準拠(「クリック2件。成約0件。」中央帯・Day24/100バッジ・フェードインなし、Claude目視確認済み)。evidence欄はA8.net実機確認(task 98ce9bc9)の事実引用として使用、架空の発言・数字なし。Content/instagram/day24_caption.mdとの数字一致もClaude確認済み。Claude Business QA PASS、Owner投稿承認待ち。",
+        "url": "https://www.instagram.com/workai_lab777/reel/DdsAlqFypym/",
+        "note": "2026-09-25 Evening Routine実機確認でOwner投稿済みと判明(キャプション完全一致、posted約14h前=2026-09-25T08:3x頃JST)。実測: views=91, reach=86(フォロワー0%/非フォロワー100%)、いいね/コメント/保存/シェア/プロフィールアクティビティ/フォローいずれも0。historyへ移動済み。",
         "caption_text": "Nottaのアフィリエイトリンクを直してから、4日間の実測結果です。\n\nクリック数:2件\n成約(CV):0件\n売上:0円\n\n72時間を大幅に過ぎても、この数字は変わりませんでした。\n\n正直に言うと、なぜ伸びなかったのか、まだ分かっていません。\nただ、今回はっきり分かったことがあります。\n「クリックされる」ことと「売れる」ことは、別の話だということです。\n\nAI仕事研究所は、AIをうまく使えたことだけを見せるアカウントではありません。\nうまくいかなかったことも、そのまま記録していきます。\n\nNottaを実際に使って分かった「向く仕事・向かない仕事」は、プロフィール欄のリンクから\nnote記事にまとめています。\n※記事内にアフィリエイトリンクを含みます。\n\nAIでできる仕事は、AIに。\nDay 24 / 100\n#AI仕事研究所 #100日実験 #Notta #アフィリエイト実験 #AI活用"
       }
     },
@@ -1310,10 +1356,34 @@
         "revenue_action_count": 0
       },
       "backyard_health_note": "COO指令「CLOSE TODAY'S BUSINESS LOOP」対応。Market Radar 12/10(reports/research/market_radar_2026-09-20.md)。Deep Analysis 3件(@andymochizuki/@ozge_boyraz46/@akagami_sns)。Strategic Reply候補3件をledger.csvへ追記(未投稿・承認待ち)。Audience Response確認済み(X mentions実機確認、新規未対応メンションなし、既存分は既にApproval Batchでキュー済み)。Revenue Action=0(A8.netログイン未確立が継続、正直にRED。Owner再ログイン待ち)。",
-      "morning_routine_2026-09-25_note": "X実機確認: 明示的ログイン画面表示によりunauthenticated確定(直近記録と一致、conflictedなし)。プロフィールタイムライン(ログイン不要な範囲)は閲覧でき、Notta P1/P2 X投稿(2026-09-24 07:53投稿)を新規発見・reconcile。ledger.csv waiting 8件(@forestkinoko/@narisumashi100/@yukissense/@omuat/@ozge_boyraz46/@andymochizuki/@akagami_sns/@misaki_hennyu)の返信スレッド新着確認は、個別スレッドの返信表示がログインゲートされているためNOT CHECKED(次回Routineへ持ち越し、再ログイン依頼はしない)。IG実機確認: authenticated、フォロワー12人(2026-09-23記録の13人から-1、Reason不明・自然減の可能性、要注視)。IG側でnotta-revenue-v2.mp4の投稿を新規発見・reconcile(24h実測記録・追跡タスクee95e24b新規作成)。"
+      "morning_routine_2026-09-25_note": "X実機確認: 明示的ログイン画面表示によりunauthenticated確定(直近記録と一致、conflictedなし)。プロフィールタイムライン(ログイン不要な範囲)は閲覧でき、Notta P1/P2 X投稿(2026-09-24 07:53投稿)を新規発見・reconcile。ledger.csv waiting 8件(@forestkinoko/@narisumashi100/@yukissense/@omuat/@ozge_boyraz46/@andymochizuki/@akagami_sns/@misaki_hennyu)の返信スレッド新着確認は、個別スレッドの返信表示がログインゲートされているためNOT CHECKED(次回Routineへ持ち越し、再ログイン依頼はしない)。IG実機確認: authenticated、フォロワー12人(2026-09-23記録の13人から-1、Reason不明・自然減の可能性、要注視)。IG側でnotta-revenue-v2.mp4の投稿を新規発見・reconcile(24h実測記録・追跡タスクee95e24b新規作成)。",
+      "evening_routine_2026-09-25_note": "Manual Publish Verification: today.jsonのtop-level today.x_post/ig_reel(Day24分、day24_post.md/day24.mp4)がstatus=readyのまま残留していたが、実機Playwright確認でいずれも既にOwner投稿済み(X: status/2103243641573806310、IG: reel/DdsAlqFypym/)と判明。content_mix_tracker(seq2)には既に反映済みだったが、today表示側の更新漏れがあったため今回reconcile・historyへ移動した。task ee95e24b(notta-revenue-v2.mp4)は次回チェックポイント(13:03)超過後の実質24hチェックを実施(views=60/reach=57、次回48h=2026-09-26T13:03)。X unauthenticated確定継続(11日連続)、ただしプロフィール・個別投稿ページは非ログインで閲覧可能な範囲で確認(固定Xポスト表示37件に増加、IGフォロワー16人でPhase2 4h時点から横ばい)。ledger waiting会話の新規author返信は確認できる範囲で0件(スレッド全体はログインゲートで一部NOT CHECKED)。Phase2 24hチェックポイント(2026-09-26T10:01)まではプロフィール・固定投稿・Pivot系の変更を行わない凍結を継続。kpi_daily.csv Day24行を新規作成(x_posts=2/x_impressions=52/ig_posts=2/ig_reel_views=91/ig_followers=16)。"
     },
     "carryover": [],
     "history": [
+      {
+        "type": "ig_reel",
+        "day": 24,
+        "label": "Day24 Reel(notta-fit-boundary型、「クリック2件。成約0件。」)",
+        "status": "completed",
+        "video_file": "day24.mp4",
+        "url": "https://www.instagram.com/workai_lab777/reel/DdsAlqFypym/",
+        "actual_published_at": null,
+        "verification_source": "実機Playwright確認(workai_lab777、キャプション完全一致、投稿ページ相対表示「14時間前」、2026-09-25 22:33 JST確認、インサイト実測)",
+        "verified_at": "2026-09-25T22:33:00+09:00",
+        "verification_note": "2026-09-25 Evening RoutineのManual Publish VerificationでOwner投稿済みを新規発見(today.jsonはstatus=readyのまま残留していた、content_mix_trackerには既に反映済み)。14h時点実測: views=91, reach(閲覧者)=86(フォロワー0%/非フォロワー100%)、いいね/コメント/保存/シェア/プロフィールアクティビティ/フォローいずれも0(post_insights_log.csvへ記録済み)。"
+      },
+      {
+        "type": "x_post",
+        "day": 24,
+        "label": "Day24 X投稿(Notta Revenue Experiment確定結果の透明な報告)",
+        "status": "completed",
+        "url": "https://x.com/workai_lab777/status/2103243641573806310",
+        "actual_published_at": null,
+        "verification_source": "実機Playwright確認(workai_lab777、本文完全一致、投稿ページ相対表示「15時間前」、2026-09-25 22:31 JST確認)",
+        "verified_at": "2026-09-25T22:31:00+09:00",
+        "verification_note": "2026-09-25 Evening RoutineのManual Publish VerificationでOwner投稿済みを新規発見(today.jsonはstatus=readyのまま残留していた、content_mix_trackerには既に反映済み)。本文はcontent/x/day24_post.mdのFINAL全文と完全一致。15h時点実測: views=15、いいね/返信/リポストいずれも0。"
+      },
       {
         "type": "ig_reel",
         "day": 23,
@@ -2368,8 +2438,8 @@
         "task_id": "ee95e24b-80bc-4195-b418-be6ce8c151d1",
         "assigned_to": "claude",
         "status": "waiting",
-        "waiting_reason": "awaiting_24h_checkpoint",
-        "next_check_at": "2026-09-25T13:03:00+09:00"
+        "waiting_reason": "24h_checkpoint_done_awaiting_48h",
+        "next_check_at": "2026-09-26T13:03:00+09:00"
       },
       {
         "task_id": "4ab515ca-4c16-4526-9ae0-9265a7475259",
