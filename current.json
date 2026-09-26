@@ -1,33 +1,29 @@
 {
-  "business_day": 24,
-  "business_date": "2026-09-25",
-  "generated_at": "2026-09-25T22:40:00+09:00",
+  "business_day": 25,
+  "business_date": "2026-09-26",
+  "generated_at": "2026-09-26T21:30:00+09:00",
   "today": {
     "x_post": {
-      "status": "completed",
-      "text_file": "content/x/day24_post.md",
-      "url": "https://x.com/workai_lab777/status/2103243641573806310",
-      "note": "2026-09-25 Evening Routine実機確認でOwner投稿済みと判明(本文完全一致、posted約15h前=2026-09-25T07:3x頃JST)。24h未満時点実測: views=15、いいね/返信/リポスト=0。historyへ移動済み。",
-      "text": "Nottaのアフィリエイトリンクを直してから4日間の実測です。\n\nクリック2件、成約0件、売上0円。72時間を過ぎても変わらず。\n\nただ、クリック2件ではCVの良し悪しを判断すること自体ができません。\nCVを改善する前に、まずクリックの母数を増やす必要があります。\n\n次は投稿の中身だけでなく、認知・返信・導線も同時に増やして検証します。\n\nAIでできる仕事は、AIに。\nDay24/100"
+      "status": "not_ready",
+      "text_file": null,
+      "note": "Day25分。未着手(Pre-Morning Date Rollover、2026-09-26)。"
     },
     "ig_reel": {
-      "status": "completed",
-      "video_file": "day24.mp4",
-      "url": "https://www.instagram.com/workai_lab777/reel/DdsAlqFypym/",
-      "note": "2026-09-25 Evening Routine実機確認でOwner投稿済みと判明(キャプション完全一致、posted約14h前=2026-09-25T08:3x頃JST)。実測: views=91, reach=86(フォロワー0%/非フォロワー100%)、いいね/コメント/保存/シェア/プロフィールアクティビティ/フォローいずれも0。historyへ移動済み。",
-      "caption_text": "Nottaのアフィリエイトリンクを直してから、4日間の実測結果です。\n\nクリック数:2件\n成約(CV):0件\n売上:0円\n\n72時間を大幅に過ぎても、この数字は変わりませんでした。\n\n正直に言うと、なぜ伸びなかったのか、まだ分かっていません。\nただ、今回はっきり分かったことがあります。\n「クリックされる」ことと「売れる」ことは、別の話だということです。\n\nAI仕事研究所は、AIをうまく使えたことだけを見せるアカウントではありません。\nうまくいかなかったことも、そのまま記録していきます。\n\nNottaを実際に使って分かった「向く仕事・向かない仕事」は、プロフィール欄のリンクから\nnote記事にまとめています。\n※記事内にアフィリエイトリンクを含みます。\n\nAIでできる仕事は、AIに。\nDay 24 / 100\n#AI仕事研究所 #100日実験 #Notta #アフィリエイト実験 #AI活用"
+      "status": "not_ready",
+      "video_file": null,
+      "note": "Day25分。未着手(Pre-Morning Date Rollover、2026-09-26)。"
     }
   },
   "tomorrow": {
     "x_post": {
       "status": "not_ready",
       "text_file": null,
-      "note": "Day25分。未着手。"
+      "note": "Day26分。未着手。"
     },
     "ig_reel": {
       "status": "not_ready",
       "video_file": null,
-      "note": "Day25分。未着手。"
+      "note": "Day26分。未着手。"
     }
   },
   "business_progress": {
@@ -689,9 +685,9 @@
     "posting_reconciliation": "X認証回復後の実機確認で、Notta X投稿(pinned、2026-09-24 07:53 JST)・Day24 X投稿(本文完全一致)・Day24 IG Reel(reel/DdsAlqFypym/)がいずれもOwnerにより既に投稿済みと判明(自律Morning Routineが同日中に一部先行発見・task 56831bad/ee95e24bへ記録済み)。Notta X投稿の実際の本文はCOO REVIEW RESULTによるMODIFY後のCTA強化版ではなく、MODIFY前のバージョンだった(投稿タイミングとCockpit反映タイミングのズレによるものと推測、断定はしない)。投稿済みのため本文は書き換えず、today.jsonのx_copy_textには最新版を参考情報として保持するのみとした。Account Pivot Reelは未投稿のまま(owner_actions継続)。",
     "targeted_following_execution": "task 06f3c8d3のGO NOW 3件を実行。@himazin_bivar(新規フォロー、フォロワー573→574)・@yukissense(新規フォロー、相互フォローに、71→72)は実行完了。@tianyezhiz60405は実機確認の結果、workai_lab777の元々の「4フォロー中」に既に含まれていたと判明(重複承認だったが実害なし、新規アクションなし)。結果、workai_lab777のフォロー中は4→6件。RECHECK THEN GO 3件・HOLD 1件は未実行のまま次回に持ち越し。詳細はreports/audience-growth-daily-loop-2026-09-24.mdへ追記済み。"
   },
-  "current_date": "2026-09-25",
-  "data_updated_at": "2026-09-25T22:40:00+09:00",
-  "public_updated_at": "2026-09-25T13:37:00.426Z",
+  "current_date": "2026-09-26",
+  "data_updated_at": "2026-09-26T21:30:00+09:00",
+  "public_updated_at": "2026-09-26T12:26:18.323Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -1148,35 +1144,31 @@
     ]
   },
   "source_manifest": {
-    "business_day": 24,
-    "business_date": "2026-09-25",
-    "generated_at": "2026-09-25T22:40:00+09:00",
+    "business_day": 25,
+    "business_date": "2026-09-26",
+    "generated_at": "2026-09-26T21:30:00+09:00",
     "today": {
       "x_post": {
-        "status": "completed",
-        "text_file": "content/x/day24_post.md",
-        "url": "https://x.com/workai_lab777/status/2103243641573806310",
-        "note": "2026-09-25 Evening Routine実機確認でOwner投稿済みと判明(本文完全一致、posted約15h前=2026-09-25T07:3x頃JST)。24h未満時点実測: views=15、いいね/返信/リポスト=0。historyへ移動済み。",
-        "text": "Nottaのアフィリエイトリンクを直してから4日間の実測です。\n\nクリック2件、成約0件、売上0円。72時間を過ぎても変わらず。\n\nただ、クリック2件ではCVの良し悪しを判断すること自体ができません。\nCVを改善する前に、まずクリックの母数を増やす必要があります。\n\n次は投稿の中身だけでなく、認知・返信・導線も同時に増やして検証します。\n\nAIでできる仕事は、AIに。\nDay24/100"
+        "status": "not_ready",
+        "text_file": null,
+        "note": "Day25分。未着手(Pre-Morning Date Rollover、2026-09-26)。"
       },
       "ig_reel": {
-        "status": "completed",
-        "video_file": "day24.mp4",
-        "url": "https://www.instagram.com/workai_lab777/reel/DdsAlqFypym/",
-        "note": "2026-09-25 Evening Routine実機確認でOwner投稿済みと判明(キャプション完全一致、posted約14h前=2026-09-25T08:3x頃JST)。実測: views=91, reach=86(フォロワー0%/非フォロワー100%)、いいね/コメント/保存/シェア/プロフィールアクティビティ/フォローいずれも0。historyへ移動済み。",
-        "caption_text": "Nottaのアフィリエイトリンクを直してから、4日間の実測結果です。\n\nクリック数:2件\n成約(CV):0件\n売上:0円\n\n72時間を大幅に過ぎても、この数字は変わりませんでした。\n\n正直に言うと、なぜ伸びなかったのか、まだ分かっていません。\nただ、今回はっきり分かったことがあります。\n「クリックされる」ことと「売れる」ことは、別の話だということです。\n\nAI仕事研究所は、AIをうまく使えたことだけを見せるアカウントではありません。\nうまくいかなかったことも、そのまま記録していきます。\n\nNottaを実際に使って分かった「向く仕事・向かない仕事」は、プロフィール欄のリンクから\nnote記事にまとめています。\n※記事内にアフィリエイトリンクを含みます。\n\nAIでできる仕事は、AIに。\nDay 24 / 100\n#AI仕事研究所 #100日実験 #Notta #アフィリエイト実験 #AI活用"
+        "status": "not_ready",
+        "video_file": null,
+        "note": "Day25分。未着手(Pre-Morning Date Rollover、2026-09-26)。"
       }
     },
     "tomorrow": {
       "x_post": {
         "status": "not_ready",
         "text_file": null,
-        "note": "Day25分。未着手。"
+        "note": "Day26分。未着手。"
       },
       "ig_reel": {
         "status": "not_ready",
         "video_file": null,
-        "note": "Day25分。未着手。"
+        "note": "Day26分。未着手。"
       }
     },
     "business_progress": {
@@ -2410,6 +2402,27 @@
         "exit_code": 0,
         "success": true,
         "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\morning_2026-09-25_070002.log"
+      },
+      {
+        "routine": "evening",
+        "scheduled_at": "2026-09-25T22:30:00",
+        "started_at": "2026-09-25T22:31:00+09:00",
+        "finished_at": "2026-09-25T22:45:00+09:00",
+        "exit_code": 0,
+        "success": true,
+        "invocation": "manual_chat_slash_command",
+        "status": "SUCCESS",
+        "note": "Manual Publish VerificationでtodayのDay24 X投稿・IG Reelがstatus=readyのまま残留(実際は既にOwner投稿済み)と発見・reconcile。X unauthenticated確定継続(11日連続)、IG authenticated。Notta Revenue Reel v2(task ee95e24b)24hチェック実施(views=60/reach=57)、次回48h=2026-09-26T13:03。kpi_daily.csv Day24行新規作成。Phase2 Account Pivot(task 4ab515ca)は24hフリーズ中のため追加チェックせず。ledger waiting9件、確認できる範囲で新規author返信なし。Approval Queue pending=0。Cockpit commit 69fd5bc・push・Deploy検証PASS(current.json generated_at=22:40確認)。",
+        "log_file": null
+      },
+      {
+        "routine": "evening",
+        "scheduled_at": "2026-09-25T22:30:00",
+        "started_at": "2026-09-25T22:30:02",
+        "finished_at": "2026-09-25T22:40:08",
+        "exit_code": 0,
+        "success": true,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\evening_2026-09-25_223002.log"
       }
     ],
     "tasks": [
