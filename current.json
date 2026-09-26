@@ -1,7 +1,7 @@
 {
   "business_day": 25,
   "business_date": "2026-09-26",
-  "generated_at": "2026-09-26T21:30:00+09:00",
+  "generated_at": "2026-09-26T21:34:00+09:00",
   "today": {
     "x_post": {
       "status": "not_ready",
@@ -171,7 +171,42 @@
         },
         "coo_judgment": "COO 4H CHECK JUDGMENT(2026-09-25)でPASS判定。DELTA/BOTTLENECK/NEXT ACTIONは確定しない。IGフォロワー+4・非フォロワーリーチ比率64.7%・X表示22に注目するが、Pivot Reel/Bio/Pin/既存流入のどれが要因か切り分けられないため成功判定は禁止。"
       },
-      "phase2_freeze_until_24h": "COO 4H CHECK JUDGMENT指令(2026-09-25)により2026-09-26T10:01 JSTの24hチェックポイントまで凍結: プロフィール再変更禁止・固定投稿の差し替え禁止・Pivot系の追加投稿禁止・Phase 2の大きな導線変更禁止。通常の自然な返信・会話・フォローは可。",
+      "phase2_freeze_until_24h": "解除済み(2026-09-26 Morning Routine、task 4ab515caで24H REVIEW正式提出完了)。旧凍結内容: COO 4H CHECK JUDGMENT指令(2026-09-25)により2026-09-26T10:01 JSTの24hチェックポイントまで凍結: プロフィール再変更禁止・固定投稿の差し替え禁止・Pivot系の追加投稿禁止・Phase 2の大きな導線変更禁止。通常の自然な返信・会話・フォローは可。",
+      "phase2_24h_review": {
+        "checked_at": "2026-09-26T21:30:00+09:00",
+        "elapsed_hours_approx": 35.5,
+        "baseline": {
+          "ig_followers": 12,
+          "ig_following": 9,
+          "x_followers": 8,
+          "x_following": 6,
+          "x_pivot_post_impressions": 7,
+          "a8_clicks": 2,
+          "a8_cv": 0,
+          "a8_revenue_jpy": 0
+        },
+        "result": {
+          "ig_followers": 17,
+          "ig_following": 10,
+          "x_followers": 7,
+          "x_following": 6,
+          "x_pivot_post_impressions": 39,
+          "ig_reel_views": 28,
+          "ig_reel_viewers": 25,
+          "ig_reel_follower_pct": 25,
+          "ig_reel_non_follower_pct": 75,
+          "ig_reel_likes": 0,
+          "ig_reel_comments": 0,
+          "ig_reel_saves": 0,
+          "ig_reel_shares": 0,
+          "ig_reel_follows_from_post": 0,
+          "ig_reel_profile_activity": 0,
+          "a8_note": "DATA UNAVAILABLE(A8.net unauthenticated継続のため前回値のまま未更新)"
+        },
+        "delta_note": "IGフォロワー+5・フォロー中+1。Xフォロワー-1(純減)。X Pivot投稿表示+32。Reel自体のいいね/コメント/保存/シェア/プロフィールアクティビティ/フォローはすべて0。",
+        "bottleneck_note": "リーチ(views/impressions)はあるが行動系指標(saves/shares/follows/profile activity)がAccount Pivot Reel・Notta v2 Reelの2本連続で0。IGフォロワー増がPivot施策由来かStrategic Reply等の他要因由来かは切り分け不可。Xはフォロワー純減でPivot文脈がプラスに働いた証拠なし。",
+        "next_action_note": "明確な成功シグナルが無いため追加投資はせず、通常のAudience Growth + Revenue Engine運用へ復帰。「行動系指標0が続く場合の次の一手」をCOO判断論点として提示。"
+      },
       "caption_text": "約20日間、AIで発信してきました。\n\n正直、リーチはずっと伸び悩んでいました。\nXインプレッション1桁〜19、Xフォロワー8人、IGフォロワーは8日間で10→13人。(2026-09-24時点の実測)\n\nこれから届けるのは、自分たちの実験の裏側ではなく、あなたの仕事をAIでどこまで減らせるか、という話です。これが約束です。\n\n議事録12分→2分半。見積の説明15分→1分。\nうまくいかなかった話も公開します(Notta案件: クリック2件・成約0件)。\n\nあなたの仕事、AIでどう減らせるか。コメントで教えてください。\n\nAIでできる仕事は、AIに。\nDay24/100\n#AI仕事研究所 #100日実験 #個人事業 #AIパートナー",
       "x_pivot_post_text": "これから、AIで「あなたの仕事」をどう減らせるか、実務データで届けます。\n\n議事録12分→2分半。見積の説明15分→1分。\nうまくいかなかった話(Notta案件: クリック2件・成約0件)も、実測のまま公開します。\n\n会社員6年→独立。建築・リフォーム現場の実務経験があります。\n現場の言葉が分かるからこそ、本当に使える・使えないをそのまま伝えます。\n\n「この作業、AIで減らせる?」あなたの実務の悩みをコメントで教えてください。\n\nAIでできる仕事は、AIに。",
       "profile_bio_text": "その仕事、AIでどこまで減らせるか実測。\n議事録12分→2分半｜見積説明15分→1分\n成功も失敗も、実務データで公開します。\n建築・リフォーム実務×AI｜100日で別軸収入0→1",
@@ -204,7 +239,8 @@
     },
     "backyard_health_note": "COO指令「CLOSE TODAY'S BUSINESS LOOP」対応。Market Radar 12/10(reports/research/market_radar_2026-09-20.md)。Deep Analysis 3件(@andymochizuki/@ozge_boyraz46/@akagami_sns)。Strategic Reply候補3件をledger.csvへ追記(未投稿・承認待ち)。Audience Response確認済み(X mentions実機確認、新規未対応メンションなし、既存分は既にApproval Batchでキュー済み)。Revenue Action=0(A8.netログイン未確立が継続、正直にRED。Owner再ログイン待ち)。",
     "morning_routine_2026-09-25_note": "X実機確認: 明示的ログイン画面表示によりunauthenticated確定(直近記録と一致、conflictedなし)。プロフィールタイムライン(ログイン不要な範囲)は閲覧でき、Notta P1/P2 X投稿(2026-09-24 07:53投稿)を新規発見・reconcile。ledger.csv waiting 8件(@forestkinoko/@narisumashi100/@yukissense/@omuat/@ozge_boyraz46/@andymochizuki/@akagami_sns/@misaki_hennyu)の返信スレッド新着確認は、個別スレッドの返信表示がログインゲートされているためNOT CHECKED(次回Routineへ持ち越し、再ログイン依頼はしない)。IG実機確認: authenticated、フォロワー12人(2026-09-23記録の13人から-1、Reason不明・自然減の可能性、要注視)。IG側でnotta-revenue-v2.mp4の投稿を新規発見・reconcile(24h実測記録・追跡タスクee95e24b新規作成)。",
-    "evening_routine_2026-09-25_note": "Manual Publish Verification: today.jsonのtop-level today.x_post/ig_reel(Day24分、day24_post.md/day24.mp4)がstatus=readyのまま残留していたが、実機Playwright確認でいずれも既にOwner投稿済み(X: status/2103243641573806310、IG: reel/DdsAlqFypym/)と判明。content_mix_tracker(seq2)には既に反映済みだったが、today表示側の更新漏れがあったため今回reconcile・historyへ移動した。task ee95e24b(notta-revenue-v2.mp4)は次回チェックポイント(13:03)超過後の実質24hチェックを実施(views=60/reach=57、次回48h=2026-09-26T13:03)。X unauthenticated確定継続(11日連続)、ただしプロフィール・個別投稿ページは非ログインで閲覧可能な範囲で確認(固定Xポスト表示37件に増加、IGフォロワー16人でPhase2 4h時点から横ばい)。ledger waiting会話の新規author返信は確認できる範囲で0件(スレッド全体はログインゲートで一部NOT CHECKED)。Phase2 24hチェックポイント(2026-09-26T10:01)まではプロフィール・固定投稿・Pivot系の変更を行わない凍結を継続。kpi_daily.csv Day24行を新規作成(x_posts=2/x_impressions=52/ig_posts=2/ig_reel_views=91/ig_followers=16)。"
+    "evening_routine_2026-09-25_note": "Manual Publish Verification: today.jsonのtop-level today.x_post/ig_reel(Day24分、day24_post.md/day24.mp4)がstatus=readyのまま残留していたが、実機Playwright確認でいずれも既にOwner投稿済み(X: status/2103243641573806310、IG: reel/DdsAlqFypym/)と判明。content_mix_tracker(seq2)には既に反映済みだったが、today表示側の更新漏れがあったため今回reconcile・historyへ移動した。task ee95e24b(notta-revenue-v2.mp4)は次回チェックポイント(13:03)超過後の実質24hチェックを実施(views=60/reach=57、次回48h=2026-09-26T13:03)。X unauthenticated確定継続(11日連続)、ただしプロフィール・個別投稿ページは非ログインで閲覧可能な範囲で確認(固定Xポスト表示37件に増加、IGフォロワー16人でPhase2 4h時点から横ばい)。ledger waiting会話の新規author返信は確認できる範囲で0件(スレッド全体はログインゲートで一部NOT CHECKED)。Phase2 24hチェックポイント(2026-09-26T10:01)まではプロフィール・固定投稿・Pivot系の変更を行わない凍結を継続。kpi_daily.csv Day24行を新規作成(x_posts=2/x_impressions=52/ig_posts=2/ig_reel_views=91/ig_followers=16)。",
+    "morning_routine_2026-09-26_note": "予定(05:45/07:00)とも自動発火せず、Owner手動呼び出し(21:2x JST)で実行(Missed Routine Coalescing判定によりSUPERSEDED該当なしと判断、通常フル実行)。X実機確認: unauthenticated確定(ログイン画面へ明示リダイレクト、12日連続)、プロフィールページのみ閲覧可能(フォロワー7人・フォロー中6人、baseline8人から純減)。IG実機確認: authenticated(フォロワー17人、+1)。Day25 X投稿・Reelとも未着手(not_ready、正直表示)、新規投稿なしを確認。X Conversation Routine: ledger waiting 8件のうち7件は個別に返信スレッドを実機確認(forestkinoko/yukissense/omuat/ozge_boyraz46/andymochizuki/akagami_sns/misaki_hennyu)、新規author返信0件。narisumashi100は元投稿が37件返信の大規模スレッドのため深追いせず今回NOT CHECKED(次回優先確認)。Approval Batch該当なし。Revenue Experiment 3件のOVERDUEチェックポイントをすべて実施: task 56831bad(X48h、views27)・task ee95e24b(48h、views60/reach58横ばい)は次回72hへ、task 4ab515ca(Phase2 24H REVIEW)は正式提出・done化・フリーズ解除(phase2_24h_review参照、行動系指標が2Reel連続0という弱いシグナルをCOO論点として記録)。A8.net等の外部収益確認は本日未実施(A8継続unauthenticated、Claude代行不可のため据え置き)。"
   },
   "carryover": [],
   "history": [
@@ -686,8 +722,8 @@
     "targeted_following_execution": "task 06f3c8d3のGO NOW 3件を実行。@himazin_bivar(新規フォロー、フォロワー573→574)・@yukissense(新規フォロー、相互フォローに、71→72)は実行完了。@tianyezhiz60405は実機確認の結果、workai_lab777の元々の「4フォロー中」に既に含まれていたと判明(重複承認だったが実害なし、新規アクションなし)。結果、workai_lab777のフォロー中は4→6件。RECHECK THEN GO 3件・HOLD 1件は未実行のまま次回に持ち越し。詳細はreports/audience-growth-daily-loop-2026-09-24.mdへ追記済み。"
   },
   "current_date": "2026-09-26",
-  "data_updated_at": "2026-09-26T21:30:00+09:00",
-  "public_updated_at": "2026-09-26T12:26:18.323Z",
+  "data_updated_at": "2026-09-26T21:34:00+09:00",
+  "public_updated_at": "2026-09-26T12:34:49.046Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -1140,13 +1176,31 @@
         "cost_jpy": null,
         "profit_jpy": null,
         "human_work_minutes": null
+      },
+      {
+        "day": 25,
+        "date": "2026-09-26",
+        "x_posts": 0,
+        "x_impressions": null,
+        "x_strategic_replies": null,
+        "x_reply_impressions_avg": null,
+        "ig_posts": 0,
+        "ig_reel_views": null,
+        "ig_followers": 17,
+        "ig_profile_visits": null,
+        "link_clicks": null,
+        "conversions": null,
+        "revenue_jpy": null,
+        "cost_jpy": null,
+        "profit_jpy": null,
+        "human_work_minutes": null
       }
     ]
   },
   "source_manifest": {
     "business_day": 25,
     "business_date": "2026-09-26",
-    "generated_at": "2026-09-26T21:30:00+09:00",
+    "generated_at": "2026-09-26T21:34:00+09:00",
     "today": {
       "x_post": {
         "status": "not_ready",
@@ -1316,7 +1370,42 @@
           },
           "coo_judgment": "COO 4H CHECK JUDGMENT(2026-09-25)でPASS判定。DELTA/BOTTLENECK/NEXT ACTIONは確定しない。IGフォロワー+4・非フォロワーリーチ比率64.7%・X表示22に注目するが、Pivot Reel/Bio/Pin/既存流入のどれが要因か切り分けられないため成功判定は禁止。"
         },
-        "phase2_freeze_until_24h": "COO 4H CHECK JUDGMENT指令(2026-09-25)により2026-09-26T10:01 JSTの24hチェックポイントまで凍結: プロフィール再変更禁止・固定投稿の差し替え禁止・Pivot系の追加投稿禁止・Phase 2の大きな導線変更禁止。通常の自然な返信・会話・フォローは可。",
+        "phase2_freeze_until_24h": "解除済み(2026-09-26 Morning Routine、task 4ab515caで24H REVIEW正式提出完了)。旧凍結内容: COO 4H CHECK JUDGMENT指令(2026-09-25)により2026-09-26T10:01 JSTの24hチェックポイントまで凍結: プロフィール再変更禁止・固定投稿の差し替え禁止・Pivot系の追加投稿禁止・Phase 2の大きな導線変更禁止。通常の自然な返信・会話・フォローは可。",
+        "phase2_24h_review": {
+          "checked_at": "2026-09-26T21:30:00+09:00",
+          "elapsed_hours_approx": 35.5,
+          "baseline": {
+            "ig_followers": 12,
+            "ig_following": 9,
+            "x_followers": 8,
+            "x_following": 6,
+            "x_pivot_post_impressions": 7,
+            "a8_clicks": 2,
+            "a8_cv": 0,
+            "a8_revenue_jpy": 0
+          },
+          "result": {
+            "ig_followers": 17,
+            "ig_following": 10,
+            "x_followers": 7,
+            "x_following": 6,
+            "x_pivot_post_impressions": 39,
+            "ig_reel_views": 28,
+            "ig_reel_viewers": 25,
+            "ig_reel_follower_pct": 25,
+            "ig_reel_non_follower_pct": 75,
+            "ig_reel_likes": 0,
+            "ig_reel_comments": 0,
+            "ig_reel_saves": 0,
+            "ig_reel_shares": 0,
+            "ig_reel_follows_from_post": 0,
+            "ig_reel_profile_activity": 0,
+            "a8_note": "DATA UNAVAILABLE(A8.net unauthenticated継続のため前回値のまま未更新)"
+          },
+          "delta_note": "IGフォロワー+5・フォロー中+1。Xフォロワー-1(純減)。X Pivot投稿表示+32。Reel自体のいいね/コメント/保存/シェア/プロフィールアクティビティ/フォローはすべて0。",
+          "bottleneck_note": "リーチ(views/impressions)はあるが行動系指標(saves/shares/follows/profile activity)がAccount Pivot Reel・Notta v2 Reelの2本連続で0。IGフォロワー増がPivot施策由来かStrategic Reply等の他要因由来かは切り分け不可。Xはフォロワー純減でPivot文脈がプラスに働いた証拠なし。",
+          "next_action_note": "明確な成功シグナルが無いため追加投資はせず、通常のAudience Growth + Revenue Engine運用へ復帰。「行動系指標0が続く場合の次の一手」をCOO判断論点として提示。"
+        },
         "caption_text": "約20日間、AIで発信してきました。\n\n正直、リーチはずっと伸び悩んでいました。\nXインプレッション1桁〜19、Xフォロワー8人、IGフォロワーは8日間で10→13人。(2026-09-24時点の実測)\n\nこれから届けるのは、自分たちの実験の裏側ではなく、あなたの仕事をAIでどこまで減らせるか、という話です。これが約束です。\n\n議事録12分→2分半。見積の説明15分→1分。\nうまくいかなかった話も公開します(Notta案件: クリック2件・成約0件)。\n\nあなたの仕事、AIでどう減らせるか。コメントで教えてください。\n\nAIでできる仕事は、AIに。\nDay24/100\n#AI仕事研究所 #100日実験 #個人事業 #AIパートナー",
         "x_pivot_post_text": "これから、AIで「あなたの仕事」をどう減らせるか、実務データで届けます。\n\n議事録12分→2分半。見積の説明15分→1分。\nうまくいかなかった話(Notta案件: クリック2件・成約0件)も、実測のまま公開します。\n\n会社員6年→独立。建築・リフォーム現場の実務経験があります。\n現場の言葉が分かるからこそ、本当に使える・使えないをそのまま伝えます。\n\n「この作業、AIで減らせる?」あなたの実務の悩みをコメントで教えてください。\n\nAIでできる仕事は、AIに。",
         "profile_bio_text": "その仕事、AIでどこまで減らせるか実測。\n議事録12分→2分半｜見積説明15分→1分\n成功も失敗も、実務データで公開します。\n建築・リフォーム実務×AI｜100日で別軸収入0→1",
@@ -1349,7 +1438,8 @@
       },
       "backyard_health_note": "COO指令「CLOSE TODAY'S BUSINESS LOOP」対応。Market Radar 12/10(reports/research/market_radar_2026-09-20.md)。Deep Analysis 3件(@andymochizuki/@ozge_boyraz46/@akagami_sns)。Strategic Reply候補3件をledger.csvへ追記(未投稿・承認待ち)。Audience Response確認済み(X mentions実機確認、新規未対応メンションなし、既存分は既にApproval Batchでキュー済み)。Revenue Action=0(A8.netログイン未確立が継続、正直にRED。Owner再ログイン待ち)。",
       "morning_routine_2026-09-25_note": "X実機確認: 明示的ログイン画面表示によりunauthenticated確定(直近記録と一致、conflictedなし)。プロフィールタイムライン(ログイン不要な範囲)は閲覧でき、Notta P1/P2 X投稿(2026-09-24 07:53投稿)を新規発見・reconcile。ledger.csv waiting 8件(@forestkinoko/@narisumashi100/@yukissense/@omuat/@ozge_boyraz46/@andymochizuki/@akagami_sns/@misaki_hennyu)の返信スレッド新着確認は、個別スレッドの返信表示がログインゲートされているためNOT CHECKED(次回Routineへ持ち越し、再ログイン依頼はしない)。IG実機確認: authenticated、フォロワー12人(2026-09-23記録の13人から-1、Reason不明・自然減の可能性、要注視)。IG側でnotta-revenue-v2.mp4の投稿を新規発見・reconcile(24h実測記録・追跡タスクee95e24b新規作成)。",
-      "evening_routine_2026-09-25_note": "Manual Publish Verification: today.jsonのtop-level today.x_post/ig_reel(Day24分、day24_post.md/day24.mp4)がstatus=readyのまま残留していたが、実機Playwright確認でいずれも既にOwner投稿済み(X: status/2103243641573806310、IG: reel/DdsAlqFypym/)と判明。content_mix_tracker(seq2)には既に反映済みだったが、today表示側の更新漏れがあったため今回reconcile・historyへ移動した。task ee95e24b(notta-revenue-v2.mp4)は次回チェックポイント(13:03)超過後の実質24hチェックを実施(views=60/reach=57、次回48h=2026-09-26T13:03)。X unauthenticated確定継続(11日連続)、ただしプロフィール・個別投稿ページは非ログインで閲覧可能な範囲で確認(固定Xポスト表示37件に増加、IGフォロワー16人でPhase2 4h時点から横ばい)。ledger waiting会話の新規author返信は確認できる範囲で0件(スレッド全体はログインゲートで一部NOT CHECKED)。Phase2 24hチェックポイント(2026-09-26T10:01)まではプロフィール・固定投稿・Pivot系の変更を行わない凍結を継続。kpi_daily.csv Day24行を新規作成(x_posts=2/x_impressions=52/ig_posts=2/ig_reel_views=91/ig_followers=16)。"
+      "evening_routine_2026-09-25_note": "Manual Publish Verification: today.jsonのtop-level today.x_post/ig_reel(Day24分、day24_post.md/day24.mp4)がstatus=readyのまま残留していたが、実機Playwright確認でいずれも既にOwner投稿済み(X: status/2103243641573806310、IG: reel/DdsAlqFypym/)と判明。content_mix_tracker(seq2)には既に反映済みだったが、today表示側の更新漏れがあったため今回reconcile・historyへ移動した。task ee95e24b(notta-revenue-v2.mp4)は次回チェックポイント(13:03)超過後の実質24hチェックを実施(views=60/reach=57、次回48h=2026-09-26T13:03)。X unauthenticated確定継続(11日連続)、ただしプロフィール・個別投稿ページは非ログインで閲覧可能な範囲で確認(固定Xポスト表示37件に増加、IGフォロワー16人でPhase2 4h時点から横ばい)。ledger waiting会話の新規author返信は確認できる範囲で0件(スレッド全体はログインゲートで一部NOT CHECKED)。Phase2 24hチェックポイント(2026-09-26T10:01)まではプロフィール・固定投稿・Pivot系の変更を行わない凍結を継続。kpi_daily.csv Day24行を新規作成(x_posts=2/x_impressions=52/ig_posts=2/ig_reel_views=91/ig_followers=16)。",
+      "morning_routine_2026-09-26_note": "予定(05:45/07:00)とも自動発火せず、Owner手動呼び出し(21:2x JST)で実行(Missed Routine Coalescing判定によりSUPERSEDED該当なしと判断、通常フル実行)。X実機確認: unauthenticated確定(ログイン画面へ明示リダイレクト、12日連続)、プロフィールページのみ閲覧可能(フォロワー7人・フォロー中6人、baseline8人から純減)。IG実機確認: authenticated(フォロワー17人、+1)。Day25 X投稿・Reelとも未着手(not_ready、正直表示)、新規投稿なしを確認。X Conversation Routine: ledger waiting 8件のうち7件は個別に返信スレッドを実機確認(forestkinoko/yukissense/omuat/ozge_boyraz46/andymochizuki/akagami_sns/misaki_hennyu)、新規author返信0件。narisumashi100は元投稿が37件返信の大規模スレッドのため深追いせず今回NOT CHECKED(次回優先確認)。Approval Batch該当なし。Revenue Experiment 3件のOVERDUEチェックポイントをすべて実施: task 56831bad(X48h、views27)・task ee95e24b(48h、views60/reach58横ばい)は次回72hへ、task 4ab515ca(Phase2 24H REVIEW)は正式提出・done化・フリーズ解除(phase2_24h_review参照、行動系指標が2Reel連続0という弱いシグナルをCOO論点として記録)。A8.net等の外部収益確認は本日未実施(A8継続unauthenticated、Claude代行不可のため据え置き)。"
     },
     "carryover": [],
     "history": [
@@ -2423,6 +2513,27 @@
         "exit_code": 0,
         "success": true,
         "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\evening_2026-09-25_223002.log"
+      },
+      {
+        "routine": "premorning",
+        "scheduled_at": "2026-09-26T05:45:00",
+        "started_at": "2026-09-26T21:25:00+09:00",
+        "finished_at": "2026-09-26T21:32:00+09:00",
+        "exit_code": 0,
+        "success": true,
+        "invocation": "manual_chat_slash_command",
+        "status": "MORNING_READY",
+        "note": "Date Rollover実施: today.json/CockpitともDay24/2026-09-25→Day25/2026-09-26へ更新。当日05:45/07:00とも自動発火なし(routine_scheduler.logに2026-09-26分の記録が本呼び出し以前は存在せず、原因未調査)。Revenue Experimentタスク3件(56831bad/ee95e24b/4ab515ca)next_check_at超過でOVERDUEだがPre-Morningスコープ外のため今回は対応せず次Routineへ持ち越し。Approval Queue pending=0。Cockpit commit 354fff2・push・Deploy検証PASS(current.json business_day=25・current_date=2026-09-26確認)。",
+        "log_file": null
+      },
+      {
+        "routine": "premorning",
+        "scheduled_at": "2026-09-26T05:45:00",
+        "started_at": "2026-09-26T21:24:19",
+        "finished_at": "2026-09-26T21:28:26",
+        "exit_code": 0,
+        "success": true,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\premorning_2026-09-26_212419.log"
       }
     ],
     "tasks": [
@@ -2444,22 +2555,15 @@
         "task_id": "56831bad-f74d-4839-a6ea-cfaf3adc5be1",
         "assigned_to": "claude",
         "status": "waiting",
-        "waiting_reason": "x_24h_checkpoint_done_awaiting_48h",
-        "next_check_at": "2026-09-26T07:53:00+09:00"
+        "waiting_reason": "x_48h_checkpoint_done_awaiting_72h",
+        "next_check_at": "2026-09-27T07:53:00+09:00"
       },
       {
         "task_id": "ee95e24b-80bc-4195-b418-be6ce8c151d1",
         "assigned_to": "claude",
         "status": "waiting",
-        "waiting_reason": "24h_checkpoint_done_awaiting_48h",
-        "next_check_at": "2026-09-26T13:03:00+09:00"
-      },
-      {
-        "task_id": "4ab515ca-4c16-4526-9ae0-9265a7475259",
-        "assigned_to": "claude",
-        "status": "waiting",
-        "waiting_reason": "awaiting_24h_checkpoint",
-        "next_check_at": "2026-09-26T10:01:00+09:00"
+        "waiting_reason": "48h_checkpoint_done_awaiting_72h",
+        "next_check_at": "2026-09-27T13:03:00+09:00"
       }
     ]
   },
