@@ -16,14 +16,15 @@
   },
   "tomorrow": {
     "x_post": {
-      "status": "not_ready",
-      "text_file": null,
-      "note": "Day26分。未着手。"
+      "status": "draft",
+      "text_file": "content/x/day26_post_draft.md",
+      "note": "Day26分。Content Editor作成(2026-09-26 Evening Routine)。Reach/Awarenessカテゴリ(直近5投稿がTrust3/Revenue2に偏っていたため)。Account Pivot Reel 24hレビュー実測(リーチ増・行動系指標0が2本連続)を一次根拠とする。候補A/B、Claude Business QA完了。Owner投稿承認待ち・レンダリング不要。",
+      "text": null
     },
     "ig_reel": {
-      "status": "not_ready",
+      "status": "script_draft",
       "video_file": null,
-      "note": "Day26分。未着手。"
+      "note": "Day26分。content/reel-json/day26_reach_awareness_story.md(hook/problem/result/learning/CTA構成・ナレーション案・キャプション下書き)完成、Claude Business QA完了。JSON化・VOICEVOX音声合成・Remotionレンダリングは未着手(Creative Engineer引き継ぎ待ち)。"
     }
   },
   "business_progress": {
@@ -240,6 +241,7 @@
     "backyard_health_note": "COO指令「CLOSE TODAY'S BUSINESS LOOP」対応。Market Radar 12/10(reports/research/market_radar_2026-09-20.md)。Deep Analysis 3件(@andymochizuki/@ozge_boyraz46/@akagami_sns)。Strategic Reply候補3件をledger.csvへ追記(未投稿・承認待ち)。Audience Response確認済み(X mentions実機確認、新規未対応メンションなし、既存分は既にApproval Batchでキュー済み)。Revenue Action=0(A8.netログイン未確立が継続、正直にRED。Owner再ログイン待ち)。",
     "morning_routine_2026-09-25_note": "X実機確認: 明示的ログイン画面表示によりunauthenticated確定(直近記録と一致、conflictedなし)。プロフィールタイムライン(ログイン不要な範囲)は閲覧でき、Notta P1/P2 X投稿(2026-09-24 07:53投稿)を新規発見・reconcile。ledger.csv waiting 8件(@forestkinoko/@narisumashi100/@yukissense/@omuat/@ozge_boyraz46/@andymochizuki/@akagami_sns/@misaki_hennyu)の返信スレッド新着確認は、個別スレッドの返信表示がログインゲートされているためNOT CHECKED(次回Routineへ持ち越し、再ログイン依頼はしない)。IG実機確認: authenticated、フォロワー12人(2026-09-23記録の13人から-1、Reason不明・自然減の可能性、要注視)。IG側でnotta-revenue-v2.mp4の投稿を新規発見・reconcile(24h実測記録・追跡タスクee95e24b新規作成)。",
     "evening_routine_2026-09-25_note": "Manual Publish Verification: today.jsonのtop-level today.x_post/ig_reel(Day24分、day24_post.md/day24.mp4)がstatus=readyのまま残留していたが、実機Playwright確認でいずれも既にOwner投稿済み(X: status/2103243641573806310、IG: reel/DdsAlqFypym/)と判明。content_mix_tracker(seq2)には既に反映済みだったが、today表示側の更新漏れがあったため今回reconcile・historyへ移動した。task ee95e24b(notta-revenue-v2.mp4)は次回チェックポイント(13:03)超過後の実質24hチェックを実施(views=60/reach=57、次回48h=2026-09-26T13:03)。X unauthenticated確定継続(11日連続)、ただしプロフィール・個別投稿ページは非ログインで閲覧可能な範囲で確認(固定Xポスト表示37件に増加、IGフォロワー16人でPhase2 4h時点から横ばい)。ledger waiting会話の新規author返信は確認できる範囲で0件(スレッド全体はログインゲートで一部NOT CHECKED)。Phase2 24hチェックポイント(2026-09-26T10:01)まではプロフィール・固定投稿・Pivot系の変更を行わない凍結を継続。kpi_daily.csv Day24行を新規作成(x_posts=2/x_impressions=52/ig_posts=2/ig_reel_views=91/ig_followers=16)。",
+    "evening_routine_2026-09-26_note": "Missed Routine Coalescing判定: 同日Morning Routineが直前(21:26-21:37)に完全実行済み(X/IG実機確認・Manual Publish Verification・Revenue Experiment 3件のOVERDUEチェックすべて完了)だったため、Eveningでの重複ライブブラウザ確認は行わず(状態変化なしのため非生産的)、Evening固有の役割であるNext Day先行準備に集中した。Content Editorへ委任しDay26 X投稿下書き(content/x/day26_post_draft.md、候補A/B)とReel台本(content/reel-json/day26_reach_awareness_story.md、hook/problem/result/learning/CTA構成)を作成、Claude Business QA完了(一次データのみ使用・誇張なし・similarity risk無し)。Content Mix実績(直近5投稿Trust3/Revenue2/Reach0)の偏りを埋めるためReach/Awarenessカテゴリを選択。Account Pivot Reel 24hレビュー(リーチ増・行動系指標2本連続0)を正直に扱う内容。Product Signal新規0件、Approval Batch該当なし(ledger新規author返信は本日Morning時点で0件、再確認は次回Routineへ)。Revenue確認: A8.net継続unauthenticated、DATA UNAVAILABLE変化なし。today.json tomorrow.x_post/ig_reelをdraft/script_draftへ更新。",
     "morning_routine_2026-09-26_note": "予定(05:45/07:00)とも自動発火せず、Owner手動呼び出し(21:2x JST)で実行(Missed Routine Coalescing判定によりSUPERSEDED該当なしと判断、通常フル実行)。X実機確認: unauthenticated確定(ログイン画面へ明示リダイレクト、12日連続)、プロフィールページのみ閲覧可能(フォロワー7人・フォロー中6人、baseline8人から純減)。IG実機確認: authenticated(フォロワー17人、+1)。Day25 X投稿・Reelとも未着手(not_ready、正直表示)、新規投稿なしを確認。X Conversation Routine: ledger waiting 8件のうち7件は個別に返信スレッドを実機確認(forestkinoko/yukissense/omuat/ozge_boyraz46/andymochizuki/akagami_sns/misaki_hennyu)、新規author返信0件。narisumashi100は元投稿が37件返信の大規模スレッドのため深追いせず今回NOT CHECKED(次回優先確認)。Approval Batch該当なし。Revenue Experiment 3件のOVERDUEチェックポイントをすべて実施: task 56831bad(X48h、views27)・task ee95e24b(48h、views60/reach58横ばい)は次回72hへ、task 4ab515ca(Phase2 24H REVIEW)は正式提出・done化・フリーズ解除(phase2_24h_review参照、行動系指標が2Reel連続0という弱いシグナルをCOO論点として記録)。A8.net等の外部収益確認は本日未実施(A8継続unauthenticated、Claude代行不可のため据え置き)。"
   },
   "carryover": [],
@@ -723,7 +725,7 @@
   },
   "current_date": "2026-09-26",
   "data_updated_at": "2026-09-26T21:34:00+09:00",
-  "public_updated_at": "2026-09-26T12:34:49.046Z",
+  "public_updated_at": "2026-09-26T13:36:01.997Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -1215,14 +1217,15 @@
     },
     "tomorrow": {
       "x_post": {
-        "status": "not_ready",
-        "text_file": null,
-        "note": "Day26分。未着手。"
+        "status": "draft",
+        "text_file": "content/x/day26_post_draft.md",
+        "note": "Day26分。Content Editor作成(2026-09-26 Evening Routine)。Reach/Awarenessカテゴリ(直近5投稿がTrust3/Revenue2に偏っていたため)。Account Pivot Reel 24hレビュー実測(リーチ増・行動系指標0が2本連続)を一次根拠とする。候補A/B、Claude Business QA完了。Owner投稿承認待ち・レンダリング不要。",
+        "text": null
       },
       "ig_reel": {
-        "status": "not_ready",
+        "status": "script_draft",
         "video_file": null,
-        "note": "Day26分。未着手。"
+        "note": "Day26分。content/reel-json/day26_reach_awareness_story.md(hook/problem/result/learning/CTA構成・ナレーション案・キャプション下書き)完成、Claude Business QA完了。JSON化・VOICEVOX音声合成・Remotionレンダリングは未着手(Creative Engineer引き継ぎ待ち)。"
       }
     },
     "business_progress": {
@@ -1439,6 +1442,7 @@
       "backyard_health_note": "COO指令「CLOSE TODAY'S BUSINESS LOOP」対応。Market Radar 12/10(reports/research/market_radar_2026-09-20.md)。Deep Analysis 3件(@andymochizuki/@ozge_boyraz46/@akagami_sns)。Strategic Reply候補3件をledger.csvへ追記(未投稿・承認待ち)。Audience Response確認済み(X mentions実機確認、新規未対応メンションなし、既存分は既にApproval Batchでキュー済み)。Revenue Action=0(A8.netログイン未確立が継続、正直にRED。Owner再ログイン待ち)。",
       "morning_routine_2026-09-25_note": "X実機確認: 明示的ログイン画面表示によりunauthenticated確定(直近記録と一致、conflictedなし)。プロフィールタイムライン(ログイン不要な範囲)は閲覧でき、Notta P1/P2 X投稿(2026-09-24 07:53投稿)を新規発見・reconcile。ledger.csv waiting 8件(@forestkinoko/@narisumashi100/@yukissense/@omuat/@ozge_boyraz46/@andymochizuki/@akagami_sns/@misaki_hennyu)の返信スレッド新着確認は、個別スレッドの返信表示がログインゲートされているためNOT CHECKED(次回Routineへ持ち越し、再ログイン依頼はしない)。IG実機確認: authenticated、フォロワー12人(2026-09-23記録の13人から-1、Reason不明・自然減の可能性、要注視)。IG側でnotta-revenue-v2.mp4の投稿を新規発見・reconcile(24h実測記録・追跡タスクee95e24b新規作成)。",
       "evening_routine_2026-09-25_note": "Manual Publish Verification: today.jsonのtop-level today.x_post/ig_reel(Day24分、day24_post.md/day24.mp4)がstatus=readyのまま残留していたが、実機Playwright確認でいずれも既にOwner投稿済み(X: status/2103243641573806310、IG: reel/DdsAlqFypym/)と判明。content_mix_tracker(seq2)には既に反映済みだったが、today表示側の更新漏れがあったため今回reconcile・historyへ移動した。task ee95e24b(notta-revenue-v2.mp4)は次回チェックポイント(13:03)超過後の実質24hチェックを実施(views=60/reach=57、次回48h=2026-09-26T13:03)。X unauthenticated確定継続(11日連続)、ただしプロフィール・個別投稿ページは非ログインで閲覧可能な範囲で確認(固定Xポスト表示37件に増加、IGフォロワー16人でPhase2 4h時点から横ばい)。ledger waiting会話の新規author返信は確認できる範囲で0件(スレッド全体はログインゲートで一部NOT CHECKED)。Phase2 24hチェックポイント(2026-09-26T10:01)まではプロフィール・固定投稿・Pivot系の変更を行わない凍結を継続。kpi_daily.csv Day24行を新規作成(x_posts=2/x_impressions=52/ig_posts=2/ig_reel_views=91/ig_followers=16)。",
+      "evening_routine_2026-09-26_note": "Missed Routine Coalescing判定: 同日Morning Routineが直前(21:26-21:37)に完全実行済み(X/IG実機確認・Manual Publish Verification・Revenue Experiment 3件のOVERDUEチェックすべて完了)だったため、Eveningでの重複ライブブラウザ確認は行わず(状態変化なしのため非生産的)、Evening固有の役割であるNext Day先行準備に集中した。Content Editorへ委任しDay26 X投稿下書き(content/x/day26_post_draft.md、候補A/B)とReel台本(content/reel-json/day26_reach_awareness_story.md、hook/problem/result/learning/CTA構成)を作成、Claude Business QA完了(一次データのみ使用・誇張なし・similarity risk無し)。Content Mix実績(直近5投稿Trust3/Revenue2/Reach0)の偏りを埋めるためReach/Awarenessカテゴリを選択。Account Pivot Reel 24hレビュー(リーチ増・行動系指標2本連続0)を正直に扱う内容。Product Signal新規0件、Approval Batch該当なし(ledger新規author返信は本日Morning時点で0件、再確認は次回Routineへ)。Revenue確認: A8.net継続unauthenticated、DATA UNAVAILABLE変化なし。today.json tomorrow.x_post/ig_reelをdraft/script_draftへ更新。",
       "morning_routine_2026-09-26_note": "予定(05:45/07:00)とも自動発火せず、Owner手動呼び出し(21:2x JST)で実行(Missed Routine Coalescing判定によりSUPERSEDED該当なしと判断、通常フル実行)。X実機確認: unauthenticated確定(ログイン画面へ明示リダイレクト、12日連続)、プロフィールページのみ閲覧可能(フォロワー7人・フォロー中6人、baseline8人から純減)。IG実機確認: authenticated(フォロワー17人、+1)。Day25 X投稿・Reelとも未着手(not_ready、正直表示)、新規投稿なしを確認。X Conversation Routine: ledger waiting 8件のうち7件は個別に返信スレッドを実機確認(forestkinoko/yukissense/omuat/ozge_boyraz46/andymochizuki/akagami_sns/misaki_hennyu)、新規author返信0件。narisumashi100は元投稿が37件返信の大規模スレッドのため深追いせず今回NOT CHECKED(次回優先確認)。Approval Batch該当なし。Revenue Experiment 3件のOVERDUEチェックポイントをすべて実施: task 56831bad(X48h、views27)・task ee95e24b(48h、views60/reach58横ばい)は次回72hへ、task 4ab515ca(Phase2 24H REVIEW)は正式提出・done化・フリーズ解除(phase2_24h_review参照、行動系指標が2Reel連続0という弱いシグナルをCOO論点として記録)。A8.net等の外部収益確認は本日未実施(A8継続unauthenticated、Claude代行不可のため据え置き)。"
     },
     "carryover": [],
