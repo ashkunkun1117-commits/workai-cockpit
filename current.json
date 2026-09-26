@@ -1,7 +1,7 @@
 {
   "business_day": 26,
   "business_date": "2026-09-27",
-  "generated_at": "2026-09-27T07:10:00+09:00",
+  "generated_at": "2026-09-27T07:20:00+09:00",
   "today": {
     "x_post": {
       "status": "draft",
@@ -10,9 +10,9 @@
       "text": null
     },
     "ig_reel": {
-      "status": "script_draft",
-      "video_file": null,
-      "note": "Day26分。content/reel-json/day26_reach_awareness_story.md(hook/problem/result/learning/CTA構成・ナレーション案・キャプション下書き)完成、Claude Business QA完了。JSON化・VOICEVOX音声合成・Remotionレンダリングは未着手(Creative Engineer引き継ぎ待ち)。Pre-Morning(2026-09-27)ではレンダリングの新規着手は行わない(軽量ルーティン、Morning/Codex handoff判断へ委ねる)。"
+      "status": "ready",
+      "video_file": "day26.mp4",
+      "note": "Day26分。2026-09-27 Morning RoutineでCreative Engineerがレンダリング完了(content/reel-json/day26.json新規作成、VOICEVOX音声合成、remotion-video/out/day26.mp4・day26-cover.png出力、尺35.35秒)。Claude Business QA完了(frame0/OPENING_FRAME_RULES準拠、一次データ照合PASS)。**注意**: hookの「35時間」は2026-09-26 21:30時点のスナップショット(phase2_24h_review)であり、投稿が遅れるほど実態とずれる。詳細はcontent/reel-json/day26_reach_awareness_story.mdのClaude Business QAセクション参照。"
     }
   },
   "tomorrow": {
@@ -541,7 +541,10 @@
       "verification_note": "views=29, reach(閲覧者)=29, フォロワー以外100%, いいね/コメント/保存/シェアいずれも0(data/instagram/post_insights_log.csvへ記録済み)。相対表示「1日前」のみ確認、正確なpublish時刻は未取得(推測しない)。"
     }
   ],
-  "owner_actions": [],
+  "owner_actions": [
+    "Day26 X投稿(content/x/day26_post_draft.md)を確認し、内容がよければ公式Xアプリから投稿してください。",
+    "Day26 Reel(remotion-video/out/day26.mp4)を確認し、よければ公式Instagramアプリから投稿してください。hookの「35時間」は2026-09-26 21:30時点のスナップショットのため、投稿が遅れるほど数字が実態とずれます。可能であれば本日中の投稿を推奨します。"
+  ],
   "approval_queue": [],
   "ai_learning": {
     "day": 23,
@@ -726,8 +729,8 @@
     "targeted_following_execution": "task 06f3c8d3のGO NOW 3件を実行。@himazin_bivar(新規フォロー、フォロワー573→574)・@yukissense(新規フォロー、相互フォローに、71→72)は実行完了。@tianyezhiz60405は実機確認の結果、workai_lab777の元々の「4フォロー中」に既に含まれていたと判明(重複承認だったが実害なし、新規アクションなし)。結果、workai_lab777のフォロー中は4→6件。RECHECK THEN GO 3件・HOLD 1件は未実行のまま次回に持ち越し。詳細はreports/audience-growth-daily-loop-2026-09-24.mdへ追記済み。"
   },
   "current_date": "2026-09-27",
-  "data_updated_at": "2026-09-27T07:10:00+09:00",
-  "public_updated_at": "2026-09-26T22:04:35.717Z",
+  "data_updated_at": "2026-09-27T07:20:00+09:00",
+  "public_updated_at": "2026-09-26T22:18:15.161Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -1204,7 +1207,7 @@
   "source_manifest": {
     "business_day": 26,
     "business_date": "2026-09-27",
-    "generated_at": "2026-09-27T07:10:00+09:00",
+    "generated_at": "2026-09-27T07:20:00+09:00",
     "today": {
       "x_post": {
         "status": "draft",
@@ -1213,9 +1216,9 @@
         "text": null
       },
       "ig_reel": {
-        "status": "script_draft",
-        "video_file": null,
-        "note": "Day26分。content/reel-json/day26_reach_awareness_story.md(hook/problem/result/learning/CTA構成・ナレーション案・キャプション下書き)完成、Claude Business QA完了。JSON化・VOICEVOX音声合成・Remotionレンダリングは未着手(Creative Engineer引き継ぎ待ち)。Pre-Morning(2026-09-27)ではレンダリングの新規着手は行わない(軽量ルーティン、Morning/Codex handoff判断へ委ねる)。"
+        "status": "ready",
+        "video_file": "day26.mp4",
+        "note": "Day26分。2026-09-27 Morning RoutineでCreative Engineerがレンダリング完了(content/reel-json/day26.json新規作成、VOICEVOX音声合成、remotion-video/out/day26.mp4・day26-cover.png出力、尺35.35秒)。Claude Business QA完了(frame0/OPENING_FRAME_RULES準拠、一次データ照合PASS)。**注意**: hookの「35時間」は2026-09-26 21:30時点のスナップショット(phase2_24h_review)であり、投稿が遅れるほど実態とずれる。詳細はcontent/reel-json/day26_reach_awareness_story.mdのClaude Business QAセクション参照。"
       }
     },
     "tomorrow": {
@@ -1744,7 +1747,10 @@
         "verification_note": "views=29, reach(閲覧者)=29, フォロワー以外100%, いいね/コメント/保存/シェアいずれも0(data/instagram/post_insights_log.csvへ記録済み)。相対表示「1日前」のみ確認、正確なpublish時刻は未取得(推測しない)。"
       }
     ],
-    "owner_actions": [],
+    "owner_actions": [
+      "Day26 X投稿(content/x/day26_post_draft.md)を確認し、内容がよければ公式Xアプリから投稿してください。",
+      "Day26 Reel(remotion-video/out/day26.mp4)を確認し、よければ公式Instagramアプリから投稿してください。hookの「35時間」は2026-09-26 21:30時点のスナップショットのため、投稿が遅れるほど数字が実態とずれます。可能であれば本日中の投稿を推奨します。"
+    ],
     "approval_queue": [],
     "ai_learning": {
       "day": 23,
@@ -2562,6 +2568,18 @@
         "exit_code": 0,
         "success": true,
         "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\premorning_2026-09-27_054502.log"
+      },
+      {
+        "routine": "morning",
+        "scheduled_at": "2026-09-27T07:00:00",
+        "started_at": "2026-09-27T07:00:39+09:00",
+        "finished_at": "2026-09-27T07:07:26+09:00",
+        "exit_code": 0,
+        "success": true,
+        "invocation": "manual_chat_slash_command",
+        "status": "SUCCESS",
+        "note": "Missed Routine Coalescing: 2026-09-27分Morning記録なし、直前premorning(05:45)成功済みのみのためSUPERSEDED非該当、通常フル実行。X unauthenticated確定(14日連続、home/検索/個別スレッドいずれも明示的ログイン画面リダイレクト)。プロフィールのみ閲覧可能でフォロワー7人・フォロー中6人・固定Pivotポスト表示39・Day24投稿表示27、いずれも前回9/26 21:26確認と同値(変化なし)。IG authenticated、フォロワー17人・フォロー中10人で変化なし、新規投稿なし。Manual Publish Verification: carryover空、reconcile不要。X Conversation Routine: ログインゲートによりledger waiting行の新着返信確認・新規Strategic Reply候補検索(x.com/search)とも実施不可、正直にNOT CHECKED(Owner再ログイン依頼はしない)。Targeted Following候補は直近投稿の実データ確認ができないため捏造回避のため本日見送り。Revenue Experiment: task 56831bad(next_check_at 07:53)・task ee95e24b(next_check_at 13:03)いずれも未到来、OVERDUEなし。GREEN Execution: Day26 IG Reel(台本完成済み)のJSON化・VOICEVOX・Remotionレンダリングをcreative-engineerへバックグラウンド委任(実行中、完了は別途確認)。today.json更新・Cockpit再生成、commit 4328249・push・Deploy検証PASS(Pages build built・commit一致、live current.json generated_at=07:10確認)。Approval Queue pending該当なし。",
+        "log_file": null
       }
     ],
     "tasks": [
@@ -2698,6 +2716,22 @@
       "hook_type_planned": "B_FAILURE",
       "hook_type_actual": "B_FAILURE",
       "theme": "Notta A8アフィリエイト実験: クリック2件・成約0件(2026-09-20クリック計測修正後4日間実測、72時間経過後も変化なし)",
+      "reel_url": "",
+      "posted": "false",
+      "views": "",
+      "avg_watch_pct": "",
+      "likes": "",
+      "saves": "",
+      "shares": "",
+      "profile_visits": "",
+      "follows": ""
+    },
+    {
+      "day": "26",
+      "date": "2026-09-27",
+      "hook_type_planned": "B_FAILURE",
+      "hook_type_actual": "B_FAILURE",
+      "theme": "リーチは伸びた、でも行動は動かない35時間の話(Reach/Awareness Organic Post)",
       "reel_url": "",
       "posted": "false",
       "views": "",
