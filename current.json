@@ -117,10 +117,10 @@
       },
       {
         "label": "Notta専門用語精度 Part2(HIGH-1/Set3-B、未公開6語編)",
-        "status": "produced_awaiting_coo_review",
+        "status": "produced_awaiting_coo_review_v2",
         "video_file": "notta-accuracy-part2.mp4",
         "caption_text": "前回出してない6語だけ。\n\n現場用語10語をNottaに聞かせたら、完全一致は6語でした。\n\n今回、Owner本人の肉声で試しました。\n\nALCと下地補強は正確に認識。一方でLGSには余分な言葉が付き、巾木は読みだけカタカナ化されました。\n\n正しく聞き取れた言葉も、少しズレた言葉も、Nottaは同じトーンでそのまま返してきます。自分で見分けるまでは違いが分かりません。\n\nシンプルな専門用語中心の記録には向いていそうですが、複合語や同音異義語が多い現場では、最後の確認は必要そうです。\n\n※あくまで今回、Owner本人の肉声で試した実測結果です。Nottaの全体的な精度を評価したものではありません。\n\n実際に使って分かった向く仕事・向かない仕事は、プロフィール欄のリンクからnote記事にまとめました。\n\n※記事内にアフィリエイトリンクを含みます。\n\nAIでできる仕事は、AIに。\n#AI仕事研究所 #100日実験 #Notta #議事録効率化 #AIパートナー",
-        "note": "COO FINAL SCRIPT REVIEW(2026-09-27)で「FINAL PASS」「QA→PRODUCTION GO」判定。SCRIPT v3(HOOK/Evidence/Insight/Action/CTAすべてLOCK)のままTemplate v2でPRODUCTION実施: prepare-template-v2-voice.mjs --synthesize(VOICEVOX青山龍星、speed_scale最大1.12、危険域2.2未満)→render-template-v2.mjs --voice。最終MP4: remotion-video/out/notta-accuracy-part2.mp4(30.841秒、1080x1920、h264 30fps+AAC、ffprobe実測)。独立QA結果: ストリーム検証PASS(nb_frames=925=timing.totalFrames一致)、decode検証PASS(ffmpeg -xerror)、cover_exact_decoded_frame0 PASS、cta_visually_separated_and_3to4sec PASS(4.00秒)、core_insight_longest PASS。全6シーンのframe画像を目視確認、文字欠け・キャラクター重なりなし、Evidence表記(ALC→ALC✅/下地補強→下地を補強✅/LGS→LGSスタジオ△/巾木→ハバキ△)がnarration/on-screen/報告書と完全一致、tentative wording維持を確認。silencedetect実測: 最大無音3.74秒(core_insightシーン末尾、importance-weighted pacingの構造的トレードオフ。過去のnotta-revenue-v2の前例3.20秒・notta-voice-validationの2.06秒より長め。Evidence/Insight/Action/CTAはLOCK指定のためテキスト変更で調整せず、この数値のまま正直にCOOへ報告する)。secondary_changes: SCRIPT v2/v3で記録済みのHOOK wording change以外、PRODUCTION段階での追加変更なし(新しい事実・数字・主張の追加なし)。note CTAは既存公開済みnote記事(https://note.com/workai_lab777/n/nc5ad7e7ef364)を再利用する想定(新Evidence4語もnote記事の既存結論=向く仕事/向かない仕事と矛盾しないため。note記事へこの4語を追記するかはCOO/Owner判断、Reel公開のブロッカーではない)。disclosure: IGキャプション末尾に「※記事内にアフィリエイトリンクを含みます。」明記(既存パターン踏襲)。X copy文字数は簡易計測で重み付き約208(X上限280、t.co分23込み概算、実際の投稿前にX編集画面での最終確認を推奨)。Render後、投稿はいずれも未実施。workai-cockpitへMP4配信済み。",
+        "note": "COO FINAL PRODUCTION REVIEW(2026-09-27)で「MODIFY — PRODUCTION PACING ONLY」判定。silencedetect実測の最大無音3.74秒(core_insightシーン末尾)が長すぎると指摘、テキスト/主張/ナレーション変更禁止、core_insight scene durationの短縮またはtiming調整で解消、importance-weighted pacingのscene floorを局所的にoverride可、との指示。content/reel-json/notta-accuracy-part2.jsonへscene_duration_overrides:{core_insight:4.9}を追加(narration/evidence/importance等のテキストは無変更)、render-template-v2.mjsとprepare-template-v2-voice.mjsにopt-inのローカルオーバーライド機構を追加(このフィールドを持たない既存Reelは無影響、56/56テストPASS維持)。1回目の再レンダリングでvideo側のみ短縮した結果、TemplateV2.tsxが単一連続音声トラック設計のためvideo/audio desyncが発生したことを自己発見・修正(音声WAVもprepare-template-v2-voice.mjs側で新しいslot長を反映して再生成)。最終結果: MP4 28.249秒(video/audio同期、nb_frames=847一致)、max silence 1.36秒(target≤1.5秒・推奨~1.0秒をクリア、内訳core_insight末尾1.12秒+動画末尾CTAの自然な余韻1.36秒)、CTA尺4.00秒維持、Evidence表記(ALC/下地補強/LGS/巾木)は無変更。core_insight_longestはfalse(オーバーライドの意図した結果、検証ロジックも実態を正しく反映するよう修正済み)。6シーン全frame再目視、文字欠け・重なりなし。workai-cockpitへ配信済み(v1ファイルを上書き)。投稿はまだ実施していない。",
         "x_copy_text": "前回出してない6語だけ見せます。\n現場用語10語をNottaに試したところ、完全一致は6語でした。\nALC・下地補強は正確、LGSと巾木は少しズレました。\n向く仕事・向かない仕事はnoteに。\nhttps://note.com/workai_lab777/n/nc5ad7e7ef364\n#AI仕事研究所"
       }
     ],
@@ -746,7 +746,7 @@
   },
   "current_date": "2026-09-27",
   "data_updated_at": "2026-09-27T07:20:00+09:00",
-  "public_updated_at": "2026-09-27T12:08:12.509Z",
+  "public_updated_at": "2026-09-27T13:01:16.811Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -1339,10 +1339,10 @@
         },
         {
           "label": "Notta専門用語精度 Part2(HIGH-1/Set3-B、未公開6語編)",
-          "status": "produced_awaiting_coo_review",
+          "status": "produced_awaiting_coo_review_v2",
           "video_file": "notta-accuracy-part2.mp4",
           "caption_text": "前回出してない6語だけ。\n\n現場用語10語をNottaに聞かせたら、完全一致は6語でした。\n\n今回、Owner本人の肉声で試しました。\n\nALCと下地補強は正確に認識。一方でLGSには余分な言葉が付き、巾木は読みだけカタカナ化されました。\n\n正しく聞き取れた言葉も、少しズレた言葉も、Nottaは同じトーンでそのまま返してきます。自分で見分けるまでは違いが分かりません。\n\nシンプルな専門用語中心の記録には向いていそうですが、複合語や同音異義語が多い現場では、最後の確認は必要そうです。\n\n※あくまで今回、Owner本人の肉声で試した実測結果です。Nottaの全体的な精度を評価したものではありません。\n\n実際に使って分かった向く仕事・向かない仕事は、プロフィール欄のリンクからnote記事にまとめました。\n\n※記事内にアフィリエイトリンクを含みます。\n\nAIでできる仕事は、AIに。\n#AI仕事研究所 #100日実験 #Notta #議事録効率化 #AIパートナー",
-          "note": "COO FINAL SCRIPT REVIEW(2026-09-27)で「FINAL PASS」「QA→PRODUCTION GO」判定。SCRIPT v3(HOOK/Evidence/Insight/Action/CTAすべてLOCK)のままTemplate v2でPRODUCTION実施: prepare-template-v2-voice.mjs --synthesize(VOICEVOX青山龍星、speed_scale最大1.12、危険域2.2未満)→render-template-v2.mjs --voice。最終MP4: remotion-video/out/notta-accuracy-part2.mp4(30.841秒、1080x1920、h264 30fps+AAC、ffprobe実測)。独立QA結果: ストリーム検証PASS(nb_frames=925=timing.totalFrames一致)、decode検証PASS(ffmpeg -xerror)、cover_exact_decoded_frame0 PASS、cta_visually_separated_and_3to4sec PASS(4.00秒)、core_insight_longest PASS。全6シーンのframe画像を目視確認、文字欠け・キャラクター重なりなし、Evidence表記(ALC→ALC✅/下地補強→下地を補強✅/LGS→LGSスタジオ△/巾木→ハバキ△)がnarration/on-screen/報告書と完全一致、tentative wording維持を確認。silencedetect実測: 最大無音3.74秒(core_insightシーン末尾、importance-weighted pacingの構造的トレードオフ。過去のnotta-revenue-v2の前例3.20秒・notta-voice-validationの2.06秒より長め。Evidence/Insight/Action/CTAはLOCK指定のためテキスト変更で調整せず、この数値のまま正直にCOOへ報告する)。secondary_changes: SCRIPT v2/v3で記録済みのHOOK wording change以外、PRODUCTION段階での追加変更なし(新しい事実・数字・主張の追加なし)。note CTAは既存公開済みnote記事(https://note.com/workai_lab777/n/nc5ad7e7ef364)を再利用する想定(新Evidence4語もnote記事の既存結論=向く仕事/向かない仕事と矛盾しないため。note記事へこの4語を追記するかはCOO/Owner判断、Reel公開のブロッカーではない)。disclosure: IGキャプション末尾に「※記事内にアフィリエイトリンクを含みます。」明記(既存パターン踏襲)。X copy文字数は簡易計測で重み付き約208(X上限280、t.co分23込み概算、実際の投稿前にX編集画面での最終確認を推奨)。Render後、投稿はいずれも未実施。workai-cockpitへMP4配信済み。",
+          "note": "COO FINAL PRODUCTION REVIEW(2026-09-27)で「MODIFY — PRODUCTION PACING ONLY」判定。silencedetect実測の最大無音3.74秒(core_insightシーン末尾)が長すぎると指摘、テキスト/主張/ナレーション変更禁止、core_insight scene durationの短縮またはtiming調整で解消、importance-weighted pacingのscene floorを局所的にoverride可、との指示。content/reel-json/notta-accuracy-part2.jsonへscene_duration_overrides:{core_insight:4.9}を追加(narration/evidence/importance等のテキストは無変更)、render-template-v2.mjsとprepare-template-v2-voice.mjsにopt-inのローカルオーバーライド機構を追加(このフィールドを持たない既存Reelは無影響、56/56テストPASS維持)。1回目の再レンダリングでvideo側のみ短縮した結果、TemplateV2.tsxが単一連続音声トラック設計のためvideo/audio desyncが発生したことを自己発見・修正(音声WAVもprepare-template-v2-voice.mjs側で新しいslot長を反映して再生成)。最終結果: MP4 28.249秒(video/audio同期、nb_frames=847一致)、max silence 1.36秒(target≤1.5秒・推奨~1.0秒をクリア、内訳core_insight末尾1.12秒+動画末尾CTAの自然な余韻1.36秒)、CTA尺4.00秒維持、Evidence表記(ALC/下地補強/LGS/巾木)は無変更。core_insight_longestはfalse(オーバーライドの意図した結果、検証ロジックも実態を正しく反映するよう修正済み)。6シーン全frame再目視、文字欠け・重なりなし。workai-cockpitへ配信済み(v1ファイルを上書き)。投稿はまだ実施していない。",
           "x_copy_text": "前回出してない6語だけ見せます。\n現場用語10語をNottaに試したところ、完全一致は6語でした。\nALC・下地補強は正確、LGSと巾木は少しズレました。\n向く仕事・向かない仕事はnoteに。\nhttps://note.com/workai_lab777/n/nc5ad7e7ef364\n#AI仕事研究所"
         }
       ],
