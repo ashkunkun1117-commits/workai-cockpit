@@ -114,6 +114,13 @@
         "x_post_status": "posted",
         "note_url": "https://note.com/workai_lab777/n/nc5ad7e7ef364",
         "note": "COO指令「P1/P2 VALIDATION PASS / RENDER: GO」対応。P1+P2を1本のストーリーに統合(COO指令どおり)。Owner本人の肉声によるNotta実機検証(reports/notta-p1-p2-validation-2026-09-21.md)が一次情報。TemplateV2.tsx共有コンポーネントの潜在レイアウトバグ(evidence role bodyボックスの左右衝突)を自己発見・修正。制作詳細はcontent/reel-json/notta-voice-validation.md参照。Cockpit配信機能(複数Revenue Content対応)はCodexへ一部委任、パッチをClaudeがレビュー・適用。X投稿本文(x_copy_text)はCOO指令「COMPLETE X PUBLISH PACKAGE」(2026-09-24)対応、content/x/notta-voice-validation_post.md参照、137字・X標準カウント。2026-09-25実機確認: X投稿済み(2026-09-24 07:53 JST、固定ツイート、status/2102894234219262367、task 56831bad記録)。ただし実際の投稿文はMODIFY後(CTA強化版)ではなくMODIFY前の文面(「実際の誤変換と、」が付く前のバージョン)だった。Ownerが投稿ボタンを押した時点でCockpitの反映タイミングが投稿より後だった可能性がある。投稿済みのため過去の投稿文は書き換えない(捏造回避の原則どおり、x_copy_textは今後の参考用として最新版を保持するに留める)。"
+      },
+      {
+        "label": "Notta専門用語精度 Part2(HIGH-1/Set3-B、未公開6語編)",
+        "status": "script_awaiting_coo_review",
+        "video_file": null,
+        "caption_text": null,
+        "note": "COO REVIEW—REVENUE CONTENT PRIORITY(2026-09-27)対応。HIGH-1/Set3-B=GO→SCRIPT(ORDER1)。制作前にCOO指定Evidence例(石膏ボード/竪穴区画→縦穴加工/防火戸→防火度)が2026-09-24投稿済みnotta-voice-validation.mp4と重複することを発見・報告。FINAL HOOK「現場用語10語をNottaに聞かせたら、完全一致は6語でした。」は変更せず、未公開6語(ALC/LGS/下地補強/クロス貼替/造作/巾木)のうちALC・下地補強(CORRECT)・LGS・巾木(PARTIAL)を新Evidenceとして使用しSCRIPTを作成(content/reel-json/notta-accuracy-part2.json/.md)。validateTemplateV2Content PASS、合計31.35秒、CTA尺4.00秒。Render・自動QA・投稿は未実施、COOレビュー待ち。"
       }
     ],
     "account_pivot_reel": {
@@ -738,7 +745,7 @@
   },
   "current_date": "2026-09-27",
   "data_updated_at": "2026-09-27T07:20:00+09:00",
-  "public_updated_at": "2026-09-27T03:17:07.711Z",
+  "public_updated_at": "2026-09-27T05:58:28.973Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -1328,6 +1335,13 @@
           "x_post_status": "posted",
           "note_url": "https://note.com/workai_lab777/n/nc5ad7e7ef364",
           "note": "COO指令「P1/P2 VALIDATION PASS / RENDER: GO」対応。P1+P2を1本のストーリーに統合(COO指令どおり)。Owner本人の肉声によるNotta実機検証(reports/notta-p1-p2-validation-2026-09-21.md)が一次情報。TemplateV2.tsx共有コンポーネントの潜在レイアウトバグ(evidence role bodyボックスの左右衝突)を自己発見・修正。制作詳細はcontent/reel-json/notta-voice-validation.md参照。Cockpit配信機能(複数Revenue Content対応)はCodexへ一部委任、パッチをClaudeがレビュー・適用。X投稿本文(x_copy_text)はCOO指令「COMPLETE X PUBLISH PACKAGE」(2026-09-24)対応、content/x/notta-voice-validation_post.md参照、137字・X標準カウント。2026-09-25実機確認: X投稿済み(2026-09-24 07:53 JST、固定ツイート、status/2102894234219262367、task 56831bad記録)。ただし実際の投稿文はMODIFY後(CTA強化版)ではなくMODIFY前の文面(「実際の誤変換と、」が付く前のバージョン)だった。Ownerが投稿ボタンを押した時点でCockpitの反映タイミングが投稿より後だった可能性がある。投稿済みのため過去の投稿文は書き換えない(捏造回避の原則どおり、x_copy_textは今後の参考用として最新版を保持するに留める)。"
+        },
+        {
+          "label": "Notta専門用語精度 Part2(HIGH-1/Set3-B、未公開6語編)",
+          "status": "script_awaiting_coo_review",
+          "video_file": null,
+          "caption_text": null,
+          "note": "COO REVIEW—REVENUE CONTENT PRIORITY(2026-09-27)対応。HIGH-1/Set3-B=GO→SCRIPT(ORDER1)。制作前にCOO指定Evidence例(石膏ボード/竪穴区画→縦穴加工/防火戸→防火度)が2026-09-24投稿済みnotta-voice-validation.mp4と重複することを発見・報告。FINAL HOOK「現場用語10語をNottaに聞かせたら、完全一致は6語でした。」は変更せず、未公開6語(ALC/LGS/下地補強/クロス貼替/造作/巾木)のうちALC・下地補強(CORRECT)・LGS・巾木(PARTIAL)を新Evidenceとして使用しSCRIPTを作成(content/reel-json/notta-accuracy-part2.json/.md)。validateTemplateV2Content PASS、合計31.35秒、CTA尺4.00秒。Render・自動QA・投稿は未実施、COOレビュー待ち。"
         }
       ],
       "account_pivot_reel": {
