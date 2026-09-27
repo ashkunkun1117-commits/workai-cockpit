@@ -117,10 +117,10 @@
       },
       {
         "label": "Notta専門用語精度 Part2(HIGH-1/Set3-B、未公開6語編)",
-        "status": "script_awaiting_coo_review",
+        "status": "script_awaiting_coo_review_v2",
         "video_file": null,
         "caption_text": null,
-        "note": "COO REVIEW—REVENUE CONTENT PRIORITY(2026-09-27)対応。HIGH-1/Set3-B=GO→SCRIPT(ORDER1)。制作前にCOO指定Evidence例(石膏ボード/竪穴区画→縦穴加工/防火戸→防火度)が2026-09-24投稿済みnotta-voice-validation.mp4と重複することを発見・報告。FINAL HOOK「現場用語10語をNottaに聞かせたら、完全一致は6語でした。」は変更せず、未公開6語(ALC/LGS/下地補強/クロス貼替/造作/巾木)のうちALC・下地補強(CORRECT)・LGS・巾木(PARTIAL)を新Evidenceとして使用しSCRIPTを作成(content/reel-json/notta-accuracy-part2.json/.md)。validateTemplateV2Content PASS、合計31.35秒、CTA尺4.00秒。Render・自動QA・投稿は未実施、COOレビュー待ち。"
+        "note": "COO SCRIPT REVIEWで「MODIFY→RESUBMIT SCRIPT」判定(2026-09-27)。HOOKが既存公開済みReelと同一主張に見える可能性を指摘され、「前回出していない6語だけ見せます。」→「現場用語10語をNottaに聞かせたら、完全一致は6語でした。」の2行構成へHOOKを修正。Evidence(ALC/下地補強/LGS/巾木)・WHO FITS・tentative wording・disclosureはKEEP。Renderは未実施のまま(再Render禁止の対象となるRender自体がまだ発生していない)。content/reel-json/notta-accuracy-part2.json/.md v2へ更新済み、COOレビュー待ち。"
       }
     ],
     "account_pivot_reel": {
@@ -745,7 +745,7 @@
   },
   "current_date": "2026-09-27",
   "data_updated_at": "2026-09-27T07:20:00+09:00",
-  "public_updated_at": "2026-09-27T05:58:28.973Z",
+  "public_updated_at": "2026-09-27T06:03:16.474Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -1338,10 +1338,10 @@
         },
         {
           "label": "Notta専門用語精度 Part2(HIGH-1/Set3-B、未公開6語編)",
-          "status": "script_awaiting_coo_review",
+          "status": "script_awaiting_coo_review_v2",
           "video_file": null,
           "caption_text": null,
-          "note": "COO REVIEW—REVENUE CONTENT PRIORITY(2026-09-27)対応。HIGH-1/Set3-B=GO→SCRIPT(ORDER1)。制作前にCOO指定Evidence例(石膏ボード/竪穴区画→縦穴加工/防火戸→防火度)が2026-09-24投稿済みnotta-voice-validation.mp4と重複することを発見・報告。FINAL HOOK「現場用語10語をNottaに聞かせたら、完全一致は6語でした。」は変更せず、未公開6語(ALC/LGS/下地補強/クロス貼替/造作/巾木)のうちALC・下地補強(CORRECT)・LGS・巾木(PARTIAL)を新Evidenceとして使用しSCRIPTを作成(content/reel-json/notta-accuracy-part2.json/.md)。validateTemplateV2Content PASS、合計31.35秒、CTA尺4.00秒。Render・自動QA・投稿は未実施、COOレビュー待ち。"
+          "note": "COO SCRIPT REVIEWで「MODIFY→RESUBMIT SCRIPT」判定(2026-09-27)。HOOKが既存公開済みReelと同一主張に見える可能性を指摘され、「前回出していない6語だけ見せます。」→「現場用語10語をNottaに聞かせたら、完全一致は6語でした。」の2行構成へHOOKを修正。Evidence(ALC/下地補強/LGS/巾木)・WHO FITS・tentative wording・disclosureはKEEP。Renderは未実施のまま(再Render禁止の対象となるRender自体がまだ発生していない)。content/reel-json/notta-accuracy-part2.json/.md v2へ更新済み、COOレビュー待ち。"
         }
       ],
       "account_pivot_reel": {
