@@ -1,7 +1,7 @@
 {
   "business_day": 27,
   "business_date": "2026-09-28",
-  "generated_at": "2026-09-28T05:48:48+09:00",
+  "generated_at": "2026-09-28T07:10:00+09:00",
   "today": {
     "x_post": {
       "status": "not_ready",
@@ -260,7 +260,8 @@
     "morning_routine_2026-09-26_note": "予定(05:45/07:00)とも自動発火せず、Owner手動呼び出し(21:2x JST)で実行(Missed Routine Coalescing判定によりSUPERSEDED該当なしと判断、通常フル実行)。X実機確認: unauthenticated確定(ログイン画面へ明示リダイレクト、12日連続)、プロフィールページのみ閲覧可能(フォロワー7人・フォロー中6人、baseline8人から純減)。IG実機確認: authenticated(フォロワー17人、+1)。Day25 X投稿・Reelとも未着手(not_ready、正直表示)、新規投稿なしを確認。X Conversation Routine: ledger waiting 8件のうち7件は個別に返信スレッドを実機確認(forestkinoko/yukissense/omuat/ozge_boyraz46/andymochizuki/akagami_sns/misaki_hennyu)、新規author返信0件。narisumashi100は元投稿が37件返信の大規模スレッドのため深追いせず今回NOT CHECKED(次回優先確認)。Approval Batch該当なし。Revenue Experiment 3件のOVERDUEチェックポイントをすべて実施: task 56831bad(X48h、views27)・task ee95e24b(48h、views60/reach58横ばい)は次回72hへ、task 4ab515ca(Phase2 24H REVIEW)は正式提出・done化・フリーズ解除(phase2_24h_review参照、行動系指標が2Reel連続0という弱いシグナルをCOO論点として記録)。A8.net等の外部収益確認は本日未実施(A8継続unauthenticated、Claude代行不可のため据え置き)。",
     "premorning_routine_2026-09-27_note": "Missed Routine Coalescing判定: routine_scheduler.logに2026-09-27分の記録なし、直前は2026-09-26 22:30 Evening Routine(success)のみのためSUPERSEDED非該当、通常実行。Date Rollover実施: today.json/CockpitともDay25/2026-09-26(X投稿・Reelとも未着手だったためnot_ready、CARRYOVER対象の成果物なし)→Day26/2026-09-27へ更新。旧tomorrow(Day26 X投稿draft=content/x/day26_post_draft.md、Reel script_draft=content/reel-json/day26_reach_awareness_story.md)を新TODAYへ昇格(いずれもClaude Business QA完了済み、レンダリング未着手)。Day27分は未着手のためnot_readyで正直に表示。get_tasks(waiting)3件確認: task 56831bad(next_check_at 2026-09-27T07:53、未超過)、task ee95e24b(next_check_at 2026-09-27T13:03、未超過)、task 1001b4e9(on_hold、next_check_at null、対象外)、いずれもOVERDUEなし。Approval Queue: pending該当なし(get_approvals結果はすべてexecuted/rejected/expired)。",
     "morning_routine_2026-09-27_note": "Missed Routine Coalescing判定: 2026-09-27分Morning記録なし、直前premorning(05:45)成功済みのみのためSUPERSEDED非該当、通常フル実行。X実機確認: x.com/home・個別スレッド・検索いずれも明示的ログイン画面へリダイレクト、unauthenticated確定(14日連続)。プロフィールページ(workai_lab777)のみ非ログイン閲覧可能: フォロワー7人・フォロー中6人(前回9/26 21:26確認と同値、変化なし)、固定Pivotポスト表示39(前回と同値)、Day24 Notta投稿表示27(前回と同値)。新規X投稿なし。IG実機確認: authenticated、フォロワー17人・フォロー中10人(前回と同値、変化なし)、新規投稿なし。Manual Publish Verification: carryover空、today(Day26 X post=draft/IG Reel=script_draft)はいずれも未投稿のままで整合、reconcile対象なし。X Conversation Routine: ledger waiting行(narisumashi100含む)を実機確認したが、X未ログインのため個別スレッドは上位人気リプライのみ表示され自分の返信・相手の新着返信を確認できず、新規Strategic Reply候補の検索(x.com/search)も明示的ログイン画面へリダイレクトされ実施不可(いずれもNOT CHECKED、Owner再ログイン依頼はしない、Approval Batch該当なし)。Targeted Following候補: COO指令の7項目(WHY NOW/RECENT POST RELEVANCE等)を実データで裏付けるには対象アカウントの直近投稿確認が必要だが、X検索・プロフィール個別ページとも未ログインで閲覧不可のため、捏造を避けるため本日は候補提示を見送り(NOT CHECKED、次回X認証回復時に再試行)。Revenue Experiment: task 56831bad(next_check_at 07:53)・task ee95e24b(next_check_at 13:03)いずれも未到来、OVERDUEなし。A8.net等の外部収益確認は据え置き(継続unauthenticated)。GREEN Execution: Day26 IG Reel(content/reel-json/day26_reach_awareness_story.md、台本完成済み)のJSON化・VOICEVOX音声合成・Remotionレンダリングをcreative-engineerへ委任(バックグラウンド実行中)。Approval Queue pending該当なし。新規Engineering Task該当なし(既存backlog2件は優先度変更なし)。",
-    "evening_routine_2026-09-27_note": "Missed Routine Coalescing判定: 2026-09-27分Evening記録なし、直前Morning(07:00-07:22、SUCCESS_UPDATE含む)成功済みのみのためSUPERSEDED非該当、通常フル実行。X実機確認: x.com/workai_lab777プロフィールは非ログイン閲覧可能、unauthenticated確定継続(15日連続、ログイン画面へ明示リダイレクト)。フォロワー7人・フォロー中9人(前回と同値、変化なし)。個別スレッド(narisumashi100)を実機確認したが自分の返信・相手の新着返信は表示されずNOT CHECKED(ログインゲート継続、Owner再ログイン依頼はしない)。新規Strategic Reply候補の検索も同様にログインゲートのため見送り。IG実機確認: authenticated、フォロワー17人・フォロー中10人(前回と同値、変化なし)、新規投稿なし。Manual Publish Verification: carryover空、reconcile対象なし。Revenue Experiment 72hチェックポイント2件を実施・完了: task 56831bad(notta-voice-validation.mp4 X側、views28、48hの27からほぼ横ばい)・task ee95e24b(notta-revenue-v2.mp4 IG側、views60/reach58、48hからほぼ横ばい)。両タスクとも保存/シェア/フォロー/プロフィールアクティビティが72h通じて一貫して0だったため、行動系指標なしという結果でstatus=doneへ移行(kpi_daily.csv Day26行新規作成、post_insights記録)。Next Day先行準備: Day27分は`content/reel-json/next-hook-candidates-proof.md`のORDER 2(別ジャンル実務価値コンテンツ)がソース未確定(未使用の一次データ・PROOFが存在するか未確認)のため、捏造を避けるためnot_readyのまま正直に据え置き、Owner協力による新規一次データ提供が必要な旨をOwner Approval Neededではなく通常のBottleneckとして記録(RED操作ではないため急ぎの承認依頼はしない)。ORDER 1(notta-accuracy-part2.mp4)はCOO FINAL PASS/PUBLISH GO済みでOwner投稿待ち。Codex Result Review: get_handoff_queueに残る2件(coord-2eabeb66/coord-6ada1af1、Day15/Day17分)はいずれもCreative Engineerへの再ルーティングにより実質完了済みの既知stale項目、新規対応なし。"
+    "evening_routine_2026-09-27_note": "Missed Routine Coalescing判定: 2026-09-27分Evening記録なし、直前Morning(07:00-07:22、SUCCESS_UPDATE含む)成功済みのみのためSUPERSEDED非該当、通常フル実行。X実機確認: x.com/workai_lab777プロフィールは非ログイン閲覧可能、unauthenticated確定継続(15日連続、ログイン画面へ明示リダイレクト)。フォロワー7人・フォロー中9人(前回と同値、変化なし)。個別スレッド(narisumashi100)を実機確認したが自分の返信・相手の新着返信は表示されずNOT CHECKED(ログインゲート継続、Owner再ログイン依頼はしない)。新規Strategic Reply候補の検索も同様にログインゲートのため見送り。IG実機確認: authenticated、フォロワー17人・フォロー中10人(前回と同値、変化なし)、新規投稿なし。Manual Publish Verification: carryover空、reconcile対象なし。Revenue Experiment 72hチェックポイント2件を実施・完了: task 56831bad(notta-voice-validation.mp4 X側、views28、48hの27からほぼ横ばい)・task ee95e24b(notta-revenue-v2.mp4 IG側、views60/reach58、48hからほぼ横ばい)。両タスクとも保存/シェア/フォロー/プロフィールアクティビティが72h通じて一貫して0だったため、行動系指標なしという結果でstatus=doneへ移行(kpi_daily.csv Day26行新規作成、post_insights記録)。Next Day先行準備: Day27分は`content/reel-json/next-hook-candidates-proof.md`のORDER 2(別ジャンル実務価値コンテンツ)がソース未確定(未使用の一次データ・PROOFが存在するか未確認)のため、捏造を避けるためnot_readyのまま正直に据え置き、Owner協力による新規一次データ提供が必要な旨をOwner Approval Neededではなく通常のBottleneckとして記録(RED操作ではないため急ぎの承認依頼はしない)。ORDER 1(notta-accuracy-part2.mp4)はCOO FINAL PASS/PUBLISH GO済みでOwner投稿待ち。Codex Result Review: get_handoff_queueに残る2件(coord-2eabeb66/coord-6ada1af1、Day15/Day17分)はいずれもCreative Engineerへの再ルーティングにより実質完了済みの既知stale項目、新規対応なし。",
+    "morning_routine_2026-09-28_note": "Missed Routine Coalescing判定: 直前premorning(05:46-05:52、MORNING_READY)成功済みのみでEvening未実行のためSUPERSEDED非該当、通常フル実行。X実機確認: x.com/home・個別スレッドとも明示的ログイン画面へリダイレクト、unauthenticated確定継続(16日連続)。プロフィールは非ログイン閲覧可能: フォロワー7人・フォロー中9人(前回と同値、変化なし)、固定Pivotポスト表示43(前回39から微増)、Day24 Notta投稿表示30(前回と同値だった27から微増)。新規X投稿なし。IG実機確認: authenticated、フォロワー17人・フォロー中10人・投稿25件(前回と同値、変化なし)、新規投稿なし。Manual Publish Verification: carryover(Day26 X投稿draft/Day26 Reel ready)ともIG/Xグリッド上に見つからず、未投稿のまま据え置き正当と確認(reconcile不要)。X Conversation Routine: ledger waiting8件のうちnarisumashi100(683返信規模)を実機確認したが、非ログインでは著者自身の返信上位数件のみ表示され自社返信・相手の新着返信を確認できずNOT CHECKED(ログインゲート継続、Owner再ログイン依頼はしない)。他7件も同様のログインゲート制約のため今回は深追いせず持ち越し。新規Strategic Reply候補検索・Targeted Following候補提示もX検索がログイン必須のため見送り(捏造回避)。**発見・修正**: business_progress.revenue_contents内のNotta専門用語精度Part2(notta-accuracy-part2.mp4)がCOO FINAL PASS/PUBLISH GO(2026-09-27)済みにも関わらずowner_actions配列に記載漏れだったことを発見、Owner Action 3件目として追加(reconcile)。A8.net実機確認: ログインフォーム表示、確定unauthenticated継続(Owner代行不可、変化なし)。Revenue Experimentタスク(get_tasks waiting)は1001b4e9(on_hold、対象外)のみでOVERDUEなし。get_handoff_queueの2件(Day15/17 Reel)は既知stale、新規対応なし。Day27 Own Content: ORDER 2(別ジャンル実務価値コンテンツ)のソースが依然未確定のため、捏造回避のためnot_readyを維持(Owner協力による新規一次データが必要、RED急ぎ承認ではなく通常Bottleneckとして記録)。"
   },
   "carryover": [
     {
@@ -578,7 +579,8 @@
   ],
   "owner_actions": [
     "Day26 X投稿(content/x/day26_post_draft.md)を確認し、内容がよければ公式Xアプリから投稿してください。",
-    "Day26 Reel(remotion-video/out/day26.mp4)を確認し、よければ公式Instagramアプリから投稿してください。hookの「35時間」は2026-09-26 21:30時点のスナップショットのため、投稿が遅れるほど数字が実態とずれます。可能であれば本日中の投稿を推奨します。"
+    "Day26 Reel(remotion-video/out/day26.mp4)を確認し、よければ公式Instagramアプリから投稿してください。hookの「35時間」は2026-09-26 21:30時点のスナップショットのため、投稿が遅れるほど数字が実態とずれます。可能であれば本日中の投稿を推奨します。",
+    "Notta専門用語精度Part2 Reel(notta-accuracy-part2.mp4)はCOO FINAL PASS/PUBLISH GO済み(2026-09-27)です。確認のうえ、よければ公式Instagramアプリから投稿してください(2026-09-28 Morning Routineで、owner_actionsへの記載漏れを発見し追加)。"
   ],
   "approval_queue": [],
   "ai_learning": {
@@ -773,8 +775,8 @@
     "gate": "MORNING_READY(TODAYはDay27当日分のみ・CARRYOVERにDay26投稿待ち2件を分離済み・Approval Queue空・owner_actions最新・stale項目なし)。"
   },
   "current_date": "2026-09-28",
-  "data_updated_at": "2026-09-28T05:48:48+09:00",
-  "public_updated_at": "2026-09-27T20:50:49.298Z",
+  "data_updated_at": "2026-09-28T07:10:00+09:00",
+  "public_updated_at": "2026-09-27T22:05:02.191Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -1269,7 +1271,7 @@
   "source_manifest": {
     "business_day": 27,
     "business_date": "2026-09-28",
-    "generated_at": "2026-09-28T05:48:48+09:00",
+    "generated_at": "2026-09-28T07:10:00+09:00",
     "today": {
       "x_post": {
         "status": "not_ready",
@@ -1528,7 +1530,8 @@
       "morning_routine_2026-09-26_note": "予定(05:45/07:00)とも自動発火せず、Owner手動呼び出し(21:2x JST)で実行(Missed Routine Coalescing判定によりSUPERSEDED該当なしと判断、通常フル実行)。X実機確認: unauthenticated確定(ログイン画面へ明示リダイレクト、12日連続)、プロフィールページのみ閲覧可能(フォロワー7人・フォロー中6人、baseline8人から純減)。IG実機確認: authenticated(フォロワー17人、+1)。Day25 X投稿・Reelとも未着手(not_ready、正直表示)、新規投稿なしを確認。X Conversation Routine: ledger waiting 8件のうち7件は個別に返信スレッドを実機確認(forestkinoko/yukissense/omuat/ozge_boyraz46/andymochizuki/akagami_sns/misaki_hennyu)、新規author返信0件。narisumashi100は元投稿が37件返信の大規模スレッドのため深追いせず今回NOT CHECKED(次回優先確認)。Approval Batch該当なし。Revenue Experiment 3件のOVERDUEチェックポイントをすべて実施: task 56831bad(X48h、views27)・task ee95e24b(48h、views60/reach58横ばい)は次回72hへ、task 4ab515ca(Phase2 24H REVIEW)は正式提出・done化・フリーズ解除(phase2_24h_review参照、行動系指標が2Reel連続0という弱いシグナルをCOO論点として記録)。A8.net等の外部収益確認は本日未実施(A8継続unauthenticated、Claude代行不可のため据え置き)。",
       "premorning_routine_2026-09-27_note": "Missed Routine Coalescing判定: routine_scheduler.logに2026-09-27分の記録なし、直前は2026-09-26 22:30 Evening Routine(success)のみのためSUPERSEDED非該当、通常実行。Date Rollover実施: today.json/CockpitともDay25/2026-09-26(X投稿・Reelとも未着手だったためnot_ready、CARRYOVER対象の成果物なし)→Day26/2026-09-27へ更新。旧tomorrow(Day26 X投稿draft=content/x/day26_post_draft.md、Reel script_draft=content/reel-json/day26_reach_awareness_story.md)を新TODAYへ昇格(いずれもClaude Business QA完了済み、レンダリング未着手)。Day27分は未着手のためnot_readyで正直に表示。get_tasks(waiting)3件確認: task 56831bad(next_check_at 2026-09-27T07:53、未超過)、task ee95e24b(next_check_at 2026-09-27T13:03、未超過)、task 1001b4e9(on_hold、next_check_at null、対象外)、いずれもOVERDUEなし。Approval Queue: pending該当なし(get_approvals結果はすべてexecuted/rejected/expired)。",
       "morning_routine_2026-09-27_note": "Missed Routine Coalescing判定: 2026-09-27分Morning記録なし、直前premorning(05:45)成功済みのみのためSUPERSEDED非該当、通常フル実行。X実機確認: x.com/home・個別スレッド・検索いずれも明示的ログイン画面へリダイレクト、unauthenticated確定(14日連続)。プロフィールページ(workai_lab777)のみ非ログイン閲覧可能: フォロワー7人・フォロー中6人(前回9/26 21:26確認と同値、変化なし)、固定Pivotポスト表示39(前回と同値)、Day24 Notta投稿表示27(前回と同値)。新規X投稿なし。IG実機確認: authenticated、フォロワー17人・フォロー中10人(前回と同値、変化なし)、新規投稿なし。Manual Publish Verification: carryover空、today(Day26 X post=draft/IG Reel=script_draft)はいずれも未投稿のままで整合、reconcile対象なし。X Conversation Routine: ledger waiting行(narisumashi100含む)を実機確認したが、X未ログインのため個別スレッドは上位人気リプライのみ表示され自分の返信・相手の新着返信を確認できず、新規Strategic Reply候補の検索(x.com/search)も明示的ログイン画面へリダイレクトされ実施不可(いずれもNOT CHECKED、Owner再ログイン依頼はしない、Approval Batch該当なし)。Targeted Following候補: COO指令の7項目(WHY NOW/RECENT POST RELEVANCE等)を実データで裏付けるには対象アカウントの直近投稿確認が必要だが、X検索・プロフィール個別ページとも未ログインで閲覧不可のため、捏造を避けるため本日は候補提示を見送り(NOT CHECKED、次回X認証回復時に再試行)。Revenue Experiment: task 56831bad(next_check_at 07:53)・task ee95e24b(next_check_at 13:03)いずれも未到来、OVERDUEなし。A8.net等の外部収益確認は据え置き(継続unauthenticated)。GREEN Execution: Day26 IG Reel(content/reel-json/day26_reach_awareness_story.md、台本完成済み)のJSON化・VOICEVOX音声合成・Remotionレンダリングをcreative-engineerへ委任(バックグラウンド実行中)。Approval Queue pending該当なし。新規Engineering Task該当なし(既存backlog2件は優先度変更なし)。",
-      "evening_routine_2026-09-27_note": "Missed Routine Coalescing判定: 2026-09-27分Evening記録なし、直前Morning(07:00-07:22、SUCCESS_UPDATE含む)成功済みのみのためSUPERSEDED非該当、通常フル実行。X実機確認: x.com/workai_lab777プロフィールは非ログイン閲覧可能、unauthenticated確定継続(15日連続、ログイン画面へ明示リダイレクト)。フォロワー7人・フォロー中9人(前回と同値、変化なし)。個別スレッド(narisumashi100)を実機確認したが自分の返信・相手の新着返信は表示されずNOT CHECKED(ログインゲート継続、Owner再ログイン依頼はしない)。新規Strategic Reply候補の検索も同様にログインゲートのため見送り。IG実機確認: authenticated、フォロワー17人・フォロー中10人(前回と同値、変化なし)、新規投稿なし。Manual Publish Verification: carryover空、reconcile対象なし。Revenue Experiment 72hチェックポイント2件を実施・完了: task 56831bad(notta-voice-validation.mp4 X側、views28、48hの27からほぼ横ばい)・task ee95e24b(notta-revenue-v2.mp4 IG側、views60/reach58、48hからほぼ横ばい)。両タスクとも保存/シェア/フォロー/プロフィールアクティビティが72h通じて一貫して0だったため、行動系指標なしという結果でstatus=doneへ移行(kpi_daily.csv Day26行新規作成、post_insights記録)。Next Day先行準備: Day27分は`content/reel-json/next-hook-candidates-proof.md`のORDER 2(別ジャンル実務価値コンテンツ)がソース未確定(未使用の一次データ・PROOFが存在するか未確認)のため、捏造を避けるためnot_readyのまま正直に据え置き、Owner協力による新規一次データ提供が必要な旨をOwner Approval Neededではなく通常のBottleneckとして記録(RED操作ではないため急ぎの承認依頼はしない)。ORDER 1(notta-accuracy-part2.mp4)はCOO FINAL PASS/PUBLISH GO済みでOwner投稿待ち。Codex Result Review: get_handoff_queueに残る2件(coord-2eabeb66/coord-6ada1af1、Day15/Day17分)はいずれもCreative Engineerへの再ルーティングにより実質完了済みの既知stale項目、新規対応なし。"
+      "evening_routine_2026-09-27_note": "Missed Routine Coalescing判定: 2026-09-27分Evening記録なし、直前Morning(07:00-07:22、SUCCESS_UPDATE含む)成功済みのみのためSUPERSEDED非該当、通常フル実行。X実機確認: x.com/workai_lab777プロフィールは非ログイン閲覧可能、unauthenticated確定継続(15日連続、ログイン画面へ明示リダイレクト)。フォロワー7人・フォロー中9人(前回と同値、変化なし)。個別スレッド(narisumashi100)を実機確認したが自分の返信・相手の新着返信は表示されずNOT CHECKED(ログインゲート継続、Owner再ログイン依頼はしない)。新規Strategic Reply候補の検索も同様にログインゲートのため見送り。IG実機確認: authenticated、フォロワー17人・フォロー中10人(前回と同値、変化なし)、新規投稿なし。Manual Publish Verification: carryover空、reconcile対象なし。Revenue Experiment 72hチェックポイント2件を実施・完了: task 56831bad(notta-voice-validation.mp4 X側、views28、48hの27からほぼ横ばい)・task ee95e24b(notta-revenue-v2.mp4 IG側、views60/reach58、48hからほぼ横ばい)。両タスクとも保存/シェア/フォロー/プロフィールアクティビティが72h通じて一貫して0だったため、行動系指標なしという結果でstatus=doneへ移行(kpi_daily.csv Day26行新規作成、post_insights記録)。Next Day先行準備: Day27分は`content/reel-json/next-hook-candidates-proof.md`のORDER 2(別ジャンル実務価値コンテンツ)がソース未確定(未使用の一次データ・PROOFが存在するか未確認)のため、捏造を避けるためnot_readyのまま正直に据え置き、Owner協力による新規一次データ提供が必要な旨をOwner Approval Neededではなく通常のBottleneckとして記録(RED操作ではないため急ぎの承認依頼はしない)。ORDER 1(notta-accuracy-part2.mp4)はCOO FINAL PASS/PUBLISH GO済みでOwner投稿待ち。Codex Result Review: get_handoff_queueに残る2件(coord-2eabeb66/coord-6ada1af1、Day15/Day17分)はいずれもCreative Engineerへの再ルーティングにより実質完了済みの既知stale項目、新規対応なし。",
+      "morning_routine_2026-09-28_note": "Missed Routine Coalescing判定: 直前premorning(05:46-05:52、MORNING_READY)成功済みのみでEvening未実行のためSUPERSEDED非該当、通常フル実行。X実機確認: x.com/home・個別スレッドとも明示的ログイン画面へリダイレクト、unauthenticated確定継続(16日連続)。プロフィールは非ログイン閲覧可能: フォロワー7人・フォロー中9人(前回と同値、変化なし)、固定Pivotポスト表示43(前回39から微増)、Day24 Notta投稿表示30(前回と同値だった27から微増)。新規X投稿なし。IG実機確認: authenticated、フォロワー17人・フォロー中10人・投稿25件(前回と同値、変化なし)、新規投稿なし。Manual Publish Verification: carryover(Day26 X投稿draft/Day26 Reel ready)ともIG/Xグリッド上に見つからず、未投稿のまま据え置き正当と確認(reconcile不要)。X Conversation Routine: ledger waiting8件のうちnarisumashi100(683返信規模)を実機確認したが、非ログインでは著者自身の返信上位数件のみ表示され自社返信・相手の新着返信を確認できずNOT CHECKED(ログインゲート継続、Owner再ログイン依頼はしない)。他7件も同様のログインゲート制約のため今回は深追いせず持ち越し。新規Strategic Reply候補検索・Targeted Following候補提示もX検索がログイン必須のため見送り(捏造回避)。**発見・修正**: business_progress.revenue_contents内のNotta専門用語精度Part2(notta-accuracy-part2.mp4)がCOO FINAL PASS/PUBLISH GO(2026-09-27)済みにも関わらずowner_actions配列に記載漏れだったことを発見、Owner Action 3件目として追加(reconcile)。A8.net実機確認: ログインフォーム表示、確定unauthenticated継続(Owner代行不可、変化なし)。Revenue Experimentタスク(get_tasks waiting)は1001b4e9(on_hold、対象外)のみでOVERDUEなし。get_handoff_queueの2件(Day15/17 Reel)は既知stale、新規対応なし。Day27 Own Content: ORDER 2(別ジャンル実務価値コンテンツ)のソースが依然未確定のため、捏造回避のためnot_readyを維持(Owner協力による新規一次データが必要、RED急ぎ承認ではなく通常Bottleneckとして記録)。"
     },
     "carryover": [
       {
@@ -1846,7 +1849,8 @@
     ],
     "owner_actions": [
       "Day26 X投稿(content/x/day26_post_draft.md)を確認し、内容がよければ公式Xアプリから投稿してください。",
-      "Day26 Reel(remotion-video/out/day26.mp4)を確認し、よければ公式Instagramアプリから投稿してください。hookの「35時間」は2026-09-26 21:30時点のスナップショットのため、投稿が遅れるほど数字が実態とずれます。可能であれば本日中の投稿を推奨します。"
+      "Day26 Reel(remotion-video/out/day26.mp4)を確認し、よければ公式Instagramアプリから投稿してください。hookの「35時間」は2026-09-26 21:30時点のスナップショットのため、投稿が遅れるほど数字が実態とずれます。可能であれば本日中の投稿を推奨します。",
+      "Notta専門用語精度Part2 Reel(notta-accuracy-part2.mp4)はCOO FINAL PASS/PUBLISH GO済み(2026-09-27)です。確認のうえ、よければ公式Instagramアプリから投稿してください(2026-09-28 Morning Routineで、owner_actionsへの記載漏れを発見し追加)。"
     ],
     "approval_queue": [],
     "ai_learning": {
@@ -2707,6 +2711,26 @@
         "exit_code": 0,
         "success": true,
         "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\morning_2026-09-27_070001.log"
+      },
+      {
+        "routine": "premorning",
+        "scheduled_at": "2026-09-28T05:45:00",
+        "started_at": "2026-09-28T05:46:00+09:00",
+        "finished_at": "2026-09-28T05:52:00+09:00",
+        "exit_code": 0,
+        "success": true,
+        "invocation": "manual_chat_slash_command",
+        "status": "MORNING_READY",
+        "note": "Missed Routine Coalescing: 定刻内実行(05:48)、直近ログは2026-09-27 07:22 Morning(SUCCESS_UPDATE)のみでSUPERSEDED非該当、通常実行。Date Rollover実施: today.json/CockpitともDay26/2026-09-27→Day27/2026-09-28へ更新。Day26 X投稿(day26_post_draft.md)・Reel(day26.mp4)はいずれもContent/QA完了済みだがOwner未投稿のためCARRYOVERへ分離(TODAYには入れない)、owner_actions継続維持。Day27分は未着手のためnot_ready正直表示。get_tasks(waiting)1件(1001b4e9、on_hold、next_check_at null)のみでoverdueなし(56831bad/ee95e24bは前夜doneへ移行済み)。Approval Queue pending=0。Cockpit commit 7e7978a・push・Deploy検証PASS(2回目リトライで一致、live current.json business_day=27・current_date=2026-09-28・data_updated_at=05:48:48確認、Pages builds APIはbuilding表示のまま[既知パターン]だが実配信で確認)。"
+      },
+      {
+        "routine": "premorning",
+        "scheduled_at": "2026-09-28T05:45:00",
+        "started_at": "2026-09-28T05:45:02",
+        "finished_at": "2026-09-28T05:53:23",
+        "exit_code": 0,
+        "success": true,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\premorning_2026-09-28_054502.log"
       }
     ],
     "tasks": [
