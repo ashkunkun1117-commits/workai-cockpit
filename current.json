@@ -117,10 +117,10 @@
       },
       {
         "label": "Notta専門用語精度 Part2(HIGH-1/Set3-B、未公開6語編)",
-        "status": "script_awaiting_coo_review_v2",
+        "status": "script_awaiting_coo_review_v3",
         "video_file": null,
         "caption_text": null,
-        "note": "COO SCRIPT REVIEWで「MODIFY→RESUBMIT SCRIPT」判定(2026-09-27)。HOOKが既存公開済みReelと同一主張に見える可能性を指摘され、「前回出していない6語だけ見せます。」→「現場用語10語をNottaに聞かせたら、完全一致は6語でした。」の2行構成へHOOKを修正。Evidence(ALC/下地補強/LGS/巾木)・WHO FITS・tentative wording・disclosureはKEEP。Renderは未実施のまま(再Render禁止の対象となるRender自体がまだ発生していない)。content/reel-json/notta-accuracy-part2.json/.md v2へ更新済み、COOレビュー待ち。"
+        "note": "COO SCRIPT REVIEW v2で「MODIFY — PACING ONLY」判定(2026-09-27)。CONTENT/EVIDENCEはPASSだが、Hookが8.00秒まで伸びtotal35.47秒になったことを指摘(目的はPart2/未公開Evidenceだと伝えることで、冒頭説明を長くすることではない)。COO指定のFINAL HOOK(Spoken「前回出してない6語だけ。10語中、完全一致は6語でした。」/On-screen MAIN「前回出してない6語だけ」・STAT BOX「10語中6語 完全一致」)をそのまま採用。computeScenePacing再計算: hook4.67s/context3.33s/evidence4.50s/core_insight7.52s(action基準floorForMaxが自然に戻った)/action6.83s/cta4.00s、合計30.85s(COO指定TARGET TOTAL約27〜31秒の範囲内)。Evidence/insight/CTA内容は無変更。content/reel-json/notta-accuracy-part2.json/.md v3へ更新済み、COOレビュー待ち。"
       }
     ],
     "account_pivot_reel": {
@@ -745,7 +745,7 @@
   },
   "current_date": "2026-09-27",
   "data_updated_at": "2026-09-27T07:20:00+09:00",
-  "public_updated_at": "2026-09-27T06:03:16.474Z",
+  "public_updated_at": "2026-09-27T11:56:27.218Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -1338,10 +1338,10 @@
         },
         {
           "label": "Notta専門用語精度 Part2(HIGH-1/Set3-B、未公開6語編)",
-          "status": "script_awaiting_coo_review_v2",
+          "status": "script_awaiting_coo_review_v3",
           "video_file": null,
           "caption_text": null,
-          "note": "COO SCRIPT REVIEWで「MODIFY→RESUBMIT SCRIPT」判定(2026-09-27)。HOOKが既存公開済みReelと同一主張に見える可能性を指摘され、「前回出していない6語だけ見せます。」→「現場用語10語をNottaに聞かせたら、完全一致は6語でした。」の2行構成へHOOKを修正。Evidence(ALC/下地補強/LGS/巾木)・WHO FITS・tentative wording・disclosureはKEEP。Renderは未実施のまま(再Render禁止の対象となるRender自体がまだ発生していない)。content/reel-json/notta-accuracy-part2.json/.md v2へ更新済み、COOレビュー待ち。"
+          "note": "COO SCRIPT REVIEW v2で「MODIFY — PACING ONLY」判定(2026-09-27)。CONTENT/EVIDENCEはPASSだが、Hookが8.00秒まで伸びtotal35.47秒になったことを指摘(目的はPart2/未公開Evidenceだと伝えることで、冒頭説明を長くすることではない)。COO指定のFINAL HOOK(Spoken「前回出してない6語だけ。10語中、完全一致は6語でした。」/On-screen MAIN「前回出してない6語だけ」・STAT BOX「10語中6語 完全一致」)をそのまま採用。computeScenePacing再計算: hook4.67s/context3.33s/evidence4.50s/core_insight7.52s(action基準floorForMaxが自然に戻った)/action6.83s/cta4.00s、合計30.85s(COO指定TARGET TOTAL約27〜31秒の範囲内)。Evidence/insight/CTA内容は無変更。content/reel-json/notta-accuracy-part2.json/.md v3へ更新済み、COOレビュー待ち。"
         }
       ],
       "account_pivot_reel": {
