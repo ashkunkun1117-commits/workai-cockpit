@@ -7,12 +7,13 @@
       "status": "draft",
       "text_file": "content/x/day26_post_draft.md",
       "note": "Day26分。Content Editor作成(2026-09-26 Evening Routine)。Reach/Awarenessカテゴリ(直近5投稿がTrust3/Revenue2に偏っていたため)。Account Pivot Reel 24hレビュー実測(リーチ増・行動系指標0が2本連続)を一次根拠とする。候補A/B、Claude Business QA完了。Owner投稿承認待ち・レンダリング不要。",
-      "text": null
+      "text": "新方針にしてから35時間。\n\nX表示は7→39、IGフォロワーは12→17に増えました。\n\nでも保存・シェア・フォロー・コメントは、この投稿も前のNotta動画も0のまま。2本連続です。\n\n見てもらえる数は増えても、行動にはまだつながっていない。正直、今まさに向き合っている悩みです。\n\n何が足りないと思いますか。よければ教えてください。\n\nAIでできる仕事は、AIに。\nDay26/100"
     },
     "ig_reel": {
       "status": "ready",
       "video_file": "day26.mp4",
-      "note": "Day26分。2026-09-27 Morning RoutineでCreative Engineerがレンダリング完了(content/reel-json/day26.json新規作成、VOICEVOX音声合成、remotion-video/out/day26.mp4・day26-cover.png出力、尺35.35秒)。Claude Business QA完了(frame0/OPENING_FRAME_RULES準拠、一次データ照合PASS)。**注意**: hookの「35時間」は2026-09-26 21:30時点のスナップショット(phase2_24h_review)であり、投稿が遅れるほど実態とずれる。詳細はcontent/reel-json/day26_reach_awareness_story.mdのClaude Business QAセクション参照。"
+      "note": "Day26分。2026-09-27 Morning RoutineでCreative Engineerがレンダリング完了(content/reel-json/day26.json新規作成、VOICEVOX音声合成、remotion-video/out/day26.mp4・day26-cover.png出力、尺35.35秒)。Claude Business QA完了(frame0/OPENING_FRAME_RULES準拠、一次データ照合PASS)。**注意**: hookの「35時間」は2026-09-26 21:30時点のスナップショット(phase2_24h_review)であり、投稿が遅れるほど実態とずれる。詳細はcontent/reel-json/day26_reach_awareness_story.mdのClaude Business QAセクション参照。",
+      "caption_text": "新方針にしてから35時間。\n\nX表示は7→39、IGフォロワーは12→17に増えました。数字だけ見れば良い変化です。\n\nでも、保存・シェア・フォロー・コメントは、この投稿も、前のNotta動画も、0のまま。2本連続です。\n\n見てもらえる数は増えても、行動にはまだつながっていない。正直、今まさに向き合っている悩みです。\n\n何が足りないと思いますか。良ければコメントで教えてください。\n\nAIでできる仕事は、AIに。\nDay26/100\n#AI仕事研究所 #100日実験 #個人事業 #AIパートナー"
     }
   },
   "tomorrow": {
@@ -747,7 +748,7 @@
   },
   "current_date": "2026-09-27",
   "data_updated_at": "2026-09-27T22:35:00+09:00",
-  "public_updated_at": "2026-09-27T13:51:59.912Z",
+  "public_updated_at": "2026-09-27T14:42:59.072Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -1248,12 +1249,13 @@
         "status": "draft",
         "text_file": "content/x/day26_post_draft.md",
         "note": "Day26分。Content Editor作成(2026-09-26 Evening Routine)。Reach/Awarenessカテゴリ(直近5投稿がTrust3/Revenue2に偏っていたため)。Account Pivot Reel 24hレビュー実測(リーチ増・行動系指標0が2本連続)を一次根拠とする。候補A/B、Claude Business QA完了。Owner投稿承認待ち・レンダリング不要。",
-        "text": null
+        "text": "新方針にしてから35時間。\n\nX表示は7→39、IGフォロワーは12→17に増えました。\n\nでも保存・シェア・フォロー・コメントは、この投稿も前のNotta動画も0のまま。2本連続です。\n\n見てもらえる数は増えても、行動にはまだつながっていない。正直、今まさに向き合っている悩みです。\n\n何が足りないと思いますか。よければ教えてください。\n\nAIでできる仕事は、AIに。\nDay26/100"
       },
       "ig_reel": {
         "status": "ready",
         "video_file": "day26.mp4",
-        "note": "Day26分。2026-09-27 Morning RoutineでCreative Engineerがレンダリング完了(content/reel-json/day26.json新規作成、VOICEVOX音声合成、remotion-video/out/day26.mp4・day26-cover.png出力、尺35.35秒)。Claude Business QA完了(frame0/OPENING_FRAME_RULES準拠、一次データ照合PASS)。**注意**: hookの「35時間」は2026-09-26 21:30時点のスナップショット(phase2_24h_review)であり、投稿が遅れるほど実態とずれる。詳細はcontent/reel-json/day26_reach_awareness_story.mdのClaude Business QAセクション参照。"
+        "note": "Day26分。2026-09-27 Morning RoutineでCreative Engineerがレンダリング完了(content/reel-json/day26.json新規作成、VOICEVOX音声合成、remotion-video/out/day26.mp4・day26-cover.png出力、尺35.35秒)。Claude Business QA完了(frame0/OPENING_FRAME_RULES準拠、一次データ照合PASS)。**注意**: hookの「35時間」は2026-09-26 21:30時点のスナップショット(phase2_24h_review)であり、投稿が遅れるほど実態とずれる。詳細はcontent/reel-json/day26_reach_awareness_story.mdのClaude Business QAセクション参照。",
+        "caption_text": "新方針にしてから35時間。\n\nX表示は7→39、IGフォロワーは12→17に増えました。数字だけ見れば良い変化です。\n\nでも、保存・シェア・フォロー・コメントは、この投稿も、前のNotta動画も、0のまま。2本連続です。\n\n見てもらえる数は増えても、行動にはまだつながっていない。正直、今まさに向き合っている悩みです。\n\n何が足りないと思いますか。良ければコメントで教えてください。\n\nAIでできる仕事は、AIに。\nDay26/100\n#AI仕事研究所 #100日実験 #個人事業 #AIパートナー"
       }
     },
     "tomorrow": {
