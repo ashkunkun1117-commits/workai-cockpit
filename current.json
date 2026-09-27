@@ -776,7 +776,7 @@
   },
   "current_date": "2026-09-28",
   "data_updated_at": "2026-09-28T07:10:00+09:00",
-  "public_updated_at": "2026-09-27T22:05:02.191Z",
+  "public_updated_at": "2026-09-27T22:47:29.269Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -2731,6 +2731,26 @@
         "exit_code": 0,
         "success": true,
         "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\premorning_2026-09-28_054502.log"
+      },
+      {
+        "routine": "morning",
+        "scheduled_at": "2026-09-28T07:00:00",
+        "started_at": "2026-09-28T07:00:00+09:00",
+        "finished_at": "2026-09-28T07:20:00+09:00",
+        "exit_code": 0,
+        "success": true,
+        "invocation": "manual_chat_slash_command",
+        "status": "SUCCESS",
+        "note": "Missed Routine Coalescing: 直前premorning(05:46-05:52)成功済みのみでSUPERSEDED非該当、通常フル実行。X unauthenticated確定継続(16日連続)、フォロワー7人/フォロー中9人で変化なし。IG authenticated、フォロワー17人/投稿25件で変化なし、新規投稿なし。Manual Publish Verification: Day26 X/Reelとも未投稿で据え置き正当。X Conversation Routine: narisumashi100含めログインゲートによりNOT CHECKED継続。発見・修正: notta-accuracy-part2.mp4(COO PUBLISH GO済み)がowner_actionsに未記載だったため追加(reconcile)。A8.net継続unauthenticated。Revenue Experimentタスクoverdueなし(1001b4e9はon_hold対象外)。Day27 Own ContentはORDER2ソース未確定のためnot_ready継続。Cockpit commit 6597dfb・push・Deploy検証PASS(current.json generated_at=07:10確認)。"
+      },
+      {
+        "routine": "morning",
+        "scheduled_at": "2026-09-28T07:00:00",
+        "started_at": "2026-09-28T07:00:02",
+        "finished_at": "2026-09-28T07:07:59",
+        "exit_code": 0,
+        "success": true,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\morning_2026-09-28_070002.log"
       }
     ],
     "tasks": [
