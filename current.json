@@ -1,17 +1,18 @@
 {
   "business_day": 28,
   "business_date": "2026-09-29",
-  "generated_at": "2026-09-29T07:20:00+09:00",
+  "generated_at": "2026-09-29T07:35:00+09:00",
   "today": {
     "x_post": {
-      "status": "not_ready",
-      "text_file": null,
-      "note": "Day28分。Day26下書きはSTALE retire済み(35時間hookの陳腐化)。本日reach_awareness優先で新規制作予定。"
+      "status": "draft",
+      "text_file": "content/x/day28_post_draft.md",
+      "note": "Content Editor作成・Claude Business QA完了(データ照合PASS、誇張なし)。候補A推奨。Reelレンダリング完了後、Owner承認待ちとしてcarryover/owner_actionsへ昇格予定。",
+      "text": null
     },
     "ig_reel": {
-      "status": "not_ready",
+      "status": "in_production",
       "video_file": null,
-      "note": "Day28分。Day26 Reelは同理由でSTALE retire済み。本日reach_awareness優先で新規制作予定。"
+      "note": "Content Editor台本(content/reel-json/day28_reach_awareness_story.md)完成・Claude Business QA完了。Creative Engineerへレンダリング委任中(2026-09-29 07:xx)。"
     }
   },
   "tomorrow": {
@@ -803,8 +804,8 @@
     "gate": "MORNING_READY(TODAYはDay27当日分のみ・CARRYOVERにDay26投稿待ち2件を分離済み・Approval Queue空・owner_actions最新・stale項目なし)。"
   },
   "current_date": "2026-09-29",
-  "data_updated_at": "2026-09-29T07:20:00+09:00",
-  "public_updated_at": "2026-09-28T22:04:32.879Z",
+  "data_updated_at": "2026-09-29T07:35:00+09:00",
+  "public_updated_at": "2026-09-28T22:08:57.682Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -1317,17 +1318,18 @@
   "source_manifest": {
     "business_day": 28,
     "business_date": "2026-09-29",
-    "generated_at": "2026-09-29T07:20:00+09:00",
+    "generated_at": "2026-09-29T07:35:00+09:00",
     "today": {
       "x_post": {
-        "status": "not_ready",
-        "text_file": null,
-        "note": "Day28分。Day26下書きはSTALE retire済み(35時間hookの陳腐化)。本日reach_awareness優先で新規制作予定。"
+        "status": "draft",
+        "text_file": "content/x/day28_post_draft.md",
+        "note": "Content Editor作成・Claude Business QA完了(データ照合PASS、誇張なし)。候補A推奨。Reelレンダリング完了後、Owner承認待ちとしてcarryover/owner_actionsへ昇格予定。",
+        "text": null
       },
       "ig_reel": {
-        "status": "not_ready",
+        "status": "in_production",
         "video_file": null,
-        "note": "Day28分。Day26 Reelは同理由でSTALE retire済み。本日reach_awareness優先で新規制作予定。"
+        "note": "Content Editor台本(content/reel-json/day28_reach_awareness_story.md)完成・Claude Business QA完了。Creative Engineerへレンダリング委任中(2026-09-29 07:xx)。"
       }
     },
     "tomorrow": {
@@ -2825,6 +2827,18 @@
         "exit_code": 0,
         "success": true,
         "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\morning_2026-09-28_070002.log"
+      },
+      {
+        "routine": "morning",
+        "scheduled_at": "2026-09-29T07:00:00",
+        "started_at": "2026-09-29T07:00:39+09:00",
+        "finished_at": "2026-09-29T07:25:00+09:00",
+        "exit_code": 0,
+        "success": true,
+        "invocation": "manual_chat_slash_command",
+        "status": "SUCCESS",
+        "note": "Missed Routine Coalescing: 2026-09-28 22:30 Evening・2026-09-29 05:45 Pre-Morningとも未発火(ログ記録なし)、直近成功は2026-09-28 07:07 MorningのみでSUPERSEDED非該当。Pre-Morning欠落分のDate Rollover(Day27/2026-09-28→Day28/2026-09-29)をこのMorning内で実施。X unauthenticated確定継続(ログイン画面明示)、フォロワー7人/フォロー中9人変化なし。IG authenticated、フォロワー17人/投稿26件変化なし。X Conversation Routine: ledger waiting9件、ログインゲートによりNOT CHECKED継続。Day26 X投稿・ReelをSTALE retire(hookの「35時間」が実際は約92-93時間に乖離、Immediate Change Principle該当)、content_mix_trackerにnotta-accuracy-part2記録漏れを発見・追加(reach_awareness0%判明)。kpi_daily.csv Day27欠落行を追加。Content EditorへDay28 reach_awareness content(X投稿+Reel構成案)の新規制作をバックグラウンド委任(実行中)。Approval Queue pending=0。Revenue Experiment: task 31852ac0(next_check_at 08:10)未到来のため今回対応せず、task 1001b4e9はon_hold継続。Cockpit commit 38ada0f・push・Deploy検証PASS(3回目リトライで一致、live current.json business_day=28・current_date=2026-09-29・data_updated_at=07:20確認)。",
+        "log_file": null
       }
     ],
     "tasks": [
