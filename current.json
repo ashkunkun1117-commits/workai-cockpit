@@ -1,7 +1,7 @@
 {
   "business_day": 29,
   "business_date": "2026-09-30",
-  "generated_at": "2026-09-30T05:48:00+09:00",
+  "generated_at": "2026-09-30T07:10:00+09:00",
   "today": {
     "x_post": {
       "status": "ready",
@@ -317,7 +317,8 @@
     "revenue_action_2026_09_29_finding": "【重要】Instagramプロフィール(workai_lab777)のウェブサイトリンクがデスクトップ・モバイル両方の表示で見当たらず、DOM走査でも外部リンク0件を確認。プロフィール編集画面(デスクトップ)は「リンクはモバイルデバイスからのみ編集できます」と表示、Claudeは直接確認・修正不可。これが事実なら、全Reel・全投稿の主要CTA「プロフィール欄のリンクからnote記事へ」が機能しておらず、current_bottleneckが一貫して示す「content→note/LP:未計測」の根本原因である可能性が高い。Owner Actionとして最優先で確認依頼(詳細はreports/business-backyard-2026-09-29.md)。A8.netはセッション切れでDATA UNAVAILABLE。",
     "revenue_action_2026_09_29_bio_link_resolved": "Evening Routine(22:31 JST)の実機Playwright確認で、プロフィール欄にnote.com/workai_lab777のウェブサイトリンクが表示されていることを確認(link要素・href=l.instagram.com経由のnote.comリダイレクトを確認)。当日Morning〜午後の間にOwnerがモバイルから修正した可能性が高い(Claudeは修正していない)。critical owner action(bio link未設定)は解消のためowner_actionsから削除した。",
     "evening_routine_2026-09-29_note": "Missed Routine Coalescing: 直近ログにMORNING(07:00-07:19、SUCCESS)以降Evening/翌日premorningの成功記録なし(07:02:39の premorning/evening exit_code 1618は起動時クラッシュと見られる異常ログ、実行実体なし)のためSUPERSEDED非該当、通常フル実行。X実機確認: unauthenticated確定継続(ログイン用サイドバー表示)、プロフィールは非ログイン閲覧可能でフォロワー7人・フォロー中9人(前回と同値、変化なし)、新規X投稿なし。IG実機確認: authenticated、フォロワー17人・フォロー中10人・投稿26件(前回と同値、変化なし)、新規投稿なし。Manual Publish Verification: carryover空、reconcile対象なし。**重要発見**: 今朝のCOO PRIORITY FIX対応で追加したcritical owner action(IGプロフィールのウェブサイトリンク欠落)が、実機再確認の結果すでに解消していることを発見(bio link表示を確認、上記revenue_action_2026_09_29_bio_link_resolved参照)。owner_actionsから削除し、りょうすけ氏DM未返信(2日前)を通常のowner_actionとして維持。Revenue Experiment: task 31852ac0の24hチェックポイントを実施(views58/viewers56/saves1新規、48hへ継続)。task 1001b4e9はon_hold継続。GREEN Execution QA: Day28 IG Reel(day28.mp4、Creative Engineerレンダリング済み)のClaude Business QAを実施、frame0/データ照合はPASSだが総尺55.9秒がCLAUDE.md仕様(15-30秒)を大幅超過する欠陥を発見、status=qa_revision_neededへ変更しContent Editorへnarration短縮を依頼(公開保留、STALE化を避けるため早期に着手)。X Conversation Routine: X unauthenticated継続のためledger会話の新規返信確認は引き続きNOT CHECKED。Approval Queue pending=0。",
-    "premorning_routine_2026-09-30_note": "Missed Routine Coalescing判定: 直近成功ログは2026-09-29 22:30 Evening(22:30-22:47、SUCCESS)のみで、本日分Pre-Morning/Morningはまだ未実行のためSUPERSEDED非該当、通常実行。get_business_day()でDay29/2026-09-30を確認、Date Rollover実施(business_day 28→29、business_date 2026-09-29→2026-09-30)。Day28 X投稿下書き(content/x/day28_post_draft.md)・IG Reel(day28.mp4)はいずれもOwner未投稿のため、2026-09-30付decisions_log記載のCOO指令(『content_staleは投稿済みコンテンツにのみ適用』、Cockpit commit 0ab1f83で実装済み)に従いtodayバケットに維持、CARRYOVER化・非表示化はしない(壁時計の日付繰越だけを理由に隠さない)。tomorrowプレースホルダーは旧「Day28分」という誤ラベルを解消し、Day28完了後の次コンテンツとして正直にnot_ready表示に更新。既知の未解消ギャップ(同decisions_log記載): Day28 IG Reelのキャプション下書き(content/instagram/day28_caption.md相当)が未作成、X下書きの無断流用は代筆に近いため実施せず、Morning RoutineでContent Editorへの委任を優先課題として引き継ぐ。get_tasks(waiting)2件確認、いずれもOVERDUEなし(31852ac0: next_check_at 2026-09-30T08:10未到来、1001b4e9: on_hold・next_check_at null)。get_approvals(pending)=0件。owner_actions(Day28投稿依頼・りょうすけ氏DM返信依頼)は変更なしで維持。"
+    "premorning_routine_2026-09-30_note": "Missed Routine Coalescing判定: 直近成功ログは2026-09-29 22:30 Evening(22:30-22:47、SUCCESS)のみで、本日分Pre-Morning/Morningはまだ未実行のためSUPERSEDED非該当、通常実行。get_business_day()でDay29/2026-09-30を確認、Date Rollover実施(business_day 28→29、business_date 2026-09-29→2026-09-30)。Day28 X投稿下書き(content/x/day28_post_draft.md)・IG Reel(day28.mp4)はいずれもOwner未投稿のため、2026-09-30付decisions_log記載のCOO指令(『content_staleは投稿済みコンテンツにのみ適用』、Cockpit commit 0ab1f83で実装済み)に従いtodayバケットに維持、CARRYOVER化・非表示化はしない(壁時計の日付繰越だけを理由に隠さない)。tomorrowプレースホルダーは旧「Day28分」という誤ラベルを解消し、Day28完了後の次コンテンツとして正直にnot_ready表示に更新。既知の未解消ギャップ(同decisions_log記載): Day28 IG Reelのキャプション下書き(content/instagram/day28_caption.md相当)が未作成、X下書きの無断流用は代筆に近いため実施せず、Morning RoutineでContent Editorへの委任を優先課題として引き継ぐ。get_tasks(waiting)2件確認、いずれもOVERDUEなし(31852ac0: next_check_at 2026-09-30T08:10未到来、1001b4e9: on_hold・next_check_at null)。get_approvals(pending)=0件。owner_actions(Day28投稿依頼・りょうすけ氏DM返信依頼)は変更なしで維持。",
+    "morning_routine_2026-09-30_note": "Missed Routine Coalescing: 直近成功ログは本日05:48 Pre-Morning(MORNING_READY)のみで本日分Morning未実行のためSUPERSEDED非該当、通常フル実行。X実機確認: x.com/home明示的ログイン画面リダイレクトでunauthenticated確定継続(18日連続)。プロフィールは非ログイン閲覧可能: フォロワー7人・フォロー中9人(前回と同値、変化なし)、新規投稿なし、既存投稿のview数のみ微増(固定Pivot投稿49・Notta Part2 X投稿16・Day24 Revenue投稿22・notta-voice-validation投稿40、いずれもオーガニック増加のみで新規イベントなし)。IG実機確認: authenticated、フォロワー17人・フォロー中10人・投稿26件(前回と同値、変化なし)、新規投稿なし(day28.mp4は未掲載、Owner未投稿を再確認)。DM inbox確認: りょうすけ氏の質問DM未返信のまま(2日前、変化なし)、新規DMなし。Manual Publish Verification: carryover空、today(Day28 X post=ready/IG Reel=ready)はいずれも未投稿のままで整合、reconcile対象なし。X Conversation Routine: ledger waiting8件、Xログインゲートのため新規author返信確認・新規Strategic Reply候補検索とも引き続きNOT CHECKED(Owner再ログイン依頼はしない)。Revenue Experiment: task 31852ac0(next_check_at 2026-09-30T08:10)は現在時刻07:02時点で未到来、OVERDUEなし。task 1001b4e9はon_hold継続。Approval Queue pending=0。**発見**: Day28 IG Reel(day28.mp4)のInstagramキャプション下書き(content/instagram/day28_caption.md相当)が依然未作成であることを確認(2026-09-29 decisions_log記載の既知ギャップ)、これがOwnerの手動投稿を止めている可能性があるためContent Editorへ作成をバックグラウンド委任(Human Voice/数字検証込み、投稿はしない)。それ以外の新規Engineering Task該当なし。Cockpit再生成・commit/push・Deploy検証は本ノート追記後に実施。"
   },
   "carryover": [],
   "history": [
@@ -827,8 +828,8 @@
     "gate": "MORNING_READY(TODAYはDay27当日分のみ・CARRYOVERにDay26投稿待ち2件を分離済み・Approval Queue空・owner_actions最新・stale項目なし)。"
   },
   "current_date": "2026-09-30",
-  "data_updated_at": "2026-09-30T05:48:00+09:00",
-  "public_updated_at": "2026-09-29T20:50:22.309Z",
+  "data_updated_at": "2026-09-30T07:10:00+09:00",
+  "public_updated_at": "2026-09-29T22:03:28.657Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -1359,7 +1360,7 @@
   "source_manifest": {
     "business_day": 29,
     "business_date": "2026-09-30",
-    "generated_at": "2026-09-30T05:48:00+09:00",
+    "generated_at": "2026-09-30T07:10:00+09:00",
     "today": {
       "x_post": {
         "status": "ready",
@@ -1675,7 +1676,8 @@
       "revenue_action_2026_09_29_finding": "【重要】Instagramプロフィール(workai_lab777)のウェブサイトリンクがデスクトップ・モバイル両方の表示で見当たらず、DOM走査でも外部リンク0件を確認。プロフィール編集画面(デスクトップ)は「リンクはモバイルデバイスからのみ編集できます」と表示、Claudeは直接確認・修正不可。これが事実なら、全Reel・全投稿の主要CTA「プロフィール欄のリンクからnote記事へ」が機能しておらず、current_bottleneckが一貫して示す「content→note/LP:未計測」の根本原因である可能性が高い。Owner Actionとして最優先で確認依頼(詳細はreports/business-backyard-2026-09-29.md)。A8.netはセッション切れでDATA UNAVAILABLE。",
       "revenue_action_2026_09_29_bio_link_resolved": "Evening Routine(22:31 JST)の実機Playwright確認で、プロフィール欄にnote.com/workai_lab777のウェブサイトリンクが表示されていることを確認(link要素・href=l.instagram.com経由のnote.comリダイレクトを確認)。当日Morning〜午後の間にOwnerがモバイルから修正した可能性が高い(Claudeは修正していない)。critical owner action(bio link未設定)は解消のためowner_actionsから削除した。",
       "evening_routine_2026-09-29_note": "Missed Routine Coalescing: 直近ログにMORNING(07:00-07:19、SUCCESS)以降Evening/翌日premorningの成功記録なし(07:02:39の premorning/evening exit_code 1618は起動時クラッシュと見られる異常ログ、実行実体なし)のためSUPERSEDED非該当、通常フル実行。X実機確認: unauthenticated確定継続(ログイン用サイドバー表示)、プロフィールは非ログイン閲覧可能でフォロワー7人・フォロー中9人(前回と同値、変化なし)、新規X投稿なし。IG実機確認: authenticated、フォロワー17人・フォロー中10人・投稿26件(前回と同値、変化なし)、新規投稿なし。Manual Publish Verification: carryover空、reconcile対象なし。**重要発見**: 今朝のCOO PRIORITY FIX対応で追加したcritical owner action(IGプロフィールのウェブサイトリンク欠落)が、実機再確認の結果すでに解消していることを発見(bio link表示を確認、上記revenue_action_2026_09_29_bio_link_resolved参照)。owner_actionsから削除し、りょうすけ氏DM未返信(2日前)を通常のowner_actionとして維持。Revenue Experiment: task 31852ac0の24hチェックポイントを実施(views58/viewers56/saves1新規、48hへ継続)。task 1001b4e9はon_hold継続。GREEN Execution QA: Day28 IG Reel(day28.mp4、Creative Engineerレンダリング済み)のClaude Business QAを実施、frame0/データ照合はPASSだが総尺55.9秒がCLAUDE.md仕様(15-30秒)を大幅超過する欠陥を発見、status=qa_revision_neededへ変更しContent Editorへnarration短縮を依頼(公開保留、STALE化を避けるため早期に着手)。X Conversation Routine: X unauthenticated継続のためledger会話の新規返信確認は引き続きNOT CHECKED。Approval Queue pending=0。",
-      "premorning_routine_2026-09-30_note": "Missed Routine Coalescing判定: 直近成功ログは2026-09-29 22:30 Evening(22:30-22:47、SUCCESS)のみで、本日分Pre-Morning/Morningはまだ未実行のためSUPERSEDED非該当、通常実行。get_business_day()でDay29/2026-09-30を確認、Date Rollover実施(business_day 28→29、business_date 2026-09-29→2026-09-30)。Day28 X投稿下書き(content/x/day28_post_draft.md)・IG Reel(day28.mp4)はいずれもOwner未投稿のため、2026-09-30付decisions_log記載のCOO指令(『content_staleは投稿済みコンテンツにのみ適用』、Cockpit commit 0ab1f83で実装済み)に従いtodayバケットに維持、CARRYOVER化・非表示化はしない(壁時計の日付繰越だけを理由に隠さない)。tomorrowプレースホルダーは旧「Day28分」という誤ラベルを解消し、Day28完了後の次コンテンツとして正直にnot_ready表示に更新。既知の未解消ギャップ(同decisions_log記載): Day28 IG Reelのキャプション下書き(content/instagram/day28_caption.md相当)が未作成、X下書きの無断流用は代筆に近いため実施せず、Morning RoutineでContent Editorへの委任を優先課題として引き継ぐ。get_tasks(waiting)2件確認、いずれもOVERDUEなし(31852ac0: next_check_at 2026-09-30T08:10未到来、1001b4e9: on_hold・next_check_at null)。get_approvals(pending)=0件。owner_actions(Day28投稿依頼・りょうすけ氏DM返信依頼)は変更なしで維持。"
+      "premorning_routine_2026-09-30_note": "Missed Routine Coalescing判定: 直近成功ログは2026-09-29 22:30 Evening(22:30-22:47、SUCCESS)のみで、本日分Pre-Morning/Morningはまだ未実行のためSUPERSEDED非該当、通常実行。get_business_day()でDay29/2026-09-30を確認、Date Rollover実施(business_day 28→29、business_date 2026-09-29→2026-09-30)。Day28 X投稿下書き(content/x/day28_post_draft.md)・IG Reel(day28.mp4)はいずれもOwner未投稿のため、2026-09-30付decisions_log記載のCOO指令(『content_staleは投稿済みコンテンツにのみ適用』、Cockpit commit 0ab1f83で実装済み)に従いtodayバケットに維持、CARRYOVER化・非表示化はしない(壁時計の日付繰越だけを理由に隠さない)。tomorrowプレースホルダーは旧「Day28分」という誤ラベルを解消し、Day28完了後の次コンテンツとして正直にnot_ready表示に更新。既知の未解消ギャップ(同decisions_log記載): Day28 IG Reelのキャプション下書き(content/instagram/day28_caption.md相当)が未作成、X下書きの無断流用は代筆に近いため実施せず、Morning RoutineでContent Editorへの委任を優先課題として引き継ぐ。get_tasks(waiting)2件確認、いずれもOVERDUEなし(31852ac0: next_check_at 2026-09-30T08:10未到来、1001b4e9: on_hold・next_check_at null)。get_approvals(pending)=0件。owner_actions(Day28投稿依頼・りょうすけ氏DM返信依頼)は変更なしで維持。",
+      "morning_routine_2026-09-30_note": "Missed Routine Coalescing: 直近成功ログは本日05:48 Pre-Morning(MORNING_READY)のみで本日分Morning未実行のためSUPERSEDED非該当、通常フル実行。X実機確認: x.com/home明示的ログイン画面リダイレクトでunauthenticated確定継続(18日連続)。プロフィールは非ログイン閲覧可能: フォロワー7人・フォロー中9人(前回と同値、変化なし)、新規投稿なし、既存投稿のview数のみ微増(固定Pivot投稿49・Notta Part2 X投稿16・Day24 Revenue投稿22・notta-voice-validation投稿40、いずれもオーガニック増加のみで新規イベントなし)。IG実機確認: authenticated、フォロワー17人・フォロー中10人・投稿26件(前回と同値、変化なし)、新規投稿なし(day28.mp4は未掲載、Owner未投稿を再確認)。DM inbox確認: りょうすけ氏の質問DM未返信のまま(2日前、変化なし)、新規DMなし。Manual Publish Verification: carryover空、today(Day28 X post=ready/IG Reel=ready)はいずれも未投稿のままで整合、reconcile対象なし。X Conversation Routine: ledger waiting8件、Xログインゲートのため新規author返信確認・新規Strategic Reply候補検索とも引き続きNOT CHECKED(Owner再ログイン依頼はしない)。Revenue Experiment: task 31852ac0(next_check_at 2026-09-30T08:10)は現在時刻07:02時点で未到来、OVERDUEなし。task 1001b4e9はon_hold継続。Approval Queue pending=0。**発見**: Day28 IG Reel(day28.mp4)のInstagramキャプション下書き(content/instagram/day28_caption.md相当)が依然未作成であることを確認(2026-09-29 decisions_log記載の既知ギャップ)、これがOwnerの手動投稿を止めている可能性があるためContent Editorへ作成をバックグラウンド委任(Human Voice/数字検証込み、投稿はしない)。それ以外の新規Engineering Task該当なし。Cockpit再生成・commit/push・Deploy検証は本ノート追記後に実施。"
     },
     "carryover": [],
     "history": [
@@ -2950,6 +2952,26 @@
         "exit_code": 0,
         "success": true,
         "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\evening_2026-09-29_223002.log"
+      },
+      {
+        "routine": "premorning",
+        "scheduled_at": "2026-09-30T05:45:00",
+        "started_at": "2026-09-30T05:48:19+09:00",
+        "finished_at": "2026-09-30T05:51:00+09:00",
+        "exit_code": 0,
+        "success": true,
+        "invocation": "manual_chat_slash_command",
+        "status": "MORNING_READY",
+        "note": "Missed Routine Coalescing: 直近成功ログは2026-09-29 22:30 Evening(SUCCESS)のみで本日分未実行のためSUPERSEDED非該当、通常実行。get_business_day()でDay29/2026-09-30を確認、Date Rollover実施。Day28 X投稿下書き・IG Reel(day28.mp4)はOwner未投稿のため、2026-09-30 decisions_log記載のCOO指令(content_staleは投稿済みのみに適用、Cockpit commit 0ab1f83)に従いtodayバケットに維持(carryover化・非表示化はしない)。tomorrowプレースホルダーの誤ラベル(旧Day28分表記)を解消。**発見・修正**: filterStaleOwnerActions(正規表現^Dayd+マッチで旧Day番号のowner_actionを機械的に除外)がDate Rollover後にDay28投稿依頼テキストを誤って消失させることを実機確認で発見(OWNER ACTION NOW/ai-status.json両方で再現)、today.json側の文言(Day28→制作済みのX投稿...)を書き換えて実害を解消、根本原因はCodexへEngineering Task起票(coord-40bcf38bb0c849657787c6010062f366)。get_tasks(waiting)2件ともOVERDUEなし(31852ac0 next_check 08:10未到来、1001b4e9 on_hold)。get_approvals(pending)=0件。Cockpit commit c801b4b・push・Deploy検証PASS(3回目リトライでlive current.json business_day=29・current_date=2026-09-30一致確認)。"
+      },
+      {
+        "routine": "premorning",
+        "scheduled_at": "2026-09-30T05:45:00",
+        "started_at": "2026-09-30T05:45:02",
+        "finished_at": "2026-09-30T05:52:55",
+        "exit_code": 0,
+        "success": true,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\premorning_2026-09-30_054502.log"
       }
     ],
     "tasks": [
