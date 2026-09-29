@@ -827,7 +827,7 @@
   },
   "current_date": "2026-09-29",
   "data_updated_at": "2026-09-29T22:40:00+09:00",
-  "public_updated_at": "2026-09-29T13:46:37.381Z",
+  "public_updated_at": "2026-09-29T15:25:26.422Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -2939,6 +2939,15 @@
         "invocation": "manual_chat_slash_command",
         "status": "SUCCESS",
         "note": "Missed Routine Coalescing: 直近ログはMorning(07:00-07:19、SUCCESS)のみでEvening/翌日premorning未実行のためSUPERSEDED非該当、通常フル実行(07:02:39のexit_code1618ログは起動時異常でルーティン実体なし)。X unauthenticated確定継続、フォロワー7人/フォロー中9人変化なし。IG authenticated、フォロワー17人変化なし。重要発見: 今朝のCOO PRIORITY FIX critical owner action(IGプロフィールbio link欠落)が実機再確認で既に解消済みと判明、owner_actionsから削除。task 31852ac0の24hチェック実施(views58/saves1新規)、48hへ継続。Day28 IG Reel(day28.mp4)完成済みだがClaude Business QAで尺55.9秒がCLAUDE.md仕様(15-30秒)超過と発見、status=qa_revision_neededへ変更しContent Editorへnarration短縮委任(background)。kpi_daily.csv Day28行新規作成。Cockpit commit 93757c8・push・Deploy検証PASS(live current.json generated_at=22:40確認)。"
+      },
+      {
+        "routine": "evening",
+        "scheduled_at": "2026-09-29T22:30:00",
+        "started_at": "2026-09-29T22:30:02",
+        "finished_at": "2026-09-29T22:47:43",
+        "exit_code": 0,
+        "success": true,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\evening_2026-09-29_223002.log"
       }
     ],
     "tasks": [
