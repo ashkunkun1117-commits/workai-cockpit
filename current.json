@@ -1,7 +1,7 @@
 {
   "business_day": 28,
   "business_date": "2026-09-29",
-  "generated_at": "2026-09-29T07:35:00+09:00",
+  "generated_at": "2026-09-29T22:40:00+09:00",
   "today": {
     "x_post": {
       "status": "draft",
@@ -10,9 +10,9 @@
       "text": null
     },
     "ig_reel": {
-      "status": "in_production",
-      "video_file": null,
-      "note": "Content Editor台本(content/reel-json/day28_reach_awareness_story.md)完成・Claude Business QA完了。Creative Engineerへレンダリング委任中(2026-09-29 07:xx)。"
+      "status": "qa_revision_needed",
+      "video_file": "day28.mp4",
+      "note": "Creative Engineerによるレンダリング完了済み(remotion-video/out/day28.mp4、55.945秒、1678フレーム、frame0/OPENING_FRAME_RULES準拠PASS、データ照合PASS、decode/audio同期異常なし)。ただしClaude Business QA(2026-09-29 Evening)で欠陥を発見: 総尺55.9秒がCLAUDE.md仕様(15-30秒)および直近Reel実績(28-40秒程度)を大幅に超過している(context/evidence/core_insightの3シーンでnarrationが長い)。公開判断を保留し、Content Editorへnarration短縮(事実・数値は変更せず、特にcontext/evidence/core_insightを圧縮)を依頼、再レンダリングをCreative Engineerへ依頼する。"
     }
   },
   "tomorrow": {
@@ -151,6 +151,25 @@
             "follows_from_post": 0
           },
           "source": "Instagram Insights実機確認(media_id 3995749106085024725)、6時間経過時点のスナップショット。24h/48h/72hで追跡予定。"
+        },
+        "check_24h_2026-09-29": {
+          "checked_at": "2026-09-29T22:31:00+09:00",
+          "elapsed_hours_approx": 24,
+          "ig_reel": {
+            "views": 58,
+            "viewers": 56,
+            "follower_viewer_pct": 3.4,
+            "non_follower_viewer_pct": 96.6,
+            "interactions": 1,
+            "likes": 0,
+            "comments": 0,
+            "saves": 1,
+            "shares": 0,
+            "profile_activity": 0,
+            "follows_from_post": 0
+          },
+          "delta_note": "6h時点(views44/viewers43/非フォロワー100%/saves0/shares1/profile_activity1)から24hではviews+14・viewers+13・saves+1(新規)。shares1→0、profile_activity1→0は実測値をそのまま記録(捏造せず、Instagram Insights側の集計タイミング差の可能性はあるが断定しない)。likes/comments/followsは一貫して0。",
+          "source": "Instagram Insights実機確認(media_id 3995749106085024725)、task 31852ac0の24hチェックポイント。次回48h(2026-09-30T08:10 JST目安)。"
         }
       }
     ],
@@ -295,7 +314,9 @@
     "morning_routine_2026-09-28_note": "Missed Routine Coalescing判定: 直前premorning(05:46-05:52、MORNING_READY)成功済みのみでEvening未実行のためSUPERSEDED非該当、通常フル実行。X実機確認: x.com/home・個別スレッドとも明示的ログイン画面へリダイレクト、unauthenticated確定継続(16日連続)。プロフィールは非ログイン閲覧可能: フォロワー7人・フォロー中9人(前回と同値、変化なし)、固定Pivotポスト表示43(前回39から微増)、Day24 Notta投稿表示30(前回と同値だった27から微増)。新規X投稿なし。IG実機確認: authenticated、フォロワー17人・フォロー中10人・投稿25件(前回と同値、変化なし)、新規投稿なし。Manual Publish Verification: carryover(Day26 X投稿draft/Day26 Reel ready)ともIG/Xグリッド上に見つからず、未投稿のまま据え置き正当と確認(reconcile不要)。X Conversation Routine: ledger waiting8件のうちnarisumashi100(683返信規模)を実機確認したが、非ログインでは著者自身の返信上位数件のみ表示され自社返信・相手の新着返信を確認できずNOT CHECKED(ログインゲート継続、Owner再ログイン依頼はしない)。他7件も同様のログインゲート制約のため今回は深追いせず持ち越し。新規Strategic Reply候補検索・Targeted Following候補提示もX検索がログイン必須のため見送り(捏造回避)。**発見・修正**: business_progress.revenue_contents内のNotta専門用語精度Part2(notta-accuracy-part2.mp4)がCOO FINAL PASS/PUBLISH GO(2026-09-27)済みにも関わらずowner_actions配列に記載漏れだったことを発見、Owner Action 3件目として追加(reconcile)。A8.net実機確認: ログインフォーム表示、確定unauthenticated継続(Owner代行不可、変化なし)。Revenue Experimentタスク(get_tasks waiting)は1001b4e9(on_hold、対象外)のみでOVERDUEなし。get_handoff_queueの2件(Day15/17 Reel)は既知stale、新規対応なし。Day27 Own Content: ORDER 2(別ジャンル実務価値コンテンツ)のソースが依然未確定のため、捏造回避のためnot_readyを維持(Owner協力による新規一次データが必要、RED急ぎ承認ではなく通常Bottleneckとして記録)。",
     "day26_stale_retirement_note": "Morning Routine 2026-09-29: Day26 X投稿・Reelを3日間Owner未投稿のままSTALE判定・投稿見送り(理由はhistory参照)。Content Mixはrevenue40%/trust_authority60%/reach_awareness0%(Notta Part2追加後は revenue3/trust_authority3/reach_awareness0、計6件)で reach_awareness(目標50%)が著しく不足。Day28はreach_awareness優先で新規制作する。",
     "audience_response_check_2026_09_29": "Instagram DM実機確認: りょうすけ氏から1日前に実質的な質問DM受信(「今は投稿に関係するようなお仕事をされているんですか？」)、Owner本人による返信を推奨(Claudeは送信していない)。他はだいき氏の宣伝DM(対応不要)、2週間前の添付ファイル3件(優先度低)。X mentions実機確認: @panana39/@kouya_sns01/@yukissenseの返信はいずれも9/18・9/12付けの既知のもので新規項目なし。",
-    "revenue_action_2026_09_29_finding": "【重要】Instagramプロフィール(workai_lab777)のウェブサイトリンクがデスクトップ・モバイル両方の表示で見当たらず、DOM走査でも外部リンク0件を確認。プロフィール編集画面(デスクトップ)は「リンクはモバイルデバイスからのみ編集できます」と表示、Claudeは直接確認・修正不可。これが事実なら、全Reel・全投稿の主要CTA「プロフィール欄のリンクからnote記事へ」が機能しておらず、current_bottleneckが一貫して示す「content→note/LP:未計測」の根本原因である可能性が高い。Owner Actionとして最優先で確認依頼(詳細はreports/business-backyard-2026-09-29.md)。A8.netはセッション切れでDATA UNAVAILABLE。"
+    "revenue_action_2026_09_29_finding": "【重要】Instagramプロフィール(workai_lab777)のウェブサイトリンクがデスクトップ・モバイル両方の表示で見当たらず、DOM走査でも外部リンク0件を確認。プロフィール編集画面(デスクトップ)は「リンクはモバイルデバイスからのみ編集できます」と表示、Claudeは直接確認・修正不可。これが事実なら、全Reel・全投稿の主要CTA「プロフィール欄のリンクからnote記事へ」が機能しておらず、current_bottleneckが一貫して示す「content→note/LP:未計測」の根本原因である可能性が高い。Owner Actionとして最優先で確認依頼(詳細はreports/business-backyard-2026-09-29.md)。A8.netはセッション切れでDATA UNAVAILABLE。",
+    "revenue_action_2026_09_29_bio_link_resolved": "Evening Routine(22:31 JST)の実機Playwright確認で、プロフィール欄にnote.com/workai_lab777のウェブサイトリンクが表示されていることを確認(link要素・href=l.instagram.com経由のnote.comリダイレクトを確認)。当日Morning〜午後の間にOwnerがモバイルから修正した可能性が高い(Claudeは修正していない)。critical owner action(bio link未設定)は解消のためowner_actionsから削除した。",
+    "evening_routine_2026-09-29_note": "Missed Routine Coalescing: 直近ログにMORNING(07:00-07:19、SUCCESS)以降Evening/翌日premorningの成功記録なし(07:02:39の premorning/evening exit_code 1618は起動時クラッシュと見られる異常ログ、実行実体なし)のためSUPERSEDED非該当、通常フル実行。X実機確認: unauthenticated確定継続(ログイン用サイドバー表示)、プロフィールは非ログイン閲覧可能でフォロワー7人・フォロー中9人(前回と同値、変化なし)、新規X投稿なし。IG実機確認: authenticated、フォロワー17人・フォロー中10人・投稿26件(前回と同値、変化なし)、新規投稿なし。Manual Publish Verification: carryover空、reconcile対象なし。**重要発見**: 今朝のCOO PRIORITY FIX対応で追加したcritical owner action(IGプロフィールのウェブサイトリンク欠落)が、実機再確認の結果すでに解消していることを発見(bio link表示を確認、上記revenue_action_2026_09_29_bio_link_resolved参照)。owner_actionsから削除し、りょうすけ氏DM未返信(2日前)を通常のowner_actionとして維持。Revenue Experiment: task 31852ac0の24hチェックポイントを実施(views58/viewers56/saves1新規、48hへ継続)。task 1001b4e9はon_hold継続。GREEN Execution QA: Day28 IG Reel(day28.mp4、Creative Engineerレンダリング済み)のClaude Business QAを実施、frame0/データ照合はPASSだが総尺55.9秒がCLAUDE.md仕様(15-30秒)を大幅超過する欠陥を発見、status=qa_revision_neededへ変更しContent Editorへnarration短縮を依頼(公開保留、STALE化を避けるため早期に着手)。X Conversation Routine: X unauthenticated継続のためledger会話の新規返信確認は引き続きNOT CHECKED。Approval Queue pending=0。"
   },
   "carryover": [],
   "history": [
@@ -609,7 +630,7 @@
     }
   ],
   "owner_actions": [
-    "【要確認・最優先】Instagramのプロフィール欄にウェブサイトリンク(note記事等)が設定されていない可能性があります。スマートフォンのInstagramアプリでプロフィール編集画面を開き、ウェブサイト欄を確認してください(Claudeはデスクトップからは確認・修正不可)。全Reelの「プロフィール欄のリンクから」CTAが機能していない可能性があります。詳細はreports/business-backyard-2026-09-29.md参照。"
+    "Instagram DM(りょうすけ様、2日前受信)に実務系の質問(「今は投稿に関係するようなお仕事をされているんですか？」)が届いたままです。Owner本人からの返信を推奨します(Claudeは送信しません)。"
   ],
   "approval_queue": [],
   "ai_learning": {
@@ -804,8 +825,8 @@
     "gate": "MORNING_READY(TODAYはDay27当日分のみ・CARRYOVERにDay26投稿待ち2件を分離済み・Approval Queue空・owner_actions最新・stale項目なし)。"
   },
   "current_date": "2026-09-29",
-  "data_updated_at": "2026-09-29T07:35:00+09:00",
-  "public_updated_at": "2026-09-29T10:30:23.350Z",
+  "data_updated_at": "2026-09-29T22:40:00+09:00",
+  "public_updated_at": "2026-09-29T13:35:39.369Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -1312,13 +1333,31 @@
         "cost_jpy": null,
         "profit_jpy": null,
         "human_work_minutes": null
+      },
+      {
+        "day": 28,
+        "date": "2026-09-29",
+        "x_posts": 0,
+        "x_impressions": null,
+        "x_strategic_replies": 0,
+        "x_reply_impressions_avg": null,
+        "ig_posts": 0,
+        "ig_reel_views": null,
+        "ig_followers": 17,
+        "ig_profile_visits": null,
+        "link_clicks": null,
+        "conversions": null,
+        "revenue_jpy": null,
+        "cost_jpy": null,
+        "profit_jpy": null,
+        "human_work_minutes": null
       }
     ]
   },
   "source_manifest": {
     "business_day": 28,
     "business_date": "2026-09-29",
-    "generated_at": "2026-09-29T07:35:00+09:00",
+    "generated_at": "2026-09-29T22:40:00+09:00",
     "today": {
       "x_post": {
         "status": "draft",
@@ -1327,9 +1366,9 @@
         "text": null
       },
       "ig_reel": {
-        "status": "in_production",
-        "video_file": null,
-        "note": "Content Editor台本(content/reel-json/day28_reach_awareness_story.md)完成・Claude Business QA完了。Creative Engineerへレンダリング委任中(2026-09-29 07:xx)。"
+        "status": "qa_revision_needed",
+        "video_file": "day28.mp4",
+        "note": "Creative Engineerによるレンダリング完了済み(remotion-video/out/day28.mp4、55.945秒、1678フレーム、frame0/OPENING_FRAME_RULES準拠PASS、データ照合PASS、decode/audio同期異常なし)。ただしClaude Business QA(2026-09-29 Evening)で欠陥を発見: 総尺55.9秒がCLAUDE.md仕様(15-30秒)および直近Reel実績(28-40秒程度)を大幅に超過している(context/evidence/core_insightの3シーンでnarrationが長い)。公開判断を保留し、Content Editorへnarration短縮(事実・数値は変更せず、特にcontext/evidence/core_insightを圧縮)を依頼、再レンダリングをCreative Engineerへ依頼する。"
       }
     },
     "tomorrow": {
@@ -1468,6 +1507,25 @@
               "follows_from_post": 0
             },
             "source": "Instagram Insights実機確認(media_id 3995749106085024725)、6時間経過時点のスナップショット。24h/48h/72hで追跡予定。"
+          },
+          "check_24h_2026-09-29": {
+            "checked_at": "2026-09-29T22:31:00+09:00",
+            "elapsed_hours_approx": 24,
+            "ig_reel": {
+              "views": 58,
+              "viewers": 56,
+              "follower_viewer_pct": 3.4,
+              "non_follower_viewer_pct": 96.6,
+              "interactions": 1,
+              "likes": 0,
+              "comments": 0,
+              "saves": 1,
+              "shares": 0,
+              "profile_activity": 0,
+              "follows_from_post": 0
+            },
+            "delta_note": "6h時点(views44/viewers43/非フォロワー100%/saves0/shares1/profile_activity1)から24hではviews+14・viewers+13・saves+1(新規)。shares1→0、profile_activity1→0は実測値をそのまま記録(捏造せず、Instagram Insights側の集計タイミング差の可能性はあるが断定しない)。likes/comments/followsは一貫して0。",
+            "source": "Instagram Insights実機確認(media_id 3995749106085024725)、task 31852ac0の24hチェックポイント。次回48h(2026-09-30T08:10 JST目安)。"
           }
         }
       ],
@@ -1612,7 +1670,9 @@
       "morning_routine_2026-09-28_note": "Missed Routine Coalescing判定: 直前premorning(05:46-05:52、MORNING_READY)成功済みのみでEvening未実行のためSUPERSEDED非該当、通常フル実行。X実機確認: x.com/home・個別スレッドとも明示的ログイン画面へリダイレクト、unauthenticated確定継続(16日連続)。プロフィールは非ログイン閲覧可能: フォロワー7人・フォロー中9人(前回と同値、変化なし)、固定Pivotポスト表示43(前回39から微増)、Day24 Notta投稿表示30(前回と同値だった27から微増)。新規X投稿なし。IG実機確認: authenticated、フォロワー17人・フォロー中10人・投稿25件(前回と同値、変化なし)、新規投稿なし。Manual Publish Verification: carryover(Day26 X投稿draft/Day26 Reel ready)ともIG/Xグリッド上に見つからず、未投稿のまま据え置き正当と確認(reconcile不要)。X Conversation Routine: ledger waiting8件のうちnarisumashi100(683返信規模)を実機確認したが、非ログインでは著者自身の返信上位数件のみ表示され自社返信・相手の新着返信を確認できずNOT CHECKED(ログインゲート継続、Owner再ログイン依頼はしない)。他7件も同様のログインゲート制約のため今回は深追いせず持ち越し。新規Strategic Reply候補検索・Targeted Following候補提示もX検索がログイン必須のため見送り(捏造回避)。**発見・修正**: business_progress.revenue_contents内のNotta専門用語精度Part2(notta-accuracy-part2.mp4)がCOO FINAL PASS/PUBLISH GO(2026-09-27)済みにも関わらずowner_actions配列に記載漏れだったことを発見、Owner Action 3件目として追加(reconcile)。A8.net実機確認: ログインフォーム表示、確定unauthenticated継続(Owner代行不可、変化なし)。Revenue Experimentタスク(get_tasks waiting)は1001b4e9(on_hold、対象外)のみでOVERDUEなし。get_handoff_queueの2件(Day15/17 Reel)は既知stale、新規対応なし。Day27 Own Content: ORDER 2(別ジャンル実務価値コンテンツ)のソースが依然未確定のため、捏造回避のためnot_readyを維持(Owner協力による新規一次データが必要、RED急ぎ承認ではなく通常Bottleneckとして記録)。",
       "day26_stale_retirement_note": "Morning Routine 2026-09-29: Day26 X投稿・Reelを3日間Owner未投稿のままSTALE判定・投稿見送り(理由はhistory参照)。Content Mixはrevenue40%/trust_authority60%/reach_awareness0%(Notta Part2追加後は revenue3/trust_authority3/reach_awareness0、計6件)で reach_awareness(目標50%)が著しく不足。Day28はreach_awareness優先で新規制作する。",
       "audience_response_check_2026_09_29": "Instagram DM実機確認: りょうすけ氏から1日前に実質的な質問DM受信(「今は投稿に関係するようなお仕事をされているんですか？」)、Owner本人による返信を推奨(Claudeは送信していない)。他はだいき氏の宣伝DM(対応不要)、2週間前の添付ファイル3件(優先度低)。X mentions実機確認: @panana39/@kouya_sns01/@yukissenseの返信はいずれも9/18・9/12付けの既知のもので新規項目なし。",
-      "revenue_action_2026_09_29_finding": "【重要】Instagramプロフィール(workai_lab777)のウェブサイトリンクがデスクトップ・モバイル両方の表示で見当たらず、DOM走査でも外部リンク0件を確認。プロフィール編集画面(デスクトップ)は「リンクはモバイルデバイスからのみ編集できます」と表示、Claudeは直接確認・修正不可。これが事実なら、全Reel・全投稿の主要CTA「プロフィール欄のリンクからnote記事へ」が機能しておらず、current_bottleneckが一貫して示す「content→note/LP:未計測」の根本原因である可能性が高い。Owner Actionとして最優先で確認依頼(詳細はreports/business-backyard-2026-09-29.md)。A8.netはセッション切れでDATA UNAVAILABLE。"
+      "revenue_action_2026_09_29_finding": "【重要】Instagramプロフィール(workai_lab777)のウェブサイトリンクがデスクトップ・モバイル両方の表示で見当たらず、DOM走査でも外部リンク0件を確認。プロフィール編集画面(デスクトップ)は「リンクはモバイルデバイスからのみ編集できます」と表示、Claudeは直接確認・修正不可。これが事実なら、全Reel・全投稿の主要CTA「プロフィール欄のリンクからnote記事へ」が機能しておらず、current_bottleneckが一貫して示す「content→note/LP:未計測」の根本原因である可能性が高い。Owner Actionとして最優先で確認依頼(詳細はreports/business-backyard-2026-09-29.md)。A8.netはセッション切れでDATA UNAVAILABLE。",
+      "revenue_action_2026_09_29_bio_link_resolved": "Evening Routine(22:31 JST)の実機Playwright確認で、プロフィール欄にnote.com/workai_lab777のウェブサイトリンクが表示されていることを確認(link要素・href=l.instagram.com経由のnote.comリダイレクトを確認)。当日Morning〜午後の間にOwnerがモバイルから修正した可能性が高い(Claudeは修正していない)。critical owner action(bio link未設定)は解消のためowner_actionsから削除した。",
+      "evening_routine_2026-09-29_note": "Missed Routine Coalescing: 直近ログにMORNING(07:00-07:19、SUCCESS)以降Evening/翌日premorningの成功記録なし(07:02:39の premorning/evening exit_code 1618は起動時クラッシュと見られる異常ログ、実行実体なし)のためSUPERSEDED非該当、通常フル実行。X実機確認: unauthenticated確定継続(ログイン用サイドバー表示)、プロフィールは非ログイン閲覧可能でフォロワー7人・フォロー中9人(前回と同値、変化なし)、新規X投稿なし。IG実機確認: authenticated、フォロワー17人・フォロー中10人・投稿26件(前回と同値、変化なし)、新規投稿なし。Manual Publish Verification: carryover空、reconcile対象なし。**重要発見**: 今朝のCOO PRIORITY FIX対応で追加したcritical owner action(IGプロフィールのウェブサイトリンク欠落)が、実機再確認の結果すでに解消していることを発見(bio link表示を確認、上記revenue_action_2026_09_29_bio_link_resolved参照)。owner_actionsから削除し、りょうすけ氏DM未返信(2日前)を通常のowner_actionとして維持。Revenue Experiment: task 31852ac0の24hチェックポイントを実施(views58/viewers56/saves1新規、48hへ継続)。task 1001b4e9はon_hold継続。GREEN Execution QA: Day28 IG Reel(day28.mp4、Creative Engineerレンダリング済み)のClaude Business QAを実施、frame0/データ照合はPASSだが総尺55.9秒がCLAUDE.md仕様(15-30秒)を大幅超過する欠陥を発見、status=qa_revision_neededへ変更しContent Editorへnarration短縮を依頼(公開保留、STALE化を避けるため早期に着手)。X Conversation Routine: X unauthenticated継続のためledger会話の新規返信確認は引き続きNOT CHECKED。Approval Queue pending=0。"
     },
     "carryover": [],
     "history": [
@@ -1926,7 +1986,7 @@
       }
     ],
     "owner_actions": [
-      "【要確認・最優先】Instagramのプロフィール欄にウェブサイトリンク(note記事等)が設定されていない可能性があります。スマートフォンのInstagramアプリでプロフィール編集画面を開き、ウェブサイト欄を確認してください(Claudeはデスクトップからは確認・修正不可)。全Reelの「プロフィール欄のリンクから」CTAが機能していない可能性があります。詳細はreports/business-backyard-2026-09-29.md参照。"
+      "Instagram DM(りょうすけ様、2日前受信)に実務系の質問(「今は投稿に関係するようなお仕事をされているんですか？」)が届いたままです。Owner本人からの返信を推奨します(Claudeは送信しません)。"
     ],
     "approval_queue": [],
     "ai_learning": {
@@ -2887,8 +2947,8 @@
         "task_id": "31852ac0-830c-4c37-97c3-c97c568d373b",
         "assigned_to": "claude",
         "status": "waiting",
-        "waiting_reason": "24h_checkpoint_pending",
-        "next_check_at": "2026-09-29T08:10:00+09:00"
+        "waiting_reason": "48h_checkpoint_pending",
+        "next_check_at": "2026-09-30T08:10:00+09:00"
       }
     ]
   },
