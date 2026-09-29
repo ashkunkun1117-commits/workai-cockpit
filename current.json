@@ -12,7 +12,8 @@
     "ig_reel": {
       "status": "ready",
       "video_file": "day28.mp4",
-      "note": "narration短縮(旧55.945秒→新35.933秒、1078フレーム)後にCreative Engineerが再レンダリング完了(2026-09-29 22:4x)。Claude Business QA再確認: frame0(OPENING_FRAME_RULES準拠、フェードイン無し・30フレーム以上静止・中央セーフエリア内に「非フォロワー100%」配置)PASS、video/audio同期異常なし(CTA尺4.0秒維持、core_insightが最長シーンのまま)、数字(視聴者43人/非フォロワー100%/75%比較/likes・comments・saves・follows=0)は短縮前と完全一致・誇張なし・Human Voice保持を確認しPASS。Owner投稿承認待ち。Day28制作分だがOwner未投稿のためDate Rollover後もtodayバケットに維持(上記同様)。Instagramキャプション下書き(content/instagram/day28_caption.md)はMorning Routine(2026-09-30 07:xx)でContent Editorへ委任し作成完了・Claude Business QA PASS(一次データ完全一致、shares/profile_activityの非ゼロ値を0と書く誤りなし、誇張・Similarity Riskとも問題なし)。これでX投稿本文・Reel動画・キャプションの3点が揃い、Owner投稿の準備は完了している。"
+      "note": "narration短縮(旧55.945秒→新35.933秒、1078フレーム)後にCreative Engineerが再レンダリング完了(2026-09-29 22:4x)。Claude Business QA再確認: frame0(OPENING_FRAME_RULES準拠、フェードイン無し・30フレーム以上静止・中央セーフエリア内に「非フォロワー100%」配置)PASS、video/audio同期異常なし(CTA尺4.0秒維持、core_insightが最長シーンのまま)、数字(視聴者43人/非フォロワー100%/75%比較/likes・comments・saves・follows=0)は短縮前と完全一致・誇張なし・Human Voice保持を確認しPASS。Owner投稿承認待ち。Day28制作分だがOwner未投稿のためDate Rollover後もtodayバケットに維持(上記同様)。Instagramキャプション下書き(content/instagram/day28_caption.md)はMorning Routine(2026-09-30 07:xx)でContent Editorへ委任し作成完了・Claude Business QA PASS(一次データ完全一致、shares/profile_activityの非ゼロ値を0と書く誤りなし、誇張・Similarity Riskとも問題なし)。これでX投稿本文・Reel動画・キャプションの3点が揃い、Owner投稿の準備は完了している。",
+      "caption_text": "前回投稿したNotta検証Reel、公開6時間で視聴者43人でした。\n\nその全員が、まだフォローしていない人です。非フォロワー視聴率は100%。\n\n9月25日の投稿では75%でした。今回はそれを上回りました。地味に驚きました。\n\nいいね・保存・フォローは、まだすべて0のままです。正直、そこは変わっていません。\n\nそれでも、知らない人には届きました。フォローや保存につながったかどうかより先に、\n「知り合い以外に届いているか」を見る指標として、この数字を見るようにしています。\n\nAIでできる仕事は、AIに。\nDay28/100\n#AI仕事研究所 #100日実験 #Instagram運用 #AIパートナー"
     }
   },
   "tomorrow": {
@@ -829,7 +830,7 @@
   },
   "current_date": "2026-09-30",
   "data_updated_at": "2026-09-30T07:20:00+09:00",
-  "public_updated_at": "2026-09-29T22:05:23.016Z",
+  "public_updated_at": "2026-09-29T23:50:16.467Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -1371,7 +1372,8 @@
       "ig_reel": {
         "status": "ready",
         "video_file": "day28.mp4",
-        "note": "narration短縮(旧55.945秒→新35.933秒、1078フレーム)後にCreative Engineerが再レンダリング完了(2026-09-29 22:4x)。Claude Business QA再確認: frame0(OPENING_FRAME_RULES準拠、フェードイン無し・30フレーム以上静止・中央セーフエリア内に「非フォロワー100%」配置)PASS、video/audio同期異常なし(CTA尺4.0秒維持、core_insightが最長シーンのまま)、数字(視聴者43人/非フォロワー100%/75%比較/likes・comments・saves・follows=0)は短縮前と完全一致・誇張なし・Human Voice保持を確認しPASS。Owner投稿承認待ち。Day28制作分だがOwner未投稿のためDate Rollover後もtodayバケットに維持(上記同様)。Instagramキャプション下書き(content/instagram/day28_caption.md)はMorning Routine(2026-09-30 07:xx)でContent Editorへ委任し作成完了・Claude Business QA PASS(一次データ完全一致、shares/profile_activityの非ゼロ値を0と書く誤りなし、誇張・Similarity Riskとも問題なし)。これでX投稿本文・Reel動画・キャプションの3点が揃い、Owner投稿の準備は完了している。"
+        "note": "narration短縮(旧55.945秒→新35.933秒、1078フレーム)後にCreative Engineerが再レンダリング完了(2026-09-29 22:4x)。Claude Business QA再確認: frame0(OPENING_FRAME_RULES準拠、フェードイン無し・30フレーム以上静止・中央セーフエリア内に「非フォロワー100%」配置)PASS、video/audio同期異常なし(CTA尺4.0秒維持、core_insightが最長シーンのまま)、数字(視聴者43人/非フォロワー100%/75%比較/likes・comments・saves・follows=0)は短縮前と完全一致・誇張なし・Human Voice保持を確認しPASS。Owner投稿承認待ち。Day28制作分だがOwner未投稿のためDate Rollover後もtodayバケットに維持(上記同様)。Instagramキャプション下書き(content/instagram/day28_caption.md)はMorning Routine(2026-09-30 07:xx)でContent Editorへ委任し作成完了・Claude Business QA PASS(一次データ完全一致、shares/profile_activityの非ゼロ値を0と書く誤りなし、誇張・Similarity Riskとも問題なし)。これでX投稿本文・Reel動画・キャプションの3点が揃い、Owner投稿の準備は完了している。",
+        "caption_text": "前回投稿したNotta検証Reel、公開6時間で視聴者43人でした。\n\nその全員が、まだフォローしていない人です。非フォロワー視聴率は100%。\n\n9月25日の投稿では75%でした。今回はそれを上回りました。地味に驚きました。\n\nいいね・保存・フォローは、まだすべて0のままです。正直、そこは変わっていません。\n\nそれでも、知らない人には届きました。フォローや保存につながったかどうかより先に、\n「知り合い以外に届いているか」を見る指標として、この数字を見るようにしています。\n\nAIでできる仕事は、AIに。\nDay28/100\n#AI仕事研究所 #100日実験 #Instagram運用 #AIパートナー"
       }
     },
     "tomorrow": {
@@ -2972,6 +2974,15 @@
         "exit_code": 0,
         "success": true,
         "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\premorning_2026-09-30_054502.log"
+      },
+      {
+        "routine": "morning",
+        "scheduled_at": "2026-09-30T07:00:00",
+        "started_at": "2026-09-30T07:00:02",
+        "finished_at": "2026-09-30T07:11:20",
+        "exit_code": 0,
+        "success": true,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\morning_2026-09-30_070002.log"
       }
     ],
     "tasks": [
