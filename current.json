@@ -4,15 +4,15 @@
   "generated_at": "2026-09-29T22:40:00+09:00",
   "today": {
     "x_post": {
-      "status": "draft",
+      "status": "ready",
       "text_file": "content/x/day28_post_draft.md",
-      "note": "Content Editor作成・Claude Business QA完了(データ照合PASS、誇張なし)。候補A推奨。Reelレンダリング完了後、Owner承認待ちとしてcarryover/owner_actionsへ昇格予定。",
+      "note": "Content Editor作成・Claude Business QA完了(データ照合PASS、誇張なし)。候補A推奨。Reelレンダリングも完了・QA PASSしたため、Owner投稿承認待ちへ昇格。",
       "text": null
     },
     "ig_reel": {
-      "status": "qa_revision_needed",
+      "status": "ready",
       "video_file": "day28.mp4",
-      "note": "Creative Engineerによるレンダリング完了済み(remotion-video/out/day28.mp4、55.945秒、1678フレーム、frame0/OPENING_FRAME_RULES準拠PASS、データ照合PASS、decode/audio同期異常なし)。ただしClaude Business QA(2026-09-29 Evening)で欠陥を発見: 総尺55.9秒がCLAUDE.md仕様(15-30秒)および直近Reel実績(28-40秒程度)を大幅に超過している(context/evidence/core_insightの3シーンでnarrationが長い)。公開判断を保留し、Content Editorへnarration短縮(事実・数値は変更せず、特にcontext/evidence/core_insightを圧縮)を依頼、再レンダリングをCreative Engineerへ依頼する。"
+      "note": "narration短縮(旧55.945秒→新35.933秒、1078フレーム)後にCreative Engineerが再レンダリング完了(2026-09-29 22:4x)。Claude Business QA再確認: frame0(OPENING_FRAME_RULES準拠、フェードイン無し・30フレーム以上静止・中央セーフエリア内に「非フォロワー100%」配置)PASS、video/audio同期異常なし(CTA尺4.0秒維持、core_insightが最長シーンのまま)、数字(視聴者43人/非フォロワー100%/75%比較/likes・comments・saves・follows=0)は短縮前と完全一致・誇張なし・Human Voice保持を確認しPASS。Owner投稿承認待ち。"
     }
   },
   "tomorrow": {
@@ -630,6 +630,7 @@
     }
   ],
   "owner_actions": [
+    "Day28 X投稿(content/x/day28_post_draft.md 候補A)とInstagram Reel(day28.mp4、workai-cockpitで配信済み)がともにContent/QA完了しました。内容をご確認のうえ、問題なければご自身でX/Instagramへ投稿してください(Claudeは投稿を代行しません)。",
     "Instagram DM(りょうすけ様、2日前受信)に実務系の質問(「今は投稿に関係するようなお仕事をされているんですか？」)が届いたままです。Owner本人からの返信を推奨します(Claudeは送信しません)。"
   ],
   "approval_queue": [],
@@ -826,7 +827,7 @@
   },
   "current_date": "2026-09-29",
   "data_updated_at": "2026-09-29T22:40:00+09:00",
-  "public_updated_at": "2026-09-29T13:35:39.369Z",
+  "public_updated_at": "2026-09-29T13:46:37.381Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -1360,15 +1361,15 @@
     "generated_at": "2026-09-29T22:40:00+09:00",
     "today": {
       "x_post": {
-        "status": "draft",
+        "status": "ready",
         "text_file": "content/x/day28_post_draft.md",
-        "note": "Content Editor作成・Claude Business QA完了(データ照合PASS、誇張なし)。候補A推奨。Reelレンダリング完了後、Owner承認待ちとしてcarryover/owner_actionsへ昇格予定。",
+        "note": "Content Editor作成・Claude Business QA完了(データ照合PASS、誇張なし)。候補A推奨。Reelレンダリングも完了・QA PASSしたため、Owner投稿承認待ちへ昇格。",
         "text": null
       },
       "ig_reel": {
-        "status": "qa_revision_needed",
+        "status": "ready",
         "video_file": "day28.mp4",
-        "note": "Creative Engineerによるレンダリング完了済み(remotion-video/out/day28.mp4、55.945秒、1678フレーム、frame0/OPENING_FRAME_RULES準拠PASS、データ照合PASS、decode/audio同期異常なし)。ただしClaude Business QA(2026-09-29 Evening)で欠陥を発見: 総尺55.9秒がCLAUDE.md仕様(15-30秒)および直近Reel実績(28-40秒程度)を大幅に超過している(context/evidence/core_insightの3シーンでnarrationが長い)。公開判断を保留し、Content Editorへnarration短縮(事実・数値は変更せず、特にcontext/evidence/core_insightを圧縮)を依頼、再レンダリングをCreative Engineerへ依頼する。"
+        "note": "narration短縮(旧55.945秒→新35.933秒、1078フレーム)後にCreative Engineerが再レンダリング完了(2026-09-29 22:4x)。Claude Business QA再確認: frame0(OPENING_FRAME_RULES準拠、フェードイン無し・30フレーム以上静止・中央セーフエリア内に「非フォロワー100%」配置)PASS、video/audio同期異常なし(CTA尺4.0秒維持、core_insightが最長シーンのまま)、数字(視聴者43人/非フォロワー100%/75%比較/likes・comments・saves・follows=0)は短縮前と完全一致・誇張なし・Human Voice保持を確認しPASS。Owner投稿承認待ち。"
       }
     },
     "tomorrow": {
@@ -1986,6 +1987,7 @@
       }
     ],
     "owner_actions": [
+      "Day28 X投稿(content/x/day28_post_draft.md 候補A)とInstagram Reel(day28.mp4、workai-cockpitで配信済み)がともにContent/QA完了しました。内容をご確認のうえ、問題なければご自身でX/Instagramへ投稿してください(Claudeは投稿を代行しません)。",
       "Instagram DM(りょうすけ様、2日前受信)に実務系の質問(「今は投稿に関係するようなお仕事をされているんですか？」)が届いたままです。Owner本人からの返信を推奨します(Claudeは送信しません)。"
     ],
     "approval_queue": [],
@@ -2926,6 +2928,17 @@
         "exit_code": 0,
         "success": true,
         "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\morning_2026-09-29_070002.log"
+      },
+      {
+        "routine": "evening",
+        "scheduled_at": "2026-09-29T22:30:00",
+        "started_at": "2026-09-29T22:30:00+09:00",
+        "finished_at": "2026-09-29T22:46:00+09:00",
+        "exit_code": 0,
+        "success": true,
+        "invocation": "manual_chat_slash_command",
+        "status": "SUCCESS",
+        "note": "Missed Routine Coalescing: 直近ログはMorning(07:00-07:19、SUCCESS)のみでEvening/翌日premorning未実行のためSUPERSEDED非該当、通常フル実行(07:02:39のexit_code1618ログは起動時異常でルーティン実体なし)。X unauthenticated確定継続、フォロワー7人/フォロー中9人変化なし。IG authenticated、フォロワー17人変化なし。重要発見: 今朝のCOO PRIORITY FIX critical owner action(IGプロフィールbio link欠落)が実機再確認で既に解消済みと判明、owner_actionsから削除。task 31852ac0の24hチェック実施(views58/saves1新規)、48hへ継続。Day28 IG Reel(day28.mp4)完成済みだがClaude Business QAで尺55.9秒がCLAUDE.md仕様(15-30秒)超過と発見、status=qa_revision_neededへ変更しContent Editorへnarration短縮委任(background)。kpi_daily.csv Day28行新規作成。Cockpit commit 93757c8・push・Deploy検証PASS(live current.json generated_at=22:40確認)。"
       }
     ],
     "tasks": [
