@@ -805,7 +805,7 @@
   },
   "current_date": "2026-09-29",
   "data_updated_at": "2026-09-29T07:35:00+09:00",
-  "public_updated_at": "2026-09-28T22:08:57.682Z",
+  "public_updated_at": "2026-09-29T10:30:23.350Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -2839,6 +2839,33 @@
         "status": "SUCCESS",
         "note": "Missed Routine Coalescing: 2026-09-28 22:30 Evening・2026-09-29 05:45 Pre-Morningとも未発火(ログ記録なし)、直近成功は2026-09-28 07:07 MorningのみでSUPERSEDED非該当。Pre-Morning欠落分のDate Rollover(Day27/2026-09-28→Day28/2026-09-29)をこのMorning内で実施。X unauthenticated確定継続(ログイン画面明示)、フォロワー7人/フォロー中9人変化なし。IG authenticated、フォロワー17人/投稿26件変化なし。X Conversation Routine: ledger waiting9件、ログインゲートによりNOT CHECKED継続。Day26 X投稿・ReelをSTALE retire(hookの「35時間」が実際は約92-93時間に乖離、Immediate Change Principle該当)、content_mix_trackerにnotta-accuracy-part2記録漏れを発見・追加(reach_awareness0%判明)。kpi_daily.csv Day27欠落行を追加。Content EditorへDay28 reach_awareness content(X投稿+Reel構成案)の新規制作をバックグラウンド委任(実行中)。Approval Queue pending=0。Revenue Experiment: task 31852ac0(next_check_at 08:10)未到来のため今回対応せず、task 1001b4e9はon_hold継続。Cockpit commit 38ada0f・push・Deploy検証PASS(3回目リトライで一致、live current.json business_day=28・current_date=2026-09-29・data_updated_at=07:20確認)。",
         "log_file": null
+      },
+      {
+        "routine": "premorning",
+        "scheduled_at": "2026-09-29T05:45:00",
+        "started_at": "2026-09-29T07:02:39",
+        "finished_at": "2026-09-29T07:12:39",
+        "exit_code": 1618,
+        "success": false,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\premorning_2026-09-29_070239.log"
+      },
+      {
+        "routine": "evening",
+        "scheduled_at": "2026-09-29T22:30:00",
+        "started_at": "2026-09-29T07:02:39",
+        "finished_at": "2026-09-29T07:12:39",
+        "exit_code": 1618,
+        "success": false,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\evening_2026-09-29_070239.log"
+      },
+      {
+        "routine": "morning",
+        "scheduled_at": "2026-09-29T07:00:00",
+        "started_at": "2026-09-29T07:00:02",
+        "finished_at": "2026-09-29T07:19:09",
+        "exit_code": 0,
+        "success": true,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\morning_2026-09-29_070002.log"
       }
     ],
     "tasks": [
@@ -2984,6 +3011,22 @@
       "hook_type_planned": "B_FAILURE",
       "hook_type_actual": "B_FAILURE",
       "theme": "リーチは伸びた、でも行動は動かない35時間の話(Reach/Awareness Organic Post)",
+      "reel_url": "",
+      "posted": "false",
+      "views": "",
+      "avg_watch_pct": "",
+      "likes": "",
+      "saves": "",
+      "shares": "",
+      "profile_visits": "",
+      "follows": ""
+    },
+    {
+      "day": "28",
+      "date": "2026-09-29",
+      "hook_type_planned": "A_RESULT",
+      "hook_type_actual": "A_RESULT",
+      "theme": "非フォロワー100%(Notta検証Reel公開6時間実測、前回75%との比較、Reach/Awareness Story)",
       "reel_url": "",
       "posted": "false",
       "views": "",
