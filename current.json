@@ -1,7 +1,7 @@
 {
   "business_day": 30,
   "business_date": "2026-10-01",
-  "generated_at": "2026-10-01T07:10:00+09:00",
+  "generated_at": "2026-10-01T07:16:00+09:00",
   "today": {
     "x_post": {
       "status": "not_ready",
@@ -341,12 +341,12 @@
     {
       "type": "ig_reel",
       "day": 28,
-      "status": "blocked",
+      "status": "ready",
       "video_file": "day28.mp4",
-      "reason": "COO REVIEW「DAILY PUBLISH PACKET v2.1 FIRST LIVE RUN」でHOLD。ffprobe実測35.953秒がCLAUDE.md仕様(15-30秒、L306)に違反。Option A(30.0秒以下へ短縮、hook/claim/実測数字/Human Voice/CTA維持、video-audio sync・frame0再PASS)の再編集が必要(approval_id fa010186、owner_decision=edit_requested、decision_note参照)。2026-10-01 Morning RoutineでCreative Engineerへ再編集をバックグラウンド委任済み(対のX投稿は既にOwner投稿済みのためこのReelのみ残留)。",
+      "reason": "Creative Engineerが再編集完了(scene_duration_overrides追加、narration/claim/CTA文言は無変更)。ffprobe実測28.801秒(15-30秒仕様内)。Claude Business QA(frame0・video/audio同期・一次データ照合)PASS。新規approval f8a3c275(HIGH、期限2026-10-02T07:14 JST)をOwner承認待ちで登録済み(旧approval fa010186は旧版動画のため対象外、自然期限切れ)。",
       "originally_day": 28,
-      "current_status": "Creative Engineerによる再編集待ち(内部作業、Owner対応不要)",
-      "blocking_dependency": "internal_rework_required"
+      "current_status": "Owner投稿承認待ち(approval f8a3c275)",
+      "blocking_dependency": null
     }
   ],
   "history": [
@@ -876,10 +876,10 @@
     "owner_actions": "既存1件(Instagram DM りょうすけ様への返信、Owner本人対応)を維持。approval fa010186の再編集はOwner対応ではなくAI側(Creative Engineer)の作業のためowner_actionsには追加しない。",
     "gate": "MORNING_READY(TODAYはDay30当日分のみ・not_readyを正直表示・CARRYOVERにDay28 X投稿/Reel[blocked]を分離済み・Approval Queueは1件[fa010186、期限内]・owner_actions最新・stale項目なし)。ただしEvening 2026-09-30欠落分のデータ収集・task 31852ac0 OVERDUEチェックはMorning Routineへの申し送り事項として残る。"
   },
-  "morning_routine_2026-10-01_note": "Missed Routine Coalescing: 直近成功ログは本日05:45-05:50 Pre-Morning(MORNING_READY)のみで本日分Morning未実行のためSUPERSEDED非該当、通常フル実行。前夜Evening(2026-09-30 22:30)がセッション利用上限で失敗(実処理未実施)していたため、その欠落分の優先リカバリーを実施した。X実機確認: x.com/homeは明示的ログイン画面へリダイレクト、unauthenticated確定継続(19日連続)。プロフィールは非ログイン閲覧可能: フォロワー8人(前回7人から+1)・フォロー中9人(変化なし)。**重要発見(Manual Publish Verification)**: today.json/carryoverにDay28 X投稿(候補A)がcarryoverのまま残っていたが、実機確認でOwnerが2026-09-30 16:06 JSTに既に投稿済み(status/2105192636667863343、本文完全一致、14h時点再生数=1・いいね/リポスト/返信/ブックマーク0)と判明、historyへ移動・kpi_daily.csv Day29行(x_posts=1/x_impressions=1)へ反映。対のDay28 Reel(day28.mp4)はIG側に新規投稿なしを確認、依然blocked(尺超過)のままcarryoverに残置が正当と確認。IG実機確認: authenticated、フォロワー17人・フォロー中10人・投稿26件(変化なし)。DM確認: りょうすけ様の質問DMは3日前のまま未返信(owner_actions継続)。Revenue Experiment: task 31852ac0(OVERDUE、48h/72hチェック未実施)を実施、24h時点(views58/saves1/shares0/profile_activity0)から72h相当時点まで一切数値変化なし(完全プラトー)と確定、status=doneへクローズ。GREEN Execution: Day28 Reel再編集(35.953秒→30秒以下、Option A)をCreative Engineerへ、Day30 Own Content(ORDER2一次データ探索含む)をContent Editorへ、それぞれバックグラウンド委任(結果は別途確認・反映)。approval fa010186(旧35.933秒版、HIGH、期限2026-10-01T14:34:59 JST)は再編集完了後に新規approvalとして再登録する方針のため今回は変更せず自然期限切れに委ねる。X Conversation Routine: ledger waiting行の新規author返信確認・新規Strategic Reply候補検索はXログインゲートによりNOT CHECKED継続(Owner再ログイン依頼はしない)。Approval Batch該当なし(新規0件)。",
+  "morning_routine_2026-10-01_note": "Missed Routine Coalescing: 直近成功ログは本日05:45-05:50 Pre-Morning(MORNING_READY)のみで本日分Morning未実行のためSUPERSEDED非該当、通常フル実行。前夜Evening(2026-09-30 22:30)がセッション利用上限で失敗(実処理未実施)していたため、その欠落分の優先リカバリーを実施した。X実機確認: x.com/homeは明示的ログイン画面へリダイレクト、unauthenticated確定継続(19日連続)。プロフィールは非ログイン閲覧可能: フォロワー8人(前回7人から+1)・フォロー中9人(変化なし)。**重要発見(Manual Publish Verification)**: today.json/carryoverにDay28 X投稿(候補A)がcarryoverのまま残っていたが、実機確認でOwnerが2026-09-30 16:06 JSTに既に投稿済み(status/2105192636667863343、本文完全一致、14h時点再生数=1・いいね/リポスト/返信/ブックマーク0)と判明、historyへ移動・kpi_daily.csv Day29行(x_posts=1/x_impressions=1)へ反映。対のDay28 Reel(day28.mp4)はIG側に新規投稿なしを確認、依然blocked(尺超過)のままcarryoverに残置が正当と確認。IG実機確認: authenticated、フォロワー17人・フォロー中10人・投稿26件(変化なし)。DM確認: りょうすけ様の質問DMは3日前のまま未返信(owner_actions継続)。Revenue Experiment: task 31852ac0(OVERDUE、48h/72hチェック未実施)を実施、24h時点(views58/saves1/shares0/profile_activity0)から72h相当時点まで一切数値変化なし(完全プラトー)と確定、status=doneへクローズ。GREEN Execution: Day28 Reel再編集(35.953秒→30秒以下、Option A)をCreative Engineerへ、Day30 Own Content(ORDER2一次データ探索含む)をContent Editorへ、それぞれバックグラウンド委任(結果は別途確認・反映)。approval fa010186(旧35.933秒版、HIGH、期限2026-10-01T14:34:59 JST)は再編集完了後に新規approvalとして再登録する方針のため今回は変更せず自然期限切れに委ねる。X Conversation Routine: ledger waiting行の新規author返信確認・新規Strategic Reply候補検索はXログインゲートによりNOT CHECKED継続(Owner再ログイン依頼はしない)。Approval Batch該当なし(新規0件)。追記: Creative Engineerによる再編集完了後、Claude Business QA(ffprobe実測28.801秒・frame0目視・音声同期・一次データ照合)を独立実施しPASS、day28.mp4をworkai-cockpitへ再配置、新規approval f8a3c275(HIGH、期限2026-10-02T07:14 JST)を登録しcarryoverをready化した。Day30コンテンツはContent Editorが一次データ4件(Day28 views=1/Notta Part2プラトー/bio link一時消失/DM未返信)を検討した上でいずれも自己言及・Similarity Risk・Human Voice不足を理由に不採用と判断、day30_skip-rationale.md記録、not_ready維持を妥当と判断した。",
   "current_date": "2026-10-01",
-  "data_updated_at": "2026-10-01T07:10:00+09:00",
-  "public_updated_at": "2026-09-30T22:07:45.228Z",
+  "data_updated_at": "2026-10-01T07:16:00+09:00",
+  "public_updated_at": "2026-09-30T22:14:33.515Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -1428,7 +1428,7 @@
   "source_manifest": {
     "business_day": 30,
     "business_date": "2026-10-01",
-    "generated_at": "2026-10-01T07:10:00+09:00",
+    "generated_at": "2026-10-01T07:16:00+09:00",
     "today": {
       "x_post": {
         "status": "not_ready",
@@ -1768,12 +1768,12 @@
       {
         "type": "ig_reel",
         "day": 28,
-        "status": "blocked",
+        "status": "ready",
         "video_file": "day28.mp4",
-        "reason": "COO REVIEW「DAILY PUBLISH PACKET v2.1 FIRST LIVE RUN」でHOLD。ffprobe実測35.953秒がCLAUDE.md仕様(15-30秒、L306)に違反。Option A(30.0秒以下へ短縮、hook/claim/実測数字/Human Voice/CTA維持、video-audio sync・frame0再PASS)の再編集が必要(approval_id fa010186、owner_decision=edit_requested、decision_note参照)。2026-10-01 Morning RoutineでCreative Engineerへ再編集をバックグラウンド委任済み(対のX投稿は既にOwner投稿済みのためこのReelのみ残留)。",
+        "reason": "Creative Engineerが再編集完了(scene_duration_overrides追加、narration/claim/CTA文言は無変更)。ffprobe実測28.801秒(15-30秒仕様内)。Claude Business QA(frame0・video/audio同期・一次データ照合)PASS。新規approval f8a3c275(HIGH、期限2026-10-02T07:14 JST)をOwner承認待ちで登録済み(旧approval fa010186は旧版動画のため対象外、自然期限切れ)。",
         "originally_day": 28,
-        "current_status": "Creative Engineerによる再編集待ち(内部作業、Owner対応不要)",
-        "blocking_dependency": "internal_rework_required"
+        "current_status": "Owner投稿承認待ち(approval f8a3c275)",
+        "blocking_dependency": null
       }
     ],
     "history": [
@@ -2303,7 +2303,7 @@
       "owner_actions": "既存1件(Instagram DM りょうすけ様への返信、Owner本人対応)を維持。approval fa010186の再編集はOwner対応ではなくAI側(Creative Engineer)の作業のためowner_actionsには追加しない。",
       "gate": "MORNING_READY(TODAYはDay30当日分のみ・not_readyを正直表示・CARRYOVERにDay28 X投稿/Reel[blocked]を分離済み・Approval Queueは1件[fa010186、期限内]・owner_actions最新・stale項目なし)。ただしEvening 2026-09-30欠落分のデータ収集・task 31852ac0 OVERDUEチェックはMorning Routineへの申し送り事項として残る。"
     },
-    "morning_routine_2026-10-01_note": "Missed Routine Coalescing: 直近成功ログは本日05:45-05:50 Pre-Morning(MORNING_READY)のみで本日分Morning未実行のためSUPERSEDED非該当、通常フル実行。前夜Evening(2026-09-30 22:30)がセッション利用上限で失敗(実処理未実施)していたため、その欠落分の優先リカバリーを実施した。X実機確認: x.com/homeは明示的ログイン画面へリダイレクト、unauthenticated確定継続(19日連続)。プロフィールは非ログイン閲覧可能: フォロワー8人(前回7人から+1)・フォロー中9人(変化なし)。**重要発見(Manual Publish Verification)**: today.json/carryoverにDay28 X投稿(候補A)がcarryoverのまま残っていたが、実機確認でOwnerが2026-09-30 16:06 JSTに既に投稿済み(status/2105192636667863343、本文完全一致、14h時点再生数=1・いいね/リポスト/返信/ブックマーク0)と判明、historyへ移動・kpi_daily.csv Day29行(x_posts=1/x_impressions=1)へ反映。対のDay28 Reel(day28.mp4)はIG側に新規投稿なしを確認、依然blocked(尺超過)のままcarryoverに残置が正当と確認。IG実機確認: authenticated、フォロワー17人・フォロー中10人・投稿26件(変化なし)。DM確認: りょうすけ様の質問DMは3日前のまま未返信(owner_actions継続)。Revenue Experiment: task 31852ac0(OVERDUE、48h/72hチェック未実施)を実施、24h時点(views58/saves1/shares0/profile_activity0)から72h相当時点まで一切数値変化なし(完全プラトー)と確定、status=doneへクローズ。GREEN Execution: Day28 Reel再編集(35.953秒→30秒以下、Option A)をCreative Engineerへ、Day30 Own Content(ORDER2一次データ探索含む)をContent Editorへ、それぞれバックグラウンド委任(結果は別途確認・反映)。approval fa010186(旧35.933秒版、HIGH、期限2026-10-01T14:34:59 JST)は再編集完了後に新規approvalとして再登録する方針のため今回は変更せず自然期限切れに委ねる。X Conversation Routine: ledger waiting行の新規author返信確認・新規Strategic Reply候補検索はXログインゲートによりNOT CHECKED継続(Owner再ログイン依頼はしない)。Approval Batch該当なし(新規0件)。"
+    "morning_routine_2026-10-01_note": "Missed Routine Coalescing: 直近成功ログは本日05:45-05:50 Pre-Morning(MORNING_READY)のみで本日分Morning未実行のためSUPERSEDED非該当、通常フル実行。前夜Evening(2026-09-30 22:30)がセッション利用上限で失敗(実処理未実施)していたため、その欠落分の優先リカバリーを実施した。X実機確認: x.com/homeは明示的ログイン画面へリダイレクト、unauthenticated確定継続(19日連続)。プロフィールは非ログイン閲覧可能: フォロワー8人(前回7人から+1)・フォロー中9人(変化なし)。**重要発見(Manual Publish Verification)**: today.json/carryoverにDay28 X投稿(候補A)がcarryoverのまま残っていたが、実機確認でOwnerが2026-09-30 16:06 JSTに既に投稿済み(status/2105192636667863343、本文完全一致、14h時点再生数=1・いいね/リポスト/返信/ブックマーク0)と判明、historyへ移動・kpi_daily.csv Day29行(x_posts=1/x_impressions=1)へ反映。対のDay28 Reel(day28.mp4)はIG側に新規投稿なしを確認、依然blocked(尺超過)のままcarryoverに残置が正当と確認。IG実機確認: authenticated、フォロワー17人・フォロー中10人・投稿26件(変化なし)。DM確認: りょうすけ様の質問DMは3日前のまま未返信(owner_actions継続)。Revenue Experiment: task 31852ac0(OVERDUE、48h/72hチェック未実施)を実施、24h時点(views58/saves1/shares0/profile_activity0)から72h相当時点まで一切数値変化なし(完全プラトー)と確定、status=doneへクローズ。GREEN Execution: Day28 Reel再編集(35.953秒→30秒以下、Option A)をCreative Engineerへ、Day30 Own Content(ORDER2一次データ探索含む)をContent Editorへ、それぞれバックグラウンド委任(結果は別途確認・反映)。approval fa010186(旧35.933秒版、HIGH、期限2026-10-01T14:34:59 JST)は再編集完了後に新規approvalとして再登録する方針のため今回は変更せず自然期限切れに委ねる。X Conversation Routine: ledger waiting行の新規author返信確認・新規Strategic Reply候補検索はXログインゲートによりNOT CHECKED継続(Owner再ログイン依頼はしない)。Approval Batch該当なし(新規0件)。追記: Creative Engineerによる再編集完了後、Claude Business QA(ffprobe実測28.801秒・frame0目視・音声同期・一次データ照合)を独立実施しPASS、day28.mp4をworkai-cockpitへ再配置、新規approval f8a3c275(HIGH、期限2026-10-02T07:14 JST)を登録しcarryoverをready化した。Day30コンテンツはContent Editorが一次データ4件(Day28 views=1/Notta Part2プラトー/bio link一時消失/DM未返信)を検討した上でいずれも自己言及・Similarity Risk・Human Voice不足を理由に不採用と判断、day30_skip-rationale.md記録、not_ready維持を妥当と判断した。"
   },
   "health_inputs": {
     "scheduler": [
@@ -3128,6 +3128,17 @@
         "exit_code": 0,
         "success": true,
         "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\premorning_2026-10-01_054502.log"
+      },
+      {
+        "routine": "morning",
+        "scheduled_at": "2026-10-01T07:00:00",
+        "started_at": "2026-10-01T07:00:00+09:00",
+        "finished_at": "2026-10-01T07:12:00+09:00",
+        "exit_code": 0,
+        "success": true,
+        "invocation": "manual_chat_slash_command",
+        "status": "SUCCESS",
+        "note": "Missed Routine Coalescing: 直前premorning(05:45-05:50、MORNING_READY)成功済みのみで本日分Morning未実行のためSUPERSEDED非該当、通常フル実行。前夜Evening(2026-09-30 22:30)がセッション利用上限で失敗していたため欠落分を優先リカバリー。X unauthenticated確定継続(19日連続、フォロワー8人+1)。IG authenticated(フォロワー17人変化なし)。Manual Publish VerificationでDay28 X投稿(候補A、2026-09-30 16:06投稿)をcarryoverのまま残留していたところから新規発見・history反映、kpi_daily.csv Day29行更新。task 31852ac0(Notta Part2 72hチェック、OVERDUE)実施、24hから完全プラトーを確認しdoneへクローズ。Day28 Reel再編集をCreative Engineerへ、Day30 Own Content(ORDER2一次データ探索)をContent Editorへバックグラウンド委任(結果は別途確認)。approval fa010186は旧版動画のため操作せず自然期限切れに委ねる。Cockpit commit cca3ed4・push・Deploy検証PASS(current.json generated_at=07:10確認)。"
       }
     ],
     "tasks": [
@@ -3622,6 +3633,24 @@
       "execution_status": null,
       "last_reminded_at": null,
       "decision_note": "COO REVIEW「DAILY PUBLISH PACKET v2.1 FIRST LIVE RUN」でB/IG REEL=HOLD(QA drift指摘)。day28.mp4実測35.953秒(ffprobe確認)、CLAUDE.md仕様(15-30秒、L306)に違反したままClaude Business QA PASSとして登録されていた。Option A(30.0秒以下へ短縮、hook/claim/実測数字/Human Voice/CTA維持、video-audio sync・frame0再PASS)を実施し、canonical duration ruleをSafety Preflightに追加した上で再登録する。"
+    },
+    {
+      "approval_id": "f8a3c275-cef1-4f2e-a038-92b5551395dc",
+      "created_at": "2026-09-30T22:14:04.860Z",
+      "requested_by": "claude",
+      "platform": "instagram",
+      "action_type": "instagram_post",
+      "target": "Day28 Reel(非フォロワー100%検証、再編集版)",
+      "proposed_content": "動画: day28.mp4(28.801秒、864フレーム、workai-cockpitで配信済み)。キャプション:\n\n前回投稿したNotta検証Reel、公開6時間で視聴者43人でした。\n\nその全員が、まだフォローしていない人です。非フォロワー視聴率は100%。\n\n9月25日の投稿では75%でした。今回はそれを上回りました。地味に驚きました。\n\nいいね・保存・フォローは、まだすべて0のままです。正直、そこは変わっていません。\n\nそれでも、知らない人には届きました。フォローや保存につながったかどうかより先に、\n「知り合い以外に届いているか」を見る指標として、この数字を見るようにしています。\n\nAIでできる仕事は、AIに。\nDay28/100\n#AI仕事研究所 #100日実験 #Instagram運用 #AIパートナー",
+      "reason": "approval fa010186(旧35.933秒版)がCOO REVIEWでHOLD(CLAUDE.md 15-30秒仕様違反)となったため、Creative Engineerが再編集。content/reel-json/day28.jsonへscene_duration_overrides追加(narration/claim/CTA文言は無変更、シーン尺のみ調整)、音声再生成、Remotion再レンダリング。Claude Business QA(独立検証)完了: ffprobe実測28.801秒(15-30秒仕様内)、video/audio同期正常(1ms差はAACフレーム粒度の正常な丸め、precedent[notta-accuracy-part2.mp4]と同種で15ms差があり過去QA PASS済み)、frame0(OPENING_FRAME_RULES準拠、フェードイン無し・「非フォロワー100%」中央セーフエリア・Day28/100バッジ表示)目視確認PASS、キャプション本文はcontent/instagram/day28_caption.mdと一致し一次データ(43人/75%→100%/いいね・保存・フォロー0)との不一致・誇張なしを確認。対のX投稿(候補A)は2026-09-30 16:06に既にOwner投稿済み。",
+      "risk_level": "HIGH",
+      "expires_at": "2026-10-01T22:14:04.860Z",
+      "status": "pending",
+      "owner_decision": null,
+      "decided_at": null,
+      "execution_status": null,
+      "last_reminded_at": null,
+      "duration_seconds": 28.801
     }
   ]
 }
