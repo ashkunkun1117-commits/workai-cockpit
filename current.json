@@ -672,7 +672,8 @@
     }
   ],
   "owner_actions": [
-    "Instagram DM(りょうすけ様、2日前受信)に実務系の質問(「今は投稿に関係するようなお仕事をされているんですか？」)が届いたままです。Owner本人からの返信を推奨します(Claudeは送信しません)。"
+    "Instagram DM(りょうすけ様、2日前受信)に実務系の質問(「今は投稿に関係するようなお仕事をされているんですか？」)が届いたままです。Owner本人からの返信を推奨します(Claudeは送信しません)。",
+    "(任意・急ぎません) Day31時点でORDER2(別ジャンル=建築・リフォーム実務のAI活用一次データ)が2日連続で見つかっていません。次に実務で自然にメール・見積・報告書等の文章作成やAI判断の場面が発生したら、作業前後の時間だけメモしてもらえると、捏造なしでDay31以降のコンテンツに使えます。意図的にテスト作業を作る必要はありません。"
   ],
   "approval_queue": [],
   "ai_learning": {
@@ -889,9 +890,10 @@
     "owner_actions": "既存1件(Instagram DM りょうすけ様への返信、Owner本人対応)を維持。新規追加・削除なし。",
     "gate": "MORNING_READY(TODAYはDay31当日分のみ・not_readyを正直表示・CARRYOVERはDay28 Reel[approval f8a3c275、STALE badge付き]のみ・Approval Queue 1件把握済み・owner_actions最新・Day30はSTALE/CLOSEとして分離済み)。"
   },
+  "morning_routine_2026-10-02_note": "Missed Routine Coalescing: 直近成功ログは本日05:45-05:58 Pre-Morning(MORNING_READY)のみで本日分Morning未実行のためSUPERSEDED非該当、通常フル実行。X実機確認: x.com/workai_lab777は非ログイン閲覧可能だがx.com/home・x.com/searchはいずれも明示的ログイン画面へリダイレクト、unauthenticated確定継続(22日連続)。フォロワー8人・フォロー中9人で変化なし、新規投稿なし。/searchが明示的loginページへリダイレクトされることを実機確認したため、新規Strategic Reply候補探索・Targeted Following(X側)は今回もブロックされたまま(NOT_CHECKED、Owner再ログイン依頼は追加しない)。ledger waiting中の@akagami_sns個別スレッドを非ログインで確認したが、相手の新着返信はレンダリングされず(ログイン必須の制約、他9件も同条件のためNOT CHECKED)。IG実機確認: authenticated、フォロワー14人(前回夜22:35確認の15人から-1、VERIFIED実測、原因不明のため断定しない)、投稿26件で変化なし(day28.mp4再編集版はまだ未掲載)。Manual Publish Verification: carryover(Day28 Reel、approval f8a3c275)はIGグリッドに見つからず、Owner承認待ちのまま据え置きが正当、reconcile不要。Approval Queue pending=1件(f8a3c275)、期限2026-10-02T07:14 JSTまで変更なし、追加の催促はしない。Targeted Following candidate探索: X検索がブロックされているためIGハッシュタグ(#リフォーム会社)で代替探索を試みたが、結果はリフォーム会社の採用広告・宣伝アカウントが中心でAudience Growth Engineの対象層(AI活用/業務効率化/副業/個人事業主/建築・リフォーム/現場仕事の個人、FOLLOW+REPLY可能性のある層)に合致せず、質より量を避けるため候補は0件で正直に報告(水増ししない)。Revenue Experiment: get_tasks(waiting)1件(1001b4e9、on_hold)のみでOVERDUEなし。Day31 Own Content: ORDER2(別ジャンル実務価値コンテンツ)がDay30に続き本日も新規一次データなし(day30_skip-rationale.mdと同一の構造的ブロッカー、Owner本人の実務上の一次体験が必要)。day31_skip-rationale.mdを新規作成しnot_ready継続を維持、捏造・使い回しは行わない。owner_actionsへ任意・低緊急度でOwner協力依頼(次に実務で自然にAI利用の場面が出た際のBefore/After記録)を追加(強制タスク化はしない、Proof Acquisition Mode式の7項目フォーマットは採用せず軽量な依頼に留めた)。DM(りょうすけ様)未返信継続(owner_actions維持、Claudeは送信しない)。Codex Handoff: 新規Engineering Task該当なし。",
   "current_date": "2026-10-02",
   "data_updated_at": "2026-10-02T05:46:00+09:00",
-  "public_updated_at": "2026-10-01T20:47:28.052Z",
+  "public_updated_at": "2026-10-01T22:05:31.575Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -2129,7 +2131,8 @@
       }
     ],
     "owner_actions": [
-      "Instagram DM(りょうすけ様、2日前受信)に実務系の質問(「今は投稿に関係するようなお仕事をされているんですか？」)が届いたままです。Owner本人からの返信を推奨します(Claudeは送信しません)。"
+      "Instagram DM(りょうすけ様、2日前受信)に実務系の質問(「今は投稿に関係するようなお仕事をされているんですか？」)が届いたままです。Owner本人からの返信を推奨します(Claudeは送信しません)。",
+      "(任意・急ぎません) Day31時点でORDER2(別ジャンル=建築・リフォーム実務のAI活用一次データ)が2日連続で見つかっていません。次に実務で自然にメール・見積・報告書等の文章作成やAI判断の場面が発生したら、作業前後の時間だけメモしてもらえると、捏造なしでDay31以降のコンテンツに使えます。意図的にテスト作業を作る必要はありません。"
     ],
     "approval_queue": [],
     "ai_learning": {
@@ -2345,7 +2348,8 @@
       "approval_queue": "get_approvals(pending)=1件(f8a3c275、Day28 Reel、HIGH、上記day28_reel_carryoverへ反映済み)。",
       "owner_actions": "既存1件(Instagram DM りょうすけ様への返信、Owner本人対応)を維持。新規追加・削除なし。",
       "gate": "MORNING_READY(TODAYはDay31当日分のみ・not_readyを正直表示・CARRYOVERはDay28 Reel[approval f8a3c275、STALE badge付き]のみ・Approval Queue 1件把握済み・owner_actions最新・Day30はSTALE/CLOSEとして分離済み)。"
-    }
+    },
+    "morning_routine_2026-10-02_note": "Missed Routine Coalescing: 直近成功ログは本日05:45-05:58 Pre-Morning(MORNING_READY)のみで本日分Morning未実行のためSUPERSEDED非該当、通常フル実行。X実機確認: x.com/workai_lab777は非ログイン閲覧可能だがx.com/home・x.com/searchはいずれも明示的ログイン画面へリダイレクト、unauthenticated確定継続(22日連続)。フォロワー8人・フォロー中9人で変化なし、新規投稿なし。/searchが明示的loginページへリダイレクトされることを実機確認したため、新規Strategic Reply候補探索・Targeted Following(X側)は今回もブロックされたまま(NOT_CHECKED、Owner再ログイン依頼は追加しない)。ledger waiting中の@akagami_sns個別スレッドを非ログインで確認したが、相手の新着返信はレンダリングされず(ログイン必須の制約、他9件も同条件のためNOT CHECKED)。IG実機確認: authenticated、フォロワー14人(前回夜22:35確認の15人から-1、VERIFIED実測、原因不明のため断定しない)、投稿26件で変化なし(day28.mp4再編集版はまだ未掲載)。Manual Publish Verification: carryover(Day28 Reel、approval f8a3c275)はIGグリッドに見つからず、Owner承認待ちのまま据え置きが正当、reconcile不要。Approval Queue pending=1件(f8a3c275)、期限2026-10-02T07:14 JSTまで変更なし、追加の催促はしない。Targeted Following candidate探索: X検索がブロックされているためIGハッシュタグ(#リフォーム会社)で代替探索を試みたが、結果はリフォーム会社の採用広告・宣伝アカウントが中心でAudience Growth Engineの対象層(AI活用/業務効率化/副業/個人事業主/建築・リフォーム/現場仕事の個人、FOLLOW+REPLY可能性のある層)に合致せず、質より量を避けるため候補は0件で正直に報告(水増ししない)。Revenue Experiment: get_tasks(waiting)1件(1001b4e9、on_hold)のみでOVERDUEなし。Day31 Own Content: ORDER2(別ジャンル実務価値コンテンツ)がDay30に続き本日も新規一次データなし(day30_skip-rationale.mdと同一の構造的ブロッカー、Owner本人の実務上の一次体験が必要)。day31_skip-rationale.mdを新規作成しnot_ready継続を維持、捏造・使い回しは行わない。owner_actionsへ任意・低緊急度でOwner協力依頼(次に実務で自然にAI利用の場面が出た際のBefore/After記録)を追加(強制タスク化はしない、Proof Acquisition Mode式の7項目フォーマットは採用せず軽量な依頼に留めた)。DM(りょうすけ様)未返信継続(owner_actions維持、Claudeは送信しない)。Codex Handoff: 新規Engineering Task該当なし。"
   },
   "health_inputs": {
     "scheduler": [
@@ -3210,6 +3214,26 @@
         "exit_code": 0,
         "success": true,
         "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\evening_2026-10-01_223002.log"
+      },
+      {
+        "routine": "premorning",
+        "scheduled_at": "2026-10-02T05:45:00",
+        "started_at": "2026-10-02T05:46:00+09:00",
+        "finished_at": "2026-10-02T05:58:00+09:00",
+        "exit_code": 0,
+        "success": true,
+        "invocation": "manual_chat_slash_command",
+        "status": "MORNING_READY",
+        "note": "Missed Routine Coalescing: 直近成功ログは2026-10-01 22:30 Evening(SUCCESS)のみでSUPERSEDED非該当、通常実行。Date Rollover実施: today.json/CockpitともDay30/2026-10-01→Day31/2026-10-02へ更新。Day30はnot_readyのまま終始(day30_skip-rationale.md)だったためCARRYOVERへ入れずSTALE/CLOSE。Day31分は未着手のためnot_ready正直表示。carryoverのDay28 Reel(approval f8a3c275、HIGH)はOwner未承認継続、created_atから約31.5時間経過でfreshness_note(STALE badge)を追加(expires_at 2026-10-02T07:14 JSTまで残り約1.5時間、自動expired待ち、追加催促なし)。get_tasks(waiting)1件(1001b4e9、on_hold)のみでoverdueなし。get_approvals(pending)=1件(f8a3c275)。owner_actions1件(IG DM りょうすけ様)維持。Cockpit commit dd81bd8・push・Deploy検証PASS(3回目リトライでlive current.json business_day=31・generated_at=05:46一致、Pages builds API status=built・commit一致確認)。"
+      },
+      {
+        "routine": "premorning",
+        "scheduled_at": "2026-10-02T05:45:00",
+        "started_at": "2026-10-02T05:45:02",
+        "finished_at": "2026-10-02T05:49:10",
+        "exit_code": 0,
+        "success": true,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\premorning_2026-10-02_054502.log"
       }
     ],
     "tasks": [
