@@ -1,29 +1,29 @@
 {
-  "business_day": 30,
-  "business_date": "2026-10-01",
-  "generated_at": "2026-10-01T22:35:00+09:00",
+  "business_day": 31,
+  "business_date": "2026-10-02",
+  "generated_at": "2026-10-02T05:46:00+09:00",
   "today": {
     "x_post": {
       "status": "not_ready",
       "text_file": null,
-      "note": "Day30分は未着手(Pre-Morning Date Rollover、2026-10-01)。Content Editorへの新規委任はPre-Morningの範囲外のためMorning Routineへ委ねる。"
+      "note": "Day31分は未着手(Pre-Morning Date Rollover、2026-10-02)。Content Editorへの新規委任はPre-Morningの範囲外のためMorning Routineへ委ねる。"
     },
     "ig_reel": {
       "status": "not_ready",
       "video_file": null,
-      "note": "Day30分は未着手(Pre-Morning Date Rollover、2026-10-01)。同上。"
+      "note": "Day31分は未着手(Pre-Morning Date Rollover、2026-10-02)。同上。"
     }
   },
   "tomorrow": {
     "x_post": {
       "status": "not_ready",
       "text_file": null,
-      "note": "Day31分は未着手。"
+      "note": "Day32分は未着手。"
     },
     "ig_reel": {
       "status": "not_ready",
       "video_file": null,
-      "note": "Day31分は未着手。"
+      "note": "Day32分は未着手。"
     }
   },
   "business_progress": {
@@ -346,6 +346,7 @@
       "reason": "Creative Engineerが再編集完了(scene_duration_overrides追加、narration/claim/CTA文言は無変更)。ffprobe実測28.801秒(15-30秒仕様内)。Claude Business QA(frame0・video/audio同期・一次データ照合)PASS。新規approval f8a3c275(HIGH、期限2026-10-02T07:14 JST)をOwner承認待ちで登録済み(旧approval fa010186は旧版動画のため対象外、自然期限切れ)。",
       "originally_day": 28,
       "current_status": "Owner投稿承認待ち(approval f8a3c275)",
+      "freshness_note": "STALE badge(created_at 2026-09-30T22:14からPre-Morning実行時点2026-10-02T05:46で約31.5時間経過、目安24時間超)。expires_at 2026-10-02T07:14 JSTまで残り約1.5時間、このまま承認が無ければ自動的にexpired化される見込み(Claudeからの再登録・催促の頻度は上げない)。",
       "blocking_dependency": null
     }
   ],
@@ -878,9 +879,19 @@
   },
   "morning_routine_2026-10-01_note": "Missed Routine Coalescing: 直近成功ログは本日05:45-05:50 Pre-Morning(MORNING_READY)のみで本日分Morning未実行のためSUPERSEDED非該当、通常フル実行。前夜Evening(2026-09-30 22:30)がセッション利用上限で失敗(実処理未実施)していたため、その欠落分の優先リカバリーを実施した。X実機確認: x.com/homeは明示的ログイン画面へリダイレクト、unauthenticated確定継続(19日連続)。プロフィールは非ログイン閲覧可能: フォロワー8人(前回7人から+1)・フォロー中9人(変化なし)。**重要発見(Manual Publish Verification)**: today.json/carryoverにDay28 X投稿(候補A)がcarryoverのまま残っていたが、実機確認でOwnerが2026-09-30 16:06 JSTに既に投稿済み(status/2105192636667863343、本文完全一致、14h時点再生数=1・いいね/リポスト/返信/ブックマーク0)と判明、historyへ移動・kpi_daily.csv Day29行(x_posts=1/x_impressions=1)へ反映。対のDay28 Reel(day28.mp4)はIG側に新規投稿なしを確認、依然blocked(尺超過)のままcarryoverに残置が正当と確認。IG実機確認: authenticated、フォロワー17人・フォロー中10人・投稿26件(変化なし)。DM確認: りょうすけ様の質問DMは3日前のまま未返信(owner_actions継続)。Revenue Experiment: task 31852ac0(OVERDUE、48h/72hチェック未実施)を実施、24h時点(views58/saves1/shares0/profile_activity0)から72h相当時点まで一切数値変化なし(完全プラトー)と確定、status=doneへクローズ。GREEN Execution: Day28 Reel再編集(35.953秒→30秒以下、Option A)をCreative Engineerへ、Day30 Own Content(ORDER2一次データ探索含む)をContent Editorへ、それぞれバックグラウンド委任(結果は別途確認・反映)。approval fa010186(旧35.933秒版、HIGH、期限2026-10-01T14:34:59 JST)は再編集完了後に新規approvalとして再登録する方針のため今回は変更せず自然期限切れに委ねる。X Conversation Routine: ledger waiting行の新規author返信確認・新規Strategic Reply候補検索はXログインゲートによりNOT CHECKED継続(Owner再ログイン依頼はしない)。Approval Batch該当なし(新規0件)。追記: Creative Engineerによる再編集完了後、Claude Business QA(ffprobe実測28.801秒・frame0目視・音声同期・一次データ照合)を独立実施しPASS、day28.mp4をworkai-cockpitへ再配置、新規approval f8a3c275(HIGH、期限2026-10-02T07:14 JST)を登録しcarryoverをready化した。Day30コンテンツはContent Editorが一次データ4件(Day28 views=1/Notta Part2プラトー/bio link一時消失/DM未返信)を検討した上でいずれも自己言及・Similarity Risk・Human Voice不足を理由に不採用と判断、day30_skip-rationale.md記録、not_ready維持を妥当と判断した。",
   "evening_routine_2026-10-01_note": "Missed Routine Coalescing: 直近成功ログは本日07:00-07:36 Morning(SUCCESS)のみで、本日分Evening・翌日premorning/morningの成功記録なし(前夜2026-09-30 22:30 Eveningはセッション利用上限で失敗済みだが、その欠落分はMorning Routineで優先リカバリー済み)。SUPERSEDED非該当、通常フル実行。X実機確認: x.com/workai_lab777は非ログイン閲覧可能、x.com/home等は明示的ログイン画面(「Xにログインまたは登録してください」)へのサイドバー表示でunauthenticated確定継続(20日連続)。フォロワー8人・フォロー中9人、Day28 X投稿(9/30 16:06)のビュー数は1のまま変化なし。IG実機確認: authenticated(プロフィール編集・プロフェッショナルダッシュボードリンク確認)。**フォロワー15人(今朝確認の17人から-2、VERIFIED実測)**、フォロー中10人・投稿26件は変化なし。原因は特定できず(フォロー解除か表示遅延かは断定しない、捏造回避のため実測値のみ記録)。新規IG投稿なし(day28.mp4再編集版は未掲載)。Manual Publish Verification: carryover(Day28 Reel、approval f8a3c275)はIGグリッド上に見つからず、Owner承認待ちのまま据え置きが正当と確認、reconcile不要。DM確認: りょうすけ様の質問DMは4日前のまま未返信(owner_actions継続、Claudeは送信しない)。X Conversation Routine: ledger waiting10件のうちnarisumashi100を実機確認したが、非ログインでは上位人気リプライのみ表示され自社返信・相手の新着返信は確認不能(すべての返信を見るにはログイン必須)、既知の20日連続ログインゲートのため他9件も同様の制約でNOT CHECKED(Owner再ログイン依頼はしない、Approval Batch該当なし)。A8.net実機確認は優先順位(市場接触>コンテンツ公開>計測>収益検証)に照らし今回は見送り(前回同様unauthenticated継続と推定、新規urlが404となり正しいログインURLの再探索コストをかけなかった)。kpi_daily.csv Day30行を新規作成(ig_followers=15、x_posts/ig_posts/x_strategic_replies=0)。Day30 Own Contentの状況(day30_skip-rationale.md、ORDER2未解決のためnot_ready)はMorning時点から変化なし、新しい一次データの自然発生も確認できなかったため見送りを維持。Day31分は未着手(not_ready)。Revenue Experiment: get_tasks(waiting)はtask 1001b4e9(on_hold)のみでOVERDUEなし。get_handoff_queue: coord-2eabeb66/coord-6ada1af1(Day15/17 Reel、既知stale)・coord-40bcf38b(filterStaleOwnerActions修正、assigned/attempts0)はいずれも変化なし、新規対応なし。Approval Queue: pending1件(f8a3c275、Day28 Reel再編集版、期限2026-10-02T07:14 JST、Owner承認待ち継続)を維持。",
-  "current_date": "2026-10-01",
-  "data_updated_at": "2026-10-01T22:35:00+09:00",
-  "public_updated_at": "2026-10-01T13:35:06.512Z",
+  "premorning_2026-10-02_findings": {
+    "missed_routine_coalescing": "直近成功ログは2026-10-01 22:30 Evening(SUCCESS)のみ。その後に翌日Pre-Morning/Morningが先行実行された事実はないためSUPERSEDED非該当、通常実行。",
+    "date_rollover": "get_business_dayでbusiness_day=31/business_date=2026-10-02を確認(暗算なし)。today.jsonのtoday/tomorrowをDay30→Day31/Day31→Day32へロールオーバー。Day30は終始not_ready(day30_skip-rationale.md、新規コンテンツ未制作)だったため、CARRYOVERへ入れずSTALE/CLOSE扱い(Cockpitに引き続き表示しない)。",
+    "day31_status": "未着手のためnot_readyで正直表示。Content Editorへの新規委任はPre-Morningの範囲外のためMorning Routineへ委ねる。",
+    "day28_reel_carryover": "carryover配列のDay28 Reel(approval f8a3c275、HIGH)はOwner未承認のまま継続。created_at(2026-09-30T22:14)から本Routine実行時点(2026-10-02T05:46)で約31.5時間経過し目安24時間を超過しているためfreshness_note(STALE badge)を追加。expires_at=2026-10-02T07:14 JSTまで残り約1.5時間、期限超過時は自動的にexpired化される見込みのため追加の催促・再登録はしない。",
+    "waiting_tasks_check": "get_tasks(status=waiting)1件(1001b4e9、waiting_reason=on_hold、next_check_at=null)のみでOVERDUE対象外。task 31852ac0は前回Morning(2026-10-01)でstatus=doneへクローズ済みのため該当なし。",
+    "approval_queue": "get_approvals(pending)=1件(f8a3c275、Day28 Reel、HIGH、上記day28_reel_carryoverへ反映済み)。",
+    "owner_actions": "既存1件(Instagram DM りょうすけ様への返信、Owner本人対応)を維持。新規追加・削除なし。",
+    "gate": "MORNING_READY(TODAYはDay31当日分のみ・not_readyを正直表示・CARRYOVERはDay28 Reel[approval f8a3c275、STALE badge付き]のみ・Approval Queue 1件把握済み・owner_actions最新・Day30はSTALE/CLOSEとして分離済み)。"
+  },
+  "current_date": "2026-10-02",
+  "data_updated_at": "2026-10-02T05:46:00+09:00",
+  "public_updated_at": "2026-10-01T20:47:28.052Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -1445,31 +1456,31 @@
     ]
   },
   "source_manifest": {
-    "business_day": 30,
-    "business_date": "2026-10-01",
-    "generated_at": "2026-10-01T22:35:00+09:00",
+    "business_day": 31,
+    "business_date": "2026-10-02",
+    "generated_at": "2026-10-02T05:46:00+09:00",
     "today": {
       "x_post": {
         "status": "not_ready",
         "text_file": null,
-        "note": "Day30分は未着手(Pre-Morning Date Rollover、2026-10-01)。Content Editorへの新規委任はPre-Morningの範囲外のためMorning Routineへ委ねる。"
+        "note": "Day31分は未着手(Pre-Morning Date Rollover、2026-10-02)。Content Editorへの新規委任はPre-Morningの範囲外のためMorning Routineへ委ねる。"
       },
       "ig_reel": {
         "status": "not_ready",
         "video_file": null,
-        "note": "Day30分は未着手(Pre-Morning Date Rollover、2026-10-01)。同上。"
+        "note": "Day31分は未着手(Pre-Morning Date Rollover、2026-10-02)。同上。"
       }
     },
     "tomorrow": {
       "x_post": {
         "status": "not_ready",
         "text_file": null,
-        "note": "Day31分は未着手。"
+        "note": "Day32分は未着手。"
       },
       "ig_reel": {
         "status": "not_ready",
         "video_file": null,
-        "note": "Day31分は未着手。"
+        "note": "Day32分は未着手。"
       }
     },
     "business_progress": {
@@ -1792,6 +1803,7 @@
         "reason": "Creative Engineerが再編集完了(scene_duration_overrides追加、narration/claim/CTA文言は無変更)。ffprobe実測28.801秒(15-30秒仕様内)。Claude Business QA(frame0・video/audio同期・一次データ照合)PASS。新規approval f8a3c275(HIGH、期限2026-10-02T07:14 JST)をOwner承認待ちで登録済み(旧approval fa010186は旧版動画のため対象外、自然期限切れ)。",
         "originally_day": 28,
         "current_status": "Owner投稿承認待ち(approval f8a3c275)",
+        "freshness_note": "STALE badge(created_at 2026-09-30T22:14からPre-Morning実行時点2026-10-02T05:46で約31.5時間経過、目安24時間超)。expires_at 2026-10-02T07:14 JSTまで残り約1.5時間、このまま承認が無ければ自動的にexpired化される見込み(Claudeからの再登録・催促の頻度は上げない)。",
         "blocking_dependency": null
       }
     ],
@@ -2323,7 +2335,17 @@
       "gate": "MORNING_READY(TODAYはDay30当日分のみ・not_readyを正直表示・CARRYOVERにDay28 X投稿/Reel[blocked]を分離済み・Approval Queueは1件[fa010186、期限内]・owner_actions最新・stale項目なし)。ただしEvening 2026-09-30欠落分のデータ収集・task 31852ac0 OVERDUEチェックはMorning Routineへの申し送り事項として残る。"
     },
     "morning_routine_2026-10-01_note": "Missed Routine Coalescing: 直近成功ログは本日05:45-05:50 Pre-Morning(MORNING_READY)のみで本日分Morning未実行のためSUPERSEDED非該当、通常フル実行。前夜Evening(2026-09-30 22:30)がセッション利用上限で失敗(実処理未実施)していたため、その欠落分の優先リカバリーを実施した。X実機確認: x.com/homeは明示的ログイン画面へリダイレクト、unauthenticated確定継続(19日連続)。プロフィールは非ログイン閲覧可能: フォロワー8人(前回7人から+1)・フォロー中9人(変化なし)。**重要発見(Manual Publish Verification)**: today.json/carryoverにDay28 X投稿(候補A)がcarryoverのまま残っていたが、実機確認でOwnerが2026-09-30 16:06 JSTに既に投稿済み(status/2105192636667863343、本文完全一致、14h時点再生数=1・いいね/リポスト/返信/ブックマーク0)と判明、historyへ移動・kpi_daily.csv Day29行(x_posts=1/x_impressions=1)へ反映。対のDay28 Reel(day28.mp4)はIG側に新規投稿なしを確認、依然blocked(尺超過)のままcarryoverに残置が正当と確認。IG実機確認: authenticated、フォロワー17人・フォロー中10人・投稿26件(変化なし)。DM確認: りょうすけ様の質問DMは3日前のまま未返信(owner_actions継続)。Revenue Experiment: task 31852ac0(OVERDUE、48h/72hチェック未実施)を実施、24h時点(views58/saves1/shares0/profile_activity0)から72h相当時点まで一切数値変化なし(完全プラトー)と確定、status=doneへクローズ。GREEN Execution: Day28 Reel再編集(35.953秒→30秒以下、Option A)をCreative Engineerへ、Day30 Own Content(ORDER2一次データ探索含む)をContent Editorへ、それぞれバックグラウンド委任(結果は別途確認・反映)。approval fa010186(旧35.933秒版、HIGH、期限2026-10-01T14:34:59 JST)は再編集完了後に新規approvalとして再登録する方針のため今回は変更せず自然期限切れに委ねる。X Conversation Routine: ledger waiting行の新規author返信確認・新規Strategic Reply候補検索はXログインゲートによりNOT CHECKED継続(Owner再ログイン依頼はしない)。Approval Batch該当なし(新規0件)。追記: Creative Engineerによる再編集完了後、Claude Business QA(ffprobe実測28.801秒・frame0目視・音声同期・一次データ照合)を独立実施しPASS、day28.mp4をworkai-cockpitへ再配置、新規approval f8a3c275(HIGH、期限2026-10-02T07:14 JST)を登録しcarryoverをready化した。Day30コンテンツはContent Editorが一次データ4件(Day28 views=1/Notta Part2プラトー/bio link一時消失/DM未返信)を検討した上でいずれも自己言及・Similarity Risk・Human Voice不足を理由に不採用と判断、day30_skip-rationale.md記録、not_ready維持を妥当と判断した。",
-    "evening_routine_2026-10-01_note": "Missed Routine Coalescing: 直近成功ログは本日07:00-07:36 Morning(SUCCESS)のみで、本日分Evening・翌日premorning/morningの成功記録なし(前夜2026-09-30 22:30 Eveningはセッション利用上限で失敗済みだが、その欠落分はMorning Routineで優先リカバリー済み)。SUPERSEDED非該当、通常フル実行。X実機確認: x.com/workai_lab777は非ログイン閲覧可能、x.com/home等は明示的ログイン画面(「Xにログインまたは登録してください」)へのサイドバー表示でunauthenticated確定継続(20日連続)。フォロワー8人・フォロー中9人、Day28 X投稿(9/30 16:06)のビュー数は1のまま変化なし。IG実機確認: authenticated(プロフィール編集・プロフェッショナルダッシュボードリンク確認)。**フォロワー15人(今朝確認の17人から-2、VERIFIED実測)**、フォロー中10人・投稿26件は変化なし。原因は特定できず(フォロー解除か表示遅延かは断定しない、捏造回避のため実測値のみ記録)。新規IG投稿なし(day28.mp4再編集版は未掲載)。Manual Publish Verification: carryover(Day28 Reel、approval f8a3c275)はIGグリッド上に見つからず、Owner承認待ちのまま据え置きが正当と確認、reconcile不要。DM確認: りょうすけ様の質問DMは4日前のまま未返信(owner_actions継続、Claudeは送信しない)。X Conversation Routine: ledger waiting10件のうちnarisumashi100を実機確認したが、非ログインでは上位人気リプライのみ表示され自社返信・相手の新着返信は確認不能(すべての返信を見るにはログイン必須)、既知の20日連続ログインゲートのため他9件も同様の制約でNOT CHECKED(Owner再ログイン依頼はしない、Approval Batch該当なし)。A8.net実機確認は優先順位(市場接触>コンテンツ公開>計測>収益検証)に照らし今回は見送り(前回同様unauthenticated継続と推定、新規urlが404となり正しいログインURLの再探索コストをかけなかった)。kpi_daily.csv Day30行を新規作成(ig_followers=15、x_posts/ig_posts/x_strategic_replies=0)。Day30 Own Contentの状況(day30_skip-rationale.md、ORDER2未解決のためnot_ready)はMorning時点から変化なし、新しい一次データの自然発生も確認できなかったため見送りを維持。Day31分は未着手(not_ready)。Revenue Experiment: get_tasks(waiting)はtask 1001b4e9(on_hold)のみでOVERDUEなし。get_handoff_queue: coord-2eabeb66/coord-6ada1af1(Day15/17 Reel、既知stale)・coord-40bcf38b(filterStaleOwnerActions修正、assigned/attempts0)はいずれも変化なし、新規対応なし。Approval Queue: pending1件(f8a3c275、Day28 Reel再編集版、期限2026-10-02T07:14 JST、Owner承認待ち継続)を維持。"
+    "evening_routine_2026-10-01_note": "Missed Routine Coalescing: 直近成功ログは本日07:00-07:36 Morning(SUCCESS)のみで、本日分Evening・翌日premorning/morningの成功記録なし(前夜2026-09-30 22:30 Eveningはセッション利用上限で失敗済みだが、その欠落分はMorning Routineで優先リカバリー済み)。SUPERSEDED非該当、通常フル実行。X実機確認: x.com/workai_lab777は非ログイン閲覧可能、x.com/home等は明示的ログイン画面(「Xにログインまたは登録してください」)へのサイドバー表示でunauthenticated確定継続(20日連続)。フォロワー8人・フォロー中9人、Day28 X投稿(9/30 16:06)のビュー数は1のまま変化なし。IG実機確認: authenticated(プロフィール編集・プロフェッショナルダッシュボードリンク確認)。**フォロワー15人(今朝確認の17人から-2、VERIFIED実測)**、フォロー中10人・投稿26件は変化なし。原因は特定できず(フォロー解除か表示遅延かは断定しない、捏造回避のため実測値のみ記録)。新規IG投稿なし(day28.mp4再編集版は未掲載)。Manual Publish Verification: carryover(Day28 Reel、approval f8a3c275)はIGグリッド上に見つからず、Owner承認待ちのまま据え置きが正当と確認、reconcile不要。DM確認: りょうすけ様の質問DMは4日前のまま未返信(owner_actions継続、Claudeは送信しない)。X Conversation Routine: ledger waiting10件のうちnarisumashi100を実機確認したが、非ログインでは上位人気リプライのみ表示され自社返信・相手の新着返信は確認不能(すべての返信を見るにはログイン必須)、既知の20日連続ログインゲートのため他9件も同様の制約でNOT CHECKED(Owner再ログイン依頼はしない、Approval Batch該当なし)。A8.net実機確認は優先順位(市場接触>コンテンツ公開>計測>収益検証)に照らし今回は見送り(前回同様unauthenticated継続と推定、新規urlが404となり正しいログインURLの再探索コストをかけなかった)。kpi_daily.csv Day30行を新規作成(ig_followers=15、x_posts/ig_posts/x_strategic_replies=0)。Day30 Own Contentの状況(day30_skip-rationale.md、ORDER2未解決のためnot_ready)はMorning時点から変化なし、新しい一次データの自然発生も確認できなかったため見送りを維持。Day31分は未着手(not_ready)。Revenue Experiment: get_tasks(waiting)はtask 1001b4e9(on_hold)のみでOVERDUEなし。get_handoff_queue: coord-2eabeb66/coord-6ada1af1(Day15/17 Reel、既知stale)・coord-40bcf38b(filterStaleOwnerActions修正、assigned/attempts0)はいずれも変化なし、新規対応なし。Approval Queue: pending1件(f8a3c275、Day28 Reel再編集版、期限2026-10-02T07:14 JST、Owner承認待ち継続)を維持。",
+    "premorning_2026-10-02_findings": {
+      "missed_routine_coalescing": "直近成功ログは2026-10-01 22:30 Evening(SUCCESS)のみ。その後に翌日Pre-Morning/Morningが先行実行された事実はないためSUPERSEDED非該当、通常実行。",
+      "date_rollover": "get_business_dayでbusiness_day=31/business_date=2026-10-02を確認(暗算なし)。today.jsonのtoday/tomorrowをDay30→Day31/Day31→Day32へロールオーバー。Day30は終始not_ready(day30_skip-rationale.md、新規コンテンツ未制作)だったため、CARRYOVERへ入れずSTALE/CLOSE扱い(Cockpitに引き続き表示しない)。",
+      "day31_status": "未着手のためnot_readyで正直表示。Content Editorへの新規委任はPre-Morningの範囲外のためMorning Routineへ委ねる。",
+      "day28_reel_carryover": "carryover配列のDay28 Reel(approval f8a3c275、HIGH)はOwner未承認のまま継続。created_at(2026-09-30T22:14)から本Routine実行時点(2026-10-02T05:46)で約31.5時間経過し目安24時間を超過しているためfreshness_note(STALE badge)を追加。expires_at=2026-10-02T07:14 JSTまで残り約1.5時間、期限超過時は自動的にexpired化される見込みのため追加の催促・再登録はしない。",
+      "waiting_tasks_check": "get_tasks(status=waiting)1件(1001b4e9、waiting_reason=on_hold、next_check_at=null)のみでOVERDUE対象外。task 31852ac0は前回Morning(2026-10-01)でstatus=doneへクローズ済みのため該当なし。",
+      "approval_queue": "get_approvals(pending)=1件(f8a3c275、Day28 Reel、HIGH、上記day28_reel_carryoverへ反映済み)。",
+      "owner_actions": "既存1件(Instagram DM りょうすけ様への返信、Owner本人対応)を維持。新規追加・削除なし。",
+      "gate": "MORNING_READY(TODAYはDay31当日分のみ・not_readyを正直表示・CARRYOVERはDay28 Reel[approval f8a3c275、STALE badge付き]のみ・Approval Queue 1件把握済み・owner_actions最新・Day30はSTALE/CLOSEとして分離済み)。"
+    }
   },
   "health_inputs": {
     "scheduler": [
@@ -3168,6 +3190,26 @@
         "exit_code": 0,
         "success": true,
         "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\morning_2026-10-01_070002.log"
+      },
+      {
+        "routine": "evening",
+        "scheduled_at": "2026-10-01T22:30:00",
+        "started_at": "2026-10-01T13:36:54.852Z",
+        "finished_at": "2026-10-01T13:36:54.852Z",
+        "exit_code": 0,
+        "success": true,
+        "invocation": "manual_chat_slash_command",
+        "status": "SUCCESS",
+        "note": "Missed Routine Coalescing: 直近成功ログは本日07:00 Morningのみ、SUPERSEDED非該当、通常フル実行。X unauthenticated確定継続(20日連続、フォロワー8人変化なし)。IG authenticated、フォロワー15人(今朝17人から-2、原因不明、実測のみ記録)。Manual Publish Verification: Day28 Reel(approval f8a3c275)は未投稿のまま据え置き正当、reconcile不要。DM(りょうすけ様)未返信4日目、owner_actions継続。X Conversation Routine: ledger waiting10件、ログインゲートによりNOT CHECKED継続(20日連続)。Day30 Own Contentはday30_skip-rationale.md維持(新規一次データなし)。kpi_daily.csv Day30行新規作成(ig_followers=15)。Cockpit commit b1975ba・push・Deploy検証PASS(current.json generated_at=22:35確認)。"
+      },
+      {
+        "routine": "evening",
+        "scheduled_at": "2026-10-01T22:30:00",
+        "started_at": "2026-10-01T22:30:02",
+        "finished_at": "2026-10-01T22:38:02",
+        "exit_code": 0,
+        "success": true,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\evening_2026-10-01_223002.log"
       }
     ],
     "tasks": [
