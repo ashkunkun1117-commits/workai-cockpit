@@ -1,29 +1,29 @@
 {
-  "business_day": 33,
-  "business_date": "2026-10-04",
-  "generated_at": "2026-10-04T07:15:00+09:00",
+  "business_day": 34,
+  "business_date": "2026-10-05",
+  "generated_at": "2026-10-05T07:50:00+09:00",
   "today": {
     "x_post": {
       "status": "not_ready",
       "text_file": null,
-      "note": "Day33分は未着手(Pre-Morning Routine Date Rollover、2026-10-04)。ORDER2(別ジャンル実務一次データ)が依然未確定のため捏造回避で見送り継続、Day32から状況変化なし。"
+      "note": "Day34分は未着手(Evening Routine代行Date Rollover、2026-10-05 07:50頃実行。本日05:45/07:00の自動発火記録なし)。7日間検証スプリントD1-D2(COO FINAL「DAY31 RESET APPROVED — GO WITH TWO MODIFICATIONS」2026-10-04)はConcept A(見積説明の時短証明)の実素材(作業前後の時間メモ+生入力+AI出力)待ち。品質ゲート未達のため無理に制作しない。Day33分は同条件で終始not_readyだったためCARRYOVER化せずSTALE/CLOSE。"
     },
     "ig_reel": {
       "status": "not_ready",
       "video_file": null,
-      "note": "Day33分は未着手(Pre-Morning Routine Date Rollover、2026-10-04)。同上。"
+      "note": "Day34分は未着手。同上理由(Concept A/B/Cいずれも実素材未発生)。"
     }
   },
   "tomorrow": {
     "x_post": {
       "status": "not_ready",
       "text_file": null,
-      "note": "Day34分は未着手。"
+      "note": "Day35分は未着手。"
     },
     "ig_reel": {
       "status": "not_ready",
       "video_file": null,
-      "note": "Day34分は未着手。"
+      "note": "Day35分は未着手。"
     }
   },
   "business_progress": {
@@ -677,6 +677,18 @@
     "公開可否の線引き(Ownerのみ判断可): 顧客名・金額・現場住所・図面・前職関連情報をコンテンツに使ってよい範囲を教えてください(個人情報・守秘のため)。"
   ],
   "approval_queue": [],
+  "evening_2026-10-05_findings": {
+    "missed_routine_coalescing": "直近成功ログは2026-10-04 07:00-07:07 Morningのみ。同日22:30 Evening・2026-10-05 05:45 Pre-Morning・07:00 Morningとも自動発火記録なし(routine_scheduler.log確認)。後続のPre-Morning/Morningが成功していないためSUPERSEDED非該当、Evening Routineを通常フル実行(Date Rollover含め代行)。",
+    "sprint_context": "7日間検証スプリント(DAY31 RESET、2026-10-04〜10-10)のD1-D2。COO FINAL(2026-10-04)により承認・インフラ凍結中(Cockpit既存スクリプトでの再生成・データ更新は対象外、新規機能のみ凍結)。",
+    "x_state": "unauthenticated(x.com/workai_lab777アクセスで明示的ログイン/登録パネル表示)。プロフィールは非ログイン閲覧可能: フォロワー7人/フォロー中9人/68 posts(変化なし)。最新投稿は9/30のまま新規投稿なし。既存投稿のビュー数(固定54/Notta Part2 16/Day24 Revenue22/notta-voice-validation40/Day28 X投稿1)も全て変化なし、プラトー継続。",
+    "ig_state": "authenticated(プロフィール編集・ダッシュボードアクセス可能)。フォロワー14人(前回15人から-1)、フォロー中10人、投稿26件(変化なし)、新規投稿なし。",
+    "manual_publish_verification": "carryover配列は空。content_mix_tracker/revenue_contentsとも既存履歴のみで新規投稿なし、reconcile不要。",
+    "x_conversation_check": "ledger waiting行のうち優先度の高い2件(@yukissense followup, @omuat)を実機確認(個別投稿URL、非ログイン閲覧)、いずれも返信数が自社分のみ(新規author返信0)。他のwaiting行(narisumashi100等)は時間予算の都合で今回未確認、次回へ持ち越し。新規Strategic Reply候補探索はX検索がログイン必須のため実施せず(スプリント方針どおり質重視・ノルマなし)。",
+    "dm_check": "Instagram DM(りょうすけ様)への返信は依然未送信(スレッド最新は相手の「1週間前」メッセージのまま)。Owner対応待ち継続、Claudeは送信しない。",
+    "task_hygiene": "task 1001b4e9([Revenue Experiment] Notta「向かない人」トラッキング)を、COO DAY31 RESET の明示的KILL判定(「Nottaを中心テーマにすること、およびNotta A8を収益経路にすること」)に基づきdoneへクローズ(notta-fit-boundary.mp4は非公開のまま、ファイルは保持)。task 5415e3ec(Day7 Review、next_check_at 2026-10-10T20:00)はOVERDUEなし。",
+    "kpi": "kpi_daily.csv Day32(2026-10-03)・Day33(2026-10-04)の欠落行を新規追加、Day33のig_followersは本Routineの実機確認値(14)で記録。Day34(2026-10-05)行も同時点の実機値で新規作成。",
+    "next_day_prep": "Concept A/B/Cいずれも実素材未発生のため新規制作は見送り継続(品質ゲート未達は0本で可、スプリント原則どおり)。owner_actions(DM返信/痛み棚卸し/公開可否の線引き)は変更なく維持。"
+  },
   "ai_learning": {
     "day": 23,
     "observation": "Notta Revenue Experiment(A8リンク修正後、task 98ce9bc9)は72h超過確定でclick数2・CV0・revenue0という実データが出た。notta-voice-validation.mp4はInstagram投稿済み(reel/DdkRCRGSdy3/)だがX側は投稿本文自体が未作成だったことが判明し、X未投稿の原因は「Owner の投稿忘れ」ではなく「制作側の準備不足」だった。この2点を受け、COOが運用の軸を「投稿制作中心」から「Audience Growth Engine + Revenue Engineの同時構築」へ転換(5 Growth Channels・Content Mix・Daily Loop)。Proof Acquisition Mode(2026-09-22発動)は制作再開承認により2026-09-24付で終了。",
@@ -892,9 +904,9 @@
     "gate": "MORNING_READY(TODAYはDay31当日分のみ・not_readyを正直表示・CARRYOVERはDay28 Reel[approval f8a3c275、STALE badge付き]のみ・Approval Queue 1件把握済み・owner_actions最新・Day30はSTALE/CLOSEとして分離済み)。"
   },
   "morning_routine_2026-10-02_note": "Missed Routine Coalescing: 直近成功ログは本日05:45-05:58 Pre-Morning(MORNING_READY)のみで本日分Morning未実行のためSUPERSEDED非該当、通常フル実行。X実機確認: x.com/workai_lab777は非ログイン閲覧可能だがx.com/home・x.com/searchはいずれも明示的ログイン画面へリダイレクト、unauthenticated確定継続(22日連続)。フォロワー8人・フォロー中9人で変化なし、新規投稿なし。/searchが明示的loginページへリダイレクトされることを実機確認したため、新規Strategic Reply候補探索・Targeted Following(X側)は今回もブロックされたまま(NOT_CHECKED、Owner再ログイン依頼は追加しない)。ledger waiting中の@akagami_sns個別スレッドを非ログインで確認したが、相手の新着返信はレンダリングされず(ログイン必須の制約、他9件も同条件のためNOT CHECKED)。IG実機確認: authenticated、フォロワー14人(前回夜22:35確認の15人から-1、VERIFIED実測、原因不明のため断定しない)、投稿26件で変化なし(day28.mp4再編集版はまだ未掲載)。Manual Publish Verification: carryover(Day28 Reel、approval f8a3c275)はIGグリッドに見つからず、Owner承認待ちのまま据え置きが正当、reconcile不要。Approval Queue pending=1件(f8a3c275)、期限2026-10-02T07:14 JSTまで変更なし、追加の催促はしない。Targeted Following candidate探索: X検索がブロックされているためIGハッシュタグ(#リフォーム会社)で代替探索を試みたが、結果はリフォーム会社の採用広告・宣伝アカウントが中心でAudience Growth Engineの対象層(AI活用/業務効率化/副業/個人事業主/建築・リフォーム/現場仕事の個人、FOLLOW+REPLY可能性のある層)に合致せず、質より量を避けるため候補は0件で正直に報告(水増ししない)。Revenue Experiment: get_tasks(waiting)1件(1001b4e9、on_hold)のみでOVERDUEなし。Day31 Own Content: ORDER2(別ジャンル実務価値コンテンツ)がDay30に続き本日も新規一次データなし(day30_skip-rationale.mdと同一の構造的ブロッカー、Owner本人の実務上の一次体験が必要)。day31_skip-rationale.mdを新規作成しnot_ready継続を維持、捏造・使い回しは行わない。owner_actionsへ任意・低緊急度でOwner協力依頼(次に実務で自然にAI利用の場面が出た際のBefore/After記録)を追加(強制タスク化はしない、Proof Acquisition Mode式の7項目フォーマットは採用せず軽量な依頼に留めた)。DM(りょうすけ様)未返信継続(owner_actions維持、Claudeは送信しない)。Codex Handoff: 新規Engineering Task該当なし。",
-  "current_date": "2026-10-04",
-  "data_updated_at": "2026-10-04T07:15:00+09:00",
-  "public_updated_at": "2026-10-04T22:37:59.738Z",
+  "current_date": "2026-10-05",
+  "data_updated_at": "2026-10-05T07:50:00+09:00",
+  "public_updated_at": "2026-10-04T22:53:00.214Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -1473,35 +1485,89 @@
         "cost_jpy": null,
         "profit_jpy": null,
         "human_work_minutes": null
+      },
+      {
+        "day": 32,
+        "date": "2026-10-03",
+        "x_posts": 0,
+        "x_impressions": null,
+        "x_strategic_replies": null,
+        "x_reply_impressions_avg": null,
+        "ig_posts": 0,
+        "ig_reel_views": null,
+        "ig_followers": 15,
+        "ig_profile_visits": null,
+        "link_clicks": null,
+        "conversions": null,
+        "revenue_jpy": null,
+        "cost_jpy": null,
+        "profit_jpy": null,
+        "human_work_minutes": null
+      },
+      {
+        "day": 33,
+        "date": "2026-10-04",
+        "x_posts": 0,
+        "x_impressions": null,
+        "x_strategic_replies": null,
+        "x_reply_impressions_avg": null,
+        "ig_posts": 0,
+        "ig_reel_views": null,
+        "ig_followers": 14,
+        "ig_profile_visits": null,
+        "link_clicks": null,
+        "conversions": null,
+        "revenue_jpy": null,
+        "cost_jpy": null,
+        "profit_jpy": null,
+        "human_work_minutes": null
+      },
+      {
+        "day": 34,
+        "date": "2026-10-05",
+        "x_posts": 0,
+        "x_impressions": null,
+        "x_strategic_replies": null,
+        "x_reply_impressions_avg": null,
+        "ig_posts": 0,
+        "ig_reel_views": null,
+        "ig_followers": 14,
+        "ig_profile_visits": null,
+        "link_clicks": null,
+        "conversions": null,
+        "revenue_jpy": null,
+        "cost_jpy": null,
+        "profit_jpy": null,
+        "human_work_minutes": null
       }
     ]
   },
   "source_manifest": {
-    "business_day": 33,
-    "business_date": "2026-10-04",
-    "generated_at": "2026-10-04T07:15:00+09:00",
+    "business_day": 34,
+    "business_date": "2026-10-05",
+    "generated_at": "2026-10-05T07:50:00+09:00",
     "today": {
       "x_post": {
         "status": "not_ready",
         "text_file": null,
-        "note": "Day33分は未着手(Pre-Morning Routine Date Rollover、2026-10-04)。ORDER2(別ジャンル実務一次データ)が依然未確定のため捏造回避で見送り継続、Day32から状況変化なし。"
+        "note": "Day34分は未着手(Evening Routine代行Date Rollover、2026-10-05 07:50頃実行。本日05:45/07:00の自動発火記録なし)。7日間検証スプリントD1-D2(COO FINAL「DAY31 RESET APPROVED — GO WITH TWO MODIFICATIONS」2026-10-04)はConcept A(見積説明の時短証明)の実素材(作業前後の時間メモ+生入力+AI出力)待ち。品質ゲート未達のため無理に制作しない。Day33分は同条件で終始not_readyだったためCARRYOVER化せずSTALE/CLOSE。"
       },
       "ig_reel": {
         "status": "not_ready",
         "video_file": null,
-        "note": "Day33分は未着手(Pre-Morning Routine Date Rollover、2026-10-04)。同上。"
+        "note": "Day34分は未着手。同上理由(Concept A/B/Cいずれも実素材未発生)。"
       }
     },
     "tomorrow": {
       "x_post": {
         "status": "not_ready",
         "text_file": null,
-        "note": "Day34分は未着手。"
+        "note": "Day35分は未着手。"
       },
       "ig_reel": {
         "status": "not_ready",
         "video_file": null,
-        "note": "Day34分は未着手。"
+        "note": "Day35分は未着手。"
       }
     },
     "business_progress": {
@@ -2155,6 +2221,18 @@
       "公開可否の線引き(Ownerのみ判断可): 顧客名・金額・現場住所・図面・前職関連情報をコンテンツに使ってよい範囲を教えてください(個人情報・守秘のため)。"
     ],
     "approval_queue": [],
+    "evening_2026-10-05_findings": {
+      "missed_routine_coalescing": "直近成功ログは2026-10-04 07:00-07:07 Morningのみ。同日22:30 Evening・2026-10-05 05:45 Pre-Morning・07:00 Morningとも自動発火記録なし(routine_scheduler.log確認)。後続のPre-Morning/Morningが成功していないためSUPERSEDED非該当、Evening Routineを通常フル実行(Date Rollover含め代行)。",
+      "sprint_context": "7日間検証スプリント(DAY31 RESET、2026-10-04〜10-10)のD1-D2。COO FINAL(2026-10-04)により承認・インフラ凍結中(Cockpit既存スクリプトでの再生成・データ更新は対象外、新規機能のみ凍結)。",
+      "x_state": "unauthenticated(x.com/workai_lab777アクセスで明示的ログイン/登録パネル表示)。プロフィールは非ログイン閲覧可能: フォロワー7人/フォロー中9人/68 posts(変化なし)。最新投稿は9/30のまま新規投稿なし。既存投稿のビュー数(固定54/Notta Part2 16/Day24 Revenue22/notta-voice-validation40/Day28 X投稿1)も全て変化なし、プラトー継続。",
+      "ig_state": "authenticated(プロフィール編集・ダッシュボードアクセス可能)。フォロワー14人(前回15人から-1)、フォロー中10人、投稿26件(変化なし)、新規投稿なし。",
+      "manual_publish_verification": "carryover配列は空。content_mix_tracker/revenue_contentsとも既存履歴のみで新規投稿なし、reconcile不要。",
+      "x_conversation_check": "ledger waiting行のうち優先度の高い2件(@yukissense followup, @omuat)を実機確認(個別投稿URL、非ログイン閲覧)、いずれも返信数が自社分のみ(新規author返信0)。他のwaiting行(narisumashi100等)は時間予算の都合で今回未確認、次回へ持ち越し。新規Strategic Reply候補探索はX検索がログイン必須のため実施せず(スプリント方針どおり質重視・ノルマなし)。",
+      "dm_check": "Instagram DM(りょうすけ様)への返信は依然未送信(スレッド最新は相手の「1週間前」メッセージのまま)。Owner対応待ち継続、Claudeは送信しない。",
+      "task_hygiene": "task 1001b4e9([Revenue Experiment] Notta「向かない人」トラッキング)を、COO DAY31 RESET の明示的KILL判定(「Nottaを中心テーマにすること、およびNotta A8を収益経路にすること」)に基づきdoneへクローズ(notta-fit-boundary.mp4は非公開のまま、ファイルは保持)。task 5415e3ec(Day7 Review、next_check_at 2026-10-10T20:00)はOVERDUEなし。",
+      "kpi": "kpi_daily.csv Day32(2026-10-03)・Day33(2026-10-04)の欠落行を新規追加、Day33のig_followersは本Routineの実機確認値(14)で記録。Day34(2026-10-05)行も同時点の実機値で新規作成。",
+      "next_day_prep": "Concept A/B/Cいずれも実素材未発生のため新規制作は見送り継続(品質ゲート未達は0本で可、スプリント原則どおり)。owner_actions(DM返信/痛み棚卸し/公開可否の線引き)は変更なく維持。"
+    },
     "ai_learning": {
       "day": 23,
       "observation": "Notta Revenue Experiment(A8リンク修正後、task 98ce9bc9)は72h超過確定でclick数2・CV0・revenue0という実データが出た。notta-voice-validation.mp4はInstagram投稿済み(reel/DdkRCRGSdy3/)だがX側は投稿本文自体が未作成だったことが判明し、X未投稿の原因は「Owner の投稿忘れ」ではなく「制作側の準備不足」だった。この2点を受け、COOが運用の軸を「投稿制作中心」から「Audience Growth Engine + Revenue Engineの同時構築」へ転換(5 Growth Channels・Content Mix・Daily Loop)。Proof Acquisition Mode(2026-09-22発動)は制作再開承認により2026-09-24付で終了。",
@@ -3339,6 +3417,15 @@
         "exit_code": 0,
         "success": true,
         "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\morning_2026-10-04_070002.log"
+      },
+      {
+        "routine": "premorning",
+        "scheduled_at": "2026-10-05T05:45:00",
+        "started_at": "2026-10-05T07:42:03",
+        "finished_at": "2026-10-05T07:52:03",
+        "exit_code": 1618,
+        "success": false,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\premorning_2026-10-05_074203.log"
       }
     ],
     "tasks": [
@@ -3348,13 +3435,6 @@
         "status": "assigned",
         "waiting_reason": "codex_quota_limit",
         "next_check_at": "2026-09-15T04:00:00.000Z"
-      },
-      {
-        "task_id": "1001b4e9-e3ea-44a0-be3e-2be48da4891f",
-        "assigned_to": "claude",
-        "status": "waiting",
-        "waiting_reason": "on_hold_pending_notta_voice_validation_baseline",
-        "next_check_at": null
       },
       {
         "task_id": "5415e3ec-ce52-46be-a89e-d5c082622b9a",
