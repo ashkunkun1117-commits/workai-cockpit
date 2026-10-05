@@ -918,7 +918,7 @@
   "morning_routine_2026-10-02_note": "Missed Routine Coalescing: 直近成功ログは本日05:45-05:58 Pre-Morning(MORNING_READY)のみで本日分Morning未実行のためSUPERSEDED非該当、通常フル実行。X実機確認: x.com/workai_lab777は非ログイン閲覧可能だがx.com/home・x.com/searchはいずれも明示的ログイン画面へリダイレクト、unauthenticated確定継続(22日連続)。フォロワー8人・フォロー中9人で変化なし、新規投稿なし。/searchが明示的loginページへリダイレクトされることを実機確認したため、新規Strategic Reply候補探索・Targeted Following(X側)は今回もブロックされたまま(NOT_CHECKED、Owner再ログイン依頼は追加しない)。ledger waiting中の@akagami_sns個別スレッドを非ログインで確認したが、相手の新着返信はレンダリングされず(ログイン必須の制約、他9件も同条件のためNOT CHECKED)。IG実機確認: authenticated、フォロワー14人(前回夜22:35確認の15人から-1、VERIFIED実測、原因不明のため断定しない)、投稿26件で変化なし(day28.mp4再編集版はまだ未掲載)。Manual Publish Verification: carryover(Day28 Reel、approval f8a3c275)はIGグリッドに見つからず、Owner承認待ちのまま据え置きが正当、reconcile不要。Approval Queue pending=1件(f8a3c275)、期限2026-10-02T07:14 JSTまで変更なし、追加の催促はしない。Targeted Following candidate探索: X検索がブロックされているためIGハッシュタグ(#リフォーム会社)で代替探索を試みたが、結果はリフォーム会社の採用広告・宣伝アカウントが中心でAudience Growth Engineの対象層(AI活用/業務効率化/副業/個人事業主/建築・リフォーム/現場仕事の個人、FOLLOW+REPLY可能性のある層)に合致せず、質より量を避けるため候補は0件で正直に報告(水増ししない)。Revenue Experiment: get_tasks(waiting)1件(1001b4e9、on_hold)のみでOVERDUEなし。Day31 Own Content: ORDER2(別ジャンル実務価値コンテンツ)がDay30に続き本日も新規一次データなし(day30_skip-rationale.mdと同一の構造的ブロッカー、Owner本人の実務上の一次体験が必要)。day31_skip-rationale.mdを新規作成しnot_ready継続を維持、捏造・使い回しは行わない。owner_actionsへ任意・低緊急度でOwner協力依頼(次に実務で自然にAI利用の場面が出た際のBefore/After記録)を追加(強制タスク化はしない、Proof Acquisition Mode式の7項目フォーマットは採用せず軽量な依頼に留めた)。DM(りょうすけ様)未返信継続(owner_actions維持、Claudeは送信しない)。Codex Handoff: 新規Engineering Task該当なし。",
   "current_date": "2026-10-06",
   "data_updated_at": "2026-10-06T05:46:00+09:00",
-  "public_updated_at": "2026-10-05T20:46:41.423Z",
+  "public_updated_at": "2026-10-05T22:02:04.289Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -3490,6 +3490,26 @@
         "exit_code": 0,
         "success": true,
         "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\evening_2026-10-05_223001.log"
+      },
+      {
+        "routine": "premorning",
+        "scheduled_at": "2026-10-06T05:45:00",
+        "started_at": "2026-10-06T05:46:00+09:00",
+        "finished_at": "2026-10-06T05:52:00+09:00",
+        "exit_code": 0,
+        "success": true,
+        "invocation": "manual_chat_slash_command",
+        "status": "MORNING_NOT_READY",
+        "note": "Missed Routine Coalescing: 直近成功ログは2026-10-05 22:30 Evening(SUCCESS)のみでSUPERSEDED非該当、通常実行。Date Rollover実施(Day34→Day35、2026-10-06)。Day34分は終始not_readyだったためCARRYOVER化せずSTALE/CLOSE。get_approvals(pending)=0件、get_tasks(waiting)1件(5415e3ec、next_check_at 2026-10-10、OVERDUEなし)。owner_actions変更なし。Cockpit commit 161b13a・push成功だがDeploy検証FAILED(Pages build status=building継続、live current.json business_day=34のまま、bounded retry超過)。reason=COCKPIT_DEPLOY_VERIFY_FAILED、次回Morning Routineでリトライ。"
+      },
+      {
+        "routine": "premorning",
+        "scheduled_at": "2026-10-06T05:45:00",
+        "started_at": "2026-10-06T05:45:02",
+        "finished_at": "2026-10-06T05:50:57",
+        "exit_code": 0,
+        "success": true,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\premorning_2026-10-06_054502.log"
       }
     ],
     "tasks": [
