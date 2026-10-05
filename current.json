@@ -1,29 +1,29 @@
 {
-  "business_day": 34,
-  "business_date": "2026-10-05",
-  "generated_at": "2026-10-05T13:34:40+09:00",
+  "business_day": 35,
+  "business_date": "2026-10-06",
+  "generated_at": "2026-10-06T05:46:00+09:00",
   "today": {
     "x_post": {
       "status": "not_ready",
       "text_file": null,
-      "note": "Day34分は未着手(Evening Routine代行Date Rollover、2026-10-05 07:50頃実行。本日05:45/07:00の自動発火記録なし)。7日間検証スプリントD1-D2(COO FINAL「DAY31 RESET APPROVED — GO WITH TWO MODIFICATIONS」2026-10-04)はConcept A(見積説明の時短証明)の実素材(作業前後の時間メモ+生入力+AI出力)待ち。品質ゲート未達のため無理に制作しない。Day33分は同条件で終始not_readyだったためCARRYOVER化せずSTALE/CLOSE。"
+      "note": "Day35分は未着手(Pre-Morning Routine、Date Rollover実施)。7日間検証スプリント(COO FINAL「DAY31 RESET APPROVED — GO WITH TWO MODIFICATIONS」2026-10-04、D1-D2継続、次回チェックポイントtask 5415e3ec next_check_at 2026-10-10)はConcept A/B/Cいずれも実素材未発生のまま継続。品質ゲート未達のため無理に制作しない。Day34分は終始not_readyだったためCARRYOVER化せずSTALE/CLOSE。"
     },
     "ig_reel": {
       "status": "not_ready",
       "video_file": null,
-      "note": "Day34分は未着手。同上理由(Concept A/B/Cいずれも実素材未発生)。"
+      "note": "Day35分は未着手。同上理由(Concept A/B/Cいずれも実素材未発生)。"
     }
   },
   "tomorrow": {
     "x_post": {
       "status": "not_ready",
       "text_file": null,
-      "note": "Day35分は未着手。"
+      "note": "Day36分は未着手。"
     },
     "ig_reel": {
       "status": "not_ready",
       "video_file": null,
-      "note": "Day35分は未着手。"
+      "note": "Day36分は未着手。"
     }
   },
   "business_progress": {
@@ -916,9 +916,9 @@
     "gate": "MORNING_READY(TODAYはDay31当日分のみ・not_readyを正直表示・CARRYOVERはDay28 Reel[approval f8a3c275、STALE badge付き]のみ・Approval Queue 1件把握済み・owner_actions最新・Day30はSTALE/CLOSEとして分離済み)。"
   },
   "morning_routine_2026-10-02_note": "Missed Routine Coalescing: 直近成功ログは本日05:45-05:58 Pre-Morning(MORNING_READY)のみで本日分Morning未実行のためSUPERSEDED非該当、通常フル実行。X実機確認: x.com/workai_lab777は非ログイン閲覧可能だがx.com/home・x.com/searchはいずれも明示的ログイン画面へリダイレクト、unauthenticated確定継続(22日連続)。フォロワー8人・フォロー中9人で変化なし、新規投稿なし。/searchが明示的loginページへリダイレクトされることを実機確認したため、新規Strategic Reply候補探索・Targeted Following(X側)は今回もブロックされたまま(NOT_CHECKED、Owner再ログイン依頼は追加しない)。ledger waiting中の@akagami_sns個別スレッドを非ログインで確認したが、相手の新着返信はレンダリングされず(ログイン必須の制約、他9件も同条件のためNOT CHECKED)。IG実機確認: authenticated、フォロワー14人(前回夜22:35確認の15人から-1、VERIFIED実測、原因不明のため断定しない)、投稿26件で変化なし(day28.mp4再編集版はまだ未掲載)。Manual Publish Verification: carryover(Day28 Reel、approval f8a3c275)はIGグリッドに見つからず、Owner承認待ちのまま据え置きが正当、reconcile不要。Approval Queue pending=1件(f8a3c275)、期限2026-10-02T07:14 JSTまで変更なし、追加の催促はしない。Targeted Following candidate探索: X検索がブロックされているためIGハッシュタグ(#リフォーム会社)で代替探索を試みたが、結果はリフォーム会社の採用広告・宣伝アカウントが中心でAudience Growth Engineの対象層(AI活用/業務効率化/副業/個人事業主/建築・リフォーム/現場仕事の個人、FOLLOW+REPLY可能性のある層)に合致せず、質より量を避けるため候補は0件で正直に報告(水増ししない)。Revenue Experiment: get_tasks(waiting)1件(1001b4e9、on_hold)のみでOVERDUEなし。Day31 Own Content: ORDER2(別ジャンル実務価値コンテンツ)がDay30に続き本日も新規一次データなし(day30_skip-rationale.mdと同一の構造的ブロッカー、Owner本人の実務上の一次体験が必要)。day31_skip-rationale.mdを新規作成しnot_ready継続を維持、捏造・使い回しは行わない。owner_actionsへ任意・低緊急度でOwner協力依頼(次に実務で自然にAI利用の場面が出た際のBefore/After記録)を追加(強制タスク化はしない、Proof Acquisition Mode式の7項目フォーマットは採用せず軽量な依頼に留めた)。DM(りょうすけ様)未返信継続(owner_actions維持、Claudeは送信しない)。Codex Handoff: 新規Engineering Task該当なし。",
-  "current_date": "2026-10-05",
-  "data_updated_at": "2026-10-05T13:34:40+09:00",
-  "public_updated_at": "2026-10-05T13:35:25.723Z",
+  "current_date": "2026-10-06",
+  "data_updated_at": "2026-10-06T05:46:00+09:00",
+  "public_updated_at": "2026-10-05T20:46:41.423Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -1555,31 +1555,31 @@
     ]
   },
   "source_manifest": {
-    "business_day": 34,
-    "business_date": "2026-10-05",
-    "generated_at": "2026-10-05T13:34:40+09:00",
+    "business_day": 35,
+    "business_date": "2026-10-06",
+    "generated_at": "2026-10-06T05:46:00+09:00",
     "today": {
       "x_post": {
         "status": "not_ready",
         "text_file": null,
-        "note": "Day34分は未着手(Evening Routine代行Date Rollover、2026-10-05 07:50頃実行。本日05:45/07:00の自動発火記録なし)。7日間検証スプリントD1-D2(COO FINAL「DAY31 RESET APPROVED — GO WITH TWO MODIFICATIONS」2026-10-04)はConcept A(見積説明の時短証明)の実素材(作業前後の時間メモ+生入力+AI出力)待ち。品質ゲート未達のため無理に制作しない。Day33分は同条件で終始not_readyだったためCARRYOVER化せずSTALE/CLOSE。"
+        "note": "Day35分は未着手(Pre-Morning Routine、Date Rollover実施)。7日間検証スプリント(COO FINAL「DAY31 RESET APPROVED — GO WITH TWO MODIFICATIONS」2026-10-04、D1-D2継続、次回チェックポイントtask 5415e3ec next_check_at 2026-10-10)はConcept A/B/Cいずれも実素材未発生のまま継続。品質ゲート未達のため無理に制作しない。Day34分は終始not_readyだったためCARRYOVER化せずSTALE/CLOSE。"
       },
       "ig_reel": {
         "status": "not_ready",
         "video_file": null,
-        "note": "Day34分は未着手。同上理由(Concept A/B/Cいずれも実素材未発生)。"
+        "note": "Day35分は未着手。同上理由(Concept A/B/Cいずれも実素材未発生)。"
       }
     },
     "tomorrow": {
       "x_post": {
         "status": "not_ready",
         "text_file": null,
-        "note": "Day35分は未着手。"
+        "note": "Day36分は未着手。"
       },
       "ig_reel": {
         "status": "not_ready",
         "video_file": null,
-        "note": "Day35分は未着手。"
+        "note": "Day36分は未着手。"
       }
     },
     "business_progress": {
@@ -3470,6 +3470,26 @@
         "exit_code": 0,
         "success": true,
         "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\evening_2026-10-05_074201.log"
+      },
+      {
+        "routine": "evening",
+        "scheduled_at": "2026-10-05T22:30:00",
+        "started_at": "2026-10-05T13:34:00+09:00",
+        "finished_at": "2026-10-05T13:37:00+09:00",
+        "exit_code": 0,
+        "success": true,
+        "invocation": "manual_chat_slash_command",
+        "status": "SUCCESS",
+        "note": "Missed Routine Coalescing: 直近成功ログは本日07:4x台のevening(Date Rollover Day33→Day34含む、SUCCESS)のみ。SUPERSEDED非該当だが重い処理(Rollover/task整理)は既に完了済みのため、今回は実データ再確認・差分記録のみ実施。X unauthenticated継続(25日連続)、フォロワー8人(+1)。IG authenticated、フォロワー13人(-1)。新規投稿なし、carryover空、approvals pending=0、waiting task 1件(Day7 Review、next_check_at 2026-10-10、OVERDUEなし)。kpi_daily.csv Day34行更新(ig_followers=13)。Cockpit commit 2ccfdf0・push・Deploy検証PASS(live current.json generated_at=13:34:40確認)。"
+      },
+      {
+        "routine": "evening",
+        "scheduled_at": "2026-10-05T22:30:00",
+        "started_at": "2026-10-05T22:30:01",
+        "finished_at": "2026-10-05T22:38:01",
+        "exit_code": 0,
+        "success": true,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\evening_2026-10-05_223001.log"
       }
     ],
     "tasks": [
