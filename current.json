@@ -916,9 +916,37 @@
     "gate": "MORNING_READY(TODAYはDay31当日分のみ・not_readyを正直表示・CARRYOVERはDay28 Reel[approval f8a3c275、STALE badge付き]のみ・Approval Queue 1件把握済み・owner_actions最新・Day30はSTALE/CLOSEとして分離済み)。"
   },
   "morning_routine_2026-10-02_note": "Missed Routine Coalescing: 直近成功ログは本日05:45-05:58 Pre-Morning(MORNING_READY)のみで本日分Morning未実行のためSUPERSEDED非該当、通常フル実行。X実機確認: x.com/workai_lab777は非ログイン閲覧可能だがx.com/home・x.com/searchはいずれも明示的ログイン画面へリダイレクト、unauthenticated確定継続(22日連続)。フォロワー8人・フォロー中9人で変化なし、新規投稿なし。/searchが明示的loginページへリダイレクトされることを実機確認したため、新規Strategic Reply候補探索・Targeted Following(X側)は今回もブロックされたまま(NOT_CHECKED、Owner再ログイン依頼は追加しない)。ledger waiting中の@akagami_sns個別スレッドを非ログインで確認したが、相手の新着返信はレンダリングされず(ログイン必須の制約、他9件も同条件のためNOT CHECKED)。IG実機確認: authenticated、フォロワー14人(前回夜22:35確認の15人から-1、VERIFIED実測、原因不明のため断定しない)、投稿26件で変化なし(day28.mp4再編集版はまだ未掲載)。Manual Publish Verification: carryover(Day28 Reel、approval f8a3c275)はIGグリッドに見つからず、Owner承認待ちのまま据え置きが正当、reconcile不要。Approval Queue pending=1件(f8a3c275)、期限2026-10-02T07:14 JSTまで変更なし、追加の催促はしない。Targeted Following candidate探索: X検索がブロックされているためIGハッシュタグ(#リフォーム会社)で代替探索を試みたが、結果はリフォーム会社の採用広告・宣伝アカウントが中心でAudience Growth Engineの対象層(AI活用/業務効率化/副業/個人事業主/建築・リフォーム/現場仕事の個人、FOLLOW+REPLY可能性のある層)に合致せず、質より量を避けるため候補は0件で正直に報告(水増ししない)。Revenue Experiment: get_tasks(waiting)1件(1001b4e9、on_hold)のみでOVERDUEなし。Day31 Own Content: ORDER2(別ジャンル実務価値コンテンツ)がDay30に続き本日も新規一次データなし(day30_skip-rationale.mdと同一の構造的ブロッカー、Owner本人の実務上の一次体験が必要)。day31_skip-rationale.mdを新規作成しnot_ready継続を維持、捏造・使い回しは行わない。owner_actionsへ任意・低緊急度でOwner協力依頼(次に実務で自然にAI利用の場面が出た際のBefore/After記録)を追加(強制タスク化はしない、Proof Acquisition Mode式の7項目フォーマットは採用せず軽量な依頼に留めた)。DM(りょうすけ様)未返信継続(owner_actions維持、Claudeは送信しない)。Codex Handoff: 新規Engineering Task該当なし。",
+  "sprint_day1": {
+    "recorded_at": "2026-10-22T07:40:00+09:00",
+    "sprint_day1": "2026-10-22",
+    "rule": "Sprint Day1 = actual public publish date of P3; T0 = verified publish timestamp (COO FINAL 2026-10-21)",
+    "content": "P3 manufacturer-document request (IG carousel 8 slides + X post with slide 6)",
+    "posts": [
+      {
+        "platform": "x",
+        "approval_id": "c9916552-6dd7-4348-baea-e816583df717",
+        "url": "https://x.com/workai_lab777/status/2113032479267537308",
+        "t0": "2026-10-22T07:19:35+09:00",
+        "verified": "live read-only check 2026-10-22"
+      },
+      {
+        "platform": "instagram",
+        "approval_id": "51173ad6-b93f-4b11-869f-0df617616868",
+        "url": "https://www.instagram.com/workai_lab777/p/DexeEH_khEq/",
+        "t0": "2026-10-22T07:22:03+09:00",
+        "verified": "live read-only check 2026-10-22"
+      }
+    ],
+    "measurements": {
+      "h24": "2026-10-23T08:00:00+09:00 (task 6237a56e)",
+      "h72": "2026-10-25T08:00:00+09:00 (task e80df7d3)",
+      "day7": "2026-10-28T20:00:00+09:00 (task 5415e3ec)"
+    },
+    "metrics_collected": false
+  },
   "current_date": "2026-10-06",
   "data_updated_at": "2026-10-06T05:46:00+09:00",
-  "public_updated_at": "2026-10-21T14:49:34.392Z",
+  "public_updated_at": "2026-10-21T22:32:01.597Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -2489,7 +2517,35 @@
       "owner_actions": "既存1件(Instagram DM りょうすけ様への返信、Owner本人対応)を維持。新規追加・削除なし。",
       "gate": "MORNING_READY(TODAYはDay31当日分のみ・not_readyを正直表示・CARRYOVERはDay28 Reel[approval f8a3c275、STALE badge付き]のみ・Approval Queue 1件把握済み・owner_actions最新・Day30はSTALE/CLOSEとして分離済み)。"
     },
-    "morning_routine_2026-10-02_note": "Missed Routine Coalescing: 直近成功ログは本日05:45-05:58 Pre-Morning(MORNING_READY)のみで本日分Morning未実行のためSUPERSEDED非該当、通常フル実行。X実機確認: x.com/workai_lab777は非ログイン閲覧可能だがx.com/home・x.com/searchはいずれも明示的ログイン画面へリダイレクト、unauthenticated確定継続(22日連続)。フォロワー8人・フォロー中9人で変化なし、新規投稿なし。/searchが明示的loginページへリダイレクトされることを実機確認したため、新規Strategic Reply候補探索・Targeted Following(X側)は今回もブロックされたまま(NOT_CHECKED、Owner再ログイン依頼は追加しない)。ledger waiting中の@akagami_sns個別スレッドを非ログインで確認したが、相手の新着返信はレンダリングされず(ログイン必須の制約、他9件も同条件のためNOT CHECKED)。IG実機確認: authenticated、フォロワー14人(前回夜22:35確認の15人から-1、VERIFIED実測、原因不明のため断定しない)、投稿26件で変化なし(day28.mp4再編集版はまだ未掲載)。Manual Publish Verification: carryover(Day28 Reel、approval f8a3c275)はIGグリッドに見つからず、Owner承認待ちのまま据え置きが正当、reconcile不要。Approval Queue pending=1件(f8a3c275)、期限2026-10-02T07:14 JSTまで変更なし、追加の催促はしない。Targeted Following candidate探索: X検索がブロックされているためIGハッシュタグ(#リフォーム会社)で代替探索を試みたが、結果はリフォーム会社の採用広告・宣伝アカウントが中心でAudience Growth Engineの対象層(AI活用/業務効率化/副業/個人事業主/建築・リフォーム/現場仕事の個人、FOLLOW+REPLY可能性のある層)に合致せず、質より量を避けるため候補は0件で正直に報告(水増ししない)。Revenue Experiment: get_tasks(waiting)1件(1001b4e9、on_hold)のみでOVERDUEなし。Day31 Own Content: ORDER2(別ジャンル実務価値コンテンツ)がDay30に続き本日も新規一次データなし(day30_skip-rationale.mdと同一の構造的ブロッカー、Owner本人の実務上の一次体験が必要)。day31_skip-rationale.mdを新規作成しnot_ready継続を維持、捏造・使い回しは行わない。owner_actionsへ任意・低緊急度でOwner協力依頼(次に実務で自然にAI利用の場面が出た際のBefore/After記録)を追加(強制タスク化はしない、Proof Acquisition Mode式の7項目フォーマットは採用せず軽量な依頼に留めた)。DM(りょうすけ様)未返信継続(owner_actions維持、Claudeは送信しない)。Codex Handoff: 新規Engineering Task該当なし。"
+    "morning_routine_2026-10-02_note": "Missed Routine Coalescing: 直近成功ログは本日05:45-05:58 Pre-Morning(MORNING_READY)のみで本日分Morning未実行のためSUPERSEDED非該当、通常フル実行。X実機確認: x.com/workai_lab777は非ログイン閲覧可能だがx.com/home・x.com/searchはいずれも明示的ログイン画面へリダイレクト、unauthenticated確定継続(22日連続)。フォロワー8人・フォロー中9人で変化なし、新規投稿なし。/searchが明示的loginページへリダイレクトされることを実機確認したため、新規Strategic Reply候補探索・Targeted Following(X側)は今回もブロックされたまま(NOT_CHECKED、Owner再ログイン依頼は追加しない)。ledger waiting中の@akagami_sns個別スレッドを非ログインで確認したが、相手の新着返信はレンダリングされず(ログイン必須の制約、他9件も同条件のためNOT CHECKED)。IG実機確認: authenticated、フォロワー14人(前回夜22:35確認の15人から-1、VERIFIED実測、原因不明のため断定しない)、投稿26件で変化なし(day28.mp4再編集版はまだ未掲載)。Manual Publish Verification: carryover(Day28 Reel、approval f8a3c275)はIGグリッドに見つからず、Owner承認待ちのまま据え置きが正当、reconcile不要。Approval Queue pending=1件(f8a3c275)、期限2026-10-02T07:14 JSTまで変更なし、追加の催促はしない。Targeted Following candidate探索: X検索がブロックされているためIGハッシュタグ(#リフォーム会社)で代替探索を試みたが、結果はリフォーム会社の採用広告・宣伝アカウントが中心でAudience Growth Engineの対象層(AI活用/業務効率化/副業/個人事業主/建築・リフォーム/現場仕事の個人、FOLLOW+REPLY可能性のある層)に合致せず、質より量を避けるため候補は0件で正直に報告(水増ししない)。Revenue Experiment: get_tasks(waiting)1件(1001b4e9、on_hold)のみでOVERDUEなし。Day31 Own Content: ORDER2(別ジャンル実務価値コンテンツ)がDay30に続き本日も新規一次データなし(day30_skip-rationale.mdと同一の構造的ブロッカー、Owner本人の実務上の一次体験が必要)。day31_skip-rationale.mdを新規作成しnot_ready継続を維持、捏造・使い回しは行わない。owner_actionsへ任意・低緊急度でOwner協力依頼(次に実務で自然にAI利用の場面が出た際のBefore/After記録)を追加(強制タスク化はしない、Proof Acquisition Mode式の7項目フォーマットは採用せず軽量な依頼に留めた)。DM(りょうすけ様)未返信継続(owner_actions維持、Claudeは送信しない)。Codex Handoff: 新規Engineering Task該当なし。",
+    "sprint_day1": {
+      "recorded_at": "2026-10-22T07:40:00+09:00",
+      "sprint_day1": "2026-10-22",
+      "rule": "Sprint Day1 = actual public publish date of P3; T0 = verified publish timestamp (COO FINAL 2026-10-21)",
+      "content": "P3 manufacturer-document request (IG carousel 8 slides + X post with slide 6)",
+      "posts": [
+        {
+          "platform": "x",
+          "approval_id": "c9916552-6dd7-4348-baea-e816583df717",
+          "url": "https://x.com/workai_lab777/status/2113032479267537308",
+          "t0": "2026-10-22T07:19:35+09:00",
+          "verified": "live read-only check 2026-10-22"
+        },
+        {
+          "platform": "instagram",
+          "approval_id": "51173ad6-b93f-4b11-869f-0df617616868",
+          "url": "https://www.instagram.com/workai_lab777/p/DexeEH_khEq/",
+          "t0": "2026-10-22T07:22:03+09:00",
+          "verified": "live read-only check 2026-10-22"
+        }
+      ],
+      "measurements": {
+        "h24": "2026-10-23T08:00:00+09:00 (task 6237a56e)",
+        "h72": "2026-10-25T08:00:00+09:00 (task e80df7d3)",
+        "day7": "2026-10-28T20:00:00+09:00 (task 5415e3ec)"
+      },
+      "metrics_collected": false
+    }
   },
   "health_inputs": {
     "scheduler": [
@@ -3947,6 +4003,30 @@
         "cockpit_pushed": false,
         "success": false,
         "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\evening_2026-10-21_223002.log"
+      },
+      {
+        "routine": "premorning",
+        "scheduled_at": "2026-10-22T05:45:00",
+        "started_at": "2026-10-22T05:45:03",
+        "finished_at": "2026-10-22T05:45:17",
+        "exit_code": 1,
+        "claude_exit_code": 1,
+        "ssot_updated": false,
+        "cockpit_pushed": false,
+        "success": false,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\premorning_2026-10-22_054503.log"
+      },
+      {
+        "routine": "morning",
+        "scheduled_at": "2026-10-22T07:00:00",
+        "started_at": "2026-10-22T07:00:02",
+        "finished_at": "2026-10-22T07:00:15",
+        "exit_code": 1,
+        "claude_exit_code": 1,
+        "ssot_updated": false,
+        "cockpit_pushed": false,
+        "success": false,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\morning_2026-10-22_070002.log"
       }
     ],
     "tasks": [
@@ -3962,7 +4042,21 @@
         "assigned_to": "claude",
         "status": "waiting",
         "waiting_reason": "sprint_day7_review_due",
-        "next_check_at": "2026-10-27T20:00:00+09:00"
+        "next_check_at": "2026-10-28T20:00:00+09:00"
+      },
+      {
+        "task_id": "6237a56e-3abd-48f8-a8cd-344af66fe938",
+        "assigned_to": "claude",
+        "status": "waiting",
+        "waiting_reason": "p3_24h_measurement_due",
+        "next_check_at": "2026-10-23T08:00:00+09:00"
+      },
+      {
+        "task_id": "e80df7d3-02af-4346-8e35-b0a67dd62d23",
+        "assigned_to": "claude",
+        "status": "waiting",
+        "waiting_reason": "p3_72h_measurement_due",
+        "next_check_at": "2026-10-25T08:00:00+09:00"
       }
     ]
   },
@@ -4509,11 +4603,14 @@
       "reason": "Sprint Day1 P3 (COO FINAL GO 2026-10-21). 1回の会話の実例: 初回依頼は「図面」のみ→AIが施工説明書を提示(自ら種類を区別)→「寸法入りの平面図」と言い直して約4分でカタログ該当ページPDF。メーカー図面・ロゴ不使用の自作画像。事実は制作パッケージ§1の事実確認シートと一致。Owner手動投稿。実際の投稿時刻がSprint Day1のT0。",
       "risk_level": "HIGH",
       "expires_at": "2026-10-24T14:48:59.993Z",
-      "status": "pending",
-      "owner_decision": null,
-      "decided_at": null,
-      "execution_status": null,
-      "last_reminded_at": null
+      "status": "executed",
+      "owner_decision": "approved",
+      "decided_at": "2026-10-21T22:16:02.352Z",
+      "execution_status": "executed",
+      "last_reminded_at": null,
+      "decision_note": "Owner approved in chat 2026-10-22 (exact text: \"c9916552 と 51173ad6 を承認します\"). Manual post by Owner.",
+      "execution_note": "Owner posted manually. Verified live: https://x.com/workai_lab777/status/2113032479267537308 , published 2026-10-21T22:19:35Z (2026-10-22 07:19:35 JST), 1 image attached, text matches approved body.",
+      "executed_at": "2026-10-21T22:25:10.423Z"
     },
     {
       "approval_id": "51173ad6-b93f-4b11-869f-0df617616868",
@@ -4526,12 +4623,15 @@
       "reason": "Sprint Day1 P3 (COO FINAL GO 2026-10-21)。media_type=carouselのため尺検証対象外(Reel規則はreelのみ)。事実は制作パッケージ§1と一致、画像は自作のみ、顧客/案件/パス情報なし、QA済(モバイル目視・禁止表現スキャン)。Owner手動投稿。実際の投稿時刻がSprint Day1のT0。",
       "risk_level": "HIGH",
       "expires_at": "2026-10-24T14:49:00.012Z",
-      "status": "pending",
-      "owner_decision": null,
-      "decided_at": null,
-      "execution_status": null,
+      "status": "executed",
+      "owner_decision": "approved",
+      "decided_at": "2026-10-21T22:16:02.373Z",
+      "execution_status": "executed",
       "last_reminded_at": null,
-      "media_type": "carousel"
+      "media_type": "carousel",
+      "decision_note": "Owner approved in chat 2026-10-22 (exact text: \"c9916552 と 51173ad6 を承認します\"). Manual post by Owner.",
+      "execution_note": "Owner posted manually. Verified live: https://www.instagram.com/workai_lab777/p/DexeEH_khEq/ , published 2026-10-21T22:22:03Z (2026-10-22 07:22:03 JST), 8-slide carousel, caption matches approved text.",
+      "executed_at": "2026-10-21T22:25:10.439Z"
     }
   ]
 }
