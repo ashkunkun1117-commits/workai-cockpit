@@ -946,7 +946,7 @@
   },
   "current_date": "2026-10-06",
   "data_updated_at": "2026-10-06T05:46:00+09:00",
-  "public_updated_at": "2026-10-21T22:32:01.597Z",
+  "public_updated_at": "2026-10-22T23:15:28.847Z",
   "analytics": {
     "source": "data/analytics/kpi_daily.csv",
     "rows": [
@@ -4027,6 +4027,42 @@
         "cockpit_pushed": false,
         "success": false,
         "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\morning_2026-10-22_070002.log"
+      },
+      {
+        "routine": "evening",
+        "scheduled_at": "2026-10-22T22:30:00",
+        "started_at": "2026-10-22T22:30:02",
+        "finished_at": "2026-10-22T22:30:18",
+        "exit_code": 1,
+        "claude_exit_code": 1,
+        "ssot_updated": false,
+        "cockpit_pushed": false,
+        "success": false,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\evening_2026-10-22_223002.log"
+      },
+      {
+        "routine": "premorning",
+        "scheduled_at": "2026-10-23T05:45:00",
+        "started_at": "2026-10-23T05:45:02",
+        "finished_at": "2026-10-23T05:45:20",
+        "exit_code": 1,
+        "claude_exit_code": 1,
+        "ssot_updated": false,
+        "cockpit_pushed": false,
+        "success": false,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\premorning_2026-10-23_054502.log"
+      },
+      {
+        "routine": "morning",
+        "scheduled_at": "2026-10-23T07:00:00",
+        "started_at": "2026-10-23T07:00:02",
+        "finished_at": "2026-10-23T07:00:17",
+        "exit_code": 1,
+        "claude_exit_code": 1,
+        "ssot_updated": false,
+        "cockpit_pushed": false,
+        "success": false,
+        "log_file": "C:\\Users\\fores\\projects\\workai-lab\\reports\\daily\\routine-logs\\morning_2026-10-23_070002.log"
       }
     ],
     "tasks": [
@@ -4632,6 +4668,23 @@
       "decision_note": "Owner approved in chat 2026-10-22 (exact text: \"c9916552 と 51173ad6 を承認します\"). Manual post by Owner.",
       "execution_note": "Owner posted manually. Verified live: https://www.instagram.com/workai_lab777/p/DexeEH_khEq/ , published 2026-10-21T22:22:03Z (2026-10-22 07:22:03 JST), 8-slide carousel, caption matches approved text.",
       "executed_at": "2026-10-21T22:25:10.439Z"
+    },
+    {
+      "approval_id": "9d700ccf-3682-4d37-83cb-801b69210c95",
+      "created_at": "2026-10-22T23:14:59.125Z",
+      "requested_by": "claude",
+      "platform": "x",
+      "action_type": "x_reply",
+      "target": "https://x.com/hinoki_kai_/status/2113248904481501257",
+      "proposed_content": "リフォーム業で、平面図PDFからAIに室内パースを作らせています。1枚1〜3分で出ますが、AI自身が「キッチン形状や開口部は図面と違いがある」と注記。形状の再現度はどう確認されていますか?",
+      "reason": "{\"target_account\":\"@hinoki_kai_\",\"classification\":\"new\",\"conversation_ref\":\"2026-10-22 21:39 JST post (verified on the individual post page: 5,564 views / 55 likes / 2 reposts, ~10h old, author actively replying): Claude Opus 5.5 turned a hand-drawn exam plan into a 3D model + render. Score 80/100 (theme 27 / momentum 22 / recency 5 / first-hand 18 / proximity 8). Owner first-hand basis: floor-plan PDF -> interior perspective by AI on 3 projects (9/28, 9/30, 10/16), ~1-3 min per image by file timestamps, AI itself noted kitchen shape and openings differ from the drawing. No client/property data in the reply. Owner to confirm the first-hand claim is accurate before posting.\",\"recommendation\":\"Owner approval needed. Post manually. Time-sensitive: thread is ~10h old.\"}",
+      "risk_level": "MEDIUM",
+      "expires_at": "2026-10-23T23:14:59.125Z",
+      "status": "pending",
+      "owner_decision": null,
+      "decided_at": null,
+      "execution_status": null,
+      "last_reminded_at": null
     }
   ]
 }
